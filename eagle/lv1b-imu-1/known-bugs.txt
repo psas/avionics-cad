@@ -1,0 +1,35 @@
+Known Bugs for LV1B imu-analog board v.1
+
+imu main board trim cap does not connect to gyro amp A+ as it should
+ ( 1 places, C402, backside)
+
+Reference for ADXL202 circuit should be Vref, not Gnd.
+
+Via got deleted for signal Theta Out on main board at daughter board connection
+
+1uF cap does not clear PX sensor on backside, also 1uF cap seems spurious,
+ why not throw in a 10uF? Whatever.
+
+The 820uF inductor in the negative supply line creates a ground loop by raising
+the analog board ground to ~0.45 Volts relative to the digital board. This can
+be handled by removing the inductor, but shorting the ground planes doesn't
+reduce the current consumption by more than 0.1mA, so removal may actually not
+be warranted (but probably is). In future, however, i'd like to handle this
+differently. The battery lines should be filtered, and the digital and analog
+boards should have their true grounds heavily tied. This means circuits
+switching the battery negative need to deal w/potentials below ground, but
+though this is probably added complexity, it is required for reliability anyway.
+Further, this arrangement should have significant noise advantages.
+
+Daughter board signal ZO should not pass through on main board
+(In fact all the daughter board connection on the main board should be checked
+ and extended only to the traces they contact, and not to any perforating holes.)
+
+Offset in J1 relative to flight computer (perhaps adjust FC?)
+--Fixed by modifying FC
+
+Added a 1nF feedfwd cap across voltage divider (maybe should be 1uF?)
+Added boot-strap resistor from 5V to 6.025V supply (10k)
+ Changed this resistor to a diode, which is both stiffer on start, making
+ startup independent of load, and open after startup, saving power.
+**********
