@@ -1,0 +1,218 @@
+# goodkeys Script
+# Assigns Key Bindings for eagle linux
+# TAB 03/24/2003
+
+# Allowed modifiers are A+ S+ C+ for Alt, Shift, Control respectively
+# Allowed keys are A-Z 0-9 F1-F12 and BackSpace
+# Assignments to 0-9 A-Z require a Control or Alt modifier
+#
+# Note that key assignments which conflict with the menu bar (e.g. A+F for the 
+# File Menu) overwrite the menu bar and you may lose keyboard access to 
+# the menu bar.
+
+# Assignments for the EAGLE Library Editor
+LBR:
+ASSIGN     A+A 'Add';
+ASSIGN S+C+A+A 'Assign';
+ASSIGN     A+C 'Copy';
+ASSIGN     C+C 'Change';
+ASSIGN     C+G 'Group';
+ASSIGN     C+I 'Info';
+ASSIGN     C+L 'Window;';
+ASSIGN     A+M 'Mirror';
+ASSIGN     C+M 'Move';
+ASSIGN     A+N 'Name';
+ASSIGN     A+S 'Split';
+ASSIGN     C+S 'Show';
+ASSIGN S+C+A+S 'Write;'; # Save the current file using the default name
+ASSIGN     A+T 'Rotate';
+ASSIGN     C+U 'Undo';
+ASSIGN   S+C+U 'Redo';
+ASSIGN     A+V 'Paste'
+ASSIGN     C+V 'display';
+ASSIGN     C+W 'Wire';
+ASSIGN     A+X 'Cut';
+ASSIGN     A+Z 'Window (@);' # Pan to mouse
+ASSIGN     C+Z 'Window (@); Window 1.414213562' # Zoom in at mouse
+ASSIGN   S+C+Z 'Window (@); Window 0.7071067812' # Zoom out at mouse
+ASSIGN    S+BS 'Delete';
+ASSIGN      F9 'Window 0.5'; # Zoom out more
+ASSIGN    S+F9 'Window 2'; # Zoom in more
+ASSIGN     F10 'Window 1.414213562'; # Zoom in
+ASSIGN   S+F10 'Window 0.7071067812'; # Zoom out
+ASSIGN     F11 'Window (@);'; # Pan to mouse
+ASSIGN   S+F11 'Window fit'; # Auto zoom
+ASSIGN   C+F11 'Window'; # select window with mouse (or keyboard)
+ASSIGN     F12 'Grid;'; # Turns the grid On/Off
+ASSIGN   S+F12 'Grid'; # Invokes the Grid Dialog Box
+ASSIGN   C+F12 ';'; # Equivalent to hitting the "GO" button
+
+# Assignments for the EAGLE library editor's package editor
+PAC:
+ASSIGN     A+A 'Add';
+ASSIGN S+C+A+A 'Assign';
+ASSIGN     A+C 'Copy';
+ASSIGN     C+C 'Change';
+ASSIGN     C+G 'Group';
+ASSIGN     C+I 'Info';
+ASSIGN     C+L 'Window;';
+ASSIGN     A+M 'Mirror';
+ASSIGN     C+M 'Move';
+ASSIGN     A+N 'Name';
+ASSIGN     A+S 'Split';
+ASSIGN     C+S 'Show';
+ASSIGN S+C+A+S 'Write;'; # Save the current file using the default name
+ASSIGN     A+T 'Rotate';
+ASSIGN     C+U 'Undo';
+ASSIGN   S+C+U 'Redo';
+ASSIGN     A+V 'Paste'
+ASSIGN     C+V 'display';
+ASSIGN     C+W 'Wire';
+ASSIGN     A+X 'Cut';
+ASSIGN     A+Z 'Window (@);' # Pan to mouse
+ASSIGN     C+Z 'Window (@); Window 1.414213562' # Zoom in at mouse
+ASSIGN   S+C+Z 'Window (@); Window 0.7071067812' # Zoom out at mouse
+ASSIGN    S+BS 'Delete';
+ASSIGN      F9 'Window 0.5'; # Zoom out more
+ASSIGN    S+F9 'Window 2'; # Zoom in more
+ASSIGN     F10 'Window 1.414213562'; # Zoom in
+ASSIGN   S+F10 'Window 0.7071067812'; # Zoom out
+ASSIGN     F11 'Window (@);'; # Pan to mouse
+ASSIGN   S+F11 'Window fit'; # Auto zoom
+ASSIGN   C+F11 'Window'; # select window with mouse (or keyboard)
+ASSIGN     F12 'Grid;'; # Turns the grid On/Off
+ASSIGN   S+F12 'Grid'; # Invokes the Grid Dialog Box
+ASSIGN   C+F12 ';'; # Equivalent to hitting the "GO" button
+
+# Assignments for the EAGLE library editor's schematic symbol editor
+SYM:
+ASSIGN     A+A 'Add';
+ASSIGN S+C+A+A 'Assign';
+ASSIGN     A+C 'Copy';
+ASSIGN     C+C 'Change';
+ASSIGN     C+G 'Group';
+ASSIGN     C+I 'Info';
+ASSIGN     C+L 'Window;';
+ASSIGN     A+M 'Mirror';
+ASSIGN     C+M 'Move';
+ASSIGN     A+N 'Name';
+ASSIGN     A+S 'Split';
+ASSIGN     C+S 'Show';
+ASSIGN S+C+A+S 'Write;'; # Save the current file using the default name
+ASSIGN     A+T 'Rotate';
+ASSIGN     C+U 'Undo';
+ASSIGN   S+C+U 'Redo';
+ASSIGN     A+V 'Paste'
+ASSIGN     C+V 'display';
+ASSIGN     C+W 'Wire';
+ASSIGN     A+X 'Cut';
+ASSIGN     A+Z 'Window (@);' # Pan to mouse
+ASSIGN     C+Z 'Window (@); Window 1.414213562' # Zoom in at mouse
+ASSIGN   S+C+Z 'Window (@); Window 0.7071067812' # Zoom out at mouse
+ASSIGN    S+BS 'Delete';
+ASSIGN      F9 'Window 0.5'; # Zoom out more
+ASSIGN    S+F9 'Window 2'; # Zoom in more
+ASSIGN     F10 'Window 1.414213562'; # Zoom in
+ASSIGN   S+F10 'Window 0.7071067812'; # Zoom out
+ASSIGN     F11 'Window (@);'; # Pan to mouse
+ASSIGN   S+F11 'Window fit'; # Auto zoom
+ASSIGN   C+F11 'Window'; # select window with mouse (or keyboard)
+ASSIGN     F12 'Grid;'; # Turns the grid On/Off
+ASSIGN   S+F12 'Grid'; # Invokes the Grid Dialog Box
+ASSIGN   C+F12 ';'; # Equivalent to hitting the "GO" button
+
+# Assignments for the EAGLE schematic editor
+SCH:
+ASSIGN     A+A 'Add';
+ASSIGN S+C+A+A 'Assign';
+ASSIGN     A+C 'Copy';
+ASSIGN     C+C 'Change';
+ASSIGN     C+G 'Group';
+ASSIGN     C+I 'Info';
+ASSIGN     C+L 'Window;';
+ASSIGN     A+M 'Mirror';
+ASSIGN     C+M 'Move';
+ASSIGN   S+C+M 'Smash';
+ASSIGN     A+N 'Name';
+ASSIGN     C+N 'Value';
+ASSIGN     A+S 'Split';
+ASSIGN     C+S 'Show';
+ASSIGN S+C+A+S 'Write;'; # Save the current file using the default name
+ASSIGN     A+T 'Rotate';
+ASSIGN     C+U 'Undo';
+ASSIGN   S+C+U 'Redo';
+ASSIGN     A+V 'Paste'
+ASSIGN     C+V 'display';
+ASSIGN     A+W 'Net';
+ASSIGN     C+W 'Wire';
+ASSIGN     A+X 'Cut';
+ASSIGN     A+Z 'Window (@);' # Pan to mouse
+ASSIGN     C+Z 'Window (@); Window 1.414213562' # Zoom in at mouse
+ASSIGN   S+C+Z 'Window (@); Window 0.7071067812' # Zoom out at mouse
+ASSIGN    S+BS 'Delete';
+ASSIGN      F9 'Window 0.5'; # Zoom out more
+ASSIGN    S+F9 'Window 2'; # Zoom in more
+ASSIGN     F10 'Window 1.414213562'; # Zoom in
+ASSIGN   S+F10 'Window 0.7071067812'; # Zoom out
+ASSIGN     F11 'Window (@);'; # Pan to mouse
+ASSIGN   S+F11 'Window fit'; # Auto zoom
+ASSIGN   C+F11 'Window'; # select window with mouse (or keyboard)
+ASSIGN     F12 'Grid;'; # Turns the grid On/Off
+ASSIGN   S+F12 'Grid'; # Invokes the Grid Dialog Box
+ASSIGN   C+F12 ';'; # Equivalent to hitting the "GO" button
+
+# Assignments for the EAGLE board editor
+BRD:
+ASSIGN     A+A 'Add';
+ASSIGN     C+A 'Signal'; # Adds airwire
+ASSIGN S+C+A+A 'Assign';
+ASSIGN     C+B 'Display Bottom BPlace -BNames -BValues'; # w/origins
+ASSIGN   S+C+B 'Display -Bottom -BPlace BOrigins'; # keep origins
+ASSIGN S+C+A+B 'Display -Bottom -BPlace'; # turn off origins too
+ASSIGN     A+C 'Copy';
+ASSIGN     C+C 'Change';
+ASSIGN     A+B 'Display Bottom';
+ASSIGN   S+A+B 'Display -Bottom';
+ASSIGN     C+G 'Group';
+ASSIGN     C+I 'Info';
+ASSIGN     C+L 'Window;';
+ASSIGN     A+M 'Mirror';
+ASSIGN     C+M 'Move';
+ASSIGN     A+N 'Name';
+ASSIGN     C+N 'Value';
+ASSIGN S+C+A+O 'Optimize;';
+ASSIGN     A+R 'Rotate';
+ASSIGN     C+R 'Route';
+ASSIGN S+C+A+R 'Ratsnest';
+ASSIGN     A+S 'Split';
+ASSIGN     C+S 'Show';
+ASSIGN S+C+A+S 'Write;'; # Save the current file using the default name
+ASSIGN     A+T 'Rotate';
+ASSIGN     C+T 'Display Top TPlace -TNames -TValues'; # w/origins
+ASSIGN   S+C+T 'Display -Top -TPlace TOrigins'; # keep origins
+ASSIGN S+C+A+T 'Display -Top -TPlace'; # turn off origins too
+ASSIGN     C+U 'Undo';
+ASSIGN   S+C+U 'Redo';
+ASSIGN     A+V 'Paste'
+ASSIGN     C+V 'display';
+ASSIGN     A+W 'Net';
+ASSIGN     C+W 'Wire';
+ASSIGN     A+X 'Cut';
+ASSIGN     A+Y 'Display Top';
+ASSIGN   S+A+Y 'Display -Top';
+ASSIGN     A+Z 'Window (@);' # Pan to mouse
+ASSIGN     C+Z 'Window (@); Window 1.414213562' # Zoom in at mouse
+ASSIGN   S+C+Z 'Window (@); Window 0.7071067812' # Zoom out at mouse
+ASSIGN    S+BS 'Delete';
+ASSIGN    C+BS 'Ripup';
+ASSIGN      F9 'Window 0.5'; # Zoom out more
+ASSIGN    S+F9 'Window 2'; # Zoom in more
+ASSIGN     F10 'Window 1.414213562'; # Zoom in
+ASSIGN   S+F10 'Window 0.7071067812'; # Zoom out
+ASSIGN     F11 'Window (@);'; # Pan to mouse
+ASSIGN   S+F11 'Window fit'; # Auto zoom
+ASSIGN   C+F11 'Window'; # select window with mouse (or keyboard)
+ASSIGN     F12 'Grid;'; # Turns the grid On/Off
+ASSIGN   S+F12 'Grid'; # Invokes the Grid Dialog Box
+ASSIGN   C+F12 ';'; # Equivalent to hitting the "GO" button
+
