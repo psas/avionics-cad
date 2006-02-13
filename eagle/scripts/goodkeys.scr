@@ -19,6 +19,7 @@ ASSIGN     A+D 'display'; # Display available layers
 ASSIGN     C+G 'Group';
 ASSIGN     A+G 'Grid;';   # Turns the grid On/Off
 ASSIGN   S+A+G 'Grid';    # Invokes the Grid Dialog Box
+ASSIGN     C+H 'Help';    # Invoke help on the current command
 ASSIGN     C+I 'Info';    # Get info on a part
 ASSIGN     C+L 'Window;'; # Redraw the window
 ASSIGN     A+M 'Mirror';
@@ -52,6 +53,7 @@ ASSIGN     A+D 'display'; # Display available layers
 ASSIGN     C+G 'Group';
 ASSIGN     A+G 'Grid;';   # Turns the grid On/Off
 ASSIGN   S+A+G 'Grid';    # Invokes the Grid Dialog Box
+ASSIGN     C+H 'Help';    # Invoke help on the current command
 ASSIGN     C+I 'Info';    # Get info on a part
 ASSIGN     C+L 'Window;'; # Redraw the window
 ASSIGN     A+M 'Mirror';
@@ -85,6 +87,7 @@ ASSIGN     A+D 'display'; # Display available layers
 ASSIGN     C+G 'Group';
 ASSIGN     A+G 'Grid;';   # Turns the grid On/Off
 ASSIGN   S+A+G 'Grid';    # Invokes the Grid Dialog Box
+ASSIGN     C+H 'Help';    # Invoke help on the current command
 ASSIGN     C+I 'Info';    # Get info on a part
 ASSIGN     C+L 'Window;'; # Redraw the window
 ASSIGN     A+M 'Mirror';
@@ -119,6 +122,7 @@ ASSIGN     A+D 'display'; # Display available layers
 ASSIGN     C+G 'Group';
 ASSIGN     A+G 'Grid;';   # Turns the grid On/Off
 ASSIGN   S+A+G 'Grid';    # Invokes the Grid Dialog Box
+ASSIGN     C+H 'Help';    # Invoke help on the current command
 ASSIGN     C+I 'Info';    # Get info on a part
 ASSIGN     C+L 'Window;'; # Redraw the window
 ASSIGN     A+M 'Mirror';
@@ -155,6 +159,7 @@ ASSIGN     A+D 'display'; # Display available layers
 ASSIGN     C+G 'Group';
 ASSIGN     A+G 'Grid;';   # Turns the grid On/Off
 ASSIGN   S+A+G 'Grid';    # Invokes the Grid Dialog Box
+ASSIGN     C+H 'Help';    # Invoke help on the current command
 ASSIGN     C+I 'Info';    # Get info on a part
 ASSIGN     C+L 'Window;'; # Redraw the window
 ASSIGN     A+M 'Mirror';
