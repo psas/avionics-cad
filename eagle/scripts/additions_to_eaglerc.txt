@@ -1,0 +1,4 @@
+# Add this to your .eaglrc (linux) or eaglerc.usr (Windows)
+# EAGLE configuration file.
+
+Interface.UseCtrlForPanning = "1"
