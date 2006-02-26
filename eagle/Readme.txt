@@ -5,6 +5,9 @@ PSAS EAGLE Schematics and Board Layouts
 
  <rocketname>-<system-name>-[<sub-board-name>-][<sub-sub-board-name>-]<version>
 
+ node1 = CAN Node v1, which was the PIC16F + SJA1000 design
+ node2 = CAN Node v2, which was the PIC18F + SPS design
+ 
 2. Contents
 
  libraries        PSAS EAGLE Libraries (includes GPL-GPS parts)
