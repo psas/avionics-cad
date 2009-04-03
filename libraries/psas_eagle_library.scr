@@ -1,27 +1,27 @@
 # Library script
 # 
-# Exported from psas_eagle_library-1.10.lbr at  8/12/2005 16:30:28 
+# Exported from /home/bob/repo/psas/avionics-cad/libraries/psas_eagle_library.lbr at 3 Apr 2009 14:40:42
 # 
-# EAGLE Version 4.11r2 Copyright (c) 1988-2004 CadSoft
+# EAGLE Version 5.4.0 Copyright (c) 1988-2009 CadSoft
 # 
 Set Wire_Bend 2;
 # Grid changed to 'mm' to avoid loss of precision!
 Grid mm;
 Layer   1 Top;
-# Layer   2 Route2;
-# Layer   3 Route3;
-# Layer   4 Route4;
-# Layer   5 Route5;
-# Layer   6 Route6;
-# Layer   7 Route7;
-# Layer   8 Route8;
-# Layer   9 Route9;
-# Layer  10 Route10;
-# Layer  11 Route11;
-# Layer  12 Route12;
-# Layer  13 Route13;
-# Layer  14 Route14;
-# Layer  15 Route15;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer   4 Route4;
+Layer   5 Route5;
+Layer   6 Route6;
+Layer   7 Route7;
+Layer   8 Route8;
+Layer   9 Route9;
+Layer  10 Route10;
+Layer  11 Route11;
+Layer  12 Route12;
+Layer  13 Route13;
+Layer  14 Route14;
+Layer  15 Route15;
 Layer  16 Bottom;
 Layer  17 Pads;
 Layer  18 Vias;
@@ -56,6 +56,7 @@ Layer  46 Milling;
 Layer  47 Measures;
 Layer  48 Document;
 Layer  49 Reference;
+Layer  50 dxf;
 Layer  51 tDocu;
 Layer  52 bDocu;
 Layer  91 Nets;
@@ -64,6 +65,8 @@ Layer  93 Pins;
 Layer  94 Symbols;
 Layer  95 Names;
 Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
 Layer 100 Hidden_Layer;
 Layer 250 Descript;
 Layer 251 SMDround;
@@ -74,7 +77,7 @@ Description '\
  Portland State Aerospace Society - &lt;www.psas.pdx.edu&gt;\n\
  </author>';
 
-Edit V<-.sym;
+Edit 'V<-.sym';
 Layer 94;
 Change Style Continuous;
 Wire  0.1524 (-15.24 0) (-13.716 -1.524) (0 -1.524) (0 1.524) \
@@ -86,7 +89,7 @@ Change Ratio 8;
 Change Font Proportional;
 Text '>VALUE' R0 (-13.335 -1.016);
 
-Edit V->.sym;
+Edit 'V->.sym';
 Layer 94;
 Wire  0.1524 (15.24 0) (13.716 1.524) (0 1.524) (0 -1.524) \
       (13.716 -1.524);
@@ -96,7 +99,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (1.27 -1.016);
 
-Edit CIRCLE_PLUS.sym;
+Edit 'CIRCLE_PLUS.sym';
 Pin 'CIRCLE+' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Circle 0.254 (0 1.27) (1.27 1.27);
@@ -108,7 +111,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.905 3.175);
 
-Edit CIRCLE_MINUS.sym;
+Edit 'CIRCLE_MINUS.sym';
 Pin 'CIRCLE-' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Circle 0.254 (0 -1.27) (1.27 -1.27);
@@ -119,7 +122,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-2.54 -5.08);
 
-Edit CIRCLE_OPEN.sym;
+Edit 'CIRCLE_OPEN.sym';
 Pin 'CIRCLE_OPEN' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Circle 0.254 (0 1.27) (1.27 1.27);
@@ -128,7 +131,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.905 3.175);
 
-Edit CIRCLE_OPEN_BIG.sym;
+Edit 'CIRCLE_OPEN_BIG.sym';
 Pin 'OPEN_CIRCLE_BIG' Sup None Short R90 Off 0 (0 -2.54);
 Layer 96;
 Change Size 1.778;
@@ -137,7 +140,7 @@ Text '>VALUE' R0 (-1.397 1.905);
 Layer 94;
 Circle 0.254 (0 2.54) (2.54 2.54);
 
-Edit BAR_GND.sym;
+Edit 'BAR_GND.sym';
 Pin 'BAR_GND' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.4064 (-1.27 0) (1.27 0);
@@ -146,7 +149,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-2.54 -2.54);
 
-Edit TRIANGLE_GND.sym;
+Edit 'TRIANGLE_GND.sym';
 Pin 'TRIANGLE_GND' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (-1.27 0) (1.27 0) (0 -1.27) (-1.27 0);
@@ -155,7 +158,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-2.667 -3.175);
 
-Edit TRIANGLE_GND_BIG.sym;
+Edit 'TRIANGLE_GND_BIG.sym';
 Pin 'TRIANGLE_GND_BIG' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (3.81 0) (0 -5.08) (-3.81 0);
@@ -166,7 +169,7 @@ Text '>VALUE' R0 (-1.27 -2.794);
 Layer 94;
 Wire  0.254 (3.81 0) (-3.81 0);
 
-Edit TRIPLE_BAR_GND.sym;
+Edit 'TRIPLE_BAR_GND.sym';
 Pin 'TRIPLE_BAR_GND' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (-1.27 -0.762) (1.27 -0.762);
@@ -177,7 +180,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-4.445 -4.699);
 
-Edit UP_ARROW.sym;
+Edit 'UP_ARROW.sym';
 Pin 'UP_ARROW' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Wire  0.254 (1.27 -1.905) (0 0) (-1.27 -1.905);
@@ -186,7 +189,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.27 1.27);
 
-Edit DOWN_ARROW.sym;
+Edit 'DOWN_ARROW.sym';
 Pin 'DOWN_ARROW' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (-1.27 1.905) (0 0) (1.27 1.905);
@@ -195,7 +198,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.27 -2.54);
 
-Edit DOUBLE_UP_ARROW.sym;
+Edit 'DOUBLE_UP_ARROW.sym';
 Pin 'DOUBLE_UP_ARROW' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Wire  0.254 (-1.27 -1.905) (0 0) (1.27 -1.905);
@@ -206,7 +209,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.905 1.905);
 
-Edit TRIPLE_UP_ARROW.sym;
+Edit 'TRIPLE_UP_ARROW.sym';
 Pin 'TRIPLE_UP_ARROW' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Wire  0.254 (-1.27 -1.905) (0 0) (1.27 -1.905);
@@ -219,7 +222,7 @@ Text '>VALUE' R0 (-1.905 3.175);
 Layer 94;
 Wire  0.254 (-1.27 0.635) (0 2.54) (1.27 0.635);
 
-Edit TRIPLE_DOWN_ARROW.sym;
+Edit 'TRIPLE_DOWN_ARROW.sym';
 Pin 'TRIPLE_DOWN_ARROW' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (1.27 1.905) (0 0) (-1.27 1.905);
@@ -231,7 +234,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.905 -5.08);
 
-Edit DOUBLE_DOWN_ARROW.sym;
+Edit 'DOUBLE_DOWN_ARROW.sym';
 Pin 'DOUBLE_DOWN_ARROW' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (1.27 1.905) (0 0) (-1.27 1.905);
@@ -242,7 +245,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.905 -3.81);
 
-Edit TRIANGLE_GND_BAR.sym;
+Edit 'TRIANGLE_GND_BAR.sym';
 Pin 'TRIANGLE_GND_BAR' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (0 0) (-0.762 1.016) (0.762 1.016) (0 0);
@@ -251,7 +254,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-1.27 -2.54);
 
-Edit CHASSIS.sym;
+Edit 'CHASSIS.sym';
 Pin 'CHASSIS' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.4064 (-1.27 0) (0 0) (1.27 0);
@@ -263,7 +266,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-3.175 -3.81);
 
-Edit DOUBLE_BAR_GND.sym;
+Edit 'DOUBLE_BAR_GND.sym';
 Pin 'TRIPLE_BAR_GND' Sup None Short R270 Off 0 (0 2.54);
 Layer 94;
 Wire  0.254 (-1.27 -0.762) (1.27 -0.762);
@@ -273,7 +276,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-4.445 -3.429);
 
-Edit SJA1000.sym;
+Edit 'SJA1000.sym';
 Pin 'AD7' I/O None Short R0 Both 0 (-15.24 17.78);
 Pin 'AD6' I/O None Short R0 Both 0 (-15.24 15.24);
 Pin 'AD5' I/O None Short R0 Both 0 (-15.24 12.7);
@@ -314,7 +317,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (2.54 -25.4);
 
-Edit LED-RED.sym;
+Edit 'LED-RED.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 5.08);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -2.54);
 Layer 94;
@@ -334,7 +337,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 0);
 
-Edit LED-GRN.sym;
+Edit 'LED-GRN.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 5.08);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -2.54);
 Layer 94;
@@ -354,7 +357,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 0);
 
-Edit LED-BLU.sym;
+Edit 'LED-BLU.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 5.08);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -2.54);
 Layer 94;
@@ -374,7 +377,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 0);
 
-Edit LED-AMB.sym;
+Edit 'LED-AMB.sym';
 Layer 94;
 Wire  0.254 (-1.778 2.54) (1.778 2.54) (0 0);
 Wire  0.254 (-1.778 2.54) (0 0);
@@ -395,7 +398,7 @@ Wire  0.254 (-3.81 0.508) (-3.302 0.508);
 Wire  0.254 (-2.032 0.762) (-3.302 -0.508) (-3.302 0);
 Wire  0.254 (-3.302 -0.508) (-2.794 -0.508);
 
-Edit LED-YLW.sym;
+Edit 'LED-YLW.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 5.08);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -2.54);
 Layer 94;
@@ -415,7 +418,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 0);
 
-Edit LED-ORG.sym;
+Edit 'LED-ORG.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 5.08);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -2.54);
 Layer 94;
@@ -435,7 +438,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 0);
 
-Edit PCA82C250.sym;
+Edit 'PCA82C250.sym';
 Pin 'CANH' I/O None Short R0 Both 0 (-12.7 0);
 Pin 'CANL' I/O None Short R0 Both 0 (-12.7 -2.54);
 Pin 'GND' Pwr None Short R90 Both 0 (0 -12.7);
@@ -456,7 +459,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (2.54 -12.7);
 
-Edit IR2133.sym;
+Edit 'IR2133.sym';
 Pin 'VB1' Pas None Short R180 Both 0 (15.24 25.4);
 Pin 'HO1' Pas None Short R180 Both 0 (15.24 22.86);
 Pin 'VS1' Pas None Short R180 Both 0 (15.24 20.32);
@@ -497,7 +500,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (5.08 -33.02);
 
-Edit DIODE.sym;
+Edit 'DIODE.sym';
 Layer 94;
 Wire  0.254 (2.54 1.778) (2.54 -1.778) (0 0);
 Wire  0.254 (2.54 1.778) (0 0);
@@ -513,13 +516,13 @@ Change Size 1.016;
 Change Ratio 8;
 Text '>VALUE' R0 (0 -3.302);
 
-Edit TESTPOINT.sym;
+Edit 'TESTPOINT.sym';
 Pin 'TP' Pas None Point R90 Off 0 (0 0);
 Layer 94;
 Wire  0.254 (-1.27 1.27) (1.27 1.27) (1.27 -1.27) (-1.27 -1.27) \
       (-1.27 1.27);
 
-Edit LITTLE-LOGIC-NAND.sym;
+Edit 'LITTLE-LOGIC-NAND.sym';
 Pin 'Y' Out None Short R0 Both 0 (-7.62 0);
 Pin 'A' In None Short R180 Both 0 (7.62 2.54);
 Pin 'B' In None Short R180 Both 0 (7.62 -2.54);
@@ -541,7 +544,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text 'NAND' R0 (-2.54 -5.08);
 
-Edit EUROBLOCK-X4.sym;
+Edit 'EUROBLOCK-X4.sym';
 Pin '1' Pas None Short R180 Both 0 (3.81 3.81);
 Pin '2' Pas None Short R180 Both 0 (3.81 1.27);
 Pin '3' Pas None Short R180 Both 0 (3.81 -1.27);
@@ -568,7 +571,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-2.54 -8.128);
 
-Edit PINHEADER-2X10.sym;
+Edit 'PINHEADER-2X10.sym';
 Pin '1' Pas Dot Short R0 Pad 0 (-3.81 11.43);
 Pin '2' Pas Dot Short R180 Pad 0 (3.81 11.43);
 Pin '3' Pas Dot Short R0 Pad 0 (-3.81 8.89);
@@ -601,7 +604,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -16.51);
 
-Edit JUPITER_GPS-2MM-HEADER.sym;
+Edit 'JUPITER_GPS-2MM-HEADER.sym';
 Pin '1' Pas Dot Short R0 Pad 0 (-3.81 11.43);
 Pin '2' Pas Dot Short R180 Pad 0 (3.81 11.43);
 Pin '3' Pas Dot Short R0 Pad 0 (-3.81 8.89);
@@ -630,7 +633,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -16.51);
 
-Edit EUROBLOCK-X2.sym;
+Edit 'EUROBLOCK-X2.sym';
 Pin '1' Pas None Short R180 Pad 0 (3.81 1.27);
 Pin '2' Pas None Short R180 Pad 0 (3.81 -1.27);
 Layer 94;
@@ -659,7 +662,7 @@ Rect R0 (-3.81 -1.27) (-2.54 1.27);
 Layer 94;
 Rect R0 (-3.81 2.54) (-2.54 3.81);
 
-Edit COAXIAL-POWER-CONNECTOR.sym;
+Edit 'COAXIAL-POWER-CONNECTOR.sym';
 Pin 'TIP' Pas None Short R180 Pad 0 (2.54 2.54);
 Pin 'BBM' Pas None Short R180 Pad 0 (2.54 0);
 Pin 'RING' Pas None Short R180 Pad 0 (2.54 -2.54);
@@ -679,7 +682,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>NAME' R0 (-1.27 4.826);
 
-Edit BATTERY.sym;
+Edit 'BATTERY.sym';
 Layer 94;
 Wire  0.4064 (-3.175 0.635) (-3.175 0);
 Wire  0.1524 (-5.08 0) (-3.175 0) 0.4064 (-3.175 -0.635);
@@ -701,7 +704,7 @@ Layer 94;
 Wire  0.4064 (0.635 2.54) (0.635 -2.54);
 Wire  0.4064 (-0.635 0.635) (-0.635 -0.635);
 
-Edit SW_SPDT.sym;
+Edit 'SW_SPDT.sym';
 Pin 'COM' Pas None Short R180 Off 0 (2.54 0);
 Pin 'NC' Pas None Short R0 Off 0 (-5.08 2.54);
 Pin 'NO' Pas None Short R0 Off 0 (-5.08 -2.54);
@@ -717,7 +720,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-3.81 -7.62);
 
-Edit PIC18F4X8.sym;
+Edit 'PIC18F4X8.sym';
 Pin 'RC7/RX/DT' I/O None Short R0 Both 0 (-38.1 15.24);
 Pin 'RD4/PSP4/ECCP1/P1A' I/O None Short R0 Both 0 (-38.1 12.7);
 Pin 'RD5/PSP5/P1B' I/O None Short R0 Both 0 (-38.1 10.16);
@@ -778,7 +781,7 @@ Change Size 2.54;
 Change Ratio 8;
 Text '>VALUE' R0 (-35.56 -35.56);
 
-Edit 2MM_ICD_CONNECTOR.sym;
+Edit '2MM_ICD_CONNECTOR.sym';
 Pin 'VPP' Out None Short R0 Both 0 (-10.16 5.08);
 Pin '+5V' Pwr None Short R180 Both 0 (10.16 5.08);
 Pin 'GND' Pwr None Short R0 Both 0 (-10.16 2.54);
@@ -801,7 +804,7 @@ Change Ratio 8;
 Text '>NAME' R0 (-7.62 8.89);
 Pin 'NC' NC None Short R180 Both 0 (10.16 -2.54);
 
-Edit BUFFER.sym;
+Edit 'BUFFER.sym';
 Pin 'IN' In None Middle R0 Pad 0 (-10.16 0);
 Pin 'OUT' Out None Middle R180 Pad 0 (10.16 0);
 Layer 94;
@@ -815,7 +818,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (2.54 -5.08);
 
-Edit VDD.sym;
+Edit 'VDD.sym';
 Layer 95;
 Change Size 1.016;
 Change Ratio 8;
@@ -826,7 +829,7 @@ Change Size 1.016;
 Change Ratio 8;
 Text 'VDD' R90 (-1.27 3.175);
 
-Edit MODE.sym;
+Edit 'MODE.sym';
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -837,7 +840,7 @@ Change Size 1.016;
 Change Ratio 10;
 Text '>NAME' R0 (-1.27 -1.905);
 
-Edit TBLOCK-4.sym;
+Edit 'TBLOCK-4.sym';
 Pin '1' Pas Dot Short R0 Pad 0 (-2.54 5.08);
 Pin '2' Pas Dot Short R0 Pad 0 (-2.54 2.54);
 Pin '3' Pas Dot Short R0 Pad 0 (-2.54 0);
@@ -859,7 +862,7 @@ Wire  0.254 (-0.508 3.302) (-1.524 1.778);
 Wire  0.254 (-0.508 0.762) (-1.524 -0.762);
 Wire  0.254 (-0.508 -1.778) (-1.524 -3.302);
 
-Edit AND-INVERT.sym;
+Edit 'AND-INVERT.sym';
 Pin 'A' In None Middle R0 Pad 1 (-12.7 2.54);
 Pin 'B' In Dot Middle R0 Pad 1 (-12.7 -2.54);
 Pin 'Y' Out None Middle R180 Pad 0 (12.7 0);
@@ -873,7 +876,7 @@ Layer 94;
 Wire  0.4064 (2.54 5.08) (-7.62 5.08);
 Wire  0.4064 (2.54 5.08) -180 (2.54 -5.08);
 
-Edit VDD+GND.sym;
+Edit 'VDD+GND.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -889,7 +892,7 @@ Text 'GND' R0 (0.889 -7.747);
 Pin 'VDD' Pwr None Middle R270 Off 0 (0 7.62);
 Pin 'GND' Pwr None Middle R90 Off 0 (0 -7.62);
 
-Edit LED-YELLOW.sym;
+Edit 'LED-YELLOW.sym';
 Pin 'ANODE' Pas None Short R270 Off 0 (0 2.54);
 Pin 'CATHODE' Pas None Short R90 Off 0 (0 -5.08);
 Layer 94;
@@ -909,7 +912,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (2.54 -2.54);
 
-Edit PAD_ROUND.sym;
+Edit 'PAD_ROUND.sym';
 Pin 'PAD' Pas None Short R180 Off 0 (0 0);
 Layer 95;
 Change Size 1.778;
@@ -922,7 +925,7 @@ Text '>VALUE' R0 (-3.683 -3.302);
 Layer 94;
 Circle 0.4064 (-2.54 0) (-1.778 0);
 
-Edit LED.sym;
+Edit 'LED.sym';
 Layer 94;
 Wire  0.254 (-1.778 2.54) (1.778 2.54) (0 0);
 Wire  0.254 (-1.778 2.54) (0 0);
@@ -939,7 +942,7 @@ Wire  0.254 (-3.81 0.508) (-3.302 0.508);
 Wire  0.254 (-2.032 0.762) (-3.302 -0.508) (-3.302 0);
 Wire  0.254 (-3.302 -0.508) (-2.794 -0.508);
 
-Edit VCC+GND.sym;
+Edit 'VCC+GND.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -955,7 +958,7 @@ Text 'GND' R0 (-4.699 -8.255);
 Pin 'VCC' In None Middle R270 Off 0 (0 7.62);
 Pin 'GND' In None Middle R90 Off 0 (0 -7.62);
 
-Edit INDUCTOR.sym;
+Edit 'INDUCTOR.sym';
 Pin '1' Pas None Short R0 Off 1 (-7.62 0);
 Pin '2' Pas None Short R180 Off 1 (7.62 0);
 Layer 94;
@@ -973,7 +976,7 @@ Text '>VALUE' R0 (-4.064 -2.286);
 Layer 94;
 Circle 0.254 (-3.81 0) (-3.6965 0);
 
-Edit SCHOTTKY.sym;
+Edit 'SCHOTTKY.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -993,7 +996,7 @@ Wire  0.254 (1.905 1.27) (1.905 1.016);
 Wire  0.254 (1.27 -1.27) (0.635 -1.27);
 Wire  0.254 (0.635 -1.016) (0.635 -1.27);
 
-Edit NFET+DIODE.sym;
+Edit 'NFET+DIODE.sym';
 Pin 'G' Pas None Short R0 Off 0 (-7.62 -2.54);
 Pin 'D' Pas None Short R270 Off 0 (-2.54 5.08);
 Pin 'S' Pas None Short R90 Off 0 (-2.54 -5.08);
@@ -1037,14 +1040,14 @@ Wire  0.254 (-1.27 0.508) (-1.524 0.127) (-1.016 0.127) (-1.27 0.508);
 Wire  0.1524 (-1.778 0.762) (-2.159 1.143);
 Wire  0.1524 (-0.762 0.762) (-0.381 0.381);
 
-Edit FUSE.sym;
+Edit 'FUSE.sym';
 Pin '1' Pas Dot Short R0 Off 1 (-7.62 0);
 Pin '2' Pas Dot Short R180 Off 1 (5.08 0);
 Layer 94;
 Wire  0.254 (-5.08 0) (-3.556 1.524);
 Wire  0.254 (0 -1.524) (-2.54 1.524);
 Wire  0.254 (0.889 -1.4986) (2.4892 0);
-Wire  0.254 (-3.5992 1.4912) Flat -46.3355 (-3.048 1.7272) -46.4042 (-2.496 1.491);
+Wire  0.254 (-3.5992 1.4912) Flat -46.3378 (-3.048 1.7272) -46.4042 (-2.496 1.491);
 Wire  0.254 (0.4572 -1.778) Flat +63.1642 (0.8964 -1.4764);
 Wire  0.254 (-0.0178 -1.508) Flat +64.9865 (0.4572 -1.7778);
 Layer 95;
@@ -1056,7 +1059,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-5.08 -3.81);
 
-Edit XFORMER.sym;
+Edit 'XFORMER.sym';
 Pin '4' Pas None Short R0 Off 0 (-6.35 2.54);
 Pin '3' Pas None Short R180 Off 0 (6.35 2.54);
 Layer 94;
@@ -1083,7 +1086,7 @@ Layer 94;
 Wire  0.254 (5.08 0.635) (-5.08 0.635);
 Wire  0.254 (-5.08 -0.635) (5.08 -0.635);
 
-Edit ZJUMPER.sym;
+Edit 'ZJUMPER.sym';
 Layer 94;
 Wire  0.254 (-0.635 1.27) (0 1.27) (0.635 1.27) (-0.635 -1.27) \
       (0 -1.27) (0.635 -1.27);
@@ -1097,7 +1100,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>NAME' R0 (1.016 -0.762);
 
-Edit NOR.sym;
+Edit 'NOR.sym';
 Pin 'Y' Out Dot Middle R180 Off 0 (12.7 0);
 Pin 'A' In None Middle R0 Off 1 (-12.7 2.54);
 Pin 'B' In None Middle R0 Off 1 (-12.7 -2.54);
@@ -1107,7 +1110,7 @@ Wire  0.4064 (-1.27 -5.08) (-7.62 -5.08);
 Wire  0.1524 (-7.62 2.54) (-6.096 2.54);
 Wire  0.1524 (-7.62 -2.54) (-6.096 -2.54);
 Wire  0.4064 (-1.2446 -5.0678) Flat +60.1471 (7.5439 0.0507);
-Wire  0.4064 (-1.2446 5.0678) Flat -60.1536 (7.545 -0.0505);
+Wire  0.4064 (-1.2446 5.0678) Flat -60.1534 (7.545 -0.0505);
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1119,7 +1122,7 @@ Text '>VALUE' R0 (-7.62 -7.62);
 Layer 94;
 Wire  0.4064 (-7.62 5.08) -90 (-7.62 -5.08);
 
-Edit ANALOGSW.sym;
+Edit 'ANALOGSW.sym';
 Layer 94;
 Wire  0.254 (5.08 0) (-5.08 5.08) (-5.08 0) (5.08 5.08) \
       (5.08 0);
@@ -1133,7 +1136,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (-3.556 5.842);
 
-Edit INVERTER_SCHMITT.sym;
+Edit 'INVERTER_SCHMITT.sym';
 Pin 'IN' In None Middle R0 Off 0 (-10.16 0);
 Pin 'OUT' Out Dot Middle R180 Off 0 (10.16 0);
 Layer 94;
@@ -1152,7 +1155,7 @@ Wire  0.254 (-2.286 1.27) (-3.302 1.27) (-3.81 1.27);
 Wire  0.254 (-2.794 -1.27) (-3.302 1.27);
 Wire  0.254 (-2.286 1.27) (-1.778 -1.27);
 
-Edit CELL.sym;
+Edit 'CELL.sym';
 Layer 94;
 Wire  0.254 (-7.62 2.54) (7.62 2.54);
 Wire  0.254 (-2.54 0) (2.54 0);
@@ -1161,7 +1164,7 @@ Wire  0.254 (-5.715 4.445) (-6.985 4.445);
 Pin 'B+' Pas None Middle R270 Pad 0 (0 7.62);
 Pin 'B-' Pas None Middle R90 Pad 0 (0 -5.08);
 
-Edit NAND.sym;
+Edit 'NAND.sym';
 Pin 'A' In None Middle R0 Pad 1 (-12.7 2.54);
 Pin 'B' In None Middle R0 Pad 1 (-12.7 -2.54);
 Pin 'Y' Out Dot Middle R180 Pad 0 (12.7 0);
@@ -1179,11 +1182,11 @@ Layer 94;
 Wire  0.4064 (2.54 5.08) (-7.62 5.08);
 Wire  0.4064 (2.54 5.08) -180 (2.54 -5.08);
 
-Edit LT1767.sym;
+Edit 'LT1767.sym';
 Pin 'FB' Pas None Middle R180 Both 0 (12.7 -2.54);
 Pin 'VIN' Pas None Middle R0 Both 0 (-12.7 5.08);
 Pin 'VC' Pas None Middle R180 Both 0 (12.7 -7.62);
-Pin 'SHDN\' In None Middle R0 Both 0 (-12.7 -2.54);
+Pin '!SHDN' In None Middle R0 Both 0 (-12.7 -2.54);
 Pin 'GND' Pwr None Middle R0 Both 0 (-12.7 -10.16);
 Pin 'SYNC' In None Middle R0 Both 0 (-12.7 -7.62);
 Pin 'BOOST' Pas None Middle R180 Both 0 (12.7 10.16);
@@ -1202,7 +1205,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -15.24);
 
-Edit LTC1442.sym;
+Edit 'LTC1442.sym';
 Pin 'V-' Pwr None Short R90 Both 0 (-5.08 -17.78);
 Pin 'A' Out None Short R180 Both 0 (7.62 10.16);
 Pin 'IN-' Pas None Short R0 Both 0 (-10.16 2.54);
@@ -1223,7 +1226,7 @@ Pin 'V+' Pwr None Short R270 Both 0 (-5.08 17.78);
 Pin 'HYST' Pas None Short R0 Both 0 (-10.16 -2.54);
 Pin 'REF' Pas None Short R0 Both 0 (-10.16 -7.62);
 
-Edit OPAMP.sym;
+Edit 'OPAMP.sym';
 Pin '-IN' In None Short R0 Pad 0 (-7.62 -2.54);
 Pin '+IN' In None Short R0 Pad 0 (-7.62 2.54);
 Pin 'OUT' Out None Short R180 Pad 0 (7.62 0);
@@ -1241,10 +1244,10 @@ Wire  0.1524 (-3.81 3.175) (-3.81 1.905);
 Wire  0.1524 (-4.445 2.54) (-3.175 2.54);
 Wire  0.1524 (-4.445 -2.54) (-3.175 -2.54);
 
-Edit ADJ_REG+SHDN+BYP.sym;
+Edit 'ADJ_REG+SHDN+BYP.sym';
 Pin 'IN' In None Short R0 Both 0 (-10.16 2.54);
 Pin 'OUT' Out None Short R180 Both 0 (10.16 2.54);
-Pin 'SHDN\' In None Short R0 Both 0 (-10.16 -2.54);
+Pin '!SHDN' In None Short R0 Both 0 (-10.16 -2.54);
 Pin 'SENSE' In None Short R180 Both 0 (10.16 0);
 Pin 'GND' Pwr None Short R90 Pad 0 (0 -12.7);
 Layer 95;
@@ -1264,7 +1267,7 @@ Change Ratio 8;
 Text '>VALUE' R0 (2.54 6.35);
 Pin 'BYP' In None Short R180 Both 0 (10.16 -5.08);
 
-Edit LTC1734.sym;
+Edit 'LTC1734.sym';
 Pin 'BAT' Pas None Middle R180 Both 0 (12.7 -2.54);
 Pin 'VIN' Pas None Middle R0 Both 0 (-12.7 5.08);
 Pin 'PROG' Pas None Middle R180 Both 0 (12.7 -7.62);
@@ -1285,7 +1288,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -15.24);
 
-Edit VDD+VEE.sym;
+Edit 'VDD+VEE.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1301,7 +1304,7 @@ Text 'VEE' R90 (3.175 -5.969);
 Pin 'VDD' Pwr None Middle R270 Pad 0 (0 7.62);
 Pin 'VEE' Pwr None Middle R90 Pad 0 (0 -7.62);
 
-Edit GND.sym;
+Edit 'GND.sym';
 Layer 95;
 Change Size 1.016;
 Change Ratio 8;
@@ -1312,11 +1315,11 @@ Change Size 1.016;
 Change Ratio 8;
 Text 'GND' R90 (1.27 -6.35);
 
-Edit LT3401.sym;
+Edit 'LT3401.sym';
 Pin 'FB' Pas None Middle R180 Both 0 (12.7 0);
 Pin 'VIN' Pas None Middle R0 Both 0 (-12.7 7.62);
 Pin 'VC' Pas None Middle R180 Both 0 (12.7 -2.54);
-Pin 'SHDN\' In None Middle R0 Both 0 (-12.7 2.54);
+Pin '!SHDN' In None Middle R0 Both 0 (-12.7 2.54);
 Pin 'GND' Pwr None Middle R0 Both 0 (-12.7 -10.16);
 Pin 'RT' Pas None Middle R0 Both 0 (-12.7 -2.54);
 Pin 'VSW' Pas None Middle R180 Both 0 (12.7 10.16);
@@ -1337,7 +1340,7 @@ Text '>VALUE' R0 (-7.62 -15.24);
 Pin 'MODE' In None Middle R0 Both 0 (-12.7 -5.08);
 Pin 'PGOOD' Out None Middle R180 Both 0 (12.7 -7.62);
 
-Edit RESET_DEVICE.sym;
+Edit 'RESET_DEVICE.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1349,7 +1352,7 @@ Pin 'VIN' Pas None Short R270 Off 0 (0 5.08);
 Pin 'VSS' Pas None Short R90 Off 0 (0 -5.08);
 Pin 'VO' Out Dot Short R180 Off 0 (5.08 0);
 
-Edit EXOR.sym;
+Edit 'EXOR.sym';
 Pin 'A' In None Middle R0 Pad 1 (-12.7 2.54);
 Pin 'B' In None Middle R0 Pad 1 (-12.7 -2.54);
 Pin 'Y' Out None Middle R180 Pad 0 (12.7 0);
@@ -1359,7 +1362,7 @@ Wire  0.4064 (-1.27 -5.08) (-6.35 -5.08);
 Wire  0.1524 (-7.62 2.54) (-6.35 2.54);
 Wire  0.1524 (-7.62 -2.54) (-6.35 -2.54);
 Wire  0.4064 (-1.2446 -5.0678) Flat +60.1471 (7.5439 0.0507);
-Wire  0.4064 (-1.2446 5.0678) Flat -60.1508 (7.5445 -0.0505);
+Wire  0.4064 (-1.2446 5.0678) Flat -60.1505 (7.5445 -0.0505);
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1372,7 +1375,7 @@ Layer 94;
 Wire  0.4064 (-6.35 5.08) -77.3196 (-6.35 -5.08);
 Wire  0.4064 (-7.62 5.08) Flat -77.3196 (-7.62 -5.08);
 
-Edit IR2117.sym;
+Edit 'IR2117.sym';
 Pin 'VCC' Pwr None Short R0 Both 0 (-10.16 5.08);
 Pin 'VB' Pas None Short R180 Both 0 (10.16 5.08);
 Pin 'IN' In None Short R0 Both 0 (-10.16 2.54);
@@ -1398,7 +1401,7 @@ Layer 94;
 Wire  0.254 (-11.43 -1.27) (-10.16 -2.54) (-8.89 -3.81);
 Wire  0.254 (-8.89 -1.27) (-10.16 -2.54) (-11.43 -3.81);
 
-Edit BUFFER_SINGLE_TRISTATE.sym;
+Edit 'BUFFER_SINGLE_TRISTATE.sym';
 Pin 'IN' In None Middle R0 Pad 0 (-10.16 0);
 Pin 'OUT' Out None Middle R180 Pad 0 (10.16 0);
 Layer 94;
@@ -1413,7 +1416,7 @@ Change Ratio 8;
 Text '>VALUE' R0 (2.54 -5.08);
 Pin 'EN' In None Middle R90 Off 0 (0 -7.62);
 
-Edit CAP-NP.sym;
+Edit 'CAP-NP.sym';
 Pin '1' Pas None Short R270 Off 1 (0 2.54);
 Pin '2' Pas None Short R90 Off 1 (0 -5.08);
 Layer 95;
@@ -1432,11 +1435,11 @@ Layer 94;
 Wire  0.1524 (0 0) (0 -0.508);
 Wire  0.1524 (0 -2.54) (0 -2.032);
 
-Edit LT1310.sym;
+Edit 'LT1310.sym';
 Pin 'FB' Pas None Middle R180 Both 0 (12.7 0);
 Pin 'VIN' Pas None Middle R0 Both 0 (-12.7 10.16);
 Pin 'CT' Pas None Middle R180 Both 0 (12.7 -10.16);
-Pin 'SHDN\' In None Middle R0 Both 0 (-12.7 5.08);
+Pin '!SHDN' In None Middle R0 Both 0 (-12.7 5.08);
 Pin 'GND' Pwr None Middle R0 Both 0 (-12.7 -10.16);
 Pin 'SYNC' In None Middle R0 Both 0 (-12.7 0);
 Pin 'VSW' Pas None Middle R180 Both 0 (12.7 10.16);
@@ -1456,7 +1459,7 @@ Text '>VALUE' R0 (-7.62 -15.24);
 Pin 'PLL' Pas None Middle R0 Both 0 (-12.7 -5.08);
 Pin 'VC' Pas None Middle R180 Both 0 (12.7 -5.08);
 
-Edit CONN_PIN.sym;
+Edit 'CONN_PIN.sym';
 Pin 'P' Pas None Short R180 Off 0 (5.08 0);
 Layer 94;
 Wire  0.1524 (1.27 0) (2.54 0);
@@ -1467,7 +1470,7 @@ Text '>NAME' R180 (-0.508 0.762);
 Layer 94;
 Wire  0.6096 (0 0) (1.27 0);
 
-Edit CONN_RECEPTACLE.sym;
+Edit 'CONN_RECEPTACLE.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1476,7 +1479,7 @@ Pin 'R' Pas None Middle R0 Pad 1 (-5.08 0);
 Layer 94;
 Wire  0.254 (1.524 0.508) (0 0.508) (0 -0.508) (1.524 -0.508);
 
-Edit CONN_PIN_8.sym;
+Edit 'CONN_PIN_8.sym';
 Pin '4' Pas None Short R180 Off 0 (5.08 0);
 Layer 94;
 Wire  0.1524 (1.27 0) (2.54 0);
@@ -1520,7 +1523,7 @@ Text '>VALUE' R0 (0.508 -13.462);
 Layer 94;
 Wire  0.6096 (0 -10.16) (1.27 -10.16);
 
-Edit CONN_RECEPTACLE_8.sym;
+Edit 'CONN_RECEPTACLE_8.sym';
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -1554,7 +1557,7 @@ Pin '8' Pas None Middle R0 Pad 1 (0 -10.16);
 Layer 94;
 Wire  0.254 (6.604 -9.652) (5.08 -9.652) (5.08 -10.668) (6.604 -10.668);
 
-Edit JUMPPOINT.sym;
+Edit 'JUMPPOINT.sym';
 Pin 'TP' Pas None Point R90 Off 0 (0 0);
 Layer 94;
 Wire  0.254 (-1.27 1.27) (1.27 1.27) (1.27 -1.27) (-1.27 -1.27) \
@@ -1562,7 +1565,7 @@ Wire  0.254 (-1.27 1.27) (1.27 1.27) (1.27 -1.27) (-1.27 -1.27) \
 Layer 94;
 Circle 0.254 (0 0) (1.0472 0);
 
-Edit HT9170.sym;
+Edit 'HT9170.sym';
 Pin 'EST' Pas None Middle R90 Both 0 (10.16 -27.94);
 Pin 'VDD' Pas None Middle R0 Both 0 (-17.78 22.86);
 Pin 'RT' Pas None Middle R90 Both 0 (0 -27.94);
@@ -1595,7 +1598,7 @@ Pin 'D0' I/O None Middle R180 Both 0 (17.78 10.16);
 Pin 'DV' I/O None Middle R180 Both 0 (17.78 15.24);
 Pin 'INH.A-D' I/O None Middle R0 Both 0 (-17.78 -20.32);
 
-Edit PINHEADER-2X5.sym;
+Edit 'PINHEADER-2X5.sym';
 Pin '1' Pas Dot Short R0 Pad 0 (-3.81 5.08);
 Pin '2' Pas Dot Short R180 Pad 0 (3.81 5.08);
 Pin '3' Pas Dot Short R0 Pad 0 (-3.81 2.54);
@@ -1618,7 +1621,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -10.16);
 
-Edit AMUX_2.sym;
+Edit 'AMUX_2.sym';
 Pin 'A' Pas None Middle R180 Off 0 (7.62 6.35);
 Layer 95;
 Change Size 1.778;
@@ -1656,7 +1659,7 @@ Wire  0.254 (-1.905 3.81) (0.635 3.81);
 Wire  0.254 (-1.27 -3.81) -180 (1.27 -3.81);
 Wire  0.254 (-1.27 -3.81) (1.27 -3.81);
 
-Edit VDD+VEE+GND.sym;
+Edit 'VDD+VEE+GND.sym';
 Layer 95;
 Change Size 1.778;
 Change Ratio 8;
@@ -1677,10 +1680,10 @@ Change Ratio 8;
 Text 'GND' R90 (-2.413 -6.096);
 Pin 'GND' Pwr None Middle R90 Off 0 (-5.08 -7.62);
 
-Edit IR2118.sym;
+Edit 'IR2118.sym';
 Pin 'VCC' Pwr None Short R0 Both 0 (-10.16 5.08);
 Pin 'VB' Pas None Short R180 Both 0 (10.16 5.08);
-Pin 'IN\' In Dot Short R0 Both 0 (-10.16 2.54);
+Pin '!IN' In Dot Short R0 Both 0 (-10.16 2.54);
 Pin 'HO' Out None Short R180 Both 0 (10.16 2.54);
 Pin 'COM' Pwr None Short R0 Both 0 (-10.16 0);
 Pin 'VS' Pas None Short R180 Both 0 (10.16 0);
@@ -1703,7 +1706,7 @@ Layer 94;
 Wire  0.254 (-11.43 -1.27) (-10.16 -2.54) (-8.89 -3.81);
 Wire  0.254 (-8.89 -1.27) (-10.16 -2.54) (-11.43 -3.81);
 
-Edit SW_SPST.sym;
+Edit 'SW_SPST.sym';
 Layer 94;
 Wire  0.254 (-2.54 0.381) (4.445 2.921);
 Pin '1' Pas Dot Middle R0 Off 1 (-7.62 0);
@@ -1713,7 +1716,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>NAME' R0 (-3.81 -3.81);
 
-Edit SW_MOMENTARY.sym;
+Edit 'SW_MOMENTARY.sym';
 Pin '1' Pas Dot Short R0 Off 1 (-2.54 0);
 Pin '2' Pas Dot Short R180 Off 1 (5.08 0);
 Layer 95;
@@ -1725,12 +1728,12 @@ Wire  0.254 (-1.27 1.905) (3.81 1.905);
 Layer 94;
 Rect R0 (0 1.905) (2.54 3.81);
 
-Edit D_FF.sym;
+Edit 'D_FF.sym';
 Pin 'S' In Dot Short R270 Pin 0 (0 10.16);
 Pin 'R' In Dot Short R90 Pin 0 (0 -7.62);
 Pin 'D' In None Short R0 Pin 0 (-7.62 5.08);
 Pin 'Q' Out None Short R180 Pin 0 (10.16 5.08);
-Pin 'Q\' Out Dot Short R180 Pin 0 (10.16 -2.54);
+Pin '!Q' Out Dot Short R180 Pin 0 (10.16 -2.54);
 Pin 'C' In Clk Short R0 Off 0 (-7.62 -2.54);
 Layer 94;
 Wire  0.254 (-5.08 7.62) (7.62 7.62) (7.62 -5.08) (-5.08 -5.08) \
@@ -1744,7 +1747,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (3.81 -7.62);
 
-Edit PINHEADER-1X2.sym;
+Edit 'PINHEADER-1X2.sym';
 Pin '1' Pas Dot Short R0 Off 0 (-2.54 0);
 Pin '2' Pas Dot Short R180 Off 0 (5.08 0);
 Layer 94;
@@ -1762,7 +1765,7 @@ Layer 94;
 Wire  0.127 (0 1.016) (-2.032 1.016) (-2.032 -1.016) (0 -1.016) \
       (0 1.016);
 
-Edit PNP.sym;
+Edit 'PNP.sym';
 Pin 'B' Pas None Short R0 Off 0 (-2.54 0);
 Pin 'E' Pas None Short R270 Off 0 (2.54 5.08);
 Pin 'C' Pas None Short R90 Off 0 (2.54 -5.08);
@@ -1781,7 +1784,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-10.16 5.08);
 
-Edit 74160.sym;
+Edit '74160.sym';
 Pin 'CLR' In Dot Middle R0 Both 0 (-12.7 -12.7);
 Pin 'CLK' In Clk Middle R0 Both 0 (-12.7 -2.54);
 Pin 'A' In None Middle R0 Both 0 (-12.7 10.16);
@@ -1808,7 +1811,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -17.78);
 
-Edit JUMPER.sym;
+Edit 'JUMPER.sym';
 Pin '2' Pas None Point R180 Off 1 (2.54 0);
 Pin '1' Pas None Point R0 Off 1 (-2.54 0);
 Layer 94;
@@ -1816,7 +1819,7 @@ Wire  0.254 (1.27 0) (2.54 0);
 Wire  0.254 (-1.27 0) (-2.54 0);
 Wire  0.254 (-1.27 0) -180 (1.27 0);
 
-Edit PAD_SQUARE.sym;
+Edit 'PAD_SQUARE.sym';
 Pin 'PAD' Pas None Short R180 Off 0 (0 0);
 Layer 95;
 Change Size 1.778;
@@ -1830,7 +1833,7 @@ Layer 94;
 Wire  0.254 (-3.175 0.635) (-1.905 0.635) (-1.905 -0.635) (-3.175 -0.635) \
       (-3.175 0.635);
 
-Edit DB25-F.sym;
+Edit 'DB25-F.sym';
 Pin '1' Pas None Middle R0 Pad 0 (-7.62 15.24);
 Pin '14' Pas None Middle R180 Pad 0 (7.62 15.24);
 Pin '2' Pas None Middle R0 Pad 0 (-7.62 12.7);
@@ -1892,14 +1895,14 @@ Wire  0.254 (1.524 -13.589) Flat +180 (1.524 -11.811);
 Wire  0.254 (-1.651 -14.351) Flat +180 (-1.651 -16.129);
 Wire  0.4064 (-4.064 17.7262) Flat -102.324 (-2.5226 18.967);
 Wire  0.4064 (-2.5226 18.9668) (3.0654 17.7444);
-Wire  0.4064 (3.0654 17.7445) Flat -77.6504 (4.0642 16.5038);
+Wire  0.4064 (3.0654 17.7445) Flat -77.654 (4.0642 16.5038);
 Wire  0.4064 (4.064 -16.5038) (4.064 16.5038);
 Wire  0.4064 (3.0654 -17.7444) +77.6565 (4.064 -16.5038);
 Wire  0.4064 (-4.064 -17.7262) (-4.064 17.7262);
 Wire  0.4064 (-2.5226 -18.9668) (3.0654 -17.7444);
 Wire  0.4064 (-4.064 -17.7262) Flat +102.339 (-2.5226 -18.9669);
 
-Edit DB25-M.sym;
+Edit 'DB25-M.sym';
 Pin '1' Pas None Middle R180 Pad 0 (7.62 12.7);
 Pin '14' Pas None Middle R0 Pad 0 (-7.62 12.7);
 Pin '2' Pas None Middle R180 Pad 0 (7.62 10.16);
@@ -1959,7 +1962,7 @@ Wire  0.6096 (-2.54 -12.7) (-1.27 -12.7);
 Wire  0.6096 (1.27 -10.16) (2.54 -10.16);
 Wire  0.6096 (-2.54 -15.24) (-1.27 -15.24);
 Wire  0.6096 (1.27 -15.24) (2.54 -15.24);
-Wire  0.4064 (2.5226 -20.8718) Flat +102.317 (4.0637 -19.6312);
+Wire  0.4064 (2.5226 -20.8718) Flat +102.321 (4.0637 -19.6312);
 Wire  0.4064 (2.5226 -20.8718) (-3.0654 -19.6494);
 Wire  0.4064 (-4.064 -18.4088) +77.6565 (-3.0654 -19.6494);
 Wire  0.4064 (-4.064 13.3288) (-4.064 -18.4088);
@@ -1968,7 +1971,7 @@ Wire  0.4064 (4.064 14.5512) (4.064 -19.6312);
 Wire  0.4064 (2.5226 15.7918) (-3.0654 14.5694);
 Wire  0.4064 (2.5226 15.7919) Flat -102.339 (4.064 14.5512);
 
-Edit CONN_CAN.sym;
+Edit 'CONN_CAN.sym';
 Pin 'CAN_H2' Pas None Short R180 Off 0 (5.08 0);
 Layer 94;
 Wire  0.1524 (1.27 0) (2.54 0);
@@ -2033,7 +2036,7 @@ Wire  0.254 (-0.762 2.54) (-1.016 2.54) (-1.016 0) (-0.762 0);
 Wire  0.254 (-0.762 -2.54) (-1.016 -2.54) (-1.016 -5.08) (-0.762 -5.08);
 Wire  0.254 (-0.762 -7.62) (-1.016 -7.62) (-1.016 -10.16) (-0.762 -10.16);
 
-Edit NODE-2_DEBUG.sym;
+Edit 'NODE-2_DEBUG.sym';
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -2099,7 +2102,7 @@ Change Size 0.762;
 Change Ratio 8;
 Text 'Tx' R0 (7.112 -10.541);
 
-Edit INDUCTOR_VARIABLE.sym;
+Edit 'INDUCTOR_VARIABLE.sym';
 Pin '1' Pas None Short R0 Off 1 (-7.62 0);
 Pin '2' Pas None Short R180 Off 1 (7.62 0);
 Layer 94;
@@ -2120,7 +2123,7 @@ Layer 94;
 Wire  0.254 (4.064 -0.762) (-5.588 2.54) (-5.08 1.778);
 Wire  0.254 (-5.588 2.54) (-4.826 2.794);
 
-Edit EMI_FILTER.sym;
+Edit 'EMI_FILTER.sym';
 Pin '1' Pas None Short R0 Off 1 (-7.62 0);
 Pin '2' Pas None Short R180 Off 1 (7.62 0);
 Layer 94;
@@ -2141,7 +2144,7 @@ Layer 94;
 Wire  0.254 (5.08 -1.27) (-5.08 -1.27);
 Pin 'COMMON' Pas None Short R90 Off 0 (0 -3.81);
 
-Edit MONOLITHIC_CRYSTAL_FILTER.sym;
+Edit 'MONOLITHIC_CRYSTAL_FILTER.sym';
 Pin 'COMMON' Pas None Short R90 Off 2 (0 -3.81);
 Pin 'IN2' Pas None Short R180 Off 1 (6.35 0);
 Pin 'IN1' Pas None Short R0 Off 1 (-6.35 0);
@@ -2162,7 +2165,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text 'MCF' R0 (-1.905 -0.635);
 
-Edit CERAMIC_FILTER.sym;
+Edit 'CERAMIC_FILTER.sym';
 Pin 'COMMON' Pas None Short R90 Off 0 (0 -3.81);
 Pin 'IN2' Pas None Short R180 Off 0 (6.35 0);
 Pin 'IN1' Pas None Short R0 Off 0 (-6.35 0);
@@ -2184,7 +2187,7 @@ Text 'CF' R0 (-1.27 -0.635);
 Layer 94;
 Circle 0.508 (-3.048 0.508) (-2.9565 0.508);
 
-Edit MC13135.sym;
+Edit 'MC13135.sym';
 Pin 'LO1-B' Pas None Short R0 Off 0 (-20.32 25.4);
 Pin 'LO1-E' Pas None Short R0 Off 0 (-20.32 20.32);
 Pin 'LO2-E' Pas None Short R0 Off 0 (-20.32 5.08);
@@ -2384,7 +2387,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text 'MC13135' R0 (-6.985 28.575);
 
-Edit NPN.sym;
+Edit 'NPN.sym';
 Pin 'B' Pas None Short R0 Off 1 (-2.54 0);
 Pin 'E' Pas None Short R90 Off 3 (2.54 -5.08);
 Pin 'C' Pas None Short R270 Off 2 (2.54 5.08);
@@ -2406,7 +2409,7 @@ Wire  0.1524 (1.54 -2.04) (0.308 -1.424);
 Wire  0.254 (1.524 -2.413) (2.286 -2.413) (1.778 -1.778) (1.524 -2.286) \
       (1.905 -2.286) (1.778 -2.032);
 
-Edit R-US.sym;
+Edit 'R-US.sym';
 Pin '2' Pas None Short R180 Off 1 (5.08 0);
 Layer 95;
 Change Size 1.778;
@@ -2422,7 +2425,7 @@ Wire  0.2032 (-2.54 0) (-2.159 1.016) (-1.524 -1.016) (-0.889 1.016) \
       (-0.254 -1.016) (0.381 1.016) (1.016 -1.016) (1.651 1.016) \
       (2.286 -1.016) (2.54 0);
 
-Edit MC145170.sym;
+Edit 'MC145170.sym';
 Pin 'OSC_IN' Pas None Short R0 Off 0 (-15.24 20.32);
 Pin 'OSC_OUT' Pas None Short R0 Off 0 (-15.24 15.24);
 Pin 'DIN' In None Short R0 Off 0 (-15.24 0);
@@ -2437,7 +2440,7 @@ Change Ratio 8;
 Text '>VALUE' R0 (-11.43 -26.035);
 Pin 'CLK' In None Short R0 Off 0 (-15.24 -10.16);
 Pin 'DOUT' Out None Short R0 Off 0 (-15.24 -15.24);
-Pin 'ENB\' In Dot Short R0 Off 0 (-15.24 -5.08);
+Pin '!ENB' In Dot Short R0 Off 0 (-15.24 -5.08);
 Pin 'RFIN' Pas None Short R0 Off 0 (-15.24 5.08);
 Pin 'F_R' Pas None Short R180 Off 0 (15.24 -15.24);
 Pin 'F_N' Pas None Short R180 Off 0 (15.24 -10.16);
@@ -2625,7 +2628,7 @@ Text 'N' R0 (10.795 -11.303);
 Layer 94;
 Wire  0.1524 (-2.032 -3.556) (-6.731 -3.556);
 
-Edit INVERTER.sym;
+Edit 'INVERTER.sym';
 Pin 'IN' In None Middle R0 Off 0 (-10.16 0);
 Pin 'OUT' Out Dot Middle R180 Off 0 (10.16 0);
 Layer 94;
@@ -2639,7 +2642,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (2.54 -5.08);
 
-Edit QUAD_COIL.sym;
+Edit 'QUAD_COIL.sym';
 Pin '1' Pas None Short R270 Off 1 (0 8.89);
 Pin '2' Pas None Short R90 Off 1 (0 -8.89);
 Layer 94;
@@ -2676,7 +2679,7 @@ Change Style Continuous;
 Wire  0.1524 (-2.54 0.762) (-2.54 6.35) (1.27 6.35) (1.27 5.08);
 Wire  0.1524 (-2.54 -0.762) (-2.54 -6.35) (1.27 -6.35) (1.27 -5.08);
 
-Edit CONN_COAX_MALE_4GROUNDS.sym;
+Edit 'CONN_COAX_MALE_4GROUNDS.sym';
 Layer 94;
 Circle 0.254 (0 -1.27) (5.08 -1.27);
 Layer 94;
@@ -2692,7 +2695,7 @@ Wire  0.1524 (2.54 -7.62) (2.54 -5.715);
 Wire  0.1524 (-5.08 -7.62) (-5.08 -1.905);
 Wire  0.1524 (5.08 -7.62) (5.08 -1.905);
 
-Edit INDUCTOR_BEAD.sym;
+Edit 'INDUCTOR_BEAD.sym';
 Pin '1' Pas None Short R0 Off 1 (-5.08 0);
 Pin '2' Pas None Short R180 Off 1 (2.54 0);
 Layer 95;
@@ -2705,14 +2708,14 @@ Change Ratio 8;
 Text '>VALUE' R0 (-4.318 -4.064);
 Layer 94;
 Wire  0.1524 (-1.27 -0.254) Flat -36.8699 (-0.254 0);
-Wire  0.1524 (-1.27 -0.254) Flat -46.3986 (-0.762 -1.016);
-Wire  0.1524 (-1.778 -1.016) Flat -46.3986 (-1.27 -0.254);
+Wire  0.1524 (-1.27 -0.254) Flat -46.3965 (-0.762 -1.016);
+Wire  0.1524 (-1.778 -1.016) Flat -46.3965 (-1.27 -0.254);
 Wire  0.1524 (-1.778 -1.016) Flat +208.072 (-0.762 -1.016);
 Wire  0.1524 (-2.54 0) (-2.286 0);
 Wire  0.1524 (-0.254 0) (0 0);
 Wire  0.1524 (-2.286 0) Flat -36.8699 (-1.27 -0.254);
 
-Edit AT76C712.sym;
+Edit 'AT76C712.sym';
 Pin 'PE3/INT1' I/O None Short R0 Both 0 (-35.56 12.7);
 Pin 'PE2/INT0' I/O None Short R0 Both 0 (-35.56 10.16);
 Pin 'PE1/TX1' I/O None Short R0 Both 0 (-35.56 7.62);
@@ -2733,7 +2736,7 @@ Pin 'CVDD2' Pwr None Short R90 Both 0 (-2.54 -35.56);
 Pin 'PB7/SCK' In None Short R90 Both 0 (0 -35.56);
 Pin 'PB6/MISO' I/O None Short R90 Both 0 (2.54 -35.56);
 Pin 'PB5/MOSI' I/O None Short R90 Both 0 (5.08 -35.56);
-Pin 'PB4/SS\' I/O None Short R90 Both 0 (7.62 -35.56);
+Pin 'PB4/!SS' I/O None Short R90 Both 0 (7.62 -35.56);
 Pin 'PB3/IC' I/O None Short R90 Both 0 (10.16 -35.56);
 Pin 'PD5/DTR' I/O None Short R180 Both 0 (35.56 -10.16);
 Pin 'PD4/DSR' I/O None Short R180 Both 0 (35.56 -7.62);
@@ -2774,7 +2777,7 @@ Change Ratio 8;
 Text '>VALUE' R0 (-5.08 -7.62);
 Pin 'CVDD1' Pwr None Short R0 Both 0 (-35.56 15.24);
 Pin 'XOUT' Pas None Short R0 Both 0 (-35.56 -15.24);
-Pin 'RST\' In None Short R0 Both 0 (-35.56 17.78);
+Pin '!RST' In None Short R0 Both 0 (-35.56 17.78);
 Pin 'PGND1' Pwr None Short R0 Both 0 (-35.56 20.32);
 Pin 'AVDD' Pwr None Short R0 Both 0 (-35.56 -17.78);
 Pin 'USB_ATTACH' Out None Short R270 Both 0 (12.7 35.56);
@@ -2793,7 +2796,7 @@ Pin 'PVDD3' Pwr None Short R90 Both 0 (15.24 -35.56);
 Pin 'PGND2' Pwr None Short R90 Both 0 (17.78 -35.56);
 Pin 'VDD_D' Pwr None Short R180 Both 0 (35.56 -17.78);
 
-Edit HIROSE_51P_RECEPTACLE.sym;
+Edit 'HIROSE_51P_RECEPTACLE.sym';
 Pin '18' Pas None Short R0 Pad 0 (-10.16 10.16);
 Pin '17' Pas None Short R180 Pad 0 (8.89 11.43);
 Pin '20' Pas None Short R0 Pad 0 (-10.16 7.62);
@@ -3066,7 +3069,7 @@ Text '51' R0 (2.286 -32.258);
 Pin 'A' Pas None Short R270 Pad 0 (6.35 36.83);
 Pin 'B' Pas None Short R90 Pad 0 (6.35 -36.83);
 
-Edit MG5001-FOOTPRINT.sym;
+Edit 'MG5001-FOOTPRINT.sym';
 Pin '18' Pas None Short R0 Pad 0 (-10.16 10.16);
 Pin '17' Pas None Short R180 Pad 0 (8.89 11.43);
 Pin '20' Pas None Short R0 Pad 0 (-10.16 7.62);
@@ -3151,7 +3154,7 @@ Text 'A5' R0 (-6.604 -23.368);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'CS2\' R0 (-6.604 -20.828);
+Text 'CS2\\' R0 (-6.604 -20.828);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3163,7 +3166,7 @@ Text 'GP3' R0 (-6.604 -15.748);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'ICE\' R0 (-6.604 -13.208);
+Text 'ICE\\' R0 (-6.604 -13.208);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3247,11 +3250,11 @@ Text 'A4' MR0 (4.826 -24.638);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'OE\' MR0 (4.826 -22.098);
+Text 'OE\\' MR0 (4.826 -22.098);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'WE0\' MR0 (4.826 -19.558);
+Text 'WE0\\' MR0 (4.826 -19.558);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3263,7 +3266,7 @@ Text 'GP2' MR0 (4.826 -14.478);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'TRST\' MR0 (4.826 -11.938);
+Text 'TRST\\' MR0 (4.826 -11.938);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3283,11 +3286,11 @@ Text 'Gnd' MR0 (4.826 -6.858);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'RST\' MR0 (4.826 0.762);
+Text 'RST\\' MR0 (4.826 0.762);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'SRST\' MR0 (4.826 3.302);
+Text 'SRST\\' MR0 (4.826 3.302);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3319,7 +3322,7 @@ Text 'Wait' MR0 (4.826 21.082);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
-Text 'INT2\' MR0 (4.826 23.622);
+Text 'INT2\\' MR0 (4.826 23.622);
 Layer 95;
 Change Size 1.27;
 Change Ratio 8;
@@ -3339,7 +3342,7 @@ Text 'VBat' MR0 (4.826 -32.258);
 Pin 'A' Pas None Short R270 Pad 0 (6.35 36.83);
 Pin 'B' Pas None Short R90 Pad 0 (6.35 -36.83);
 
-Edit REGULATOR-LINEAR-3TERM.sym;
+Edit 'REGULATOR-LINEAR-3TERM.sym';
 Pin 'VI' In None Short R0 Both 0 (-10.16 0);
 Pin 'GND' Pas None Short R90 Pad 0 (0 -7.62);
 Pin 'VO' Pas None Short R180 Both 0 (10.16 0);
@@ -3359,7 +3362,7 @@ Change Size 1.524;
 Change Ratio 8;
 Text 'GND/Adj' R0 (-4.572 -4.318);
 
-Edit REGULATOR-LINERAR-3TERM+TAB=GND.sym;
+Edit 'REGULATOR-LINERAR-3TERM+TAB=GND.sym';
 Pin 'VI' In None Short R0 Both 0 (-10.16 0);
 Pin 'GND' Pas None Short R90 Pad 0 (-2.54 -7.62);
 Pin 'VO' Pas None Short R180 Both 0 (10.16 0);
@@ -3384,7 +3387,7 @@ Change Size 1.524;
 Change Ratio 8;
 Text 'TAB' R0 (2.794 -4.318);
 
-Edit REGULATOR-LINEAR-3TERM+TAB=VOUT.sym;
+Edit 'REGULATOR-LINEAR-3TERM+TAB=VOUT.sym';
 Pin 'VI' In None Short R0 Both 0 (-10.16 0);
 Pin 'GND' Pas None Short R90 Pad 0 (0 -7.62);
 Pin 'VO' Pas None Short R180 Both 0 (10.16 0);
@@ -3409,10 +3412,10 @@ Change Size 1.524;
 Change Ratio 8;
 Text 'TAB' R0 (2.794 -3.556);
 
-Edit LT1616.sym;
+Edit 'LT1616.sym';
 Pin 'FB' Pas None Middle R180 Both 0 (12.7 -2.54);
 Pin 'VIN' Pas None Middle R0 Both 0 (-12.7 5.08);
-Pin 'SHDN\' In None Middle R0 Both 0 (-12.7 -5.08);
+Pin '!SHDN' In None Middle R0 Both 0 (-12.7 -5.08);
 Pin 'GND' Pwr None Middle R0 Both 0 (-12.7 -10.16);
 Pin 'BOOST' Pas None Middle R180 Both 0 (12.7 10.16);
 Pin 'VSW' Pas None Middle R180 Both 0 (12.7 2.54);
@@ -3430,7 +3433,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -15.24);
 
-Edit BAR_SUP.sym;
+Edit 'BAR_SUP.sym';
 Pin 'BAR_SUP' Sup None Short R90 Off 0 (0 -2.54);
 Layer 94;
 Wire  0.4064 (1.27 0) (-1.27 0);
@@ -3439,7 +3442,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R180 (2.54 2.54);
 
-Edit EUROBLOCK-X3.sym;
+Edit 'EUROBLOCK-X3.sym';
 Pin '1' Pas None Short R180 Pad 0 (3.81 2.54);
 Pin '3' Pas None Short R180 Pad 0 (3.81 -2.54);
 Layer 94;
@@ -3475,7 +3478,7 @@ Rect R0 (-3.81 -5.08) (-2.54 -3.556);
 Layer 94;
 Rect R0 (-3.81 3.556) (-2.54 5.08);
 
-Edit MAX3232.sym;
+Edit 'MAX3232.sym';
 Pin 'C1+' Pas None Short R0 Both 0 (-12.7 15.24);
 Pin 'C1-' Pas None Short R0 Both 0 (-12.7 10.16);
 Pin 'C2+' Pas None Short R0 Both 0 (-12.7 5.08);
@@ -3506,11 +3509,11 @@ Text '>NAME' R0 (-10.16 18.415);
 Pin 'VCC' Pas None Short R180 Both 0 (12.7 15.24);
 Pin 'GND' Pas None Short R180 Both 0 (12.7 10.16);
 
-Edit AT45DB_DATAFLASH.sym;
+Edit 'AT45DB_DATAFLASH.sym';
 Pin 'RDY' Out None Short R180 Both 0 (12.7 -7.62);
-Pin 'RST\' In None Short R0 Both 0 (-12.7 -2.54);
-Pin 'WP\' In None Short R0 Both 0 (-12.7 2.54);
-Pin 'CS\' In None Short R180 Both 0 (12.7 -2.54);
+Pin '!RST' In None Short R0 Both 0 (-12.7 -2.54);
+Pin '!WP' In None Short R0 Both 0 (-12.7 2.54);
+Pin '!CS' In None Short R180 Both 0 (12.7 -2.54);
 Pin 'SCK' In None Short R180 Both 0 (12.7 2.54);
 Pin 'SI' In None Short R180 Both 0 (12.7 7.62);
 Pin 'SO' Hiz None Short R180 Both 0 (12.7 5.08);
@@ -3530,7 +3533,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-10.16 -12.7);
 
-Edit PINHEADER-2X8.sym;
+Edit 'PINHEADER-2X8.sym';
 Pin '1' Pas Dot Short R0 Pad 0 (-3.81 8.89);
 Pin '2' Pas Dot Short R180 Pad 0 (3.81 8.89);
 Pin '3' Pas Dot Short R0 Pad 0 (-3.81 6.35);
@@ -3559,11 +3562,11 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (-7.62 -13.97);
 
-Edit CAP-POL.sym;
+Edit 'CAP-POL.sym';
 Layer 94;
 Wire  0.254 (-2.54 0) (2.54 0);
 Wire  0.1524 (0 -1.016) (0 -2.54);
-Wire  0.254 (0 -1) Flat -37.8785 (2.4892 -1.8542);
+Wire  0.254 (0 -1) Flat -37.8782 (2.4892 -1.8542);
 Wire  0.254 (-2.4668 -1.8504) Flat -37.3729 (0 -1.0161);
 Pin '+' Pas None Short R270 Off 1 (0 2.54);
 Pin '-' Pas None Short R90 Off 1 (0 -5.08);
@@ -3576,7 +3579,7 @@ Change Size 1.778;
 Change Ratio 8;
 Text '>VALUE' R0 (1.016 -4.191);
 
-Edit CAP-POL-ELECTROLYTIC.sym;
+Edit 'CAP-POL-ELECTROLYTIC.sym';
 Pin '-' Pas None Short R90 Off 0 (0 -5.08);
 Pin '+' Pas None Short R270 Off 0 (0 2.54);
 Layer 95;
@@ -3599,7 +3602,187 @@ Text '>VALUE' R0 (1.143 -4.5974);
 Layer 94;
 Rect R0 (-1.651 -2.54) (1.651 -1.651);
 
-Edit SO28W.pac;
+Edit 'LPC2148.sym';
+Pin 'P1.19/TRACEPKT3' I/O None Short R0 Both 0 (-50.8 15.24);
+Pin 'RTXC2' Out None Short R0 Both 0 (-50.8 12.7);
+Pin 'VSS_1' Pwr None Short R0 Both 0 (-50.8 10.16);
+Pin 'VDDA' Pwr None Short R0 Both 0 (-50.8 7.62);
+Pin 'P1.18/TRACEPKT2' I/O None Short R0 Both 0 (-50.8 5.08);
+Pin 'P0.25/AD0.4/AOUT' I/O None Short R0 Both 0 (-50.8 2.54);
+Pin 'D+' I/O None Short R0 Both 0 (-50.8 0);
+Pin 'D-' I/O None Short R0 Both 0 (-50.8 -2.54);
+Pin 'P1.17/TRACEPKT1' I/O None Short R0 Both 0 (-50.8 -5.08);
+Pin 'P0.28/AD0.1/CAP0.2/MAT0.2' I/O None Short R0 Both 0 (-50.8 -7.62);
+Pin 'P0.29/AD0.2/CAP0.3/MAT0.3' I/O None Short R0 Both 0 (-50.8 -10.16);
+Pin 'P1.31/!TRST' I/O None Short R90 Both 0 (-12.7 -50.8);
+Pin 'P0.1/RXD0/PWM3/EINT0' I/O None Short R90 Both 0 (-10.16 -50.8);
+Pin 'P0.2/SCL0/CAP0.0' I/O None Short R90 Both 0 (-7.62 -50.8);
+Pin 'VDD_1' Pwr None Short R90 Both 0 (-5.08 -50.8);
+Pin 'P1.26/RTCK' I/O None Short R90 Both 0 (-2.54 -50.8);
+Pin 'VSS_3' Pwr None Short R90 Both 0 (0 -50.8);
+Pin 'P0.3/SDA0/MAT0.0/EINT1' I/O None Short R90 Both 0 (2.54 -50.8);
+Pin 'P0.4/SCK0/CAP0.1/AD0.6' I/O None Short R90 Both 0 (5.08 -50.8);
+Pin 'P1.25/EXTIN0' I/O None Short R90 Both 0 (7.62 -50.8);
+Pin 'P0.5/MISO0/MAT0.1/AD0.7' I/O None Short R90 Both 0 (10.16 -50.8);
+Pin 'P0.6/MOSI0/CAP0.2/AD1.0' I/O None Short R90 Both 0 (12.7 -50.8);
+Pin 'P0.10/RTS1/CAP1.0/AD1.2' I/O None Short R180 Both 0 (50.8 -10.16);
+Pin 'P1.23/PIPESTAT2' I/O None Short R180 Both 0 (50.8 -7.62);
+Pin 'P0.11/CTS1/CAP1.1/SCL1' I/O None Short R180 Both 0 (50.8 -5.08);
+Pin 'P0.12/DSR1/MAT1.0/AD1.3' I/O None Short R180 Both 0 (50.8 -2.54);
+Pin 'P0.13/DTR1/MAT1.1/AD1.4' I/O None Short R180 Both 0 (50.8 0);
+Pin 'P1.22/PIPESTAT1' I/O None Short R180 Both 0 (50.8 2.54);
+Pin 'P0.14/DCD1/EINT1/SDA1' I/O None Short R180 Both 0 (50.8 5.08);
+Pin 'VSS_4' Pwr None Short R180 Both 0 (50.8 7.62);
+Pin 'VDD_2' Pwr None Short R180 Both 0 (50.8 10.16);
+Pin 'P1.21/PIPESTAT0' I/O None Short R180 Both 0 (50.8 12.7);
+Pin 'P0.15/RI1/EINT2/AD1.5' I/O None Short R180 Both 0 (50.8 15.24);
+Pin 'VDD_3' Pwr None Short R270 Both 0 (12.7 50.8);
+Pin 'P1.30/TMS' I/O None Short R270 Both 0 (10.16 50.8);
+Pin 'P0.18/CAP1.3/MISO1/MAT1.3' I/O None Short R270 Both 0 (7.62 50.8);
+Pin 'P0.19/MAT1.2/MOSI1/CAP1.2' I/O None Short R270 Both 0 (5.08 50.8);
+Pin 'P0.20/MAT1.3/SSEL1/EINT3' I/O None Short R270 Both 0 (2.54 50.8);
+Pin 'P1.29/TCK' I/O None Short R270 Both 0 (0 50.8);
+Pin '!RESET' In None Short R270 Both 0 (-2.54 50.8);
+Pin 'P0.23/VBUS' I/O None Short R270 Both 0 (-5.08 50.8);
+Pin 'VSSA' Pwr None Short R270 Both 0 (-7.62 50.8);
+Pin 'P1.28/TDI' I/O None Short R270 Both 0 (-10.16 50.8);
+Pin 'XTAL2' Out None Short R270 Both 0 (-12.7 50.8);
+Layer 94;
+Wire  0.254 (-48.26 48.26) (-48.26 -48.26) (48.26 -48.26) (48.26 48.26) \
+      (-48.26 48.26);
+Layer 95;
+Change Size 2.54;
+Change Ratio 8;
+Text '>NAME' R0 (-45.72 43.18);
+Layer 96;
+Change Size 2.54;
+Change Ratio 8;
+Text '>VALUE' R0 (-45.72 -45.72);
+Pin 'P0.16/EINT0/MAT0.2/CAP0.2' I/O None Short R180 Both 0 (50.8 17.78);
+Pin 'P0.17/CAP1.2/SCK1/MAT1.2' I/O None Short R180 Both 0 (50.8 20.32);
+Pin 'P1.20/TRACESYNC' I/O None Short R180 Both 0 (50.8 22.86);
+Pin 'P0.9/RXD1/PWM6/EINT3' I/O None Short R180 Both 0 (50.8 -12.7);
+Pin 'P0.8/TXD1/PWM4/AD1.1' I/O None Short R180 Both 0 (50.8 -15.24);
+Pin 'P0.7/SSEL0/PWM2/EINT2' I/O None Short R90 Both 0 (15.24 -50.8);
+Pin 'P1.24/TRACECLK' I/O None Short R90 Both 0 (17.78 -50.8);
+Pin 'P0.0/TXD0/PWM1' I/O None Short R90 Both 0 (-15.24 -50.8);
+Pin 'VSS_2' Pwr None Short R90 Both 0 (-17.78 -50.8);
+Pin 'P0.31/UP_LED/CONNECT' Out None Short R90 Both 0 (-20.32 -50.8);
+Pin 'P0.30/AD0.3/EINT3/CAP0.0' I/O None Short R0 Both 0 (-50.8 -12.7);
+Pin 'P1.16/TRACEPKT0' I/O None Short R0 Both 0 (-50.8 -15.24);
+Pin 'RTXC1' In None Short R0 Both 0 (-50.8 17.78);
+Pin 'P0.22/AD1.7/CAP0.0/MAT0.0' I/O None Short R0 Both 0 (-50.8 20.32);
+Pin 'P0.21/PWM5/AD1.6/CAP1.3' I/O None Short R0 Both 0 (-50.8 22.86);
+Pin 'XTAL1' In None Short R270 Both 0 (-15.24 50.8);
+Pin 'VREF' Pwr None Short R270 Both 0 (-17.78 50.8);
+Pin 'VSS_5' Pwr None Short R270 Both 0 (15.24 50.8);
+Pin 'VBAT' Pwr None Short R270 Both 0 (17.78 50.8);
+Pin 'P1.27/TDO' In None Short R270 Both 0 (-20.32 50.8);
+
+Edit 'CONN_USB.sym';
+Pin 'USB_H2' Pas None Short R180 Off 0 (2.54 2.54);
+Layer 94;
+Wire  0.1524 (-1.27 2.54) (0 2.54);
+Wire  0.6096 (-2.54 2.54) (-1.27 2.54);
+Pin 'USB_H1' Pas None Short R180 Off 0 (2.54 5.08);
+Layer 94;
+Wire  0.1524 (-1.27 5.08) (0 5.08);
+Wire  0.6096 (-2.54 5.08) (-1.27 5.08);
+Pin 'USB_L1' Pas None Short R180 Off 0 (2.54 0);
+Layer 94;
+Wire  0.1524 (-1.27 0) (0 0);
+Wire  0.6096 (-2.54 0) (-1.27 0);
+Pin 'USB_L2' Pas None Short R180 Off 0 (2.54 -2.54);
+Layer 94;
+Wire  0.1524 (-1.27 -2.54) (0 -2.54);
+Wire  0.6096 (-2.54 -2.54) (-1.27 -2.54);
+Pin 'USB_5V2' Pas None Short R180 Off 0 (2.54 7.62);
+Layer 94;
+Wire  0.1524 (-1.27 7.62) (0 7.62);
+Wire  0.6096 (-2.54 7.62) (-1.27 7.62);
+Pin 'USB_5V1' Pas None Short R180 Off 0 (2.54 10.16);
+Layer 94;
+Wire  0.1524 (-1.27 10.16) (0 10.16);
+Layer 95;
+Change Size 1.27;
+Change Ratio 8;
+Text '>NAME' R0 (-2.032 11.938);
+Layer 94;
+Wire  0.6096 (-2.54 10.16) (-1.27 10.16);
+Pin 'USB_GND1' Pas None Short R180 Off 0 (2.54 -5.08);
+Layer 94;
+Wire  0.1524 (-1.27 -5.08) (0 -5.08);
+Wire  0.6096 (-2.54 -5.08) (-1.27 -5.08);
+Pin 'USB_GND2' Pas None Short R180 Off 0 (2.54 -7.62);
+Layer 94;
+Wire  0.1524 (-1.27 -7.62) (0 -7.62);
+Layer 96;
+Change Size 1.27;
+Change Ratio 8;
+Text '>VALUE' R0 (-2.032 -10.922);
+Layer 94;
+Wire  0.6096 (-2.54 -7.62) (-1.27 -7.62);
+Layer 96;
+Change Size 0.762;
+Change Ratio 8;
+Text 'USB_5V' R0 (-2.54 8.509);
+Layer 96;
+Change Size 0.762;
+Change Ratio 8;
+Text 'USB_H' R0 (-2.794 3.429);
+Layer 96;
+Change Size 0.762;
+Change Ratio 8;
+Text 'USB_L' R0 (-2.794 -1.651);
+Layer 96;
+Change Size 0.762;
+Change Ratio 8;
+Text 'USB_GND' R0 (-2.54 -6.731);
+Layer 96;
+Wire  0.254 (-3.302 10.16) (-3.556 10.16) (-3.556 7.62) (-3.302 7.62);
+Wire  0.254 (-3.302 5.08) (-3.556 5.08) (-3.556 2.54) (-3.302 2.54);
+Wire  0.254 (-3.302 0) (-3.556 0) (-3.556 -2.54) (-3.302 -2.54);
+Wire  0.254 (-3.302 -5.08) (-3.556 -5.08) (-3.556 -7.62) (-3.302 -7.62);
+
+Edit '4024.sym';
+Pin 'CLK' In Clk Middle R0 Both 0 (-12.7 0);
+Pin 'RES' In None Middle R0 Both 0 (-12.7 -7.62);
+Pin 'Q7' Out None Middle R180 Both 0 (12.7 -7.62);
+Pin 'Q6' Out None Middle R180 Both 0 (12.7 -5.08);
+Pin 'Q5' Out None Middle R180 Both 0 (12.7 -2.54);
+Pin 'Q4' Out None Middle R180 Both 0 (12.7 0);
+Pin 'Q3' Out None Middle R180 Both 0 (12.7 2.54);
+Pin 'Q2' Out None Middle R180 Both 0 (12.7 5.08);
+Pin 'Q1' Out None Middle R180 Both 0 (12.7 7.62);
+Layer 94;
+Wire  0.4064 (-7.62 -10.16) (7.62 -10.16) (7.62 10.16) (-7.62 10.16) \
+      (-7.62 -10.16);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Text '>NAME' R0 (-7.62 10.795);
+Layer 96;
+Change Size 1.778;
+Change Ratio 8;
+Text '>VALUE' R0 (-7.62 -12.7);
+
+Edit 'PWRN.sym';
+Pin 'VSS' Pwr None Middle R90 Pad 0 (0 -7.62);
+Pin 'VDD' Pwr None Middle R270 Pad 0 (0 7.62);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Text '>NAME' R0 (-1.27 -0.635);
+Layer 95;
+Change Size 1.27;
+Change Ratio 8;
+Text 'VDD' R90 (1.905 2.54);
+Layer 95;
+Change Size 1.27;
+Change Ratio 8;
+Text 'VSS' R90 (1.905 -5.842);
+
+Edit 'SO28W.pac';
 Description '\
 <b>SMALL OUTLINE INTEGRATED CIRCUIT</b><p>\n\
  wide body 7.5 mm/JEDEC MO-119AB';
@@ -3658,33 +3841,33 @@ Smd '19' 0.6 2.2 -0 R0 (2.54 4.6);
 Layer 1;
 Smd '20' 0.6 2.2 -0 R0 (1.27 4.6);
 Layer 51;
-Rect R0 (-9.1351 -5.3199) (-8.6449 -3.8);
+Rect R0 (-9.1351 -5.32) (-8.6449 -3.8001);
 Layer 51;
-Rect R0 (-7.8651 -5.3199) (-7.3749 -3.8);
+Rect R0 (-7.8651 -5.32) (-7.3749 -3.8001);
 Layer 51;
-Rect R0 (-6.5951 -5.3199) (-6.1049 -3.8);
+Rect R0 (-6.5951 -5.32) (-6.1049 -3.8001);
 Layer 51;
-Rect R0 (-5.3251 -5.3199) (-4.8349 -3.8);
+Rect R0 (-5.3251 -5.32) (-4.8349 -3.8001);
 Layer 51;
-Rect R0 (-4.0551 -5.3199) (-3.5649 -3.8);
+Rect R0 (-4.0551 -5.32) (-3.5649 -3.8001);
 Layer 51;
-Rect R0 (-2.7851 -5.3199) (-2.2949 -3.8);
+Rect R0 (-2.7851 -5.32) (-2.2949 -3.8001);
 Layer 51;
-Rect R0 (-1.5151 -5.3199) (-1.0249 -3.8);
+Rect R0 (-1.5151 -5.32) (-1.0249 -3.8001);
 Layer 51;
-Rect R0 (-0.2451 -5.3199) (0.2451 -3.8);
+Rect R0 (-0.2451 -5.32) (0.2451 -3.8001);
 Layer 51;
-Rect R0 (1.0249 -5.3199) (1.5151 -3.8);
+Rect R0 (1.0249 -5.32) (1.5151 -3.8001);
 Layer 51;
-Rect R0 (2.2949 -5.3199) (2.7851 -3.8);
+Rect R0 (2.2949 -5.32) (2.7851 -3.8001);
 Layer 51;
-Rect R0 (3.5649 -5.3199) (4.0551 -3.8);
+Rect R0 (3.5649 -5.32) (4.0551 -3.8001);
 Layer 51;
-Rect R0 (4.8349 -5.3199) (5.3251 -3.8);
+Rect R0 (4.8349 -5.32) (5.3251 -3.8001);
 Layer 51;
-Rect R0 (6.1049 -5.3199) (6.5951 -3.8);
+Rect R0 (6.1049 -5.32) (6.5951 -3.8001);
 Layer 51;
-Rect R0 (7.3749 -5.3199) (7.8651 -3.8);
+Rect R0 (7.3749 -5.32) (7.8651 -3.8001);
 Layer 51;
 Rect R0 (7.3749 3.8001) (7.8651 5.32);
 Layer 51;
@@ -3730,7 +3913,7 @@ Rect R0 (-7.8651 3.8001) (-7.3749 5.32);
 Layer 51;
 Rect R0 (-9.1351 3.8001) (-8.6449 5.32);
 
-Edit 0805-DIODE.pac;
+Edit '0805-DIODE.pac';
 Description '<b>0805 Package w/ Diode indicator</b>';
 Layer 1;
 Smd '1(ANODE)' 1.3 1.5 -0 R0 (-0.85 0);
@@ -3755,7 +3938,7 @@ Layer 21;
 Wire  0.127 (-0.254 0.254) (-0.254 -0.254) (0.254 0) (-0.254 0.254);
 Wire  0.127 (0.254 0.254) (0.254 0) (0.254 -0.254);
 
-Edit PLCC44MINUS12.pac;
+Edit 'PLCC44MINUS12.pac';
 Description '<b>PLCC 44 minus 12</b><br>Form factor used by various International Rectifier multi-phase motor drivers.';
 Layer 25;
 Change Size 1.778;
@@ -3790,79 +3973,79 @@ Rect R0 (-6.6101 8.75) (-6.0899 9.1999);
 Layer 1;
 Smd '7' 2.2 0.6 -0 R0 (-8.1 6.35);
 Layer 51;
-Rect R0 (-9.1998 6.0899) (-8.7499 6.6101);
+Rect R0 (-9.1999 6.0899) (-8.75 6.6101);
 Layer 1;
 Smd '8' 2.2 0.6 -0 R0 (-8.1 5.08);
 Layer 51;
-Rect R0 (-9.1998 4.8199) (-8.7499 5.3401);
+Rect R0 (-9.1999 4.8199) (-8.75 5.3401);
 Layer 1;
 Smd '9' 2.2 0.6 -0 R0 (-8.1 3.81);
 Layer 51;
-Rect R0 (-9.1998 3.5499) (-8.7499 4.0701);
+Rect R0 (-9.1999 3.5499) (-8.75 4.0701);
 Layer 1;
 Smd '10' 2.2 0.6 -0 R0 (-8.1 2.54);
 Layer 51;
-Rect R0 (-9.1998 2.2799) (-8.7499 2.8001);
+Rect R0 (-9.1999 2.2799) (-8.75 2.8001);
 Layer 1;
 Smd '11' 2.2 0.6 -0 R0 (-8.1 1.27);
 Layer 51;
-Rect R0 (-9.1998 1.0099) (-8.7499 1.5301);
+Rect R0 (-9.1999 1.0099) (-8.75 1.5301);
 Layer 1;
 Smd '12' 2.2 0.6 -0 R0 (-8.1 0);
 Layer 51;
-Rect R0 (-9.1998 -0.2601) (-8.7499 0.2601);
+Rect R0 (-9.1999 -0.2601) (-8.75 0.2601);
 Layer 1;
 Smd '13' 2.2 0.6 -0 R0 (-8.1 -1.27);
 Layer 51;
-Rect R0 (-9.1998 -1.5301) (-8.7499 -1.0099);
+Rect R0 (-9.1999 -1.5301) (-8.75 -1.0099);
 Layer 1;
 Smd '14' 2.2 0.6 -0 R0 (-8.1 -2.54);
 Layer 51;
-Rect R0 (-9.1998 -2.8001) (-8.7499 -2.2799);
+Rect R0 (-9.1999 -2.8001) (-8.75 -2.2799);
 Layer 1;
 Smd '15' 2.2 0.6 -0 R0 (-8.1 -3.81);
 Layer 51;
-Rect R0 (-9.1998 -4.0701) (-8.7499 -3.5499);
+Rect R0 (-9.1999 -4.0701) (-8.75 -3.5499);
 Layer 1;
 Smd '16' 2.2 0.6 -0 R0 (-8.1 -5.08);
 Layer 51;
-Rect R0 (-9.1998 -5.3401) (-8.7499 -4.8199);
+Rect R0 (-9.1999 -5.3401) (-8.75 -4.8199);
 Layer 1;
 Smd '17' 2.2 0.6 -0 R0 (-8.1 -6.35);
 Layer 51;
-Rect R0 (-9.1998 -6.6101) (-8.7499 -6.0899);
+Rect R0 (-9.1999 -6.6101) (-8.75 -6.0899);
 Layer 1;
 Smd '18' 0.6 2.2 -0 R0 (-6.35 -8.1);
 Layer 51;
-Rect R0 (-6.6101 -9.1998) (-6.0899 -8.7499);
+Rect R0 (-6.6101 -9.1999) (-6.0899 -8.75);
 Layer 1;
 Smd '19' 0.6 2.2 -0 R0 (-5.08 -8.1);
 Layer 51;
-Rect R0 (-5.3401 -9.1998) (-4.8199 -8.7499);
+Rect R0 (-5.3401 -9.1999) (-4.8199 -8.75);
 Layer 1;
 Smd '20' 0.6 2.2 -0 R0 (-3.81 -8.1);
 Layer 51;
-Rect R0 (-4.0701 -9.1998) (-3.5499 -8.7499);
+Rect R0 (-4.0701 -9.1999) (-3.5499 -8.75);
 Layer 1;
 Smd '21' 0.6 2.2 -0 R0 (-2.54 -8.1);
 Layer 51;
-Rect R0 (-2.8001 -9.1998) (-2.2799 -8.7499);
+Rect R0 (-2.8001 -9.1999) (-2.2799 -8.75);
 Layer 1;
 Smd '22' 0.6 2.2 -0 R0 (-1.27 -8.1);
 Layer 51;
-Rect R0 (-1.5301 -9.1998) (-1.0099 -8.7499);
+Rect R0 (-1.5301 -9.1999) (-1.0099 -8.75);
 Layer 1;
 Smd '23' 0.6 2.2 -0 R0 (0 -8.1);
 Layer 51;
-Rect R0 (-0.2601 -9.1998) (0.2601 -8.7499);
+Rect R0 (-0.2601 -9.1999) (0.2601 -8.75);
 Layer 1;
 Smd '24' 0.6 2.2 -0 R0 (1.27 -8.1);
 Layer 51;
-Rect R0 (1.0099 -9.1998) (1.5301 -8.7499);
+Rect R0 (1.0099 -9.1999) (1.5301 -8.75);
 Layer 1;
 Smd '25' 0.6 2.2 -0 R0 (2.54 -8.1);
 Layer 51;
-Rect R0 (2.2799 -9.1998) (2.8001 -8.7499);
+Rect R0 (2.2799 -9.1999) (2.8001 -8.75);
 Layer 1;
 Smd '29' 2.2 0.6 -0 R0 (8.1 -6.35);
 Layer 51;
@@ -3900,7 +4083,7 @@ Smd '43' 0.6 2.2 -0 R0 (2.54 8.1);
 Layer 51;
 Rect R0 (2.2799 8.75) (2.8001 9.1999);
 
-Edit TO220-VERT.pac;
+Edit 'TO220-VERT.pac';
 Description '<b>Vertical Mount TO220 package</b>';
 Change Drill 1.0668;Pad '1' Long 0 R90 (-2.54 -2.54);
 Change Drill 1.0668;Pad '2' Long 0 R90 (0 -2.54);
@@ -3938,7 +4121,7 @@ Rect R0 (-0.889 -1.27) (0.889 -0.762);
 Layer 51;
 Rect R0 (1.651 -1.27) (3.429 -0.762);
 
-Edit SMA-DIODE.pac;
+Edit 'SMA-DIODE.pac';
 Description '<b>SMA Diode Package</b>';
 Layer 21;
 Change Size 0.4064;
@@ -3965,7 +4148,7 @@ Wire  0.127 (0.3 0) (0.3 -0.5);
 Wire  0.127 (0.3 0) (0.6 0);
 Wire  0.127 (-0.3 0) (-0.5 0);
 
-Edit SOD-123-DIODE.pac;
+Edit 'SOD-123-DIODE.pac';
 Description '<b>SOD 123 Diode Package</b>';
 Layer 25;
 Change Size 0.6096;
@@ -3992,12 +4175,12 @@ Layer 51;
 Wire  0.1998 (-0.492 0) (0.508 0.5) (0.508 -0.5) (-0.492 0);
 Wire  0.1998 (-0.492 0.5) (-0.492 0) (-0.492 -0.5);
 
-Edit MINIATURETESTPOINT.pac;
+Edit 'MINIATURETESTPOINT.pac';
 Description '';
 Layer 1;
 Smd 'TP' 3.175 1.905 -0 R0 (0 0);
 
-Edit PHEONIX-2.54-PITCH-EUROBLOCK.pac;
+Edit 'PHEONIX-2.54-PITCH-EUROBLOCK.pac';
 Description '<b>Pheonix-Style 0.1"x 4 Euro-Screw Terminals</b>';
 Change Drill 1.0668;Pad '2' Long 0 R0 (0 1.27);
 Change Drill 1.0668;Pad '1' Long 0 R0 (0 3.81);
@@ -4026,7 +4209,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text 'VALUE' R0 (-3.175 -6.985);
 
-Edit 2MM-2X10-HEADER.pac;
+Edit '2MM-2X10-HEADER.pac';
 Description '<b>2mm -- 2 x 10 Pin Header</b> 0.035" drill';
 Change Drill 0.889;Pad '6' Octagon 1.3716 R0 (-5 1);
 Change Drill 0.889;Pad '4' Octagon 1.3716 R0 (-7 1);
@@ -4068,7 +4251,7 @@ Change Size 0.8128;
 Change Ratio 8;
 Text '20' R0 (10.24 1);
 
-Edit GPS2MM2X10HEADER.pac;
+Edit 'GPS2MM2X10HEADER.pac';
 Description '<b>"Jupiter" GPS Board connector pattern</b>';
 Change Drill 0.889;Pad '2' Octagon 0 R0 (-9 1);
 Change Drill 0.889;Pad '8' Octagon 0 R0 (-3 1);
@@ -4090,7 +4273,7 @@ Layer 21;
 Wire  0.127 (-10 2) (-10 -2) (10 -2) (10 2) \
       (-10 2);
 
-Edit EUROBLOCK-2.54-X2.pac;
+Edit 'EUROBLOCK-2.54-X2.pac';
 Description '<b>0.1"x 2 Euro-Screw Terminals</b>';
 Change Drill 1.0668;Pad '2' Long 0 R0 (0 -1.27);
 Change Drill 1.0668;Pad '1' Long 0 R0 (0 1.27);
@@ -4113,7 +4296,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-3.175 -4.445);
 
-Edit SWITCHCRAFT-2.1MM-COAXIAL-POWER.pac;
+Edit 'SWITCHCRAFT-2.1MM-COAXIAL-POWER.pac';
 Description '';
 Layer 21;
 Wire  0.127 (0 4.445) (0 -4.445);
@@ -4132,7 +4315,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (0 -8.89);
 
-Edit MEMORY_PROTECTION_DEVICES_BH32T_20MM_COIN_CELL_HOLDER.pac;
+Edit 'MEMORY_PROTECTION_DEVICES_BH32T_20MM_COIN_CELL_HOLDER.pac';
 Description '<b>20mm Coin Cell Holder</b> (Memory Protection Devices BH32T) for CR2032 style cells';
 Change Drill 1.524;Pad '-' Long 0 R0 (0 10.0076);
 Change Drill 1.524;Pad '+' Long 0 R0 (0 -9.9822);
@@ -4149,7 +4332,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-3.81 -5.08);
 
-Edit 0.1_IN_HEADER_FOR_SWITCH.pac;
+Edit '0.1_IN_HEADER_FOR_SWITCH.pac';
 Description '';
 Change Drill 1.0668;Pad 'CENTER' Octagon 0 R0 (0 0);
 Change Drill 1.0668;Pad 'LEFT' Octagon 0 R0 (-2.54 0);
@@ -4158,7 +4341,7 @@ Layer 21;
 Wire  0.127 (-5.7912 -2.0066) (-5.7912 2.0066) (5.7912 2.0066) (5.7912 -2.0066) \
       (-5.7912 -2.0066);
 
-Edit TQFP44.pac;
+Edit 'TQFP44.pac';
 Description '';
 Layer 25;
 Change Size 1.778;
@@ -4193,31 +4376,31 @@ Smd '11' 1.5 0.5 -0 R0 (-5.8 -4);
 Layer 21;
 Circle 0.254 (-4 4) (-3.7173 4);
 Layer 51;
-Rect R0 (-6.1 3.8001) (-4.9499 4.1999);
+Rect R0 (-6.1001 3.8001) (-4.95 4.1999);
 Layer 21;
 Wire  0.2032 (-4.8 4.4) (-4.4 4.8);
 Wire  0.2032 (4.4 4.8) (4.8 4.4) (4.8 -4.4) (4.4 -4.8);
 Wire  0.2032 (-4.4 -4.8) (-4.8 -4.4) (-4.8 4.4);
 Layer 51;
-Rect R0 (-6.1 3) (-4.9499 3.4);
+Rect R0 (-6.1001 3) (-4.95 3.4);
 Layer 51;
-Rect R0 (-6.1 2.1999) (-4.9499 2.5999);
+Rect R0 (-6.1001 2.1999) (-4.95 2.5999);
 Layer 51;
-Rect R0 (-6.1 1.4) (-4.9499 1.8001);
+Rect R0 (-6.1001 1.4) (-4.95 1.8001);
 Layer 51;
-Rect R0 (-6.1 0.5999) (-4.9499 1);
+Rect R0 (-6.1001 0.5999) (-4.95 1);
 Layer 51;
-Rect R0 (-6.1 -0.1999) (-4.9499 0.1999);
+Rect R0 (-6.1001 -0.1999) (-4.95 0.1999);
 Layer 51;
-Rect R0 (-6.1 -0.9999) (-4.9499 -0.5998);
+Rect R0 (-6.1001 -1) (-4.95 -0.5999);
 Layer 51;
-Rect R0 (-6.1 -1.8) (-4.9499 -1.3999);
+Rect R0 (-6.1001 -1.8001) (-4.95 -1.4);
 Layer 51;
-Rect R0 (-6.1 -2.5999) (-4.9499 -2.1999);
+Rect R0 (-6.1001 -2.5999) (-4.95 -2.1999);
 Layer 51;
-Rect R0 (-6.1 -3.4) (-4.9499 -3);
+Rect R0 (-6.1001 -3.4) (-4.95 -3);
 Layer 51;
-Rect R0 (-6.1 -4.1999) (-4.9499 -3.8001);
+Rect R0 (-6.1001 -4.1999) (-4.95 -3.8001);
 Layer 1;
 Smd '12' 0.5 1.5 -0 R0 (-4 -5.8);
 Layer 1;
@@ -4241,27 +4424,27 @@ Smd '21' 0.5 1.5 -0 R0 (3.2 -5.8);
 Layer 1;
 Smd '22' 0.5 1.5 -0 R0 (4 -5.8);
 Layer 51;
-Rect R0 (-4.1999 -6.1) (-3.8001 -4.9499);
+Rect R0 (-4.1999 -6.1001) (-3.8001 -4.95);
 Layer 51;
-Rect R0 (-3.4 -6.1) (-3 -4.9499);
+Rect R0 (-3.4 -6.1001) (-3 -4.95);
 Layer 51;
-Rect R0 (-2.5999 -6.1) (-2.1999 -4.9499);
+Rect R0 (-2.5999 -6.1001) (-2.1999 -4.95);
 Layer 51;
-Rect R0 (-1.8 -6.1) (-1.3999 -4.9499);
+Rect R0 (-1.8001 -6.1001) (-1.4 -4.95);
 Layer 51;
-Rect R0 (-0.9999 -6.1) (-0.5998 -4.9499);
+Rect R0 (-1 -6.1001) (-0.5999 -4.95);
 Layer 51;
-Rect R0 (-0.1999 -6.1) (0.1999 -4.9499);
+Rect R0 (-0.1999 -6.1001) (0.1999 -4.95);
 Layer 51;
-Rect R0 (0.5999 -6.1) (1 -4.9499);
+Rect R0 (0.5999 -6.1001) (1 -4.95);
 Layer 51;
-Rect R0 (1.4 -6.1) (1.8001 -4.9499);
+Rect R0 (1.4 -6.1001) (1.8001 -4.95);
 Layer 51;
-Rect R0 (2.1999 -6.1) (2.5999 -4.9499);
+Rect R0 (2.1999 -6.1001) (2.5999 -4.95);
 Layer 51;
-Rect R0 (3 -6.1) (3.4 -4.9499);
+Rect R0 (3 -6.1001) (3.4 -4.95);
 Layer 51;
-Rect R0 (3.8001 -6.1) (4.1999 -4.9499);
+Rect R0 (3.8001 -6.1001) (4.1999 -4.95);
 Layer 1;
 Smd '23' 1.5 0.5 -0 R0 (5.8 -4);
 Layer 1;
@@ -4291,9 +4474,9 @@ Rect R0 (4.95 -3.4) (6.1001 -3);
 Layer 51;
 Rect R0 (4.95 -2.5999) (6.1001 -2.1999);
 Layer 51;
-Rect R0 (4.95 -1.8) (6.1001 -1.3999);
+Rect R0 (4.95 -1.8001) (6.1001 -1.4);
 Layer 51;
-Rect R0 (4.95 -0.9999) (6.1001 -0.5998);
+Rect R0 (4.95 -1) (6.1001 -0.5999);
 Layer 51;
 Rect R0 (4.95 -0.1999) (6.1001 0.1999);
 Layer 51;
@@ -4341,9 +4524,9 @@ Rect R0 (0.5999 4.95) (1 6.1001);
 Layer 51;
 Rect R0 (-0.1999 4.95) (0.1999 6.1001);
 Layer 51;
-Rect R0 (-0.9999 4.95) (-0.5998 6.1001);
+Rect R0 (-1 4.95) (-0.5999 6.1001);
 Layer 51;
-Rect R0 (-1.8 4.95) (-1.3999 6.1001);
+Rect R0 (-1.8001 4.95) (-1.4 6.1001);
 Layer 51;
 Rect R0 (-2.5999 4.95) (-2.1999 6.1001);
 Layer 51;
@@ -4354,7 +4537,7 @@ Layer 21;
 Wire  0.2032 (4.4 -4.8) (-4.4 -4.8);
 Wire  0.2032 (-4.4 4.8) (4.4 4.8);
 
-Edit 2MM-2X8-SMT.pac;
+Edit '2MM-2X8-SMT.pac';
 Description '';
 Layer 1;
 Smd '1' 1 3 -0 R0 (-3 -2.5);
@@ -4403,38 +4586,7 @@ Wire  0.5 (-4.5 2.5) (-7 2.5) (-7 -2.5) (-4.5 -2.5);
 Layer 1;
 Smd '8' 1 3 -0 R0 (3 2.5);
 
-Edit DIL14.pac;
-Description 'Standard 14 Pin Dual Inline package';
-Change Drill 0.889;Pad '1' Long 0 R90 (-7.62 -3.81);
-Change Drill 0.889;Pad '2' Long 0 R90 (-5.08 -3.81);
-Change Drill 0.889;Pad '7' Long 0 R90 (7.62 -3.81);
-Change Drill 0.889;Pad '8' Long 0 R90 (7.62 3.81);
-Change Drill 0.889;Pad '3' Long 0 R90 (-2.54 -3.81);
-Change Drill 0.889;Pad '4' Long 0 R90 (0 -3.81);
-Change Drill 0.889;Pad '6' Long 0 R90 (5.08 -3.81);
-Change Drill 0.889;Pad '5' Long 0 R90 (2.54 -3.81);
-Change Drill 0.889;Pad '9' Long 0 R90 (5.08 3.81);
-Change Drill 0.889;Pad '10' Long 0 R90 (2.54 3.81);
-Change Drill 0.889;Pad '11' Long 0 R90 (0 3.81);
-Change Drill 0.889;Pad '12' Long 0 R90 (-2.54 3.81);
-Change Drill 0.889;Pad '13' Long 0 R90 (-5.08 3.81);
-Change Drill 0.889;Pad '14' Long 0 R90 (-7.62 3.81);
-Layer 25;
-Change Size 1.778;
-Change Ratio 10;
-Text '>NAME' R90 (-9.0424 -2.794);
-Layer 21;
-Wire  0.1524 (-8.763 -0.635) (-8.763 -2.794);
-Layer 27;
-Change Size 1.778;
-Change Ratio 10;
-Text '>VALUE' R0 (-7.62 -0.8382);
-Layer 21;
-Wire  0.1524 (-8.763 -0.635) +180 (-8.763 0.635);
-Wire  0.1524 (8.763 2.794) (-8.763 2.794) (-8.763 0.635);
-Wire  0.1524 (-8.763 -2.794) (8.763 -2.794) (8.763 2.794);
-
-Edit DIL16.pac;
+Edit 'DIL16.pac';
 Description 'Standard 16 Pin Dual Inline package';
 Change Drill 0.889;Pad '1' Long 0 R90 (-8.89 -3.81);
 Change Drill 0.889;Pad '2' Long 0 R90 (-6.35 -3.81);
@@ -4467,7 +4619,7 @@ Wire  0.1524 (-10.16 -0.635) +180 (-10.16 0.635);
 Wire  0.1524 (-10.16 -2.794) (10.16 -2.794) (10.16 2.794) (-10.16 2.794) \
       (-10.16 0.635);
 
-Edit EUROBLOCK-2.54-X4.pac;
+Edit 'EUROBLOCK-2.54-X4.pac';
 Description '<b>0.1"x 4 Euro-Screw Terminals</b>';
 Change Drill 1.0668;Pad '1' Long 0 R0 (0 3.81);
 Change Drill 1.0668;Pad '2' Long 0 R0 (0 1.27);
@@ -4496,86 +4648,7 @@ Rect R0 (-3.5 2) (-2 3);
 Layer 21;
 Rect R0 (-3.5 4.5) (-2 5.5);
 
-Edit SO14.pac;
-Description '<b>14 Pin Small Outline Package</b> 150 mil';
-Layer 1;
-Smd '1' 0.6604 2.032 -0 R0 (-3.81 -3.0734);
-Layer 1;
-Smd '14' 0.6604 2.032 -0 R0 (-3.81 3.0734);
-Layer 1;
-Smd '2' 0.6604 2.032 -0 R0 (-2.54 -3.0734);
-Layer 1;
-Smd '3' 0.6604 2.032 -0 R0 (-1.27 -3.0734);
-Layer 1;
-Smd '13' 0.6604 2.032 -0 R0 (-2.54 3.0734);
-Layer 1;
-Smd '12' 0.6604 2.032 -0 R0 (-1.27 3.0734);
-Layer 1;
-Smd '4' 0.6604 2.032 -0 R0 (0 -3.0734);
-Layer 1;
-Smd '11' 0.6604 2.032 -0 R0 (0 3.0734);
-Layer 1;
-Smd '5' 0.6604 2.032 -0 R0 (1.27 -3.0734);
-Layer 1;
-Smd '6' 0.6604 2.032 -0 R0 (2.54 -3.0734);
-Layer 1;
-Smd '10' 0.6604 2.032 -0 R0 (1.27 3.0734);
-Layer 1;
-Smd '9' 0.6604 2.032 -0 R0 (2.54 3.0734);
-Layer 1;
-Smd '7' 0.6604 2.032 -0 R0 (3.81 -3.0734);
-Layer 1;
-Smd '8' 0.6604 2.032 -0 R0 (3.81 3.0734);
-Layer 21;
-Wire  0.1524 (4.064 1.9558) (-4.064 1.9558);
-Layer 27;
-Change Size 1.27;
-Change Ratio 10;
-Text '>VALUE' R0 (-3.556 -0.508);
-Layer 25;
-Change Size 1.27;
-Change Ratio 10;
-Text '>NAME' R90 (-4.699 -1.778);
-Layer 21;
-Wire  0.1524 (4.064 -1.9558) +90 (4.445 -1.5748);
-Wire  0.1524 (-4.445 1.5748) -90 (-4.064 1.9558);
-Wire  0.1524 (4.064 1.9558) -90 (4.445 1.5748);
-Wire  0.1524 (-4.445 -1.5748) +90 (-4.064 -1.9558) (4.064 -1.9558);
-Wire  0.1524 (4.445 -1.5748) (4.445 1.5748);
-Wire  0.1524 (-4.445 1.5748) (-4.445 -1.5748);
-Wire  0.1524 (-4.445 0.508) -180 (-4.445 -0.508);
-Layer 51;
-Rect R0 (-0.254 1.9558) (0.254 3.0988);
-Layer 51;
-Rect R0 (-4.064 -3.0988) (-3.556 -1.9558);
-Layer 51;
-Rect R0 (-2.794 -3.0988) (-2.286 -1.9558);
-Layer 51;
-Rect R0 (-1.524 -3.0734) (-1.016 -1.9304);
-Layer 51;
-Rect R0 (-0.254 -3.0988) (0.254 -1.9558);
-Layer 51;
-Rect R0 (-1.524 1.9558) (-1.016 3.0988);
-Layer 51;
-Rect R0 (-2.794 1.9558) (-2.286 3.0988);
-Layer 51;
-Rect R0 (-4.064 1.9558) (-3.556 3.0988);
-Layer 21;
-Wire  0.0508 (-4.445 -1.6002) (4.445 -1.6002);
-Layer 51;
-Rect R0 (1.016 1.9558) (1.524 3.0988);
-Layer 51;
-Rect R0 (2.286 1.9558) (2.794 3.0988);
-Layer 51;
-Rect R0 (3.556 1.9558) (4.064 3.0988);
-Layer 51;
-Rect R0 (1.016 -3.0988) (1.524 -1.9558);
-Layer 51;
-Rect R0 (2.286 -3.0988) (2.794 -1.9558);
-Layer 51;
-Rect R0 (3.556 -3.0988) (4.064 -1.9558);
-
-Edit SO14W.pac;
+Edit 'SO14W.pac';
 Description '<b>14 Pin SMALL OUTLINE INTEGRATED CIRCUIT</b> wide body 7.5 mm';
 Layer 1;
 Smd '2' 0.6 2.2 -0 R0 (-2.54 -4.6);
@@ -4620,19 +4693,19 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-3.81 -2.54);
 Layer 51;
-Rect R0 (-4.0551 -5.3199) (-3.5649 -3.8);
+Rect R0 (-4.0551 -5.32) (-3.5649 -3.8001);
 Layer 51;
-Rect R0 (-2.7851 -5.3199) (-2.2949 -3.8);
+Rect R0 (-2.7851 -5.32) (-2.2949 -3.8001);
 Layer 51;
-Rect R0 (-1.5151 -5.3199) (-1.0249 -3.8);
+Rect R0 (-1.5151 -5.32) (-1.0249 -3.8001);
 Layer 51;
-Rect R0 (-0.2451 -5.3199) (0.2451 -3.8);
+Rect R0 (-0.2451 -5.32) (0.2451 -3.8001);
 Layer 51;
-Rect R0 (1.0249 -5.3199) (1.5151 -3.8);
+Rect R0 (1.0249 -5.32) (1.5151 -3.8001);
 Layer 51;
-Rect R0 (2.2949 -5.3199) (2.7851 -3.8);
+Rect R0 (2.2949 -5.32) (2.7851 -3.8001);
 Layer 51;
-Rect R0 (3.5649 -5.3199) (4.0551 -3.8);
+Rect R0 (3.5649 -5.32) (4.0551 -3.8001);
 Layer 51;
 Rect R0 (3.5649 3.8001) (4.0551 5.32);
 Layer 51;
@@ -4648,7 +4721,7 @@ Rect R0 (-2.7851 3.8001) (-2.2949 5.32);
 Layer 51;
 Rect R0 (-4.0551 3.8001) (-3.5649 5.32);
 
-Edit SO16W.pac;
+Edit 'SO16W.pac';
 Description '<b>16 Pin SMALL OUTLINE INTEGRATED CIRCUIT</b> wide body 7.5 mm / JEDEC MS-013AA';
 Layer 1;
 Smd '2' 0.6 2.2 -0 R0 (-3.175 -4.6);
@@ -4702,21 +4775,21 @@ Smd '15' 0.6 2.2 -0 R0 (-3.175 4.6);
 Layer 1;
 Smd '16' 0.6 2.2 -0 R0 (-4.445 4.6);
 Layer 51;
-Rect R0 (-4.6901 -5.3199) (-4.1999 -3.8);
+Rect R0 (-4.6901 -5.32) (-4.1999 -3.8001);
 Layer 51;
-Rect R0 (-3.4201 -5.3199) (-2.9299 -3.8);
+Rect R0 (-3.4201 -5.32) (-2.9299 -3.8001);
 Layer 51;
-Rect R0 (-2.1501 -5.3199) (-1.6599 -3.8);
+Rect R0 (-2.1501 -5.32) (-1.6599 -3.8001);
 Layer 51;
-Rect R0 (-0.8801 -5.3199) (-0.3899 -3.8);
+Rect R0 (-0.8801 -5.32) (-0.3899 -3.8001);
 Layer 51;
-Rect R0 (0.3899 -5.3199) (0.8801 -3.8);
+Rect R0 (0.3899 -5.32) (0.8801 -3.8001);
 Layer 51;
-Rect R0 (1.6599 -5.3199) (2.1501 -3.8);
+Rect R0 (1.6599 -5.32) (2.1501 -3.8001);
 Layer 51;
-Rect R0 (2.9299 -5.3199) (3.4201 -3.8);
+Rect R0 (2.9299 -5.32) (3.4201 -3.8001);
 Layer 51;
-Rect R0 (4.1999 -5.3199) (4.6901 -3.8);
+Rect R0 (4.1999 -5.32) (4.6901 -3.8001);
 Layer 51;
 Rect R0 (4.1999 3.8001) (4.6901 5.32);
 Layer 51;
@@ -4734,7 +4807,7 @@ Rect R0 (-3.4201 3.8001) (-2.9299 5.32);
 Layer 51;
 Rect R0 (-4.6901 3.8001) (-4.1999 5.32);
 
-Edit LED-4.pac;
+Edit 'LED-4.pac';
 Description '4 pin LED package used in Sharp LT1x82 series.<br>Note larger, offset cathode.';
 Layer 25;
 Change Size 1.27;
@@ -4773,7 +4846,7 @@ Wire  0.127 (0.254 -0.381) (0.254 0) (0.254 0.381);
 Wire  0.127 (-0.254 0) (-0.508 0);
 Wire  0.127 (0.254 0) (0.508 0);
 
-Edit PAD_ROUND_APC-FREE_0.1/042.pac;
+Edit 'PAD_ROUND_APC-FREE_0.1/042.pac';
 Description '<b>Prototyping Pad</b> 0.042" drill, for 1/10" grid';
 Change Drill 1.0668;Pad 'PAD' Round 1.9304 R0 (0 0);
 Layer 25;
@@ -4795,7 +4868,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_SQUARE_APC-FREE_0.1/028.pac;
+Edit 'PAD_SQUARE_APC-FREE_0.1/028.pac';
 Description '<b>Prototyping Pad</b> 0.028" drill, marked for 1/10" grid';
 Change Drill 0.7112;Pad 'PAD' Square 1.1684 R0 (0 0);
 Layer 25;
@@ -4817,7 +4890,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit MP2A.pac;
+Edit 'MP2A.pac';
 Description '\
 coiltronics MICRO-PAC PLUS (MP2A)\n\
  surface mount inductor package';
@@ -4843,7 +4916,7 @@ Wire  0.25 (2.94 -0.875) (3.75 -0.875) (3.75 0.875) (2.94 0.875);
 Wire  0.127 (-2.032 0.254) (-2.032 -0.254);
 Wire  0.127 (-1.778 0) (-2.286 0);
 
-Edit NMINIP2-J1.pac;
+Edit 'NMINIP2-J1.pac';
 Description '\
 Panasonic Mini-poer 2-pin package\n\
  (NMiniP2-J1)';
@@ -4874,7 +4947,7 @@ Wire  0.1 (-1.3 -0.6) (-1.3 0.6);
 Layer 51;
 Rect R0 (-1.6 -1.25) (-1.25 1.25);
 
-Edit SO8.pac;
+Edit 'SO8.pac';
 Description '';
 Layer 1;
 Smd '2' 0.6 2.2 -0 R0 (-0.635 -2.6);
@@ -4896,13 +4969,13 @@ Layer 39;
 Wire  0.1998 (-2.519 3.9) (2.519 3.9) (2.519 -3.9) (-2.519 -3.9) \
       (-2.519 3.9);
 Layer 51;
-Rect R0 (-2.1501 -3.1) (-1.6599 -1.9999);
+Rect R0 (-2.1501 -3.1001) (-1.6599 -2);
 Layer 51;
-Rect R0 (-0.8801 -3.1) (-0.3899 -1.9999);
+Rect R0 (-0.8801 -3.1001) (-0.3899 -2);
 Layer 51;
-Rect R0 (0.3899 -3.1) (0.8801 -1.9999);
+Rect R0 (0.3899 -3.1001) (0.8801 -2);
 Layer 51;
-Rect R0 (1.6599 -3.1) (2.1501 -1.9999);
+Rect R0 (1.6599 -3.1001) (2.1501 -2);
 Layer 51;
 Rect R0 (1.6599 2) (2.1501 3.1001);
 Layer 51;
@@ -4924,7 +4997,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R90 (4.445 -1.905);
 
-Edit 1206.pac;
+Edit '1206.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -4943,7 +5016,7 @@ Smd '1' 1.6 1.8 -0 R0 (-1.4 0);
 Layer 1;
 Smd '2' 1.6 1.8 -0 R0 (1.4 0);
 Layer 51;
-Rect R0 (-1.7017 -0.8509) (-0.9516 0.8491);
+Rect R0 (-1.7018 -0.8509) (-0.9517 0.8491);
 Layer 51;
 Rect R0 (0.9517 -0.8491) (1.7018 0.8509);
 Layer 51;
@@ -4952,7 +5025,7 @@ Wire  0.1016 (-0.965 -0.787) (0.965 -0.787);
 Layer 35;
 Rect R0 (-0.1999 -0.4001) (0.1999 0.4001);
 
-Edit CMS1.pac;
+Edit 'CMS1.pac';
 Description 'coiltronics CMS1 Common Mode inductor Surface mount package';
 Layer 25;
 Change Size 1.27;
@@ -4995,7 +5068,7 @@ Wire  1.524 (4.2672 1.8034) (2.8702 3.2258);
 Wire  1.524 (-2.8956 -3.175) (-4.2926 -1.7526);
 Wire  1.524 (4.318 -1.778) (2.8956 -3.175);
 
-Edit ZJ-1206.pac;
+Edit 'ZJ-1206.pac';
 Description 'Cuttable jumper in 1206 size';
 Layer 1;
 Smd '2' 1.6 1.803 -0 R0 (1.422 0);
@@ -5020,7 +5093,7 @@ Rect R0 (-0.3 -0.7) (0.3 0.7);
 Layer 1;
 Wire  0.254 (-1.27 0) (1.27 0);
 
-Edit SOT23-5.pac;
+Edit 'SOT23-5.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -5062,7 +5135,7 @@ Smd '4' 0.7 1 -0 R0 (0.95 1.3);
 Layer 21;
 Circle 0.2 (-1.2 -0.5) (-1.1 -0.5);
 
-Edit SOT23-6.pac;
+Edit 'SOT23-6.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -5108,7 +5181,7 @@ Smd '4' 0.7 1 -0 R0 (0.95 1.3);
 Layer 21;
 Circle 0.2 (-1.2 -0.5) (-1.1 -0.5);
 
-Edit UF611948.pac;
+Edit 'UF611948.pac';
 Description '';
 Layer 21;
 Wire  0.127 (23.749 9.525) (23.749 -9.525);
@@ -5117,7 +5190,7 @@ Wire  0.127 (23.749 -9.525) (-23.749 -9.525);
 Change Drill 0.8128;Pad 'B+' Long 1.27 R90 (-24.13 2.54);
 Change Drill 0.8128;Pad 'B-' Long 1.27 R90 (-24.13 -1.27);
 
-Edit SOT223.pac;
+Edit 'SOT223.pac';
 Description '<b>Small Outline Transistor</b>';
 Layer 1;
 Smd '1' 1.2192 2.2352 -0 R0 (-2.3114 -3.0988);
@@ -5155,7 +5228,7 @@ Text '>VALUE' R90 (4.8768 -3.302);
 Layer 1;
 Smd '4' 3.6 2.2 -0 R0 (0 3.099);
 
-Edit Q5-DD.pac;
+Edit 'Q5-DD.pac';
 Description '<b>Q5-DD</b>';
 Layer 51;
 Wire  0.2032 (4.917 3.99) (4.917 -5.014) (-4.917 -5.014) (-4.917 3.99) \
@@ -5223,7 +5296,7 @@ Rect R0 (1.3 -5.5) (2.1 -5.1);
 Layer 21;
 Rect R0 (3 -5.5) (3.8 -5.1);
 
-Edit TO220-5.pac;
+Edit 'TO220-5.pac';
 Description '<b>TO220-5</b>';
 Change Drill 0.9;Pad '2' Long 0 R90 (-1.7 -4.5);
 Change Drill 0.9;Pad '4' Long 0 R90 (1.7 -4.5);
@@ -5276,7 +5349,7 @@ Layer 51;
 Wire  0.0508 (-1.87 -0.8) (-1.87 -0.9);
 Wire  0.2032 (-4.9 -3.6) (4.9 -3.6);
 
-Edit DIL08.pac;
+Edit 'DIL08.pac';
 Description '<b>Dual In Line</b>';
 Change Drill 0.8128;Pad '1' Long 0 R90 (-3.81 -3.81);
 Change Drill 0.8128;Pad '2' Long 0 R90 (-1.27 -3.81);
@@ -5299,7 +5372,7 @@ Wire  0.1524 (-5.08 -0.635) +180 (-5.08 0.635);
 Wire  0.1524 (-5.08 -0.635) (-5.08 -2.794) (5.08 -2.794) (5.08 2.794) \
       (-5.08 2.794) (-5.08 0.635);
 
-Edit MSOP8.pac;
+Edit 'MSOP8.pac';
 Description '<b>MSOP8</b>';
 Layer 21;
 Wire  0.2032 (-1.5 -1.5) (1.5 -1.5) (1.5 1.5) (-1.5 1.5) \
@@ -5347,7 +5420,7 @@ Text '>VALUE' R90 (2.828 -1.612);
 Layer 21;
 Circle 0 (-1.15 -1.15) (-0.95 -1.15);
 
-Edit ZETEXMSOP8.pac;
+Edit 'ZETEXMSOP8.pac';
 Description '';
 Layer 21;
 Wire  0.2032 (-1.4 1.4) (1.4 1.4) (1.4 -1.4) (-1.4 -1.4) \
@@ -5395,7 +5468,7 @@ Change Size 1.016;
 Change Ratio 8;
 Text '>VALUE' R0 (-0.65 -1.05);
 
-Edit MICRELMSOP8.pac;
+Edit 'MICRELMSOP8.pac';
 Description '';
 Layer 1;
 Smd '8' 0.3 1.2 -0 R0 (-0.9756 2.1119);
@@ -5444,7 +5517,7 @@ Rect R0 (-0.45 1.5) (-0.2 2.5);
 Layer 51;
 Rect R0 (-1.1 1.5) (-0.85 2.5);
 
-Edit LTMSOP8.pac;
+Edit 'LTMSOP8.pac';
 Description '';
 Layer 51;
 Wire  0.2032 (-1.5 -1.5) (1.5 -1.5);
@@ -5497,7 +5570,7 @@ Text '>VALUE' R90 (2.828 -1.612);
 Layer 21;
 Circle 0 (-1.15 -1.15) (-0.95 -1.15);
 
-Edit BBMSOP.pac;
+Edit 'BBMSOP.pac';
 Description '';
 Layer 21;
 Circle 0.0508 (-0.9456 -0.7906) (-0.4456 -0.7906);
@@ -5543,13 +5616,13 @@ Rect R0 (0.2025 1.6244) (0.4463 2.3557);
 Layer 51;
 Rect R0 (0.8525 1.6244) (1.0963 2.3557);
 Layer 51;
-Rect R0 (-1.0975 -2.3568) (-0.8537 -1.6255);
+Rect R0 (-1.0975 -2.3569) (-0.8537 -1.6256);
 Layer 51;
-Rect R0 (-0.4475 -2.3568) (-0.2037 -1.6255);
+Rect R0 (-0.4475 -2.3569) (-0.2037 -1.6256);
 Layer 51;
-Rect R0 (0.2025 -2.3568) (0.4463 -1.6255);
+Rect R0 (0.2025 -2.3569) (0.4463 -1.6256);
 Layer 51;
-Rect R0 (0.8525 -2.3568) (1.0963 -1.6255);
+Rect R0 (0.8525 -2.3569) (1.0963 -1.6256);
 Layer 25;
 Change Size 1.27;
 Change Ratio 10;
@@ -5559,7 +5632,7 @@ Change Size 1.27;
 Change Ratio 10;
 Text '>VALUE' R90 (3.302 -2.54);
 
-Edit LTMSOP10.pac;
+Edit 'LTMSOP10.pac';
 Description '';
 Layer 51;
 Wire  0.2032 (-1.5 -1.5) (1.5 -1.5);
@@ -5620,7 +5693,7 @@ Smd '2' 0.279 0.9 -0 R0 (-0.5 -2.2);
 Layer 1;
 Smd '1' 0.279 0.9 -0 R0 (-1 -2.2);
 
-Edit SOT23-3.pac;
+Edit 'SOT23-3.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -5654,7 +5727,7 @@ Smd '1' 0.7 1 -0 R0 (-0.95 -1.3);
 Layer 21;
 Circle 0.2 (-1.2 -0.5) (-1.1 -0.5);
 
-Edit TO-252.pac;
+Edit 'TO-252.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -5692,7 +5765,7 @@ Layer 39;
 Wire  0.0508 (-3.556 -3.556) (-3.556 7.112) (3.556 7.112) (3.556 -3.556) \
       (-3.556 -3.556);
 
-Edit 230B1B106K.pac;
+Edit '230B1B106K.pac';
 Description 'Electrocube metalized Polyester Capacitor, Oval, 10uF, 100V';
 Layer 21;
 Wire  0.127 (14.732 8.128) (14.732 -8.128) (-14.732 -8.128) (-14.732 8.128) \
@@ -5700,7 +5773,7 @@ Wire  0.127 (14.732 8.128) (14.732 -8.128) (-14.732 -8.128) (-14.732 8.128) \
 Change Drill 0.889;Pad '1' Round 0 R0 (-19.05 0);
 Change Drill 0.889;Pad '2' Round 0 R0 (19.05 0);
 
-Edit 230C1B106K.pac;
+Edit '230C1B106K.pac';
 Description 'Electrocube Flat wrap Metalized Polyester capacitor, 10 uF, 100V';
 Layer 21;
 Wire  0.127 (17.78 8.89) (17.78 -8.89) (-17.78 -8.89) (-17.78 8.89) \
@@ -5708,7 +5781,7 @@ Wire  0.127 (17.78 8.89) (17.78 -8.89) (-17.78 -8.89) (-17.78 8.89) \
 Change Drill 0.889;Pad '1' Round 0 R0 (-21.59 0);
 Change Drill 0.889;Pad '2' Round 0 R0 (21.59 0);
 
-Edit LTMSOP10+.pac;
+Edit 'LTMSOP10+.pac';
 Description 'MSOP-10 package with under-pad. Pad is meant to be soldered to exposed gnd plate on package.';
 Layer 51;
 Wire  0.2032 (-1.5 -1.5) (1.5 -1.5);
@@ -5787,7 +5860,7 @@ Wire  0.0508 (-0.635 0.889) (-0.635 0.762) (-0.381 0.762) (-0.381 0.889) \
 Layer 1;
 Smd 'P$1' 2.794 2.0828 -0 R0 (0 0);
 
-Edit JST-08PS-JED.pac;
+Edit 'JST-08PS-JED.pac';
 Description 'JST corp JED series connector. This is an 8 position, right angle, shrouded plug.';
 Layer 21;
 Wire  0.127 (3 4.15) (-3 4.15) (-3 -1.15) (-2.3 -1.15);
@@ -5820,7 +5893,7 @@ Change Drill 0.508;Pad '5' Round 1.016 R0 (-0.625 -2);
 Change Drill 0.508;Pad '3' Round 1.016 R0 (0.625 -2);
 Change Drill 0.508;Pad '1' Round 1.016 R0 (1.875 -2);
 
-Edit JST-08R-JED.pac;
+Edit 'JST-08R-JED.pac';
 Description 'JST corp JED series connector. This is an 8 position, straight, shrouded receptacle.';
 Layer 21;
 Wire  0.127 (3 1.8) (3 -2.3) (-3 -2.3) (-3 1.8);
@@ -5856,7 +5929,7 @@ Change Drill 0.508;Pad '4' Round 1.016 R0 (0.625 -1);
 Change Drill 0.508;Pad '6' Round 1.016 R0 (-0.625 -1);
 Change Drill 0.508;Pad '8' Round 1.016 R0 (-1.875 -1);
 
-Edit SOP18.pac;
+Edit 'SOP18.pac';
 Description '';
 Layer 51;
 Wire  0.2032 (6.88 3.01) (6.88 -3.01);
@@ -5909,23 +5982,23 @@ Smd '17' 0.6 2.2 -0 R0 (-3.81 3.6);
 Layer 1;
 Smd '18' 0.6 2.2 -0 R0 (-5.08 3.6);
 Layer 51;
-Rect R0 (-5.3299 -4.4398) (-4.8301 -3.1099);
+Rect R0 (-5.3299 -4.4399) (-4.8301 -3.11);
 Layer 51;
-Rect R0 (-4.0599 -4.4398) (-3.5601 -3.1099);
+Rect R0 (-4.0599 -4.4399) (-3.5601 -3.11);
 Layer 51;
-Rect R0 (-2.7899 -4.4398) (-2.2901 -3.1099);
+Rect R0 (-2.7899 -4.4399) (-2.2901 -3.11);
 Layer 51;
-Rect R0 (-1.5199 -4.4398) (-1.0201 -3.1099);
+Rect R0 (-1.5199 -4.4399) (-1.0201 -3.11);
 Layer 51;
-Rect R0 (-0.2499 -4.4398) (0.2499 -3.1099);
+Rect R0 (-0.2499 -4.4399) (0.2499 -3.11);
 Layer 51;
-Rect R0 (1.0201 -4.4398) (1.5199 -3.1099);
+Rect R0 (1.0201 -4.4399) (1.5199 -3.11);
 Layer 51;
-Rect R0 (2.2901 -4.4398) (2.7899 -3.1099);
+Rect R0 (2.2901 -4.4399) (2.7899 -3.11);
 Layer 51;
-Rect R0 (3.5601 -4.4398) (4.0599 -3.1099);
+Rect R0 (3.5601 -4.4399) (4.0599 -3.11);
 Layer 51;
-Rect R0 (4.8301 -4.4398) (5.3299 -3.1099);
+Rect R0 (4.8301 -4.4399) (5.3299 -3.11);
 Layer 51;
 Rect R0 (4.8301 3.11) (5.3299 4.4399);
 Layer 51;
@@ -5947,7 +6020,7 @@ Rect R0 (-5.3299 3.11) (-4.8301 4.4399);
 Layer 51;
 Wire  0.2032 (6.88 -3.01) (-6.88 -3.01) (-6.88 3.01) (6.88 3.01);
 
-Edit DIL18.pac;
+Edit 'DIL18.pac';
 Description '';
 Change Drill 0.8128;Pad '1' Long 0 R90 (-10.16 -3.81);
 Change Drill 0.8128;Pad '2' Long 0 R90 (-7.62 -3.81);
@@ -5984,7 +6057,7 @@ Wire  0.1524 (11.176 -2.794) (11.176 2.794);
 Wire  0.1524 (-11.176 2.794) (11.176 2.794);
 Wire  0.1524 (-11.176 2.794) (-11.176 0.635);
 
-Edit 2MM-2X5-HEADER.pac;
+Edit '2MM-2X5-HEADER.pac';
 Description '2mm pinheader. 52 mil pad diameter to shoot 8 mil design rules.';
 Change Drill 0.889;Pad '6' Octagon 1.3208 R0 (0 1);
 Change Drill 0.889;Pad '4' Octagon 1.3208 R0 (-2 1);
@@ -6016,7 +6089,7 @@ Change Size 0.8128;
 Change Ratio 8;
 Text '10' R0 (5.24 1);
 
-Edit SSOP-8P-0.50A.pac;
+Edit 'SSOP-8P-0.50A.pac';
 Description 'SSOP8-P-0.50A';
 Layer 25;
 Change Size 1.016;
@@ -6064,7 +6137,7 @@ Smd '2' 0.279 0.7 -0 R0 (-0.25 -1.35);
 Layer 1;
 Smd '1' 0.279 0.7 -0 R0 (-0.75 -1.35);
 
-Edit SW_6X3.5MM.pac;
+Edit 'SW_6X3.5MM.pac';
 Description '6mm x 3.5mm switch, Panasonic etc.';
 Change Drill 1.3208;Pad '1' Round 0 R0 (-3.25 0);
 Change Drill 1.3208;Pad '2' Round 0 R0 (3.25 0);
@@ -6072,7 +6145,7 @@ Layer 21;
 Wire  0.127 (-3 1.75) (3 1.75) (3 -1.75) (-3 -1.75) \
       (-3 1.75);
 
-Edit 0603-DIODE.pac;
+Edit '0603-DIODE.pac';
 Description '0603 package w/ Diode indicator';
 Layer 1;
 Smd 'A' 1 1.1 -0 R0 (-0.85 0);
@@ -6097,7 +6170,7 @@ Layer 21;
 Wire  0.127 (-0.254 0.254) (-0.254 -0.254) (0.254 0) (-0.254 0.254);
 Wire  0.127 (0.254 0.254) (0.254 0) (0.254 -0.254);
 
-Edit 2MM-1X2-HEADER.pac;
+Edit '2MM-1X2-HEADER.pac';
 Description '';
 Change Drill 0.889;Pad '2' Octagon 1.3716 R0 (0 1);
 Change Drill 0.889;Pad '1' Square 1.3716 R0 (0 -1);
@@ -6113,7 +6186,7 @@ Change Size 0.8128;
 Change Ratio 8;
 Text '2' R0 (-1.715 1);
 
-Edit SOT89.pac;
+Edit 'SOT89.pac';
 Description 'SOT89 package';
 Layer 25;
 Change Size 1.27;
@@ -6153,7 +6226,7 @@ Wire  2 (0 1.75) (0 0.1);
 Layer 1;
 Smd '2' 0.8 1.8 -0 R0 (0 -1.8);
 
-Edit TSSOP-16.pac;
+Edit 'TSSOP-16.pac';
 Description '0.65mm pitch  TSSOP-16';
 Layer 25;
 Change Size 1.27;
@@ -6238,7 +6311,7 @@ Layer 39;
 Wire  0.127 (-2.7 4.1) (-2.7 -4.1) (2.7 -4.1) (2.7 4.1) \
       (-2.7 4.1);
 
-Edit CAN_NODE.pac;
+Edit 'CAN_NODE.pac';
 Description 'PSAS CAN node connector';
 Layer 39;
 Rect R0 (-5.842 3.048) (0.508 6.223);
@@ -6281,7 +6354,7 @@ Circle 0.127 (-2.032 -4.6355) (-0.508 -4.6355);
 Layer 40;
 Circle 0.127 (-2.032 4.6355) (-0.508 4.6355);
 
-Edit SOP.3_18.pac;
+Edit 'SOP.3_18.pac';
 Description '';
 Layer 51;
 Wire  0.2032 (5.864 3.772) (5.864 -3.772);
@@ -6372,7 +6445,7 @@ Smd '8' 0.6096 2.159 -0 R0 (3.81 -4.5212);
 Layer 1;
 Smd '9' 0.6096 2.159 -0 R0 (5.08 -4.5212);
 
-Edit R0603.pac;
+Edit 'R0603.pac';
 Description '';
 Layer 25;
 Change Size 1.27;
@@ -6394,7 +6467,7 @@ Layer 51;
 Wire  0.1524 (-0.432 -0.356) (0.432 -0.356);
 Wire  0.1524 (0.432 0.356) (-0.432 0.356);
 
-Edit R0805.pac;
+Edit 'R0805.pac';
 Description '';
 Layer 1;
 Smd '1' 1.3 1.5 -0 R0 (-0.85 0);
@@ -6416,7 +6489,7 @@ Layer 51;
 Wire  0.1524 (-0.41 0.635) (0.41 0.635);
 Wire  0.1524 (-0.41 -0.635) (0.41 -0.635);
 
-Edit R0402.pac;
+Edit 'R0402.pac';
 Description '';
 Layer 1;
 Smd '1' 0.7 0.9 -0 R0 (-0.65 0);
@@ -6426,9 +6499,9 @@ Layer 51;
 Wire  0.1524 (-0.245 0.224) (0.245 0.224);
 Wire  0.1524 (0.245 -0.224) (-0.245 -0.224);
 Layer 51;
-Rect R0 (-0.554 -0.3047) (-0.254 0.2952);
+Rect R0 (-0.554 -0.3048) (-0.254 0.2951);
 Layer 51;
-Rect R0 (0.2588 -0.3047) (0.5588 0.2952);
+Rect R0 (0.2588 -0.3048) (0.5588 0.2951);
 Layer 25;
 Change Size 1.27;
 Change Ratio 8;
@@ -6438,7 +6511,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '>VALUE' R0 (-0.635 -1.905);
 
-Edit JST-08P-JED.pac;
+Edit 'JST-08P-JED.pac';
 Description 'JST corp JED series connector. This is an 8 position, vertical shrouded plug.';
 Layer 21;
 Rect R0 (0.475 0.85) (0.775 1.15);
@@ -6470,7 +6543,7 @@ Wire  0.4 (-2.4 2.1) (-2.9 1.6) (-2.9 -2.1);
 Wire  0.4 (2.4 2.1) (-2.4 2.1);
 Wire  0.4 (2.4 2.1) (2.9 1.6) (2.9 -2.1);
 
-Edit PAD_ROUND_APC-FREE_1MM/028.pac;
+Edit 'PAD_ROUND_APC-FREE_1MM/028.pac';
 Description '<b>Prototyping Pad</b>  0.28 inch drill for 2mm grid';
 Change Drill 0.7112;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6489,7 +6562,7 @@ Wire  0.1 (0.5 1) (1 1) (1 0.5);
 Wire  0.1 (-0.5 1) (-1 1) (-1 0.5);
 Wire  0.1 (-1 -0.5) (-1 -1) (-0.5 -1);
 
-Edit PAD_ROUND_APC-FREE_0.1/028.pac;
+Edit 'PAD_ROUND_APC-FREE_0.1/028.pac';
 Description '<b>Prototyping Pad</b> 0.028" drill, marked for 1/10" grid';
 Change Drill 0.7112;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6509,7 +6582,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.1/035.pac;
+Edit 'PAD_ROUND_APC-FREE_0.1/035.pac';
 Description '<b>Prototyping Pad</b> 0.035" drill, marked for 1/10" grid';
 Change Drill 0.889;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6529,7 +6602,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.1/052.pac;
+Edit 'PAD_ROUND_APC-FREE_0.1/052.pac';
 Description '<b>Prototyping Pad</b> 0.052" drill, marked for 1/10" grid';
 Change Drill 1.3208;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6549,7 +6622,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.1/0595.pac;
+Edit 'PAD_ROUND_APC-FREE_0.1/0595.pac';
 Description '<b>Prototyping Pad</b> 0.0595" drill, marked for 1/10" grid';
 Change Drill 1.5112;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6569,7 +6642,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.15/086.pac;
+Edit 'PAD_ROUND_APC-FREE_0.15/086.pac';
 Description '<b>Prototyping Pad</b> 0.086" drill, marked for 0.15" grid';
 Change Drill 2.1844;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6589,7 +6662,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.2/125.pac;
+Edit 'PAD_ROUND_APC-FREE_0.2/125.pac';
 Description '<b>Prototyping Pad</b> 0.125" drill, marked for 0.2" grid';
 Change Drill 3.175;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6609,7 +6682,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit PAD_ROUND_APC-FREE_0.25/152.pac;
+Edit 'PAD_ROUND_APC-FREE_0.25/152.pac';
 Description '<b>Prototyping Pad</b> 0.152" drill, marked for 0.25" grid';
 Change Drill 3.8608;Pad 'PAD' Round 0 R0 (0 0);
 Layer 25;
@@ -6629,7 +6702,7 @@ Change Size 0.0254;
 Change Ratio 8;
 Text '>VALUE' R0 (0 1);
 
-Edit DB25M-EDGEON.pac;
+Edit 'DB25M-EDGEON.pac';
 Description '\
 Standard DB-25 Male connector, will plug into PC parallel port.<br>\n\
 Fits over edge of approximately 0.055"+/-0.01" thick PCB.';
@@ -6735,7 +6808,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '1' R0 (-19.05 1.143);
 
-Edit DB25F-EDGEON.pac;
+Edit 'DB25F-EDGEON.pac';
 Description '\
 Standard DB-25 Female connector, will plug into PC serial port.<br>\n\
 Fits over edge of approximately 0.055"+/-0.01" thick PCB.';
@@ -6841,7 +6914,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '1' R0 (18.288 1.143);
 
-Edit 0.1_IN-PINHD-2X20-EDGEON.pac;
+Edit '0.1_IN-PINHD-2X20-EDGEON.pac';
 Description '\
 Standard 0.1" pinheader attaches to edge of PCB<br>\n\
 Ideal for 0.075" thick PCB, acceptable for 0.05" material if pins are bent over slightly.';
@@ -6944,7 +7017,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '1' R0 (12.7 1.27);
 
-Edit 0.1_IN-PINHD-2X5-EDGEON.pac;
+Edit '0.1_IN-PINHD-2X5-EDGEON.pac';
 Description '\
 Standard 0.1" pinheader attaches to edge of PCB<br>\n\
 Ideal for 0.075" thick PCB, acceptable for 0.05" material if pins are bent over slightly.';
@@ -7007,7 +7080,7 @@ Change Size 1.27;
 Change Ratio 8;
 Text '1' R0 (6.35 1.27);
 
-Edit SYE-301P.pac;
+Edit 'SYE-301P.pac';
 Description 'SYE-301P,  136mA Lithium Ion Polymer Battery';
 Layer 21;
 Wire  0.6096 (-14 -10.5) (14 -10.5) (14 10.5) (-14 10.5) \
@@ -7022,7 +7095,7 @@ Wire  0.1 (-14 -3) (-20.5 -3) (-20.5 -6) (-14 -6);
 Wire  0.1 (-12 -3.5) (-12 -5.5);
 Wire  0.1 (-11 -4.5) (-13 -4.5);
 
-Edit 2MM-1X2-RIGHTANGLE-RECEPTACLE.pac;
+Edit '2MM-1X2-RIGHTANGLE-RECEPTACLE.pac';
 Description '2mm Right-Angle Receptacle';
 Change Drill 0.889;Pad '2' Octagon 1.3716 R0 (0 1);
 Change Drill 0.889;Pad '1' Square 1.3716 R0 (0 -1);
@@ -7051,7 +7124,7 @@ Wire  0.127 (-0.3 1.6) (0.1 1.6);
 Wire  0.127 (-0.3 -1.6) (0.1 -1.6);
 Wire  0.127 (-0.3 -2.4) (0.1 -2.4);
 
-Edit TOKO_MC152_UNSHLD.pac;
+Edit 'TOKO_MC152_UNSHLD.pac';
 Description 'Toko Corp. type MC152 molded coil for surface mounting';
 Layer 21;
 Wire  0.2 (-2.5 -2.5) (2.5 -2.5) (2.5 2.5) (-2.5 2.5) \
@@ -7067,7 +7140,7 @@ Wire  0.1 (-2.75 3.75) (-1 3.75) (-1 2.75) (2.75 2.75) \
       (2.75 -3.75) (1 -3.75) (1 -2.75) (-2.75 -2.75) \
       (-2.75 3.75);
 
-Edit TRIPLE-LEAD-EPOXY-TO-SMT.pac;
+Edit 'TRIPLE-LEAD-EPOXY-TO-SMT.pac';
 Description '\
 Three lead epoxy package (dual caps, EMI filters) with the leads splayed for surface mounting<br>\n\
 This package is specifically for panasonic EXCEMT EMI filters, others are similar.';
@@ -7084,7 +7157,7 @@ Smd 'A' 1.5 2 -0 R0 (-2.5 -2.25);
 Layer 1;
 Smd 'B' 1.5 2 -0 R0 (2.5 -2.25);
 
-Edit HC49U-SMT.pac;
+Edit 'HC49U-SMT.pac';
 Description '\
 <b>HC49U-3-SMT</b> HC49U is a standard full-size crystal package. This package is modified with a third lead for a case ground.\n\
 Additionally, a forth lead was added by hand to the package top.\n\
@@ -7133,7 +7206,7 @@ Smd '3' 1.27 2.54 -0 R0 (0 -8.001);
 Layer 51;
 Wire  0.6096 (0 -5.477) (0 -8.382);
 
-Edit CERAMIC_FILTER_SIDEWAYS_SMT.pac;
+Edit 'CERAMIC_FILTER_SIDEWAYS_SMT.pac';
 Description 'Standard 3-lead ceramic filter package (Toko AHCFM2) laid sideways for surface mount application.';
 Layer 21;
 Wire  0.1 (-4.1 0) (-2.54 0) (0 0) (2.54 0) \
@@ -7150,7 +7223,7 @@ Smd '1' 1.5 3 -0 R0 (-2.54 -1.5);
 Layer 1;
 Smd '3' 1.5 3 -0 R0 (2.54 -1.5);
 
-Edit DIL24.pac;
+Edit 'DIL24.pac';
 Description '0.3 " Dual in Line package';
 Change Drill 0.8128;Pad '1' Long 0 R90 (-13.97 -3.81);
 Change Drill 0.8128;Pad '2' Long 0 R90 (-11.43 -3.81);
@@ -7192,7 +7265,7 @@ Wire  0.1524 (-15.24 2.921) (-15.24 1.016);
 Wire  0.1524 (-15.24 -2.921) (-15.24 -1.016);
 Wire  0.1524 (-15.24 1.016) -180 (-15.24 -1.016);
 
-Edit DIL24-SMT.pac;
+Edit 'DIL24-SMT.pac';
 Description 'Dual in Line 24 pin package. Modified for surface mount.';
 Layer 25;
 Change Size 1.27;
@@ -7283,7 +7356,7 @@ Wire  0.127 (8.128 -3.048) (8.128 -3.81) (9.652 -3.81) (9.652 -3.048);
 Wire  0.127 (10.668 -3.048) (10.668 -3.81) (12.192 -3.81) (12.192 -3.048);
 Wire  0.127 (13.208 -3.048) (13.208 -3.81) (14.732 -3.81) (14.732 -3.048);
 
-Edit SO16.pac;
+Edit 'SO16.pac';
 Description 'SO16 150 mil';
 Layer 1;
 Smd '1' 0.6604 2.032 -0 R0 (-4.445 -3.0734);
@@ -7370,7 +7443,7 @@ Rect R0 (2.921 1.9558) (3.429 3.0988);
 Layer 51;
 Rect R0 (4.191 1.9558) (4.699 3.0988);
 
-Edit TOKO_5P_CAN.pac;
+Edit 'TOKO_5P_CAN.pac';
 Description 'Toko IF can, type "5P"';
 Change Drill 0.7112;Pad '4' Round 0 R0 (1.75 1.75);
 Change Drill 0.7112;Pad '3' Round 0 R0 (-1.75 1.75);
@@ -7393,7 +7466,7 @@ Layer 39;
 Wire  0.1 (-3.2 3.2) (3.2 3.2) (3.2 -3.2) (-3.2 -3.2) \
       (-3.2 3.2);
 
-Edit TOKO_5P_CAN-SMT.pac;
+Edit 'TOKO_5P_CAN-SMT.pac';
 Description 'Toko IF can, type "5P", modified for surface mounting.';
 Change Drill 0.7112;Pad '4' Round 0 R0 (1.75 1.75);
 Change Drill 0.7112;Pad '3' Round 0 R0 (-1.75 1.75);
@@ -7416,7 +7489,7 @@ Layer 39;
 Wire  0.1 (-3.2 3.2) (3.2 3.2) (3.2 -3.2) (-3.2 -3.2) \
       (-3.2 3.2);
 
-Edit 2MM-2X5-RECEPTACLE_SMT_W/LOCATOR_PINS.pac;
+Edit '2MM-2X5-RECEPTACLE_SMT_W/LOCATOR_PINS.pac';
 Description '2mm, 2x5 receptacle, surface mount with locator pins. Note mirrored pin numbers.';
 Layer 21;
 Change Size 0.8128;
@@ -7552,7 +7625,7 @@ Smd '2' 0.89 2.54 -0 R0 (-4 -2.46);
 Hole 0.042 (-3 0);
 Hole 0.042 (3 0);
 
-Edit 1206-0402.pac;
+Edit '1206-0402.pac';
 Description 'Surface mount land pattern which will accomodate 1206 | 0805 | 0603 | 0402 packages';
 Layer 25;
 Change Size 1.27;
@@ -7567,7 +7640,7 @@ Wire  0.0508 (-2.273 0.983) (2.273 0.983);
 Wire  0.0508 (2.273 -0.983) (-2.273 -0.983) (-2.273 0.983);
 Wire  0.0508 (2.273 0.983) (2.273 -0.983);
 Layer 51;
-Rect R0 (-1.7017 -0.8509) (-0.9516 0.8491);
+Rect R0 (-1.7018 -0.8509) (-0.9517 0.8491);
 Layer 51;
 Rect R0 (0.9517 -0.8491) (1.7018 0.8509);
 Layer 51;
@@ -7578,7 +7651,7 @@ Smd 'P$1' 1.9 1.8 -0 R0 (-1.25 0);
 Layer 1;
 Smd 'P$2' 1.9 1.8 -0 R0 (1.25 0);
 
-Edit FARKA_MALE_PCB.pac;
+Edit 'FARKA_MALE_PCB.pac';
 Description '\
 Automotive SMB RF connector. "FARKA" male PCB<br>\n\
 Should also work with long-ended SMA PCB mounts.';
@@ -7598,7 +7671,7 @@ Wire  0.254 (-3.556 1.778) (-4.445 2.667);
 Wire  0.254 (-3.556 -1.778) (-4.445 -2.667);
 Wire  0.254 (-3.556 -1.778) (-3.556 1.778);
 
-Edit 2MM-2X5-RECEPTACLE.pac;
+Edit '2MM-2X5-RECEPTACLE.pac';
 Description '';
 Layer 21;
 Change Size 0.8128;
@@ -7734,7 +7807,7 @@ Smd '2' 0.89 2.54 -0 R0 (-4 8.97);
 Hole 0.042 (-3 11.43);
 Hole 0.042 (3 11.43);
 
-Edit EXC-CET.pac;
+Edit 'EXC-CET.pac';
 Description '3 terminal SMT EMI filter pakage';
 Layer 25;
 Change Size 1.27;
@@ -7760,7 +7833,7 @@ Smd '1' 1.3 1.4 -0 R0 (-2.05 0);
 Layer 1;
 Smd 'C' 1 1.4 -0 R0 (0 -0.7);
 
-Edit TQFP64-10X10.pac;
+Edit 'TQFP64-10X10.pac';
 Description '';
 Layer 25;
 Change Size 1.778;
@@ -8033,7 +8106,7 @@ Smd '64' 0.3 1.2 -0 R0 (-3.75 5.7);
 Layer 21;
 Rect R0 (-3.85 4.8) (-3.65 6);
 
-Edit MG5001-FOOTPRINT.pac;
+Edit 'MG5001-FOOTPRINT.pac';
 Description '';
 Hole 1.3208 (0 14);
 Hole 1.3208 (0 -14);
@@ -8264,7 +8337,7 @@ Hole 3.175 (-1.778 20.066);
 Hole 3.175 (61.722 -20.066);
 Hole 3.175 (61.722 20.066);
 
-Edit HIROSE-DF9-51S-1V.pac;
+Edit 'HIROSE-DF9-51S-1V.pac';
 Description '';
 Hole 1.3208 (0 14);
 Hole 1.3208 (0 -14);
@@ -8486,7 +8559,7 @@ Rect R0 (1 9.3) (2.8 9.7);
 Layer 51;
 Rect R0 (1 11.3) (2.8 11.7);
 
-Edit TO263/D2PAK-3.pac;
+Edit 'TO263/D2PAK-3.pac';
 Description '';
 Layer 21;
 Wire  0.254 (-5.1308 3.5306) (5.1308 3.5306);
@@ -8526,7 +8599,7 @@ Smd 'TAB' 11.43 8.89 -0 R0 (0 10.16);
 Layer 1;
 Smd '2' 2.0828 3.81 -0 R0 (0 0);
 
-Edit EUROBLOCK-2.54-X3.pac;
+Edit 'EUROBLOCK-2.54-X3.pac';
 Description '<b>0.1"x 3 Euro-Screw Terminals</b>';
 Change Drill 1.0668;Pad '1' Long 0 R0 (0 2.54);
 Change Drill 1.0668;Pad '2' Long 0 R0 (0 0);
@@ -8552,7 +8625,7 @@ Rect R0 (-3.5 0.73) (-2 1.73);
 Layer 21;
 Rect R0 (-3.5 3.23) (-2 4.23);
 
-Edit TSOP-28-8X13.4.pac;
+Edit 'TSOP-28-8X13.4.pac';
 Description '\
 <b>TSOP-28</b> 8mm x 13.4mm, 0.55mm pitch<br>\n\
 Std. Memory package';
@@ -8689,7 +8762,7 @@ Rect R0 (2.365 -6.8) (2.585 -6);
 Layer 51;
 Rect R0 (2.915 -6.8) (3.135 -6);
 
-Edit 2MM-2X8-HEADER.pac;
+Edit '2MM-2X8-HEADER.pac';
 Description '<b>2mm -- 2 x 8 Pin Header</b> 0.035" drill';
 Change Drill 0.889;Pad '6' Octagon 1.3716 R0 (-3 1);
 Change Drill 0.889;Pad '4' Octagon 1.3716 R0 (-5 1);
@@ -8728,7 +8801,7 @@ Change Size 0.8128;
 Change Ratio 8;
 Text '16' R0 (8.24 1);
 
-Edit EIA-7343-31.pac;
+Edit 'EIA-7343-31.pac';
 Description '';
 Layer 1;
 Smd '-' 2.55 2.7 -0 R0 (-3.175 0);
@@ -8747,7 +8820,7 @@ Rect R0 (3.7 -1.2) (3.9 1.2);
 Layer 51;
 Rect R0 (-3.9 -1.2) (-3.7 1.2);
 
-Edit EIA-6032-28.pac;
+Edit 'EIA-6032-28.pac';
 Description '';
 Layer 51;
 Change Size 1.27;
@@ -8766,7 +8839,7 @@ Rect R0 (-3.2 -1.1) (-3 1.1);
 Layer 51;
 Rect R0 (3 -1.1) (3.2 1.1);
 
-Edit MG5003-FOOTPRINT.pac;
+Edit 'MG5003-FOOTPRINT.pac';
 Description '';
 Change Drill 0.889;Pad '6' Octagon 1.3716 R90 (-1 -3);
 Change Drill 0.889;Pad '4' Octagon 1.3716 R90 (-1 -5);
@@ -8810,7 +8883,7 @@ Wire  0.127 (-2.81 -8.143) (35.29 -8.143) (35.29 -3.063) (30.21 -3.063) \
       (30.21 19.797) (-2.81 19.797) (-2.81 14.717) (2.27 14.717) \
       (2.27 8.367) (-2.81 8.367) (-2.81 -8.143);
 
-Edit MG5003-FOOTPRINT-ONE_HOLE.pac;
+Edit 'MG5003-FOOTPRINT-ONE_HOLE.pac';
 Description '';
 Change Drill 0.889;Pad '6' Octagon 1.3716 R90 (-1 -3);
 Change Drill 0.889;Pad '4' Octagon 1.3716 R90 (-1 -5);
@@ -8865,13 +8938,247 @@ Layer 51;
 Circle 0.127 (-0.27 17.257) (1.3175 17.257);
 Hole 3.175 (32.75 -5.603);
 
-Edit SUP_GND_BAR.dev;
+Edit 'NODE_CONN.pac';
+Description '';
+Layer 39;
+Rect R0 (-3.302 1.778) (3.048 4.953);
+Layer 39;
+Rect R0 (-3.302 -7.493) (3.048 -4.318);
+Layer 21;
+Wire  0.127 (-1.61 1.73) (-1.61 -4.27) (3.69 -4.27) (3.69 -3.57);
+Wire  0.127 (3.69 1.08) (3.69 1.73) (-1.61 1.73);
+Wire  0.127 (2.89 -3.57) (2.89 1.08);
+Wire  0.127 (3.69 -3.57) (2.89 -3.57);
+Wire  0.127 (3.69 1.08) (2.89 1.08);
+Layer 21;
+Rect R0 (2.39 -0.795) (2.69 -0.495);
+Layer 21;
+Rect R0 (2.39 -2.045) (2.69 -1.745);
+Layer 21;
+Rect R0 (2.39 -3.295) (2.69 -2.995);
+Layer 21;
+Rect R0 (2.39 0.455) (2.69 0.755);
+Layer 21;
+Rect R0 (4.39 -0.795) (4.69 -0.495);
+Layer 21;
+Rect R0 (4.39 0.455) (4.69 0.755);
+Layer 21;
+Rect R0 (4.39 -2.045) (4.69 -1.745);
+Layer 21;
+Rect R0 (4.39 -3.295) (4.69 -2.995);
+Change Drill 0.508;Pad 'SIG4@4' Round 1.016 R0 (2.54 -0.645);
+Change Drill 0.508;Pad 'SIG2@2' Round 1.016 R0 (2.54 0.605);
+Change Drill 0.508;Pad 'SIG6@6' Round 1.016 R0 (2.54 -1.895);
+Change Drill 0.508;Pad 'SIG8@8' Round 1.016 R0 (2.54 -3.145);
+Change Drill 0.508;Pad 'SIG7@7' Round 1.016 R0 (4.54 -3.145);
+Change Drill 0.508;Pad 'SIG5@5' Round 1.016 R0 (4.54 -1.895);
+Change Drill 0.508;Pad 'SIG3@3' Round 1.016 R0 (4.54 -0.645);
+Change Drill 0.508;Pad 'SIG1@1' Round 1.016 R0 (4.54 0.605);
+Change Drill 1.5112;Pad 'CHASSIS@1' Round 0 R0 (0.508 3.3655);
+Change Drill 1.5112;Pad 'CHASSIS@2' Round 0 R0 (0.508 -5.9055);
+Layer 40;
+Circle 0.127 (0.508 -5.9055) (2.032 -5.9055);
+Layer 40;
+Circle 0.127 (0.508 3.3655) (2.032 3.3655);
+
+Edit 'DIL14.pac';
+Description '<b>Dual In Line Package</b>';
+Change Drill 0.8128;Pad '1' Long 0 R90 (-7.62 -3.81);
+Change Drill 0.8128;Pad '2' Long 0 R90 (-5.08 -3.81);
+Change Drill 0.8128;Pad '7' Long 0 R90 (7.62 -3.81);
+Change Drill 0.8128;Pad '8' Long 0 R90 (7.62 3.81);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Text '>NAME' R90 (-9.271 -3.048);
+Change Drill 0.8128;Pad '3' Long 0 R90 (-2.54 -3.81);
+Change Drill 0.8128;Pad '4' Long 0 R90 (0 -3.81);
+Change Drill 0.8128;Pad '6' Long 0 R90 (5.08 -3.81);
+Change Drill 0.8128;Pad '5' Long 0 R90 (2.54 -3.81);
+Layer 27;
+Change Size 1.27;
+Change Ratio 10;
+Text '>VALUE' R0 (-6.731 -0.635);
+Change Drill 0.8128;Pad '9' Long 0 R90 (5.08 3.81);
+Change Drill 0.8128;Pad '10' Long 0 R90 (2.54 3.81);
+Change Drill 0.8128;Pad '11' Long 0 R90 (0 3.81);
+Change Drill 0.8128;Pad '12' Long 0 R90 (-2.54 3.81);
+Change Drill 0.8128;Pad '13' Long 0 R90 (-5.08 3.81);
+Change Drill 0.8128;Pad '14' Long 0 R90 (-7.62 3.81);
+Layer 21;
+Wire  0.1524 (8.89 2.921) (-8.89 2.921);
+Wire  0.1524 (-8.89 -2.921) (8.89 -2.921);
+Wire  0.1524 (8.89 2.921) (8.89 -2.921);
+Wire  0.1524 (-8.89 2.921) (-8.89 1.016);
+Wire  0.1524 (-8.89 -2.921) (-8.89 -1.016);
+Wire  0.1524 (-8.89 1.016) -180 (-8.89 -1.016);
+
+Edit 'SO14.pac';
+Description '<b>Small Outline package</b> 150 mil';
+Layer 1;
+Smd '1' 0.6604 2.032 -0 R0 (-3.81 -3.0734);
+Layer 1;
+Smd '14' 0.6604 2.032 -0 R0 (-3.81 3.0734);
+Layer 1;
+Smd '2' 0.6604 2.032 -0 R0 (-2.54 -3.0734);
+Layer 1;
+Smd '3' 0.6604 2.032 -0 R0 (-1.27 -3.0734);
+Layer 1;
+Smd '13' 0.6604 2.032 -0 R0 (-2.54 3.0734);
+Layer 1;
+Smd '12' 0.6604 2.032 -0 R0 (-1.27 3.0734);
+Layer 1;
+Smd '4' 0.6604 2.032 -0 R0 (0 -3.0734);
+Layer 1;
+Smd '11' 0.6604 2.032 -0 R0 (0 3.0734);
+Layer 1;
+Smd '5' 0.6604 2.032 -0 R0 (1.27 -3.0734);
+Layer 1;
+Smd '6' 0.6604 2.032 -0 R0 (2.54 -3.0734);
+Layer 1;
+Smd '10' 0.6604 2.032 -0 R0 (1.27 3.0734);
+Layer 1;
+Smd '9' 0.6604 2.032 -0 R0 (2.54 3.0734);
+Layer 1;
+Smd '7' 0.6604 2.032 -0 R0 (3.81 -3.0734);
+Layer 1;
+Smd '8' 0.6604 2.032 -0 R0 (3.81 3.0734);
+Layer 21;
+Wire  0.1524 (4.064 1.9558) (-4.064 1.9558);
+Layer 27;
+Change Size 1.27;
+Change Ratio 10;
+Text '>VALUE' R0 (-3.556 -0.635);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Text '>NAME' R90 (-4.699 -1.778);
+Layer 21;
+Wire  0.1524 (4.064 -1.9558) +90 (4.445 -1.5748);
+Wire  0.1524 (-4.445 1.5748) -90 (-4.064 1.9558);
+Wire  0.1524 (4.064 1.9558) -90 (4.445 1.5748);
+Wire  0.1524 (-4.445 -1.5748) +90 (-4.064 -1.9558) (4.064 -1.9558);
+Wire  0.1524 (4.445 -1.5748) (4.445 1.5748);
+Wire  0.1524 (-4.445 1.5748) (-4.445 -1.5748);
+Wire  0.1524 (-4.445 0.508) -180 (-4.445 -0.508);
+Layer 51;
+Rect R0 (-0.254 1.9558) (0.254 3.0988);
+Layer 51;
+Rect R0 (-4.064 -3.0988) (-3.556 -1.9558);
+Layer 51;
+Rect R0 (-2.794 -3.0988) (-2.286 -1.9558);
+Layer 51;
+Rect R0 (-1.524 -3.0734) (-1.016 -1.9304);
+Layer 51;
+Rect R0 (-0.254 -3.0988) (0.254 -1.9558);
+Layer 51;
+Rect R0 (-1.524 1.9558) (-1.016 3.0988);
+Layer 51;
+Rect R0 (-2.794 1.9558) (-2.286 3.0988);
+Layer 51;
+Rect R0 (-4.064 1.9558) (-3.556 3.0988);
+Layer 21;
+Wire  0.1524 (-4.445 -1.6002) (4.445 -1.6002);
+Layer 51;
+Rect R0 (1.016 1.9558) (1.524 3.0988);
+Layer 51;
+Rect R0 (2.286 1.9558) (2.794 3.0988);
+Layer 51;
+Rect R0 (3.556 1.9558) (4.064 3.0988);
+Layer 51;
+Rect R0 (1.016 -3.0988) (1.524 -1.9558);
+Layer 51;
+Rect R0 (2.286 -3.0988) (2.794 -1.9558);
+Layer 51;
+Rect R0 (3.556 -3.0988) (4.064 -1.9558);
+
+Edit 'TSSOP-14.pac';
+Description '\
+<b>Thin Shrink Small Outline Plastic 14</b><p>\n\
+MAX3223-MAX3243.pdf';
+Layer 21;
+Wire  0.1524 (-2.5146 -2.2828) (2.5146 -2.2828);
+Wire  0.1524 (2.5146 2.2828) (2.5146 -2.2828);
+Wire  0.1524 (2.5146 2.2828) (-2.5146 2.2828);
+Wire  0.1524 (-2.5146 -2.2828) (-2.5146 2.2828);
+Wire  0.0508 (-2.286 -2.0542) (2.286 -2.0542);
+Wire  0.0508 (2.286 2.0542) (2.286 -2.0542);
+Wire  0.0508 (2.286 2.0542) (-2.286 2.0542);
+Wire  0.0508 (-2.286 -2.0542) (-2.286 2.0542);
+Layer 21;
+Circle 0.1524 (-1.6256 -1.2192) (-1.1684 -1.2192);
+Layer 25;
+Change Size 1.016;
+Change Ratio 10;
+Text '>NAME' R90 (-2.8956 -2.0828);
+Layer 27;
+Change Size 1.016;
+Change Ratio 10;
+Text '>VALUE' R90 (3.8862 -2.0828);
+Layer 1;
+Smd '1' 0.3048 0.9906 -0 R0 (-1.95 -2.9178);
+Layer 51;
+Rect R0 (-2.0516 -3.121) (-1.8484 -2.2828);
+Layer 1;
+Smd '2' 0.3048 0.9906 -0 R0 (-1.3 -2.9178);
+Layer 51;
+Rect R0 (-1.4016 -3.121) (-1.1984 -2.2828);
+Layer 1;
+Smd '3' 0.3048 0.9906 -0 R0 (-0.65 -2.9178);
+Layer 51;
+Rect R0 (-0.7516 -3.121) (-0.5484 -2.2828);
+Layer 1;
+Smd '4' 0.3048 0.9906 -0 R0 (0 -2.9178);
+Layer 51;
+Rect R0 (-0.1016 -3.121) (0.1016 -2.2828);
+Layer 1;
+Smd '5' 0.3048 0.9906 -0 R0 (0.65 -2.9178);
+Layer 51;
+Rect R0 (0.5484 -3.121) (0.7516 -2.2828);
+Layer 1;
+Smd '6' 0.3048 0.9906 -0 R0 (1.3 -2.9178);
+Layer 51;
+Rect R0 (1.1984 -3.121) (1.4016 -2.2828);
+Layer 1;
+Smd '7' 0.3048 0.9906 -0 R0 (1.95 -2.9178);
+Layer 51;
+Rect R0 (1.8484 -3.121) (2.0516 -2.2828);
+Layer 1;
+Smd '8' 0.3048 0.9906 -0 R0 (1.95 2.9178);
+Layer 51;
+Rect R0 (1.8484 2.2828) (2.0516 3.121);
+Layer 1;
+Smd '9' 0.3048 0.9906 -0 R0 (1.3 2.9178);
+Layer 51;
+Rect R0 (1.1984 2.2828) (1.4016 3.121);
+Layer 1;
+Smd '10' 0.3048 0.9906 -0 R0 (0.65 2.9178);
+Layer 51;
+Rect R0 (0.5484 2.2828) (0.7516 3.121);
+Layer 1;
+Smd '11' 0.3048 0.9906 -0 R0 (0 2.9178);
+Layer 51;
+Rect R0 (-0.1016 2.2828) (0.1016 3.121);
+Layer 1;
+Smd '12' 0.3048 0.9906 -0 R0 (-0.65 2.9178);
+Layer 51;
+Rect R0 (-0.7516 2.2828) (-0.5484 3.121);
+Layer 1;
+Smd '13' 0.3048 0.9906 -0 R0 (-1.3 2.9178);
+Layer 51;
+Rect R0 (-1.4016 2.2828) (-1.1984 3.121);
+Layer 1;
+Smd '14' 0.3048 0.9906 -0 R0 (-1.95 2.9178);
+Layer 51;
+Rect R0 (-2.0516 2.2828) (-1.8484 3.121);
+
+Edit 'SUP_GND_BAR.dev';
 Prefix 'BAR_GND';
 Description 'Recommended symbol for logic ground';
 Value Off;
 Add BAR_GND '1' Next 0 (0 0);
 
-Edit SUP_CHASSIS.dev;
+Edit 'SUP_CHASSIS.dev';
 Prefix 'CHASSIS';
 Description '\
 <b> Chassis GND</b>\n\
@@ -8879,85 +9186,85 @@ Description '\
 Value Off;
 Add CHASSIS '1' Next 0 (0 0);
 
-Edit SUP_NEG_CIRCLE_MINUS.dev;
+Edit 'SUP_NEG_CIRCLE_MINUS.dev';
 Prefix 'CIRCLE(-)';
 Description 'Suitable for analog supplies or generic negative supplies';
 Value Off;
 Add CIRCLE_MINUS '1' Next 0 (0 0);
 
-Edit SUP_CIRCLE_OPEN.dev;
+Edit 'SUP_CIRCLE_OPEN.dev';
 Prefix 'CIRCLE_OPEN';
 Description 'Generic supply pin. May be labeled using the value field.';
 Value Off;
 Add CIRCLE_OPEN '1' Next 0 (0 0);
 
-Edit SUP_CIRCLE_OPEN_BIG.dev;
+Edit 'SUP_CIRCLE_OPEN_BIG.dev';
 Prefix 'CIRCLE_OPEN_BIG';
 Description 'Generic supply pin. The larger circle allows a supply label to be placed within it.';
 Value Off;
 Add CIRCLE_OPEN_BIG '1' Next 0 (0 0);
 
-Edit SUP_POS_CIRCLE_PLUS.dev;
+Edit 'SUP_POS_CIRCLE_PLUS.dev';
 Prefix 'CIRCLE_PLUS';
 Description 'Recommended symbol for logic supply';
 Value Off;
 Add CIRCLE_PLUS '1' Next 0 (0 0);
 
-Edit SUP_POS_ARROW_DOUBLE.dev;
+Edit 'SUP_POS_ARROW_DOUBLE.dev';
 Prefix 'DOUBLE_UP_ARROW';
 Description 'Used for somewhat higher voltage supplies';
 Value Off;
 Add DOUBLE_UP_ARROW '1' Next 0 (0 0);
 
-Edit SUP_NEG_ARROW_DOUBLE.dev;
+Edit 'SUP_NEG_ARROW_DOUBLE.dev';
 Prefix 'DOUBLE_DOWN_ARROW';
 Description 'Used for somewhat higher negative supply voltages';
 Value Off;
 Add DOUBLE_DOWN_ARROW '1' Next 0 (0 0);
 
-Edit SUP_POS_ARROW_TRIPLE.dev;
+Edit 'SUP_POS_ARROW_TRIPLE.dev';
 Prefix 'TRIPLE_UP_ARROW';
 Description 'Used for high voltage supplies';
 Value Off;
 Add TRIPLE_UP_ARROW '1' Next 0 (0 0);
 
-Edit SUP_NEG_ARROW_TRIPLE.dev;
+Edit 'SUP_NEG_ARROW_TRIPLE.dev';
 Prefix 'TRIPLE_DOWN_ARROW';
 Description 'Used for high negative supply voltages';
 Value Off;
 Add TRIPLE_DOWN_ARROW '1' Next 0 (0 0);
 
-Edit SUP_GND_TRIANGLE.dev;
+Edit 'SUP_GND_TRIANGLE.dev';
 Prefix 'TRIANGLE_GND';
 Description 'Recommended for analog ground or generic ground';
 Value Off;
 Add TRIANGLE_GND '1' Next 0 (0 0);
 
-Edit SUP_GND_TRIANGLE_BIG.dev;
+Edit 'SUP_GND_TRIANGLE_BIG.dev';
 Prefix 'TRIANGLE_GND_BIG';
 Description 'Larger triangle provides room for label inside';
 Value Off;
 Add TRIANGLE_GND_BIG '1' Next 0 (0 0);
 
-Edit SUP_GND_TRIANGLE_LINE.dev;
+Edit 'SUP_GND_TRIANGLE_LINE.dev';
 Prefix 'TRIANGLE_GND_BAR';
 Description 'Alternate ground symbol';
 Value Off;
 Add TRIANGLE_GND_BAR '1' Next 0 (0 0);
 
-Edit SUP_GND_BAR_DOUBLE.dev;
+Edit 'SUP_GND_BAR_DOUBLE.dev';
 Prefix 'DOUBLE_BAR_GND';
 Description 'Alternate ground symbol';
 Value Off;
 Add DOUBLE_BAR_GND '1' Next 0 (0 0);
 
-Edit SUP_GND_BAR_TRIPLE.dev;
+Edit 'SUP_GND_BAR_TRIPLE.dev';
 Prefix 'TRIPLE_BAR_GND';
 Description 'Generic ground symbol';
 Value Off;
 Add TRIPLE_BAR_GND '1' Next 0 (0 0);
 
-Edit SYMBOL_OFFSHEET_>.dev;
+Edit 'SYMBOL_OFFSHEET_>.dev';
 Prefix 'V-RIGHT';
 Description '\
 <b>Right-Hand Value Label Box</b>\n\
@@ -8965,7 +9272,7 @@ Description '\
 Value Off;
 Add V-> '1' Next 0 (0 0);
 
-Edit SYMBOL_OFFSHEET_<.dev;
+Edit 'SYMBOL_OFFSHEET_<.dev';
 Prefix 'V-LEFT';
 Description '\
 <b>Left-Hand Value Label Box</b>\n\
@@ -8973,223 +9280,223 @@ Description '\
 Value Off;
 Add V<- '1' Next 0 (0 0);
 
-Edit IC_SJA1000?.dev;
+Edit 'IC_SJA1000?.dev';
 Prefix 'U';
 Description 'Philips SJA1000 CAN Protocol Chip in an SO28 Package';
 Value Off;
 Add SJA1000 'SJA' Next 0 (0 0);
 Package 'SO28W' 'T';
-Technology  '';
+Technology '';
 Connect  'SJA.AD7' '2'  'SJA.TX0' '13'  'SJA.AD6' '1'  'SJA.ALE' '3'  'SJA./CS' '4' \
          'SJA.TX1' '14'  'SJA.VDD3' '12'  'SJA.MODE' '11'  'SJA./WR' '6'  'SJA.XTAL1' '9'  'SJA./RD' '5' \
          'SJA.CLKOUT' '7'  'SJA.XTAL2' '10'  'SJA.VSS1' '8'  'SJA.VSS3' '15'  'SJA./INT' '16'  'SJA./RESET' '17' \
          'SJA.VDD2' '18'  'SJA.RX0' '19'  'SJA.RX1' '20'  'SJA.VSS2' '21'  'SJA.VDD1' '22'  'SJA.AD0' '23' \
          'SJA.AD1' '24'  'SJA.AD2' '25'  'SJA.AD3' '26'  'SJA.AD4' '27'  'SJA.AD5' '28';
 
-Edit LED-AMB-?.dev;
+Edit 'LED-AMB-?.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add LED-AMB 'LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'LED.ANODE' '1(ANODE)'  'LED.CATHODE' '2(CATHODE)';
 
-Edit LED-BLU-?.dev;
+Edit 'LED-BLU-?.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add LED-BLU 'BU_LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'BU_LED.ANODE' '1(ANODE)'  'BU_LED.CATHODE' '2(CATHODE)';
 
-Edit LED-GRN-?.dev;
+Edit 'LED-GRN-?.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add LED-GRN 'GR_LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'GR_LED.ANODE' '1(ANODE)'  'GR_LED.CATHODE' '2(CATHODE)';
 Package '0603-DIODE' '''''';
-Technology  '';
+Technology '';
 Connect  'GR_LED.ANODE' 'A'  'GR_LED.CATHODE' 'K';
 
-Edit LED-ORG-?.dev;
+Edit 'LED-ORG-?.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add LED-ORG 'OR_LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'OR_LED.ANODE' '1(ANODE)'  'OR_LED.CATHODE' '2(CATHODE)';
 
-Edit LED-RED-?.dev;
+Edit 'LED-RED-?.dev';
 Prefix 'D';
 Description 'Red LED';
 Value Off;
 Add LED-RED 'RD_LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'RD_LED.ANODE' '1(ANODE)'  'RD_LED.CATHODE' '2(CATHODE)';
 Package '0603-DIODE' '0603';
-Technology  '';
+Technology '';
 Connect  'RD_LED.ANODE' 'A'  'RD_LED.CATHODE' 'K';
 
-Edit LED-YLW-?.dev;
+Edit 'LED-YLW-?.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add LED-YLW 'YL_LED' Next 0 (0 0);
 Package '0805-DIODE' '0805';
-Technology  '';
+Technology '';
 Connect  'YL_LED.ANODE' '1(ANODE)'  'YL_LED.CATHODE' '2(CATHODE)';
 Package 'LED-4' 'LT1H82A';
-Technology  '';
+Technology '';
 Connect  'YL_LED.ANODE' 'LED+'  'YL_LED.CATHODE' 'LED-';
 
-Edit IC_PCA82C250?.dev;
+Edit 'IC_PCA82C250?.dev';
 Prefix 'U';
 Description '<b>Philips PCA82C250 High Speed CAN Bus Driver</b>';
 Value Off;
 Add PCA82C250 'CAN_IO' Next 0 (0 0);
 Package 'SO8' 'T';
-Technology  '';
+Technology '';
 Connect  'CAN_IO.GND' '2'  'CAN_IO.CANH' '7'  'CAN_IO.TXD' '1'  'CAN_IO.VCC' '3'  'CAN_IO.RXD' '4' \
          'CAN_IO.RS' '8'  'CAN_IO.CANL' '6'  'CAN_IO.VREF' '5';
 
-Edit IC_IR2133?.dev;
+Edit 'IC_IR2133?.dev';
 Prefix 'IC';
 Description '<B> IR2133 Three Phase MOSFET Driver in 44pin PLCC minus 12 pins';
 Value Off;
 Add IR2133 'IR2133' Next 0 (0 0);
 Package 'PLCC44MINUS12' 'J';
-Technology  '';
+Technology '';
 Connect  'IR2133.VDD' '3'  'IR2133./HIN1' '4'  'IR2133./HIN2' '5'  'IR2133./HIN3' '6'  'IR2133./LIN1' '8' \
          'IR2133./LIN2' '9'  'IR2133./LIN3' '10'  'IR2133./FAULT' '12'  'IR2133.ITRIP' '14'  'IR2133./FAULT-CLR' '15'  'IR2133.CAO' '16' \
          'IR2133.CA-' '17'  'IR2133.CA+' '18'  'IR2133.SHUTDN' '19'  'IR2133.VSS' '20'  'IR2133.COM' '22'  'IR2133.LO3' '23' \
          'IR2133.LO2' '24'  'IR2133.LO1' '25'  'IR2133.VS3' '29'  'IR2133.HO3' '30'  'IR2133.VB3' '31'  'IR2133.VS2' '35' \
          'IR2133.HO2' '36'  'IR2133.VB2' '37'  'IR2133.VS1' '41'  'IR2133.HO1' '42'  'IR2133.VB1' '43';
 
-Edit FET_IRFIZ34E.dev;
+Edit 'FET_IRFIZ34E.dev';
 Prefix 'Q';
 Description '';
 Value Off;
 Add NFET+DIODE 'Q' Next 0 (2.54 0);
 Package 'TO220-VERT' '''''';
-Technology  '';
+Technology '';
 Connect  'Q.G' '1'  'Q.D' '2'  'Q.S' '3';
 
-Edit DIODE_BYG22.dev;
+Edit 'DIODE_BYG22.dev';
 Prefix 'CR';
 Description '';
 Value Off;
 Add DIODE 'DIODE' Next 0 (0 0);
 Package 'SMA-DIODE' '-SMA';
-Technology  '';
+Technology '';
 Connect  'DIODE.ANODE' '1(ANODE)'  'DIODE.CATHODE' '2(CATHODE)';
 
-Edit DIODE_1N4148?.dev;
+Edit 'DIODE_1N4148?.dev';
 Prefix 'D';
 Description 'Generic small signal diode';
 Value Off;
 Add DIODE 'DIODE' Next 0 (0 0);
 Package 'SOD-123-DIODE' '-SOD-123';
-Technology  '';
+Technology '';
 Connect  'DIODE.CATHODE' '1(CATHODE)'  'DIODE.ANODE' '2(ANODE)';
 
-Edit CONN_TESTPOINT_SMT.dev;
+Edit 'CONN_TESTPOINT_SMT.dev';
 Prefix 'J';
 Description 'Someplace to scrape a probe';
 Value Off;
 Add TESTPOINT 'TP' Next 0 (0 2.54);
 Package 'MINIATURETESTPOINT' '-SMD';
-Technology  '';
+Technology '';
 Connect  'TP.TP' 'TP';
 
-Edit IC_LITTLE-LOGIC-NAND.dev;
+Edit 'IC_LITTLE-LOGIC-NAND.dev';
 Prefix 'U';
 Description 'Texas Inst. "Little Logic" Single Gate NAND';
 Value Off;
 Add NAND '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (10.16 -12.7);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..B' '2'  'P.GND' '3'  '..A' '1'  'P.VDD' '5'  '..Y' '4';
 
-Edit DIODE_SMT_SCHOTTKY-1.0A.dev;
+Edit 'DIODE_SMT_SCHOTTKY-1.0A.dev';
 Prefix 'D';
 Description '';
 Value Off;
 Add DIODE 'D' Next 0 (0 0);
 Package 'SMA-DIODE' '-SMA';
-Technology  '';
+Technology '';
 Connect  'D.ANODE' '1(ANODE)'  'D.CATHODE' '2(CATHODE)';
 
-Edit CONN_PINHEADER-2X10.dev;
+Edit 'CONN_PINHEADER-2X10.dev';
 Prefix 'J';
 Description '2mm pitch double row pinheader 2x10';
 Value Off;
 Add PINHEADER-2X10 'J' Next 0 (0 0);
 Package '2MM-2X10-HEADER' '-2MM';
-Technology  '';
+Technology '';
 Connect  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.8' '8'  'J.10' '10' \
          'J.9' '9'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.11' '11' \
          'J.12' '12'  'J.14' '14'  'J.13' '13'  'J.15' '15'  'J.16' '16'  'J.18' '18' \
          'J.17' '17'  'J.19' '19'  'J.20' '20';
 Package '0.1_IN-PINHD-2X20-EDGEON' '-0.1_EDGEON';
-Technology  '';
+Technology '';
 Connect  'J.11' '11'  'J.9' '9'  'J.13' '13'  'J.15' '15'  'J.17' '17' \
          'J.19' '19'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.10' '10' \
          'J.12' '12'  'J.8' '8'  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.14' '14' \
          'J.16' '16'  'J.18' '18'  'J.20' '20';
 
-Edit CONN_JUPITER_GPS_2MM_HEADER.dev;
+Edit 'CONN_JUPITER_GPS_2MM_HEADER.dev';
 Prefix 'J';
 Description 'Pin Header for "Jupiter" OEM GPS board';
 Value Off;
 Add JUPITER_GPS-2MM-HEADER 'GPS_CON' Next 0 (0 0);
 Package 'GPS2MM2X10HEADER' 'TH';
-Technology  '';
+Technology '';
 Connect  'GPS_CON.2' '2'  'GPS_CON.8' '8'  'GPS_CON.10' '10'  'GPS_CON.7' '7'  'GPS_CON.5' '5' \
          'GPS_CON.3' '3'  'GPS_CON.1' '1'  'GPS_CON.11' '11'  'GPS_CON.12' '12'  'GPS_CON.13' '13'  'GPS_CON.15' '15' \
          'GPS_CON.16' '16'  'GPS_CON.18' '18'  'GPS_CON.17' '17'  'GPS_CON.19' '19'  'GPS_CON.20' '20';
 
-Edit CONN_EUROBLOCK_0.1X2.dev;
+Edit 'CONN_EUROBLOCK_0.1X2.dev';
 Prefix 'J';
 Description 'Euro-Style Terminal block 0.1" centers, 2 connectors';
 Value Off;
 Add EUROBLOCK-X2 'J' Next 0 (0 -2.54);
 Package 'EUROBLOCK-2.54-X2' '''''';
-Technology  '';
+Technology '';
 Connect  'J.2' '2'  'J.1' '1';
 
-Edit CONN_PWR_COAXIAL_2.1MM.dev;
+Edit 'CONN_PWR_COAXIAL_2.1MM.dev';
 Prefix 'J';
 Description '';
 Value Off;
 Add COAXIAL-POWER-CONNECTOR 'PWR' Next 0 (5.08 2.54);
 Package 'SWITCHCRAFT-2.1MM-COAXIAL-POWER' '''''';
-Technology  '';
+Technology '';
 Connect  'PWR.RING' 'RING'  'PWR.TIP' 'TIP'  'PWR.BBM' 'BBM';
 
-Edit BATTERY_COIN_20MM_CR2032.dev;
+Edit 'BATTERY_COIN_20MM_CR2032.dev';
 Prefix 'B';
 Description 'Memory Power Devices 20mm coin cell holder BH32T';
 Value Off;
 Add CELL 'BATT' Next 0 (0 -2.54);
 Package 'MEMORY_PROTECTION_DEVICES_BH32T_20MM_COIN_CELL_HOLDER' '''''';
-Technology  '';
+Technology '';
 Connect  'BATT.B-' '-'  'BATT.B+' '+';
 
-Edit IC_PIC18F4X8.dev;
+Edit 'IC_PIC18F4X8.dev';
 Prefix 'U';
 Description 'PIC18 Core w/FLASH and CAN';
 Value Off;
 Add PIC18F4X8 'PIC18F4X8' Next 0 (0 0);
 Package 'TQFP44' 'PT';
-Technology  '';
+Technology '';
 Connect  'PIC18F4X8.RC7/RX/DT' '1'  'PIC18F4X8.RD4/PSP4/ECCP1/P1A' '2'  'PIC18F4X8.RD5/PSP5/P1B' '3'  'PIC18F4X8.RD6/PSP6/P1C' '4'  'PIC18F4X8.RD7/PSP7/P1D' '5' \
          'PIC18F4X8.VSS' '6'  'PIC18F4X8.VDD_1' '7'  'PIC18F4X8.RB0/INT0' '8'  'PIC18F4X8.RB1/INT1' '9'  'PIC18F4X8.RB2/CANTX' '10'  'PIC18F4X8.RB3/CANRX' '11' \
          'PIC18F4X8.NC_1' '12'  'PIC18F4X8.NC_2' '13'  'PIC18F4X8.RB4' '14'  'PIC18F4X8.RB5/PGM' '15'  'PIC18F4X8.RB6/PGC' '16'  'PIC18F4X8.RB7/PGD' '17' \
@@ -9199,17 +9506,17 @@ Connect  'PIC18F4X8.RC7/RX/DT' '1'  'PIC18F4X8.RD4/PSP4/ECCP1/P1A' '2'  'PIC18F4
          'PIC18F4X8.RC2/CCP1' '36'  'PIC18F4X8.RC3/SCK/SCL' '37'  'PIC18F4X8.RD0/PSP0/C1IN+' '38'  'PIC18F4X8.RD1/PSP1/C1IN-' '39'  'PIC18F4X8.RD2/PSP2/C2IN+' '40'  'PIC18F4X8.RD3/PSP3/C2IN-' '41' \
          'PIC18F4X8.RC4/SDI/SDA' '42'  'PIC18F4X8.RC5/SDO' '43'  'PIC18F4X8.RC6/TX/CK' '44';
 
-Edit CONN_ICD2_2MM.dev;
+Edit 'CONN_ICD2_2MM.dev';
 Prefix 'J';
 Description 'Minature surface mount connector for Microchip PIC ICD version 2';
 Value Off;
 Add 2MM_ICD_CONNECTOR 'ICD_CON' Next 0 (0 0);
 Package '2MM-2X8-SMT' '''''';
-Technology  '';
+Technology '';
 Connect  'ICD_CON.VPP' '1'  'ICD_CON.+5V' '2'  'ICD_CON.GND' '3'  'ICD_CON.RB7' '4'  'ICD_CON.RB6' '5' \
          'ICD_CON.TX' '6'  'ICD_CON.RX' '7'  'ICD_CON.NC' '8';
 
-Edit IC_CD4504B.dev;
+Edit 'IC_CD4504B.dev';
 Prefix 'U';
 Description 'CD4504B CMOS Hex Level Shifter';
 Value Off;
@@ -9223,12 +9530,12 @@ Add MODE 'MODE' Next 0 (-27.94 17.78);
 Add VCC+GND 'P1' Next 0 (-17.78 15.24);
 Add VDD 'VDD' Next 0 (-20.32 15.24);
 Package 'DIL16' 'N';
-Technology  '';
+Technology '';
 Connect  'P1.VCC' '1'  'A.OUT' '2'  'A.IN' '3'  'B.OUT' '4'  'B.IN' '5' \
          'C.OUT' '6'  'C.IN' '7'  'P1.GND' '8'  'D.IN' '9'  'D.OUT' '10'  'E.IN' '11' \
          'E.OUT' '12'  'MODE.MODE' '13'  'F.IN' '14'  'F.OUT' '15'  'VDD.VDD' '16';
 
-Edit CONN_EUROBLOCK_0.1X4.dev;
+Edit 'CONN_EUROBLOCK_0.1X4.dev';
 Prefix 'J';
 Description '\
 Euro-Style Terminal block\n\
@@ -9236,10 +9543,10 @@ Euro-Style Terminal block\n\
 Value Off;
 Add EUROBLOCK-X4 'J' Next 0 (0 0);
 Package 'EUROBLOCK-2.54-X4' '''''';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2'  'J.3' '3'  'J.4' '4';
 
-Edit IC_TC4469.dev;
+Edit 'IC_TC4469.dev';
 Prefix 'N';
 Description 'Quad MOSFET Driver w/ AND-Invert gate';
 Value Off;
@@ -9249,17 +9556,17 @@ Add AND-INVERT 'DRV3' Next 1 (2.54 -10.16);
 Add AND-INVERT 'DRV4' Next 1 (2.54 -30.48);
 Add VDD+GND 'DRVPWR' Next 0 (-22.86 2.54);
 Package 'DIL14' 'PD';
-Technology  '';
+Technology '';
 Connect  'DRV1.A' '1'  'DRV1.B' '2'  'DRV4.A' '8'  'DRV2.A' '3'  'DRV2.B' '4' \
          'DRV3.B' '6'  'DRV3.A' '5'  'DRV4.B' '9'  'DRV4.Y' '10'  'DRV3.Y' '11'  'DRV2.Y' '12' \
          'DRV1.Y' '13';
 Package 'SO16W' 'OE';
-Technology  '';
+Technology '';
 Connect  'DRV1.B' '2'  'DRV2.Y' '13'  'DRV1.A' '1'  'DRV2.A' '3'  'DRV2.B' '4' \
          'DRV1.Y' '14'  'DRV3.Y' '12'  'DRV4.Y' '11'  'DRV3.B' '6'  'DRV4.A' '9'  'DRV3.A' '5' \
          'DRV4.B' '10';
 
-Edit LED_YEL_LT1*82A.dev;
+Edit 'LED_YEL_LT1*82A.dev';
 Prefix '';
 Description '\
 High Efficiency LED, 20mA<br>\n\
@@ -9270,121 +9577,121 @@ Package 'LED-4' '''''';
 Technology -'' 'H';
 Connect  'YELLOWLED.ANODE' 'LED+'  'YELLOWLED.CATHODE' 'LED-';
 
-Edit PAD_0.1.dev;
+Edit 'PAD_0.1.dev';
 Prefix '';
 Description '';
 Value Off;
 Add PAD_ROUND 'PAD_0.1' Next 0 (0 0);
 Package 'PAD_ROUND_APC-FREE_0.1/042' '''-042';
-Technology  '';
+Technology '';
 Connect  'PAD_0.1.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.1/035' '-035';
-Technology  '';
+Technology '';
 Connect  'PAD_0.1.PAD' 'PAD';
 
-Edit PAD_0.07.dev;
+Edit 'PAD_0.07.dev';
 Prefix '';
 Description '';
 Value Off;
 Add PAD_ROUND 'PAD_0.07' Next 0 (0 0);
 Package 'PAD_SQUARE_APC-FREE_0.1/028' '''''';
-Technology  '';
+Technology '';
 Connect  'PAD_0.07.PAD' 'PAD';
 
-Edit COIL_MP2A.dev;
+Edit 'COIL_MP2A.dev';
 Prefix 'L';
 Description '';
 Value On;
 Add INDUCTOR 'L' Next 0 (0 0);
 Package 'MP2A' '''''';
-Technology  '';
+Technology '';
 Connect  'L.1' 'P1'  'L.2' 'P2';
 
-Edit DIODE_SCHOTTKY_MA2Q705.dev;
+Edit 'DIODE_SCHOTTKY_MA2Q705.dev';
 Prefix 'CR';
 Description '';
 Value Off;
 Add SCHOTTKY 'SD' Next 0 (0 0);
 Package 'NMINIP2-J1' '''''';
-Technology  '';
+Technology '';
 Connect  'SD.K' 'K'  'SD.A' 'A';
 
-Edit FET_IRF7455.dev;
+Edit 'FET_IRF7455.dev';
 Prefix 'Q';
 Description '';
 Value Off;
 Add NFET+DIODE 'Q' Next 0 (0 0);
 Package 'SO8' '''''';
-Technology  '';
+Technology '';
 Connect  'Q.S' '3'  'Q.G' '4'  'Q.D' '5';
 
-Edit FUSE.dev;
+Edit 'FUSE.dev';
 Prefix 'F';
 Description 'Fuse';
 Value On;
 Add FUSE 'F' Next 0 (0 0);
 Package '1206' '1206';
-Technology  '';
+Technology '';
 Connect  'F.1' '1'  'F.2' '2';
 
-Edit COIL_CMS1.dev;
+Edit 'COIL_CMS1.dev';
 Prefix 'X';
 Description 'Coiltronics CMS1 series common mode choke';
 Value Off;
 Add XFORMER 'X' Next 0 (0 0);
 Package 'CMS1' '''''';
-Technology  '';
+Technology '';
 Connect  'X.3' '3'  'X.2' '2'  'X.1' '1'  'X.4' '4';
 
-Edit JUMPER_ZEROOHM.dev;
+Edit 'JUMPER_ZEROOHM.dev';
 Prefix 'W';
 Description 'Cuttable surface mount jumper sized for surface mount devices';
 Value Off;
 Add ZJUMPER 'ZJ' Next 0 (0 0);
 Package 'ZJ-1206' '1206';
-Technology  '';
+Technology '';
 Connect  'ZJ.2' '2'  'ZJ.1' '1';
 
-Edit IC_74HC1G02.dev;
+Edit 'IC_74HC1G02.dev';
 Prefix '';
 Description 'Single NOR gate';
 Value Off;
 Add NOR '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (7.62 -12.7);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..B' '2'  'P.GND' '3'  '..A' '1'  'P.VDD' '5'  '..Y' '4';
 
-Edit IC_TC4S66F.dev;
+Edit 'IC_TC4S66F.dev';
 Prefix 'U';
 Description 'TC4S66F Single Analog Switch';
 Value Off;
 Add ANALOGSW '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (-20.32 0);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..B' '2'  'P.GND' '3'  '..A' '1'  'P.VDD' '5'  '..EN' '4';
 
-Edit BATTERY_LI+_UF611948.dev;
+Edit 'BATTERY_LI+_UF611948.dev';
 Prefix 'B';
 Description '';
 Value Off;
 Add CELL 'BAT' Next 0 (0 0);
 Package 'UF611948' '''''';
-Technology  '';
+Technology '';
 Connect  'BAT.B+' 'B+'  'BAT.B-' 'B-';
 
-Edit IC_LT1767.dev;
+Edit 'IC_LT1767.dev';
 Prefix 'U';
 Description 'LT1767 Step Down Regulator';
 Value Off;
 Add LT1767 'G$1' Next 0 (0 0);
 Package 'MSOP8' 'EMS8';
-Technology  '';
-Connect  'G$1.BOOST' '1'  'G$1.VIN' '2'  'G$1.VSW' '3'  'G$1.GND' '4'  'G$1.SHDN\' '5' \
+Technology '';
+Connect  'G$1.BOOST' '1'  'G$1.VIN' '2'  'G$1.VSW' '3'  'G$1.GND' '4'  'G$1.!SHDN' '5' \
          'G$1.FB' '6'  'G$1.VC' '7'  'G$1.SYNC' '8';
 
-Edit IC_LT1013.dev;
+Edit 'IC_LT1013.dev';
 Prefix '';
 Description 'Dual Single Supply Precision OpAmp';
 Value Off;
@@ -9392,319 +9699,319 @@ Add OPAMP 'A' Next 0 (0 7.62);
 Add OPAMP 'B' Next 0 (0 -7.62);
 Add VDD+VEE 'P' Next 0 (-17.78 2.54);
 Package 'DIL08' 'N';
-Technology  '';
+Technology '';
 Connect  'A.OUT' '1'  'A.-IN' '2'  'A.+IN' '3'  'P.VEE' '4'  'B.+IN' '5' \
          'B.-IN' '6'  'B.OUT' '7'  'P.VDD' '8';
 Package 'SO8' 'S';
-Technology  '';
+Technology '';
 Connect  'P.VEE' '2'  'A.OUT' '7'  'A.+IN' '1'  'B.+IN' '3'  'B.-IN' '4' \
          'A.-IN' '8'  'P.VDD' '6'  'B.OUT' '5';
 
-Edit IC_LT1762.dev;
+Edit 'IC_LT1762.dev';
 Prefix '';
 Description '';
 Value Off;
 Add ADJ_REG+SHDN+BYP 'LT1762' Next 0 (0 0);
 Package 'MSOP8' 'EMS8';
-Technology  '';
-Connect  'LT1762.OUT' '1'  'LT1762.SENSE' '2'  'LT1762.BYP' '3'  'LT1762.GND' '4'  'LT1762.SHDN\' '5' \
+Technology '';
+Connect  'LT1762.OUT' '1'  'LT1762.SENSE' '2'  'LT1762.BYP' '3'  'LT1762.GND' '4'  'LT1762.!SHDN' '5' \
          'LT1762.IN' '8';
 
-Edit IC_LTC1442.dev;
+Edit 'IC_LTC1442.dev';
 Prefix '';
 Description 'LTC1442 Dual micropower comparator w/reference';
 Value Off;
 Add LTC1442 'LTC1442' Next 0 (0 0);
 Package 'SO8' 'S8';
-Technology  '';
+Technology '';
 Connect  'LTC1442.V-' '2'  'LTC1442.V+' '7'  'LTC1442.A' '1'  'LTC1442.IN+' '3'  'LTC1442.IN-' '4' \
          'LTC1442.B' '8'  'LTC1442.REF' '6'  'LTC1442.HYST' '5';
 
-Edit IC_LTC1734.dev;
+Edit 'IC_LTC1734.dev';
 Prefix 'U';
 Description 'LTC1734 Li - Ion Battery Controller';
 Value Off;
 Add LTC1734 'LTC1734' Next 0 (0 0);
 Package 'SOT23-6' '''''';
-Technology  '';
+Technology '';
 Connect  'LTC1734.BAT' '5'  'LTC1734.GND' '2'  'LTC1734.VIN' '3'  'LTC1734.ISENSE' '1'  'LTC1734.DRIVE' '6' \
          'LTC1734.PROG' '4';
 
-Edit IC_LT3401.dev;
+Edit 'IC_LT3401.dev';
 Prefix '';
 Description '1A, 5.5V, 3MHz, Boost regulator';
 Value Off;
 Add LT3401 'U' Next 0 (0 0);
 Package 'LTMSOP10' '''''';
-Technology  '';
+Technology '';
 Connect  'U.FB' '8'  'U.VIN' '3'  'U.VOUT' '7'  'U.PGOOD' '6'  'U.VC' '9' \
-         'U.SHDN\' '10'  'U.VSW' '4'  'U.GND' '5'  'U.MODE' '2'  'U.RT' '1';
+         'U.!SHDN' '10'  'U.VSW' '4'  'U.GND' '5'  'U.MODE' '2'  'U.RT' '1';
 
-Edit IC_TC54*.dev;
+Edit 'IC_TC54*.dev';
 Prefix '';
 Description 'Low Power Microprocessor reset device';
 Value Off;
 Add RESET_DEVICE 'U' Next 0 (0 0);
 Package 'SOT23-3' '''''';
-Technology  '';
+Technology '';
 Connect  'U.VIN' '3'  'U.VSS' '2'  'U.VO' '1';
 
-Edit IC_NC7SZ14.dev;
+Edit 'IC_NC7SZ14.dev';
 Prefix 'U';
 Description 'Single Schmitt Inverter';
 Value Off;
 Add INVERTER_SCHMITT '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (-22.86 0);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..IN' '2'  'P.GND' '3'  'P.VDD' '5'  '..OUT' '4';
 
-Edit IC_LITTLE-LOGIC-EXOR.dev;
+Edit 'IC_LITTLE-LOGIC-EXOR.dev';
 Prefix '';
 Description 'Single Gate ExOR';
 Value Off;
 Add EXOR '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (-20.32 0);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..B' '2'  'P.GND' '3'  '..A' '1'  'P.VDD' '5'  '..Y' '4';
 
-Edit FET_N-CHNL.dev;
+Edit 'FET_N-CHNL.dev';
 Prefix 'Q';
 Description 'Generic N-Channel MOSFET';
 Value Off;
 Add NFET+DIODE 'Q' Next 0 (0 0);
 Package 'TO220-VERT' 'TO220-VERT';
-Technology  '';
+Technology '';
 Connect  'Q.G' '1'  'Q.D' '2'  'Q.S' '3';
 Package 'SO8' 'SO8';
-Technology  '';
+Technology '';
 Connect  'Q.S' '3'  'Q.G' '4'  'Q.D' '5';
 Package 'SOT23-3' 'SOT23-3';
-Technology  '';
+Technology '';
 Connect  'Q.D' '3'  'Q.S' '2'  'Q.G' '1';
 Package 'TO-252' 'TO252';
-Technology  '';
+Technology '';
 Connect  'Q.D' '4'  'Q.G' '1'  'Q.S' '3';
 Package 'SOT223' 'SOT223';
-Technology  '';
+Technology '';
 Connect  'Q.G' '1'  'Q.S' '3'  'Q.D' '4';
 
-Edit IC_IR2117*.dev;
+Edit 'IC_IR2117*.dev';
 Prefix 'U';
 Description 'Single Channel 600V bootstrap driver';
 Value Off;
 Add IR2117 '.' Next 0 (0 0);
 Package 'DIL08' '''''';
-Technology  '';
+Technology '';
 Connect  '..VCC' '1'  '..IN' '2'  '..COM' '3'  '..NC@1' '4'  '..NC@2' '5' \
          '..VS' '6'  '..HO' '7'  '..VB' '8';
 Package 'SO8' 'S';
-Technology  '';
+Technology '';
 Connect  '..IN' '2'  '..HO' '7'  '..VCC' '1'  '..COM' '3'  '..NC@1' '4' \
          '..VB' '8'  '..VS' '6'  '..NC@2' '5';
 
-Edit IC_LITTLE-LOGIC-TRISTATE.dev;
+Edit 'IC_LITTLE-LOGIC-TRISTATE.dev';
 Prefix '';
 Description 'Single Gate Tri-State Buffer';
 Value Off;
 Add BUFFER_SINGLE_TRISTATE '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (-20.32 0);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..IN' '2'  'P.GND' '3'  '..EN' '1'  'P.VDD' '5'  '..OUT' '4';
 
-Edit CAP-FILM-10.dev;
+Edit 'CAP-FILM-10.dev';
 Prefix 'C';
 Description 'Electrocube metalized film capacitors,  10uF, 100WV';
 Value Off;
 Add CAP-NP 'C' Next 0 (0 0);
 Package '230B1B106K' 'B';
-Technology  '';
+Technology '';
 Connect  'C.1' '1'  'C.2' '2';
 Package '230C1B106K' 'C';
-Technology  '';
+Technology '';
 Connect  'C.1' '1'  'C.2' '2';
 
-Edit IC_LT1310.dev;
+Edit 'IC_LT1310.dev';
 Prefix '';
 Description 'DC/DC Boost converter, 4.5MHz, 18V in, 35V out, 1.5A';
 Value Off;
 Add LT1310 'U' Next 0 (0 0);
 Package 'LTMSOP10+' '''''';
-Technology  '';
+Technology '';
 Connect  'U.VIN' '8'  'U.PLL' '3'  'U.VSW' '7'  'U.CT' '9'  'U.VC' '10' \
-         'U.SYNC' '4'  'U.GND' '5'  'U.SHDN\' '2'  'U.FB' '1';
+         'U.SYNC' '4'  'U.GND' '5'  'U.!SHDN' '2'  'U.FB' '1';
 
-Edit CONN_JED_RECEPTACLE_8.dev;
+Edit 'CONN_JED_RECEPTACLE_8.dev';
 Prefix '';
 Description 'JST corp JED series connector. This is an 8 position, straight, through-hole receptacle.';
 Value Off;
 Add CONN_RECEPTACLE_8 'R' Next 0 (0 0);
 Package 'JST-08R-JED' '''''';
-Technology  '';
+Technology '';
 Connect  'R.3' '3'  'R.5' '5'  'R.7' '7'  'R.1' '1'  'R.2' '2' \
          'R.4' '4'  'R.6' '6'  'R.8' '8';
 
-Edit CONN_JED_PLUG_8.dev;
+Edit 'CONN_JED_PLUG_8.dev';
 Prefix '';
 Description 'JST corp JED series connector. This is an 8 position shrouded plug.';
 Value Off;
 Add CONN_PIN_8 'P' Next 0 (0 0);
 Package 'JST-08PS-JED' '_RIGHTANGLE';
-Technology  '';
+Technology '';
 Connect  'P.4' '4'  'P.2' '2'  'P.6' '6'  'P.8' '8'  'P.7' '7' \
          'P.5' '5'  'P.3' '3'  'P.1' '1';
 Package 'JST-08P-JED' '_VERTICAL';
-Technology  '';
+Technology '';
 Connect  'P.5' '5'  'P.7' '7'  'P.3' '3'  'P.1' '1'  'P.2' '2' \
          'P.4' '4'  'P.6' '6'  'P.8' '8';
 
-Edit SUP_NEG_ARROW.dev;
+Edit 'SUP_NEG_ARROW.dev';
 Prefix '';
 Description 'Symbol for negative supply voltages';
 Value Off;
 Add DOWN_ARROW '1' Next 0 (0 0);
 
-Edit SUP_POS_ARROW.dev;
+Edit 'SUP_POS_ARROW.dev';
 Prefix 'V';
 Description 'Symbol for positive supply voltages';
 Value Off;
 Add UP_ARROW '1' Next 0 (0 0);
 
-Edit CONN_JUMPPOINT.dev;
+Edit 'CONN_JUMPPOINT.dev';
 Prefix '';
 Description 'Something to put in a schematic as a reminder to do something about a pin';
 Value Off;
 Add JUMPPOINT '1' Next 0 (0 0);
 Package 'PAD_SQUARE_APC-FREE_0.1/028' '''''';
-Technology  '';
+Technology '';
 Connect  '1.TP' 'PAD';
 
-Edit IC_HT9170.dev;
+Edit 'IC_HT9170.dev';
 Prefix 'U';
 Description 'DTMF Reciver';
 Value Off;
 Add HT9170 'U' Next 0 (0 0);
 Package 'DIL18' 'B';
-Technology  '';
+Technology '';
 Connect  'U.VP' '1'  'U.VN' '2'  'U.GS' '3'  'U.VREF' '4'  'U.INH.A-D' '5' \
          'U.PWRDWN' '6'  'U.XI' '7'  'U.XO' '8'  'U.GND' '9'  'U.OE' '10'  'U.D0' '11' \
          'U.D1' '12'  'U.D2' '13'  'U.D3' '14'  'U.DV' '15'  'U.EST' '16'  'U.RT' '17' \
          'U.VDD' '18';
 Package 'SOP.3_18' 'D';
-Technology  '';
+Technology '';
 Connect  'U.DV' '15'  'U.EST' '16'  'U.RT' '17'  'U.VDD' '18'  'U.D3' '14' \
          'U.D2' '13'  'U.D1' '12'  'U.D0' '11'  'U.OE' '10'  'U.INH.A-D' '5'  'U.VREF' '4' \
          'U.GS' '3'  'U.VN' '2'  'U.VP' '1'  'U.PWRDWN' '6'  'U.XI' '7'  'U.XO' '8' \
          'U.GND' '9';
 
-Edit CONN_PINHEADER-2X5.dev;
+Edit 'CONN_PINHEADER-2X5.dev';
 Prefix 'J';
 Description '2mm pitch double row pinheader 2x5';
 Value Off;
 Add PINHEADER-2X5 'J' Next 0 (0 0);
 Package '2MM-2X5-HEADER' '''''';
-Technology  '';
+Technology '';
 Connect  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.8' '8'  'J.10' '10' \
          'J.9' '9'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1';
 Package '0.1_IN-PINHD-2X5-EDGEON' '-0.1_EDGEON';
-Technology  '';
+Technology '';
 Connect  'J.5' '5'  'J.3' '3'  'J.7' '7'  'J.9' '9'  'J.1' '1' \
          'J.4' '4'  'J.6' '6'  'J.2' '2'  'J.8' '8'  'J.10' '10';
 Package '2MM-2X5-RECEPTACLE_SMT_W/LOCATOR_PINS' '-RECEPTACLE_W/PINS';
-Technology  '';
+Technology '';
 Connect  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.7' '7'  'J.9' '9' \
          'J.10' '10'  'J.8' '8'  'J.6' '6'  'J.4' '4'  'J.2' '2';
 
-Edit IC_TC7W53F.dev;
+Edit 'IC_TC7W53F.dev';
 Prefix '';
 Description 'Single 2-IN Analog MUX';
 Value Off;
 Add AMUX_2 '.' Next 0 (0 0);
 Add VDD+VEE+GND 'P' Next 0 (-20.32 0);
 Package 'SSOP-8P-0.50A' 'K';
-Technology  '';
+Technology '';
 Connect  '..B' '6'  '..A' '7'  'P.VDD' '8'  '..A/B' '5'  'P.VEE' '3' \
          'P.GND' '4'  '..INH' '2'  '..Y' '1';
 
-Edit IC_IR2118.dev;
+Edit 'IC_IR2118.dev';
 Prefix '';
 Description 'Single Channel 600V bootstrap driver, inverted input';
 Value Off;
 Add IR2118 '.' Next 0 (0 0);
 Package 'DIL08' '''''';
-Technology  '';
-Connect  '..VCC' '1'  '..IN\' '2'  '..COM' '3'  '..NC@1' '4'  '..NC@2' '5' \
+Technology '';
+Connect  '..VCC' '1'  '..!IN' '2'  '..COM' '3'  '..NC@1' '4'  '..NC@2' '5' \
          '..VS' '6'  '..HO' '7'  '..VB' '8';
 Package 'SO8' 'S';
-Technology  '';
-Connect  '..IN\' '2'  '..HO' '7'  '..VCC' '1'  '..COM' '3'  '..NC@1' '4' \
+Technology '';
+Connect  '..!IN' '2'  '..HO' '7'  '..VCC' '1'  '..COM' '3'  '..NC@1' '4' \
          '..VB' '8'  '..VS' '6'  '..NC@2' '5';
 
-Edit SW_SPST.dev;
+Edit 'SW_SPST.dev';
 Prefix 'SW';
 Description '6mm x 3.5mm SPST switch, Panasonic etc.';
 Value Off;
 Add SW_SPST 'SW' Next 1 (0 0);
 Package 'SW_6X3.5MM' '-6X3.5MM';
-Technology  '';
+Technology '';
 Connect  'SW.1' '1'  'SW.2' '2';
 
-Edit SW_MOMENTARY.dev;
+Edit 'SW_MOMENTARY.dev';
 Prefix 'SW';
 Description 'Momentary push button';
 Value Off;
 Add SW_MOMENTARY 'SW' Next 1 (0 0);
 Package 'SW_6X3.5MM' '-6X3.5MM';
-Technology  '';
+Technology '';
 Connect  'SW.1' '1'  'SW.2' '2';
 
-Edit IC_TC7W74F.dev;
+Edit 'IC_TC7W74F.dev';
 Prefix 'U';
 Description 'SIngle D-FF';
 Value Off;
 Add D_FF '.' Next 0 (0 0);
 Add VCC+GND 'P' Next 0 (-22.86 2.54);
 Package 'SSOP-8P-0.50A' 'K';
-Technology  '';
-Connect  '..R' '6'  '..S' '7'  'P.VCC' '8'  '..Q' '5'  '..Q\' '3' \
+Technology '';
+Connect  '..R' '6'  '..S' '7'  'P.VCC' '8'  '..Q' '5'  '..!Q' '3' \
          'P.GND' '4'  '..D' '2'  '..C' '1';
 
-Edit CONN_PINHEADER-1X2.dev;
+Edit 'CONN_PINHEADER-1X2.dev';
 Prefix 'J';
 Description '1x2 Standard Pinheader';
 Value Off;
 Add PINHEADER-1X2 'J' Next 0 (0 0);
 Package '2MM-1X2-HEADER' '-2MM-STRAIGHT';
-Technology  '';
+Technology '';
 Connect  'J.2' '2'  'J.1' '1';
 Package '2MM-1X2-RIGHTANGLE-RECEPTACLE' '-2MM-RIGHTANGLE-RECEPTACLE';
-Technology  '';
+Technology '';
 Connect  'J.2' '2'  'J.1' '1';
 
-Edit PNP.dev;
+Edit 'PNP.dev';
 Prefix 'Q';
 Description 'PNP transitor';
 Value Off;
 Add PNP 'Q' Next 0 (0 0);
 Package 'SOT89' '-SOT89';
-Technology  '';
+Technology '';
 Connect  'Q.B' '1'  'Q.E' '3'  'Q.C' '2';
 
-Edit IC_74*160.dev;
+Edit 'IC_74*160.dev';
 Prefix 'U';
 Description '4bit synchronous counter ''160-''163';
 Value Off;
 Add 74160 '.' Next 0 (0 0);
 Add VCC+GND 'P' Next 0 (-20.32 0);
 Package 'TSSOP-16' '-PW';
-Technology  '';
+Technology '';
 Connect  '..QC' '12'  '..QD' '11'  '..ENT' '10'  '..LD' '9'  '..QB' '13' \
          '..QA' '14'  '..RCO' '15'  'P.VCC' '16'  '..C' '5'  '..A' '3'  '..CLK' '2' \
          '..CLR' '1'  '..B' '4'  '..ENP' '7'  '..D' '6'  'P.GND' '8';
 
-Edit CONN_CAN_NODE.dev;
+Edit 'CONN_CAN_NODE.dev';
 Prefix '';
 Description '\
 PSAS standard CAN node connedtor. (8 pin right angle plug + two strain relief blocks)\n\
@@ -9713,68 +10020,68 @@ Value Off;
 Add JUMPER 'S' Next 0 (2.54 -17.78);
 Add CONN_CAN 'J' Next 0 (0 0);
 Package 'CAN_NODE' '''''';
-Technology  '';
+Technology '';
 Connect  'J.CAN_H2' 'CANH@4'  'J.B+2' 'B+@2'  'J.CAN_L2' 'CANL@6'  'J.B-2' 'B-@8'  'J.B-1' 'B-@7' \
          'J.CAN_L1' 'CANL@5'  'J.CAN_H1' 'CANH@3'  'J.B+1' 'B+@1'  'S.1' 'CHASSIS@1'  'S.2' 'CHASSIS@2';
 
-Edit JUMPER_PCB.dev;
+Edit 'JUMPER_PCB.dev';
 Prefix '';
 Description 'Jumper to assist PCB layout, Std. resistor packages';
 Value Off;
 Add JUMPER 'J' Next 0 (0 0);
 Package '1206' '1206';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2';
 Package 'R0805' 'R0805';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2';
 Package 'R0603' 'R0603';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2';
 Package 'R0402' 'R0402';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2';
 
-Edit PAD_0.028.dev;
+Edit 'PAD_0.028.dev';
 Prefix '';
 Description '';
 Value Off;
 Add PAD_ROUND 'P' Next 0 (0 0);
 Package 'PAD_ROUND_APC-FREE_1MM/028' '''''';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 
-Edit PAD_ROUND.dev;
+Edit 'PAD_ROUND.dev';
 Prefix 'J';
 Description 'Round plated through holes of various sizes, mostly from the apc free drill list.';
 Value Off;
 Add PAD_ROUND 'P' Next 0 (0 0);
 Package 'PAD_ROUND_APC-FREE_0.1/028' '028';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.1/035' '035';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.1/042' '042';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.1/052' '052';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.1/0595' '0595';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.15/086' '086';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.2/125' '125';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 Package 'PAD_ROUND_APC-FREE_0.25/152' '152';
-Technology  '';
+Technology '';
 Connect  'P.PAD' 'PAD';
 
-Edit CONN_DB25-M.dev;
+Edit 'CONN_DB25-M.dev';
 Prefix 'J';
 Description '\
 Standard 25 pin Male "D" type connector.<br>\n\
@@ -9782,14 +10089,14 @@ This is the one that plugs into PC printer ports.';
 Value Off;
 Add DB25-M 'J' Next 0 (0 0);
 Package 'DB25M-EDGEON' '-EDGEON';
-Technology  '';
+Technology '';
 Connect  'J.7' '7'  'J.6' '6'  'J.8' '8'  'J.5' '5'  'J.4' '4' \
          'J.3' '3'  'J.2' '2'  'J.1' '1'  'J.9' '9'  'J.10' '10'  'J.11' '11' \
          'J.12' '12'  'J.13' '13'  'J.19' '19'  'J.20' '20'  'J.21' '21'  'J.22' '22' \
          'J.23' '23'  'J.24' '24'  'J.25' '25'  'J.18' '18'  'J.17' '17'  'J.16' '16' \
          'J.15' '15'  'J.14' '14';
 
-Edit CONN_DB25-F.dev;
+Edit 'CONN_DB25-F.dev';
 Prefix 'J';
 Description '\
 Standard 25 pin Female "D" type connector.<br>\n\
@@ -9797,54 +10104,54 @@ This is the one that plugs into old-style (wide) PC serial ports.';
 Value Off;
 Add DB25-F 'J' Next 0 (0 0);
 Package 'DB25F-EDGEON' '-EDGEON';
-Technology  '';
+Technology '';
 Connect  'J.7' '7'  'J.8' '8'  'J.6' '6'  'J.9' '9'  'J.10' '10' \
          'J.11' '11'  'J.12' '12'  'J.13' '13'  'J.5' '5'  'J.4' '4'  'J.3' '3' \
          'J.2' '2'  'J.1' '1'  'J.20' '20'  'J.19' '19'  'J.18' '18'  'J.17' '17' \
          'J.16' '16'  'J.15' '15'  'J.14' '14'  'J.21' '21'  'J.22' '22'  'J.23' '23' \
          'J.24' '24'  'J.25' '25';
 
-Edit CONN_NODE-2_DEBUG.dev;
+Edit 'CONN_NODE-2_DEBUG.dev';
 Prefix '';
 Description 'DEBUG Connector for Node-2 style psas CAN nodes';
 Value Off;
 Add NODE-2_DEBUG 'J' Next 0 (0 0);
 Package 'JST-08R-JED' '''''';
-Technology  '';
+Technology '';
 Connect  'J.3' '3'  'J.5' '5'  'J.7' '7'  'J.1' '1'  'J.2' '2' \
          'J.4' '4'  'J.6' '6'  'J.8' '8';
 
-Edit BATTERY_SYE-301P.dev;
+Edit 'BATTERY_SYE-301P.dev';
 Prefix '';
 Description 'SYE-301P 135mAh Lithium Ion Polymer Battery';
 Value Off;
 Add CELL 'B' Next 0 (0 0);
 Package 'SYE-301P' '''''';
-Technology  '';
+Technology '';
 Connect  'B.B-' '-'  'B.B+' '+';
 
-Edit INDUCTOR_TOKO_MC152.dev;
+Edit 'INDUCTOR_TOKO_MC152.dev';
 Prefix 'L';
 Description '<b>MC152</b>-type variable inductor, surface mount, Toko Corp.';
 Value Off;
 Add INDUCTOR_VARIABLE 'L' Next 0 (0 0);
 Package 'TOKO_MC152_UNSHLD' '''''';
-Technology  '';
+Technology '';
 Connect  'L.1' '1'  'L.2' '2';
 
-Edit FILTER_EMI.dev;
+Edit 'FILTER_EMI.dev';
 Prefix 'LF';
 Description 'EMI fliter combines RF chokes and capacitor in pi-arrangement';
 Value Off;
 Add EMI_FILTER 'LF' Next 0 (0 0);
 Package 'TRIPLE-LEAD-EPOXY-TO-SMT' '-EPOXY_SMT';
-Technology  '';
+Technology '';
 Connect  'LF.COMMON' 'C'  'LF.1' 'A'  'LF.2' 'B';
 Package 'EXC-CET' '-EXC-CET';
-Technology  '';
+Technology '';
 Connect  'LF.2' '2'  'LF.1' '1'  'LF.COMMON' 'C';
 
-Edit FILTER_MONOLITHIC_CRYSTAL+CASE.dev;
+Edit 'FILTER_MONOLITHIC_CRYSTAL+CASE.dev';
 Prefix 'F';
 Description '\
 Monolithic Crystal Filter (MCF)<br>\n\
@@ -9852,63 +10159,63 @@ This device includes a forth lead for grounding the case.';
 Value Off;
 Add MONOLITHIC_CRYSTAL_FILTER 'Y' Next 0 (0 0);
 Package 'HC49U-SMT' '''''';
-Technology  '';
+Technology '';
 Connect  'Y.IN1' '1'  'Y.IN2' '2'  'Y.CASE' '4'  'Y.COMMON' '3';
 
-Edit FILTER_CERAMIC.dev;
+Edit 'FILTER_CERAMIC.dev';
 Prefix 'F';
 Description 'Ceramic filter in 3 lead package';
 Value Off;
 Add CERAMIC_FILTER 'F' Next 0 (0 0);
 Package 'CERAMIC_FILTER_SIDEWAYS_SMT' '''''';
-Technology  '';
+Technology '';
 Connect  'F.COMMON' '2'  'F.IN1' '1'  'F.IN2' '3';
 
-Edit IC_MC13135.dev;
+Edit 'IC_MC13135.dev';
 Prefix 'U';
 Description 'MC13135, Narrowband, Dual conversion, FM reciever.';
 Value Off;
 Add MC13135 'U' Next 0 (38.1 43.18);
 Package 'DIL24-SMT' '''''';
-Technology  '';
+Technology '';
 Connect  'U.LO1-B' '1'  'U.VC-K' '24'  'U.LO1-E' '2'  'U.LO1-O' '3'  'U.VCC1' '4' \
          'U.LO2-E' '5'  'U.LO2-B' '6'  'U.MX2_O' '7'  'U.VEE' '8'  'U.IF-IN' '9'  'U.BYP1' '10' \
          'U.BYP2' '11'  'U.RSSI' '12'  'U.VC-A' '23'  'U.MX1_I1' '22'  'U.MX1_I2' '21'  'U.MX1_O' '20' \
          'U.VCC2' '19'  'U.MX2_I' '18'  'U.AFO' '17'  'U.OP-O' '16'  'U.OP-' '15'  'U.OP+' '14' \
          'U.QUAD_COIL' '13';
 
-Edit IC_MC145170.dev;
+Edit 'IC_MC145170.dev';
 Prefix 'U';
 Description 'Single chip VHF synthesizer';
 Value Off;
 Add MC145170 'U' Next 0 (0 0);
 Package 'SO16' 'D';
-Technology  '';
+Technology '';
 Connect  'U.OSC_IN' '1'  'U.VCC' '16'  'U.OSC_OUT' '2'  'U.REF' '3'  'U.PHI_N' '15' \
-         'U.PHI_R' '14'  'U.RFIN' '4'  'U.PHI_A' '13'  'U.DIN' '5'  'U.VSS' '12'  'U.ENB\' '6' \
+         'U.PHI_R' '14'  'U.RFIN' '4'  'U.PHI_A' '13'  'U.DIN' '5'  'U.VSS' '12'  'U.!ENB' '6' \
          'U.CLK' '7'  'U.LD' '11'  'U.F_N' '10'  'U.DOUT' '8'  'U.F_R' '9';
 
-Edit IC_74HC1G04.dev;
+Edit 'IC_74HC1G04.dev';
 Prefix 'U';
 Description 'Single inverter';
 Value Off;
 Add INVERTER '.' Next 0 (0 0);
 Add VDD+GND 'P' Next 0 (-12.7 -17.78);
 Package 'SOT23-5' '''''';
-Technology  '';
+Technology '';
 Connect  '..IN' '2'  'P.GND' '3'  'P.VDD' '5'  '..OUT' '4';
 
-Edit COIL_QUAD.dev;
+Edit 'COIL_QUAD.dev';
 Prefix 'L';
 Description 'IF tuning can. "Quadrature coil"';
 Value Off;
 Add QUAD_COIL '.' Next 0 (0 0);
 Add JUMPER 'SHIELD' Next 0 (0 -17.78);
 Package 'TOKO_5P_CAN' '-TK5P';
-Technology  '';
+Technology '';
 Connect  '..2' '3'  '..1' '1'  'SHIELD.1' 'SHIELD@1'  'SHIELD.2' 'SHIELD@2';
 
-Edit CONN_SMB_MALE.dev;
+Edit 'CONN_SMB_MALE.dev';
 Prefix '';
 Description '\
 Automotivie style SMB connector with plastic housing for PCB mounting.<br>\n\
@@ -9916,30 +10223,30 @@ Should be interoperable with SMA connectors with long (1/2") barrels.';
 Value Off;
 Add CONN_COAX_MALE_4GROUNDS 'J' Next 0 (0 2.54);
 Package 'FARKA_MALE_PCB' '-FARKA';
-Technology  '';
+Technology '';
 Connect  'J.RF-@2' 'RF-@2'  'J.RF-@3' 'RF-@3'  'J.RF-@4' 'RF-@4'  'J.RF-@1' 'RF-@1'  'J.RF+' 'RF+';
 
-Edit COIL_FERRITE_BEAD.dev;
+Edit 'COIL_FERRITE_BEAD.dev';
 Prefix '';
 Description 'Interference suppression beads';
 Value Off;
 Add INDUCTOR_BEAD 'L' Next 0 (0 0);
 Package 'R0603' '-0603';
-Technology  '';
+Technology '';
 Connect  'L.1' '1'  'L.2' '2';
 
-Edit IC_UP_AT76C712.dev;
+Edit 'IC_UP_AT76C712.dev';
 Prefix 'U';
 Description '';
 Value Off;
 Add AT76C712 'U1' Next 0 (0 0);
 Package 'TQFP64-10X10' '''''';
-Technology  '';
-Connect  'U1.PGND1' '1'  'U1.RST\' '2'  'U1.CVDD1' '3'  'U1.PE3/INT1' '4'  'U1.PE2/INT0' '5' \
+Technology '';
+Connect  'U1.PGND1' '1'  'U1.!RST' '2'  'U1.CVDD1' '3'  'U1.PE3/INT1' '4'  'U1.PE2/INT0' '5' \
          'U1.PE1/TX1' '6'  'U1.PE0/RX1' '7'  'U1.PVDD1' '8'  'U1.MODE0' '9'  'U1.MODE1' '10'  'U1.CGND1' '11' \
          'U1.LFT' '12'  'U1.AGND' '13'  'U1.XIN' '14'  'U1.XOUT' '15'  'U1.AVDD' '16'  'U1.VEXT' '17' \
          'U1.VSEL' '18'  'U1.PVDD2' '19'  'U1.CGND2' '20'  'U1.PC2' '21'  'U1.PC1' '22'  'U1.PC0' '23' \
-         'U1.CVDD2' '24'  'U1.PB7/SCK' '25'  'U1.PB6/MISO' '26'  'U1.PB5/MOSI' '27'  'U1.PB4/SS\' '28'  'U1.PB3/IC' '29' \
+         'U1.CVDD2' '24'  'U1.PB7/SCK' '25'  'U1.PB6/MISO' '26'  'U1.PB5/MOSI' '27'  'U1.PB4/!SS' '28'  'U1.PB3/IC' '29' \
          'U1.PB2/T2' '30'  'U1.PVDD3' '31'  'U1.PGND2' '32'  'U1.VDD_D' '33'  'U1.PD7/RI' '34'  'U1.PD6/CD' '35' \
          'U1.PD5/DTR' '36'  'U1.PD4/DSR' '37'  'U1.PD3/CTS' '38'  'U1.PD2/RTS' '39'  'U1.PD1/TX0' '40'  'U1.PD0/RX0' '41' \
          'U1.CVDD3' '42'  'U1.PGND3' '43'  'U1.CGND3' '44'  'U1.SUSP' '45'  'U1.DP' '46'  'U1.DM' '47' \
@@ -9947,22 +10254,22 @@ Connect  'U1.PGND1' '1'  'U1.RST\' '2'  'U1.CVDD1' '3'  'U1.PE3/INT1' '4'  'U1.P
          'U1.TDI' '54'  'U1.TDO' '55'  'U1.CGND4' '56'  'U1.CVDD4' '57'  'U1.PA1' '58'  'U1.PA0' '59' \
          'U1.B1/T1' '60'  'U1.B0/T0' '61'  'U1.TST_EN' '62'  'U1.TST_CLK' '63'  'U1.PVDD5' '64';
 
-Edit SW_0.1-SPDT.dev;
+Edit 'SW_0.1-SPDT.dev';
 Prefix 'S';
 Description '';
 Value Off;
 Add SW_SPDT 'S' Next 0 (0 0);
 Package '0.1_IN_HEADER_FOR_SWITCH' '''''';
-Technology  '';
+Technology '';
 Connect  'S.COM' 'CENTER'  'S.NC' 'LEFT'  'S.NO' 'RIGHT';
 
-Edit CONN_HIROSE-DF9A-51R-1V.dev;
+Edit 'CONN_HIROSE-DF9A-51R-1V.dev';
 Prefix 'J';
 Description '';
 Value Off;
 Add HIROSE_51P_RECEPTACLE 'J' Next 0 (0 0);
 Package 'HIROSE-DF9-51S-1V' '''''';
-Technology  '';
+Technology '';
 Connect  'J.26' '26'  'J.25' '25'  'J.23' '23'  'J.21' '21'  'J.19' '19' \
          'J.17' '17'  'J.15' '15'  'J.13' '13'  'J.11' '11'  'J.7' '7'  'J.9' '9' \
          'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.51' '51'  'J.49' '49'  'J.47' '47' \
@@ -9973,7 +10280,7 @@ Connect  'J.26' '26'  'J.25' '25'  'J.23' '23'  'J.21' '21'  'J.19' '19' \
          'J.46' '46'  'J.44' '44'  'J.42' '42'  'J.40' '40'  'J.38' '38'  'J.36' '36' \
          'J.34' '34'  'J.32' '32'  'J.30' '30'  'J.28' '28'  'J.A' 'A'  'J.B' 'B';
 
-Edit FOOTPRINT_MG5001.dev;
+Edit 'FOOTPRINT_MG5001.dev';
 Prefix 'J';
 Description '\
 Complete footprint for MG5001 OEM GPS board.<br>\n\
@@ -9981,7 +10288,7 @@ lncludes 51 pin connector, mounting holes, and board outline.';
 Value Off;
 Add MG5001-FOOTPRINT 'MG5001' Next 0 (0 0);
 Package 'MG5001-FOOTPRINT' '''''';
-Technology  '';
+Technology '';
 Connect  'MG5001.26' '26'  'MG5001.25' '25'  'MG5001.23' '23'  'MG5001.21' '21'  'MG5001.19' '19' \
          'MG5001.17' '17'  'MG5001.15' '15'  'MG5001.13' '13'  'MG5001.11' '11'  'MG5001.7' '7'  'MG5001.9' '9' \
          'MG5001.5' '5'  'MG5001.3' '3'  'MG5001.1' '1'  'MG5001.51' '51'  'MG5001.49' '49'  'MG5001.47' '47' \
@@ -9992,7 +10299,7 @@ Connect  'MG5001.26' '26'  'MG5001.25' '25'  'MG5001.23' '23'  'MG5001.21' '21' 
          'MG5001.46' '46'  'MG5001.44' '44'  'MG5001.42' '42'  'MG5001.40' '40'  'MG5001.38' '38'  'MG5001.36' '36' \
          'MG5001.34' '34'  'MG5001.32' '32'  'MG5001.30' '30'  'MG5001.28' '28'  'MG5001.A' 'A'  'MG5001.B' 'B';
 
-Edit IC_REG_3TERM.dev;
+Edit 'IC_REG_3TERM.dev';
 Prefix '';
 Description '\
 Three terminal linear regulator, available in many varients.<br>\n\
@@ -10000,13 +10307,13 @@ Models with the <b>TAB</b> connected to <b>VOut</b> are most common, but grounde
 Value Off;
 Add REGULATOR-LINEAR-3TERM 'U' Next 0 (0 0);
 Package 'TO220-VERT' '-CENTER=VOUT';
-Technology  '';
+Technology '';
 Connect  'U.GND' '1'  'U.VO' '2'  'U.VI' '3';
 Package 'TO220-VERT' '-CENTER=GND';
-Technology  '';
+Technology '';
 Connect  'U.VI' '1'  'U.GND' '2'  'U.VO' '3';
 
-Edit IC_REG_3TERM+TAB=GND.dev;
+Edit 'IC_REG_3TERM+TAB=GND.dev';
 Prefix '';
 Description '\
 Three Terminal Linear Regulator w/<b>Grounded TAB</b><br>\n\
@@ -10014,10 +10321,10 @@ The metal heat sink TAB on many regulators is electrically active. Effectively t
 Value Off;
 Add REGULATOR-LINERAR-3TERM+TAB=GND 'U' Next 0 (0 0);
 Package 'TO263/D2PAK-3' '''''';
-Technology  '';
+Technology '';
 Connect  'U.VI' '1'  'U.VO' '3'  'U.TAB' 'TAB'  'U.GND' '2';
 
-Edit IC_REG_3TERM+TAB=VOUT.dev;
+Edit 'IC_REG_3TERM+TAB=VOUT.dev';
 Prefix '';
 Description '\
 Three Terminal Linear Regulator w/<b>TAB</b> connected to <b>VOUT</b><br>\n\
@@ -10025,10 +10332,10 @@ The metal heat sink TAB on many regulators is electrically active. Effectively t
 Value Off;
 Add REGULATOR-LINEAR-3TERM+TAB=VOUT 'U' Next 0 (0 0);
 Package 'TO263/D2PAK-3' '''''';
-Technology  '';
+Technology '';
 Connect  'U.GND' '1'  'U.VI' '3'  'U.TAB' 'TAB'  'U.VO' '2';
 
-Edit IC_LT1616.dev;
+Edit 'IC_LT1616.dev';
 Prefix 'U';
 Description '\
 <h3>LT1616</h3> step-down switching regulator<br>\n\
@@ -10036,52 +10343,52 @@ Description '\
 Value Off;
 Add LT1616 'U' Next 0 (0 0);
 Package 'SOT23-6' 'ES6';
-Technology  '';
+Technology '';
 Connect  'U.VIN' '5'  'U.GND' '2'  'U.FB' '3'  'U.BOOST' '1'  'U.VSW' '6' \
-         'U.SHDN\' '4';
+         'U.!SHDN' '4';
 
-Edit SUP_POS_BAR.dev;
+Edit 'SUP_POS_BAR.dev';
 Prefix 'V';
 Description 'Positive Voltage supply symbol';
 Value Off;
 Add BAR_SUP 'G$1' Next 0 (0 0);
 
-Edit CONN_EUROBLOCK_0.1X3.dev;
+Edit 'CONN_EUROBLOCK_0.1X3.dev';
 Prefix 'J';
 Description 'Euro-Style Terminal block 0.1" centers, 3 connectors';
 Value Off;
 Add EUROBLOCK-X3 'J' Next 0 (0 0);
 Package 'EUROBLOCK-2.54-X3' '''''';
-Technology  '';
+Technology '';
 Connect  'J.1' '1'  'J.2' '2'  'J.3' '3';
 
-Edit IC_MAX3232.dev;
+Edit 'IC_MAX3232.dev';
 Prefix 'U';
 Description 'RS232 Dual Transciever';
 Value Off;
 Add MAX3232 'U' Next 0 (0 0);
 Package 'SO16' 'D';
-Technology  '';
+Technology '';
 Connect  'U.C1+' '1'  'U.VCC' '16'  'U.V+' '2'  'U.C1-' '3'  'U.GND' '15' \
          'U.T1OUT' '14'  'U.C2+' '4'  'U.R1IN' '13'  'U.C2-' '5'  'U.R1OUT' '12'  'U.V-' '6' \
          'U.T2OUT' '7'  'U.T1IN' '11'  'U.T2IN' '10'  'U.R2IN' '8'  'U.R2OUT' '9';
 Package 'SO16W' 'DW';
-Technology  '';
+Technology '';
 Connect  'U.V+' '2'  'U.R1IN' '13'  'U.C1+' '1'  'U.C1-' '3'  'U.C2+' '4' \
          'U.T1OUT' '14'  'U.R1OUT' '12'  'U.T1IN' '11'  'U.V-' '6'  'U.R2OUT' '9'  'U.C2-' '5' \
          'U.T2OUT' '7'  'U.T2IN' '10'  'U.R2IN' '8'  'U.GND' '15'  'U.VCC' '16';
 
-Edit IC_MEM_AT45DBX*.dev;
+Edit 'IC_MEM_AT45DBX*.dev';
 Prefix 'U';
 Description 'Serial DataFlash';
 Value Off;
 Add AT45DB_DATAFLASH 'U' Next 0 (0 0);
 Package 'TSOP-28-8X13.4' '-TC';
-Technology  '';
+Technology '';
 Connect  'U.GND' '7'  'U.RDY' '1'  'U.SO' '14'  'U.SI' '13'  'U.SCK' '12' \
-         'U.CS\' '11'  'U.RST\' '2'  'U.WP\' '3'  'U.VCC' '6';
+         'U.!CS' '11'  'U.!RST' '2'  'U.!WP' '3'  'U.VCC' '6';
 
-Edit CONN_PINHEADER-2X8.dev;
+Edit 'CONN_PINHEADER-2X8.dev';
 Prefix 'J';
 Description '\
 Generic 2x8 pinheader<br>\n\
@@ -10089,36 +10396,93 @@ Various pitches possible';
 Value Off;
 Add PINHEADER-2X8 'J' Next 0 (0 0);
 Package '2MM-2X8-HEADER' '-2MM';
-Technology  '';
+Technology '';
 Connect  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.8' '8'  'J.10' '10' \
          'J.9' '9'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.11' '11' \
          'J.12' '12'  'J.14' '14'  'J.13' '13'  'J.15' '15'  'J.16' '16';
 
-Edit CAP-POL-ELECTROLYTIC.dev;
+Edit 'CAP-POL-ELECTROLYTIC.dev';
 Prefix 'C';
 Description '';
 Value Off;
 Add CAP-POL-ELECTROLYTIC 'C' Next 0 (0 0);
 Package 'EIA-6032-28' '-6032-28';
-Technology  '';
+Technology '';
 Connect  'C.-' '-'  'C.+' '+';
 Package 'EIA-7343-31' '-7342-31';
-Technology  '';
+Technology '';
 Connect  'C.-' '-'  'C.+' '+';
 
-Edit FOOTPRINT_MG5003.dev;
+Edit 'FOOTPRINT_MG5003.dev';
 Prefix 'J';
 Description '';
 Value Off;
 Add PINHEADER-2X8 'J' Next 0 (0 0);
 Package 'MG5003-FOOTPRINT' '''''';
-Technology  '';
+Technology '';
 Connect  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.8' '8'  'J.10' '10' \
          'J.9' '9'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.11' '11' \
          'J.12' '12'  'J.14' '14'  'J.13' '13'  'J.15' '15'  'J.16' '16';
 Package 'MG5003-FOOTPRINT-ONE_HOLE' '-1HOLE';
-Technology  '';
+Technology '';
 Connect  'J.6' '6'  'J.4' '4'  'J.2' '2'  'J.8' '8'  'J.10' '10' \
          'J.9' '9'  'J.7' '7'  'J.5' '5'  'J.3' '3'  'J.1' '1'  'J.11' '11' \
          'J.12' '12'  'J.14' '14'  'J.13' '13'  'J.15' '15'  'J.16' '16';
+
+Edit 'IC_LPC2148.dev';
+Prefix '';
+Description '\
+Single-chip 16-bit/32-bit microcontroller\n\
+ARM7\n\
+Full-speed USB 2.0';
+Value Off;
+Add LPC2148 'G$1' Next 0 (7.62 0);
+Package 'TQFP64-10X10' '''''';
+Technology '';
+Connect  'G$1.P0.21/PWM5/AD1.6/CAP1.3' '1'  'G$1.P0.22/AD1.7/CAP0.0/MAT0.0' '2'  'G$1.RTXC1' '3'  'G$1.P1.19/TRACEPKT3' '4'  'G$1.RTXC2' '5' \
+         'G$1.VSS_1' '6'  'G$1.VDDA' '7'  'G$1.P1.18/TRACEPKT2' '8'  'G$1.P0.25/AD0.4/AOUT' '9'  'G$1.D+' '10'  'G$1.D-' '11' \
+         'G$1.P1.17/TRACEPKT1' '12'  'G$1.P0.28/AD0.1/CAP0.2/MAT0.2' '13'  'G$1.P0.29/AD0.2/CAP0.3/MAT0.3' '14'  'G$1.P0.30/AD0.3/EINT3/CAP0.0' '15'  'G$1.P1.16/TRACEPKT0' '16'  'G$1.P0.31/UP_LED/CONNECT' '17' \
+         'G$1.VSS_2' '18'  'G$1.P0.0/TXD0/PWM1' '19'  'G$1.P1.31/!TRST' '20'  'G$1.P0.1/RXD0/PWM3/EINT0' '21'  'G$1.P0.2/SCL0/CAP0.0' '22'  'G$1.VDD_1' '23' \
+         'G$1.P1.26/RTCK' '24'  'G$1.VSS_3' '25'  'G$1.P0.3/SDA0/MAT0.0/EINT1' '26'  'G$1.P0.4/SCK0/CAP0.1/AD0.6' '27'  'G$1.P1.25/EXTIN0' '28'  'G$1.P0.5/MISO0/MAT0.1/AD0.7' '29' \
+         'G$1.P0.6/MOSI0/CAP0.2/AD1.0' '30'  'G$1.P0.7/SSEL0/PWM2/EINT2' '31'  'G$1.P1.24/TRACECLK' '32'  'G$1.P0.8/TXD1/PWM4/AD1.1' '33'  'G$1.P0.9/RXD1/PWM6/EINT3' '34'  'G$1.P0.10/RTS1/CAP1.0/AD1.2' '35' \
+         'G$1.P1.23/PIPESTAT2' '36'  'G$1.P0.11/CTS1/CAP1.1/SCL1' '37'  'G$1.P0.12/DSR1/MAT1.0/AD1.3' '38'  'G$1.P0.13/DTR1/MAT1.1/AD1.4' '39'  'G$1.P1.22/PIPESTAT1' '40'  'G$1.P0.14/DCD1/EINT1/SDA1' '41' \
+         'G$1.VSS_4' '42'  'G$1.VDD_2' '43'  'G$1.P1.21/PIPESTAT0' '44'  'G$1.P0.15/RI1/EINT2/AD1.5' '45'  'G$1.P0.16/EINT0/MAT0.2/CAP0.2' '46'  'G$1.P0.17/CAP1.2/SCK1/MAT1.2' '47' \
+         'G$1.P1.20/TRACESYNC' '48'  'G$1.VBAT' '49'  'G$1.VSS_5' '50'  'G$1.VDD_3' '51'  'G$1.P1.30/TMS' '52'  'G$1.P0.18/CAP1.3/MISO1/MAT1.3' '53' \
+         'G$1.P0.19/MAT1.2/MOSI1/CAP1.2' '54'  'G$1.P0.20/MAT1.3/SSEL1/EINT3' '55'  'G$1.P1.29/TCK' '56'  'G$1.!RESET' '57'  'G$1.P0.23/VBUS' '58'  'G$1.VSSA' '59' \
+         'G$1.P1.28/TDI' '60'  'G$1.XTAL2' '61'  'G$1.XTAL1' '62'  'G$1.VREF' '63'  'G$1.P1.27/TDO' '64';
+
+Edit 'CONN_USB_NODE.dev';
+Prefix '';
+Description '';
+Value Off;
+Add CONN_USB 'G$1' Next 0 (0 0);
+Add JUMPER 'G$2' Next 0 (2.54 -17.78);
+Package 'NODE_CONN' '''''';
+Technology '';
+Connect  'G$1.USB_H2' 'SIG4@4'  'G$1.USB_5V2' 'SIG2@2'  'G$1.USB_L2' 'SIG6@6'  'G$1.USB_GND2' 'SIG8@8'  'G$1.USB_GND1' 'SIG7@7' \
+         'G$1.USB_L1' 'SIG5@5'  'G$1.USB_H1' 'SIG3@3'  'G$1.USB_5V1' 'SIG1@1'  'G$2.1' 'CHASSIS@1'  'G$2.2' 'CHASSIS@2';
+
+Edit 'IC_MAX5902.dev';
+Prefix '';
+Description '';
+Value Off;
+
+Edit 'IC_CD4024.dev';
+Prefix 'IC';
+Description '7-stage binary/ripple <b>COUNTER</b>';
+Value On;
+Add 4024 'A' Next 0 (15.24 0);
+Add PWRN 'P' Request 0 (-5.08 0);
+Package 'DIL14' 'N';
+Technology '';
+Connect  'A.CLK' '1'  'A.RES' '2'  'P.VSS' '7'  'A.Q7' '3'  'A.Q6' '4' \
+         'A.Q4' '6'  'A.Q5' '5'  'A.Q3' '9'  'A.Q2' '11'  'A.Q1' '12'  'P.VDD' '14';
+Package 'SO14' 'D';
+Technology '';
+Connect  'A.CLK' '1'  'P.VDD' '14'  'A.RES' '2'  'A.Q7' '3'  'A.Q1' '12' \
+         'A.Q6' '4'  'A.Q2' '11'  'A.Q5' '5'  'A.Q4' '6'  'A.Q3' '9'  'P.VSS' '7';
+Package 'TSSOP-14' 'PW';
+Technology '';
+Connect  'A.CLK' '1'  'A.RES' '2'  'A.Q7' '3'  'A.Q6' '4'  'A.Q5' '5' \
+         'A.Q4' '6'  'P.VSS' '7'  'A.Q3' '9'  'A.Q2' '11'  'A.Q1' '12'  'P.VDD' '14';
 Grid inch;
