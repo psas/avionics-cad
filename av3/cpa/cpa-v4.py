@@ -110,7 +110,7 @@ print ('Number of feeds = ' + str(number_feeds) + ', number of levels = ' + str(
 feed_top = 0 # [m] Top of the feed structure (set below)
 
 # ---------------------------------------------------------------------------------------------------------------------
-# strip_width
+# strip_width - this jives within about 1% to http://wcalc.sourceforge.net/cgi-bin/microstrip.cgi
 
 def strip_width(impedance):
 	B = 377 * pi / (2 * impedance * sqrt(epsilon_r))
@@ -232,7 +232,9 @@ def draw_feed(level, feed, y, z_in, z_out, z_next):
 	if level == 0:
 		feed_top = y + y_width
 	
-	# Draw the corner: draw a rectangle and rotate it +/- 45 degrees
+	# Draw the corner: draw a rectangle and rotate it +/- 45 degrees. Note that the 45 degree mitre is close, but not quite the optimal.
+	# We think the optimal is slightly more mitre - see http://en.wikipedia.org/wiki/Microstrip but we're ignoring this because it's hard
+	# to do, and our v3 CPAs were even fatter since they used wires instead of rotated rectangles.
 	hypotemoose = sqrt(2)*strip_width(z_out)
 	x_corner =  x-x_offset-strip_width(z_out)/4
 	y_corner =  y-y_width+strip_width(z_out)/4
