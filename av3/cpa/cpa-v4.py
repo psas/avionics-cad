@@ -5,16 +5,8 @@
 #
 # Based on previous Excel spreadsheets.
 
-import math
 import sys
-import os
-import time
-import commands
-import datetime
-
 import subprocess
-
-
 from math import sqrt, log, acos, exp, ceil
 
 # =====================================================================================================================
@@ -383,4 +375,3 @@ with script:
 # Script finish
 
 subprocess.Popen(["eagle", "-C", "script ./" + filename, "test.brd"])
-#commands.getstatusoutput("eagle -C \"script ./" + filename + "\" test.brd")
