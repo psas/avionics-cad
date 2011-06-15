@@ -11,7 +11,6 @@ import time
 import commands
 import datetime
 
-import shlex
 import subprocess
 
 from math import sqrt, log, acos, pow, exp
@@ -385,8 +384,7 @@ try:
 	exit_ok = True
 	script.close()
 
-	args = shlex.split("eagle -C \"script ./" + filename + "\" test.brd")
-	subprocess.Popen(args)
+	subprocess.Popen(["eagle", "-C", "script ./" + filename, "test.brd"])
 	#commands.getstatusoutput("eagle -C \"script ./" + filename + "\" test.brd")
 	
 
