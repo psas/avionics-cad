@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 # PSAS Cylindrical Linear Patch Antenna (CPA) v4 Calculator 
