@@ -14,7 +14,7 @@ import datetime
 
 import subprocess
 
-from math import sqrt, log, acos, pow, exp
+from math import sqrt, log, acos, exp
 
 # =====================================================================================================================
 # Parse inputs
@@ -80,7 +80,7 @@ z_0 = sqrt(mu/epsilon) * log(1 + 2 * h / airframe_od) / (2 * pi)
 L  = pi *(airframe_od + H) # [m] Note: includes t_pcb, but the copper is on the *inside*. We claim this doesn't make a difference, since we really want to know the length of the FR4.
 BL = L / (120 * pi * lambda_0) * (-0.540754132818691 - 2 * log(f * h / c))
 GL = L / (120 * lambda_0)
-theta = acos((BL * BL + GL * GL-1/(z_0*z_0))/sqrt( pow((BL*BL+GL*GL),2)+1/pow(z_0,4)+2*(BL-GL)*(BL+GL)/(z_0*z_0)))
+theta = acos((BL * BL + GL * GL-1/(z_0*z_0))/sqrt( ((BL*BL+GL*GL) ** 2)+1/(z_0 ** 4)+2*(BL-GL)*(BL+GL)/(z_0*z_0)))
 
 patch_length = (theta * lambda_0) / (2 * pi * sqrt(epsilon_r)) # [m] electrical patch length
 
@@ -159,8 +159,8 @@ def draw_feed(level, feed, y, z_in, z_out, z_next):
 	global feed_top
 
 	# Calculate this feed's width and the x of the center of the feed
-	number_feeds = pow(2,level)
-	feed_width = patch_width / (2 * pow(2,level))
+	number_feeds = 2 ** level
+	feed_width = patch_width / (2 * (2 ** level))
 	x = (-1*number_feeds + feed*2 + 1)*feed_width
 	
 	# Calculate how many 1/4 wave transformers we need. If Z_in = Z_out/2, then we don't need any. If that's not
@@ -299,7 +299,7 @@ try:
 			z_next = 50
 
 		# There are 2^level feed structures on each level (level 0 = 1, level 1 = 2, level 2 = 4, etc)
-		number_feeds = pow(2,level)
+		number_feeds = 2 ** level
 		for feed in range(number_feeds):
 			print("starting level " + str(level) + " feed " + str(feed) + " with y = " + str(y) + ' and z_in = ' + str(z_in) + ' and z_out = ' + str(z_out))
 			height = draw_feed(level, feed, y, z_in, z_out, z_next)
