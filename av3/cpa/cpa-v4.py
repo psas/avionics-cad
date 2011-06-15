@@ -14,7 +14,8 @@ import datetime
 
 import subprocess
 
-from math import sqrt, log, acos, exp
+
+from math import sqrt, log, acos, exp, ceil
 
 # =====================================================================================================================
 # Parse inputs
@@ -98,10 +99,8 @@ if patch_width > (17 * 0.0254): # 11 x 17 in PCB
 feeds  = patch_width / (lambda_0 / sqrt(epsilon_r))
 
 # Turn the fractional number of feeds into an integer power of 2, necessary for the corporate feed structure.
-number_feeds = 2
-while number_feeds < feeds:
-	number_feeds = number_feeds * 2
-number_levels = int(log(number_feeds,2))
+number_levels = int(ceil(log(feeds, 2)))
+number_feeds = 2 ** number_levels
 
 z_patch = number_feeds * 60 * lambda_0 / patch_width
 
