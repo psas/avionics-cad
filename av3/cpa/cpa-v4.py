@@ -254,9 +254,7 @@ def draw_feed(level, feed, y, z_in, z_out, z_next):
 # ====================================================================================================================
 # Main 
 
-exit_ok = False
-
-try:  
+with script:
 	# -------------------------------------------------------------------------------------------------------------
 	# Script setup
 
@@ -381,21 +379,9 @@ try:
  	final_length = top_outline - bottom_outline 
 	print('Final dimensions of the antenna are ' + str(final_width*1000) + ' x ' + str(final_length*1000) + ' mm (' + str(final_width/0.0254) + ' x ' + str(final_length/0.0254) + ' in)')
 	script.write('window fit;\n')
-	# -------------------------------------------------------------------------------------------------------------
-	# Script finish
 
-	exit_ok = True
-	script.close()
+# -------------------------------------------------------------------------------------------------------------
+# Script finish
 
-	subprocess.Popen(["eagle", "-C", "script ./" + filename, "test.brd"])
-	#commands.getstatusoutput("eagle -C \"script ./" + filename + "\" test.brd")
-	
-
-finally:
-	if exit_ok == False:
-		script.close()
-
-
-
- 
-
+subprocess.Popen(["eagle", "-C", "script ./" + filename, "test.brd"])
+#commands.getstatusoutput("eagle -C \"script ./" + filename + "\" test.brd")
