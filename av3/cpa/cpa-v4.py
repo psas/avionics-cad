@@ -29,8 +29,8 @@ f = float(sys.argv[1])
 if f < 0.1 or f > 20:
 	print("Frequency must be between 0.1 GHz (100 MHz) and 20 GHz (f = " + str(f) + " GHz)")
 	sys.exit(1)
-filename = 'cpa-v4-' + str(f) + '.scr'
-script = open(filename, 'w')
+filename = 'cpa-v4-' + str(f)
+script = open(filename + '.scr', 'w')
 dprint(2, "Input frequency = " + str(f) + ' GHz')
 f = f * 1000000000
 
@@ -409,5 +409,5 @@ with script:
 # Script finish
 
 if launch_eagle == True:
-	subprocess.Popen(["eagle", "-C", "script ./" + filename, "test.brd"])
+	subprocess.Popen(["eagle", "-C", "script ./" + filename, filename + ".brd"])
 
