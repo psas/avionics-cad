@@ -1,3 +1,17 @@
+Notes on v4 cylindrical patch antenna designs
+
+2011/06/15 
+
+Well, we've changed a few things! We've moved from the spreadsheet to a python script, and we've moved from 1.2 / 1.5 / 2.4 to 1.5 / 2.4 / 5.8 GHz. To make antennas, simply:
+
+    run `./cpa-v4.py <frequency>`.
+    Make sure there's a 'cam' directory.
+    In EAGLE, open cpa-v4.cam and hit 'Process Job'.
+    Use `gerbv` to sanity check the .gbx and .xln outputs.
+    When you get the antennas back, see the 2004/07/03 instructions below to cut them out.
+
+============================================================================================================================================================================
+
 Notes on the v3 cylindrical patch antenna designs
 
 2004/08/04
