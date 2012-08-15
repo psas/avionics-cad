@@ -6485,7 +6485,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="R103" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
 <part name="R104" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
 <part name="R101" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
-<part name="R100" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="301"/>
+<part name="R100" library="rcl_custom" deviceset="R-US_" device="1206-B" value="301"/>
 <part name="B103A" library="battery" deviceset="LIPO-8AHR" device=""/>
 <part name="B102A" library="battery" deviceset="LIPO-8AHR" device=""/>
 <part name="B101A" library="battery" deviceset="LIPO-8AHR" device=""/>
@@ -6825,7 +6825,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="83.82" y1="195.58" x2="149.86" y2="195.58" width="1.27" layer="91"/>
 <wire x1="83.82" y1="190.5" x2="83.82" y2="195.58" width="1.27" layer="91"/>
 <wire x1="83.82" y1="190.5" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="180.34" x2="85.09" y2="180.34" width="1.27" layer="91"/>
+<wire x1="82.55" y1="180.34" x2="83.82" y2="180.34" width="1.27" layer="91"/>
+<wire x1="83.82" y1="180.34" x2="85.09" y2="180.34" width="1.27" layer="91"/>
 <wire x1="83.82" y1="180.34" x2="85.09" y2="180.34" width="1.27" layer="91"/>
 <wire x1="83.82" y1="180.34" x2="83.82" y2="190.5" width="1.27" layer="91"/>
 <wire x1="167.64" y1="195.58" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
@@ -6848,6 +6849,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="B103A" gate="G$1" pin="B+@2"/>
 <pinref part="C116" gate="CE" pin="1"/>
 <pinref part="R103" gate="R" pin="1"/>
+<junction x="83.82" y="180.34"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -7362,7 +7364,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="101.6" y1="167.64" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="162.56" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="154.94" x2="83.82" y2="165.1" width="1.27" layer="91"/>
-<wire x1="82.55" y1="172.72" x2="85.09" y2="172.72" width="1.27" layer="91"/>
+<wire x1="82.55" y1="172.72" x2="83.82" y2="172.72" width="1.27" layer="91"/>
+<wire x1="83.82" y1="172.72" x2="85.09" y2="172.72" width="1.27" layer="91"/>
 <wire x1="85.09" y1="172.72" x2="83.82" y2="172.72" width="1.27" layer="91"/>
 <wire x1="83.82" y1="165.1" x2="83.82" y2="172.72" width="1.27" layer="91"/>
 <junction x="101.6" y="165.1"/>
@@ -7376,6 +7379,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="Q103" gate="1" pin="S"/>
 <pinref part="B103A" gate="G$1" pin="B-@1"/>
 <pinref part="B103A" gate="G$1" pin="B-@2"/>
+<junction x="83.82" y="172.72"/>
 </segment>
 </net>
 <net name="N$26" class="0">
