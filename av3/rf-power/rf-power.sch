@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5774,23 +5774,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <rectangle x1="-1.524" y1="-4.699" x2="-1.0668" y2="-3.1116" layer="51"/>
 <rectangle x1="-4.064" y1="-4.699" x2="-3.6068" y2="-3.1116" layer="51"/>
 </package>
-<package name="2MM-5X1">
-<wire x1="-0.85" y1="-4.9" x2="0.85" y2="-4.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="-4.886" x2="0.85" y2="4.97" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="4.97" x2="-0.85" y2="4.97" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="4.97" x2="-0.85" y2="-4.886" width="0.2032" layer="21"/>
-<pad name="3" x="0" y="0" drill="0.8382" diameter="1.27"/>
-<pad name="2" x="0" y="2" drill="0.8382" diameter="1.27"/>
-<pad name="1" x="0" y="4.03" drill="0.8382" diameter="1.27" shape="square"/>
-<pad name="4" x="0" y="-2" drill="0.8382" diameter="1.27"/>
-<pad name="5" x="0" y="-4" drill="0.8382" diameter="1.27"/>
-<text x="-2.27" y="-6.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51"/>
-<rectangle x1="-0.25" y1="1.75" x2="0.25" y2="2.25" layer="51"/>
-<rectangle x1="-0.25" y1="3.75" x2="0.25" y2="4.25" layer="51"/>
-<rectangle x1="-0.25" y1="-2.25" x2="0.25" y2="-1.75" layer="51"/>
-<rectangle x1="-0.25" y1="-4.25" x2="0.25" y2="-3.75" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="N_MOSFET">
@@ -5933,26 +5916,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <pin name="C2" x="12.7" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="E2" x="12.7" y="-12.7" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="CON-5X1">
-<wire x1="0" y1="-8.89" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-8.89" x2="2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="2.54" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="0.762" y1="3.048" x2="0.762" y2="2.032" width="0.254" layer="94"/>
-<wire x1="0.762" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
-<wire x1="1.778" y1="2.032" x2="1.778" y2="3.048" width="0.254" layer="94"/>
-<wire x1="1.778" y1="3.048" x2="0.762" y2="3.048" width="0.254" layer="94"/>
-<circle x="1.27" y="-2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.27" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.27" y="-5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.27" y="-7.62" radius="0.635" width="0.254" layer="94"/>
-<text x="-1.27" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<pin name="3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="1" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
-<pin name="4" x="-2.54" y="-5.08" visible="off" length="short" direction="pas"/>
-<pin name="5" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PMV45EN" prefix="Q">
@@ -5987,25 +5950,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <connect gate="G$1" pin="E2" pad="5"/>
 <connect gate="G$1" pin="K1" pad="2"/>
 <connect gate="G$1" pin="K2" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CON-2MM-5X1" prefix="J">
-<gates>
-<gate name="G$1" symbol="CON-5X1" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="2MM-5X1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6108,6 +6052,23 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="22-23-2051">
+<description>.100" (2.54mm) Center Header - 5 Pin</description>
+<wire x1="-6.35" y1="3.175" x2="6.35" y2="3.175" width="0.254" layer="21"/>
+<wire x1="6.35" y1="3.175" x2="6.35" y2="1.27" width="0.254" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="6.35" y1="-3.175" x2="-6.35" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="-3.175" x2="-6.35" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-6.35" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -6173,6 +6134,35 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </device>
 </devices>
 </deviceset>
+<deviceset name="22-23-2051" prefix="X">
+<description>.100" (2.54mm) Center Header - 5 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2051">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2051" constant="no"/>
+<attribute name="OC_FARNELL" value="1462952" constant="no"/>
+<attribute name="OC_NEWARK" value="38C9178" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -6231,7 +6221,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </part>
 <part name="J1" library="2mmx4" deviceset="CON-2MM-4X1" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="J2" library="Tova" deviceset="CON-2MM-5X1" device=""/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="1206-B" value="33uF"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="1206-B" value="33uF"/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="1206-B" value="33uF"/>
@@ -6240,6 +6229,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="X3" library="con-molex" deviceset="22-23-2051" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6249,14 +6239,15 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <text x="236.22" y="114.3" size="1.778" layer="97" rot="R90">WiFi PA OUT</text>
 <text x="132.08" y="176.53" size="1.778" layer="97">ATV PASS THROUGH</text>
 <text x="162.56" y="149.86" size="1.778" layer="97">TO TRANSMITTER</text>
-<text x="162.56" y="162.56" size="1.778" layer="97">FROM CAMERA/DVR/GFE/OVERLAY</text>
+<text x="167.64" y="162.56" size="1.778" layer="97">FROM CAMERA/DVR/GFE/OVERLAY</text>
+<text x="238.76" y="58.42" size="1.778" layer="97" rot="R90">(SPARE)</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="GND" x="218.44" y="58.42"/>
-<instance part="X1" gate="-1" x="223.52" y="63.5"/>
-<instance part="X1" gate="-2" x="223.52" y="68.58"/>
-<instance part="X1" gate="-3" x="223.52" y="119.38"/>
-<instance part="X1" gate="-4" x="223.52" y="124.46"/>
+<instance part="X1" gate="-1" x="223.52" y="124.46"/>
+<instance part="X1" gate="-2" x="223.52" y="119.38"/>
+<instance part="X1" gate="-3" x="223.52" y="68.58"/>
+<instance part="X1" gate="-4" x="223.52" y="63.5"/>
 <instance part="SUPPLY2" gate="GND" x="218.44" y="114.3"/>
 <instance part="X2" gate="-1" x="43.18" y="116.84" rot="R180"/>
 <instance part="X2" gate="-2" x="43.18" y="121.92" rot="R180"/>
@@ -6294,7 +6285,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <instance part="X4" gate="-4" x="43.18" y="76.2" rot="R180"/>
 <instance part="J1" gate="G$1" x="157.48" y="152.4"/>
 <instance part="SUPPLY9" gate="GND" x="152.4" y="142.24"/>
-<instance part="J2" gate="G$1" x="157.48" y="167.64"/>
 <instance part="C1" gate="CE" x="210.82" y="121.92"/>
 <instance part="C3" gate="CE" x="210.82" y="66.04"/>
 <instance part="C4" gate="CE" x="139.7" y="119.38"/>
@@ -6303,22 +6293,27 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <instance part="SUPPLY15" gate="GND" x="210.82" y="58.42"/>
 <instance part="SUPPLY16" gate="GND" x="139.7" y="111.76"/>
 <instance part="SUPPLY17" gate="GND" x="139.7" y="55.88"/>
+<instance part="X3" gate="-1" x="157.48" y="170.18"/>
+<instance part="X3" gate="-2" x="157.48" y="167.64"/>
+<instance part="X3" gate="-3" x="157.48" y="165.1"/>
+<instance part="X3" gate="-4" x="157.48" y="162.56"/>
+<instance part="X3" gate="-5" x="157.48" y="160.02"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="220.98" y1="63.5" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="63.5" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="S"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<pinref part="X1" gate="-4" pin="S"/>
+<wire x1="220.98" y1="63.5" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="119.38" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="119.38" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-3" pin="S"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="220.98" y1="119.38" x2="218.44" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="114.3" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
@@ -6380,11 +6375,11 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="152.4" y1="144.78" x2="152.4" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="149.86" y="154.94" size="1.778" layer="95" rot="MR0"/>
-<pinref part="J2" gate="G$1" pin="1"/>
 <label x="149.86" y="170.18" size="1.778" layer="95" rot="MR0"/>
 <wire x1="152.4" y1="170.18" x2="154.94" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="154.94" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
 <junction x="152.4" y="154.94"/>
+<pinref part="X3" gate="-1" pin="S"/>
 </segment>
 <segment>
 <pinref part="C1" gate="CE" pin="2"/>
@@ -6406,39 +6401,39 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <net name="12V-WIFI-OUT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VOUT"/>
-<pinref part="X1" gate="-4" pin="S"/>
 <wire x1="190.5" y1="124.46" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R" pin="2"/>
 <wire x1="203.2" y1="124.46" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
 <junction x="203.2" y="124.46"/>
 <pinref part="C1" gate="CE" pin="1"/>
-<wire x1="210.82" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="220.98" y1="124.46" x2="210.82" y2="124.46" width="0.1524" layer="91"/>
 <junction x="210.82" y="124.46"/>
 </segment>
 </net>
 <net name="12V-ATV-OUT" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="VOUT"/>
-<pinref part="X1" gate="-2" pin="S"/>
 <wire x1="190.5" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R" pin="2"/>
 <wire x1="203.2" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 <junction x="203.2" y="68.58"/>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="210.82" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="149.86" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="137.16" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="86.36" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="154.94" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="165.1" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 <junction x="129.54" y="149.86"/>
 <label x="149.86" y="149.86" size="1.778" layer="95" rot="MR0"/>
 <label x="149.86" y="165.1" size="1.778" layer="95" rot="MR0"/>
 <pinref part="C3" gate="CE" pin="1"/>
+<pinref part="X3" gate="-3" pin="S"/>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="220.98" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 <junction x="210.82" y="68.58"/>
 </segment>
 </net>
@@ -6454,7 +6449,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="139.7" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <junction x="134.62" y="66.04"/>
-<pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="154.94" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="160.02" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
 <label x="149.86" y="160.02" size="1.778" layer="95" rot="MR0"/>
@@ -6470,6 +6464,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="134.62" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C5" gate="CE" pin="1"/>
 <junction x="139.7" y="66.04"/>
+<pinref part="X3" gate="-5" pin="S"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6580,21 +6575,21 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="152.4" x2="127" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="127" y1="152.4" x2="127" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="127" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
 <label x="149.86" y="152.4" size="1.778" layer="95" rot="MR0"/>
 <label x="149.86" y="167.64" size="1.778" layer="95" rot="MR0"/>
+<pinref part="X3" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="VIDEO" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="154.94" y1="162.56" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="162.56" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="124.46" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
 <label x="149.86" y="147.32" size="1.778" layer="95" rot="MR0"/>
 <label x="149.86" y="162.56" size="1.778" layer="95" rot="MR0"/>
+<pinref part="X3" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="SPARE" class="0">
@@ -6608,14 +6603,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,45.72,81.28,X4-3,1,,,,"/>
-<approved hash="115,1,225.44,63.5,X1,,,,,"/>
-<approved hash="115,1,41.2604,116.84,X2,,,,,"/>
+<approved hash="106,1,45.72,81.28,SPARE,,,,,"/>
 <approved hash="115,1,139.596,107.846,FRAME1,,,,,"/>
-<approved hash="115,1,133.625,50.8,R3,,,,,"/>
-<approved hash="115,1,41.2604,91.44,X4,,,,,"/>
-<approved hash="115,1,212.499,120.65,C1,,,,,"/>
-<approved hash="115,1,212.499,64.77,C3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
