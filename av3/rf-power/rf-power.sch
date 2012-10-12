@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6230,6 +6230,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="X3" library="con-molex" deviceset="22-23-2051" device=""/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0805-C-NOSILK" value="10k"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0805-C-NOSILK" value="10k"/>
+<part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6241,6 +6245,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <text x="162.56" y="149.86" size="1.778" layer="97">TO TRANSMITTER</text>
 <text x="167.64" y="162.56" size="1.778" layer="97">FROM CAMERA/DVR/GFE/OVERLAY</text>
 <text x="238.76" y="58.42" size="1.778" layer="97" rot="R90">(SPARE)</text>
+<text x="114.3" y="25.4" size="1.778" layer="97">PMV45EN has a Vgs breakdown of 20 V</text>
+<text x="114.3" y="22.86" size="1.778" layer="97">V/2 voltage divider protects Vgs</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="GND" x="218.44" y="58.42"/>
@@ -6298,6 +6304,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <instance part="X3" gate="-3" x="157.48" y="165.1"/>
 <instance part="X3" gate="-4" x="157.48" y="162.56"/>
 <instance part="X3" gate="-5" x="157.48" y="160.02"/>
+<instance part="R9" gate="R" x="134.62" y="96.52" rot="R90"/>
+<instance part="R10" gate="R" x="134.62" y="40.64" rot="R90"/>
+<instance part="SUPPLY18" gate="GND" x="134.62" y="88.9"/>
+<instance part="SUPPLY19" gate="GND" x="134.62" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -6396,6 +6406,14 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <segment>
 <pinref part="C5" gate="CE" pin="2"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="R" pin="1"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R10" gate="R" pin="1"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="12V-WIFI-OUT" class="0">
@@ -6509,6 +6527,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="129.54" y1="93.98" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <junction x="134.62" y="101.6"/>
 <wire x1="129.54" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R9" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6521,6 +6540,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <junction x="134.62" y="45.72"/>
 <pinref part="U3" gate="G$1" pin="C2"/>
 <wire x1="129.54" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R10" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">

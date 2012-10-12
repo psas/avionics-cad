@@ -600,6 +600,8 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <attribute name="MF" value="MOLEX" x="36.068" y="41.402" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1462952" x="36.068" y="41.402" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R9" library="rcl_custom" package="0805-C-NOSILK" value="10k" x="1.524" y="-2.54"/>
+<element name="R10" library="rcl_custom" package="0805-C-NOSILK" value="10k" x="1.524" y="-7.366"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -648,6 +650,10 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <contactref element="X3" pad="1"/>
 <contactref element="X1" pad="4"/>
 <contactref element="X1" pad="2"/>
+<contactref element="R9" pad="1"/>
+<contactref element="R10" pad="1"/>
+<wire x1="0.724" y1="-2.54" x2="0.724" y2="-7.366" width="0" layer="19" extent="1-1"/>
+<wire x1="10.414" y1="2.032" x2="0.724" y2="-2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V-WIFI-OUT">
 <contactref element="U1" pad="3"/>
@@ -778,6 +784,8 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <via x="56.896" y="24.384" extent="1-16" drill="0.9"/>
 <wire x1="56.896" y1="24.384" x2="56.896" y2="26.886" width="0.508" layer="16"/>
 <wire x1="56.896" y1="26.886" x2="56.934" y2="26.924" width="0.508" layer="16"/>
+<contactref element="R9" pad="2"/>
+<wire x1="2.324" y1="-2.54" x2="4.064" y2="19.4272" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="Q5" pad="1"/>
@@ -790,6 +798,8 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="10.922" y1="22.606" x2="26.416" y2="22.606" width="0.508" layer="16"/>
 <wire x1="26.416" y1="22.606" x2="28.74" y2="24.93" width="0.508" layer="16"/>
 <wire x1="28.74" y1="26.924" x2="28.74" y2="24.93" width="0.508" layer="16"/>
+<contactref element="R10" pad="2"/>
+<wire x1="2.324" y1="-7.366" x2="9.144" y2="19.4272" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U3" pad="3"/>
