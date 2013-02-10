@@ -57,27 +57,27 @@
 <library>
 <packages>
 <package name="QFN-306">
-<smd name="11" x="-0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="-0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
 <wire x1="1.35" y1="1.35" x2="1.35" y2="-1.35" width="0.05" layer="51"/>
 <wire x1="1.35" y1="-1.35" x2="-1.35" y2="-1.35" width="0.05" layer="51"/>
 <wire x1="-1.35" y1="-1.35" x2="-1.35" y2="1.05" width="0.05" layer="51"/>
 <wire x1="-1.35" y1="1.05" x2="-1.05" y2="1.35" width="0.05" layer="51"/>
 <wire x1="-1.05" y1="1.35" x2="1.35" y2="1.35" width="0.05" layer="51"/>
-<smd name="9" x="0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="10" x="0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="12" x="-0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="16" x="-1.975" y="0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="14" x="-1.975" y="-0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="3" x="0.325" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="4" x="0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="1" x="-0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="2" x="-0.325" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<smd name="15" x="-1.975" y="0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="8" x="1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="5" x="1.975" y="0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="6" x="1.975" y="0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="7" x="1.975" y="-0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
-<smd name="13" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="8" x="0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="7" x="0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="-0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="1" x="-1.975" y="0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="3" x="-1.975" y="-0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="14" x="0.325" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="13" x="0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="16" x="-0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="15" x="-0.325" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="-1.975" y="0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="9" x="1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="12" x="1.975" y="0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="11" x="1.975" y="0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="10" x="1.975" y="-0.325" dx="0.85" dy="0.35" layer="1" rot="R180"/>
+<smd name="4" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
 </package>
