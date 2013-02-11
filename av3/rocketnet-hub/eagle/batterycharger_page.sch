@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8102,51 +8102,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="RNH_BSS138W-7-F">
-<packages>
-<package name="SOT-23">
-<wire x1="0.65" y1="1.075" x2="0.65" y2="-1.075" width="0.127" layer="51"/>
-<wire x1="0.65" y1="-1.075" x2="-0.65" y2="-1.075" width="0.127" layer="51"/>
-<wire x1="-0.65" y1="-1.075" x2="-0.65" y2="1.075" width="0.127" layer="51"/>
-<wire x1="-0.65" y1="1.075" x2="0.65" y2="1.075" width="0.127" layer="51"/>
-<smd name="3" x="0.95" y="0" dx="0.9" dy="0.7" layer="1"/>
-<smd name="1" x="-0.95" y="0.5" dx="0.9" dy="0.7" layer="1"/>
-<smd name="2" x="-0.95" y="-0.5" dx="0.9" dy="0.7" layer="1"/>
-<text x="-0.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.7" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="BSS138W-7-F">
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<pin name="D" x="0" y="5.08" length="short" rot="R270"/>
-<pin name="G\" x="-2.54" y="-5.08" length="short" rot="R90"/>
-<pin name="S" x="2.54" y="-5.08" length="short" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BSS138W-7-F">
-<gates>
-<gate name="G$1" symbol="BSS138W-7-F" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G\" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -8194,6 +8149,163 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="RNH_BSS138W-7-F">
+<packages>
+<package name="SOT-23">
+<wire x1="0.65" y1="1.075" x2="0.65" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-1.075" x2="-0.65" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-1.075" x2="-0.65" y2="1.075" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="1.075" x2="0.65" y2="1.075" width="0.127" layer="51"/>
+<smd name="3" x="0.95" y="0" dx="0.9" dy="0.7" layer="1"/>
+<smd name="1" x="-0.95" y="0.5" dx="0.9" dy="0.7" layer="1"/>
+<smd name="2" x="-0.95" y="-0.5" dx="0.9" dy="0.7" layer="1"/>
+<text x="-0.7" y="1.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.7" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="BSS138W-7-F">
+<pin name="D" x="2.54" y="7.62" length="middle" rot="R270"/>
+<pin name="G\" x="-10.16" y="-5.08" length="middle"/>
+<pin name="S" x="2.54" y="-10.16" length="middle" rot="R90"/>
+<wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.381" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.381" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.381" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.381" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-6.35" width="0.381" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-5.08" width="0.381" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.778" y="0"/>
+<vertex x="1.778" y="-2.54"/>
+<vertex x="0.508" y="-1.27"/>
+</polygon>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-5.334" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="6.35" y="-1.524"/>
+<vertex x="3.81" y="-1.524"/>
+<vertex x="5.08" y="-0.254"/>
+</polygon>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
+<circle x="2.54" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.254" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
+<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BSS138W-7-F">
+<gates>
+<gate name="G$1" symbol="BSS138W-7-F" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G\" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="RNH_FDS6680A">
+<packages>
+<package name="MS-012">
+<wire x1="1.7" y1="2" x2="1.7" y2="-2" width="0.127" layer="51"/>
+<wire x1="1.7" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="-2" x2="-1.7" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="1.5" x2="-1.2" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="2" x2="1.7" y2="2" width="0.127" layer="51"/>
+<smd name="8" x="2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="1" x="-2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="5" x="2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="4" x="-2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="7" x="2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="6" x="2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="2" x="-2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<smd name="3" x="-2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
+<text x="-3" y="2.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-3.9" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FDS6680A">
+<pin name="S@1" x="5.08" y="-6.858" length="short" rot="R180"/>
+<pin name="S@2" x="5.08" y="-8.89" length="short" rot="R180"/>
+<pin name="S@3" x="5.08" y="-11.176" length="short" rot="R180"/>
+<pin name="G" x="-4.064" y="-5.08" length="short"/>
+<pin name="D@5" x="2.54" y="5.334" length="short" rot="R270"/>
+<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.381" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.381" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.381" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.381" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-6.35" width="0.381" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-5.08" width="0.381" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="2.032" y="0"/>
+<vertex x="2.032" y="-2.54"/>
+<vertex x="0.762" y="-1.27"/>
+</polygon>
+<wire x1="2.54" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-4.826" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="6.35" y="-1.27"/>
+<vertex x="3.81" y="-1.27"/>
+<vertex x="5.08" y="0"/>
+</polygon>
+<wire x1="5.08" y1="0.762" x2="5.08" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
+<circle x="2.54" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="2.54" y="-5.08" radius="0.254" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.254" width="0.254" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FDS6680A">
+<gates>
+<gate name="G$1" symbol="FDS6680A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC-8" package="MS-012">
+<connects>
+<connect gate="G$1" pin="D@5" pad="5 6 7 8"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S@1" pad="1"/>
+<connect gate="G$1" pin="S@2" pad="2"/>
+<connect gate="G$1" pin="S@3" pad="3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8294,8 +8406,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R24" library="rcl_custom" deviceset="R-US_" device="0603-B" value="12.1k"/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="rcl_custom" deviceset="C-US" device="C0603"/>
-<part name="U$2" library="RNH_BSS138W-7-F" deviceset="BSS138W-7-F" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
+<part name="U$2" library="RNH_BSS138W-7-F" deviceset="BSS138W-7-F" device=""/>
+<part name="U$3" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
+<part name="U$4" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
+<part name="U$5" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 </parts>
 <sheets>
 <sheet>
@@ -8387,9 +8502,12 @@ Battery Charger Schematic</text>
 <instance part="R24" gate="R" x="139.7" y="50.8" rot="R90"/>
 <instance part="SUPPLY25" gate="GND" x="129.54" y="27.94"/>
 <instance part="C1" gate="C" x="-15.24" y="33.02"/>
-<instance part="U$2" gate="G$1" x="-43.18" y="104.14" rot="R270"/>
 <instance part="FRAME1" gate="G$1" x="-205.74" y="-106.68"/>
 <instance part="FRAME1" gate="G$2" x="119.38" y="-106.68"/>
+<instance part="U$2" gate="G$1" x="-50.8" y="109.22"/>
+<instance part="U$3" gate="G$1" x="-81.28" y="76.2" rot="R90"/>
+<instance part="U$4" gate="G$1" x="-30.48" y="76.2" rot="MR90"/>
+<instance part="U$5" gate="G$1" x="109.22" y="71.12" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8649,6 +8767,7 @@ Battery Charger Schematic</text>
 <junction x="-106.68" y="81.28"/>
 <wire x1="-91.44" y1="81.28" x2="-86.36" y2="81.28" width="0.2032" layer="91"/>
 <junction x="-91.44" y="81.28"/>
+<wire x1="-86.36" y1="78.74" x2="-86.36" y2="81.28" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -8753,12 +8872,15 @@ Battery Charger Schematic</text>
 <wire x1="149.86" y1="66.04" x2="139.7" y2="66.04" width="0.2032" layer="91"/>
 <pinref part="C26" gate="C" pin="1"/>
 <wire x1="139.7" y1="66.04" x2="121.92" y2="66.04" width="0.2032" layer="91"/>
-<wire x1="121.92" y1="66.04" x2="111.76" y2="66.04" width="0.2032" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="113.284" y2="66.04" width="0.2032" layer="91"/>
+<wire x1="113.284" y1="66.04" x2="111.76" y2="66.04" width="0.2032" layer="91"/>
 <wire x1="121.92" y1="53.34" x2="121.92" y2="66.04" width="0.2032" layer="91"/>
 <pinref part="R24" gate="R" pin="2"/>
 <wire x1="139.7" y1="55.88" x2="139.7" y2="66.04" width="0.2032" layer="91"/>
 <junction x="121.92" y="66.04"/>
 <junction x="139.7" y="66.04"/>
+<pinref part="U$5" gate="G$1" pin="G"/>
+<junction x="113.284" y="66.04"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -8787,16 +8909,24 @@ Battery Charger Schematic</text>
 <wire x1="162.56" y1="38.1" x2="187.96" y2="38.1" width="0.2032" layer="91"/>
 <junction x="106.68" y="38.1"/>
 <junction x="162.56" y="38.1"/>
-<wire x1="104.14" y1="38.1" x2="104.14" y2="53.34" width="0.2032" layer="91"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="59.944" width="0.2032" layer="91"/>
 <pinref part="C25" gate="C" pin="1"/>
 <junction x="129.54" y="38.1"/>
 <pinref part="C26" gate="C" pin="2"/>
+<wire x1="104.14" y1="59.944" x2="104.14" y2="62.484" width="0.2032" layer="91"/>
+<wire x1="104.14" y1="62.484" x2="104.14" y2="64.262" width="0.2032" layer="91"/>
+<wire x1="104.14" y1="64.262" x2="104.14" y2="64.516" width="0.2032" layer="91"/>
 <wire x1="121.92" y1="45.72" x2="121.92" y2="38.1" width="0.2032" layer="91"/>
 <pinref part="R24" gate="R" pin="1"/>
 <wire x1="139.7" y1="45.72" x2="139.7" y2="38.1" width="0.2032" layer="91"/>
 <junction x="139.7" y="38.1"/>
 <junction x="121.92" y="38.1"/>
 <junction x="104.14" y="38.1"/>
+<pinref part="U$5" gate="G$1" pin="S@1"/>
+<junction x="104.14" y="64.262"/>
+<junction x="104.14" y="62.484"/>
+<pinref part="U$5" gate="G$1" pin="S@3"/>
+<junction x="104.14" y="59.944"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -8823,8 +8953,8 @@ Battery Charger Schematic</text>
 <wire x1="22.86" y1="81.28" x2="60.96" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="60.96" y1="81.28" x2="73.66" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="73.66" y1="81.28" x2="83.82" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="83.82" y1="81.28" x2="104.14" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="104.14" y1="81.28" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="83.82" y1="81.28" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="106.68" y1="81.28" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="170.18" y1="81.28" x2="172.72" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="170.18" y1="40.64" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="C23" gate="C" pin="1"/>
@@ -8834,10 +8964,10 @@ Battery Charger Schematic</text>
 <junction x="73.66" y="81.28"/>
 <junction x="83.82" y="81.28"/>
 <junction x="170.18" y="81.28"/>
-<wire x1="104.14" y1="81.28" x2="104.14" y2="76.2" width="0.2032" layer="91"/>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="68.58" width="0.2032" layer="91"/>
-<junction x="104.14" y="81.28"/>
 <junction x="60.96" y="81.28"/>
+<wire x1="106.68" y1="76.2" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
+<junction x="106.68" y="81.28"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8861,8 +8991,9 @@ Battery Charger Schematic</text>
 <pinref part="R20" gate="R" pin="2"/>
 <wire x1="-22.86" y1="81.28" x2="-20.32" y2="81.28" width="0.2032" layer="91"/>
 <junction x="-22.86" y="63.5"/>
+<wire x1="-25.4" y1="78.74" x2="-25.4" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-25.4" y1="81.28" x2="-22.86" y2="81.28" width="0.2032" layer="91"/>
 <junction x="-22.86" y="81.28"/>
-<wire x1="-22.86" y1="81.28" x2="-30.48" y2="81.28" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -8916,12 +9047,31 @@ Battery Charger Schematic</text>
 <wire x1="-48.26" y1="10.16" x2="-48.26" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="R23" gate="R" pin="1"/>
 <wire x1="-48.26" y1="93.98" x2="-48.26" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="-48.26" y1="93.98" x2="-48.26" y2="101.6" width="0.2032" layer="91"/>
-<wire x1="-63.5" y1="81.28" x2="-68.58" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-48.26" y1="93.98" x2="-48.26" y2="99.06" width="0.2032" layer="91"/>
 <junction x="-48.26" y="81.28"/>
 <junction x="-63.5" y="81.28"/>
-<wire x1="-48.26" y1="81.28" x2="-40.64" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-48.26" y1="81.28" x2="-41.656" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="S"/>
+<junction x="-48.26" y="93.98"/>
+<wire x1="-63.5" y1="81.28" x2="-70.104" y2="81.28" width="0.2032" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="S@1"/>
+<junction x="-74.422" y="81.28"/>
+<pinref part="U$3" gate="G$1" pin="S@2"/>
+<junction x="-72.39" y="81.28"/>
+<wire x1="-70.104" y1="81.28" x2="-72.39" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-72.39" y1="81.28" x2="-74.422" y2="81.28" width="0.2032" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="S@3"/>
+<junction x="-70.104" y="81.28"/>
+<pinref part="U$4" gate="G$1" pin="S@3"/>
+<junction x="-41.656" y="81.28"/>
+<wire x1="-38.1" y1="81.28" x2="-39.116" y2="81.28" width="0.2032" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="S@1"/>
+<wire x1="-39.116" y1="81.28" x2="-39.37" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-39.37" y1="81.28" x2="-41.656" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-37.338" y1="81.28" x2="-38.1" y2="81.28" width="0.2032" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="S@2"/>
+<junction x="-39.37" y="81.28"/>
+<junction x="-37.338" y="81.28"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -8930,37 +9080,42 @@ Battery Charger Schematic</text>
 <pinref part="R23" gate="R" pin="2"/>
 <wire x1="-68.58" y1="93.98" x2="-63.5" y2="93.98" width="0.2032" layer="91"/>
 <wire x1="-63.5" y1="93.98" x2="-58.42" y2="93.98" width="0.2032" layer="91"/>
-<wire x1="-63.5" y1="93.98" x2="-63.5" y2="106.68" width="0.2032" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="G\"/>
-<wire x1="-63.5" y1="106.68" x2="-48.26" y2="106.68" width="0.2032" layer="91"/>
+<wire x1="-63.5" y1="93.98" x2="-63.5" y2="104.14" width="0.2032" layer="91"/>
 <junction x="-63.5" y="93.98"/>
+<pinref part="U$2" gate="G$1" pin="G\"/>
+<wire x1="-60.96" y1="104.14" x2="-63.5" y2="104.14" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<wire x1="-38.1" y1="119.38" x2="-99.06" y2="119.38" width="0.2032" layer="91"/>
 <wire x1="-99.06" y1="119.38" x2="-99.06" y2="68.58" width="0.2032" layer="91"/>
 <pinref part="C8" gate="C" pin="2"/>
 <wire x1="-91.44" y1="71.12" x2="-91.44" y2="68.58" width="0.2032" layer="91"/>
 <pinref part="R21" gate="R" pin="1"/>
-<wire x1="-91.44" y1="68.58" x2="-78.74" y2="68.58" width="0.2032" layer="91"/>
 <pinref part="C22" gate="C" pin="2"/>
-<wire x1="-78.74" y1="68.58" x2="-63.5" y2="68.58" width="0.2032" layer="91"/>
+<wire x1="-91.44" y1="68.58" x2="-76.2" y2="68.58" width="0.2032" layer="91"/>
+<wire x1="-76.2" y1="68.58" x2="-63.5" y2="68.58" width="0.2032" layer="91"/>
 <wire x1="-63.5" y1="68.58" x2="-58.42" y2="68.58" width="0.2032" layer="91"/>
 <pinref part="R10" gate="R" pin="2"/>
 <wire x1="-58.42" y1="68.58" x2="-55.88" y2="68.58" width="0.2032" layer="91"/>
 <wire x1="-58.42" y1="68.58" x2="-58.42" y2="12.7" width="0.2032" layer="91"/>
-<wire x1="-78.74" y1="68.58" x2="-78.74" y2="73.66" width="0.2032" layer="91"/>
-<wire x1="-35.56" y1="73.66" x2="-35.56" y2="68.58" width="0.2032" layer="91"/>
+<wire x1="-35.56" y1="73.66" x2="-35.56" y2="72.136" width="0.2032" layer="91"/>
+<wire x1="-35.56" y1="72.136" x2="-35.56" y2="68.58" width="0.2032" layer="91"/>
 <wire x1="-55.88" y1="68.58" x2="-35.56" y2="68.58" width="0.2032" layer="91"/>
 <junction x="-58.42" y="68.58"/>
 <junction x="-55.88" y="68.58"/>
 <junction x="-63.5" y="68.58"/>
-<junction x="-78.74" y="68.58"/>
 <wire x1="-99.06" y1="68.58" x2="-91.44" y2="68.58" width="0.2032" layer="91"/>
 <junction x="-91.44" y="68.58"/>
 <pinref part="U$2" gate="G$1" pin="D"/>
-<wire x1="-38.1" y1="104.14" x2="-38.1" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="-48.26" y1="116.84" x2="-48.26" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="-48.26" y1="119.38" x2="-99.06" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="-76.2" y1="68.58" x2="-76.2" y2="71.882" width="0.2032" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="G"/>
+<pinref part="U$4" gate="G$1" pin="G"/>
+<junction x="-35.56" y="72.136"/>
+<junction x="-76.2" y="71.882"/>
+<wire x1="-76.2" y1="71.882" x2="-76.2" y2="72.136" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
