@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5930,7 +5930,12 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <connect gate="-2" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="87758-0216" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="94M1513" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5952,7 +5957,12 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <connect gate="-4" pin="S" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2041" constant="no"/>
+<attribute name="OC_FARNELL" value="1462920" constant="no"/>
+<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6414,7 +6424,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="TRIANGLE_GND3" library="psas" deviceset="SUP_GND_TRIANGLE" device=""/>
 <part name="J100" library="con-molex" deviceset="87758-0216" device=""/>
 <part name="J101" library="con-molex" deviceset="87758-0216" device=""/>
-<part name="BAR_GND5" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
 <part name="R120" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
 <part name="R121" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
@@ -6499,42 +6508,42 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="X1" library="con-molex" deviceset="22-23-2041" device=""/>
 <part name="X2" library="con-molex" deviceset="22-23-2041" device=""/>
 <part name="TRIANGLE_GND4" library="psas" deviceset="SUP_GND_TRIANGLE" device=""/>
+<part name="BAR_GND1" library="psas" deviceset="SUP_GND_BAR" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="134.62" y="129.54" size="1.778" layer="97">10K TC</text>
-<text x="134.62" y="113.03" size="1.778" layer="97">10K TC</text>
+<text x="132.08" y="92.71" size="1.778" layer="97" rot="R90">10K TC</text>
+<text x="144.78" y="92.71" size="1.778" layer="97" rot="R90">10K TC</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="U100" gate="G$1" x="187.96" y="134.62"/>
 <instance part="TRIANGLE_GND3" gate="1" x="299.72" y="86.36" smashed="yes"/>
-<instance part="J100" gate="-1" x="142.24" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="139.7" y="127.762" size="1.524" layer="95" rot="R180"/>
+<instance part="J100" gate="-1" x="134.62" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="133.858" y="99.06" size="1.524" layer="95" rot="R270"/>
 </instance>
-<instance part="J100" gate="-2" x="142.24" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="139.7" y="125.222" size="1.524" layer="95" rot="R180"/>
+<instance part="J100" gate="-2" x="138.43" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="137.668" y="99.06" size="1.524" layer="95" rot="R270"/>
 </instance>
-<instance part="J101" gate="-1" x="142.24" y="119.38" smashed="yes" rot="R180">
-<attribute name="NAME" x="139.7" y="120.142" size="1.524" layer="95" rot="R180"/>
+<instance part="J101" gate="-1" x="147.32" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.558" y="99.06" size="1.524" layer="95" rot="R270"/>
 </instance>
-<instance part="J101" gate="-2" x="142.24" y="116.84" smashed="yes" rot="R180">
-<attribute name="NAME" x="139.7" y="117.602" size="1.524" layer="95" rot="R180"/>
+<instance part="J101" gate="-2" x="151.13" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="150.368" y="99.06" size="1.524" layer="95" rot="R270"/>
 </instance>
-<instance part="BAR_GND5" gate="1" x="147.32" y="111.76" smashed="yes"/>
 <instance part="R123" gate="G$1" x="167.64" y="88.9" smashed="yes">
 <attribute name="NAME" x="163.83" y="90.3986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="156.21" y="85.598" size="1.778" layer="96"/>
 </instance>
-<instance part="R120" gate="R" x="162.56" y="101.6" rot="R90"/>
-<instance part="R121" gate="R" x="172.72" y="101.6" rot="R90"/>
-<instance part="C111" gate="CE" x="154.94" y="109.22" rot="R90"/>
+<instance part="R120" gate="R" x="162.56" y="99.06" rot="R90"/>
+<instance part="R121" gate="R" x="172.72" y="99.06" rot="R90"/>
+<instance part="C111" gate="CE" x="156.21" y="114.3" rot="R180"/>
 <instance part="C113" gate="CE" x="177.8" y="109.22" rot="R90"/>
-<instance part="C112" gate="CE" x="166.37" y="109.22" rot="R90"/>
+<instance part="C112" gate="CE" x="166.37" y="106.68" rot="R90"/>
 <instance part="BAR_GND4" gate="1" x="182.88" y="104.14" smashed="yes"/>
-<instance part="BAR_GND6" gate="1" x="152.4" y="104.14" smashed="yes"/>
+<instance part="BAR_GND6" gate="1" x="156.21" y="97.79" smashed="yes"/>
 <instance part="TP104" gate="G$1" x="162.56" y="132.08"/>
 <instance part="TP105" gate="G$1" x="172.72" y="129.54"/>
 <instance part="R102" gate="R" x="113.03" y="190.5"/>
@@ -6549,58 +6558,58 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <instance part="BAR_GND9" gate="1" x="124.46" y="152.4" smashed="yes"/>
 <instance part="BAR_GND10" gate="1" x="124.46" y="127" smashed="yes"/>
 <instance part="BAR_GND11" gate="1" x="124.46" y="101.6" smashed="yes"/>
-<instance part="BAR_GND12" gate="1" x="208.28" y="104.14" smashed="yes"/>
-<instance part="C109" gate="CE" x="205.74" y="114.3" smashed="yes">
-<attribute name="NAME" x="202.184" y="114.681" size="1.778" layer="95"/>
-<attribute name="VALUE" x="198.374" y="109.601" size="1.778" layer="96"/>
+<instance part="BAR_GND12" gate="1" x="208.28" y="113.03" smashed="yes"/>
+<instance part="C109" gate="CE" x="205.74" y="106.68" smashed="yes">
+<attribute name="NAME" x="202.184" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.374" y="101.981" size="1.778" layer="96"/>
 </instance>
-<instance part="C110" gate="CE" x="210.82" y="114.3" smashed="yes">
-<attribute name="NAME" x="212.344" y="114.681" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.344" y="109.601" size="1.778" layer="96"/>
+<instance part="C110" gate="CE" x="210.82" y="106.68" smashed="yes">
+<attribute name="NAME" x="212.344" y="107.061" size="1.778" layer="95"/>
+<attribute name="VALUE" x="212.344" y="101.981" size="1.778" layer="96"/>
 </instance>
 <instance part="D101" gate="G$1" x="149.86" y="165.1" rot="R90"/>
 <instance part="C103" gate="CE" x="149.86" y="154.94" smashed="yes">
 <attribute name="NAME" x="151.384" y="155.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.384" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="BAR_GND7" gate="1" x="83.82" y="83.82" smashed="yes"/>
+<instance part="BAR_GND7" gate="1" x="78.74" y="81.28" smashed="yes"/>
 <instance part="BAR_GND13" gate="1" x="149.86" y="147.32" smashed="yes"/>
 <instance part="Q104" gate="1" x="101.6" y="106.68" rot="MR0"/>
-<instance part="Q104" gate="2" x="101.6" y="132.08" rot="MR0"/>
+<instance part="Q104" gate="2" x="96.52" y="132.08" rot="MR0"/>
 <instance part="Q103" gate="1" x="101.6" y="157.48" rot="MR0"/>
-<instance part="Q103" gate="2" x="101.6" y="182.88" rot="MR0"/>
+<instance part="Q103" gate="2" x="96.52" y="182.88" rot="MR0"/>
 <instance part="R122" gate="R" x="101.6" y="96.52" rot="MR90"/>
-<instance part="R116" gate="R" x="101.6" y="121.92" rot="MR90"/>
+<instance part="R116" gate="R" x="96.52" y="121.92" rot="MR90"/>
 <instance part="R110" gate="R" x="101.6" y="147.32" rot="MR90"/>
-<instance part="R105" gate="R" x="101.6" y="172.72" rot="MR90"/>
+<instance part="R105" gate="R" x="96.52" y="172.72" rot="MR90"/>
 <instance part="D105" gate="G$1" x="292.1" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="289.814" y="114.3" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="295.402" y="114.3" size="1.016" layer="96" rot="R90"/>
+<attribute name="VALUE" x="295.402" y="110.49" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="D103" gate="G$1" x="241.3" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="239.014" y="114.3" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="245.11" y="111.76" size="1.016" layer="96" rot="R90"/>
+<instance part="D103" gate="G$1" x="276.86" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="274.574" y="114.3" size="1.016" layer="95" rot="R90"/>
+<attribute name="VALUE" x="280.67" y="111.76" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="D104" gate="G$1" x="266.7" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="264.414" y="114.3" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="270.51" y="111.76" size="1.016" layer="96" rot="R90"/>
+<instance part="D104" gate="G$1" x="284.48" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="282.194" y="114.3" size="1.016" layer="95" rot="R90"/>
+<attribute name="VALUE" x="288.29" y="111.76" size="1.016" layer="96" rot="R90"/>
 </instance>
-<instance part="D100" gate="G$1" x="256.54" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="259.08" y="187.96" size="1.016" layer="95"/>
-<attribute name="VALUE" x="259.08" y="185.42" size="1.016" layer="96"/>
+<instance part="D100" gate="G$1" x="256.54" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="259.08" y="182.88" size="1.016" layer="95"/>
+<attribute name="VALUE" x="259.08" y="180.34" size="1.016" layer="96"/>
 </instance>
-<instance part="R114" gate="R" x="243.84" y="127" rot="MR0"/>
-<instance part="R115" gate="R" x="259.08" y="127" rot="MR0"/>
-<instance part="R117" gate="R" x="218.44" y="121.92" rot="MR0"/>
-<instance part="R118" gate="R" x="233.68" y="121.92" rot="MR0"/>
-<instance part="C106" gate="CE" x="226.06" y="116.84" smashed="yes">
-<attribute name="NAME" x="228.6" y="116.84" size="1.778" layer="95"/>
-<attribute name="VALUE" x="228.6" y="111.76" size="1.778" layer="96"/>
+<instance part="R114" gate="R" x="240.03" y="127" rot="MR0"/>
+<instance part="R115" gate="R" x="275.59" y="127" rot="MR0"/>
+<instance part="R117" gate="R" x="227.33" y="121.92" rot="MR0"/>
+<instance part="R118" gate="R" x="266.7" y="121.92" rot="MR0"/>
+<instance part="C106" gate="CE" x="236.22" y="116.84" smashed="yes">
+<attribute name="NAME" x="233.68" y="111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="241.3" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="TRIANGLE_GND1" gate="1" x="246.38" y="106.68" smashed="yes"/>
-<instance part="C107" gate="CE" x="251.46" y="116.84" smashed="yes">
-<attribute name="NAME" x="254" y="116.84" size="1.778" layer="95"/>
-<attribute name="VALUE" x="254" y="111.76" size="1.778" layer="96"/>
+<instance part="TRIANGLE_GND1" gate="1" x="240.03" y="106.68" smashed="yes"/>
+<instance part="C107" gate="CE" x="247.65" y="116.84" smashed="yes">
+<attribute name="NAME" x="245.11" y="111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="252.73" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D102" gate="G$1" x="231.14" y="165.1" rot="R90"/>
 <instance part="C104" gate="CE" x="231.14" y="154.94" smashed="yes">
@@ -6608,27 +6617,27 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <attribute name="VALUE" x="233.68" y="152.4" size="1.778" layer="96"/>
 </instance>
 <instance part="BAR_GND14" gate="1" x="231.14" y="147.32" smashed="yes"/>
-<instance part="R112" gate="R" x="269.24" y="132.08" rot="MR0"/>
+<instance part="R112" gate="R" x="250.19" y="132.08" rot="MR0"/>
 <instance part="R113" gate="R" x="284.48" y="132.08" rot="MR0"/>
-<instance part="C108" gate="CE" x="276.86" y="116.84" smashed="yes">
-<attribute name="NAME" x="279.4" y="116.84" size="1.778" layer="95"/>
-<attribute name="VALUE" x="279.4" y="111.76" size="1.778" layer="96"/>
+<instance part="C108" gate="CE" x="259.08" y="116.84" smashed="yes">
+<attribute name="NAME" x="256.54" y="111.76" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="264.16" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C100" gate="CE" x="251.46" y="189.23" smashed="yes">
-<attribute name="NAME" x="241.3" y="187.96" size="1.778" layer="95"/>
-<attribute name="VALUE" x="241.3" y="185.42" size="1.778" layer="96"/>
+<instance part="C100" gate="CE" x="246.38" y="189.23" smashed="yes">
+<attribute name="NAME" x="236.22" y="187.96" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.22" y="185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="TRIANGLE_GND2" gate="1" x="254" y="167.64" smashed="yes"/>
-<instance part="R108" gate="R" x="205.74" y="167.64" rot="MR270"/>
+<instance part="R108" gate="R" x="213.36" y="167.64" rot="MR270"/>
 <instance part="R107" gate="R" x="203.2" y="167.64" rot="MR270"/>
 <instance part="R106" gate="R" x="172.72" y="167.64" rot="MR270"/>
 <instance part="TP100" gate="G$1" x="172.72" y="160.02"/>
 <instance part="TP101" gate="G$1" x="203.2" y="160.02"/>
-<instance part="TP102" gate="G$1" x="205.74" y="160.02"/>
-<instance part="TP103" gate="G$1" x="203.2" y="139.7"/>
-<instance part="TP106" gate="G$1" x="213.36" y="129.54"/>
+<instance part="TP102" gate="G$1" x="213.36" y="160.02"/>
+<instance part="TP103" gate="G$1" x="219.71" y="139.7"/>
+<instance part="TP106" gate="G$1" x="219.71" y="129.54"/>
 <instance part="TP107" gate="G$1" x="213.36" y="127"/>
-<instance part="TP108" gate="G$1" x="213.36" y="121.92"/>
+<instance part="TP108" gate="G$1" x="219.71" y="121.92"/>
 <instance part="Q101" gate="G$1" x="175.26" y="195.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="172.72" y="207.01" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.91" y="204.47" size="1.778" layer="96"/>
@@ -6641,30 +6650,30 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <attribute name="NAME" x="208.28" y="227.33" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="204.47" y="224.79" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R103" gate="R" x="167.64" y="187.96" rot="MR270"/>
-<instance part="R104" gate="R" x="208.28" y="187.96" rot="MR270"/>
-<instance part="R101" gate="R" x="218.44" y="207.01" rot="MR270"/>
-<instance part="R100" gate="R" x="198.12" y="214.63" rot="MR0"/>
-<instance part="B103A" gate="G$1" x="82.55" y="175.26" smashed="yes">
-<attribute name="NAME" x="69.85" y="173.99" size="1.778" layer="95"/>
+<instance part="R103" gate="R" x="167.64" y="185.42" rot="MR270"/>
+<instance part="R104" gate="R" x="208.28" y="185.42" rot="MR270"/>
+<instance part="R101" gate="R" x="218.44" y="186.69" rot="MR270"/>
+<instance part="R100" gate="R" x="195.58" y="214.63" rot="MR0"/>
+<instance part="B103A" gate="G$1" x="77.47" y="175.26" smashed="yes">
+<attribute name="NAME" x="64.77" y="173.99" size="1.778" layer="95"/>
 </instance>
-<instance part="B102A" gate="G$1" x="82.55" y="149.86" smashed="yes">
-<attribute name="NAME" x="69.85" y="148.59" size="1.778" layer="95"/>
+<instance part="B102A" gate="G$1" x="77.47" y="149.86" smashed="yes">
+<attribute name="NAME" x="64.77" y="148.59" size="1.778" layer="95"/>
 </instance>
-<instance part="B101A" gate="G$1" x="82.55" y="124.46" smashed="yes">
-<attribute name="NAME" x="69.85" y="123.19" size="1.778" layer="95"/>
+<instance part="B101A" gate="G$1" x="77.47" y="124.46" smashed="yes">
+<attribute name="NAME" x="64.77" y="123.19" size="1.778" layer="95"/>
 </instance>
-<instance part="B100A" gate="G$1" x="82.55" y="99.06" smashed="yes">
-<attribute name="NAME" x="69.85" y="97.79" size="1.778" layer="95"/>
+<instance part="B100A" gate="G$1" x="77.47" y="99.06" smashed="yes">
+<attribute name="NAME" x="64.77" y="97.79" size="1.778" layer="95"/>
 </instance>
 <instance part="F100" gate="F" x="274.32" y="195.58" smashed="yes">
 <attribute name="NAME" x="269.24" y="198.12" size="1.778" layer="95"/>
 <attribute name="VALUE" x="270.51" y="190.5" size="1.778" layer="96"/>
 <attribute name="DK" x="265.43" y="187.96" size="1.778" layer="96"/>
 </instance>
-<instance part="C115" gate="CE" x="251.46" y="181.61" smashed="yes">
-<attribute name="NAME" x="241.3" y="180.34" size="1.778" layer="95"/>
-<attribute name="VALUE" x="241.3" y="177.8" size="1.778" layer="96"/>
+<instance part="C115" gate="CE" x="246.38" y="179.07" smashed="yes">
+<attribute name="NAME" x="236.22" y="177.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.22" y="175.26" size="1.778" layer="96"/>
 </instance>
 <instance part="C117" gate="CE" x="205.74" y="231.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="204.47" y="236.22" size="1.778" layer="95"/>
@@ -6683,30 +6692,16 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <instance part="X2" gate="-3" x="312.42" y="127"/>
 <instance part="X2" gate="-4" x="312.42" y="124.46"/>
 <instance part="TRIANGLE_GND4" gate="1" x="309.88" y="121.92" smashed="yes"/>
+<instance part="BAR_GND1" gate="1" x="208.28" y="92.71" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="BAR_GND" class="0">
 <segment>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="124.46" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-<junction x="147.32" y="116.84"/>
-<pinref part="BAR_GND5" gate="1" pin="BAR_GND"/>
-<pinref part="J101" gate="-2" pin="S"/>
-<pinref part="J100" gate="-2" pin="S"/>
-</segment>
-<segment>
 <wire x1="182.88" y1="109.22" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C113" gate="CE" pin="2"/>
 <pinref part="BAR_GND4" gate="1" pin="BAR_GND"/>
-</segment>
-<segment>
-<wire x1="152.4" y1="109.22" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C111" gate="CE" pin="1"/>
-<pinref part="BAR_GND6" gate="1" pin="BAR_GND"/>
 </segment>
 <segment>
 <pinref part="C101" gate="CE" pin="1"/>
@@ -6725,16 +6720,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="BAR_GND11" gate="1" pin="BAR_GND"/>
 </segment>
 <segment>
-<wire x1="208.28" y1="106.68" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="109.22" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="115.57" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="109.22" x2="208.28" y2="109.22" width="0.1524" layer="91"/>
-<junction x="208.28" y="109.22"/>
 <pinref part="BAR_GND12" gate="1" pin="BAR_GND"/>
 <pinref part="U100" gate="G$1" pin="VSS"/>
-<pinref part="C109" gate="CE" pin="2"/>
-<pinref part="C110" gate="CE" pin="2"/>
 </segment>
 <segment>
 <pinref part="C103" gate="CE" pin="2"/>
@@ -6745,100 +6734,118 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="BAR_GND14" gate="1" pin="BAR_GND"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="86.36" x2="83.82" y2="88.9" width="1.27" layer="91"/>
-<wire x1="101.6" y1="88.9" x2="83.82" y2="88.9" width="1.27" layer="91"/>
+<wire x1="78.74" y1="83.82" x2="78.74" y2="88.9" width="1.27" layer="91"/>
+<wire x1="101.6" y1="88.9" x2="78.74" y2="88.9" width="1.27" layer="91"/>
 <wire x1="101.6" y1="91.44" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
-<wire x1="162.56" y1="96.52" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="85.09" y1="96.52" x2="83.82" y2="96.52" width="1.27" layer="91"/>
-<wire x1="82.55" y1="96.52" x2="85.09" y2="96.52" width="1.27" layer="91"/>
-<wire x1="83.82" y1="88.9" x2="83.82" y2="96.52" width="1.27" layer="91"/>
+<wire x1="162.56" y1="93.98" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="88.9" x2="78.74" y2="96.52" width="1.27" layer="91"/>
 <junction x="101.6" y="88.9"/>
 <junction x="162.56" y="88.9"/>
-<junction x="83.82" y="88.9"/>
-<junction x="85.09" y="96.52"/>
+<junction x="78.74" y="88.9"/>
 <pinref part="BAR_GND7" gate="1" pin="BAR_GND"/>
 <pinref part="R122" gate="R" pin="1"/>
 <pinref part="R123" gate="G$1" pin="1"/>
 <pinref part="R120" gate="R" pin="1"/>
-<pinref part="B100A" gate="G$1" pin="B-@2"/>
 <pinref part="B100A" gate="G$1" pin="B-@1"/>
+<wire x1="77.47" y1="96.52" x2="78.74" y2="96.52" width="1.27" layer="91"/>
+<pinref part="B100A" gate="G$1" pin="B-@2"/>
+<wire x1="78.74" y1="96.52" x2="80.01" y2="96.52" width="1.27" layer="91"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<wire x1="144.78" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<pinref part="J100" gate="-1" pin="S"/>
-<pinref part="U100" gate="G$1" pin="TS1"/>
+<wire x1="208.28" y1="99.06" x2="208.28" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="BAR_GND1" gate="1" pin="BAR_GND"/>
+<pinref part="C109" gate="CE" pin="2"/>
+<wire x1="205.74" y1="101.6" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C110" gate="CE" pin="2"/>
+<wire x1="208.28" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="99.06" x2="210.82" y2="101.6" width="0.1524" layer="91"/>
+<junction x="208.28" y="99.06"/>
+</segment>
+<segment>
+<wire x1="156.21" y1="111.76" x2="156.21" y2="105.41" width="0.1524" layer="91"/>
+<pinref part="C111" gate="CE" pin="1"/>
+<pinref part="J100" gate="-2" pin="S"/>
+<wire x1="138.43" y1="104.14" x2="138.43" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="106.68" x2="151.13" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="J101" gate="-2" pin="S"/>
+<wire x1="151.13" y1="106.68" x2="156.21" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="104.14" x2="151.13" y2="106.68" width="0.1524" layer="91"/>
+<junction x="151.13" y="106.68"/>
+<pinref part="BAR_GND6" gate="1" pin="BAR_GND"/>
+<wire x1="156.21" y1="100.33" x2="156.21" y2="105.41" width="0.1524" layer="91"/>
+<junction x="156.21" y="106.68"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="175.26" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="124.46" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="124.46" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U100" gate="G$1" pin="TS2"/>
 <pinref part="J101" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="162.56" y1="106.68" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="109.22" x2="163.83" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="109.22" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="104.14" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="106.68" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="119.38" x2="156.21" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="119.38" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
-<junction x="162.56" y="109.22"/>
+<junction x="162.56" y="119.38"/>
 <junction x="162.56" y="132.08"/>
 <pinref part="R120" gate="R" pin="2"/>
-<pinref part="C112" gate="CE" pin="1"/>
 <pinref part="C111" gate="CE" pin="2"/>
 <pinref part="U100" gate="G$1" pin="SRP"/>
 <pinref part="TP104" gate="G$1" pin="P$1"/>
+<pinref part="C112" gate="CE" pin="1"/>
+<wire x1="163.83" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
+<junction x="162.56" y="106.68"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="171.45" y1="109.22" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="109.22" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="106.68" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="109.22" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <junction x="172.72" y="109.22"/>
 <junction x="172.72" y="129.54"/>
-<pinref part="C112" gate="CE" pin="2"/>
 <pinref part="R121" gate="R" pin="2"/>
 <pinref part="C113" gate="CE" pin="1"/>
 <pinref part="U100" gate="G$1" pin="SRN"/>
 <pinref part="TP105" gate="G$1" pin="P$1"/>
+<pinref part="C112" gate="CE" pin="2"/>
+<wire x1="171.45" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
+<junction x="172.72" y="106.68"/>
 </segment>
 </net>
 <net name="B+" class="0">
 <segment>
-<wire x1="101.6" y1="190.5" x2="107.95" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="187.96" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="190.5" x2="107.95" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="187.96" x2="96.52" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="198.12" x2="170.18" y2="200.66" width="1.27" layer="91"/>
 <wire x1="170.18" y1="195.58" x2="170.18" y2="198.12" width="1.27" layer="91"/>
 <wire x1="167.64" y1="195.58" x2="170.18" y2="195.58" width="1.27" layer="91"/>
-<wire x1="149.86" y1="195.58" x2="167.64" y2="195.58" width="1.27" layer="91"/>
+<wire x1="149.86" y1="195.58" x2="162.56" y2="195.58" width="1.27" layer="91"/>
+<wire x1="162.56" y1="195.58" x2="167.64" y2="195.58" width="1.27" layer="91"/>
 <wire x1="149.86" y1="170.18" x2="149.86" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="195.58" x2="149.86" y2="195.58" width="1.27" layer="91"/>
-<wire x1="83.82" y1="190.5" x2="83.82" y2="195.58" width="1.27" layer="91"/>
-<wire x1="83.82" y1="190.5" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="82.55" y1="180.34" x2="83.82" y2="180.34" width="1.27" layer="91"/>
-<wire x1="83.82" y1="180.34" x2="85.09" y2="180.34" width="1.27" layer="91"/>
-<wire x1="83.82" y1="180.34" x2="85.09" y2="180.34" width="1.27" layer="91"/>
-<wire x1="83.82" y1="180.34" x2="83.82" y2="190.5" width="1.27" layer="91"/>
-<wire x1="167.64" y1="195.58" x2="167.64" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="231.14" x2="186.69" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="193.04" x2="167.64" y2="195.58" width="0.1524" layer="91"/>
-<junction x="101.6" y="190.5"/>
+<wire x1="78.74" y1="195.58" x2="149.86" y2="195.58" width="1.27" layer="91"/>
+<wire x1="78.74" y1="190.5" x2="78.74" y2="195.58" width="1.27" layer="91"/>
+<wire x1="78.74" y1="190.5" x2="96.52" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="180.34" x2="78.74" y2="180.34" width="1.27" layer="91"/>
+<wire x1="78.74" y1="180.34" x2="80.01" y2="180.34" width="1.27" layer="91"/>
+<wire x1="78.74" y1="180.34" x2="78.74" y2="190.5" width="1.27" layer="91"/>
+<wire x1="167.64" y1="190.5" x2="167.64" y2="195.58" width="0.1524" layer="91"/>
+<junction x="96.52" y="190.5"/>
 <junction x="170.18" y="198.12"/>
 <junction x="170.18" y="195.58"/>
 <junction x="167.64" y="195.58"/>
 <junction x="149.86" y="195.58"/>
-<junction x="83.82" y="190.5"/>
-<junction x="85.09" y="180.34"/>
+<junction x="78.74" y="190.5"/>
+<junction x="80.01" y="180.34"/>
 <pinref part="R102" gate="R" pin="1"/>
 <pinref part="Q103" gate="2" pin="S"/>
 <pinref part="Q101" gate="G$1" pin="S@3"/>
@@ -6847,9 +6854,12 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="D101" gate="G$1" pin="ANODE"/>
 <pinref part="B103A" gate="G$1" pin="B+@1"/>
 <pinref part="B103A" gate="G$1" pin="B+@2"/>
-<pinref part="C116" gate="CE" pin="1"/>
 <pinref part="R103" gate="R" pin="1"/>
-<junction x="83.82" y="180.34"/>
+<junction x="78.74" y="180.34"/>
+<pinref part="C116" gate="CE" pin="1"/>
+<wire x1="162.56" y1="231.14" x2="186.69" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="231.14" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
+<junction x="162.56" y="195.58"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6872,7 +6882,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="118.11" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="139.7" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="134.62" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="137.16" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
@@ -6890,9 +6900,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="124.46" y1="111.76" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="109.22" x2="119.38" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="109.22" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="114.3" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="114.3" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
 <junction x="124.46" y="114.3"/>
 <pinref part="R119" gate="R" pin="2"/>
 <pinref part="C114" gate="CE" pin="2"/>
@@ -6902,7 +6912,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$13" class="0">
 <segment>
-<wire x1="205.74" y1="116.84" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="109.22" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="C109" gate="CE" pin="1"/>
 <pinref part="U100" gate="G$1" pin="RBI"/>
@@ -6910,7 +6920,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="210.82" y1="116.84" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="109.22" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C110" gate="CE" pin="1"/>
 <pinref part="U100" gate="G$1" pin="REG27"/>
@@ -6918,17 +6928,18 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$15" class="0">
 <segment>
-<wire x1="200.66" y1="121.92" x2="213.36" y2="121.92" width="0.1524" layer="91"/>
-<junction x="213.36" y="121.92"/>
+<wire x1="200.66" y1="121.92" x2="219.71" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U100" gate="G$1" pin="SMBD"/>
 <pinref part="R117" gate="R" pin="2"/>
 <pinref part="TP108" gate="G$1" pin="P$1"/>
+<junction x="219.71" y="121.92"/>
+<wire x1="219.71" y1="121.92" x2="222.25" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <wire x1="200.66" y1="127" x2="213.36" y2="127" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="127" x2="234.95" y2="127" width="0.1524" layer="91"/>
 <junction x="213.36" y="127"/>
 <pinref part="U100" gate="G$1" pin="SMBC"/>
 <pinref part="R114" gate="R" pin="2"/>
@@ -6937,7 +6948,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="TRIANGLE_GND" class="0">
 <segment>
-<wire x1="172.72" y1="96.52" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="93.98" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="88.9" x2="299.72" y2="88.9" width="1.27" layer="91"/>
 <wire x1="307.34" y1="162.56" x2="307.34" y2="160.02" width="1.27" layer="91"/>
 <wire x1="307.34" y1="160.02" x2="299.72" y2="160.02" width="1.27" layer="91"/>
@@ -6949,35 +6960,38 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="TRIANGLE_GND3" gate="1" pin="TRIANGLE_GND"/>
 <pinref part="X1" gate="-3" pin="S"/>
 <pinref part="X1" gate="-4" pin="S"/>
+<junction x="307.34" y="162.56"/>
+<junction x="307.34" y="160.02"/>
 </segment>
 <segment>
-<wire x1="266.7" y1="109.22" x2="251.46" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="109.22" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="109.22" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="111.76" x2="276.86" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="109.22" x2="266.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="109.22" x2="276.86" y2="109.22" width="0.1524" layer="91"/>
-<junction x="251.46" y="109.22"/>
-<junction x="241.3" y="109.22"/>
-<junction x="246.38" y="109.22"/>
-<junction x="266.7" y="109.22"/>
+<wire x1="259.08" y1="109.22" x2="247.65" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="247.65" y1="109.22" x2="247.65" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="240.03" y1="109.22" x2="236.22" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="109.22" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="240.03" y1="109.22" x2="247.65" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="109.22" x2="284.48" y2="109.22" width="0.1524" layer="91"/>
+<junction x="247.65" y="109.22"/>
+<junction x="276.86" y="109.22"/>
+<junction x="240.03" y="109.22"/>
+<junction x="284.48" y="109.22"/>
 <junction x="276.86" y="109.22"/>
 <pinref part="D104" gate="G$1" pin="CATHODE"/>
 <pinref part="C107" gate="CE" pin="2"/>
 <pinref part="D103" gate="G$1" pin="CATHODE"/>
 <pinref part="C106" gate="CE" pin="2"/>
 <pinref part="TRIANGLE_GND1" gate="1" pin="TRIANGLE_GND"/>
-<pinref part="C108" gate="CE" pin="2"/>
 <pinref part="D105" gate="G$1" pin="CATHODE"/>
+<pinref part="C108" gate="CE" pin="2"/>
+<wire x1="284.48" y1="109.22" x2="276.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="111.76" x2="259.08" y2="109.22" width="0.1524" layer="91"/>
+<junction x="259.08" y="109.22"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="170.18" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="170.18" x2="256.54" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="170.18" x2="254" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="254" y1="170.18" x2="251.46" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="176.53" x2="251.46" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="254" y1="170.18" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="173.99" x2="246.38" y2="170.18" width="0.1524" layer="91"/>
 <junction x="254" y="170.18"/>
 <pinref part="D100" gate="G$1" pin="CATHODE"/>
 <pinref part="TRIANGLE_GND2" gate="1" pin="TRIANGLE_GND"/>
@@ -7011,7 +7025,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="118.11" y1="190.5" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="187.96" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="185.42" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="185.42" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="190.5" x2="134.62" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="190.5" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
@@ -7043,10 +7057,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$17" class="0">
 <segment>
-<wire x1="223.52" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="119.38" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
-<junction x="226.06" y="121.92"/>
+<wire x1="232.41" y1="121.92" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="121.92" x2="261.62" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="119.38" x2="236.22" y2="121.92" width="0.1524" layer="91"/>
+<junction x="236.22" y="121.92"/>
 <pinref part="R117" gate="R" pin="1"/>
 <pinref part="R118" gate="R" pin="2"/>
 <pinref part="C106" gate="CE" pin="1"/>
@@ -7054,12 +7068,12 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="238.76" y1="121.92" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="119.38" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="121.92" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="119.38" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="127" x2="307.34" y2="127" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="127" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="121.92" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
-<junction x="241.3" y="121.92"/>
+<wire x1="276.86" y1="121.92" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
+<junction x="276.86" y="121.92"/>
 <pinref part="R118" gate="R" pin="1"/>
 <pinref part="D103" gate="G$1" pin="ANODE"/>
 <pinref part="X2" gate="-3" pin="S"/>
@@ -7067,10 +7081,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$24" class="0">
 <segment>
-<wire x1="248.92" y1="127" x2="251.46" y2="127" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="127" x2="254" y2="127" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="119.38" x2="251.46" y2="127" width="0.1524" layer="91"/>
-<junction x="251.46" y="127"/>
+<wire x1="245.11" y1="127" x2="247.65" y2="127" width="0.1524" layer="91"/>
+<wire x1="247.65" y1="127" x2="270.51" y2="127" width="0.1524" layer="91"/>
+<wire x1="247.65" y1="119.38" x2="247.65" y2="127" width="0.1524" layer="91"/>
+<junction x="247.65" y="127"/>
 <pinref part="R114" gate="R" pin="1"/>
 <pinref part="R115" gate="R" pin="2"/>
 <pinref part="C107" gate="CE" pin="1"/>
@@ -7078,12 +7092,12 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$25" class="0">
 <segment>
-<wire x1="264.16" y1="127" x2="266.7" y2="127" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="119.38" x2="266.7" y2="127" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="127" x2="304.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="280.67" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="119.38" x2="284.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="127" x2="304.8" y2="127" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="127" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
-<junction x="266.7" y="127"/>
+<junction x="284.48" y="127"/>
 <pinref part="R115" gate="R" pin="1"/>
 <pinref part="D104" gate="G$1" pin="ANODE"/>
 <pinref part="X2" gate="-2" pin="S"/>
@@ -7102,10 +7116,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$29" class="0">
 <segment>
-<wire x1="200.66" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="142.24" x2="205.74" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="160.02" x2="205.74" y2="162.56" width="0.1524" layer="91"/>
-<junction x="205.74" y="160.02"/>
+<wire x1="200.66" y1="142.24" x2="213.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="142.24" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="160.02" x2="213.36" y2="162.56" width="0.1524" layer="91"/>
+<junction x="213.36" y="160.02"/>
 <pinref part="U100" gate="G$1" pin="ZVCHG"/>
 <pinref part="R108" gate="R" pin="2"/>
 <pinref part="TP102" gate="G$1" pin="P$1"/>
@@ -7135,13 +7149,13 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="D102" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="N$45" class="0">
 <segment>
-<wire x1="200.66" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="129.54" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="132.08" x2="264.16" y2="132.08" width="0.1524" layer="91"/>
-<junction x="213.36" y="129.54"/>
+<wire x1="200.66" y1="129.54" x2="219.71" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="219.71" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="129.54" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="132.08" x2="245.11" y2="132.08" width="0.1524" layer="91"/>
+<junction x="219.71" y="129.54"/>
 <pinref part="U100" gate="G$1" pin="!PRES"/>
 <pinref part="R112" gate="R" pin="2"/>
 <pinref part="TP106" gate="G$1" pin="P$1"/>
@@ -7149,10 +7163,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$33" class="0">
 <segment>
-<wire x1="274.32" y1="132.08" x2="276.86" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="132.08" x2="279.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="132.08" x2="276.86" y2="119.38" width="0.1524" layer="91"/>
-<junction x="276.86" y="132.08"/>
+<wire x1="255.27" y1="132.08" x2="259.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="132.08" x2="279.4" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="132.08" x2="259.08" y2="119.38" width="0.1524" layer="91"/>
+<junction x="259.08" y="132.08"/>
 <pinref part="R112" gate="R" pin="1"/>
 <pinref part="R113" gate="R" pin="2"/>
 <pinref part="C108" gate="CE" pin="1"/>
@@ -7171,8 +7185,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$38" class="0">
 <segment>
-<wire x1="200.66" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
-<junction x="203.2" y="139.7"/>
+<wire x1="200.66" y1="139.7" x2="219.71" y2="139.7" width="0.1524" layer="91"/>
+<junction x="219.71" y="139.7"/>
 <pinref part="TP103" gate="G$1" pin="P$1"/>
 <pinref part="U100" gate="G$1" pin="FUSE"/>
 </segment>
@@ -7182,20 +7196,20 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="180.34" y1="203.2" x2="180.34" y2="200.66" width="1.27" layer="91"/>
 <wire x1="180.34" y1="200.66" x2="180.34" y2="198.12" width="1.27" layer="91"/>
 <wire x1="180.34" y1="198.12" x2="180.34" y2="195.58" width="1.27" layer="91"/>
-<wire x1="180.34" y1="195.58" x2="187.96" y2="195.58" width="1.27" layer="91"/>
-<wire x1="187.96" y1="195.58" x2="195.58" y2="195.58" width="1.27" layer="91"/>
+<wire x1="180.34" y1="195.58" x2="185.42" y2="195.58" width="1.27" layer="91"/>
+<wire x1="185.42" y1="195.58" x2="195.58" y2="195.58" width="1.27" layer="91"/>
 <wire x1="195.58" y1="195.58" x2="195.58" y2="198.12" width="1.27" layer="91"/>
 <wire x1="195.58" y1="198.12" x2="195.58" y2="200.66" width="1.27" layer="91"/>
 <wire x1="195.58" y1="200.66" x2="195.58" y2="203.2" width="1.27" layer="91"/>
-<wire x1="193.04" y1="214.63" x2="187.96" y2="214.63" width="1.27" layer="91"/>
-<wire x1="187.96" y1="214.63" x2="187.96" y2="195.58" width="1.27" layer="91"/>
+<wire x1="190.5" y1="214.63" x2="185.42" y2="214.63" width="1.27" layer="91"/>
+<wire x1="185.42" y1="214.63" x2="185.42" y2="195.58" width="1.27" layer="91"/>
 <junction x="180.34" y="200.66"/>
 <junction x="180.34" y="198.12"/>
 <junction x="180.34" y="195.58"/>
 <junction x="195.58" y="195.58"/>
 <junction x="195.58" y="198.12"/>
 <junction x="195.58" y="200.66"/>
-<junction x="187.96" y="195.58"/>
+<junction x="185.42" y="195.58"/>
 <pinref part="Q101" gate="G$1" pin="D@4"/>
 <pinref part="Q101" gate="G$1" pin="D@3"/>
 <pinref part="Q101" gate="G$1" pin="D@2"/>
@@ -7209,10 +7223,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$34" class="0">
 <segment>
-<wire x1="167.64" y1="182.88" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="172.72" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="190.5" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
-<junction x="172.72" y="182.88"/>
+<wire x1="167.64" y1="180.34" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="172.72" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="190.5" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
+<junction x="172.72" y="180.34"/>
 <pinref part="R103" gate="R" pin="2"/>
 <pinref part="R106" gate="R" pin="1"/>
 <pinref part="Q101" gate="G$1" pin="G"/>
@@ -7220,10 +7234,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$36" class="0">
 <segment>
-<wire x1="203.2" y1="182.88" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="182.88" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="190.5" x2="203.2" y2="182.88" width="0.1524" layer="91"/>
-<junction x="203.2" y="182.88"/>
+<wire x1="203.2" y1="180.34" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="180.34" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="190.5" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
+<junction x="203.2" y="180.34"/>
 <pinref part="R104" gate="R" pin="2"/>
 <pinref part="R107" gate="R" pin="1"/>
 <pinref part="Q102" gate="G$1" pin="G"/>
@@ -7231,15 +7245,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$39" class="0">
 <segment>
-<wire x1="218.44" y1="201.93" x2="213.36" y2="201.93" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="172.72" x2="205.74" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="177.8" x2="213.36" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="177.8" x2="213.36" y2="201.93" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="209.55" x2="213.36" y2="201.93" width="0.1524" layer="91"/>
-<junction x="213.36" y="201.93"/>
-<pinref part="R101" gate="R" pin="2"/>
+<wire x1="213.36" y1="209.55" x2="213.36" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R108" gate="R" pin="1"/>
 <pinref part="Q100" gate="G$1" pin="G"/>
+<pinref part="R101" gate="R" pin="2"/>
+<wire x1="213.36" y1="180.34" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="181.61" x2="218.44" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="180.34" x2="213.36" y2="180.34" width="0.1524" layer="91"/>
+<junction x="213.36" y="180.34"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -7247,7 +7260,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="205.74" y1="222.25" x2="205.74" y2="219.71" width="1.27" layer="91"/>
 <wire x1="205.74" y1="219.71" x2="205.74" y2="217.17" width="1.27" layer="91"/>
 <wire x1="205.74" y1="217.17" x2="205.74" y2="214.63" width="1.27" layer="91"/>
-<wire x1="205.74" y1="214.63" x2="203.2" y2="214.63" width="1.27" layer="91"/>
+<wire x1="205.74" y1="214.63" x2="200.66" y2="214.63" width="1.27" layer="91"/>
 <junction x="205.74" y="219.71"/>
 <junction x="205.74" y="217.17"/>
 <junction x="205.74" y="214.63"/>
@@ -7258,94 +7271,48 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R100" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="N$32" class="0">
-<segment>
-<wire x1="256.54" y1="193.04" x2="256.54" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="195.58" x2="266.7" y2="195.58" width="1.27" layer="91"/>
-<wire x1="251.46" y1="195.58" x2="256.54" y2="195.58" width="1.27" layer="91"/>
-<wire x1="251.46" y1="191.77" x2="251.46" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="195.58" x2="251.46" y2="195.58" width="1.27" layer="91"/>
-<wire x1="231.14" y1="170.18" x2="231.14" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="195.58" x2="231.14" y2="195.58" width="1.27" layer="91"/>
-<wire x1="215.9" y1="217.17" x2="215.9" y2="219.71" width="1.27" layer="91"/>
-<wire x1="215.9" y1="214.63" x2="215.9" y2="217.17" width="1.27" layer="91"/>
-<wire x1="215.9" y1="212.09" x2="215.9" y2="214.63" width="1.27" layer="91"/>
-<wire x1="218.44" y1="212.09" x2="215.9" y2="212.09" width="1.27" layer="91"/>
-<wire x1="218.44" y1="212.09" x2="223.52" y2="212.09" width="1.27" layer="91"/>
-<wire x1="223.52" y1="212.09" x2="223.52" y2="195.58" width="1.27" layer="91"/>
-<wire x1="205.74" y1="198.12" x2="205.74" y2="200.66" width="1.27" layer="91"/>
-<wire x1="205.74" y1="195.58" x2="205.74" y2="198.12" width="1.27" layer="91"/>
-<wire x1="205.74" y1="195.58" x2="208.28" y2="195.58" width="1.27" layer="91"/>
-<wire x1="208.28" y1="195.58" x2="223.52" y2="195.58" width="1.27" layer="91"/>
-<wire x1="208.28" y1="193.04" x2="208.28" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="231.14" x2="231.14" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="231.14" x2="231.14" y2="195.58" width="0.1524" layer="91"/>
-<junction x="251.46" y="195.58"/>
-<junction x="231.14" y="195.58"/>
-<junction x="215.9" y="217.17"/>
-<junction x="215.9" y="214.63"/>
-<junction x="218.44" y="212.09"/>
-<junction x="223.52" y="195.58"/>
-<junction x="205.74" y="198.12"/>
-<junction x="205.74" y="195.58"/>
-<junction x="208.28" y="195.58"/>
-<junction x="256.54" y="195.58"/>
-<pinref part="F100" gate="F" pin="1"/>
-<pinref part="D100" gate="G$1" pin="ANODE"/>
-<pinref part="C100" gate="CE" pin="1"/>
-<pinref part="D102" gate="G$1" pin="ANODE"/>
-<pinref part="Q100" gate="G$1" pin="S@3"/>
-<pinref part="Q100" gate="G$1" pin="S@2"/>
-<pinref part="Q100" gate="G$1" pin="S@1"/>
-<pinref part="R101" gate="R" pin="1"/>
-<pinref part="Q102" gate="G$1" pin="S@3"/>
-<pinref part="Q102" gate="G$1" pin="S@2"/>
-<pinref part="Q102" gate="G$1" pin="S@1"/>
-<pinref part="R104" gate="R" pin="1"/>
-<pinref part="C117" gate="CE" pin="2"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="85.09" y1="104.14" x2="83.82" y2="104.14" width="1.27" layer="91"/>
-<wire x1="82.55" y1="104.14" x2="85.09" y2="104.14" width="1.27" layer="91"/>
-<wire x1="85.09" y1="121.92" x2="83.82" y2="121.92" width="1.27" layer="91"/>
-<wire x1="82.55" y1="121.92" x2="85.09" y2="121.92" width="1.27" layer="91"/>
-<wire x1="83.82" y1="104.14" x2="83.82" y2="114.3" width="1.27" layer="91"/>
-<wire x1="83.82" y1="114.3" x2="83.82" y2="121.92" width="1.27" layer="91"/>
+<wire x1="77.47" y1="104.14" x2="78.74" y2="104.14" width="1.27" layer="91"/>
+<wire x1="77.47" y1="104.14" x2="80.01" y2="104.14" width="1.27" layer="91"/>
+<wire x1="77.47" y1="121.92" x2="78.74" y2="121.92" width="1.27" layer="91"/>
+<wire x1="78.74" y1="121.92" x2="80.01" y2="121.92" width="1.27" layer="91"/>
+<wire x1="78.74" y1="104.14" x2="78.74" y2="114.3" width="1.27" layer="91"/>
+<wire x1="78.74" y1="114.3" x2="78.74" y2="121.92" width="1.27" layer="91"/>
 <wire x1="107.95" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="111.76" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="114.3" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
 <junction x="101.6" y="114.3"/>
-<junction x="83.82" y="114.3"/>
-<junction x="85.09" y="104.14"/>
-<junction x="85.09" y="121.92"/>
+<junction x="78.74" y="114.3"/>
+<junction x="80.01" y="104.14"/>
+<junction x="80.01" y="121.92"/>
 <pinref part="B100A" gate="G$1" pin="B+@2"/>
 <pinref part="B100A" gate="G$1" pin="B+@1"/>
 <pinref part="B101A" gate="G$1" pin="B-@2"/>
 <pinref part="B101A" gate="G$1" pin="B-@1"/>
-<pinref part="R116" gate="R" pin="1"/>
 <pinref part="R119" gate="R" pin="1"/>
 <pinref part="Q104" gate="1" pin="S"/>
+<pinref part="R116" gate="R" pin="1"/>
+<wire x1="96.52" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="116.84" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
+<junction x="96.52" y="114.3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="85.09" y1="129.54" x2="83.82" y2="129.54" width="1.27" layer="91"/>
-<wire x1="82.55" y1="129.54" x2="85.09" y2="129.54" width="1.27" layer="91"/>
-<wire x1="85.09" y1="147.32" x2="83.82" y2="147.32" width="1.27" layer="91"/>
-<wire x1="82.55" y1="147.32" x2="85.09" y2="147.32" width="1.27" layer="91"/>
-<wire x1="83.82" y1="129.54" x2="83.82" y2="139.7" width="1.27" layer="91"/>
-<wire x1="83.82" y1="139.7" x2="83.82" y2="147.32" width="1.27" layer="91"/>
+<wire x1="77.47" y1="129.54" x2="78.74" y2="129.54" width="1.27" layer="91"/>
+<wire x1="78.74" y1="129.54" x2="80.01" y2="129.54" width="1.27" layer="91"/>
+<wire x1="77.47" y1="147.32" x2="78.74" y2="147.32" width="1.27" layer="91"/>
+<wire x1="78.74" y1="147.32" x2="80.01" y2="147.32" width="1.27" layer="91"/>
+<wire x1="78.74" y1="129.54" x2="78.74" y2="139.7" width="1.27" layer="91"/>
+<wire x1="78.74" y1="139.7" x2="78.74" y2="147.32" width="1.27" layer="91"/>
 <wire x1="107.95" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="137.16" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="139.7" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
 <junction x="101.6" y="139.7"/>
-<junction x="83.82" y="139.7"/>
-<junction x="85.09" y="129.54"/>
-<junction x="85.09" y="147.32"/>
+<junction x="78.74" y="139.7"/>
+<junction x="80.01" y="129.54"/>
+<junction x="80.01" y="147.32"/>
 <pinref part="B101A" gate="G$1" pin="B+@2"/>
 <pinref part="B101A" gate="G$1" pin="B+@1"/>
 <pinref part="B102A" gate="G$1" pin="B-@2"/>
@@ -7353,33 +7320,37 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R110" gate="R" pin="1"/>
 <pinref part="R111" gate="R" pin="1"/>
 <pinref part="Q104" gate="2" pin="S"/>
+<wire x1="96.52" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="137.16" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<junction x="96.52" y="139.7"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="85.09" y1="154.94" x2="83.82" y2="154.94" width="1.27" layer="91"/>
-<wire x1="82.55" y1="154.94" x2="85.09" y2="154.94" width="1.27" layer="91"/>
+<wire x1="77.47" y1="154.94" x2="78.74" y2="154.94" width="1.27" layer="91"/>
+<wire x1="78.74" y1="154.94" x2="80.01" y2="154.94" width="1.27" layer="91"/>
 <wire x1="107.95" y1="165.1" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="165.1" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="167.64" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="162.56" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="154.94" x2="83.82" y2="165.1" width="1.27" layer="91"/>
-<wire x1="82.55" y1="172.72" x2="83.82" y2="172.72" width="1.27" layer="91"/>
-<wire x1="83.82" y1="172.72" x2="85.09" y2="172.72" width="1.27" layer="91"/>
-<wire x1="85.09" y1="172.72" x2="83.82" y2="172.72" width="1.27" layer="91"/>
-<wire x1="83.82" y1="165.1" x2="83.82" y2="172.72" width="1.27" layer="91"/>
+<wire x1="78.74" y1="154.94" x2="78.74" y2="165.1" width="1.27" layer="91"/>
+<wire x1="77.47" y1="172.72" x2="78.74" y2="172.72" width="1.27" layer="91"/>
+<wire x1="80.01" y1="172.72" x2="78.74" y2="172.72" width="1.27" layer="91"/>
+<wire x1="78.74" y1="165.1" x2="78.74" y2="172.72" width="1.27" layer="91"/>
 <junction x="101.6" y="165.1"/>
-<junction x="85.09" y="154.94"/>
-<junction x="85.09" y="172.72"/>
-<junction x="83.82" y="165.1"/>
+<junction x="80.01" y="154.94"/>
+<junction x="80.01" y="172.72"/>
+<junction x="78.74" y="165.1"/>
 <pinref part="B102A" gate="G$1" pin="B+@2"/>
 <pinref part="B102A" gate="G$1" pin="B+@1"/>
 <pinref part="R109" gate="R" pin="1"/>
-<pinref part="R105" gate="R" pin="1"/>
 <pinref part="Q103" gate="1" pin="S"/>
 <pinref part="B103A" gate="G$1" pin="B-@1"/>
 <pinref part="B103A" gate="G$1" pin="B-@2"/>
-<junction x="83.82" y="172.72"/>
+<junction x="78.74" y="172.72"/>
+<pinref part="R105" gate="R" pin="1"/>
+<wire x1="96.52" y1="167.64" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
+<junction x="96.52" y="165.1"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -7391,12 +7362,15 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="F100" gate="F" pin="2"/>
 <pinref part="X1" gate="-1" pin="S"/>
 <pinref part="X1" gate="-2" pin="S"/>
+<junction x="307.34" y="167.64"/>
+<junction x="307.34" y="165.1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="C100" gate="CE" pin="2"/>
 <pinref part="C115" gate="CE" pin="1"/>
+<wire x1="246.38" y1="181.61" x2="246.38" y2="184.15" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -7406,9 +7380,72 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="C116" gate="CE" pin="2"/>
 </segment>
 </net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="Q100" gate="G$1" pin="S@3"/>
+<wire x1="215.9" y1="217.17" x2="215.9" y2="219.71" width="1.27" layer="91"/>
+<junction x="215.9" y="217.17"/>
+<pinref part="Q100" gate="G$1" pin="S@2"/>
+<wire x1="215.9" y1="214.63" x2="215.9" y2="217.17" width="1.27" layer="91"/>
+<pinref part="Q100" gate="G$1" pin="S@1"/>
+<wire x1="215.9" y1="214.63" x2="223.52" y2="214.63" width="1.27" layer="91"/>
+<wire x1="210.82" y1="231.14" x2="236.22" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="C117" gate="CE" pin="2"/>
+<wire x1="256.54" y1="187.96" x2="256.54" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="195.58" x2="266.7" y2="195.58" width="1.27" layer="91"/>
+<wire x1="246.38" y1="195.58" x2="256.54" y2="195.58" width="1.27" layer="91"/>
+<wire x1="246.38" y1="191.77" x2="246.38" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="195.58" x2="236.22" y2="195.58" width="1.27" layer="91"/>
+<wire x1="236.22" y1="195.58" x2="246.38" y2="195.58" width="1.27" layer="91"/>
+<wire x1="231.14" y1="170.18" x2="231.14" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="198.12" x2="205.74" y2="200.66" width="1.27" layer="91"/>
+<wire x1="205.74" y1="195.58" x2="205.74" y2="198.12" width="1.27" layer="91"/>
+<wire x1="205.74" y1="195.58" x2="208.28" y2="195.58" width="1.27" layer="91"/>
+<wire x1="208.28" y1="195.58" x2="218.44" y2="195.58" width="1.27" layer="91"/>
+<wire x1="218.44" y1="195.58" x2="223.52" y2="195.58" width="1.27" layer="91"/>
+<wire x1="223.52" y1="195.58" x2="231.14" y2="195.58" width="1.27" layer="91"/>
+<wire x1="208.28" y1="190.5" x2="208.28" y2="195.58" width="0.1524" layer="91"/>
+<junction x="246.38" y="195.58"/>
+<junction x="231.14" y="195.58"/>
+<junction x="205.74" y="198.12"/>
+<junction x="205.74" y="195.58"/>
+<junction x="208.28" y="195.58"/>
+<junction x="256.54" y="195.58"/>
+<pinref part="F100" gate="F" pin="1"/>
+<pinref part="D100" gate="G$1" pin="ANODE"/>
+<pinref part="C100" gate="CE" pin="1"/>
+<pinref part="D102" gate="G$1" pin="ANODE"/>
+<pinref part="Q102" gate="G$1" pin="S@3"/>
+<pinref part="Q102" gate="G$1" pin="S@2"/>
+<pinref part="Q102" gate="G$1" pin="S@1"/>
+<pinref part="R104" gate="R" pin="1"/>
+<wire x1="236.22" y1="231.14" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
+<junction x="236.22" y="195.58"/>
+<wire x1="223.52" y1="214.63" x2="223.52" y2="195.58" width="1.27" layer="91"/>
+<junction x="223.52" y="195.58"/>
+<pinref part="R101" gate="R" pin="1"/>
+<wire x1="218.44" y1="191.77" x2="218.44" y2="195.58" width="0.1524" layer="91"/>
+<junction x="218.44" y="195.58"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U100" gate="G$1" pin="TS1"/>
+<wire x1="175.26" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="127" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="J100" gate="-1" pin="S"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,175.26,147.32,U100,BAT,N$3,,,"/>
+<approved hash="104,1,200.66,132.08,U100,RBI,N$13,,,"/>
+<approved hash="104,1,200.66,134.62,U100,VSS,BAR_GND,,,"/>
+<approved hash="104,1,200.66,137.16,U100,REG27,N$14,,,"/>
+<approved hash="104,1,200.66,147.32,U100,PACK,N$31,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
