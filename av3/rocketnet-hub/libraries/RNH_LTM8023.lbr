@@ -9,6 +9,10 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -56,87 +60,31 @@
 </layers>
 <library>
 <packages>
-<package name="MS-012">
-<wire x1="1.7" y1="2" x2="1.7" y2="-2" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-2" x2="-1.7" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="1.5" x2="-1.2" y2="2" width="0.127" layer="21"/>
-<wire x1="-1.2" y1="2" x2="1.7" y2="2" width="0.127" layer="21"/>
-<smd name="8" x="2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="1" x="-2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="5" x="2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="4" x="-2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="7" x="2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="6" x="2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="2" x="-2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="3" x="-2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<text x="-3" y="2.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-3.9" size="1.27" layer="27">&gt;VALUE</text>
+<package name="LGA-50">
 </package>
 </packages>
 <symbols>
-<symbol name="FDS6680A">
-<pin name="S@1" x="5.08" y="-6.858" length="short" rot="R180"/>
-<pin name="S@2" x="5.08" y="-8.89" length="short" rot="R180"/>
-<pin name="S@3" x="5.08" y="-11.176" length="short" rot="R180"/>
-<pin name="G" x="-4.064" y="-5.08" length="short"/>
-<pin name="D@5" x="2.54" y="5.334" length="short" rot="R270"/>
-<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.381" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.381" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.381" layer="94"/>
-<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.381" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-6.35" width="0.381" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-5.08" width="0.381" layer="94"/>
-<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="2.032" y="0"/>
-<vertex x="2.032" y="-2.54"/>
-<vertex x="0.762" y="-1.27"/>
-</polygon>
-<wire x1="2.54" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="-4.826" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-4.826" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="6.35" y="-1.27"/>
-<vertex x="3.81" y="-1.27"/>
-<vertex x="5.08" y="0"/>
-</polygon>
-<wire x1="5.08" y1="0.762" x2="5.08" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
-<circle x="2.54" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
-<circle x="2.54" y="-5.08" radius="0.254" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.254" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+<symbol name="LTM8023">
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="VIN" x="-17.78" y="15.24" length="middle"/>
+<pin name="RUN/SS" x="-17.78" y="7.62" length="middle"/>
+<pin name="RT" x="-10.16" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND" x="-2.54" y="-27.94" length="middle" direction="pwr" rot="R90"/>
+<pin name="SYNC" x="5.08" y="-27.94" length="middle" rot="R90"/>
+<pin name="ADJ" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="PGOOD" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="SHARE" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="BIAS" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="AUX" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="VOUT" x="17.78" y="15.24" length="middle" rot="R180"/>
+<text x="-12.7" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FDS6680A">
-<gates>
-<gate name="G$1" symbol="FDS6680A" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC-8" package="MS-012">
-<connects>
-<connect gate="G$1" pin="D@5" pad="5 6 7 8"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S@1" pad="1"/>
-<connect gate="G$1" pin="S@2" pad="2"/>
-<connect gate="G$1" pin="S@3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
