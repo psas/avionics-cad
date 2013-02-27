@@ -30,7 +30,7 @@ Historic boards and files for 2005 [launch of LV2.3](http://psas.pdx.edu/news/20
 
 ## Naming Convention
 
-<rocketname>-<system-name>-[<sub-board-name>-][<sub-sub-board-name>-]<version>
+(rocketname)-(system-name)-[(sub-board-name)-][(sub-sub-board-name)-](version)
 
  - node1 = CAN Node v1, which was the PIC16F + SJA1000 design
  - node2 = CAN Node v2, which was the PIC18F + linear power supply (7805)
