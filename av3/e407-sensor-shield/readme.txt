@@ -6,3 +6,8 @@ It connects the E407 board to:
 - Invensense MPU-9150  6DOF IMU with magnetometer (I2C)
 - Freescale MPL3115A2 pressure sensor (I2C)
 
+
+TODO:
+
+- If we want the shield to be closer to the Olimex, what are the major components to avoid? Which caps? Which connectors?
+- 
