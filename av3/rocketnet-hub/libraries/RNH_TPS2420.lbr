@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -103,7 +103,7 @@
 <pin name="!EN" x="-7.62" y="20.32" length="middle" rot="R270"/>
 <pin name="!FLT" x="-2.54" y="20.32" length="middle" rot="R270"/>
 <pin name="!PG" x="2.54" y="20.32" length="middle" rot="R270"/>
-<pin name="INOM" x="7.62" y="20.32" length="middle" rot="R270"/>
+<pin name="IMON" x="7.62" y="20.32" length="middle" rot="R270"/>
 <pin name="IN@2" x="-20.32" y="2.54" length="middle"/>
 <pin name="IN@1" x="-20.32" y="7.62" length="middle"/>
 </symbol>
@@ -123,11 +123,11 @@
 <connect gate="G$1" pin="GND@5" pad="5"/>
 <connect gate="G$1" pin="IFLT" pad="8"/>
 <connect gate="G$1" pin="IMAX" pad="7"/>
+<connect gate="G$1" pin="IMON" pad="13"/>
 <connect gate="G$1" pin="IN@1" pad="1"/>
 <connect gate="G$1" pin="IN@2" pad="2"/>
 <connect gate="G$1" pin="IN@3" pad="3"/>
 <connect gate="G$1" pin="IN@4" pad="4"/>
-<connect gate="G$1" pin="INOM" pad="13"/>
 <connect gate="G$1" pin="LTCH" pad="6"/>
 <connect gate="G$1" pin="OUT@10" pad="10"/>
 <connect gate="G$1" pin="OUT@11" pad="11"/>

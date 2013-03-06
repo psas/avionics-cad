@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8484,6 +8484,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$5" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 <part name="U$6" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
 <part name="U$7" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B" value="10"/>
 </parts>
 <sheets>
 <sheet>
@@ -8517,14 +8519,14 @@ Battery Charger Schematic</text>
 <instance part="SUPPLY7" gate="GND" x="-5.08" y="-43.18"/>
 <instance part="C6" gate="C" x="-17.78" y="-35.56"/>
 <instance part="SUPPLY8" gate="GND" x="-17.78" y="-43.18"/>
-<instance part="R8" gate="R" x="-40.64" y="-22.86" rot="R90"/>
-<instance part="R9" gate="R" x="-40.64" y="-12.7" rot="R90"/>
-<instance part="SUPPLY9" gate="GND" x="-40.64" y="-30.48"/>
+<instance part="R8" gate="R" x="-38.1" y="-22.86" rot="R90"/>
+<instance part="R9" gate="R" x="-30.48" y="-12.7" rot="R90"/>
+<instance part="SUPPLY9" gate="GND" x="-38.1" y="-30.48"/>
 <instance part="JP1" gate="A" x="-142.24" y="-55.88" rot="R180"/>
 <instance part="R10" gate="R" x="-58.42" y="7.62" rot="R90"/>
 <instance part="R11" gate="R" x="-48.26" y="5.08" rot="R90"/>
 <instance part="R12" gate="R" x="-106.68" y="40.64" rot="R90"/>
-<instance part="R13" gate="R" x="-106.68" y="50.8" rot="R90"/>
+<instance part="R13" gate="R" x="-104.14" y="50.8" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="-106.68" y="33.02"/>
 <instance part="D3" gate="G$1" x="-109.22" y="5.08" rot="R180"/>
 <instance part="R14" gate="R" x="-101.6" y="-7.62" rot="R180"/>
@@ -8589,6 +8591,8 @@ Battery Charger Schematic</text>
 <instance part="U$5" gate="G$1" x="109.22" y="71.12" rot="MR0"/>
 <instance part="U$6" gate="G$1" x="54.61" y="62.23"/>
 <instance part="U$7" gate="G$1" x="57.15" y="29.21"/>
+<instance part="R6" gate="R" x="-93.98" y="-45.72" rot="R270"/>
+<instance part="R7" gate="R" x="-81.28" y="-45.72" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8721,16 +8725,18 @@ Battery Charger Schematic</text>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VCC@1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="-10.16" y1="22.86" x2="-10.16" y2="38.1" width="0.2032" layer="91"/>
 <wire x1="-10.16" y1="38.1" x2="-15.24" y2="38.1" width="0.2032" layer="91"/>
 <pinref part="C1" gate="C" pin="1"/>
 <wire x1="-15.24" y1="38.1" x2="-15.24" y2="35.56" width="0.2032" layer="91"/>
+<label x="-10.16" y="40.64" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="-10.16" y1="40.64" x2="-10.16" y2="38.1" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ILIM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ILIM"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="-30.48" width="0.2032" layer="91"/>
@@ -8741,37 +8747,62 @@ Battery Charger Schematic</text>
 <pinref part="R4" gate="R" pin="2"/>
 <wire x1="27.94" y1="-33.02" x2="27.94" y2="-30.48" width="0.2032" layer="91"/>
 <wire x1="27.94" y1="-30.48" x2="27.94" y2="-27.94" width="0.2032" layer="91"/>
-<wire x1="15.24" y1="-30.48" x2="27.94" y2="-30.48" width="0.2032" layer="91"/>
+<wire x1="15.24" y1="-30.48" x2="22.86" y2="-30.48" width="0.2032" layer="91"/>
 <junction x="27.94" y="-30.48"/>
 <junction x="15.24" y="-30.48"/>
+<label x="20.32" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="-30.48" x2="27.94" y2="-30.48" width="0.2032" layer="91"/>
+<wire x1="22.86" y1="-30.48" x2="22.86" y2="-22.86" width="0.2032" layer="91"/>
+<wire x1="22.86" y1="-22.86" x2="20.32" y2="-22.86" width="0.2032" layer="91"/>
+<junction x="22.86" y="-30.48"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
 <wire x1="0" y1="-22.86" x2="0" y2="-55.88" width="0.2032" layer="91"/>
-<wire x1="0" y1="-55.88" x2="-139.7" y2="-55.88" width="0.2032" layer="91"/>
+<wire x1="0" y1="-55.88" x2="-81.28" y2="-55.88" width="0.2032" layer="91"/>
 <pinref part="JP1" gate="A" pin="2"/>
-<label x="-124.46" y="-55.88" size="1.778" layer="95"/>
+<label x="-109.22" y="-60.96" size="1.778" layer="95" xref="yes"/>
+<wire x1="-81.28" y1="-55.88" x2="-111.76" y2="-55.88" width="0.2032" layer="91"/>
+<wire x1="-111.76" y1="-55.88" x2="-139.7" y2="-55.88" width="0.2032" layer="91"/>
+<wire x1="-109.22" y1="-60.96" x2="-111.76" y2="-60.96" width="0.2032" layer="91"/>
+<wire x1="-111.76" y1="-60.96" x2="-111.76" y2="-55.88" width="0.2032" layer="91"/>
+<junction x="-111.76" y="-55.88"/>
+<pinref part="R7" gate="R" pin="2"/>
+<wire x1="-81.28" y1="-50.8" x2="-81.28" y2="-55.88" width="0.2032" layer="91"/>
+<junction x="-81.28" y="-55.88"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
 <wire x1="5.08" y1="-22.86" x2="5.08" y2="-53.34" width="0.2032" layer="91"/>
-<wire x1="5.08" y1="-53.34" x2="-139.7" y2="-53.34" width="0.2032" layer="91"/>
+<wire x1="5.08" y1="-53.34" x2="-93.98" y2="-53.34" width="0.2032" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
-<label x="-124.46" y="-53.34" size="1.778" layer="95"/>
+<label x="-106.68" y="-48.26" size="1.778" layer="95" xref="yes"/>
+<wire x1="-93.98" y1="-53.34" x2="-109.22" y2="-53.34" width="0.2032" layer="91"/>
+<wire x1="-109.22" y1="-53.34" x2="-139.7" y2="-53.34" width="0.2032" layer="91"/>
+<wire x1="-106.68" y1="-48.26" x2="-109.22" y2="-48.26" width="0.2032" layer="91"/>
+<wire x1="-109.22" y1="-48.26" x2="-109.22" y2="-53.34" width="0.2032" layer="91"/>
+<junction x="-109.22" y="-53.34"/>
+<pinref part="R6" gate="R" pin="2"/>
+<wire x1="-93.98" y1="-50.8" x2="-93.98" y2="-53.34" width="0.2032" layer="91"/>
+<junction x="-93.98" y="-53.34"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="IOUT" class="0">
 <segment>
 <pinref part="C5" gate="C" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="IOUT"/>
-<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-22.86" width="0.2032" layer="91"/>
+<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-27.94" width="0.2032" layer="91"/>
+<label x="-7.62" y="-27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-22.86" width="0.2032" layer="91"/>
+<wire x1="-7.62" y1="-27.94" x2="-5.08" y2="-27.94" width="0.2032" layer="91"/>
+<junction x="-5.08" y="-27.94"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="ACDET" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ACDET"/>
 <wire x1="-10.16" y1="-22.86" x2="-17.78" y2="-22.86" width="0.2032" layer="91"/>
@@ -8779,38 +8810,57 @@ Battery Charger Schematic</text>
 <wire x1="-17.78" y1="-22.86" x2="-17.78" y2="-33.02" width="0.2032" layer="91"/>
 <wire x1="-17.78" y1="-22.86" x2="-30.48" y2="-22.86" width="0.2032" layer="91"/>
 <wire x1="-30.48" y1="-22.86" x2="-30.48" y2="-35.56" width="0.2032" layer="91"/>
-<wire x1="-30.48" y1="-35.56" x2="-78.74" y2="-35.56" width="0.2032" layer="91"/>
-<wire x1="-78.74" y1="-35.56" x2="-78.74" y2="45.72" width="0.2032" layer="91"/>
-<wire x1="-78.74" y1="45.72" x2="-106.68" y2="45.72" width="0.2032" layer="91"/>
+<wire x1="-30.48" y1="-35.56" x2="-68.58" y2="-35.56" width="0.2032" layer="91"/>
+<wire x1="-68.58" y1="-35.56" x2="-68.58" y2="45.72" width="0.2032" layer="91"/>
+<wire x1="-68.58" y1="45.72" x2="-104.14" y2="45.72" width="0.2032" layer="91"/>
 <junction x="-17.78" y="-22.86"/>
 <pinref part="R12" gate="R" pin="2"/>
 <pinref part="R13" gate="R" pin="1"/>
+<junction x="-104.14" y="45.72"/>
+<wire x1="-104.14" y1="45.72" x2="-106.68" y2="45.72" width="0.2032" layer="91"/>
+<label x="-111.76" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-106.68" y1="45.72" x2="-111.76" y2="45.72" width="0.2032" layer="91"/>
+<wire x1="-104.14" y1="45.72" x2="-106.68" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-106.68" y="45.72"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="ACDRV" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ACDRV"/>
 <pinref part="R10" gate="R" pin="1"/>
-<wire x1="-22.86" y1="-5.08" x2="-58.42" y2="-5.08" width="0.2032" layer="91"/>
+<wire x1="-22.86" y1="-5.08" x2="-50.8" y2="-5.08" width="0.2032" layer="91"/>
+<wire x1="-50.8" y1="-5.08" x2="-58.42" y2="-5.08" width="0.2032" layer="91"/>
 <wire x1="-58.42" y1="-5.08" x2="-58.42" y2="2.54" width="0.2032" layer="91"/>
+<label x="-53.34" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-53.34" y1="-10.16" x2="-50.8" y2="-10.16" width="0.2032" layer="91"/>
+<wire x1="-50.8" y1="-10.16" x2="-50.8" y2="-5.08" width="0.2032" layer="91"/>
+<junction x="-50.8" y="-5.08"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="ACOK" class="0">
 <segment>
 <pinref part="R8" gate="R" pin="2"/>
 <pinref part="R9" gate="R" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="ACOK"/>
 <wire x1="-22.86" y1="-17.78" x2="-22.86" y2="-10.16" width="0.2032" layer="91"/>
-<wire x1="-40.64" y1="-17.78" x2="-22.86" y2="-17.78" width="0.2032" layer="91"/>
-<junction x="-40.64" y="-17.78"/>
+<wire x1="-30.48" y1="-17.78" x2="-22.86" y2="-17.78" width="0.2032" layer="91"/>
+<junction x="-30.48" y="-17.78"/>
+<wire x1="-30.48" y1="-17.78" x2="-38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-17.78" x2="-45.72" y2="-17.78" width="0.2032" layer="91"/>
+<label x="-45.72" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<junction x="-38.1" y="-17.78"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="CMSRC" class="0">
 <segment>
 <pinref part="R11" gate="R" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="CMSRC"/>
-<wire x1="-48.26" y1="0" x2="-22.86" y2="0" width="0.2032" layer="91"/>
+<wire x1="-48.26" y1="0" x2="-33.02" y2="0" width="0.2032" layer="91"/>
+<label x="-35.56" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-33.02" y1="0" x2="-22.86" y2="0" width="0.2032" layer="91"/>
+<wire x1="-35.56" y1="15.24" x2="-33.02" y2="15.24" width="0.2032" layer="91"/>
+<wire x1="-33.02" y1="15.24" x2="-33.02" y2="0" width="0.2032" layer="91"/>
+<junction x="-33.02" y="0"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -8829,28 +8879,33 @@ Battery Charger Schematic</text>
 <wire x1="-93.98" y1="5.08" x2="-93.98" y2="7.62" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="R13" gate="R" pin="2"/>
-<wire x1="-106.68" y1="55.88" x2="-106.68" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-104.14" y1="55.88" x2="-104.14" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="C7" gate="C" pin="1"/>
 <wire x1="-142.24" y1="78.74" x2="-142.24" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="-142.24" y1="81.28" x2="-160.02" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A2"/>
-<wire x1="-114.3" y1="5.08" x2="-119.38" y2="5.08" width="0.2032" layer="91"/>
-<wire x1="-119.38" y1="5.08" x2="-119.38" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="-142.24" y1="81.28" x2="-119.38" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-114.3" y1="5.08" x2="-127" y2="5.08" width="0.2032" layer="91"/>
+<wire x1="-127" y1="5.08" x2="-127" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-142.24" y1="81.28" x2="-134.62" y2="81.28" width="0.2032" layer="91"/>
 <junction x="-142.24" y="81.28"/>
-<wire x1="-106.68" y1="81.28" x2="-119.38" y2="81.28" width="0.2032" layer="91"/>
-<junction x="-119.38" y="81.28"/>
+<wire x1="-134.62" y1="81.28" x2="-127" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-104.14" y1="81.28" x2="-127" y2="81.28" width="0.2032" layer="91"/>
+<junction x="-127" y="81.28"/>
 <pinref part="C8" gate="C" pin="1"/>
 <wire x1="-91.44" y1="78.74" x2="-91.44" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="-91.44" y1="81.28" x2="-106.68" y2="81.28" width="0.2032" layer="91"/>
-<junction x="-106.68" y="81.28"/>
+<wire x1="-91.44" y1="81.28" x2="-104.14" y2="81.28" width="0.2032" layer="91"/>
+<junction x="-104.14" y="81.28"/>
 <wire x1="-91.44" y1="81.28" x2="-86.36" y2="81.28" width="0.2032" layer="91"/>
 <junction x="-91.44" y="81.28"/>
 <wire x1="-86.36" y1="78.74" x2="-86.36" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="-134.62" y1="81.28" x2="-134.62" y2="88.9" width="0.2032" layer="91"/>
+<label x="-139.7" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-139.7" y1="88.9" x2="-134.62" y2="88.9" width="0.2032" layer="91"/>
+<junction x="-134.62" y="81.28"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -8913,7 +8968,7 @@ Battery Charger Schematic</text>
 <junction x="88.9" y="38.1"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="REGN@1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="REGN"/>
 <wire x1="10.16" y1="22.86" x2="10.16" y2="27.94" width="0.2032" layer="91"/>
@@ -8922,10 +8977,11 @@ Battery Charger Schematic</text>
 <wire x1="27.94" y1="27.94" x2="27.94" y2="25.4" width="0.2032" layer="91"/>
 <wire x1="27.94" y1="27.94" x2="30.48" y2="27.94" width="0.2032" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="27.94" x2="33.02" y2="27.94" width="0.2032" layer="91"/>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="30.48" width="0.2032" layer="91"/>
 <junction x="30.48" y="27.94"/>
 <junction x="27.94" y="27.94"/>
+<label x="33.02" y="27.94" size="1.778" layer="95" xref="yes"/>
+<wire x1="30.48" y1="27.94" x2="33.02" y2="27.94" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -8947,11 +9003,12 @@ Battery Charger Schematic</text>
 <junction x="30.48" y="38.1"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="BATDRV" class="0">
 <segment>
 <pinref part="R2" gate="R" pin="1"/>
 <wire x1="40.64" y1="-12.7" x2="149.86" y2="-12.7" width="0.2032" layer="91"/>
-<wire x1="149.86" y1="-12.7" x2="149.86" y2="66.04" width="0.2032" layer="91"/>
+<wire x1="149.86" y1="-12.7" x2="149.86" y2="0" width="0.2032" layer="91"/>
+<wire x1="149.86" y1="0" x2="149.86" y2="66.04" width="0.2032" layer="91"/>
 <wire x1="149.86" y1="66.04" x2="139.7" y2="66.04" width="0.2032" layer="91"/>
 <pinref part="C26" gate="C" pin="1"/>
 <wire x1="139.7" y1="66.04" x2="121.92" y2="66.04" width="0.2032" layer="91"/>
@@ -8964,9 +9021,12 @@ Battery Charger Schematic</text>
 <junction x="139.7" y="66.04"/>
 <pinref part="U$5" gate="G$1" pin="G"/>
 <junction x="113.284" y="66.04"/>
+<label x="142.24" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="142.24" y1="0" x2="149.86" y2="0" width="0.2032" layer="91"/>
+<junction x="149.86" y="0"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="BAT@1" class="0">
 <segment>
 <pinref part="R3" gate="R" pin="1"/>
 <pinref part="C3" gate="C" pin="1"/>
@@ -8988,7 +9048,8 @@ Battery Charger Schematic</text>
 <pinref part="JP3" gate="A" pin="2"/>
 <wire x1="121.92" y1="38.1" x2="129.54" y2="38.1" width="0.2032" layer="91"/>
 <wire x1="129.54" y1="38.1" x2="139.7" y2="38.1" width="0.2032" layer="91"/>
-<wire x1="139.7" y1="38.1" x2="162.56" y2="38.1" width="0.2032" layer="91"/>
+<wire x1="139.7" y1="38.1" x2="157.48" y2="38.1" width="0.2032" layer="91"/>
+<wire x1="157.48" y1="38.1" x2="162.56" y2="38.1" width="0.2032" layer="91"/>
 <wire x1="162.56" y1="38.1" x2="187.96" y2="38.1" width="0.2032" layer="91"/>
 <junction x="106.68" y="38.1"/>
 <junction x="162.56" y="38.1"/>
@@ -9010,9 +9071,13 @@ Battery Charger Schematic</text>
 <junction x="104.14" y="62.484"/>
 <pinref part="U$5" gate="G$1" pin="S@3"/>
 <junction x="104.14" y="59.944"/>
+<wire x1="154.94" y1="71.12" x2="157.48" y2="71.12" width="0.2032" layer="91"/>
+<label x="154.94" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="157.48" y1="71.12" x2="157.48" y2="38.1" width="0.2032" layer="91"/>
+<junction x="157.48" y="38.1"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="SYS" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
 <wire x1="187.96" y1="40.64" x2="170.18" y2="40.64" width="0.2032" layer="91"/>
@@ -9038,7 +9103,6 @@ Battery Charger Schematic</text>
 <wire x1="73.66" y1="81.28" x2="83.82" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="83.82" y1="81.28" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="106.68" y1="81.28" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
-<wire x1="170.18" y1="81.28" x2="172.72" y2="81.28" width="0.2032" layer="91"/>
 <wire x1="170.18" y1="40.64" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
 <pinref part="C23" gate="C" pin="1"/>
 <wire x1="73.66" y1="81.28" x2="73.66" y2="76.2" width="0.2032" layer="91"/>
@@ -9046,13 +9110,15 @@ Battery Charger Schematic</text>
 <wire x1="83.82" y1="81.28" x2="83.82" y2="76.2" width="0.2032" layer="91"/>
 <junction x="73.66" y="81.28"/>
 <junction x="83.82" y="81.28"/>
-<junction x="170.18" y="81.28"/>
 <wire x1="106.68" y1="76.2" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
 <junction x="106.68" y="81.28"/>
 <wire x1="58.166" y1="68.834" x2="58.42" y2="68.834" width="0.2032" layer="91"/>
 <wire x1="58.42" y1="68.834" x2="58.42" y2="68.58" width="0.2032" layer="91"/>
 <wire x1="58.42" y1="68.834" x2="58.42" y2="81.28" width="0.2032" layer="91"/>
 <junction x="58.42" y="81.28"/>
+<label x="180.34" y="81.28" size="1.778" layer="95" xref="yes"/>
+<wire x1="180.34" y1="81.28" x2="170.18" y2="81.28" width="0.2032" layer="91"/>
+<junction x="170.18" y="81.28"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -9230,6 +9296,47 @@ Battery Charger Schematic</text>
 <junction x="58.42" y="38.1"/>
 <junction x="68.58" y="38.1"/>
 <junction x="60.96" y="38.1"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="R7" gate="R" pin="1"/>
+<wire x1="-81.28" y1="-40.64" x2="-81.28" y2="-38.1" width="0.2032" layer="91"/>
+<wire x1="-81.28" y1="-38.1" x2="-93.98" y2="-38.1" width="0.2032" layer="91"/>
+<pinref part="R6" gate="R" pin="1"/>
+<wire x1="-93.98" y1="-38.1" x2="-93.98" y2="-40.64" width="0.2032" layer="91"/>
+<label x="-96.52" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-96.52" y1="-38.1" x2="-93.98" y2="-38.1" width="0.2032" layer="91"/>
+<junction x="-93.98" y="-38.1"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="R14" gate="R" pin="1"/>
+<wire x1="-96.52" y1="-7.62" x2="-93.98" y2="-7.62" width="0.2032" layer="91"/>
+<label x="-93.98" y="-7.62" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="BAT" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="-91.44" y1="7.62" x2="-91.44" y2="5.08" width="0.2032" layer="91"/>
+<wire x1="-91.44" y1="5.08" x2="-86.36" y2="5.08" width="0.2032" layer="91"/>
+<label x="-86.36" y="5.08" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="REGN" class="0">
+<segment>
+<pinref part="R9" gate="R" pin="2"/>
+<label x="-35.56" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-35.56" y1="-7.62" x2="-30.48" y2="-7.62" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="3V3@1" class="0">
+<segment>
+<pinref part="R5" gate="R" pin="2"/>
+<label x="38.1" y="-17.78" size="1.778" layer="95" xref="yes"/>
+<wire x1="38.1" y1="-17.78" x2="27.94" y2="-17.78" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
