@@ -15351,6 +15351,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="E6" library="rcl_custom" deviceset="L-BEAD-*" device="0603-B"/>
 <part name="LED38" library="led" deviceset="LED" device="CHIPLED_0603"/>
 <part name="R48" library="rcl" deviceset="R-US_" device="R0402" value="10"/>
+<part name="C86" library="rcl" deviceset="C-EU" device="C0402"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15615,6 +15617,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <instance part="E6" gate="E" x="124.46" y="236.22"/>
 <instance part="LED38" gate="G$1" x="256.54" y="187.96"/>
 <instance part="R48" gate="G$1" x="256.54" y="195.58" rot="R90"/>
+<instance part="C86" gate="G$1" x="99.06" y="314.96"/>
+<instance part="GND17" gate="1" x="99.06" y="297.18"/>
 </instances>
 <busses>
 <bus name="MCOL,MCRS,MIIS0,MIIS1,MRXC,MRXD0,MRXD1,MRXD2,MRXD3,MRXDV,MTXC,MTXD0,MTXD1,MTXD2,MTXD3,MTXEN,MTXER,SDA,SCL,25MHZ_REF_CLK,RST_N,AUTOMDIX,MODESEL[0..3]">
@@ -16074,6 +16078,15 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="LED38" gate="G$1" pin="C"/>
 <wire x1="256.54" y1="182.88" x2="266.7" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C86" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="299.72" x2="99.06" y2="309.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<wire x1="101.6" y1="327.66" x2="101.6" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="299.72" x2="99.06" y2="299.72" width="0.1524" layer="91"/>
+<junction x="99.06" y="299.72"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -18550,6 +18563,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="66.04" y1="325.12" x2="99.06" y2="325.12" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDDA"/>
 <wire x1="99.06" y1="325.12" x2="99.06" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="C86" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="317.5" x2="99.06" y2="325.12" width="0.1524" layer="91"/>
+<junction x="99.06" y="325.12"/>
 </segment>
 </net>
 <net name="N$114" class="0">
