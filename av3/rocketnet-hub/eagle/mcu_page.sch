@@ -18587,11 +18587,6 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <packages>
 <package name="QFN-306">
 <smd name="6" x="-0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
-<wire x1="1.35" y1="1.35" x2="1.35" y2="-1.35" width="0.05" layer="21"/>
-<wire x1="1.35" y1="-1.35" x2="-1.35" y2="-1.35" width="0.05" layer="21"/>
-<wire x1="-1.35" y1="-1.35" x2="-1.35" y2="1.05" width="0.05" layer="21"/>
-<wire x1="-1.35" y1="1.05" x2="-1.05" y2="1.35" width="0.05" layer="21"/>
-<wire x1="-1.05" y1="1.35" x2="1.35" y2="1.35" width="0.05" layer="21"/>
 <smd name="8" x="0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
 <smd name="7" x="0.325" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
 <smd name="5" x="-0.975" y="-1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
@@ -18609,6 +18604,9 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <smd name="4" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
+<smd name="P$1" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<rectangle x1="-2" y1="1.5" x2="-1.5" y2="2" layer="39"/>
+<circle x="-1.8" y="1.8" radius="0.282840625" width="0.127" layer="25"/>
 </package>
 </packages>
 <symbols>
@@ -23626,8 +23624,14 @@ SOurce: www.abracon.com</description>
 <segment>
 <wire x1="27.94" y1="111.76" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND45" gate="1" pin="GND"/>
-<wire x1="27.94" y1="114.3" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
 <junction x="27.94" y="114.3"/>
+<wire x1="50.8" y1="121.92" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="GND@5"/>
+<wire x1="50.8" y1="119.38" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="119.38" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C87" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="119.38" x2="27.94" y2="127" width="0.1524" layer="91"/>
+<junction x="27.94" y="119.38"/>
 </segment>
 <segment>
 <pinref part="R66" gate="G$1" pin="1"/>
@@ -23692,6 +23696,16 @@ SOurce: www.abracon.com</description>
 <segment>
 <pinref part="R72" gate="G$1" pin="1"/>
 <pinref part="GND62" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="233.68" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="C88" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="236.22" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="231.14" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GND@5"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="27.94" y1="226.06" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
+<junction x="27.94" y="231.14"/>
 </segment>
 </net>
 <net name="NODE1_VOUT" class="0">
@@ -24189,27 +24203,6 @@ SOurce: www.abracon.com</description>
 <junction x="27.94" y="363.22"/>
 </segment>
 </net>
-<net name="N$123" class="0">
-<segment>
-<wire x1="50.8" y1="233.68" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="C88" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="236.22" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="231.14" x2="50.8" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND@5"/>
-<wire x1="27.94" y1="223.52" x2="27.94" y2="231.14" width="0.1524" layer="91"/>
-<junction x="27.94" y="231.14"/>
-</segment>
-</net>
-<net name="N$124" class="0">
-<segment>
-<wire x1="50.8" y1="121.92" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C87" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="127" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="119.38" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="GND@5"/>
-<junction x="27.94" y="119.38"/>
-</segment>
-</net>
 <net name="N$126" class="0">
 <segment>
 <wire x1="50.8" y1="-119.38" x2="50.8" y2="-121.92" width="0.1524" layer="91"/>
@@ -24436,7 +24429,7 @@ SOurce: www.abracon.com</description>
 <wire x1="78.74" y1="246.38" x2="81.28" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$141" class="0">
+<net name="RATSNET" class="0">
 <segment>
 <pinref part="C97" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
