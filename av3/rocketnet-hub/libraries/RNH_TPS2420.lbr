@@ -78,6 +78,15 @@
 <smd name="P$1" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
 <rectangle x1="-2" y1="1.5" x2="-1.5" y2="2" layer="39"/>
 <circle x="-1.8" y="1.8" radius="0.282840625" width="0.127" layer="25"/>
+<pad name="P$2" x="-1.1" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$3" x="0" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$4" x="1.1" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$5" x="1.1" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$6" x="0" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$7" x="-1.1" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$8" x="-1.1" y="1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$9" x="0" y="1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$10" x="1.1" y="1.1" drill="0.254" diameter="0.4064"/>
 </package>
 </packages>
 <symbols>
@@ -118,7 +127,7 @@
 <connect gate="G$1" pin="!FLT" pad="15"/>
 <connect gate="G$1" pin="!PG" pad="14"/>
 <connect gate="G$1" pin="CT" pad="9"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@5" pad="5 P$1"/>
 <connect gate="G$1" pin="IFLT" pad="8"/>
 <connect gate="G$1" pin="IMAX" pad="7"/>
 <connect gate="G$1" pin="IMON" pad="13"/>
