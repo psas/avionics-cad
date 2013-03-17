@@ -18604,9 +18604,18 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <smd name="4" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
-<smd name="P$1" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
 <rectangle x1="-2" y1="1.5" x2="-1.5" y2="2" layer="39"/>
 <circle x="-1.8" y="1.8" radius="0.282840625" width="0.127" layer="25"/>
+<pad name="P$2" x="-1.1" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$3" x="0" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$4" x="1.1" y="-1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$5" x="1.1" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$6" x="0" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$7" x="-1.1" y="0" drill="0.254" diameter="0.4064"/>
+<pad name="P$8" x="-1.1" y="1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$9" x="0" y="1.1" drill="0.254" diameter="0.4064"/>
+<pad name="P$10" x="1.1" y="1.1" drill="0.254" diameter="0.4064"/>
 </package>
 </packages>
 <symbols>
@@ -18647,7 +18656,7 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <connect gate="G$1" pin="!FLT" pad="15"/>
 <connect gate="G$1" pin="!PG" pad="14"/>
 <connect gate="G$1" pin="CT" pad="9"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@5" pad="5 DAP P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10"/>
 <connect gate="G$1" pin="IFLT" pad="8"/>
 <connect gate="G$1" pin="IMAX" pad="7"/>
 <connect gate="G$1" pin="IMON" pad="13"/>
@@ -19591,6 +19600,77 @@ SOurce: www.abracon.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="max4734">
+<packages>
+<package name="TQFN-12">
+<smd name="P$3" x="-1.35" y="-0.5" dx="0.3" dy="0.95" layer="1" rot="R270"/>
+<smd name="P$2" x="-1.35" y="0" dx="0.3" dy="0.95" layer="1" rot="R270"/>
+<smd name="P$1" x="-1.35" y="0.5" dx="0.3" dy="0.95" layer="1" rot="R270"/>
+<smd name="P$12" x="-0.5" y="1.35" dx="0.3" dy="0.95" layer="1"/>
+<smd name="P$11" x="0" y="1.35" dx="0.3" dy="0.95" layer="1"/>
+<smd name="P$10" x="0.5" y="1.35" dx="0.3" dy="0.95" layer="1"/>
+<smd name="P$9" x="1.35" y="0.5" dx="0.3" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$8" x="1.35" y="0" dx="0.3" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$7" x="1.35" y="-0.5" dx="0.3" dy="0.95" layer="1" rot="R90"/>
+<smd name="P$6" x="0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$5" x="0" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$4" x="-0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
+<smd name="P$13" x="0" y="0" dx="1.23" dy="1.23" layer="1" rot="R180"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-2.9" y="1.65" size="0.6096" layer="25">&gt;U?</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX4734">
+<pin name="N0" x="-12.7" y="2.54" length="short"/>
+<pin name="GND" x="-12.7" y="0" length="short"/>
+<pin name="N3" x="-12.7" y="-2.54" length="short"/>
+<pin name="EN" x="-2.54" y="-12.7" length="short" rot="R90"/>
+<pin name="N.C." x="0" y="-12.7" length="short" rot="R90"/>
+<pin name="V+" x="2.54" y="-12.7" length="short" rot="R90"/>
+<pin name="N4" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="COM" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="N2" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="A1" x="2.54" y="12.7" length="short" rot="R270"/>
+<pin name="A0" x="-2.54" y="12.7" length="short" rot="R270"/>
+<text x="-7.62" y="7.62" size="0.6096" layer="94">MAX4734</text>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX4734ETC+">
+<gates>
+<gate name="G$1" symbol="MAX4734" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFN-12">
+<connects>
+<connect gate="G$1" pin="A0" pad="P$12"/>
+<connect gate="G$1" pin="A1" pad="P$10"/>
+<connect gate="G$1" pin="COM" pad="P$8"/>
+<connect gate="G$1" pin="EN" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$2 P$13"/>
+<connect gate="G$1" pin="N.C." pad="P$5 P$11"/>
+<connect gate="G$1" pin="N0" pad="P$1"/>
+<connect gate="G$1" pin="N2" pad="P$9"/>
+<connect gate="G$1" pin="N3" pad="P$3"/>
+<connect gate="G$1" pin="N4" pad="P$7"/>
+<connect gate="G$1" pin="V+" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20061,6 +20141,8 @@ SOurce: www.abracon.com</description>
 <part name="U$20" library="crystal" deviceset="ASE" device=""/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$26" library="max4734" deviceset="MAX4734ETC+" device=""/>
+<part name="U$27" library="max4734" deviceset="MAX4734ETC+" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23459,6 +23541,8 @@ SOurce: www.abracon.com</description>
 <instance part="P+7" gate="1" x="27.94" y="-193.04"/>
 <instance part="P+8" gate="1" x="30.48" y="-309.88"/>
 <instance part="P+9" gate="1" x="30.48" y="-426.72"/>
+<instance part="U$26" gate="G$1" x="-30.48" y="195.58"/>
+<instance part="U$27" gate="G$1" x="-10.16" y="-276.86"/>
 </instances>
 <busses>
 </busses>
@@ -24275,10 +24359,13 @@ SOurce: www.abracon.com</description>
 <pinref part="U$3" gate="G$1" pin="IMON"/>
 <wire x1="66.04" y1="406.4" x2="66.04" y2="419.1" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="419.1" x2="81.28" y2="419.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="419.1" x2="43.18" y2="419.1" width="0.1524" layer="91"/>
 <junction x="66.04" y="419.1"/>
 <pinref part="R49" gate="G$1" pin="2"/>
 <label x="43.18" y="419.1" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$26" gate="G$1" pin="N0"/>
+<wire x1="-43.18" y1="198.12" x2="-45.72" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="198.12" x2="-45.72" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="419.1" x2="66.04" y2="419.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NODE1_LTCH" class="0">
@@ -24506,13 +24593,16 @@ SOurce: www.abracon.com</description>
 </net>
 <net name="NODE2_IMON" class="0">
 <segment>
-<wire x1="43.18" y1="287.02" x2="66.04" y2="287.02" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="IMON"/>
 <wire x1="66.04" y1="287.02" x2="66.04" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="R52" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="287.02" x2="81.28" y2="287.02" width="0.1524" layer="91"/>
 <junction x="66.04" y="287.02"/>
 <label x="43.18" y="287.02" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$26" gate="G$1" pin="N2"/>
+<wire x1="-17.78" y1="198.12" x2="-12.7" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="198.12" x2="-12.7" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="287.02" x2="66.04" y2="287.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NODE2_LTCH" class="0">
@@ -24554,11 +24644,14 @@ SOurce: www.abracon.com</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="IMON"/>
 <wire x1="66.04" y1="162.56" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="175.26" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R54" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="175.26"/>
 <label x="43.18" y="175.26" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$26" gate="G$1" pin="N3"/>
+<wire x1="-43.18" y1="193.04" x2="-45.72" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="193.04" x2="-45.72" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="175.26" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NODE3_LTCH" class="0">
@@ -24602,9 +24695,12 @@ SOurce: www.abracon.com</description>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R58" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <label x="43.18" y="53.34" size="1.016" layer="95" rot="R180" xref="yes"/>
 <junction x="66.04" y="53.34"/>
+<pinref part="U$26" gate="G$1" pin="N4"/>
+<wire x1="-17.78" y1="193.04" x2="-12.7" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="193.04" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NODE4_LTCH" class="0">
@@ -25389,6 +25485,19 @@ SOurce: www.abracon.com</description>
 <pinref part="R72" gate="G$1" pin="2"/>
 <pinref part="U$10" gate="G$1" pin="IMAX"/>
 <wire x1="63.5" y1="-474.98" x2="63.5" y2="-464.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="U$26" gate="G$1" pin="GND"/>
+<wire x1="-43.18" y1="195.58" x2="-50.8" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="195.58" x2="-50.8" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="U$26" gate="G$1" pin="COM"/>
+<wire x1="-17.78" y1="195.58" x2="-5.08" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
