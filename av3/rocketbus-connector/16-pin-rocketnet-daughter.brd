@@ -332,10 +332,14 @@ design rules under a new name.</description>
 <signal name="AUX2">
 <contactref element="E$1" pad="AUX2@14"/>
 <wire x1="13.225" y1="3" x2="13.225" y2="6.9" width="0.75" layer="16"/>
+<via x="13.225" y="6.9" extent="1-16" drill="0.6" diameter="1.2"/>
+<wire x1="13.225" y1="3" x2="13.225" y2="6.9" width="0.75" layer="1"/>
 </signal>
 <signal name="AUX1">
 <contactref element="E$1" pad="AUX1@11"/>
 <wire x1="11.975" y1="5" x2="11.975" y2="1.1" width="0.75" layer="16"/>
+<via x="11.975" y="1.1" extent="1-16" drill="0.6" diameter="1.2"/>
+<wire x1="11.975" y1="5" x2="11.975" y2="1.1" width="0.75" layer="1"/>
 </signal>
 <signal name="USB1_L">
 </signal>
@@ -356,21 +360,6 @@ design rules under a new name.</description>
 <signal name="S$3">
 <via x="8.225" y="6.9" extent="1-16" drill="0.6" diameter="1.2"/>
 </signal>
-<signal name="S$4">
-<via x="9.475" y="1.1" extent="1-16" drill="0.6" diameter="1.2"/>
-</signal>
-<signal name="S$5">
-<via x="10.725" y="6.9" extent="1-16" drill="0.6" diameter="1.2"/>
-</signal>
-<signal name="S$6">
-<via x="11.975" y="1.1" extent="1-16" drill="0.6" diameter="1.2"/>
-</signal>
-<signal name="S$7">
-<via x="13.225" y="6.9" extent="1-16" drill="0.6" diameter="1.2"/>
-</signal>
-<signal name="S$8">
-<via x="14.475" y="0.925" extent="1-16" drill="0.9" diameter="1.6"/>
-</signal>
 <signal name="TX+">
 <contactref element="E$1" pad="TX+@3"/>
 <wire x1="6.975" y1="5" x2="6.975" y2="1.1" width="0.75" layer="1"/>
@@ -380,18 +369,25 @@ design rules under a new name.</description>
 <signal name="TX-">
 <contactref element="E$1" pad="TX-@6"/>
 <wire x1="8.225" y1="3" x2="8.225" y2="6.9" width="0.75" layer="16"/>
+<wire x1="8.225" y1="3" x2="8.225" y2="6.925" width="0.75" layer="1"/>
 </signal>
 <signal name="RX+">
 <contactref element="E$1" pad="RX+@7"/>
 <wire x1="9.475" y1="5" x2="9.475" y2="1.1" width="0.75" layer="16"/>
+<via x="9.475" y="1.1" extent="1-16" drill="0.6" diameter="1.2"/>
+<wire x1="9.475" y1="5" x2="9.475" y2="1.1" width="0.75" layer="1"/>
 </signal>
 <signal name="RX-">
 <contactref element="E$1" pad="RX-@10"/>
 <wire x1="10.725" y1="3" x2="10.725" y2="6.9" width="0.75" layer="16"/>
+<via x="10.725" y="6.9" extent="1-16" drill="0.6" diameter="1.2"/>
+<wire x1="10.725" y1="3" x2="10.725" y2="6.9" width="0.75" layer="1"/>
 </signal>
 <signal name="B-">
 <contactref element="E$1" pad="B-@15"/>
-<wire x1="14.475" y1="5" x2="14.475" y2="0.95" width="0.75" layer="16"/>
+<via x="14.475" y="0.925" extent="1-16" drill="0.9" diameter="1.6"/>
+<wire x1="14.475" y1="5" x2="14.475" y2="0.925" width="0.75" layer="1"/>
+<wire x1="14.475" y1="5" x2="14.475" y2="0.925" width="0.75" layer="16"/>
 </signal>
 </signals>
 </board>
