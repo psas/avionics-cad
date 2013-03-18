@@ -1,6 +1,0 @@
-# apc_freedrill.scr
-# Setup eagle to use the free drills from the APC (Alberta Printed Circuits)
-# list.
-
-SET DRILL_MENU 0.0280 0.0350 0.0420 0.0520 0.0595 0.0860 0.1250 0.1520;
-

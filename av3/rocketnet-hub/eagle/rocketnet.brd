@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -74,10 +74,6 @@
 </layers>
 <board>
 <plain>
-<circle x="107.906753125" y="93.556303125" radius="2.159" width="0.0254" layer="49"/>
-<circle x="14.583934375" y="93.556303125" radius="2.1336" width="0.0254" layer="49"/>
-<circle x="14.583934375" y="14.601896875" radius="2.159" width="0.0254" layer="49"/>
-<circle x="107.906753125" y="14.601896875" radius="2.159" width="0.0254" layer="49"/>
 <circle x="51.079696875" y="33.747803125" radius="1.524" width="0.0254" layer="49"/>
 <circle x="40.914046875" y="43.913453125" radius="1.524" width="0.0254" layer="49"/>
 <circle x="40.914046875" y="54.0791" radius="1.524" width="0.0254" layer="49"/>
@@ -155,27 +151,13 @@
 <circle x="20.60070625" y="43.9314125" radius="1.524" width="0.0254" layer="49"/>
 <circle x="81.55868125" y="23.6001125" radius="1.524" width="0.0254" layer="49"/>
 <circle x="91.742290625" y="54.0791" radius="1.5494" width="0.0254" layer="49"/>
-<wire x1="22.899653125" y1="108.1582" x2="22.899653125" y2="92.424790625" width="0.0254" layer="49"/>
 <wire x1="22.899653125" y1="92.424790625" x2="99.591034375" y2="92.424790625" width="0.0254" layer="49"/>
-<wire x1="99.591034375" y1="92.424790625" x2="99.591034375" y2="108.1582" width="0.0254" layer="49"/>
-<wire x1="118.018521875" y1="79.493221875" x2="122.4906875" y2="79.493221875" width="0.0254" layer="49"/>
 <wire x1="114.839509375" y1="31.8439875" x2="114.839509375" y2="76.3142125" width="0.0254" layer="49"/>
-<wire x1="122.483609375" y1="28.664978125" x2="118.018521875" y2="28.664978125" width="0.0254" layer="49"/>
-<wire x1="99.591034375" y1="0" x2="99.591034375" y2="15.733409375" width="0.0254" layer="49"/>
 <wire x1="99.591034375" y1="15.733409375" x2="22.899653125" y2="15.733409375" width="0.0254" layer="49"/>
-<wire x1="22.899653125" y1="15.733409375" x2="22.899653125" y2="0" width="0.0254" layer="49"/>
-<wire x1="4.472165625" y1="28.664978125" x2="0" y2="28.664978125" width="0.0254" layer="49"/>
 <wire x1="7.651178125" y1="76.3142125" x2="7.651178125" y2="31.8439875" width="0.0254" layer="49"/>
-<wire x1="0" y1="79.493221875" x2="4.472165625" y2="79.493221875" width="0.0254" layer="49"/>
-<wire x1="22.899653125" y1="108.1582" x2="0" y2="79.493221875" width="0.0254" layer="49" curve="32.138849"/>
-<wire x1="122.4906875" y1="79.493221875" x2="99.591034375" y2="108.1582" width="0.0254" layer="49" curve="32.138851"/>
 <wire x1="118.018521875" y1="79.493221875" x2="114.839509375" y2="76.3142125" width="0.0254" layer="49" curve="90"/>
 <wire x1="114.839509375" y1="31.8439875" x2="118.018521875" y2="28.664978125" width="0.0254" layer="49" curve="90"/>
-<wire x1="99.591034375" y1="0" x2="122.483609375" y2="28.664978125" width="0.0254" layer="49" curve="32.138849"/>
-<wire x1="0" y1="28.664978125" x2="22.899653125" y2="0" width="0.0254" layer="49" curve="32.138851"/>
-<wire x1="4.472165625" y1="28.664978125" x2="7.651178125" y2="31.8439875" width="0.0254" layer="49" curve="90"/>
 <wire x1="7.651178125" y1="76.3142125" x2="4.472165625" y2="79.493221875" width="0.0254" layer="49" curve="90"/>
-<text x="34.2" y="118.8" size="1.778" layer="51" font="vector">Plate outline and hole locations on REF layer.</text>
 <wire x1="22.6" y1="16" x2="99.9" y2="16" width="0.0254" layer="20"/>
 <wire x1="22.6" y1="16" x2="19.2" y2="16" width="0.0254" layer="20"/>
 <wire x1="19.2" y1="16" x2="7.3" y2="16" width="0.0254" layer="20"/>
@@ -200,7 +182,6 @@
 <wire x1="7.9" y1="31.4" x2="4.9" y2="28.4" width="0.0254" layer="20" curve="-90"/>
 <wire x1="117.6" y1="28.5" x2="114.6" y2="31.5" width="0.0254" layer="20" curve="-90"/>
 <wire x1="114.6" y1="76.8" x2="117.6" y2="79.8" width="0.0254" layer="20" curve="-90"/>
-<text x="34.2" y="115.7" size="1.778" layer="51" font="vector">Mounting points suggestion only (center could be standoff only)</text>
 </plain>
 <libraries>
 <library name="mount">
