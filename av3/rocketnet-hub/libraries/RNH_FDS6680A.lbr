@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -76,11 +76,9 @@
 </packages>
 <symbols>
 <symbol name="FDS6680A">
-<pin name="S@1" x="5.08" y="-6.858" length="short" rot="R180"/>
-<pin name="S@2" x="5.08" y="-8.89" length="short" rot="R180"/>
-<pin name="S@3" x="5.08" y="-11.176" length="short" rot="R180"/>
-<pin name="G" x="-4.064" y="-5.08" length="short"/>
-<pin name="D@5" x="2.54" y="5.334" length="short" rot="R270"/>
+<pin name="S" x="5.08" y="-7.62" length="short" rot="R90"/>
+<pin name="G" x="-5.08" y="-5.08" length="short"/>
+<pin name="D" x="5.08" y="5.08" length="short" rot="R270"/>
 <text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
@@ -92,13 +90,12 @@
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-5.08" width="0.381" layer="94"/>
 <wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
 <polygon width="0.254" layer="94">
 <vertex x="2.032" y="0"/>
 <vertex x="2.032" y="-2.54"/>
 <vertex x="0.762" y="-1.27"/>
 </polygon>
-<wire x1="2.54" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.286" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="-4.826" width="0.254" layer="94"/>
@@ -110,11 +107,11 @@
 </polygon>
 <wire x1="5.08" y1="0.762" x2="5.08" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
-<circle x="2.54" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
-<circle x="2.54" y="-5.08" radius="0.254" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.254" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
+<circle x="5.08" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="5.08" y="-5.08" radius="0.254" width="0.254" layer="94"/>
+<circle x="5.08" y="2.54" radius="0.254" width="0.254" layer="94"/>
+<circle x="5.08" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -125,11 +122,9 @@
 <devices>
 <device name="SOIC-8" package="MS-012">
 <connects>
-<connect gate="G$1" pin="D@5" pad="5 6 7 8"/>
+<connect gate="G$1" pin="D" pad="5 6 7 8"/>
 <connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S@1" pad="1"/>
-<connect gate="G$1" pin="S@2" pad="2"/>
-<connect gate="G$1" pin="S@3" pad="3"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
