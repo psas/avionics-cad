@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -388,6 +388,108 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 </gates>
 <devices>
 <device name="100-PIN_QFP" package="LQFP-100">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="94"/>
+<connect gate="G$1" pin="NRST" pad="14"/>
+<connect gate="G$1" pin="PA0" pad="23"/>
+<connect gate="G$1" pin="PA1" pad="24"/>
+<connect gate="G$1" pin="PA10" pad="69"/>
+<connect gate="G$1" pin="PA11" pad="70"/>
+<connect gate="G$1" pin="PA12" pad="71"/>
+<connect gate="G$1" pin="PA13" pad="72"/>
+<connect gate="G$1" pin="PA14" pad="76"/>
+<connect gate="G$1" pin="PA15" pad="77"/>
+<connect gate="G$1" pin="PA2" pad="25"/>
+<connect gate="G$1" pin="PA3" pad="26"/>
+<connect gate="G$1" pin="PA4" pad="29"/>
+<connect gate="G$1" pin="PA5" pad="30"/>
+<connect gate="G$1" pin="PA6" pad="31"/>
+<connect gate="G$1" pin="PA7" pad="32"/>
+<connect gate="G$1" pin="PA8" pad="67"/>
+<connect gate="G$1" pin="PA9" pad="68"/>
+<connect gate="G$1" pin="PB0" pad="35"/>
+<connect gate="G$1" pin="PB1" pad="36"/>
+<connect gate="G$1" pin="PB10" pad="47"/>
+<connect gate="G$1" pin="PB11" pad="48"/>
+<connect gate="G$1" pin="PB12" pad="51"/>
+<connect gate="G$1" pin="PB13" pad="52"/>
+<connect gate="G$1" pin="PB14" pad="53"/>
+<connect gate="G$1" pin="PB15" pad="54"/>
+<connect gate="G$1" pin="PB2" pad="37"/>
+<connect gate="G$1" pin="PB3" pad="89"/>
+<connect gate="G$1" pin="PB4" pad="90"/>
+<connect gate="G$1" pin="PB5" pad="91"/>
+<connect gate="G$1" pin="PB6" pad="92"/>
+<connect gate="G$1" pin="PB7" pad="93"/>
+<connect gate="G$1" pin="PB8" pad="95"/>
+<connect gate="G$1" pin="PB9" pad="96"/>
+<connect gate="G$1" pin="PC0" pad="15"/>
+<connect gate="G$1" pin="PC1" pad="16"/>
+<connect gate="G$1" pin="PC10" pad="78"/>
+<connect gate="G$1" pin="PC11" pad="79"/>
+<connect gate="G$1" pin="PC12" pad="80"/>
+<connect gate="G$1" pin="PC13" pad="7"/>
+<connect gate="G$1" pin="PC14" pad="8"/>
+<connect gate="G$1" pin="PC15" pad="9"/>
+<connect gate="G$1" pin="PC2" pad="17"/>
+<connect gate="G$1" pin="PC3" pad="18"/>
+<connect gate="G$1" pin="PC4" pad="33"/>
+<connect gate="G$1" pin="PC5" pad="34"/>
+<connect gate="G$1" pin="PC6" pad="63"/>
+<connect gate="G$1" pin="PC7" pad="64"/>
+<connect gate="G$1" pin="PC8" pad="65"/>
+<connect gate="G$1" pin="PC9" pad="66"/>
+<connect gate="G$1" pin="PD0" pad="81"/>
+<connect gate="G$1" pin="PD1" pad="82"/>
+<connect gate="G$1" pin="PD10" pad="57"/>
+<connect gate="G$1" pin="PD11" pad="58"/>
+<connect gate="G$1" pin="PD12" pad="59"/>
+<connect gate="G$1" pin="PD13" pad="60"/>
+<connect gate="G$1" pin="PD14" pad="61"/>
+<connect gate="G$1" pin="PD15" pad="62"/>
+<connect gate="G$1" pin="PD2" pad="83"/>
+<connect gate="G$1" pin="PD3" pad="84"/>
+<connect gate="G$1" pin="PD4" pad="85"/>
+<connect gate="G$1" pin="PD5" pad="86"/>
+<connect gate="G$1" pin="PD6" pad="87"/>
+<connect gate="G$1" pin="PD7" pad="88"/>
+<connect gate="G$1" pin="PD8" pad="55"/>
+<connect gate="G$1" pin="PD9" pad="56"/>
+<connect gate="G$1" pin="PE0" pad="97"/>
+<connect gate="G$1" pin="PE1" pad="98"/>
+<connect gate="G$1" pin="PE10" pad="41"/>
+<connect gate="G$1" pin="PE11" pad="42"/>
+<connect gate="G$1" pin="PE12" pad="43"/>
+<connect gate="G$1" pin="PE13" pad="44"/>
+<connect gate="G$1" pin="PE14" pad="45"/>
+<connect gate="G$1" pin="PE15" pad="46"/>
+<connect gate="G$1" pin="PE2" pad="1"/>
+<connect gate="G$1" pin="PE3" pad="2"/>
+<connect gate="G$1" pin="PE4" pad="3"/>
+<connect gate="G$1" pin="PE5" pad="4"/>
+<connect gate="G$1" pin="PE6" pad="5"/>
+<connect gate="G$1" pin="PE7" pad="38"/>
+<connect gate="G$1" pin="PE8" pad="39"/>
+<connect gate="G$1" pin="PE9" pad="40"/>
+<connect gate="G$1" pin="PH0" pad="12"/>
+<connect gate="G$1" pin="PH1" pad="13"/>
+<connect gate="G$1" pin="VBAT" pad="6"/>
+<connect gate="G$1" pin="VCAP_1" pad="49"/>
+<connect gate="G$1" pin="VCAP_2" pad="73"/>
+<connect gate="G$1" pin="VDD1" pad="11"/>
+<connect gate="G$1" pin="VDD2" pad="19"/>
+<connect gate="G$1" pin="VDD3" pad="28"/>
+<connect gate="G$1" pin="VDD4" pad="50"/>
+<connect gate="G$1" pin="VDD5" pad="75"/>
+<connect gate="G$1" pin="VDD6" pad="100"/>
+<connect gate="G$1" pin="VDDA" pad="22"/>
+<connect gate="G$1" pin="VREF+" pad="21"/>
+<connect gate="G$1" pin="VSS1" pad="10"/>
+<connect gate="G$1" pin="VSS2" pad="27"/>
+<connect gate="G$1" pin="VSS3" pad="74"/>
+<connect gate="G$1" pin="VSS4" pad="99"/>
+<connect gate="G$1" pin="VSSA" pad="20"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

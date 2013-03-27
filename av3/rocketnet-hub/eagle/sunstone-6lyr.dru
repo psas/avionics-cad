@@ -1,8 +1,8 @@
 description[de] = <b>EAGLE Design Rules</b>\n<p>\nDie Standard-Design-Rules sind so gewählt, dass sie für \ndie meisten Anwendungen passen. Sollte ihre Platine \nbesondere Anforderungen haben, treffen Sie die erforderlichen\nEinstellungen hier und speichern die Design Rules unter \neinem neuen Namen ab.
-description[en] = <b>EAGLE Design Rules</b>\n<p>\nThe default Design Rules have been set to cover\na wide range of applications. Your particular design\nmay have different requirements, so please make the\nnecessary adjustments and save your customized\ndesign rules under a new name.
-layerSetup = 1+2*3+4*5+6
-mtCopper = 0.04318125mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.04318125mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm
-mtIsolate = 0.162559375mm 14mil 0.213359375mm 14mil 0.162559375mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm
+description[en] = <b>EAGLE Design Rules</b>\n<p>\n6 layer Sunstone Layup for PSAS Rocketnet Hub
+layerSetup = 1+2*3+14*15+16
+mtCopper = 0.04318125mm 0.035559375mm 0.035559375mm 0.035559375mm 0.035559375mm 0.04318125mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035559375mm 0.035559375mm 0.04318125mm
+mtIsolate = 0.162559375mm 14mil 0.213359375mm 14mil 0.162559375mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 14mil 0.162559375mm
 mdWireWire = 6mil
 mdWirePad = 6mil
 mdWireVia = 6mil

@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -43,6 +47,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -53,78 +58,53 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Hidden_Layer" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Flex-Kleb" color="7" fill="1" visible="no" active="no"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
 <packages>
-<package name="MS-012">
-<wire x1="1.7" y1="2" x2="1.7" y2="-2" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-2" x2="-1.7" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="1.5" x2="-1.2" y2="2" width="0.127" layer="21"/>
-<wire x1="-1.2" y1="2" x2="1.7" y2="2" width="0.127" layer="21"/>
-<smd name="8" x="2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="1" x="-2.625" y="1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="5" x="2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="4" x="-2.625" y="-1.75" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="7" x="2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="6" x="2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="2" x="-2.625" y="0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<smd name="3" x="-2.625" y="-0.583334375" dx="0.5" dy="0.75" layer="1" rot="R90"/>
-<text x="-3" y="2.8" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-3.9" size="1.27" layer="27">&gt;VALUE</text>
+<package name="2525">
+<smd name="P$1" x="2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.429" y1="3.2385" x2="-3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="-3.429" y1="-3.2385" x2="3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="-3.2385" x2="3.429" y2="3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="3.2385" x2="-3.429" y2="3.2385" width="0.127" layer="21"/>
+<text x="-3.81" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="FDS6680A">
-<pin name="S" x="5.08" y="-7.62" length="short" rot="R90"/>
-<pin name="G" x="-5.08" y="-5.08" length="short"/>
-<pin name="D" x="5.08" y="5.08" length="short" rot="R270"/>
-<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.381" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.381" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.381" layer="94"/>
-<wire x1="0" y1="-3.81" x2="0" y2="-5.08" width="0.381" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-6.35" width="0.381" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-5.08" width="0.381" layer="94"/>
-<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="2.032" y="0"/>
-<vertex x="2.032" y="-2.54"/>
-<vertex x="0.762" y="-1.27"/>
-</polygon>
-<wire x1="2.286" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="-4.826" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-4.826" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="6.35" y="-1.27"/>
-<vertex x="3.81" y="-1.27"/>
-<vertex x="5.08" y="0"/>
-</polygon>
-<wire x1="5.08" y1="0.762" x2="5.08" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
-<circle x="5.08" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
-<circle x="5.08" y="-5.08" radius="0.254" width="0.254" layer="94"/>
-<circle x="5.08" y="2.54" radius="0.254" width="0.254" layer="94"/>
-<circle x="5.08" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<symbol name="IHLP-2525CZ-01">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P$1" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="P$2" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FDS6680A" prefix="Q">
+<deviceset name="IHLP-2525CZ-01" prefix="L" uservalue="yes">
 <gates>
-<gate name="&gt;NAME" symbol="FDS6680A" x="0" y="0"/>
+<gate name="L" symbol="IHLP-2525CZ-01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOIC-8" package="MS-012">
+<device name="" package="2525">
 <connects>
-<connect gate="&gt;NAME" pin="D" pad="5 6 7 8"/>
-<connect gate="&gt;NAME" pin="G" pad="4"/>
-<connect gate="&gt;NAME" pin="S" pad="1 2 3"/>
+<connect gate="L" pin="P$1" pad="P$1"/>
+<connect gate="L" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
