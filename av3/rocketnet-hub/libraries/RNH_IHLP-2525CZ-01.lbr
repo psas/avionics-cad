@@ -71,6 +71,12 @@
 <package name="2525">
 <smd name="P$1" x="2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
 <smd name="P$2" x="-2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.429" y1="3.2385" x2="-3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="-3.429" y1="-3.2385" x2="3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="-3.2385" x2="3.429" y2="3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="3.2385" x2="-3.429" y2="3.2385" width="0.127" layer="21"/>
+<text x="-3.81" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -85,20 +91,20 @@
 <wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
 <text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="P$1" x="0" y="-7.62" length="short" rot="R90"/>
-<pin name="P$2" x="0" y="7.62" length="short" rot="R270"/>
+<pin name="P$1" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="P$2" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IHLP-2525CZ-01" uservalue="yes">
+<deviceset name="IHLP-2525CZ-01" prefix="L" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="IHLP-2525CZ-01" x="0" y="0"/>
+<gate name="L" symbol="IHLP-2525CZ-01" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="2525">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="L" pin="P$1" pad="P$1"/>
+<connect gate="L" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

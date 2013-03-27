@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -126,16 +126,16 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BSS138W-7-F">
+<deviceset name="BSS138W-7-F" prefix="Q">
 <gates>
-<gate name="G$1" symbol="BSS138W-7-F" x="-2.54" y="2.54"/>
+<gate name="&gt;NAME" symbol="BSS138W-7-F" x="-2.54" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="SOT323">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G\" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="&gt;NAME" pin="D" pad="1"/>
+<connect gate="&gt;NAME" pin="G\" pad="2"/>
+<connect gate="&gt;NAME" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

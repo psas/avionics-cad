@@ -216,7 +216,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BQ24725">
+<deviceset name="BQ24725" prefix="U">
 <gates>
 <gate name="G$1" symbol="BQ24725" x="0" y="0"/>
 </gates>
@@ -6848,16 +6848,16 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FDS6680A">
+<deviceset name="FDS6680A" prefix="Q">
 <gates>
-<gate name="G$1" symbol="FDS6680A" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="FDS6680A" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SOIC-8" package="MS-012">
 <connects>
-<connect gate="G$1" pin="D" pad="5 6 7 8"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
+<connect gate="&gt;NAME" pin="D" pad="5 6 7 8"/>
+<connect gate="&gt;NAME" pin="G" pad="4"/>
+<connect gate="&gt;NAME" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6924,16 +6924,16 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BSS138W-7-F">
+<deviceset name="BSS138W-7-F" prefix="Q">
 <gates>
-<gate name="G$1" symbol="BSS138W-7-F" x="-2.54" y="2.54"/>
+<gate name="&gt;NAME" symbol="BSS138W-7-F" x="-2.54" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="SOT323">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G\" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="&gt;NAME" pin="D" pad="1"/>
+<connect gate="&gt;NAME" pin="G\" pad="2"/>
+<connect gate="&gt;NAME" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7115,16 +7115,16 @@ Source: Fairchild .. BAT54.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SIS412DN">
+<deviceset name="SIS412DN" prefix="Q">
 <gates>
-<gate name="G$1" symbol="SIS412DN" x="-2.54" y="0"/>
+<gate name="&gt;NAME" symbol="SIS412DN" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="SOP-8" package="1212-8">
 <connects>
-<connect gate="G$1" pin="D" pad="5 6 7 8 9"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
+<connect gate="&gt;NAME" pin="D" pad="5 6 7 8 9"/>
+<connect gate="&gt;NAME" pin="G" pad="4"/>
+<connect gate="&gt;NAME" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7139,6 +7139,12 @@ Source: Fairchild .. BAT54.pdf</description>
 <package name="2525">
 <smd name="P$1" x="2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
 <smd name="P$2" x="-2.7686" y="0" dx="3.429" dy="1.8288" layer="1" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.429" y1="3.2385" x2="-3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="-3.429" y1="-3.2385" x2="3.429" y2="-3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="-3.2385" x2="3.429" y2="3.2385" width="0.127" layer="21"/>
+<wire x1="3.429" y1="3.2385" x2="-3.429" y2="3.2385" width="0.127" layer="21"/>
+<text x="-3.81" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -7153,20 +7159,20 @@ Source: Fairchild .. BAT54.pdf</description>
 <wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
 <text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="P$1" x="0" y="-7.62" length="short" rot="R90"/>
-<pin name="P$2" x="0" y="7.62" length="short" rot="R270"/>
+<pin name="P$1" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="P$2" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IHLP-2525CZ-01" uservalue="yes">
+<deviceset name="IHLP-2525CZ-01" prefix="L" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="IHLP-2525CZ-01" x="0" y="0"/>
+<gate name="L" symbol="IHLP-2525CZ-01" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="2525">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="L" pin="P$1" pad="P$1"/>
+<connect gate="L" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7226,15 +7232,15 @@ Source: Fairchild .. BAT54.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
-<part name="U$1" library="RNH_BQ24725" deviceset="BQ24725" device="QFN-20"/>
+<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device="" value="BATTCHARGER"/>
+<part name="U1" library="RNH_BQ24725" deviceset="BQ24725" device="QFN-20"/>
 <part name="C1" library="rcl_custom" deviceset="C-EU" device="C1210" value="2.2uF"/>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="1206-B" value="2"/>
-<part name="U$2" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
-<part name="U$3" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
+<part name="Q2" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
+<part name="Q3" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B" value="0.1uF"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B" value="2200pF"/>
-<part name="U$4" library="RNH_BSS138W-7-F" deviceset="BSS138W-7-F" device=""/>
+<part name="Q4" library="RNH_BSS138W-7-F" deviceset="BSS138W-7-F" device=""/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B" value="1M"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B" value="3.01M"/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="0603-B" value="0.1uF"/>
@@ -7267,14 +7273,14 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="R16" library="rcl_custom" deviceset="R-US_" device="1206-B" value="10"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R17" library="rcl_custom" deviceset="R-US_" device="0603-B" value="4.02k"/>
-<part name="U$5" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
+<part name="Q5" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0603-B" value="0.01uF"/>
 <part name="C12" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="BAT54" device=""/>
 <part name="C13" library="rcl_custom" deviceset="C-EU" device="0603-B" value="0.047uF"/>
-<part name="U$6" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
-<part name="U$7" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
+<part name="Q6" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
+<part name="Q1" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="1206-B" value="10m"/>
@@ -7288,7 +7294,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="RNH_SMAJ18CA" deviceset="SMAJ18CA" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="U$8" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
+<part name="U8" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -7300,14 +7306,14 @@ Battery Charger Schematic</text>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-205.74" y="-106.68"/>
 <instance part="FRAME1" gate="G$2" x="119.38" y="-106.68"/>
-<instance part="U$1" gate="G$1" x="0" y="0"/>
+<instance part="U1" gate="G$1" x="0" y="0"/>
 <instance part="C1" gate="CE" x="-111.76" y="43.18"/>
 <instance part="R1" gate="R" x="-111.76" y="53.34" rot="R90"/>
-<instance part="U$2" gate="G$1" x="-73.66" y="53.34" rot="R90"/>
-<instance part="U$3" gate="G$1" x="-48.26" y="53.34" rot="R90"/>
+<instance part="Q2" gate="&gt;NAME" x="-73.66" y="53.34" rot="R90"/>
+<instance part="Q3" gate="&gt;NAME" x="-43.18" y="53.34" rot="MR90"/>
 <instance part="C2" gate="CE" x="-60.96" y="53.34"/>
 <instance part="C3" gate="CE" x="-96.52" y="53.34"/>
-<instance part="U$4" gate="G$1" x="-66.04" y="81.28"/>
+<instance part="Q4" gate="&gt;NAME" x="-66.04" y="81.28"/>
 <instance part="R2" gate="R" x="-81.28" y="71.12" rot="R180"/>
 <instance part="R3" gate="R" x="-66.04" y="71.12" rot="R180"/>
 <instance part="C4" gate="CE" x="-15.24" y="45.72"/>
@@ -7340,14 +7346,14 @@ Battery Charger Schematic</text>
 <instance part="R16" gate="R" x="20.32" y="50.8" rot="R90"/>
 <instance part="GND8" gate="1" x="25.4" y="33.02"/>
 <instance part="R17" gate="R" x="40.64" y="22.86"/>
-<instance part="U$5" gate="G$1" x="86.36" y="27.94"/>
-<instance part="C11" gate="CE" x="73.66" y="20.32"/>
+<instance part="Q5" gate="&gt;NAME" x="86.36" y="27.94"/>
+<instance part="C11" gate="CE" x="76.2" y="20.32"/>
 <instance part="C12" gate="CE" x="27.94" y="17.78" rot="R90"/>
 <instance part="GND9" gate="1" x="35.56" y="17.78" rot="R90"/>
 <instance part="D1" gate="G$1" x="22.86" y="12.7" rot="R270"/>
 <instance part="C13" gate="CE" x="22.86" y="0"/>
-<instance part="U$6" gate="G$1" x="43.18" y="10.16"/>
-<instance part="U$7" gate="G$1" x="43.18" y="-10.16"/>
+<instance part="Q6" gate="&gt;NAME" x="43.18" y="10.16"/>
+<instance part="Q1" gate="&gt;NAME" x="43.18" y="-10.16"/>
 <instance part="GND10" gate="1" x="48.26" y="-22.86"/>
 <instance part="GND11" gate="1" x="53.34" y="-43.18"/>
 <instance part="R18" gate="R" x="86.36" y="-5.08"/>
@@ -7361,39 +7367,20 @@ Battery Charger Schematic</text>
 <instance part="GND15" gate="1" x="116.84" y="-17.78"/>
 <instance part="D2" gate="G$1" x="-83.82" y="53.34" rot="R90"/>
 <instance part="GND16" gate="1" x="-83.82" y="48.26"/>
-<instance part="U$8" gate="G$1" x="60.96" y="-5.08" rot="R90"/>
+<instance part="U8" gate="L" x="60.96" y="-5.08" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="G\"/>
+<pinref part="Q4" gate="&gt;NAME" pin="G\"/>
 <pinref part="R3" gate="R" pin="2"/>
 <wire x1="-71.12" y1="71.12" x2="-73.66" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="71.12" x2="-73.66" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R2" gate="R" pin="1"/>
 <wire x1="-76.2" y1="71.12" x2="-73.66" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-73.66" y="71.12"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R3" gate="R" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="S"/>
-<wire x1="-60.96" y1="71.12" x2="-60.96" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C2" gate="CE" pin="1"/>
-<wire x1="-60.96" y1="71.12" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-60.96" y="71.12"/>
-<pinref part="U$2" gate="G$1" pin="S"/>
-<wire x1="-60.96" y1="58.42" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-60.96" y="58.42"/>
-<wire x1="-60.96" y1="58.42" x2="-53.34" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="D"/>
-<junction x="-53.34" y="58.42"/>
-<pinref part="R5" gate="R" pin="2"/>
-<wire x1="-53.34" y1="58.42" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -7405,7 +7392,7 @@ Battery Charger Schematic</text>
 <pinref part="R1" gate="R" pin="2"/>
 <wire x1="-111.76" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-96.52" y="58.42"/>
-<pinref part="U$2" gate="G$1" pin="D"/>
+<pinref part="Q2" gate="&gt;NAME" pin="D"/>
 <junction x="-78.74" y="58.42"/>
 <pinref part="R7" gate="R" pin="2"/>
 <wire x1="-104.14" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
@@ -7422,19 +7409,18 @@ Battery Charger Schematic</text>
 <net name="N$1" class="0">
 <segment>
 <wire x1="-101.6" y1="88.9" x2="-101.6" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="D"/>
+<pinref part="Q4" gate="&gt;NAME" pin="D"/>
 <wire x1="-101.6" y1="88.9" x2="-60.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="88.9" x2="-60.96" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="G"/>
-<wire x1="-43.18" y1="48.26" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C3" gate="CE" pin="2"/>
+<wire x1="-48.26" y1="45.72" x2="-53.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="45.72" x2="-96.52" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="45.72" x2="-101.6" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="48.26" x2="-96.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-96.52" y="45.72"/>
 <pinref part="R6" gate="R" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="G"/>
+<pinref part="Q2" gate="&gt;NAME" pin="G"/>
 <wire x1="-68.58" y1="48.26" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="45.72" x2="-68.58" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="45.72" x2="-68.58" y2="45.72" width="0.1524" layer="91"/>
@@ -7442,6 +7428,11 @@ Battery Charger Schematic</text>
 <pinref part="C2" gate="CE" pin="2"/>
 <wire x1="-60.96" y1="48.26" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-60.96" y="45.72"/>
+<pinref part="Q3" gate="&gt;NAME" pin="G"/>
+<wire x1="-48.26" y1="48.26" x2="-48.26" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="-53.34" y1="45.72" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-53.34" y="45.72"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7458,17 +7449,17 @@ Battery Charger Schematic</text>
 <wire x1="-33.02" y1="48.26" x2="-33.02" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C6" gate="CE" pin="1"/>
 <wire x1="-33.02" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="48.26" x2="-33.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="48.26" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-33.02" y="48.26"/>
 <pinref part="R4" gate="R" pin="1"/>
 <wire x1="-33.02" y1="58.42" x2="-30.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="S"/>
-<wire x1="-33.02" y1="58.42" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-33.02" y="58.42"/>
 <wire x1="-33.02" y1="35.56" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-33.02" y="35.56"/>
-<pinref part="U$1" gate="G$1" pin="ACP"/>
+<pinref part="U1" gate="G$1" pin="ACP"/>
 <wire x1="-33.02" y1="27.94" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="&gt;NAME" pin="D"/>
+<wire x1="-38.1" y1="58.42" x2="-33.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="58.42" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SYSTEM" class="0">
@@ -7476,7 +7467,7 @@ Battery Charger Schematic</text>
 <pinref part="C6" gate="CE" pin="2"/>
 <wire x1="-20.32" y1="35.56" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="35.56" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ACN"/>
+<pinref part="U1" gate="G$1" pin="ACN"/>
 <wire x1="-20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="58.42" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-20.32" y="35.56"/>
@@ -7493,7 +7484,7 @@ Battery Charger Schematic</text>
 <junction x="20.32" y="58.42"/>
 <label x="104.14" y="58.42" size="1.778" layer="95" xref="yes"/>
 <wire x1="48.26" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="D"/>
+<pinref part="Q6" gate="&gt;NAME" pin="D"/>
 <wire x1="91.44" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="15.24" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <junction x="48.26" y="58.42"/>
@@ -7503,14 +7494,14 @@ Battery Charger Schematic</text>
 <wire x1="53.34" y1="15.24" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <junction x="53.34" y="15.24"/>
 <junction x="48.26" y="15.24"/>
-<pinref part="U$5" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="&gt;NAME" pin="D"/>
 <wire x1="91.44" y1="33.02" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <junction x="91.44" y="58.42"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CMSRC"/>
+<pinref part="U1" gate="G$1" pin="CMSRC"/>
 <pinref part="R5" gate="R" pin="1"/>
 <wire x1="-17.78" y1="22.86" x2="-53.34" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -7519,7 +7510,7 @@ Battery Charger Schematic</text>
 <segment>
 <pinref part="R6" gate="R" pin="1"/>
 <wire x1="-68.58" y1="22.86" x2="-68.58" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ACDRV"/>
+<pinref part="U1" gate="G$1" pin="ACDRV"/>
 <wire x1="-68.58" y1="17.78" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7528,7 +7519,7 @@ Battery Charger Schematic</text>
 <pinref part="R7" gate="R" pin="1"/>
 <pinref part="R8" gate="R" pin="2"/>
 <wire x1="-104.14" y1="22.86" x2="-104.14" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ACDET"/>
+<pinref part="U1" gate="G$1" pin="ACDET"/>
 <wire x1="-104.14" y1="12.7" x2="-104.14" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="12.7" x2="-17.78" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-104.14" y="12.7"/>
@@ -7575,10 +7566,10 @@ Battery Charger Schematic</text>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="S"/>
+<pinref part="Q1" gate="&gt;NAME" pin="S"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="48.26" y1="-17.78" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="17.78" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="48.26" y="-20.32"/>
 </segment>
@@ -7611,7 +7602,7 @@ Battery Charger Schematic</text>
 </net>
 <net name="IOUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IOUT"/>
+<pinref part="U1" gate="G$1" pin="IOUT"/>
 <pinref part="C7" gate="CE" pin="1"/>
 <wire x1="-27.94" y1="-33.02" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-33.02" x2="-33.02" y2="-33.02" width="0.1524" layer="91"/>
@@ -7622,7 +7613,7 @@ Battery Charger Schematic</text>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R13" gate="R" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="ILIM"/>
+<pinref part="U1" gate="G$1" pin="ILIM"/>
 <wire x1="-27.94" y1="7.62" x2="-17.78" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R9" gate="R" pin="2"/>
 <wire x1="-27.94" y1="7.62" x2="-35.56" y2="7.62" width="0.1524" layer="91"/>
@@ -7633,7 +7624,7 @@ Battery Charger Schematic</text>
 <segment>
 <pinref part="R12" gate="R" pin="1"/>
 <wire x1="-27.94" y1="-15.24" x2="-27.94" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ACOK"/>
+<pinref part="U1" gate="G$1" pin="ACOK"/>
 <wire x1="-27.94" y1="-27.94" x2="-17.78" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="-27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="-27.94" y1="-27.94" x2="-33.02" y2="-27.94" width="0.1524" layer="91"/>
@@ -7642,7 +7633,7 @@ Battery Charger Schematic</text>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
+<pinref part="U1" gate="G$1" pin="SDA"/>
 <pinref part="R11" gate="R" pin="1"/>
 <wire x1="-17.78" y1="-17.78" x2="-58.42" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-17.78" x2="-58.42" y2="-15.24" width="0.1524" layer="91"/>
@@ -7653,7 +7644,7 @@ Battery Charger Schematic</text>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
+<pinref part="U1" gate="G$1" pin="SCL"/>
 <pinref part="R10" gate="R" pin="1"/>
 <wire x1="-17.78" y1="-22.86" x2="-45.72" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-22.86" x2="-45.72" y2="-15.24" width="0.1524" layer="91"/>
@@ -7664,14 +7655,14 @@ Battery Charger Schematic</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SRP"/>
+<pinref part="U1" gate="G$1" pin="SRP"/>
 <pinref part="R15" gate="R" pin="1"/>
 <wire x1="17.78" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SRN"/>
+<pinref part="U1" gate="G$1" pin="SRN"/>
 <pinref part="R14" gate="R" pin="1"/>
 <wire x1="17.78" y1="-33.02" x2="22.86" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
@@ -7685,8 +7676,8 @@ Battery Charger Schematic</text>
 <wire x1="38.1" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="38.1" y="-33.02"/>
 <pinref part="C11" gate="CE" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="S"/>
-<wire x1="73.66" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="&gt;NAME" pin="S"/>
+<wire x1="76.2" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="15.24" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-33.02" x2="91.44" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-33.02" x2="91.44" y2="-5.08" width="0.1524" layer="91"/>
@@ -7717,12 +7708,12 @@ Battery Charger Schematic</text>
 <wire x1="76.2" y1="-25.4" x2="76.2" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="76.2" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="76.2" y="-5.08"/>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="U8" gate="L" pin="P$1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
 <pinref part="R16" gate="R" pin="1"/>
 <wire x1="17.78" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="33.02" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
@@ -7735,23 +7726,23 @@ Battery Charger Schematic</text>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R17" gate="R" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="BATDRV"/>
+<pinref part="U1" gate="G$1" pin="BATDRV"/>
 <wire x1="35.56" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="G"/>
 <pinref part="R17" gate="R" pin="2"/>
 <pinref part="C11" gate="CE" pin="1"/>
-<wire x1="81.28" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
-<junction x="81.28" y="22.86"/>
-<wire x1="81.28" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="&gt;NAME" pin="G"/>
+<wire x1="81.28" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<junction x="76.2" y="22.86"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="REGN"/>
+<pinref part="U1" gate="G$1" pin="REGN"/>
 <pinref part="C12" gate="CE" pin="1"/>
 <wire x1="17.78" y1="17.78" x2="22.86" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -7762,7 +7753,7 @@ Battery Charger Schematic</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BTST"/>
+<pinref part="U1" gate="G$1" pin="BTST"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="17.78" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
@@ -7773,8 +7764,8 @@ Battery Charger Schematic</text>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="LODRV"/>
-<pinref part="U$7" gate="G$1" pin="G"/>
+<pinref part="U1" gate="G$1" pin="LODRV"/>
+<pinref part="Q1" gate="&gt;NAME" pin="G"/>
 <wire x1="17.78" y1="-15.24" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7796,29 +7787,48 @@ Battery Charger Schematic</text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PHASE"/>
+<pinref part="U1" gate="G$1" pin="PHASE"/>
 <pinref part="C13" gate="CE" pin="2"/>
 <wire x1="17.78" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="S"/>
-<pinref part="U$7" gate="G$1" pin="D"/>
+<pinref part="Q6" gate="&gt;NAME" pin="S"/>
+<pinref part="Q1" gate="&gt;NAME" pin="D"/>
 <wire x1="22.86" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-5.08" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <junction x="48.26" y="-5.08"/>
 <junction x="22.86" y="-5.08"/>
 <wire x1="53.34" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="P$2"/>
+<pinref part="U8" gate="L" pin="P$2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="G"/>
-<pinref part="U$1" gate="G$1" pin="HIDRV"/>
+<pinref part="Q6" gate="&gt;NAME" pin="G"/>
+<pinref part="U1" gate="G$1" pin="HIDRV"/>
 <wire x1="38.1" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="C2" gate="CE" pin="1"/>
+<pinref part="Q4" gate="&gt;NAME" pin="S"/>
+<pinref part="R3" gate="R" pin="1"/>
+<wire x1="-60.96" y1="71.12" x2="-60.96" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-60.96" y="71.12"/>
+<wire x1="-60.96" y1="71.12" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="58.42" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="&gt;NAME" pin="S"/>
+<wire x1="-66.04" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-60.96" y="58.42"/>
+<pinref part="Q3" gate="&gt;NAME" pin="S"/>
+<wire x1="-50.8" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,17.78,33.02,U$1,VCC,N$17,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
