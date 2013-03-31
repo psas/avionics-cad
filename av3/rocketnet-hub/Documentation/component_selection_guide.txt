@@ -1,0 +1,36 @@
+Component Selection Guide
+This page aims to explain the reasoning behind the selection of each component used in the power and communications hub designed by the 2012-13 capstone team. The intention is to provide insight into the design descissions made however there is no ittention to provide the reader with a comprehensive design example that is suitable for any purpose other than exact replication. The target audience is expected to have design experience with microelectronics power distribution and modern physical layer communications designs utilizing matched impedance differential signaling.
+
+MCU
+For this project the MCU choosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of developemt tools. Given that PSAS is a cost concious group that has ample expertise to draw from the documentation quality offered by Atmel did not justify the added expense. Several Olimex STM32-E407 developement boards where aquired and used by the PSAS software team to concurrently develop the firmware.
+
+Ethernet Switch
+The design requirements dictated that the switch chosen must have at least 7 ports. Furthermore, we were restricted from using any Broadcom SoC due to the company's exclusive access model. This left us with only Micrel's offerings to work with. The KS8999 had the added benefit of an MII interface to the MCU which allowed the design to avoid adding any discreate PHY IC's. It also met the design requirements by offering 8 ports with integrated PHYs and one MII digital interface. The Micrel KS8999 development board was aquired to test potential configurations so that these settings could be set on the first run of the PCB. The settings used are:
+	MIIS: 		2b'X1 (reverse MII mode)
+	MODESEL: 	4b'0000 (LED mode 0)
+	CFGMODE:	1b'0 (I2C Bootstrap)
+	LED[8][3]:	1b'0 (AutoDMIX)
+	
+The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design descissions related to this LDO.
+
+Node Power Switches
+Each of the 7 nodes to be connected to this distribution board was to have its own power swith controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnessary functionality. Our main requirements for the node power switch was that it provide a hige level of integration with no external components except small capaitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS form TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externaly set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to disipate heat. Key settings for this chip are:
+	Hard Current Limit: 3(A)
+	Soft Current Limit: Set by node--Set resistor on top side of PCB
+	Soft Limit Timer:	Set by node--Set Capacitor on top side of PCB
+	Reset Behavior:		Latch reset condition and wait for MCU to reset switch
+Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are commone collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
+
+Power Supplies
+The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for it's high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potetial variation.
+	LTM8023 Settings:
+		Vout:			3.3(V)
+		Osc. Freq.:		TBD
+		Sync. Freq.:	TBD
+		EN:				Tied to logic 1, Always on
+	MIC37101-2.1YM Settings:
+		EN:				Weakly pulled to logic 0, controlled by MCU
+		
+Analog Multiplexers
+The STM32F407V LQFP-100 lacks sufficient ADC inputs to monitor the output current of the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or adding one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for it's small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout.
+		
