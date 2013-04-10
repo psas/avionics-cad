@@ -3,6 +3,11 @@ This page aims to explain the reasoning behind the selection of each component u
 
 MCU
 For this project the MCU choosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of developemt tools. Given that PSAS is a cost concious group that has ample expertise to draw from the documentation quality offered by Atmel did not justify the added expense. Several Olimex STM32-E407 developement boards where aquired and used by the PSAS software team to concurrently develop the firmware.
+	Support Components:
+		Crystal 
+			The MCU has an internal oscilator circuit and can run without an external crystal. However, for ethernet functionality the MII interface must operate at 25MHz +/- 50ppm. This is beyond the capabilities of the intenal oscillator. Thus an external crystal must be used. The value that makes the most sense to the design team is 25MHz. By using this value we can avoid mucking around with the PLL resources of the MCU and still provide the required MII interface clock. Additionally, the MCU has two clock outputs and we can use one of these to buffer the crystal and use this same crystal to also drive the KS8999 ethernet switch. The part selected is the 8Y-25.000MEEQ-T from TXC Corp. This crystal has a load capacitance rating of 10pF and a +/-10ppm frequency stability/tolerance.
+		Bypass Caps
+			The supply pins of the MCU will each be provissioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. A bulk capacitor with a nominal value of between 10 and 22 uF should be placed near the MCU's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. The two crystal pins also require capacitors. For these two C0G ceramic 0402 capacitors should be used. The value should be 10pF.
 
 Ethernet Switch
 The design requirements dictated that the switch chosen must have at least 7 ports. Furthermore, we were restricted from using any Broadcom SoC due to the company's exclusive access model. This left us with only Micrel's offerings to work with. The KS8999 had the added benefit of an MII interface to the MCU which allowed the design to avoid adding any discreate PHY IC's. It also met the design requirements by offering 8 ports with integrated PHYs and one MII digital interface. The Micrel KS8999 development board was aquired to test potential configurations so that these settings could be set on the first run of the PCB. The settings used are:
@@ -10,26 +15,42 @@ The design requirements dictated that the switch chosen must have at least 7 por
 	MODESEL: 	4b'0000 (LED mode 0)
 	CFGMODE:	1b'0 (I2C Bootstrap)
 	LED[8][3]:	1b'0 (AutoDMIX)
-	
-The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design descissions related to this LDO.
-
+	Supporting Comonents
+		Voltage Regulation
+			The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design descissions related to this LDO.
+		Bypass Caps
+			The supply pins of the KS8999 will each be provissioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. Bulk capacitors with a nominal value of  10uF should be placed near the MCU's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. 
+		Pull up/down Resistors
+			Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 100 Ohm resistors.
+		Reset circuitry
+			The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to to ensure safe operation. The circuit is provided in the data sheet. 0402 10k reistors should be used to minimize power disipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
+		Signal LEDs
+			Each port provisions up to four signaling LEDs to denote the curent state of the port. 0402 LEDs should provide sufficient brightness to serve as a visual indicator while minimizing board space. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow seems the most reasonable choice for the ethenet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
 Node Power Switches
 Each of the 7 nodes to be connected to this distribution board was to have its own power swith controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnessary functionality. Our main requirements for the node power switch was that it provide a hige level of integration with no external components except small capaitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS form TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externaly set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to disipate heat. Key settings for this chip are:
-	Hard Current Limit: 3(A)
-	Soft Current Limit: Set by node--Set resistor on top side of PCB
+	Hard Current Limit: 	Set by node--Set resistor on top side of PCB
+	Soft Current Limit: 	Set by node--Set resistor on top side of PCB
 	Soft Limit Timer:	Set by node--Set Capacitor on top side of PCB
 	Reset Behavior:		Latch reset condition and wait for MCU to reset switch
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are commone collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
+	IMON resistor:		TBD
+	Power good LED:		APHHS1005CGCK (Green 0402 V_f 2.1V I_d 20mA)
+	Fault Cond. LED:	SML-LX0402SIC-TR (Red 0402 V_f 2V I_d 20mA)
+	LED cur. lim. res.:	50-60Ohm (17mA-20mA)
 
 Power Supplies
 The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for it's high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potetial variation.
 	LTM8023 Settings:
 		Vout:			3.3(V)
-		Osc. Freq.:		TBD
-		Sync. Freq.:	TBD
-		EN:				Tied to logic 1, Always on
+		Osc. Freq.:		650KHz
+		Sync. Freq.:		650KHz -- set by MCU pll
+		R_T			49.9KOhm
+		R_{ADJ}			154KOhm
+		C_in			2.2uF (0805)
+		C_{out}			22uF (1206)
+		EN:			Tied to logic 1, Always on
 	MIC37101-2.1YM Settings:
-		EN:				Weakly pulled to logic 0, controlled by MCU
+		EN:			Weakly pulled to logic 0, controlled by MCU
 		
 Analog Multiplexers
 The STM32F407V LQFP-100 lacks sufficient ADC inputs to monitor the output current of the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or adding one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for it's small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout.
