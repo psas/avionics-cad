@@ -7297,9 +7297,9 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7375,9 +7375,9 @@ Battery Charger Schematic</text>
 <instance part="GND17" gate="1" x="-45.72" y="27.94"/>
 <instance part="C11" gate="CE" x="-20.32" y="2.54"/>
 <instance part="C2" gate="CE" x="-5.08" y="53.34"/>
-<instance part="C3" gate="CE" x="2.54" y="53.34"/>
 <instance part="GND13" gate="1" x="2.54" y="40.64"/>
 <instance part="C9" gate="CE" x="10.16" y="53.34"/>
+<instance part="C3" gate="CE" x="2.54" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -7464,8 +7464,6 @@ Battery Charger Schematic</text>
 <junction x="-33.02" y="35.56"/>
 <pinref part="U1" gate="G$1" pin="ACP"/>
 <wire x1="-33.02" y1="27.94" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="&gt;NAME" pin="D"/>
-<wire x1="-38.1" y1="58.42" x2="-33.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C25" gate="CE" pin="1"/>
 <wire x1="-45.72" y1="38.1" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
@@ -7474,6 +7472,9 @@ Battery Charger Schematic</text>
 <wire x1="-38.1" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="38.1" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-38.1" y="40.64"/>
+<pinref part="Q2" gate="&gt;NAME" pin="D"/>
+<wire x1="-33.02" y1="58.42" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-33.02" y="58.42"/>
 </segment>
 </net>
 <net name="SYSTEM" class="0">
@@ -7523,7 +7524,6 @@ Battery Charger Schematic</text>
 <pinref part="C5" gate="CE" pin="1"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 <junction x="66.04" y="58.42"/>
-<pinref part="C3" gate="CE" pin="1"/>
 <wire x1="2.54" y1="55.88" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
 <junction x="2.54" y="58.42"/>
 <pinref part="C2" gate="CE" pin="1"/>
@@ -7532,6 +7532,7 @@ Battery Charger Schematic</text>
 <pinref part="C9" gate="CE" pin="1"/>
 <wire x1="10.16" y1="55.88" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <junction x="10.16" y="58.42"/>
+<pinref part="C3" gate="CE" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -7646,7 +7647,6 @@ Battery Charger Schematic</text>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C3" gate="CE" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="2.54" y1="43.18" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C2" gate="CE" pin="2"/>
@@ -7657,6 +7657,7 @@ Battery Charger Schematic</text>
 <wire x1="10.16" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C9" gate="CE" pin="2"/>
 <wire x1="10.16" y1="48.26" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C3" gate="CE" pin="2"/>
 </segment>
 </net>
 <net name="IOUT" class="0">
@@ -7879,9 +7880,6 @@ Battery Charger Schematic</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,17.78,33.02,U$1,VCC,N$17,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
