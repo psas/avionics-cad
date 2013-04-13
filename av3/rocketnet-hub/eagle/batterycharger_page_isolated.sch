@@ -7246,7 +7246,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="C16" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.1uF"/>
 <part name="C14" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.1uF"/>
 <part name="C15" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.1uF"/>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="1206-B" value="10m"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="1206-B" value="0.01"/>
 <part name="R9" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.02k"/>
 <part name="R8" library="rcl_custom" deviceset="R-US_" device="0402-B" value="4.02k"/>
 <part name="R15" library="rcl_custom" deviceset="R-US_" device="0402-B" value="430k"/>
@@ -7277,7 +7277,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="BAT54" device=""/>
-<part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.047uF"/>
+<part name="C21" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.047uF"/>
 <part name="Q4" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
 <part name="Q5" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -7295,7 +7295,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="L1" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
 <part name="C25" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.1uF"/>
+<part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -7355,7 +7355,7 @@ Battery Charger Schematic</text>
 <instance part="C10" gate="CE" x="27.94" y="17.78" rot="R90"/>
 <instance part="GND9" gate="1" x="35.56" y="17.78" rot="R90"/>
 <instance part="D1" gate="G$1" x="22.86" y="12.7" rot="R270"/>
-<instance part="C24" gate="CE" x="22.86" y="0"/>
+<instance part="C21" gate="CE" x="22.86" y="0"/>
 <instance part="Q4" gate="&gt;NAME" x="43.18" y="10.16"/>
 <instance part="Q5" gate="&gt;NAME" x="43.18" y="-10.16"/>
 <instance part="GND10" gate="1" x="48.26" y="-22.86"/>
@@ -7808,7 +7808,7 @@ Battery Charger Schematic</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="17.78" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C24" gate="CE" pin="1"/>
+<pinref part="C21" gate="CE" pin="1"/>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="2.54" width="0.1524" layer="91"/>
 <junction x="22.86" y="7.62"/>
 </segment>
@@ -7841,7 +7841,7 @@ Battery Charger Schematic</text>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PHASE"/>
-<pinref part="C24" gate="CE" pin="2"/>
+<pinref part="C21" gate="CE" pin="2"/>
 <wire x1="17.78" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="&gt;NAME" pin="S"/>
 <pinref part="Q5" gate="&gt;NAME" pin="D"/>
