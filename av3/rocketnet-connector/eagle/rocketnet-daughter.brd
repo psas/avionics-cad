@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
@@ -91,10 +91,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="10.2" y1="-4.4" x2="10.2" y2="4.4" width="0.0254" layer="20"/>
-<wire x1="10.2" y1="-4.4" x2="-10.9" y2="-4.4" width="0.0254" layer="20"/>
-<wire x1="-10.9" y1="-4.4" x2="-10.9" y2="4.4" width="0.0254" layer="20"/>
-<wire x1="10.2" y1="4.4" x2="-10.9" y2="4.4" width="0.0254" layer="20"/>
+<wire x1="9.1" y1="-1.9" x2="9.1" y2="1.9" width="0.02" layer="20"/>
+<wire x1="6.6" y1="-4.4" x2="-7.2" y2="-4.4" width="0.02" layer="20"/>
+<wire x1="-9.7" y1="-1.9" x2="-9.7" y2="1.9" width="0.02" layer="20"/>
 <text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on top of board)</text>
 <text x="3.2" y="4.8" size="0.762" layer="48">B-</text>
 <text x="-0.3" y="4.8" size="0.762" layer="48" rot="R90">AUX2</text>
@@ -104,18 +103,35 @@
 <text x="2.9" y="-5.3" size="0.762" layer="48">TX-</text>
 <text x="0.4" y="-5.3" size="0.762" layer="48">TX+</text>
 <text x="-4.2" y="4.8" size="0.762" layer="48">B+</text>
-<hole x="7.05" y="0" drill="2.4384"/>
-<hole x="-7.75" y="0" drill="2.4384"/>
+<hole x="7.4" y="0" drill="2.4384"/>
+<hole x="-8" y="0" drill="2.4384"/>
 <text x="0.9" y="4.8" size="0.762" layer="48" rot="R90">AUX3</text>
 <text x="2.2" y="4.8" size="0.762" layer="48" rot="R90">AUX4</text>
-<circle x="-7.75" y="0" radius="3.175" width="0.1" layer="51"/>
-<circle x="7.05" y="0" radius="3.175" width="0.1" layer="51"/>
 <rectangle x1="-2.2225" y1="-4.28625" x2="-0.3175" y2="-1.11125" layer="1"/>
 <rectangle x1="-4.7625" y1="-4.28625" x2="-2.8575" y2="-1.11125" layer="1"/>
 <rectangle x1="0.3175" y1="-4.28625" x2="2.2225" y2="-1.11125" layer="1"/>
 <rectangle x1="2.8575" y1="-4.28625" x2="4.7625" y2="-1.11125" layer="1"/>
 <rectangle x1="2.8575" y1="1.11125" x2="4.7625" y2="4.28625" layer="1"/>
 <rectangle x1="-4.7625" y1="1.11125" x2="-2.8575" y2="4.28625" layer="1"/>
+<wire x1="6.6" y1="4.4" x2="-7.2" y2="4.4" width="0.02" layer="20"/>
+<wire x1="-9.7" y1="1.9" x2="-7.2" y2="4.4" width="0.02" layer="20"/>
+<wire x1="-7.2" y1="-4.4" x2="-9.7" y2="-1.9" width="0.02" layer="20"/>
+<wire x1="9.1" y1="-1.9" x2="6.6" y2="-4.4" width="0.02" layer="20"/>
+<wire x1="6.6" y1="4.4" x2="9.1" y2="1.9" width="0.02" layer="20"/>
+<wire x1="-9.15" y1="-2" x2="-6.85" y2="-2" width="0.01" layer="51"/>
+<wire x1="-6.85" y1="-2" x2="-5.7" y2="0" width="0.01" layer="51"/>
+<wire x1="-5.7" y1="0" x2="-6.85" y2="2" width="0.01" layer="51"/>
+<wire x1="-6.85" y1="2" x2="-9.15" y2="2" width="0.01" layer="51"/>
+<wire x1="-9.15" y1="2" x2="-10.3" y2="0" width="0.01" layer="51"/>
+<wire x1="-10.3" y1="0" x2="-9.15" y2="-2" width="0.01" layer="51"/>
+<wire x1="6.25" y1="-2" x2="8.55" y2="-2" width="0.01" layer="51"/>
+<wire x1="8.55" y1="-2" x2="9.7" y2="0" width="0.01" layer="51"/>
+<wire x1="9.7" y1="0" x2="8.55" y2="2" width="0.01" layer="51"/>
+<wire x1="8.55" y1="2" x2="6.25" y2="2" width="0.01" layer="51"/>
+<wire x1="6.25" y1="2" x2="5.1" y2="0" width="0.01" layer="51"/>
+<wire x1="5.1" y1="0" x2="6.25" y2="-2" width="0.01" layer="51"/>
+<text x="10.05" y="-2.3" size="0.762" layer="48">#2-56 nylock
+(5/32" OD)</text>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
@@ -381,4 +397,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

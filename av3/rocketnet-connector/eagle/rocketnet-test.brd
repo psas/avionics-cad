@@ -429,14 +429,14 @@ by exp-project-lbr.ulp</description>
 </autorouter>
 <elements>
 <element name="J1" library="rocketnet-connector" package="ROCKNET-CONNECTOR-M-16" value="ROCKETNET-CONNECTOR-16M" x="15.1" y="14.32"/>
-<element name="JP2" library="pinhead" package="1X10" value="" x="15.2" y="7.3" rot="R180"/>
+<element name="JP2" library="pinhead" package="1X10" value="" x="15.2" y="3.3" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="J1" pad="T+@9"/>
 <contactref element="J1" pad="T+@11"/>
 <contactref element="JP2" pad="5"/>
-<wire x1="16.47" y1="7.3" x2="16.47" y2="10.67" width="0.5" layer="16"/>
+<wire x1="16.47" y1="3.3" x2="16.47" y2="10.67" width="0.5" layer="16"/>
 <wire x1="16.47" y1="10.67" x2="17" y2="11.2" width="0.5" layer="16"/>
 <wire x1="17" y1="11.2" x2="17" y2="13.68" width="0.5" layer="16"/>
 <wire x1="17" y1="13.68" x2="17.005" y2="13.685" width="0.5" layer="16"/>
@@ -447,7 +447,7 @@ by exp-project-lbr.ulp</description>
 <contactref element="J1" pad="R-@5"/>
 <contactref element="JP2" pad="6"/>
 <wire x1="13.195" y1="13.685" x2="14.465" y2="13.685" width="0.5" layer="16"/>
-<wire x1="13.93" y1="7.3" x2="13.93" y2="11.07" width="0.5" layer="16"/>
+<wire x1="13.93" y1="3.3" x2="13.93" y2="11.07" width="0.5" layer="16"/>
 <wire x1="13.93" y1="11.07" x2="13.2" y2="11.8" width="0.5" layer="16"/>
 <wire x1="13.2" y1="11.8" x2="13.2" y2="13.68" width="0.5" layer="16"/>
 <wire x1="13.2" y1="13.68" x2="13.195" y2="13.685" width="0.5" layer="16"/>
@@ -456,8 +456,8 @@ by exp-project-lbr.ulp</description>
 <contactref element="J1" pad="R+@1"/>
 <contactref element="J1" pad="R+@3"/>
 <contactref element="JP2" pad="7"/>
-<wire x1="11.39" y1="7.3" x2="11.4" y2="7.3" width="0.5" layer="16"/>
-<wire x1="11.4" y1="7.3" x2="11.4" y2="11.4" width="0.5" layer="16"/>
+<wire x1="11.39" y1="3.3" x2="11.4" y2="3.3" width="0.5" layer="16"/>
+<wire x1="11.4" y1="3.3" x2="11.4" y2="11.4" width="0.5" layer="16"/>
 <wire x1="11.4" y1="11.4" x2="11.9" y2="11.9" width="0.5" layer="16"/>
 <wire x1="11.9" y1="11.9" x2="11.9" y2="13.66" width="0.5" layer="16"/>
 <wire x1="11.9" y1="13.66" x2="11.925" y2="13.685" width="0.5" layer="16"/>
@@ -467,7 +467,7 @@ by exp-project-lbr.ulp</description>
 <contactref element="J1" pad="T-@13"/>
 <contactref element="J1" pad="T-@15"/>
 <contactref element="JP2" pad="4"/>
-<wire x1="19.01" y1="7.3" x2="19.01" y2="10.79" width="0.5" layer="16"/>
+<wire x1="19.01" y1="3.3" x2="19.01" y2="10.79" width="0.5" layer="16"/>
 <wire x1="19.01" y1="10.79" x2="18.3" y2="11.5" width="0.5" layer="16"/>
 <wire x1="18.3" y1="11.5" x2="18.3" y2="13.66" width="0.5" layer="16"/>
 <wire x1="18.3" y1="13.66" x2="18.275" y2="13.685" width="0.5" layer="16"/>
@@ -482,8 +482,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="10.655" y1="17.345" x2="10.3" y2="17.7" width="0.5" layer="16"/>
 <wire x1="10.3" y1="17.7" x2="4.6" y2="17.7" width="0.5" layer="16"/>
 <wire x1="4.6" y1="17.7" x2="3.8" y2="16.9" width="0.5" layer="16"/>
-<wire x1="3.8" y1="16.9" x2="3.8" y2="7.33" width="0.5" layer="16"/>
-<wire x1="3.8" y1="7.33" x2="3.77" y2="7.3" width="0.5" layer="16"/>
+<wire x1="3.8" y1="16.9" x2="3.8" y2="3.33" width="0.5" layer="16"/>
+<wire x1="3.8" y1="3.33" x2="3.77" y2="3.3" width="0.5" layer="16"/>
 </signal>
 <signal name="N$6">
 <contactref element="J1" pad="B-@16"/>
@@ -494,8 +494,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="19.545" y1="17.345" x2="19.9" y2="17.7" width="0.5" layer="16"/>
 <wire x1="19.9" y1="17.7" x2="24.8" y2="17.7" width="0.5" layer="16"/>
 <wire x1="24.8" y1="17.7" x2="26.6" y2="15.9" width="0.5" layer="16"/>
-<wire x1="26.6" y1="15.9" x2="26.6" y2="7.33" width="0.5" layer="16"/>
-<wire x1="26.6" y1="7.33" x2="26.63" y2="7.3" width="0.5" layer="16"/>
+<wire x1="26.6" y1="15.9" x2="26.6" y2="3.33" width="0.5" layer="16"/>
+<wire x1="26.6" y1="3.33" x2="26.63" y2="3.3" width="0.5" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="J1" pad="A2"/>
@@ -508,8 +508,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="2.6" y1="11.8" x2="4.7" y2="9.7" width="0.5" layer="1"/>
 <wire x1="4.7" y1="9.7" x2="5.6" y2="9.7" width="0.5" layer="1"/>
 <wire x1="5.6" y1="9.7" x2="6.3" y2="9" width="0.5" layer="1"/>
-<wire x1="6.3" y1="9" x2="6.3" y2="7.31" width="0.5" layer="1"/>
-<wire x1="6.3" y1="7.31" x2="6.31" y2="7.3" width="0.5" layer="1"/>
+<wire x1="6.3" y1="9" x2="6.3" y2="3.31" width="0.5" layer="1"/>
+<wire x1="6.3" y1="3.31" x2="6.31" y2="3.3" width="0.5" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="J1" pad="A1"/>
@@ -522,8 +522,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="3.8" y1="11.9" x2="5.1" y2="10.6" width="0.5" layer="1"/>
 <wire x1="5.1" y1="10.6" x2="8.3" y2="10.6" width="0.5" layer="1"/>
 <wire x1="8.3" y1="10.6" x2="8.9" y2="10" width="0.5" layer="1"/>
-<wire x1="8.9" y1="10" x2="8.9" y2="7.35" width="0.5" layer="1"/>
-<wire x1="8.9" y1="7.35" x2="8.85" y2="7.3" width="0.5" layer="1"/>
+<wire x1="8.9" y1="10" x2="8.9" y2="3.35" width="0.5" layer="1"/>
+<wire x1="8.9" y1="3.35" x2="8.85" y2="3.3" width="0.5" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="J1" pad="A3"/>
@@ -536,8 +536,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="27.5" y1="12" x2="25" y2="9.5" width="0.5" layer="1"/>
 <wire x1="25" y1="9.5" x2="24.4" y2="9.5" width="0.5" layer="1"/>
 <wire x1="24.4" y1="9.5" x2="24" y2="9.1" width="0.5" layer="1"/>
-<wire x1="24" y1="9.1" x2="24" y2="7.39" width="0.5" layer="1"/>
-<wire x1="24" y1="7.39" x2="24.09" y2="7.3" width="0.5" layer="1"/>
+<wire x1="24" y1="9.1" x2="24" y2="3.39" width="0.5" layer="1"/>
+<wire x1="24" y1="3.39" x2="24.09" y2="3.3" width="0.5" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="JP2" pad="3"/>
@@ -550,8 +550,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="26.1" y1="12.1" x2="24.4" y2="10.4" width="0.5" layer="1"/>
 <wire x1="24.4" y1="10.4" x2="22.3" y2="10.4" width="0.5" layer="1"/>
 <wire x1="22.3" y1="10.4" x2="21.5" y2="9.6" width="0.5" layer="1"/>
-<wire x1="21.5" y1="9.6" x2="21.5" y2="7.35" width="0.5" layer="1"/>
-<wire x1="21.5" y1="7.35" x2="21.55" y2="7.3" width="0.5" layer="1"/>
+<wire x1="21.5" y1="9.6" x2="21.5" y2="3.35" width="0.5" layer="1"/>
+<wire x1="21.5" y1="3.35" x2="21.55" y2="3.3" width="0.5" layer="1"/>
 </signal>
 </signals>
 </board>
