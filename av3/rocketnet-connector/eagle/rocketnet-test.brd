@@ -81,11 +81,11 @@
 by exp-project-lbr.ulp</description>
 <packages>
 <package name="ROCKNET-CONNECTOR-M-16">
-<wire x1="-10.4" y1="2.65" x2="9.7" y2="2.65" width="0.1" layer="52"/>
-<wire x1="9.7" y1="2.65" x2="9.7" y2="-2.65" width="0.1" layer="52"/>
-<wire x1="9.7" y1="-2.65" x2="-10.4" y2="-2.65" width="0.1" layer="52"/>
-<wire x1="-10.4" y1="-2.65" x2="-10.4" y2="2.65" width="0.1" layer="52"/>
-<hole x="7.05" y="0" drill="2.4384"/>
+<wire x1="-10.7" y1="2.9" x2="10.1" y2="2.9" width="0.1" layer="52"/>
+<wire x1="10.1" y1="2.9" x2="10.1" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="10.1" y1="-2.85" x2="-10.7" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="-10.7" y1="-2.85" x2="-10.7" y2="2.9" width="0.1" layer="52"/>
+<hole x="7.4" y="0" drill="2.4384"/>
 <text x="-4.6" y="2.3" size="1" layer="21" font="vector" ratio="16">B+</text>
 <text x="2.9" y="2.3" size="1" layer="21" font="vector" ratio="16">B-</text>
 <text x="-2.8" y="-2.3" size="1" layer="21" font="vector" ratio="16" rot="R180">R+</text>
@@ -96,20 +96,7 @@ by exp-project-lbr.ulp</description>
 <text x="-0.9" y="2.3" size="1" layer="21" font="vector" ratio="16">2</text>
 <text x="0.4" y="2.3" size="1" layer="21" font="vector" ratio="16">3</text>
 <text x="1.6" y="2.3" size="1" layer="21" font="vector" ratio="16">4</text>
-<wire x1="6.35" y1="1.65" x2="7.75" y2="1.65" width="0.05" layer="22"/>
-<wire x1="8.7" y1="0.7" x2="8.7" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="6.35" y1="-1.65" x2="7.75" y2="-1.65" width="0.05" layer="22"/>
-<wire x1="7.75" y1="1.65" x2="8.7" y2="0.7" width="0.05" layer="22"/>
-<wire x1="8.7" y1="-0.7" x2="7.75" y2="-1.65" width="0.05" layer="22"/>
-<hole x="-7.75" y="0" drill="2.4384"/>
-<wire x1="-8.45" y1="1.65" x2="-7.05" y2="1.65" width="0.05" layer="22"/>
-<wire x1="-6.1" y1="0.7" x2="-6.1" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="-9.4" y1="-0.7" x2="-9.4" y2="0.7" width="0.05" layer="22"/>
-<wire x1="-8.45" y1="-1.65" x2="-7.05" y2="-1.65" width="0.05" layer="22"/>
-<wire x1="-8.45" y1="-1.65" x2="-9.4" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="-9.4" y1="0.7" x2="-8.45" y2="1.65" width="0.05" layer="22"/>
-<wire x1="-7.05" y1="1.65" x2="-6.1" y2="0.7" width="0.05" layer="22"/>
-<wire x1="-6.1" y1="-0.7" x2="-7.05" y2="-1.65" width="0.05" layer="22"/>
+<hole x="-8" y="0" drill="2.4384"/>
 <wire x1="-5.08" y1="1.7" x2="5.08" y2="1.7" width="0.15" layer="51"/>
 <wire x1="5.08" y1="-1.7" x2="-5.08" y2="-1.7" width="0.15" layer="51"/>
 <wire x1="5.08" y1="1.7" x2="5.08" y2="-1.7" width="0.15" layer="51"/>
@@ -132,9 +119,30 @@ by exp-project-lbr.ulp</description>
 <pad name="R-@7" x="-0.635" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
 <wire x1="-5.33" y1="-1.7" x2="-5.33" y2="1.7" width="0.1" layer="51"/>
 <wire x1="5.33" y1="1.7" x2="5.33" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="5.4" y1="-0.7" x2="5.4" y2="0.7" width="0.05" layer="22"/>
-<wire x1="6.35" y1="-1.65" x2="5.4" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="5.4" y1="0.7" x2="6.35" y2="1.65" width="0.05" layer="22"/>
+<wire x1="-9.65" y1="-0.95" x2="-9.65" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-9.65" y1="0.95" x2="-8" y2="1.9" width="0.01" layer="22"/>
+<wire x1="-8" y1="1.9" x2="-6.35" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-6.35" y1="0.95" x2="-6.35" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="-6.35" y1="-0.95" x2="-8" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="-8" y1="-1.9" x2="-9.65" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="5.75" y1="-0.95" x2="5.75" y2="0.95" width="0.01" layer="22"/>
+<wire x1="5.75" y1="0.95" x2="7.4" y2="1.9" width="0.01" layer="22"/>
+<wire x1="7.4" y1="1.9" x2="9.05" y2="0.95" width="0.01" layer="22"/>
+<wire x1="9.05" y1="0.95" x2="9.05" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="9.05" y1="-0.95" x2="7.4" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="7.4" y1="-1.9" x2="5.75" y2="-0.95" width="0.01" layer="22"/>
+<circle x="7.4" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-8.01" y="0" radius="2" width="0.01" layer="22"/>
+<text x="4" y="-5.6" size="0.5" layer="51" font="vector">#2-56 hex head bolts</text>
+<text x="4" y="-6.3" size="0.5" layer="51" font="vector">4 mm OD FDM standoffs</text>
+<wire x1="6.6" y1="4.4" x2="-7.2" y2="4.4" width="0.1" layer="21"/>
+<wire x1="6.6" y1="-4.4" x2="-7.2" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="9.1" y1="-1.9" x2="9.1" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-9.7" y1="-1.9" x2="-9.7" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-9.7" y1="1.9" x2="-7.2" y2="4.4" width="0.1" layer="21"/>
+<wire x1="6.6" y1="4.4" x2="9.1" y2="1.9" width="0.1" layer="21"/>
+<wire x1="9.1" y1="-1.9" x2="6.6" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="-7.2" y1="-4.4" x2="-9.7" y2="-1.9" width="0.1" layer="21"/>
 </package>
 </packages>
 </library>
