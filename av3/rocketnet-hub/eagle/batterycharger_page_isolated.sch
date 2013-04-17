@@ -6958,6 +6958,16 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+18V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+18V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -6977,6 +6987,19 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+18V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+18V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7222,6 +7245,41 @@ Source: Fairchild .. BAT54.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND1">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-2.159" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND1" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND1" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7275,7 +7333,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="Q3" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 <part name="C12" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C10" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply2" deviceset="GND1" device=""/>
 <part name="D1" library="diode" deviceset="BAT54" device=""/>
 <part name="C21" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.047uF"/>
 <part name="Q4" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
@@ -7285,11 +7343,11 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="1206-B" value="10m"/>
 <part name="C4" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="C5" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply2" deviceset="GND1" device=""/>
 <part name="C6" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="C7" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply2" deviceset="GND1" device=""/>
+<part name="GND15" library="supply2" deviceset="GND1" device=""/>
 <part name="D2" library="RNH_SMAJ18CA" deviceset="SMAJ18CA" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
@@ -7297,9 +7355,10 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply2" deviceset="GND1" device=""/>
 <part name="C9" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="C3" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
+<part name="P+1" library="supply1" deviceset="+18V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7353,7 +7412,7 @@ Battery Charger Schematic</text>
 <instance part="Q3" gate="&gt;NAME" x="86.36" y="27.94"/>
 <instance part="C12" gate="CE" x="76.2" y="20.32"/>
 <instance part="C10" gate="CE" x="27.94" y="17.78" rot="R90"/>
-<instance part="GND9" gate="1" x="35.56" y="17.78" rot="R90"/>
+<instance part="GND9" gate="G$1" x="35.56" y="17.78" rot="R90"/>
 <instance part="D1" gate="G$1" x="22.86" y="12.7" rot="R270"/>
 <instance part="C21" gate="CE" x="22.86" y="0"/>
 <instance part="Q4" gate="&gt;NAME" x="43.18" y="10.16"/>
@@ -7363,11 +7422,11 @@ Battery Charger Schematic</text>
 <instance part="R2" gate="R" x="86.36" y="-5.08"/>
 <instance part="C4" gate="CE" x="55.88" y="50.8"/>
 <instance part="C5" gate="CE" x="66.04" y="50.8"/>
-<instance part="GND12" gate="1" x="66.04" y="38.1"/>
+<instance part="GND12" gate="G$1" x="66.04" y="38.1"/>
 <instance part="C6" gate="CE" x="104.14" y="-7.62"/>
 <instance part="C7" gate="CE" x="116.84" y="-7.62"/>
-<instance part="GND14" gate="1" x="104.14" y="-17.78"/>
-<instance part="GND15" gate="1" x="116.84" y="-17.78"/>
+<instance part="GND14" gate="G$1" x="104.14" y="-17.78"/>
+<instance part="GND15" gate="G$1" x="116.84" y="-17.78"/>
 <instance part="D2" gate="G$1" x="-83.82" y="53.34" rot="R90"/>
 <instance part="GND16" gate="1" x="-83.82" y="48.26"/>
 <instance part="L1" gate="L" x="60.96" y="-5.08" rot="R90"/>
@@ -7375,9 +7434,10 @@ Battery Charger Schematic</text>
 <instance part="GND17" gate="1" x="-45.72" y="27.94"/>
 <instance part="C11" gate="CE" x="-20.32" y="2.54"/>
 <instance part="C2" gate="CE" x="-5.08" y="53.34"/>
-<instance part="GND13" gate="1" x="2.54" y="40.64"/>
+<instance part="GND13" gate="G$1" x="2.54" y="40.64"/>
 <instance part="C9" gate="CE" x="10.16" y="53.34"/>
 <instance part="C3" gate="CE" x="2.54" y="53.34"/>
+<instance part="P+1" gate="1" x="35.56" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -7477,64 +7537,6 @@ Battery Charger Schematic</text>
 <junction x="-33.02" y="58.42"/>
 </segment>
 </net>
-<net name="SYSTEM" class="0">
-<segment>
-<pinref part="C15" gate="CE" pin="2"/>
-<wire x1="-20.32" y1="35.56" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="35.56" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="ACN"/>
-<wire x1="-20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="58.42" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-20.32" y="35.56"/>
-<pinref part="R1" gate="R" pin="2"/>
-<pinref part="C16" gate="CE" pin="1"/>
-<wire x1="-20.32" y1="48.26" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-20.32" y="48.26"/>
-<wire x1="-20.32" y1="58.42" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-20.32" y="58.42"/>
-<wire x1="-5.08" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="58.42" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<junction x="20.32" y="58.42"/>
-<label x="104.14" y="58.42" size="1.778" layer="95" xref="yes"/>
-<wire x1="48.26" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="&gt;NAME" pin="D"/>
-<wire x1="55.88" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="15.24" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<junction x="48.26" y="58.42"/>
-<pinref part="Q3" gate="&gt;NAME" pin="D"/>
-<wire x1="91.44" y1="33.02" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
-<junction x="91.44" y="58.42"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<wire x1="17.78" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="33.02" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C20" gate="CE" pin="1"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
-<junction x="20.32" y="43.18"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C4" gate="CE" pin="1"/>
-<wire x1="55.88" y1="53.34" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<junction x="55.88" y="58.42"/>
-<pinref part="C5" gate="CE" pin="1"/>
-<wire x1="66.04" y1="53.34" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<junction x="66.04" y="58.42"/>
-<wire x1="2.54" y1="55.88" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
-<junction x="2.54" y="58.42"/>
-<pinref part="C2" gate="CE" pin="1"/>
-<wire x1="-5.08" y1="55.88" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-5.08" y="58.42"/>
-<pinref part="C9" gate="CE" pin="1"/>
-<wire x1="10.16" y1="55.88" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
-<junction x="10.16" y="58.42"/>
-<pinref part="C3" gate="CE" pin="1"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CMSRC"/>
@@ -7604,7 +7606,7 @@ Battery Charger Schematic</text>
 </segment>
 <segment>
 <pinref part="C10" gate="CE" pin="2"/>
-<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="GND9" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
 <pinref part="Q5" gate="&gt;NAME" pin="S"/>
@@ -7620,7 +7622,7 @@ Battery Charger Schematic</text>
 </segment>
 <segment>
 <pinref part="C5" gate="CE" pin="2"/>
-<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="GND12" gate="G$1" pin="GND1"/>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C4" gate="CE" pin="2"/>
 <wire x1="66.04" y1="43.18" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
@@ -7630,12 +7632,12 @@ Battery Charger Schematic</text>
 </segment>
 <segment>
 <pinref part="C6" gate="CE" pin="2"/>
-<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="GND14" gate="G$1" pin="GND1"/>
 <wire x1="104.14" y1="-15.24" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="CE" pin="2"/>
-<pinref part="GND15" gate="1" pin="GND"/>
+<pinref part="GND15" gate="G$1" pin="GND1"/>
 <wire x1="116.84" y1="-15.24" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7647,7 +7649,7 @@ Battery Charger Schematic</text>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="GND13" gate="G$1" pin="GND1"/>
 <wire x1="2.54" y1="43.18" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C2" gate="CE" pin="2"/>
 <wire x1="2.54" y1="45.72" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
@@ -7875,6 +7877,68 @@ Battery Charger Schematic</text>
 <junction x="-60.96" y="58.42"/>
 <pinref part="Q2" gate="&gt;NAME" pin="S"/>
 <wire x1="-50.8" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+18V" class="0">
+<segment>
+<pinref part="C15" gate="CE" pin="2"/>
+<wire x1="-20.32" y1="35.56" x2="-22.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="35.56" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="ACN"/>
+<wire x1="-20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="58.42" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-20.32" y="35.56"/>
+<pinref part="R1" gate="R" pin="2"/>
+<pinref part="C16" gate="CE" pin="1"/>
+<wire x1="-20.32" y1="48.26" x2="-20.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-20.32" y="48.26"/>
+<wire x1="-20.32" y1="58.42" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-20.32" y="58.42"/>
+<wire x1="-5.08" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="58.42" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<junction x="20.32" y="58.42"/>
+<label x="104.14" y="58.42" size="1.778" layer="95" xref="yes"/>
+<wire x1="35.56" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="&gt;NAME" pin="D"/>
+<wire x1="55.88" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="15.24" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<junction x="48.26" y="58.42"/>
+<pinref part="Q3" gate="&gt;NAME" pin="D"/>
+<wire x1="91.44" y1="33.02" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<junction x="91.44" y="58.42"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<wire x1="17.78" y1="33.02" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="33.02" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C20" gate="CE" pin="1"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<junction x="20.32" y="43.18"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C4" gate="CE" pin="1"/>
+<wire x1="55.88" y1="53.34" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
+<junction x="55.88" y="58.42"/>
+<pinref part="C5" gate="CE" pin="1"/>
+<wire x1="66.04" y1="53.34" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<junction x="66.04" y="58.42"/>
+<wire x1="2.54" y1="55.88" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+<junction x="2.54" y="58.42"/>
+<pinref part="C2" gate="CE" pin="1"/>
+<wire x1="-5.08" y1="55.88" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-5.08" y="58.42"/>
+<pinref part="C9" gate="CE" pin="1"/>
+<wire x1="10.16" y1="55.88" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<junction x="10.16" y="58.42"/>
+<pinref part="C3" gate="CE" pin="1"/>
+<pinref part="P+1" gate="1" pin="+18V"/>
+<wire x1="35.56" y1="63.5" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<junction x="35.56" y="58.42"/>
 </segment>
 </net>
 </nets>
