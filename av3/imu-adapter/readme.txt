@@ -11,5 +11,8 @@ This board adapts the ADIS to the Olimex STM32-E407 (STM32F407 w/Ethernet) devel
 
 WARNING: Test points are on both sides of board, so if the board is against metal, make sure it's truly single-sided PCB.
 
+## CAM Notes
+
+When you run the 1 layer CAM job, you'll need to go in and edit the gerber files by hand in 'gerbv' in order to remove the ADIS mounting holes to the "right" of the actual adapter board.
  
 
