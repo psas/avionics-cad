@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
@@ -167,8 +167,8 @@
 <wire x1="40.56" y1="6.815" x2="63.524" y2="6.815" width="0.1" layer="20"/>
 <wire x1="63.524" y1="29.761" x2="63.524" y2="6.815" width="0.1" layer="20"/>
 <text x="47.9" y="22.8" size="2.286" layer="20">ADIS</text>
-<text x="0.989" y="18.086" size="1.27" layer="1" ratio="20">+5V</text>
-<text x="1.089" y="25.194" size="1.27" layer="1" ratio="20">3.3V</text>
+<text x="1.497" y="18.34" size="1.27" layer="1" ratio="20">+5V</text>
+<text x="1.343" y="25.194" size="1.27" layer="1" ratio="20">3.3V</text>
 </plain>
 <libraries>
 <library name="rcl_custom">
@@ -742,7 +742,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <contactref element="R2" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="TP3" pad="1"/>
-<polygon width="0.254" layer="1" isolate="0.254">
+<polygon width="0.254" layer="1" isolate="0.508">
 <vertex x="0" y="0"/>
 <vertex x="0" y="35.6"/>
 <vertex x="37.5" y="35.6"/>
@@ -765,10 +765,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </signal>
 <signal name="E407-PD15">
 <contactref element="R11" pad="2"/>
-<wire x1="12.419" y1="6.258" x2="10.4982" y2="8.1788" width="0.254" layer="1"/>
-<wire x1="12.419" y1="6.258" x2="20.79" y2="6.258" width="0.254" layer="1"/>
+<wire x1="11.403" y1="6.258" x2="9.4822" y2="8.1788" width="0.254" layer="1"/>
+<wire x1="11.403" y1="6.258" x2="20.79" y2="6.258" width="0.254" layer="1"/>
 <contactref element="J2" pad="2"/>
-<wire x1="7.239" y1="8.1788" x2="10.4982" y2="8.1788" width="0.254" layer="1"/>
+<wire x1="7.239" y1="8.1788" x2="9.4822" y2="8.1788" width="0.254" layer="1"/>
 </signal>
 <signal name="E407-D13">
 <contactref element="R10" pad="2"/>
