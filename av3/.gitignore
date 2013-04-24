@@ -1,3 +1,5 @@
-# Ignore everything in a "cam" directory
-cam
+# Ignore everything in a ".cam" directory... no need to save the Gerbers
+*.cam
+# Also ignore "as built", that's just for me.
+*-as-built*
 
