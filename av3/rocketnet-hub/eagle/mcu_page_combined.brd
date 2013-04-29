@@ -3315,20 +3315,20 @@ einem neuen Namen ab.</description>
 <element name="R104" library="rcl" package="R0402" value="" x="71.3292" y="29.1792" rot="MR0"/>
 <element name="R105" library="rcl" package="R0402" value="" x="75.517" y="28.2626" rot="MR0"/>
 <element name="R106" library="rcl" package="R0402" value="" x="75.49" y="27.0396" rot="MR0"/>
-<element name="C29" library="rcl" package="C0402" value="" x="68.9" y="67.96" rot="R90"/>
-<element name="C30" library="rcl" package="C0402" value="" x="70.18" y="67.96" rot="R90"/>
-<element name="C33" library="rcl" package="C0402" value="" x="45.93" y="67.96" rot="R90"/>
-<element name="C34" library="rcl" package="C0402" value="" x="47.18" y="67.96" rot="R90"/>
-<element name="C37" library="rcl" package="C0402" value="" x="22.9" y="67.96" rot="R90"/>
-<element name="C38" library="rcl" package="C0402" value="" x="24.18" y="67.96" rot="R90"/>
-<element name="C41" library="rcl" package="C0402" value="" x="88.1" y="8.12" rot="R90"/>
-<element name="C42" library="rcl" package="C0402" value="" x="86.8" y="8.12" rot="R90"/>
-<element name="C45" library="rcl" package="C0402" value="" x="42.12" y="8.12" rot="R90"/>
-<element name="C46" library="rcl" package="C0402" value="" x="40.84" y="8.12" rot="R90"/>
-<element name="C49" library="rcl" package="C0402" value="" x="65.1" y="8.12" rot="R90"/>
-<element name="C50" library="rcl" package="C0402" value="" x="63.82" y="8.12" rot="R90"/>
-<element name="C57" library="rcl" package="C0402" value="" x="91.9" y="67.96" rot="R270"/>
-<element name="C58" library="rcl" package="C0402" value="" x="93.2" y="67.96" rot="R270"/>
+<element name="C29" library="rcl" package="C0402" value="" x="68.9" y="67.96" locked="yes" rot="R90"/>
+<element name="C30" library="rcl" package="C0402" value="" x="70.18" y="67.96" locked="yes" rot="R90"/>
+<element name="C33" library="rcl" package="C0402" value="" x="45.93" y="67.96" locked="yes" rot="R90"/>
+<element name="C34" library="rcl" package="C0402" value="" x="47.18" y="67.96" locked="yes" rot="R90"/>
+<element name="C37" library="rcl" package="C0402" value="" x="22.9" y="67.96" locked="yes" rot="R90"/>
+<element name="C38" library="rcl" package="C0402" value="" x="24.18" y="67.96" locked="yes" rot="R90"/>
+<element name="C41" library="rcl" package="C0402" value="" x="88.1" y="8.12" locked="yes" rot="R90"/>
+<element name="C42" library="rcl" package="C0402" value="" x="86.8" y="8.12" locked="yes" rot="R90"/>
+<element name="C45" library="rcl" package="C0402" value="" x="42.12" y="8.12" locked="yes" rot="R90"/>
+<element name="C46" library="rcl" package="C0402" value="" x="40.84" y="8.12" locked="yes" rot="R90"/>
+<element name="C49" library="rcl" package="C0402" value="" x="65.1" y="8.12" locked="yes" rot="R90"/>
+<element name="C50" library="rcl" package="C0402" value="" x="63.82" y="8.12" locked="yes" rot="R90"/>
+<element name="C57" library="rcl" package="C0402" value="" x="91.9" y="67.96" locked="yes" rot="R270"/>
+<element name="C58" library="rcl" package="C0402" value="" x="93.2" y="67.96" locked="yes" rot="R270"/>
 <element name="TP1" library="testpad" package="TP06R" value="TPTP06R" x="107.778" y="28.5326" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="107.778" y="28.5326" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -3537,8 +3537,8 @@ einem neuen Namen ab.</description>
 <element name="R101" library="rcl" package="R0402" value="" x="75.463" y="34.0666" rot="MR180"/>
 <element name="R102" library="rcl" package="R0402" value="" x="72.4262" y="36.4702" rot="MR180"/>
 <element name="R115" library="rcl" package="R0402" value="" x="72.4912" y="35.3314" rot="MR180"/>
-<element name="C31" library="rcl" package="C0402" value="" x="19.1" y="8.12" rot="R90"/>
-<element name="C32" library="rcl" package="C0402" value="" x="17.82" y="8.12" rot="R90"/>
+<element name="C31" library="rcl" package="C0402" value="" x="19.1" y="8.12" locked="yes" rot="R90"/>
+<element name="C32" library="rcl" package="C0402" value="" x="17.82" y="8.12" locked="yes" rot="R90"/>
 <element name="R116" library="rcl" package="R0402" value="10" x="106.5224" y="55.5472" rot="MR90"/>
 <element name="R117" library="rcl" package="R0402" value="10" x="102.9412" y="27.8746" rot="MR0"/>
 <element name="R118" library="rcl" package="R0402" value="10" x="93.7952" y="27.5406" rot="MR0"/>
@@ -3546,22 +3546,22 @@ einem neuen Namen ab.</description>
 <element name="R120" library="rcl" package="R0402" value="10" x="98.4892" y="57.1436" rot="MR90"/>
 <element name="R130" library="rcl" package="R0402" value="10k" x="94.019" y="28.6006" rot="MR0"/>
 <element name="R131" library="rcl" package="R0402" value="10k" x="21.9956" y="45.541" rot="R180"/>
-<element name="C7" library="rcl" package="C0402" value="" x="86.8" y="67.96" rot="R270"/>
-<element name="C35" library="rcl" package="C0402" value="" x="88.1" y="67.96" rot="R270"/>
-<element name="C36" library="rcl" package="C0402" value="" x="63.82" y="67.96" rot="R270"/>
-<element name="C39" library="rcl" package="C0402" value="" x="65.1" y="67.96" rot="R90"/>
-<element name="C40" library="rcl" package="C0402" value="" x="40.84" y="67.96" rot="R90"/>
-<element name="C43" library="rcl" package="C0402" value="" x="42.12" y="67.96" rot="R90"/>
-<element name="C44" library="rcl" package="C0402" value="" x="17.82" y="67.96" rot="R90"/>
-<element name="C47" library="rcl" package="C0402" value="" x="19.1" y="67.96" rot="R90"/>
-<element name="C48" library="rcl" package="C0402" value="" x="93.2" y="8.12" rot="R90"/>
-<element name="C51" library="rcl" package="C0402" value="" x="91.9" y="8.12" rot="R90"/>
-<element name="C52" library="rcl" package="C0402" value="" x="47.18" y="8.12" rot="R90"/>
-<element name="C53" library="rcl" package="C0402" value="" x="45.93" y="8.12" rot="R90"/>
-<element name="C54" library="rcl" package="C0402" value="" x="70.18" y="8.12" rot="R90"/>
-<element name="C55" library="rcl" package="C0402" value="" x="68.9" y="8.12" rot="R90"/>
-<element name="C56" library="rcl" package="C0402" value="" x="24.18" y="8.12" rot="R90"/>
-<element name="C59" library="rcl" package="C0402" value="" x="22.9" y="8.12" rot="R90"/>
+<element name="C7" library="rcl" package="C0402" value="" x="86.8" y="67.96" locked="yes" rot="R270"/>
+<element name="C35" library="rcl" package="C0402" value="" x="88.1" y="67.96" locked="yes" rot="R270"/>
+<element name="C36" library="rcl" package="C0402" value="" x="63.82" y="67.96" locked="yes" rot="R270"/>
+<element name="C39" library="rcl" package="C0402" value="" x="65.1" y="67.96" locked="yes" rot="R90"/>
+<element name="C40" library="rcl" package="C0402" value="" x="40.84" y="67.96" locked="yes" rot="R90"/>
+<element name="C43" library="rcl" package="C0402" value="" x="42.12" y="67.96" locked="yes" rot="R90"/>
+<element name="C44" library="rcl" package="C0402" value="" x="17.82" y="67.96" locked="yes" rot="R90"/>
+<element name="C47" library="rcl" package="C0402" value="" x="19.1" y="67.96" locked="yes" rot="R90"/>
+<element name="C48" library="rcl" package="C0402" value="" x="93.2" y="8.12" locked="yes" rot="R90"/>
+<element name="C51" library="rcl" package="C0402" value="" x="91.9" y="8.12" locked="yes" rot="R90"/>
+<element name="C52" library="rcl" package="C0402" value="" x="47.18" y="8.12" locked="yes" rot="R90"/>
+<element name="C53" library="rcl" package="C0402" value="" x="45.93" y="8.12" locked="yes" rot="R90"/>
+<element name="C54" library="rcl" package="C0402" value="" x="70.18" y="8.12" locked="yes" rot="R90"/>
+<element name="C55" library="rcl" package="C0402" value="" x="68.9" y="8.12" locked="yes" rot="R90"/>
+<element name="C56" library="rcl" package="C0402" value="" x="24.18" y="8.12" locked="yes" rot="R90"/>
+<element name="C59" library="rcl" package="C0402" value="" x="22.9" y="8.12" locked="yes" rot="R90"/>
 <element name="U$1" library="mount" package="#4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="#4-BARE_MOUNTING_HOLE/.300" x="66.5734" y="38.1" smashed="yes"/>
 <element name="U2" library="RNH_BQ24725" package="S-PVQFN-N20" value="BQ24725QFN-20" x="19.685" y="27.6352"/>
 <element name="C60" library="rcl_custom" package="C1210" value="2.2uF" x="6.223" y="23.3172" rot="R90"/>
@@ -3612,21 +3612,21 @@ einem neuen Namen ab.</description>
 <element name="C123" library="rcl_custom" package="1206-B" value="10uF" x="11.176" y="36.9062" rot="R270"/>
 <element name="C124" library="rcl_custom" package="0603-B" value="1uF" x="15.875" y="36.7792" rot="R270"/>
 <element name="C125" library="rcl_custom" package="1206-B" value="10uF" x="13.843" y="36.9062" rot="R270"/>
-<element name="J5" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="21" y="4.32" rot="R180"/>
-<element name="J1" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="90" y="71.76"/>
-<element name="J2" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="67" y="71.76"/>
-<element name="J3" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="44" y="71.76"/>
-<element name="J4" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="21" y="71.76"/>
-<element name="J8" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="90" y="4.32" rot="R180"/>
-<element name="J6" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="44" y="4.32" rot="R180"/>
-<element name="J7" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="67" y="4.32" rot="R180"/>
-<element name="U$10" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="90" y="75.08" rot="R270"/>
-<element name="U$12" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="67" y="75.08" rot="R270"/>
-<element name="U$13" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="44" y="75.08" rot="R270"/>
-<element name="U$15" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="21" y="75.08" rot="R270"/>
-<element name="U$16" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="90" y="1" rot="R90"/>
-<element name="U$17" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="44" y="1" rot="R90"/>
-<element name="U$18" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="67" y="1" rot="R90"/>
+<element name="J5" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="21" y="4.32" locked="yes" rot="R180"/>
+<element name="J1" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="90" y="71.76" locked="yes"/>
+<element name="J2" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="67" y="71.76" locked="yes"/>
+<element name="J3" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="44" y="71.76" locked="yes"/>
+<element name="J4" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="21" y="71.76" locked="yes"/>
+<element name="J8" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="90" y="4.32" locked="yes" rot="R180"/>
+<element name="J6" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="44" y="4.32" locked="yes" rot="R180"/>
+<element name="J7" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="67" y="4.32" locked="yes" rot="R180"/>
+<element name="U$10" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="90" y="75.08" locked="yes" rot="R270"/>
+<element name="U$12" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="67" y="75.08" locked="yes" rot="R270"/>
+<element name="U$13" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="44" y="75.08" locked="yes" rot="R270"/>
+<element name="U$15" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="21" y="75.08" locked="yes" rot="R270"/>
+<element name="U$16" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="90" y="1" locked="yes" rot="R90"/>
+<element name="U$17" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="44" y="1" locked="yes" rot="R90"/>
+<element name="U$18" library="headers" package="INLINE" value="1.27MM_HDR_1X4" x="67" y="1" locked="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$12">
