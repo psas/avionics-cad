@@ -4708,9 +4708,6 @@ einem neuen Namen ab.</description>
 <wire x1="33.6154" y1="9.6792" x2="43.606953125" y2="35.823115625" width="0" layer="19" extent="1-16"/>
 <wire x1="32.8394" y1="8.4632" x2="33.6154" y2="9.6792" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="NODE5_!EN">
-<contactref element="U1" pad="3"/>
-</signal>
 <signal name="NODE1_!EN">
 <contactref element="U1" pad="97"/>
 <contactref element="U$3" pad="16"/>
@@ -6918,6 +6915,9 @@ einem neuen Namen ab.</description>
 <wire x1="7.949334375" y1="32.1906" x2="7.949334375" y2="33.9002" width="0" layer="19" extent="1-1"/>
 <wire x1="9.116" y1="32.1906" x2="7.949334375" y2="32.1906" width="0" layer="19" extent="1-1"/>
 <wire x1="6.782665625" y1="32.1906" x2="7.949334375" y2="32.1906" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NODE5_!EN">
+<contactref element="U1" pad="3"/>
 </signal>
 </signals>
 </board>
