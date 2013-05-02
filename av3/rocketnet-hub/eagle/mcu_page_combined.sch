@@ -17864,6 +17864,66 @@ by exp-project-lbr.ulp</description>
 <wire x1="-7.2" y1="1.65" x2="-6.25" y2="0.7" width="0.05" layer="22"/>
 <wire x1="-6.25" y1="-0.7" x2="-7.2" y2="-1.65" width="0.05" layer="22"/>
 </package>
+<package name="ROCKETNET-M-12">
+<wire x1="-9.43" y1="2.9" x2="8.83" y2="2.9" width="0.1" layer="52"/>
+<wire x1="8.83" y1="2.9" x2="8.83" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="8.83" y1="-2.85" x2="-9.43" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="-9.43" y1="-2.85" x2="-9.43" y2="2.9" width="0.1" layer="52"/>
+<hole x="6.13" y="0" drill="2.4384"/>
+<text x="-2.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">TX+</text>
+<text x="3.5" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RX-</text>
+<text x="-0.2" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">A1/A2</text>
+<text x="1" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RckRdy</text>
+<text x="2.4" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RX+</text>
+<hole x="-6.73" y="0" drill="2.4384"/>
+<wire x1="-8.38" y1="-0.95" x2="-8.38" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-8.38" y1="0.95" x2="-6.73" y2="1.9" width="0.01" layer="22"/>
+<wire x1="-6.73" y1="1.9" x2="-5.08" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-5.08" y1="0.95" x2="-5.08" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="-5.08" y1="-0.95" x2="-6.73" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="-6.73" y1="-1.9" x2="-8.38" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="4.48" y1="-0.95" x2="4.48" y2="0.95" width="0.01" layer="22"/>
+<wire x1="4.48" y1="0.95" x2="6.13" y2="1.9" width="0.01" layer="22"/>
+<wire x1="6.13" y1="1.9" x2="7.78" y2="0.95" width="0.01" layer="22"/>
+<wire x1="7.78" y1="0.95" x2="7.78" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="7.78" y1="-0.95" x2="6.13" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="6.13" y1="-1.9" x2="4.48" y2="-0.95" width="0.01" layer="22"/>
+<circle x="6.13" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-6.73" y="0" radius="2" width="0.01" layer="22"/>
+<text x="-3.665" y="-5.3" size="0.5" layer="49" font="vector">#2-56 hex head bolts</text>
+<text x="-3.665" y="-6" size="0.5" layer="49" font="vector">4 mm OD FDM standoffs</text>
+<wire x1="5.33" y1="4.4" x2="-5.93" y2="4.4" width="0.1" layer="21"/>
+<wire x1="5.33" y1="-4.4" x2="-5.93" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="7.83" y1="-1.9" x2="7.83" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-8.43" y1="-1.9" x2="-8.43" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-8.43" y1="1.9" x2="-5.93" y2="4.4" width="0.1" layer="21"/>
+<wire x1="5.33" y1="4.4" x2="7.83" y2="1.9" width="0.1" layer="21"/>
+<wire x1="7.83" y1="-1.9" x2="5.33" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="-5.93" y1="-4.4" x2="-8.43" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="-3.81" y1="1.7" x2="3.81" y2="1.7" width="0.15" layer="51"/>
+<wire x1="3.81" y1="-1.7" x2="-3.81" y2="-1.7" width="0.15" layer="51"/>
+<wire x1="3.81" y1="1.7" x2="3.81" y2="-1.7" width="0.15" layer="51"/>
+<wire x1="-3.81" y1="-1.7" x2="-3.81" y2="1.7" width="0.15" layer="51"/>
+<pad name="T+@1" x="-3.175" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="T+@2" x="-3.175" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="T-@4" x="-1.905" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="T-@3" x="-1.905" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="A1" x="-0.635" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="A2" x="-0.635" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="RR@8" x="0.635" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="R+@10" x="1.905" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="R-@12" x="3.175" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="R-@11" x="3.175" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="R+@9" x="1.905" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="RR@7" x="0.635" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<wire x1="-4.06" y1="-1.7" x2="-4.06" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.06" y1="1.7" x2="4.06" y2="-1.7" width="0.1" layer="51"/>
+<rectangle x1="-9.565" y1="-3" x2="8.965" y2="3" layer="40"/>
+<circle x="-6.73" y="0" radius="2.1" width="0.25" layer="39"/>
+<circle x="6.13" y="0" radius="2.1" width="0.25" layer="39"/>
+<text x="-3.665" y="-6.7" size="0.5" layer="49" font="vector">1.0 mm stack height</text>
+<text x="-1.5" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">TX-</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ROCKETNET-SYM">
@@ -17946,6 +18006,68 @@ by exp-project-lbr.ulp</description>
 <text x="-3.81" y="-12.7" size="0.762" layer="96">AUX3</text>
 <text x="-3.81" y="-15.24" size="0.762" layer="96">AUX4</text>
 </symbol>
+<symbol name="ROCKETNET-UMB-SYM">
+<wire x1="1.27" y1="10.16" x2="2.54" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="10.16" x2="1.27" y2="10.16" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="12.7" x2="2.54" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="7.62" x2="1.27" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="12.7" x2="-1.016" y2="12.7" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="12.7" x2="-1.016" y2="10.16" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="10.16" x2="-0.762" y2="10.16" width="0.254" layer="96"/>
+<wire x1="-0.762" y1="7.62" x2="-1.016" y2="7.62" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="7.62" x2="-1.016" y2="5.08" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="5.08" x2="-0.762" y2="5.08" width="0.254" layer="96"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-1.016" y2="2.54" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="2.54" x2="-1.016" y2="0" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="0" x2="-0.762" y2="0" width="0.254" layer="96"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.016" y2="-5.08" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-5.08" x2="-0.762" y2="-5.08" width="0.254" layer="96"/>
+<wire x1="1.27" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="-12.7" x2="1.27" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="0" y1="-15.24" x2="1.27" y2="-15.24" width="0.6096" layer="94"/>
+<text x="0.508" y="14.478" size="1.27" layer="95">&gt;NAME</text>
+<text x="0.508" y="-18.542" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-4.064" y="11.049" size="0.762" layer="96">TX+</text>
+<text x="-4.064" y="5.969" size="0.762" layer="96">TX-</text>
+<text x="-4.064" y="0.889" size="0.762" layer="96">RX+</text>
+<text x="-4.064" y="-4.191" size="0.762" layer="96">RX-</text>
+<text x="-3.81" y="-12.7" size="0.762" layer="96">AUX1</text>
+<pin name="AUX1" x="5.08" y="-12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="AUX2" x="5.08" y="-15.24" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="TX+@1" x="5.08" y="12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="TX+@2" x="5.08" y="10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="TX-@1" x="5.08" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="TX-@2" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="RX+@1" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="RX+@2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="RX-@1" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="RX-@2" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-3.81" y="-15.24" size="0.762" layer="96">AUX2</text>
+<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="1.27" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="1.27" y2="-10.16" width="0.6096" layer="94"/>
+<pin name="RR@1" x="5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="RR@2" x="5.08" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-0.762" y1="-7.62" x2="-1.016" y2="-7.62" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-7.62" x2="-1.016" y2="-10.16" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-10.16" x2="-0.762" y2="-10.16" width="0.254" layer="96"/>
+<text x="-9.144" y="-9.271" size="0.762" layer="96">RocketReady</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ROCKETNET-CONNECTOR-16" prefix="J">
@@ -17994,6 +18116,32 @@ by exp-project-lbr.ulp</description>
 <connect gate="G$1" pin="TX+@2" pad="T+@14"/>
 <connect gate="G$1" pin="TX-@1" pad="T-@9"/>
 <connect gate="G$1" pin="TX-@2" pad="T-@11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ROCKETNET-UMBILICAL-12" prefix="J">
+<gates>
+<gate name="G$1" symbol="ROCKETNET-UMB-SYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ROCKETNET-M-12">
+<connects>
+<connect gate="G$1" pin="AUX1" pad="A1"/>
+<connect gate="G$1" pin="AUX2" pad="A2"/>
+<connect gate="G$1" pin="RR@1" pad="RR@7"/>
+<connect gate="G$1" pin="RR@2" pad="RR@8"/>
+<connect gate="G$1" pin="RX+@1" pad="R+@9"/>
+<connect gate="G$1" pin="RX+@2" pad="R+@10"/>
+<connect gate="G$1" pin="RX-@1" pad="R-@11"/>
+<connect gate="G$1" pin="RX-@2" pad="R-@12"/>
+<connect gate="G$1" pin="TX+@1" pad="T+@1"/>
+<connect gate="G$1" pin="TX+@2" pad="T+@2"/>
+<connect gate="G$1" pin="TX-@1" pad="T-@3"/>
+<connect gate="G$1" pin="TX-@2" pad="T-@4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18491,7 +18639,6 @@ by exp-project-lbr.ulp</description>
 <part name="R99" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
-<part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="R100" library="rcl" deviceset="R-US_" device="R0402"/>
 <part name="R101" library="rcl" deviceset="R-US_" device="R0402"/>
 <part name="R102" library="rcl" deviceset="R-US_" device="R0402"/>
@@ -18598,7 +18745,6 @@ by exp-project-lbr.ulp</description>
 <part name="C124" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="C125" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="P+2" library="supply1" deviceset="+18V" device=""/>
-<part name="J5" library="rocketnet-connector" deviceset="ROCKETNET-CONNECTOR-16" device="M"/>
 <part name="J1" library="rocketnet-connector" deviceset="ROCKETNET-CONNECTOR-16" device="M"/>
 <part name="J2" library="rocketnet-connector" deviceset="ROCKETNET-CONNECTOR-16" device="M"/>
 <part name="J3" library="rocketnet-connector" deviceset="ROCKETNET-CONNECTOR-16" device="M"/>
@@ -18613,6 +18759,7 @@ by exp-project-lbr.ulp</description>
 <part name="U$16" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
 <part name="U$17" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
 <part name="U$18" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
+<part name="J10" library="rocketnet-connector" deviceset="ROCKETNET-UMBILICAL-12" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24021,7 +24168,6 @@ by exp-project-lbr.ulp</description>
 <instance part="TP41" gate="G$1" x="43.18" y="45.72" rot="R270"/>
 <instance part="TP42" gate="G$1" x="50.8" y="43.18" rot="R270"/>
 <instance part="R129" gate="G$1" x="25.4" y="86.36" rot="R90"/>
-<instance part="GND50" gate="1" x="162.56" y="27.94"/>
 <instance part="R100" gate="G$1" x="88.9" y="86.36" rot="R270"/>
 <instance part="R101" gate="G$1" x="96.52" y="86.36" rot="R270"/>
 <instance part="R102" gate="G$1" x="104.14" y="86.36" rot="R270"/>
@@ -24032,7 +24178,7 @@ by exp-project-lbr.ulp</description>
 <instance part="FRAME5" gate="G$1" x="180.34" y="7.62"/>
 <instance part="C56" gate="G$1" x="139.7" y="63.5" rot="MR90"/>
 <instance part="C59" gate="G$1" x="149.86" y="58.42" rot="MR90"/>
-<instance part="J5" gate="G$1" x="170.18" y="63.5" rot="MR0"/>
+<instance part="J10" gate="G$1" x="170.18" y="63.5" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -24043,22 +24189,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="17.78" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="40.64" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND81" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="165.1" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="45.72" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="43.18" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
-<junction x="162.56" y="43.18"/>
-<pinref part="GND50" gate="1" pin="GND"/>
-<wire x1="162.56" y1="38.1" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="35.56" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
-<junction x="162.56" y="38.1"/>
-<wire x1="162.56" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
-<junction x="162.56" y="35.56"/>
-<pinref part="J5" gate="G$1" pin="B-@1"/>
-<pinref part="J5" gate="G$1" pin="B-@2"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -24130,8 +24260,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="162.56" y1="50.8" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
 <junction x="162.56" y="48.26"/>
 <label x="81.28" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="AUX3"/>
-<pinref part="J5" gate="G$1" pin="AUX4"/>
+<pinref part="J10" gate="G$1" pin="AUX1"/>
+<pinref part="J10" gate="G$1" pin="AUX2"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
@@ -24197,8 +24327,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="162.56" y1="55.88" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <junction x="162.56" y="53.34"/>
 <label x="81.28" y="53.34" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="AUX1"/>
-<pinref part="J5" gate="G$1" pin="AUX2"/>
+<pinref part="J10" gate="G$1" pin="RR@1"/>
+<pinref part="J10" gate="G$1" pin="RR@2"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -24229,8 +24359,8 @@ by exp-project-lbr.ulp</description>
 <junction x="162.56" y="73.66"/>
 <wire x1="162.56" y1="76.2" x2="162.56" y2="73.66" width="0.2032" layer="91"/>
 <wire x1="165.1" y1="76.2" x2="162.56" y2="76.2" width="0.2032" layer="91"/>
-<pinref part="J5" gate="G$1" pin="TX+@1"/>
-<pinref part="J5" gate="G$1" pin="TX+@2"/>
+<pinref part="J10" gate="G$1" pin="TX+@1"/>
+<pinref part="J10" gate="G$1" pin="TX+@2"/>
 </segment>
 </net>
 <net name="N$79" class="0">
@@ -24241,20 +24371,8 @@ by exp-project-lbr.ulp</description>
 <junction x="162.56" y="68.58"/>
 <wire x1="162.56" y1="71.12" x2="162.56" y2="68.58" width="0.2032" layer="91"/>
 <wire x1="165.1" y1="71.12" x2="162.56" y2="71.12" width="0.2032" layer="91"/>
-<pinref part="J5" gate="G$1" pin="TX-@1"/>
-<pinref part="J5" gate="G$1" pin="TX-@2"/>
-</segment>
-</net>
-<net name="VIN" class="1">
-<segment>
-<wire x1="81.28" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="78.74" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
-<junction x="162.56" y="78.74"/>
-<wire x1="162.56" y1="81.28" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
-<label x="81.28" y="78.74" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="J5" gate="G$1" pin="B+@1"/>
-<pinref part="J5" gate="G$1" pin="B+@2"/>
+<pinref part="J10" gate="G$1" pin="TX-@1"/>
+<pinref part="J10" gate="G$1" pin="TX-@2"/>
 </segment>
 </net>
 <net name="TX5_P" class="0">
@@ -24311,8 +24429,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="162.56" y1="60.96" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="58.42" x2="152.4" y2="58.42" width="0.2032" layer="91"/>
 <pinref part="C59" gate="G$1" pin="1"/>
-<pinref part="J5" gate="G$1" pin="RX-@1"/>
-<pinref part="J5" gate="G$1" pin="RX-@2"/>
+<pinref part="J10" gate="G$1" pin="RX-@1"/>
+<pinref part="J10" gate="G$1" pin="RX-@2"/>
 </segment>
 </net>
 <net name="N$141" class="0">
@@ -24323,8 +24441,8 @@ by exp-project-lbr.ulp</description>
 <pinref part="C56" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <junction x="162.56" y="63.5"/>
-<pinref part="J5" gate="G$1" pin="RX+@1"/>
-<pinref part="J5" gate="G$1" pin="RX+@2"/>
+<pinref part="J10" gate="G$1" pin="RX+@1"/>
+<pinref part="J10" gate="G$1" pin="RX+@2"/>
 </segment>
 </net>
 </nets>
