@@ -18651,11 +18651,11 @@ by exp-project-lbr.ulp</description>
 <part name="R118" library="rcl" deviceset="R-US_" device="R0402" value="10"/>
 <part name="R119" library="rcl" deviceset="R-US_" device="R0402" value="10"/>
 <part name="R120" library="rcl" deviceset="R-US_" device="R0402" value="10"/>
-<part name="FRAME1" library="frames" deviceset="DOCFIELD" device=""/>
-<part name="FRAME2" library="frames" deviceset="DOCFIELD" device=""/>
-<part name="FRAME3" library="frames" deviceset="DOCFIELD" device=""/>
-<part name="FRAME4" library="frames" deviceset="DOCFIELD" device=""/>
-<part name="FRAME5" library="frames" deviceset="DOCFIELD" device=""/>
+<part name="FRAME1" library="frames" deviceset="DOCFIELD" device="" value="MCU"/>
+<part name="FRAME2" library="frames" deviceset="DOCFIELD" device="" value="NodeConnections"/>
+<part name="FRAME3" library="frames" deviceset="DOCFIELD" device="" value="PowerSupplies"/>
+<part name="FRAME4" library="frames" deviceset="DOCFIELD" device="" value="EthernetSwitch"/>
+<part name="FRAME5" library="frames" deviceset="DOCFIELD" device="" value="OffRocketConnections"/>
 <part name="R130" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
 <part name="R131" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
@@ -18676,7 +18676,7 @@ by exp-project-lbr.ulp</description>
 <part name="C55" library="rcl" deviceset="C-EU" device="C0402"/>
 <part name="C56" library="rcl" deviceset="C-EU" device="C0402"/>
 <part name="C59" library="rcl" deviceset="C-EU" device="C0402"/>
-<part name="FRAME6" library="frames" deviceset="FRAME_B_L" device="" value="BATTCHARGER"/>
+<part name="FRAME6" library="frames" deviceset="FRAME_B_L" device="" value="BatteryCharger"/>
 <part name="U2" library="RNH_BQ24725" deviceset="BQ24725" device="QFN-20"/>
 <part name="C60" library="rcl_custom" deviceset="C-EU" device="C1210" value="2.2uF"/>
 <part name="R11" library="rcl_custom" deviceset="R-US_" device="1206-B" value="2"/>
@@ -24448,6 +24448,7 @@ by exp-project-lbr.ulp</description>
 </nets>
 </sheet>
 <sheet>
+<description>Battery Charger</description>
 <plain>
 <text x="122.936" y="-80.264" size="2.54" layer="97">PSAS Rocketnet Hub
 Battery Charger Schematic</text>
