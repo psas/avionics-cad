@@ -18907,6 +18907,7 @@ by exp-project-lbr.ulp</description>
 <part name="+3V34" library="supply1" deviceset="+3V3" device=""/>
 <part name="J11" library="headers" deviceset="1.27MM_HDR_2X5" device=""/>
 <part name="J9" library="rocketnet-connector" deviceset="ROCKETNET-BATTERY-14" device=""/>
+<part name="GND50" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24315,7 +24316,7 @@ by exp-project-lbr.ulp</description>
 <plain>
 <text x="-5.08" y="106.68" size="5.08" layer="97">Debug Header</text>
 <text x="66.04" y="106.68" size="5.08" layer="97">Launch Tower Connection</text>
-<text x="-114.3" y="109.22" size="5.08" layer="97">Battery Connector</text>
+<text x="-101.6" y="106.68" size="5.08" layer="97">Battery Connector</text>
 </plain>
 <instances>
 <instance part="+3V36" gate="G$1" x="5.08" y="86.36"/>
@@ -24334,7 +24335,8 @@ by exp-project-lbr.ulp</description>
 <instance part="C59" gate="G$1" x="149.86" y="58.42" rot="MR90"/>
 <instance part="J10" gate="G$1" x="170.18" y="63.5" rot="MR0"/>
 <instance part="J11" gate="J" x="25.4" y="60.96"/>
-<instance part="J9" gate="G$1" x="-114.3" y="71.12"/>
+<instance part="J9" gate="G$1" x="-73.66" y="71.12"/>
+<instance part="GND50" gate="1" x="-68.58" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -24348,6 +24350,26 @@ by exp-project-lbr.ulp</description>
 <wire x1="20.32" y1="63.5" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
 <junction x="20.32" y="63.5"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="!PRSNT@2"/>
+<pinref part="J9" gate="G$1" pin="B-@1"/>
+<wire x1="-68.58" y1="66.04" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G$1" pin="B-@2"/>
+<wire x1="-68.58" y1="60.96" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-68.58" y="63.5"/>
+<pinref part="J9" gate="G$1" pin="B-@3"/>
+<wire x1="-68.58" y1="60.96" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-68.58" y="60.96"/>
+<pinref part="J9" gate="G$1" pin="B-@4"/>
+<wire x1="-68.58" y1="58.42" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-68.58" y="58.42"/>
+<wire x1="-68.58" y1="55.88" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-68.58" y="55.88"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+<pinref part="J9" gate="G$1" pin="!PRSNT@1"/>
+<wire x1="-68.58" y1="68.58" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-68.58" y="66.04"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -24541,6 +24563,42 @@ by exp-project-lbr.ulp</description>
 <pinref part="TP40" gate="G$1" pin="TP"/>
 <pinref part="J11" gate="J" pin="9"/>
 <wire x1="5.08" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="SMCLK@1"/>
+<pinref part="J9" gate="G$1" pin="SMCLK@2"/>
+<wire x1="-68.58" y1="78.74" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="78.74" x2="-60.96" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-68.58" y="78.74"/>
+<label x="-60.96" y="78.74" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="SMDAT@1"/>
+<pinref part="J9" gate="G$1" pin="SMDAT@2"/>
+<wire x1="-68.58" y1="73.66" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="73.66" x2="-60.96" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-68.58" y="73.66"/>
+<label x="-60.96" y="73.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="BAT" class="0">
+<segment>
+<pinref part="J9" gate="G$1" pin="B+@4"/>
+<pinref part="J9" gate="G$1" pin="B+@3"/>
+<wire x1="-68.58" y1="81.28" x2="-68.58" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G$1" pin="B+@2"/>
+<wire x1="-68.58" y1="83.82" x2="-68.58" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-68.58" y="83.82"/>
+<pinref part="J9" gate="G$1" pin="B+@1"/>
+<wire x1="-68.58" y1="86.36" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-68.58" y="86.36"/>
+<wire x1="-68.58" y1="88.9" x2="-68.58" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-68.58" y="88.9"/>
+<label x="-68.58" y="91.44" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
