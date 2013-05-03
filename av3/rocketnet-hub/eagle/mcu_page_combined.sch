@@ -18311,13 +18311,13 @@ by exp-project-lbr.ulp</description>
 </deviceset>
 <deviceset name="1.27MM_HDR_2X1" prefix="J">
 <gates>
-<gate name="G$1" symbol="1.27MM_2X1" x="2.54" y="-2.54"/>
+<gate name="J" symbol="1.27MM_2X1" x="2.54" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="1.27MM_2X1">
+<device name="2X1" package="1.27MM_2X1">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="J" pin="1" pad="P$1"/>
+<connect gate="J" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18903,11 +18903,17 @@ by exp-project-lbr.ulp</description>
 <part name="U$17" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
 <part name="U$18" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
 <part name="J10" library="rocketnet-connector" deviceset="ROCKETNET-UMBILICAL-12" device=""/>
-<part name="J5" library="headers" deviceset="1.27MM_HDR_2X1" device=""/>
+<part name="J5" library="headers" deviceset="1.27MM_HDR_2X1" device="2X1"/>
 <part name="+3V34" library="supply1" deviceset="+3V3" device=""/>
 <part name="J11" library="headers" deviceset="1.27MM_HDR_2X5" device=""/>
 <part name="J9" library="rocketnet-connector" deviceset="ROCKETNET-BATTERY-14" device=""/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
+<part name="R148" library="rcl" deviceset="R-US_" device="R0402" value="0"/>
+<part name="R147" library="rcl" deviceset="R-US_" device="R0402" value="0"/>
+<part name="J12" library="headers" deviceset="1.27MM_HDR_2X1" device="2X1"/>
+<part name="+3V35" library="supply1" deviceset="+3V3" device=""/>
+<part name="R150" library="rcl" deviceset="R-US_" device="R0402" value="10k"/>
+<part name="GND98" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18946,10 +18952,10 @@ by exp-project-lbr.ulp</description>
 <instance part="E5" gate="E" x="63.5" y="325.12"/>
 <instance part="C86" gate="G$1" x="99.06" y="314.96"/>
 <instance part="GND17" gate="1" x="99.06" y="297.18"/>
-<instance part="R15" gate="G$1" x="15.24" y="370.84" rot="R270"/>
-<instance part="R17" gate="G$1" x="7.62" y="370.84" rot="R270"/>
-<instance part="+3V6" gate="G$1" x="7.62" y="381"/>
-<instance part="+3V17" gate="G$1" x="15.24" y="381"/>
+<instance part="R15" gate="G$1" x="-5.08" y="370.84" rot="R270"/>
+<instance part="R17" gate="G$1" x="-12.7" y="370.84" rot="R270"/>
+<instance part="+3V6" gate="G$1" x="-12.7" y="381"/>
+<instance part="+3V17" gate="G$1" x="-5.08" y="381"/>
 <instance part="Q1" gate="G$1" x="63.5" y="462.28" rot="R270"/>
 <instance part="C106" gate="G$1" x="55.88" y="467.36" rot="R90"/>
 <instance part="C107" gate="G$1" x="55.88" y="457.2" rot="R90"/>
@@ -18963,8 +18969,12 @@ by exp-project-lbr.ulp</description>
 <instance part="GND39" gate="1" x="20.32" y="378.46"/>
 <instance part="GND43" gate="1" x="20.32" y="332.74"/>
 <instance part="FRAME1" gate="G$1" x="182.88" y="289.56"/>
-<instance part="J5" gate="G$1" x="-7.62" y="444.5" rot="R180"/>
+<instance part="J5" gate="J" x="-7.62" y="444.5" rot="R180"/>
 <instance part="+3V34" gate="G$1" x="-5.08" y="452.12"/>
+<instance part="J12" gate="J" x="-22.86" y="424.18" rot="R180"/>
+<instance part="+3V35" gate="G$1" x="-20.32" y="431.8"/>
+<instance part="R150" gate="G$1" x="-2.54" y="414.02" rot="R270"/>
+<instance part="GND98" gate="1" x="-2.54" y="406.4"/>
 </instances>
 <busses>
 </busses>
@@ -19073,6 +19083,10 @@ by exp-project-lbr.ulp</description>
 <pinref part="GND43" gate="1" pin="GND"/>
 <wire x1="20.32" y1="337.82" x2="20.32" y2="335.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R150" gate="G$1" pin="2"/>
+<pinref part="GND98" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="1">
 <segment>
@@ -19140,18 +19154,23 @@ by exp-project-lbr.ulp</description>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="375.92" x2="7.62" y2="378.46" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="375.92" x2="-12.7" y2="378.46" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="375.92" x2="15.24" y2="378.46" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="375.92" x2="-5.08" y2="378.46" width="0.1524" layer="91"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="2"/>
+<pinref part="J5" gate="J" pin="2"/>
 <pinref part="+3V34" gate="G$1" pin="+3V3"/>
 <wire x1="-5.08" y1="441.96" x2="-5.08" y2="449.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J12" gate="J" pin="2"/>
+<pinref part="+3V35" gate="G$1" pin="+3V3"/>
+<wire x1="-20.32" y1="421.64" x2="-20.32" y2="429.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="JTAG_TMS" class="0">
@@ -19192,23 +19211,23 @@ by exp-project-lbr.ulp</description>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB6"/>
-<wire x1="2.54" y1="363.22" x2="7.62" y2="363.22" width="0.1524" layer="91"/>
-<label x="2.54" y="363.22" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-17.78" y1="363.22" x2="-12.7" y2="363.22" width="0.1524" layer="91"/>
+<label x="-17.78" y="363.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="363.22" x2="43.18" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="365.76" x2="7.62" y2="363.22" width="0.1524" layer="91"/>
-<junction x="7.62" y="363.22"/>
+<wire x1="-12.7" y1="363.22" x2="43.18" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="365.76" x2="-12.7" y2="363.22" width="0.1524" layer="91"/>
+<junction x="-12.7" y="363.22"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB7"/>
-<wire x1="2.54" y1="360.68" x2="15.24" y2="360.68" width="0.1524" layer="91"/>
-<label x="2.54" y="360.68" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="-17.78" y1="360.68" x2="-5.08" y2="360.68" width="0.1524" layer="91"/>
+<label x="-17.78" y="360.68" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="360.68" x2="43.18" y2="360.68" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="365.76" x2="15.24" y2="360.68" width="0.1524" layer="91"/>
-<junction x="15.24" y="360.68"/>
+<wire x1="-5.08" y1="360.68" x2="43.18" y2="360.68" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="365.76" x2="-5.08" y2="360.68" width="0.1524" layer="91"/>
+<junction x="-5.08" y="360.68"/>
 </segment>
 </net>
 <net name="MCOL" class="0">
@@ -19614,7 +19633,7 @@ by exp-project-lbr.ulp</description>
 <label x="15.24" y="434.34" size="1.016" layer="95" rot="R270" xref="yes"/>
 <pinref part="R64" gate="G$1" pin="1"/>
 <junction x="27.94" y="439.42"/>
-<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="J5" gate="J" pin="1"/>
 <wire x1="27.94" y1="439.42" x2="15.24" y2="439.42" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="439.42" x2="-5.08" y2="439.42" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="434.34" x2="15.24" y2="439.42" width="0.1524" layer="91"/>
@@ -19634,6 +19653,18 @@ by exp-project-lbr.ulp</description>
 <pinref part="U1" gate="G$1" pin="PA2"/>
 <wire x1="43.18" y1="416.56" x2="38.1" y2="416.56" width="0.1524" layer="91"/>
 <label x="38.1" y="416.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BOOT1" class="0">
+<segment>
+<pinref part="J12" gate="J" pin="1"/>
+<wire x1="0" y1="419.1" x2="-2.54" y2="419.1" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<wire x1="-2.54" y1="419.1" x2="-20.32" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="373.38" x2="10.16" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="373.38" x2="10.16" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="419.1" x2="0" y2="419.1" width="0.1524" layer="91"/>
+<label x="10.16" y="419.1" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -24337,6 +24368,8 @@ by exp-project-lbr.ulp</description>
 <instance part="J11" gate="J" x="25.4" y="60.96"/>
 <instance part="J9" gate="G$1" x="-73.66" y="71.12"/>
 <instance part="GND50" gate="1" x="-68.58" y="48.26"/>
+<instance part="R148" gate="G$1" x="40.64" y="55.88"/>
+<instance part="R147" gate="G$1" x="40.64" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -24409,9 +24442,14 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="RST_N" class="0">
 <segment>
-<wire x1="27.94" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<label x="40.64" y="55.88" size="1.016" layer="95" rot="MR180" xref="yes"/>
+<wire x1="27.94" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J11" gate="J" pin="10"/>
+<pinref part="R148" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<junction x="33.02" y="55.88"/>
+<pinref part="R147" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
@@ -24422,6 +24460,11 @@ by exp-project-lbr.ulp</description>
 <label x="81.28" y="48.26" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="J10" gate="G$1" pin="AUX1"/>
 <pinref part="J10" gate="G$1" pin="AUX2"/>
+</segment>
+<segment>
+<pinref part="R148" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<label x="48.26" y="55.88" size="1.016" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
 <net name="ROCKET_RDY" class="0">
@@ -24599,6 +24642,12 @@ by exp-project-lbr.ulp</description>
 <wire x1="-68.58" y1="88.9" x2="-68.58" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-68.58" y="88.9"/>
 <label x="-68.58" y="91.44" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="JTAG_TRST" class="0">
+<segment>
+<wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<label x="48.26" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
