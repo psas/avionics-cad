@@ -5199,6 +5199,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packages>
 </packages>
 <symbols>
+<symbol name="GNDA">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.0922" y1="-0.508" x2="1.0922" y2="-0.508" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="GNDA" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -5230,6 +5236,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="GNDA" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GNDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -18841,7 +18860,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
-<part name="GND83" library="supply1" deviceset="GND" device=""/>
+<part name="NAME'" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND84" library="supply1" deviceset="GND" device=""/>
 <part name="R139" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100k"/>
 <part name="R140" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
@@ -18862,7 +18881,7 @@ by exp-project-lbr.ulp</description>
 <part name="Q4" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC-8"/>
 <part name="C114" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C115" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
-<part name="GND88" library="supply1" deviceset="GND" device=""/>
+<part name="GND88" library="supply1" deviceset="GNDA" device=""/>
 <part name="D4" library="diode" deviceset="BAT54" device=""/>
 <part name="C116" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.047uF"/>
 <part name="Q5" library="RNH_SIS412DN" deviceset="SIS412DN" device="SOP-8"/>
@@ -18872,11 +18891,11 @@ by exp-project-lbr.ulp</description>
 <part name="R146" library="rcl_custom" deviceset="R-US_" device="1206-B" value="10m"/>
 <part name="C117" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="C118" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND91" library="supply1" deviceset="GND" device=""/>
+<part name="GND91" library="supply1" deviceset="GNDA" device=""/>
 <part name="C119" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="C120" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND92" library="supply1" deviceset="GND" device=""/>
-<part name="GND93" library="supply1" deviceset="GND" device=""/>
+<part name="GND92" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND93" library="supply1" deviceset="GNDA" device=""/>
 <part name="D5" library="RNH_SMAJ18CA" deviceset="SMAJ18CA" device=""/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
@@ -18884,7 +18903,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND95" library="supply1" deviceset="GND" device=""/>
 <part name="C122" library="rcl_custom" deviceset="C-EU" device="0402-B" value="0.01uF"/>
 <part name="C123" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
-<part name="GND96" library="supply1" deviceset="GND" device=""/>
+<part name="GND96" library="supply1" deviceset="GNDA" device=""/>
 <part name="C124" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="C125" library="rcl_custom" deviceset="C-EU" device="1206-B" value="10uF"/>
 <part name="P+2" library="supply1" deviceset="+18V" device=""/>
@@ -24683,7 +24702,7 @@ Battery Charger Schematic</text>
 <instance part="GND10" gate="1" x="-15.24" y="38.1"/>
 <instance part="GND62" gate="1" x="-38.1" y="27.94"/>
 <instance part="GND82" gate="1" x="-88.9" y="66.04"/>
-<instance part="GND83" gate="1" x="-111.76" y="35.56"/>
+<instance part="NAME'" gate="1" x="-111.76" y="33.02"/>
 <instance part="GND84" gate="1" x="-104.14" y="-2.54"/>
 <instance part="R139" gate="R" x="-27.94" y="2.54" rot="R90"/>
 <instance part="R140" gate="R" x="-45.72" y="-10.16" rot="R90"/>
@@ -24704,13 +24723,13 @@ Battery Charger Schematic</text>
 <instance part="Q4" gate="&gt;NAME" x="86.36" y="27.94"/>
 <instance part="C114" gate="CE" x="76.2" y="20.32"/>
 <instance part="C115" gate="CE" x="27.94" y="17.78" rot="R90"/>
-<instance part="GND88" gate="1" x="35.56" y="17.78" rot="R90"/>
+<instance part="GND88" gate="1" x="38.1" y="17.78" rot="R90"/>
 <instance part="D4" gate="G$1" x="22.86" y="12.7" rot="R270"/>
 <instance part="C116" gate="CE" x="22.86" y="0"/>
 <instance part="Q5" gate="&gt;NAME" x="43.18" y="10.16"/>
 <instance part="Q7" gate="&gt;NAME" x="43.18" y="-10.16"/>
 <instance part="GND89" gate="1" x="48.26" y="-22.86"/>
-<instance part="GND90" gate="1" x="53.34" y="-43.18"/>
+<instance part="GND90" gate="1" x="53.34" y="-45.72"/>
 <instance part="R146" gate="R" x="86.36" y="-5.08"/>
 <instance part="C117" gate="CE" x="55.88" y="50.8"/>
 <instance part="C118" gate="CE" x="66.04" y="50.8"/>
@@ -24871,10 +24890,6 @@ Battery Charger Schematic</text>
 <pinref part="GND82" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C60" gate="CE" pin="2"/>
-<pinref part="GND83" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R138" gate="R" pin="1"/>
 <pinref part="GND84" gate="1" pin="GND"/>
 </segment>
@@ -24897,10 +24912,6 @@ Battery Charger Schematic</text>
 <pinref part="GND87" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C115" gate="CE" pin="2"/>
-<pinref part="GND88" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="Q7" gate="&gt;NAME" pin="S"/>
 <pinref part="GND89" gate="1" pin="GND"/>
 <wire x1="48.26" y1="-17.78" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
@@ -24911,26 +24922,7 @@ Battery Charger Schematic</text>
 <segment>
 <pinref part="C112" gate="CE" pin="2"/>
 <pinref part="GND90" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C118" gate="CE" pin="2"/>
-<pinref part="GND91" gate="1" pin="GND"/>
-<wire x1="66.04" y1="40.64" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C117" gate="CE" pin="2"/>
-<wire x1="66.04" y1="43.18" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="45.72" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
-<junction x="66.04" y="43.18"/>
-</segment>
-<segment>
-<pinref part="C119" gate="CE" pin="2"/>
-<pinref part="GND92" gate="1" pin="GND"/>
-<wire x1="104.14" y1="-15.24" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C120" gate="CE" pin="2"/>
-<pinref part="GND93" gate="1" pin="GND"/>
-<wire x1="116.84" y1="-15.24" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-43.18" x2="53.34" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D5" gate="G$1" pin="A"/>
@@ -24939,19 +24931,6 @@ Battery Charger Schematic</text>
 <segment>
 <pinref part="C121" gate="CE" pin="2"/>
 <pinref part="GND95" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND96" gate="1" pin="GND"/>
-<wire x1="2.54" y1="43.18" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C123" gate="CE" pin="2"/>
-<wire x1="2.54" y1="45.72" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="48.26" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
-<junction x="2.54" y="45.72"/>
-<wire x1="10.16" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C124" gate="CE" pin="2"/>
-<wire x1="10.16" y1="48.26" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="C125" gate="CE" pin="2"/>
 </segment>
 </net>
 <net name="IOUT" class="0">
@@ -25231,6 +25210,51 @@ Battery Charger Schematic</text>
 <pinref part="P+2" gate="1" pin="+18V"/>
 <wire x1="35.56" y1="63.5" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <junction x="35.56" y="58.42"/>
+</segment>
+</net>
+<net name="GNDA" class="1">
+<segment>
+<pinref part="C60" gate="CE" pin="2"/>
+<pinref part="NAME'" gate="1" pin="GNDA"/>
+<wire x1="-111.76" y1="35.56" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND96" gate="1" pin="GNDA"/>
+<wire x1="2.54" y1="43.18" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C123" gate="CE" pin="2"/>
+<wire x1="2.54" y1="45.72" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="48.26" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<junction x="2.54" y="45.72"/>
+<wire x1="10.16" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C124" gate="CE" pin="2"/>
+<wire x1="10.16" y1="48.26" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C125" gate="CE" pin="2"/>
+</segment>
+<segment>
+<pinref part="C119" gate="CE" pin="2"/>
+<pinref part="GND92" gate="1" pin="GNDA"/>
+<wire x1="104.14" y1="-15.24" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C120" gate="CE" pin="2"/>
+<pinref part="GND93" gate="1" pin="GNDA"/>
+<wire x1="116.84" y1="-15.24" x2="116.84" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C115" gate="CE" pin="2"/>
+<pinref part="GND88" gate="1" pin="GNDA"/>
+<wire x1="35.56" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C118" gate="CE" pin="2"/>
+<pinref part="GND91" gate="1" pin="GNDA"/>
+<wire x1="66.04" y1="40.64" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C117" gate="CE" pin="2"/>
+<wire x1="66.04" y1="43.18" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="45.72" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="43.18" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
+<junction x="66.04" y="43.18"/>
 </segment>
 </net>
 </nets>
