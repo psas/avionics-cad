@@ -19684,6 +19684,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="10.16" y1="373.38" x2="10.16" y2="419.1" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="419.1" x2="0" y2="419.1" width="0.1524" layer="91"/>
 <label x="10.16" y="419.1" size="1.016" layer="95" xref="yes"/>
+<pinref part="R150" gate="G$1" pin="1"/>
+<junction x="-2.54" y="419.1"/>
 </segment>
 </net>
 </nets>
@@ -20279,7 +20281,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="GND76" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="NODE1_VOUT" class="0">
+<net name="NODE1_VOUT" class="1">
 <segment>
 <wire x1="78.74" y1="388.62" x2="81.28" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="388.62" x2="81.28" y2="383.54" width="0.1524" layer="91"/>
@@ -20328,7 +20330,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$10" gate="G$1" pin="P$4"/>
 </segment>
 </net>
-<net name="NODE2_VOUT" class="0">
+<net name="NODE2_VOUT" class="1">
 <segment>
 <wire x1="78.74" y1="256.54" x2="81.28" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="256.54" x2="81.28" y2="251.46" width="0.1524" layer="91"/>
@@ -20382,7 +20384,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$12" gate="G$1" pin="P$4"/>
 </segment>
 </net>
-<net name="NODE3_VOUT" class="0">
+<net name="NODE3_VOUT" class="1">
 <segment>
 <wire x1="78.74" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="144.78" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
@@ -20488,7 +20490,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$15" gate="G$1" pin="P$4"/>
 </segment>
 </net>
-<net name="NODE8_VOUT" class="0">
+<net name="NODE8_VOUT" class="1">
 <segment>
 <wire x1="345.44" y1="386.08" x2="347.98" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="386.08" x2="347.98" y2="381" width="0.1524" layer="91"/>
@@ -20540,7 +20542,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$16" gate="G$1" pin="P$4"/>
 </segment>
 </net>
-<net name="NODE6_VOUT" class="0">
+<net name="NODE6_VOUT" class="1">
 <segment>
 <wire x1="345.44" y1="274.32" x2="347.98" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="274.32" x2="347.98" y2="269.24" width="0.1524" layer="91"/>
@@ -20592,7 +20594,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="U$17" gate="G$1" pin="P$4"/>
 </segment>
 </net>
-<net name="NODE7_VOUT" class="0">
+<net name="NODE7_VOUT" class="1">
 <segment>
 <wire x1="347.98" y1="157.48" x2="350.52" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="157.48" x2="350.52" y2="152.4" width="0.1524" layer="91"/>
@@ -21763,7 +21765,7 @@ by exp-project-lbr.ulp</description>
 <label x="287.02" y="205.74" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="R75" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="414.02" x2="114.3" y2="416.56" width="0.1524" layer="91"/>
@@ -22666,7 +22668,7 @@ by exp-project-lbr.ulp</description>
 <wire x1="-20.32" y1="-7.62" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="OUT"/>
 <wire x1="104.14" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
@@ -23811,7 +23813,7 @@ by exp-project-lbr.ulp</description>
 <wire x1="187.96" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 <wire x1="187.96" y1="271.78" x2="187.96" y2="269.24" width="0.1524" layer="91"/>
@@ -24103,7 +24105,7 @@ by exp-project-lbr.ulp</description>
 <wire x1="22.86" y1="180.34" x2="20.32" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDDIO_IN" class="0">
+<net name="VDDIO_IN" class="1">
 <segment>
 <pinref part="U$14" gate="G$1" pin="VDD-IO2"/>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -24461,14 +24463,14 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="RST_N" class="0">
 <segment>
-<wire x1="27.94" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="J11" gate="J" pin="10"/>
-<pinref part="R148" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="55.88" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<junction x="33.02" y="55.88"/>
 <pinref part="R147" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="J11" gate="J" pin="10"/>
+<wire x1="33.02" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R148" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<junction x="33.02" y="55.88"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
@@ -24498,7 +24500,7 @@ by exp-project-lbr.ulp</description>
 <pinref part="J10" gate="G$1" pin="RR@2"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="1">
 <segment>
 <pinref part="R100" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="91.44" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
@@ -24647,7 +24649,7 @@ by exp-project-lbr.ulp</description>
 <label x="-60.96" y="73.66" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BAT" class="0">
+<net name="BAT" class="1">
 <segment>
 <pinref part="J9" gate="G$1" pin="B+@4"/>
 <pinref part="J9" gate="G$1" pin="B+@3"/>
@@ -24665,8 +24667,9 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="JTAG_TRST" class="0">
 <segment>
-<wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
 <label x="48.26" y="48.26" size="1.016" layer="95" xref="yes"/>
+<pinref part="R147" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25004,7 +25007,7 @@ Battery Charger Schematic</text>
 <wire x1="17.78" y1="-33.02" x2="22.86" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BAT" class="0">
+<net name="BAT" class="1">
 <segment>
 <pinref part="R143" gate="R" pin="2"/>
 <pinref part="C111" gate="CE" pin="2"/>
@@ -25260,6 +25263,105 @@ Battery Charger Schematic</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,4,91.44,12.7,U$14,GND1,GND,,,"/>
+<approved hash="104,4,93.98,12.7,U$14,GND2,GND,,,"/>
+<approved hash="104,4,96.52,12.7,U$14,GND3,GND,,,"/>
+<approved hash="104,4,99.06,12.7,U$14,GND4,GND,,,"/>
+<approved hash="104,4,101.6,12.7,U$14,GND5,GND,,,"/>
+<approved hash="104,4,104.14,12.7,U$14,GND6,GND,,,"/>
+<approved hash="104,4,106.68,12.7,U$14,GND_PLLTX,GND,,,"/>
+<approved hash="104,4,109.22,12.7,U$14,GND_RCV,GND,,,"/>
+<approved hash="104,4,111.76,12.7,U$14,GND_RCV1,GND,,,"/>
+<approved hash="104,4,114.3,12.7,U$14,GND_RCV2,GND,,,"/>
+<approved hash="104,4,116.84,12.7,U$14,GND_RCV3,GND,,,"/>
+<approved hash="104,4,119.38,12.7,U$14,GND_RCV4,GND,,,"/>
+<approved hash="104,4,121.92,12.7,U$14,GND_RCV5,GND,,,"/>
+<approved hash="104,4,124.46,12.7,U$14,GND_RCV6,GND,,,"/>
+<approved hash="104,4,127,12.7,U$14,GND_RX,GND,,,"/>
+<approved hash="104,4,129.54,12.7,U$14,GND_RX1,GND,,,"/>
+<approved hash="104,4,132.08,12.7,U$14,GND_RX2,GND,,,"/>
+<approved hash="104,4,134.62,12.7,U$14,GND_RX3,GND,,,"/>
+<approved hash="104,4,137.16,12.7,U$14,GND_RX4,GND,,,"/>
+<approved hash="104,4,139.7,12.7,U$14,GND_RX5,GND,,,"/>
+<approved hash="104,4,142.24,12.7,U$14,GND_RX6,GND,,,"/>
+<approved hash="104,4,144.78,12.7,U$14,GND_RX7,GND,,,"/>
+<approved hash="104,4,147.32,12.7,U$14,GND_TX,GND,,,"/>
+<approved hash="104,4,149.86,12.7,U$14,GND_TX1,GND,,,"/>
+<approved hash="104,4,152.4,12.7,U$14,GND_TX2,GND,,,"/>
+<approved hash="104,4,154.94,12.7,U$14,GND_TX3,GND,,,"/>
+<approved hash="104,4,157.48,12.7,U$14,GND_TX4,GND,,,"/>
+<approved hash="104,4,160.02,12.7,U$14,GND_TX5,GND,,,"/>
+<approved hash="104,4,162.56,12.7,U$14,GND_TX6,GND,,,"/>
+<approved hash="104,4,165.1,12.7,U$14,GND_TX7,GND,,,"/>
+<approved hash="104,4,167.64,12.7,U$14,GND-ISO,GND,,,"/>
+<approved hash="104,4,170.18,12.7,U$14,GND-ISO1,GND,,,"/>
+<approved hash="104,4,172.72,12.7,U$14,GND-ISO2,GND,,,"/>
+<approved hash="104,4,175.26,12.7,U$14,GND-ISO3,GND,,,"/>
+<approved hash="104,4,177.8,12.7,U$14,GND-ISO4,GND,,,"/>
+<approved hash="104,4,170.18,238.76,U$14,VDD1,VDD,,,"/>
+<approved hash="104,4,167.64,238.76,U$14,VDD2,VDD,,,"/>
+<approved hash="104,4,165.1,238.76,U$14,VDD3,VDD,,,"/>
+<approved hash="104,4,162.56,238.76,U$14,VDD_PLL,VDD,,,"/>
+<approved hash="104,4,160.02,238.76,U$14,VDD_RCV,VDD,,,"/>
+<approved hash="104,4,157.48,238.76,U$14,VDD_RCV1,VDD,,,"/>
+<approved hash="104,4,154.94,238.76,U$14,VDD_RCV2,VDD,,,"/>
+<approved hash="104,4,152.4,238.76,U$14,VDD_RCV3,VDD,,,"/>
+<approved hash="104,4,149.86,238.76,U$14,VDD_RCV4,VDD,,,"/>
+<approved hash="104,4,147.32,238.76,U$14,VDD_RCV5,VDD,,,"/>
+<approved hash="104,4,144.78,238.76,U$14,VDD_RCV6,VDD,,,"/>
+<approved hash="104,4,142.24,238.76,U$14,VDD_RCV7,VDD,,,"/>
+<approved hash="104,4,139.7,238.76,U$14,VDD_RX,VDD,,,"/>
+<approved hash="104,4,137.16,238.76,U$14,VDD_RX1,VDD,,,"/>
+<approved hash="104,4,134.62,238.76,U$14,VDD_RX2,VDD,,,"/>
+<approved hash="104,4,132.08,238.76,U$14,VDD_RX3,VDD,,,"/>
+<approved hash="104,4,129.54,238.76,U$14,VDD_RX4,VDD,,,"/>
+<approved hash="104,4,127,238.76,U$14,VDD_RX5,VDD,,,"/>
+<approved hash="104,4,124.46,238.76,U$14,VDD_RX6,VDD,,,"/>
+<approved hash="104,4,121.92,238.76,U$14,VDD_RX7,VDD,,,"/>
+<approved hash="104,4,119.38,238.76,U$14,VDD_TX,VDD,,,"/>
+<approved hash="104,4,116.84,238.76,U$14,VDD_TX1,VDD,,,"/>
+<approved hash="104,4,114.3,238.76,U$14,VDD_TX2,VDD,,,"/>
+<approved hash="104,4,111.76,238.76,U$14,VDD_TX3,VDD,,,"/>
+<approved hash="104,4,109.22,238.76,U$14,VDD_TX4,VDD,,,"/>
+<approved hash="104,4,106.68,238.76,U$14,VDD_TX5,VDD,,,"/>
+<approved hash="104,4,104.14,238.76,U$14,VDD_TX6,VDD,,,"/>
+<approved hash="104,4,101.6,238.76,U$14,VDD_TX7,VDD,,,"/>
+<approved hash="104,4,99.06,238.76,U$14,VDD-IO,VDDIO_IN,,,"/>
+<approved hash="104,4,96.52,238.76,U$14,VDD-IO1,VDDIO_IN,,,"/>
+<approved hash="104,4,93.98,238.76,U$14,VDD-IO2,VDDIO_IN,,,"/>
+<approved hash="104,6,17.78,33.02,U2,VCC,+18V,,,"/>
+<approved hash="104,2,177.8,403.86,J1,B+,NODE1_VOUT,,,"/>
+<approved hash="104,2,177.8,401.32,J1,B+,NODE1_VOUT,,,"/>
+<approved hash="104,2,177.8,368.3,J1,B-,GND,,,"/>
+<approved hash="104,2,177.8,365.76,J1,B-,GND,,,"/>
+<approved hash="104,2,175.26,271.78,J2,B+,NODE2_VOUT,,,"/>
+<approved hash="104,2,175.26,269.24,J2,B+,NODE2_VOUT,,,"/>
+<approved hash="104,2,175.26,236.22,J2,B-,GND,,,"/>
+<approved hash="104,2,175.26,233.68,J2,B-,GND,,,"/>
+<approved hash="104,2,175.26,160.02,J3,B+,NODE3_VOUT,,,"/>
+<approved hash="104,2,175.26,157.48,J3,B+,NODE3_VOUT,,,"/>
+<approved hash="104,2,175.26,124.46,J3,B-,GND,,,"/>
+<approved hash="104,2,175.26,121.92,J3,B-,GND,,,"/>
+<approved hash="104,2,177.8,38.1,J4,B+,NODE4_VOUT,,,"/>
+<approved hash="104,2,177.8,35.56,J4,B+,NODE4_VOUT,,,"/>
+<approved hash="104,2,177.8,2.54,J4,B-,GND,,,"/>
+<approved hash="104,2,177.8,0,J4,B-,GND,,,"/>
+<approved hash="104,2,447.04,401.32,J8,B+,NODE8_VOUT,,,"/>
+<approved hash="104,2,447.04,398.78,J8,B+,NODE8_VOUT,,,"/>
+<approved hash="104,2,447.04,365.76,J8,B-,GND,,,"/>
+<approved hash="104,2,447.04,363.22,J8,B-,GND,,,"/>
+<approved hash="104,2,449.58,289.56,J6,B+,NODE6_VOUT,,,"/>
+<approved hash="104,2,449.58,287.02,J6,B+,NODE6_VOUT,,,"/>
+<approved hash="104,2,449.58,254,J6,B-,GND,,,"/>
+<approved hash="104,2,449.58,251.46,J6,B-,GND,,,"/>
+<approved hash="104,2,444.5,172.72,J7,B+,NODE7_VOUT,,,"/>
+<approved hash="104,2,444.5,170.18,J7,B+,NODE7_VOUT,,,"/>
+<approved hash="104,2,444.5,137.16,J7,B-,GND,,,"/>
+<approved hash="104,2,444.5,134.62,J7,B-,GND,,,"/>
+<approved hash="104,5,-68.58,88.9,J9,B+,BAT,,,"/>
+<approved hash="104,5,-68.58,86.36,J9,B+,BAT,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -4696,6 +4696,8 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="JTAG_TRST">
 <contactref element="U1" pad="90"/>
+<contactref element="R147" pad="2"/>
+<wire x1="2.15" y1="-28.4" x2="46.081828125" y2="42.85175625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U$14" pad="93"/>
@@ -5453,7 +5455,7 @@ einem neuen Namen ab.</description>
 <contactref element="LED33" pad="C"/>
 <wire x1="31.703" y1="54.4426" x2="103.413" y2="53.4" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VDD">
+<signal name="VDD" class="1">
 <contactref element="U$2" pad="3"/>
 <contactref element="C84" pad="1"/>
 <contactref element="C85" pad="1"/>
@@ -5776,7 +5778,7 @@ einem neuen Namen ab.</description>
 <vertex x="92.763" y="51.5096"/>
 </polygon>
 </signal>
-<signal name="VDDIO_IN">
+<signal name="VDDIO_IN" class="1">
 <contactref element="U$14" pad="148"/>
 <contactref element="C13" pad="2"/>
 <contactref element="U$14" pad="105"/>
@@ -5919,7 +5921,7 @@ einem neuen Namen ab.</description>
 <wire x1="83.29" y1="22.7596" x2="82.913" y2="22.8" width="0" layer="19" extent="1-16"/>
 <wire x1="88.09" y1="8.77" x2="83.29" y2="22.7596" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="NODE1_VOUT">
+<signal name="NODE1_VOUT" class="1">
 <contactref element="U$3" pad="12"/>
 <contactref element="U$3" pad="11"/>
 <contactref element="U$3" pad="10"/>
@@ -5953,7 +5955,7 @@ einem neuen Namen ab.</description>
 <contactref element="U$10" pad="P$4"/>
 <wire x1="88.095" y1="72.395" x2="88.095" y2="75.08" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NODE2_VOUT">
+<signal name="NODE2_VOUT" class="1">
 <contactref element="U$4" pad="12"/>
 <contactref element="U$4" pad="11"/>
 <contactref element="U$4" pad="10"/>
@@ -5986,7 +5988,7 @@ einem neuen Namen ab.</description>
 <contactref element="U$12" pad="P$4"/>
 <wire x1="65.095" y1="72.395" x2="65.095" y2="75.08" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NODE3_VOUT">
+<signal name="NODE3_VOUT" class="1">
 <contactref element="U$5" pad="12"/>
 <contactref element="U$5" pad="11"/>
 <contactref element="U$5" pad="10"/>
@@ -6073,7 +6075,7 @@ einem neuen Namen ab.</description>
 <contactref element="U$16" pad="P$4"/>
 <wire x1="91.905" y1="1" x2="91.905" y2="3.685" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NODE6_VOUT">
+<signal name="NODE6_VOUT" class="1">
 <contactref element="U$8" pad="12"/>
 <contactref element="U$8" pad="11"/>
 <contactref element="U$8" pad="10"/>
@@ -6106,7 +6108,7 @@ einem neuen Namen ab.</description>
 <contactref element="U$17" pad="P$4"/>
 <wire x1="45.905" y1="1" x2="45.905" y2="3.685" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NODE7_VOUT">
+<signal name="NODE7_VOUT" class="1">
 <contactref element="U$9" pad="12"/>
 <contactref element="U$9" pad="11"/>
 <contactref element="U$9" pad="10"/>
@@ -6139,7 +6141,7 @@ einem neuen Namen ab.</description>
 <contactref element="U$18" pad="P$4"/>
 <wire x1="68.905" y1="1" x2="68.905" y2="3.685" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="NODE8_VOUT">
+<signal name="NODE8_VOUT" class="1">
 <polygon width="0.127" layer="16" thermals="no">
 <vertex x="83.6104" y="2.6742"/>
 <vertex x="86.6704" y="2.6042"/>
@@ -6719,10 +6721,10 @@ einem neuen Namen ab.</description>
 <contactref element="TP37" pad="TP"/>
 <contactref element="J10" pad="A1"/>
 <contactref element="J10" pad="A2"/>
-<contactref element="J11" pad="P$10"/>
-<contactref element="R148" pad="1"/>
 <contactref element="R148" pad="2"/>
 <contactref element="R147" pad="1"/>
+<contactref element="J11" pad="P$10"/>
+<contactref element="R148" pad="1"/>
 <wire x1="47.1424875" y1="32.28758125" x2="103.3148" y2="14.7464" width="0" layer="19" extent="1-16"/>
 <wire x1="46.2876" y1="31.4218" x2="47.1424875" y2="32.28758125" width="0" layer="19" extent="1-1"/>
 <wire x1="43.805" y1="53.77" x2="47.1424875" y2="32.28758125" width="0" layer="19" extent="1-1"/>
@@ -7183,7 +7185,7 @@ einem neuen Namen ab.</description>
 <contactref element="R143" pad="1"/>
 <wire x1="23.3046" y1="25.3492" x2="21.41" y2="27.1352" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="BAT">
+<signal name="BAT" class="1">
 <contactref element="R143" pad="2"/>
 <contactref element="C111" pad="2"/>
 <contactref element="C112" pad="1"/>
@@ -7338,7 +7340,9 @@ einem neuen Namen ab.</description>
 <signal name="BOOT1">
 <contactref element="J12" pad="P$1"/>
 <contactref element="U1" pad="37"/>
+<contactref element="R150" pad="1"/>
 <wire x1="2.1" y1="-32.465" x2="57.353109375" y2="32.28758125" width="0" layer="19" extent="1-1"/>
+<wire x1="0.85" y1="-42.8" x2="2.1" y2="-32.465" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDA" class="1">
 <contactref element="C60" pad="2"/>
