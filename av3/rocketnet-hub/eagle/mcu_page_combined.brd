@@ -6372,37 +6372,64 @@ einem neuen Namen ab.</description>
 <vertex x="20.1168" y="38.8112"/>
 <vertex x="20.1168" y="40.9956"/>
 </polygon>
-<wire x1="80.025" y1="11.325" x2="80.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="80.025" y1="10.675" x2="80.025" y2="11.325" width="0" layer="19" extent="16-16"/>
-<wire x1="80.025" y1="12.625" x2="80.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="79" y1="12.4" x2="80.025" y2="12.625" width="0" layer="19" extent="16-16"/>
-<wire x1="57.025" y1="11.975" x2="79" y2="12.4" width="0" layer="19" extent="16-16"/>
-<wire x1="57.025" y1="11.325" x2="57.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="57.025" y1="10.675" x2="57.025" y2="11.325" width="0" layer="19" extent="16-16"/>
-<wire x1="57.025" y1="12.625" x2="57.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="56" y1="12.4" x2="57.025" y2="12.625" width="0" layer="19" extent="16-16"/>
-<wire x1="34.025" y1="11.975" x2="56" y2="12.4" width="0" layer="19" extent="16-16"/>
-<wire x1="34.025" y1="11.325" x2="34.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="34.025" y1="10.675" x2="34.025" y2="11.325" width="0" layer="19" extent="16-16"/>
-<wire x1="34.025" y1="12.625" x2="34.025" y2="11.975" width="0" layer="19" extent="16-16"/>
-<wire x1="33" y1="12.4" x2="34.025" y2="12.625" width="0" layer="19" extent="16-16"/>
-<wire x1="34.0842" y1="30.7936" x2="34.025" y2="12.625" width="0" layer="19" extent="1-16"/>
-<wire x1="32.917534375" y1="30.7936" x2="34.0842" y2="30.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="31.750865625" y1="30.7936" x2="32.917534375" y2="30.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="30.5842" y1="30.7936" x2="31.750865625" y2="30.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="32.7914" y1="32.4598" x2="32.917534375" y2="30.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="35.5092" y1="32.4344" x2="34.0842" y2="30.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="20.574" y1="32.1184" x2="30.5842" y2="30.7936" width="0" layer="19" extent="1-16"/>
+<via x="54.9402" y="66.8782" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="56.007" y="66.8782" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="56.007" y="65.8114" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="54.9402" y="65.8114" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="78.0288" y="67.0052" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="79.0956" y="67.0052" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="79.0956" y="65.9384" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="78.0288" y="65.9384" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="100.965" y="66.9798" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="102.0318" y="66.9798" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="102.0318" y="65.913" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="100.965" y="65.913" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<polygon width="0.127" layer="16" thermals="no">
+<vertex x="34.4424" y="12.4968"/>
+<vertex x="34.4424" y="12.7762"/>
+<vertex x="31.4452" y="12.7762"/>
+<vertex x="31.4452" y="9.9822"/>
+<vertex x="34.417" y="9.9568"/>
+</polygon>
+<via x="32.8422" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="31.7754" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="31.7754" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="32.8422" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<polygon width="0.127" layer="16" thermals="no">
+<vertex x="57.3786" y="12.4968"/>
+<vertex x="57.3786" y="12.7762"/>
+<vertex x="54.3814" y="12.7762"/>
+<vertex x="54.3814" y="9.9822"/>
+<vertex x="57.3532" y="9.9568"/>
+</polygon>
+<via x="55.7784" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="54.7116" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="54.7116" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="55.7784" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<polygon width="0.127" layer="16" thermals="no">
+<vertex x="80.4418" y="12.5222"/>
+<vertex x="80.4418" y="12.8016"/>
+<vertex x="77.4446" y="12.8016"/>
+<vertex x="77.4446" y="10.0076"/>
+<vertex x="80.4164" y="9.9822"/>
+</polygon>
+<via x="78.8416" y="10.6172" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="77.7748" y="10.6172" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="77.7748" y="11.684" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<via x="78.8416" y="11.684" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<wire x1="18.8482" y1="47.384" x2="21.3882" y2="47.384" width="0" layer="19" extent="1-1"/>
+<wire x1="17.8035" y1="40.5898" x2="17.6182" y2="45.829" width="0" layer="19" extent="1-1"/>
+<wire x1="20.574" y1="32.1184" x2="16.1036" y2="35.1154" width="0" layer="19" extent="1-16"/>
 <wire x1="18.685" y1="29.3602" x2="20.574" y2="32.1184" width="0" layer="19" extent="1-16"/>
 <wire x1="17.96" y1="28.6352" x2="18.685" y2="29.3602" width="0" layer="19" extent="1-1"/>
 <wire x1="15.3416" y1="29.2634" x2="17.96" y2="28.6352" width="0" layer="19" extent="1-1"/>
 <wire x1="15.3416" y1="27.6834" x2="15.3416" y2="29.2634" width="0" layer="19" extent="1-1"/>
-<wire x1="16.1036" y1="35.1154" x2="20.574" y2="32.1184" width="0" layer="19" extent="1-16"/>
-<wire x1="17.6182" y1="45.829" x2="17.8035" y2="40.5898" width="0" layer="19" extent="1-1"/>
-<wire x1="21.3882" y1="47.384" x2="18.8482" y2="47.384" width="0" layer="19" extent="1-1"/>
-<wire x1="53.975" y1="65.575" x2="33.0708" y2="65.8876" width="0" layer="19" extent="16-16"/>
-<wire x1="76.975" y1="64.925" x2="55" y2="65.19" width="0" layer="19" extent="16-16"/>
-<wire x1="99.975" y1="64.925" x2="78" y2="65.19" width="0" layer="19" extent="16-16"/>
+<wire x1="30.5842" y1="30.7936" x2="20.574" y2="32.1184" width="0" layer="19" extent="1-16"/>
+<wire x1="31.750865625" y1="30.7936" x2="30.5842" y2="30.7936" width="0" layer="19" extent="1-1"/>
+<wire x1="32.917534375" y1="30.7936" x2="31.750865625" y2="30.7936" width="0" layer="19" extent="1-1"/>
+<wire x1="34.0842" y1="30.7936" x2="32.917534375" y2="30.7936" width="0" layer="19" extent="1-1"/>
+<wire x1="32.7914" y1="32.4598" x2="32.917534375" y2="30.7936" width="0" layer="19" extent="1-1"/>
+<wire x1="35.5092" y1="32.4344" x2="34.0842" y2="30.7936" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$115">
 <contactref element="U$11" pad="AUX"/>
@@ -7312,72 +7339,6 @@ einem neuen Namen ab.</description>
 <contactref element="J12" pad="P$1"/>
 <contactref element="U1" pad="37"/>
 <wire x1="2.1" y1="-32.465" x2="57.353109375" y2="32.28758125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+18V1" class="1">
-<via x="54.9402" y="66.8782" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="56.007" y="66.8782" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="56.007" y="65.8114" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="54.9402" y="65.8114" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="54.9402" y1="66.8782" x2="56.007" y2="66.8782" width="0" layer="19" extent="1-1"/>
-<wire x1="56.007" y1="65.8114" x2="56.007" y2="66.8782" width="0" layer="19" extent="1-1"/>
-<wire x1="54.9402" y1="65.8114" x2="54.9402" y2="66.8782" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+18V2" class="1">
-<via x="78.0288" y="67.0052" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="79.0956" y="67.0052" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="79.0956" y="65.9384" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="78.0288" y="65.9384" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="78.0288" y1="67.0052" x2="79.0956" y2="67.0052" width="0" layer="19" extent="1-1"/>
-<wire x1="79.0956" y1="65.9384" x2="79.0956" y2="67.0052" width="0" layer="19" extent="1-1"/>
-<wire x1="78.0288" y1="65.9384" x2="78.0288" y2="67.0052" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+18V3" class="1">
-<via x="100.965" y="66.9798" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="102.0318" y="66.9798" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="102.0318" y="65.913" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="100.965" y="65.913" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="100.965" y1="66.9798" x2="102.0318" y2="66.9798" width="0" layer="19" extent="1-1"/>
-<wire x1="102.0318" y1="65.913" x2="102.0318" y2="66.9798" width="0" layer="19" extent="1-1"/>
-<wire x1="100.965" y1="65.913" x2="100.965" y2="66.9798" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="+18V4" class="1">
-<polygon width="0.127" layer="16" thermals="no">
-<vertex x="34.4424" y="12.4968"/>
-<vertex x="34.4424" y="12.7762"/>
-<vertex x="31.4452" y="12.7762"/>
-<vertex x="31.4452" y="9.9822"/>
-<vertex x="34.417" y="9.9568"/>
-</polygon>
-<via x="32.8422" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="31.7754" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="31.7754" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="32.8422" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
-</signal>
-<signal name="+18V6" class="1">
-<polygon width="0.127" layer="16" thermals="no">
-<vertex x="57.3786" y="12.4968"/>
-<vertex x="57.3786" y="12.7762"/>
-<vertex x="54.3814" y="12.7762"/>
-<vertex x="54.3814" y="9.9822"/>
-<vertex x="57.3532" y="9.9568"/>
-</polygon>
-<via x="55.7784" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="54.7116" y="10.5918" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="54.7116" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="55.7784" y="11.6586" extent="1-16" drill="0.2032" diameter="0.6096"/>
-</signal>
-<signal name="+18V8" class="1">
-<polygon width="0.127" layer="16" thermals="no">
-<vertex x="80.4418" y="12.5222"/>
-<vertex x="80.4418" y="12.8016"/>
-<vertex x="77.4446" y="12.8016"/>
-<vertex x="77.4446" y="10.0076"/>
-<vertex x="80.4164" y="9.9822"/>
-</polygon>
-<via x="78.8416" y="10.6172" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="77.7748" y="10.6172" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="77.7748" y="11.684" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<via x="78.8416" y="11.684" extent="1-16" drill="0.2032" diameter="0.6096"/>
 </signal>
 <signal name="GNDA" class="1">
 <contactref element="C60" pad="2"/>
