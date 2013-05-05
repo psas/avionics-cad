@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="GND" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Power" color="4" fill="3" visible="no" active="yes"/>
 <layer number="14" name="NS" color="1" fill="6" visible="yes" active="yes"/>
 <layer number="15" name="EW" color="4" fill="6" visible="yes" active="yes"/>
@@ -3523,14 +3523,14 @@ einem neuen Namen ab.</description>
 <element name="TP24" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="49.35" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="107.8" y="49.35" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="TP25" library="testpad" package="TP06R" value="TPTP06R" x="103.063" y="54.7096" rot="R90">
-<attribute name="TP_SIGNAL_NAME" value="" x="103.063" y="54.7096" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="TP25" library="testpad" package="TP06R" value="TPTP06R" x="102.95" y="54.7" rot="R90">
+<attribute name="TP_SIGNAL_NAME" value="" x="102.95" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="TP26" library="testpad" package="TP06R" value="TPTP06R" x="102.413" y="55.4096" rot="R90">
-<attribute name="TP_SIGNAL_NAME" value="" x="102.413" y="55.4096" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="TP26" library="testpad" package="TP06R" value="TPTP06R" x="102.45" y="55.5" rot="R90">
+<attribute name="TP_SIGNAL_NAME" value="" x="102.45" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="TP27" library="testpad" package="TP06R" value="TPTP06R" x="101.763" y="54.7096" rot="R90">
-<attribute name="TP_SIGNAL_NAME" value="" x="101.763" y="54.7096" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="TP27" library="testpad" package="TP06R" value="TPTP06R" x="101.95" y="54.7" rot="R90">
+<attribute name="TP_SIGNAL_NAME" value="" x="101.95" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="rcl" package="R0402" value="10" x="106" y="56" rot="MR90"/>
 <element name="R4" library="rcl" package="R0402" value="10" x="102.2" y="57" rot="MR90"/>
@@ -3629,8 +3629,8 @@ einem neuen Namen ab.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="58.2754" y="15.8562" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D3" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="104" y="14" rot="MR90"/>
-<element name="TP37" library="testpad" package="TP06R" value="TPTP06R" x="46.2876" y="31.4218">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.0876" y="31.4218" size="1.778" layer="27" display="off"/>
+<element name="TP37" library="testpad" package="TP06R" value="TPTP06R" x="46" y="31.35">
+<attribute name="TP_SIGNAL_NAME" value="" x="45.8" y="31.35" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP1" library="jumper" package="JP1" value="" x="18.3" y="58" rot="R270"/>
 <element name="LED22" library="led" package="CHIPLED_0603" value="" x="13.8" y="58"/>
@@ -3755,7 +3755,7 @@ einem neuen Namen ab.</description>
 <contactref element="U1" pad="73"/>
 <wire x1="52.04038125" y1="42.540378125" x2="53.923328125" y2="47.094396875" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="GND" class="1" airwireshidden="yes">
+<signal name="GND" class="1">
 <contactref element="U1" pad="10"/>
 <contactref element="C1" pad="2"/>
 <contactref element="U1" pad="27"/>
@@ -4247,24 +4247,13 @@ einem neuen Namen ab.</description>
 <wire x1="29.926" y1="64.917" x2="28.95" y2="65.9" width="0.127" layer="16"/>
 <wire x1="27" y1="66.45" x2="27.295" y2="66.448" width="0.127" layer="1"/>
 <wire x1="27.295" y1="66.448" x2="27.85" y2="65.9" width="0.127" layer="1"/>
-<wire x1="32.2" y1="74.15" x2="32.2" y2="75.5142" width="0.127" layer="16"/>
-<wire x1="32.2" y1="75.5142" x2="32.1818" y2="75.5142" width="0.127" layer="16"/>
-<via x="32.1818" y="75.5142" extent="1-16" drill="0.2032" diameter="0.6096"/>
 <wire x1="32.1818" y1="75.5142" x2="32.1818" y2="75.7174" width="0.127" layer="2"/>
-<wire x1="32.1818" y1="75.7174" x2="32.2072" y2="75.7174" width="0.127" layer="2"/>
-<wire x1="55.2" y1="74.15" x2="55.2" y2="75.3872" width="0.127" layer="16"/>
-<wire x1="55.2" y1="75.3872" x2="55.1688" y2="75.3872" width="0.127" layer="16"/>
-<via x="55.1688" y="75.3872" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="55.1688" y1="75.3872" x2="55.1688" y2="75.4634" width="0.127" layer="2"/>
+<wire x1="32.1818" y1="75.7174" x2="32.2" y2="75.7174" width="0.127" layer="2"/>
 <wire x1="78.2" y1="74.15" x2="78.2" y2="75.343" width="0.127" layer="16"/>
 <wire x1="78.2" y1="75.343" x2="78.1812" y2="75.3618" width="0.127" layer="16"/>
 <via x="78.1812" y="75.3618" extent="1-16" drill="0.2032" diameter="0.6096"/>
 <wire x1="78.1812" y1="75.3618" x2="78.1812" y2="75.438" width="0.127" layer="2"/>
 <wire x1="78.1812" y1="75.438" x2="78.2066" y2="75.4634" width="0.127" layer="2"/>
-<wire x1="101.4" y1="74.15" x2="101.4" y2="75.4126" width="0.127" layer="16"/>
-<wire x1="101.4" y1="75.4126" x2="101.3968" y2="75.4126" width="0.127" layer="16"/>
-<via x="101.3968" y="75.4126" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="101.3968" y1="75.4126" x2="101.3968" y2="75.5142" width="0.127" layer="2"/>
 <wire x1="32.2" y1="2.35" x2="32.2" y2="0.889" width="0.127" layer="16"/>
 <wire x1="32.2" y1="0.889" x2="32.2326" y2="0.889" width="0.127" layer="16"/>
 <via x="32.2326" y="0.889" extent="1-16" drill="0.2032" diameter="0.6096"/>
@@ -4355,10 +4344,14 @@ einem neuen Namen ab.</description>
 <vertex x="81.9" y="42.6"/>
 <vertex x="81.9" y="30.2"/>
 </polygon>
-<wire x1="99.1" y1="64.8" x2="99.04" y2="63.99" width="0" layer="19" extent="16-16"/>
+<wire x1="32.2" y1="74.15" x2="32.2" y2="75.3" width="0.127" layer="16"/>
+<via x="32.2" y="75.3" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<wire x1="32.2" y1="75.3" x2="32.2" y2="75.7174" width="0.127" layer="2"/>
+<wire x1="32.2" y1="75.7174" x2="32.2072" y2="75.7174" width="0.127" layer="2"/>
 <wire x1="79" y1="13.6" x2="79.65" y2="14" width="0" layer="19" extent="1-16"/>
 <wire x1="56" y1="13.6" x2="56.65" y2="14" width="0" layer="19" extent="1-16"/>
 <wire x1="33" y1="13.6" x2="33.65" y2="14" width="0" layer="19" extent="1-16"/>
+<wire x1="99.04" y1="63.99" x2="99.1" y2="64.8" width="0" layer="19" extent="16-16"/>
 <wire x1="76.04" y1="63.99" x2="76.1" y2="64.8" width="0" layer="19" extent="16-16"/>
 <wire x1="53.04" y1="63.99" x2="53.1" y2="64.8" width="0" layer="19" extent="16-16"/>
 <wire x1="18.378" y1="42.855" x2="18.6182" y2="46.229" width="0" layer="19" extent="16-16"/>
@@ -4463,6 +4456,14 @@ einem neuen Namen ab.</description>
 <wire x1="35.777" y1="22.7916" x2="33.65" y2="15" width="0" layer="19" extent="1-16"/>
 <wire x1="8.25" y1="21.5" x2="12.282" y2="32.1336" width="0" layer="19" extent="16-16"/>
 <wire x1="8.25" y1="16.9" x2="8.25" y2="21.5" width="0" layer="19" extent="16-16"/>
+<wire x1="55.2" y1="74.15" x2="55.2" y2="75.3" width="0.127" layer="16"/>
+<via x="55.2" y="75.3" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<wire x1="55.2" y1="75.3" x2="55.2" y2="75.4" width="0.127" layer="2"/>
+<wire x1="55.2" y1="75.4" x2="62.555" y2="72.395" width="0" layer="19" extent="1-16"/>
+<wire x1="101.4" y1="74.15" x2="101.4" y2="75.3" width="0.127" layer="16"/>
+<via x="101.4" y="75.3" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<wire x1="101.4" y1="75.3" x2="101.4" y2="75.4" width="0.127" layer="2"/>
+<wire x1="101.4" y1="75.4" x2="99.1" y2="67" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="+3V3" class="1">
 <contactref element="E5" pad="1"/>
@@ -5389,19 +5390,17 @@ einem neuen Namen ab.</description>
 <signal name="N$93">
 <contactref element="U$14" pad="159"/>
 <contactref element="TP25" pad="TP"/>
-<wire x1="102.95" y1="53.4" x2="102.903" y2="54.5496" width="0.127" layer="1"/>
-<wire x1="102.903" y1="54.5496" x2="103.063" y2="54.7096" width="0.127" layer="1"/>
+<wire x1="102.95" y1="54.7" x2="102.95" y2="53.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$95">
 <contactref element="U$14" pad="160"/>
 <contactref element="TP26" pad="TP"/>
-<wire x1="102.45" y1="53.4" x2="102.413" y2="55.4096" width="0.127" layer="1"/>
+<wire x1="102.45" y1="55.5" x2="102.45" y2="53.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
 <contactref element="U$14" pad="161"/>
 <contactref element="TP27" pad="TP"/>
-<wire x1="101.763" y1="54.7096" x2="101.903" y2="54.5696" width="0.127" layer="1"/>
-<wire x1="101.903" y1="54.5696" x2="101.95" y2="53.4" width="0.127" layer="1"/>
+<wire x1="101.95" y1="54.7" x2="101.95" y2="53.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$100">
 <contactref element="U$14" pad="127"/>
@@ -6677,10 +6676,10 @@ einem neuen Namen ab.</description>
 <contactref element="J11" pad="P$10"/>
 <contactref element="R148" pad="1"/>
 <wire x1="46.8946875" y1="32.28758125" x2="102" y2="14.8" width="0" layer="19" extent="1-16"/>
-<wire x1="46.2876" y1="31.4218" x2="46.8946875" y2="32.28758125" width="0" layer="19" extent="1-1"/>
+<wire x1="46" y1="31.35" x2="46.8946875" y2="32.28758125" width="0" layer="19" extent="1-1"/>
 <wire x1="32.23" y1="51.905" x2="46.8946875" y2="32.28758125" width="0" layer="19" extent="1-1"/>
 <wire x1="32.35" y1="54" x2="32.23" y2="51.905" width="0" layer="19" extent="16-16"/>
-<wire x1="20.365" y1="4.955" x2="46.2876" y2="31.4218" width="0" layer="19" extent="1-1"/>
+<wire x1="20.365" y1="4.955" x2="46" y2="31.35" width="0" layer="19" extent="1-1"/>
 <wire x1="20.365" y1="3.685" x2="20.365" y2="4.955" width="0" layer="19" extent="1-1"/>
 <wire x1="11.35" y1="18.6" x2="20.365" y2="4.955" width="0" layer="19" extent="16-16"/>
 <wire x1="10.05" y1="18.6" x2="11.35" y2="18.6" width="0" layer="19" extent="16-16"/>
