@@ -423,6 +423,8 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <pin name="PC0" x="0" y="33.02" length="middle" rot="R180"/>
 <pin name="PD0" x="0" y="-10.16" length="middle" rot="R180"/>
 <pin name="PE0" x="-55.88" y="45.72" length="middle" rot="R270"/>
+<text x="-88.9" y="43.18" size="1.778" layer="95">&gt;NAME</text>
+<text x="-55.88" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
