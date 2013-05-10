@@ -18972,7 +18972,7 @@ by exp-project-lbr.ulp</description>
 <part name="+3V34" library="supply1" deviceset="+3V3" device=""/>
 <part name="J11" library="headers" deviceset="1.27MM_HDR_2X5" device=""/>
 <part name="J9" library="rocketnet-connector" deviceset="ROCKETNET-BATTERY-14" device=""/>
-<part name="GND50" library="supply1" deviceset="GND" device=""/>
+<part name="GND50" library="supply1" deviceset="GNDA" device=""/>
 <part name="R148" library="rcl" deviceset="R-US_" device="R0402" value="0"/>
 <part name="R147" library="rcl" deviceset="R-US_" device="R0402" value="0"/>
 <part name="J12" library="headers" deviceset="1.27MM_HDR_2X1" device="2X1"/>
@@ -25073,26 +25073,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="20.32" y1="63.5" x2="-2.54" y2="63.5" width="0.1524" layer="91"/>
 <junction x="20.32" y="63.5"/>
 </segment>
-<segment>
-<pinref part="J9" gate="G$1" pin="!PRSNT@2"/>
-<pinref part="J9" gate="G$1" pin="B-@1"/>
-<wire x1="-68.58" y1="66.04" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G$1" pin="B-@2"/>
-<wire x1="-68.58" y1="60.96" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
-<junction x="-68.58" y="63.5"/>
-<pinref part="J9" gate="G$1" pin="B-@3"/>
-<wire x1="-68.58" y1="60.96" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-68.58" y="60.96"/>
-<pinref part="J9" gate="G$1" pin="B-@4"/>
-<wire x1="-68.58" y1="58.42" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-68.58" y="58.42"/>
-<wire x1="-68.58" y1="55.88" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-68.58" y="55.88"/>
-<pinref part="GND50" gate="1" pin="GND"/>
-<pinref part="J9" gate="G$1" pin="!PRSNT@1"/>
-<wire x1="-68.58" y1="68.58" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
-<junction x="-68.58" y="66.04"/>
-</segment>
 </net>
 <net name="+3V3" class="1">
 <segment>
@@ -25338,6 +25318,28 @@ by exp-project-lbr.ulp</description>
 <label x="48.26" y="48.26" size="1.016" layer="95" xref="yes"/>
 <pinref part="R147" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GNDA" class="1">
+<segment>
+<pinref part="J9" gate="G$1" pin="!PRSNT@2"/>
+<pinref part="J9" gate="G$1" pin="B-@1"/>
+<wire x1="-68.58" y1="66.04" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J9" gate="G$1" pin="B-@2"/>
+<wire x1="-68.58" y1="60.96" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-68.58" y="63.5"/>
+<pinref part="J9" gate="G$1" pin="B-@3"/>
+<wire x1="-68.58" y1="60.96" x2="-68.58" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-68.58" y="60.96"/>
+<pinref part="J9" gate="G$1" pin="B-@4"/>
+<wire x1="-68.58" y1="58.42" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-68.58" y="58.42"/>
+<wire x1="-68.58" y1="55.88" x2="-68.58" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-68.58" y="55.88"/>
+<pinref part="GND50" gate="1" pin="GNDA"/>
+<pinref part="J9" gate="G$1" pin="!PRSNT@1"/>
+<wire x1="-68.58" y1="68.58" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
+<junction x="-68.58" y="66.04"/>
 </segment>
 </net>
 </nets>
