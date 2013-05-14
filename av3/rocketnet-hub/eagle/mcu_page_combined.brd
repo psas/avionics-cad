@@ -7635,6 +7635,10 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="N$175">
 <contactref element="C32" pad="2"/>
+<contactref element="R115" pad="1"/>
+<contactref element="R102" pad="1"/>
+<wire x1="71.32" y1="36.7" x2="71.32" y2="35.6" width="0" layer="19" extent="16-16"/>
+<wire x1="18.52" y1="10" x2="71.32" y2="35.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$215">
 <contactref element="R164" pad="2"/>
@@ -7658,6 +7662,10 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="N$219">
 <contactref element="C31" pad="2"/>
+<contactref element="R101" pad="1"/>
+<contactref element="R100" pad="1"/>
+<wire x1="75.98" y1="35.1" x2="75.98" y2="34" width="0" layer="19" extent="16-16"/>
+<wire x1="21.52" y1="12" x2="75.98" y2="34" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>

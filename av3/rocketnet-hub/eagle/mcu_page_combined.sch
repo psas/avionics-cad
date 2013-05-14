@@ -23032,8 +23032,10 @@ by exp-project-lbr.ulp</description>
 <wire x1="99.06" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <junction x="101.6" y="30.48"/>
-<wire x1="99.06" y1="33.02" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="30.48" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R115" gate="R" pin="1"/>
+<wire x1="104.14" y1="33.02" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R102" gate="R" pin="1"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$215" class="0">
@@ -23068,12 +23070,14 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="N$219" class="0">
 <segment>
-<wire x1="88.9" y1="33.02" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C31" gate="CE" pin="2"/>
-<wire x1="88.9" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="30.48" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R101" gate="R" pin="1"/>
+<wire x1="93.98" y1="33.02" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R100" gate="R" pin="1"/>
+<wire x1="91.44" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="30.48" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <junction x="91.44" y="30.48"/>
-<wire x1="93.98" y1="30.48" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="1">
