@@ -16,4 +16,5 @@ STEP files from the manafacturer
 Sub assembly
 
  - `Base_CircuitBoard.stp`: Plane circuit board base.
- - 
+ - `Daughter_Board.part.fcstd`: FreeCad document of daughter board
+ - `Daughter_Board.stp`: Step file export of daughter board
