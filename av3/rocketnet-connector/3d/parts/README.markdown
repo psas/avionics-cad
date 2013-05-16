@@ -18,3 +18,5 @@ Sub assembly
  - `Base_CircuitBoard.stp`: Plane circuit board base.
  - `Daughter_Board.part.fcstd`: FreeCad document of daughter board
  - `Daughter_Board.stp`: Step file export of daughter board
+ - `no2_hex_screw.part.fcstd`: #2 Hex head screw freecad doc
+ - `no2_hex_screw.stp`: #2 hex head screw part
