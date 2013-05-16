@@ -14,3 +14,6 @@ STEP files from the manafacturer
 **PSAS Parts**
 
 Sub assembly
+
+ - `Base_CircuitBoard.stp`: Plane circuit board base.
+ - 
