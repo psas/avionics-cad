@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -315,6 +315,52 @@ by exp-project-lbr.ulp</description>
 <wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="51"/>
 <wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="21"/>
 <wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="21"/>
+</package>
+<package name="HARWIN-M50-31507-NO-HOLES">
+<smd name="1" x="-3.81" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="2" x="-3.81" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="3" x="-2.54" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="4" x="-2.54" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="5" x="-1.27" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="6" x="-1.27" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="7" x="0" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="8" x="0" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="9" x="1.27" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="10" x="1.27" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="11" x="2.54" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="12" x="2.54" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="13" x="3.81" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="14" x="3.81" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<hole x="3.175" y="0" drill="0.71"/>
+<hole x="-3.175" y="0" drill="0.71"/>
+<wire x1="-4.699" y1="1.7" x2="4.699" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.699" y1="1.7" x2="4.699" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="4.699" y1="-1.7" x2="-4.699" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="-4.699" y1="-1.7" x2="-4.699" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.699" y1="1.7" x2="4.699" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-4.699" y1="-1.7" x2="-4.699" y2="1.7" width="0.1" layer="21"/>
+</package>
+<package name="HARWIN-M50-31506-NO-HOLES">
+<smd name="1" x="-3.175" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="2" x="-3.175" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="3" x="-1.905" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="4" x="-1.905" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="5" x="-0.635" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="6" x="-0.635" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="7" x="0.635" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="8" x="0.635" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="9" x="1.905" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="10" x="1.905" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="11" x="3.175" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="12" x="3.175" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<hole x="2.54" y="0" drill="0.71"/>
+<hole x="-2.54" y="0" drill="0.71"/>
+<wire x1="-4.064" y1="1.7" x2="4.064" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.064" y1="1.7" x2="4.064" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="4.064" y1="-1.7" x2="-4.064" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="-4.064" y1="-1.7" x2="-4.064" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.064" y1="1.7" x2="4.064" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-4.064" y1="-1.7" x2="-4.064" y2="1.7" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>
