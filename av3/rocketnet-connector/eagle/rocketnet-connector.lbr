@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -37,8 +37,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -100,96 +100,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="21"/>
 <wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="21"/>
 </package>
-<package name="ROCKETNET-F-16">
-<smd name="R+@1" x="-4.445" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="B+@2" x="-4.445" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="R+@3" x="-3.175" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="B+@4" x="-3.175" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="R-@5" x="-1.905" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="A1@6" x="-1.905" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="R-@7" x="-0.635" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="A2@8" x="-0.635" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="T+@9" x="0.635" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="A3@10" x="0.635" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="T+@11" x="1.905" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="A4@12" x="1.905" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="T-@13" x="3.175" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="B-@14" x="3.175" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="T-@15" x="4.445" y="-1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<smd name="B-@16" x="4.445" y="1.925" dx="1.65" dy="0.71" layer="16" rot="R90"/>
-<hole x="3.81" y="0" drill="0.71"/>
-<hole x="-3.81" y="0" drill="0.71"/>
-<hole x="-4.445" y="0.635" drill="0.71"/>
-<hole x="-4.445" y="-0.635" drill="0.71"/>
-<hole x="-3.175" y="0.635" drill="0.71"/>
-<hole x="-3.175" y="-0.635" drill="0.71"/>
-<hole x="-1.905" y="0.635" drill="0.71"/>
-<hole x="-1.905" y="-0.635" drill="0.71"/>
-<hole x="-0.635" y="0.635" drill="0.71"/>
-<hole x="-0.635" y="-0.635" drill="0.71"/>
-<hole x="0.635" y="0.635" drill="0.71"/>
-<hole x="0.635" y="-0.635" drill="0.71"/>
-<hole x="1.905" y="0.635" drill="0.71"/>
-<hole x="1.905" y="-0.635" drill="0.71"/>
-<hole x="3.175" y="0.635" drill="0.71"/>
-<hole x="3.175" y="-0.635" drill="0.71"/>
-<hole x="4.445" y="0.635" drill="0.71"/>
-<hole x="4.445" y="-0.635" drill="0.71"/>
-<wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="51"/>
-<wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="21"/>
-<wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="21"/>
-<wire x1="-10.55" y1="4" x2="9.85" y2="4" width="0.1" layer="51"/>
-<wire x1="9.85" y1="4" x2="9.85" y2="-4" width="0.1" layer="51"/>
-<wire x1="9.85" y1="-4" x2="-10.55" y2="-4" width="0.1" layer="51"/>
-<wire x1="-10.55" y1="-4" x2="-10.55" y2="4" width="0.1" layer="51"/>
-<hole x="7.2" y="0" drill="2.4384"/>
-<wire x1="-5.334" y1="1.7" x2="5.334" y2="1.7" width="0.1" layer="51"/>
-<wire x1="5.08" y1="1.7" x2="5.08" y2="-1.7" width="0.2" layer="21"/>
-<wire x1="5.334" y1="-1.7" x2="-5.334" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="-5.08" y1="-1.7" x2="-5.08" y2="1.7" width="0.2" layer="21"/>
-<wire x1="-10.55" y1="3" x2="-10.55" y2="4" width="0.1" layer="21"/>
-<wire x1="-10.55" y1="4" x2="-9.1" y2="4" width="0.1" layer="21"/>
-<wire x1="9.1" y1="4" x2="9.85" y2="4" width="0.1" layer="21"/>
-<wire x1="9.85" y1="4" x2="9.85" y2="3" width="0.1" layer="21"/>
-<wire x1="9.85" y1="-3" x2="9.85" y2="-4" width="0.1" layer="21"/>
-<wire x1="9.85" y1="-4" x2="9.1" y2="-4" width="0.1" layer="21"/>
-<wire x1="-10.55" y1="-3" x2="-10.55" y2="-4" width="0.1" layer="21"/>
-<wire x1="-10.55" y1="-4" x2="-9.1" y2="-4" width="0.1" layer="21"/>
-<text x="-3" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">B+</text>
-<text x="4.6" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">B-</text>
-<text x="-4.8" y="-2.9" size="1" layer="22" font="vector" ratio="16" rot="MR180">R+</text>
-<text x="-2.3" y="-2.9" size="1" layer="22" font="vector" ratio="16" rot="MR180">R-</text>
-<text x="0.4" y="-2.9" size="1" layer="22" font="vector" ratio="16" rot="MR180">T+</text>
-<text x="2.9" y="-2.9" size="1" layer="22" font="vector" ratio="16" rot="MR180">T-</text>
-<text x="-1.6" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">1</text>
-<text x="-0.3" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">2</text>
-<text x="1" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">3</text>
-<text x="2.2" y="2.9" size="1" layer="22" font="vector" ratio="16" rot="MR0">4</text>
-<wire x1="-5.334" y1="1.7" x2="-5.08" y2="1.7" width="0.1" layer="22"/>
-<wire x1="-5.08" y1="-1.7" x2="-5.334" y2="-1.7" width="0.1" layer="22"/>
-<wire x1="5.334" y1="-1.7" x2="5.08" y2="-1.7" width="0.1" layer="22"/>
-<wire x1="5.08" y1="1.7" x2="5.334" y2="1.7" width="0.1" layer="22"/>
-<wire x1="-5.08" y1="1.7" x2="5.08" y2="1.7" width="0.2" layer="21"/>
-<wire x1="5.08" y1="-1.7" x2="-5.08" y2="-1.7" width="0.2" layer="21"/>
-<wire x1="6.5" y1="1.65" x2="7.9" y2="1.65" width="0.05" layer="22"/>
-<wire x1="8.85" y1="0.7" x2="8.85" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="5.55" y1="-0.7" x2="5.55" y2="0.7" width="0.05" layer="22"/>
-<wire x1="6.5" y1="-1.65" x2="7.9" y2="-1.65" width="0.05" layer="22"/>
-<wire x1="6.5" y1="-1.65" x2="5.55" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="5.55" y1="0.7" x2="6.5" y2="1.65" width="0.05" layer="22"/>
-<wire x1="7.9" y1="1.65" x2="8.85" y2="0.7" width="0.05" layer="22"/>
-<wire x1="8.85" y1="-0.7" x2="7.9" y2="-1.65" width="0.05" layer="22"/>
-<hole x="-7.9" y="0" drill="2.4384"/>
-<wire x1="-8.6" y1="1.65" x2="-7.2" y2="1.65" width="0.05" layer="22"/>
-<wire x1="-6.25" y1="0.7" x2="-6.25" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="-9.55" y1="-0.7" x2="-9.55" y2="0.7" width="0.05" layer="22"/>
-<wire x1="-8.6" y1="-1.65" x2="-7.2" y2="-1.65" width="0.05" layer="22"/>
-<wire x1="-8.6" y1="-1.65" x2="-9.55" y2="-0.7" width="0.05" layer="22"/>
-<wire x1="-9.55" y1="0.7" x2="-8.6" y2="1.65" width="0.05" layer="22"/>
-<wire x1="-7.2" y1="1.65" x2="-6.25" y2="0.7" width="0.05" layer="22"/>
-<wire x1="-6.25" y1="-0.7" x2="-7.2" y2="-1.65" width="0.05" layer="22"/>
-</package>
 <package name="HARWIN-M50-35008">
 <wire x1="-5.08" y1="1.7" x2="5.08" y2="1.7" width="0.15" layer="51"/>
 <wire x1="5.08" y1="-1.7" x2="-5.08" y2="-1.7" width="0.15" layer="51"/>
@@ -215,11 +125,11 @@ by exp-project-lbr.ulp</description>
 <wire x1="5.33" y1="1.7" x2="5.33" y2="-1.7" width="0.1" layer="51"/>
 </package>
 <package name="ROCKETNET-M-16">
-<wire x1="-10.7" y1="2.9" x2="10.1" y2="2.9" width="0.1" layer="52"/>
-<wire x1="10.1" y1="2.9" x2="10.1" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="10.1" y1="-2.85" x2="-10.7" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="-10.7" y1="-2.85" x2="-10.7" y2="2.9" width="0.1" layer="52"/>
-<hole x="7.4" y="0" drill="2.4384"/>
+<wire x1="-10.3" y1="3" x2="9.7" y2="3" width="0.1" layer="52"/>
+<wire x1="9.7" y1="3" x2="9.7" y2="-3" width="0.1" layer="52"/>
+<wire x1="9.7" y1="-3" x2="-10.3" y2="-3" width="0.1" layer="52"/>
+<wire x1="-10.3" y1="-3" x2="-10.3" y2="3" width="0.1" layer="52"/>
+<hole x="7.5" y="0" drill="2.4384"/>
 <text x="5" y="-3.9" size="1" layer="49" font="vector" ratio="16" rot="R90">B+</text>
 <text x="-4" y="-3.9" size="1" layer="49" font="vector" ratio="16" rot="R90">B-</text>
 <text x="-2.7" y="-3.9" size="1" layer="49" font="vector" ratio="16" rot="R90">R-</text>
@@ -230,7 +140,7 @@ by exp-project-lbr.ulp</description>
 <text x="-0.9" y="2.3" size="1" layer="49" font="vector" ratio="16">2</text>
 <text x="0.4" y="2.3" size="1" layer="49" font="vector" ratio="16">3</text>
 <text x="1.6" y="2.3" size="1" layer="49" font="vector" ratio="16">4</text>
-<hole x="-8" y="0" drill="2.4384"/>
+<hole x="-8.1" y="0" drill="2.4384"/>
 <wire x1="-5.08" y1="1.7" x2="5.08" y2="1.7" width="0.15" layer="51"/>
 <wire x1="5.08" y1="-1.7" x2="-5.08" y2="-1.7" width="0.15" layer="51"/>
 <wire x1="5.08" y1="1.7" x2="5.08" y2="-1.7" width="0.15" layer="51"/>
@@ -253,38 +163,19 @@ by exp-project-lbr.ulp</description>
 <pad name="R+@7" x="-0.635" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
 <wire x1="-5.33" y1="-1.7" x2="-5.33" y2="1.7" width="0.1" layer="51"/>
 <wire x1="5.33" y1="1.7" x2="5.33" y2="-1.7" width="0.1" layer="51"/>
-<wire x1="-9.65" y1="-0.95" x2="-9.65" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-9.65" y1="0.95" x2="-8" y2="1.9" width="0.01" layer="22"/>
-<wire x1="-8" y1="1.9" x2="-6.35" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-6.35" y1="0.95" x2="-6.35" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="-6.35" y1="-0.95" x2="-8" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="-8" y1="-1.9" x2="-9.65" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="5.75" y1="-0.95" x2="5.75" y2="0.95" width="0.01" layer="22"/>
-<wire x1="5.75" y1="0.95" x2="7.4" y2="1.9" width="0.01" layer="22"/>
-<wire x1="7.4" y1="1.9" x2="9.05" y2="0.95" width="0.01" layer="22"/>
-<wire x1="9.05" y1="0.95" x2="9.05" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="9.05" y1="-0.95" x2="7.4" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="7.4" y1="-1.9" x2="5.75" y2="-0.95" width="0.01" layer="22"/>
-<circle x="7.4" y="0" radius="2" width="0.01" layer="22"/>
-<circle x="-8.01" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="7.5" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-8.1" y="0" radius="2" width="0.01" layer="22"/>
 <text x="-3.7" y="-5.5" size="0.5" layer="49" font="vector">#2-56 hex head bolts</text>
-<text x="-3.7" y="-6.2" size="0.5" layer="49" font="vector">4 mm OD FDM standoffs</text>
-<wire x1="6.6" y1="4.4" x2="-7.2" y2="4.4" width="0.1" layer="21"/>
-<wire x1="6.6" y1="-4.4" x2="-7.2" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="9.1" y1="-1.9" x2="9.1" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-9.7" y1="-1.9" x2="-9.7" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-9.7" y1="1.9" x2="-7.2" y2="4.4" width="0.1" layer="21"/>
-<wire x1="6.6" y1="4.4" x2="9.1" y2="1.9" width="0.1" layer="21"/>
-<wire x1="9.1" y1="-1.9" x2="6.6" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="-7.2" y1="-4.4" x2="-9.7" y2="-1.9" width="0.1" layer="21"/>
-<rectangle x1="-10.8" y1="-3" x2="10.2" y2="3" layer="40"/>
-<circle x="7.4" y="0" radius="2.1" width="0.25" layer="39"/>
-<circle x="-8" y="0" radius="2.1" width="0.25" layer="39"/>
-<text x="-3.7" y="-6.9" size="0.5" layer="49" font="vector">1.0 mm stack heigh</text>
+<text x="-3.7" y="-6.2" size="0.5" layer="49" font="vector">4.0 mm OD FDM standoffs</text>
+<rectangle x1="-10.3" y1="-3" x2="9.7" y2="3" layer="40"/>
+<circle x="7.5" y="0" radius="2" width="0" layer="39"/>
+<circle x="-8.1" y="0" radius="2" width="0" layer="39"/>
+<text x="-3.7" y="-6.9" size="0.5" layer="49" font="vector">4.0 mm stack heigh</text>
 <text x="-4" y="2.3" size="1" layer="49" font="vector" ratio="16" rot="R90">B-</text>
 <text x="-2.7" y="2.3" size="1" layer="49" font="vector" ratio="16" rot="R90">R-</text>
 <text x="3.7" y="2.3" size="1" layer="49" font="vector" ratio="16" rot="R90">T+</text>
 <text x="4.9" y="2.3" size="1" layer="49" font="vector" ratio="16" rot="R90">B+</text>
+<rectangle x1="-5.4" y1="-1.8" x2="5.4" y2="1.8" layer="39"/>
 </package>
 <package name="22AWG-WIRE">
 <pad name="P$1" x="0" y="0" drill="0.9" diameter="1.6"/>
@@ -295,41 +186,21 @@ by exp-project-lbr.ulp</description>
 <circle x="0" y="0" radius="0.5" width="0.05" layer="51"/>
 </package>
 <package name="ROCKETNET-M-14">
-<wire x1="-10.065" y1="2.9" x2="9.465" y2="2.9" width="0.1" layer="52"/>
-<wire x1="9.465" y1="2.9" x2="9.465" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="9.465" y1="-2.85" x2="-10.065" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="-10.065" y1="-2.85" x2="-10.065" y2="2.9" width="0.1" layer="52"/>
-<hole x="6.765" y="0" drill="2.4384"/>
+<wire x1="-9.7" y1="3" x2="9.1" y2="3" width="0.1" layer="52"/>
+<wire x1="9.1" y1="3" x2="9.1" y2="-3" width="0.1" layer="52"/>
+<wire x1="9.1" y1="-3" x2="-9.7" y2="-3" width="0.1" layer="52"/>
+<wire x1="-9.7" y1="-3" x2="-9.7" y2="3" width="0.1" layer="52"/>
+<hole x="6.9" y="0" drill="2.4384"/>
 <text x="-3.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20">B+</text>
 <text x="2.465" y="2.3" size="0.762" layer="49" font="vector" ratio="20">B-</text>
 <text x="-0.9" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">SMCLK</text>
 <text x="0.4" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">SMDAT</text>
 <text x="1.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">!PRSNT</text>
-<hole x="-7.365" y="0" drill="2.4384"/>
-<wire x1="-9.015" y1="-0.95" x2="-9.015" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-9.015" y1="0.95" x2="-7.365" y2="1.9" width="0.01" layer="22"/>
-<wire x1="-7.365" y1="1.9" x2="-5.715" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-5.715" y1="0.95" x2="-5.715" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="-5.715" y1="-0.95" x2="-7.365" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="-7.365" y1="-1.9" x2="-9.015" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="5.115" y1="-0.95" x2="5.115" y2="0.95" width="0.01" layer="22"/>
-<wire x1="5.115" y1="0.95" x2="6.765" y2="1.9" width="0.01" layer="22"/>
-<wire x1="6.765" y1="1.9" x2="8.415" y2="0.95" width="0.01" layer="22"/>
-<wire x1="8.415" y1="0.95" x2="8.415" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="8.415" y1="-0.95" x2="6.765" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="6.765" y1="-1.9" x2="5.115" y2="-0.95" width="0.01" layer="22"/>
-<circle x="6.765" y="0" radius="2" width="0.01" layer="22"/>
-<circle x="-7.365" y="0" radius="2" width="0.01" layer="22"/>
+<hole x="-7.5" y="0" drill="2.4384"/>
+<circle x="6.9" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-7.5" y="0" radius="2" width="0.01" layer="22"/>
 <text x="-4.3" y="-5.3" size="0.5" layer="49" font="vector">#2-56 hex head bolts</text>
-<text x="-4.3" y="-6" size="0.5" layer="49" font="vector">4 mm OD FDM standoffs</text>
-<wire x1="5.965" y1="4.4" x2="-6.565" y2="4.4" width="0.1" layer="21"/>
-<wire x1="5.965" y1="-4.4" x2="-6.565" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="8.465" y1="-1.9" x2="8.465" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-9.065" y1="-1.9" x2="-9.065" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-9.065" y1="1.9" x2="-6.565" y2="4.4" width="0.1" layer="21"/>
-<wire x1="5.965" y1="4.4" x2="8.465" y2="1.9" width="0.1" layer="21"/>
-<wire x1="8.465" y1="-1.9" x2="5.965" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="-6.565" y1="-4.4" x2="-9.065" y2="-1.9" width="0.1" layer="21"/>
+<text x="-4.3" y="-6" size="0.5" layer="49" font="vector">4.0 mm OD FDM standoffs</text>
 <wire x1="-4.445" y1="1.7" x2="4.445" y2="1.7" width="0.15" layer="51"/>
 <wire x1="4.445" y1="-1.7" x2="-4.445" y2="-1.7" width="0.15" layer="51"/>
 <wire x1="4.445" y1="1.7" x2="4.445" y2="-1.7" width="0.15" layer="51"/>
@@ -350,10 +221,11 @@ by exp-project-lbr.ulp</description>
 <pad name="SMDAT@7" x="0" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
 <wire x1="-4.695" y1="-1.7" x2="-4.695" y2="1.7" width="0.1" layer="51"/>
 <wire x1="4.695" y1="1.7" x2="4.695" y2="-1.7" width="0.1" layer="51"/>
-<rectangle x1="-10.2" y1="-3" x2="9.6" y2="3" layer="40"/>
-<circle x="-7.365" y="0" radius="2.1" width="0.25" layer="39"/>
-<circle x="6.765" y="0" radius="2.1" width="0.25" layer="39"/>
-<text x="-4.3" y="-6.7" size="0.5" layer="49" font="vector">1.0 mm stack height</text>
+<rectangle x1="-9.7" y1="-3" x2="9.1" y2="3" layer="40"/>
+<circle x="-7.5" y="0" radius="2" width="0" layer="39"/>
+<circle x="6.9" y="0" radius="2" width="0" layer="39"/>
+<text x="-4.3" y="-6.7" size="0.5" layer="49" font="vector">4.0 mm stack height</text>
+<rectangle x1="-4.8" y1="-1.8" x2="4.8" y2="1.8" layer="39"/>
 </package>
 <package name="HARWIN-M50-35007">
 <wire x1="-4.445" y1="1.7" x2="4.445" y2="1.7" width="0.15" layer="51"/>
@@ -378,41 +250,21 @@ by exp-project-lbr.ulp</description>
 <wire x1="4.695" y1="1.7" x2="4.695" y2="-1.7" width="0.1" layer="51"/>
 </package>
 <package name="ROCKETNET-M-12">
-<wire x1="-9.43" y1="2.9" x2="8.83" y2="2.9" width="0.1" layer="52"/>
-<wire x1="8.83" y1="2.9" x2="8.83" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="8.83" y1="-2.85" x2="-9.43" y2="-2.85" width="0.1" layer="52"/>
-<wire x1="-9.43" y1="-2.85" x2="-9.43" y2="2.9" width="0.1" layer="52"/>
-<hole x="6.13" y="0" drill="2.4384"/>
+<wire x1="-9" y1="3" x2="8.4" y2="3" width="0.1" layer="52"/>
+<wire x1="8.4" y1="3" x2="8.4" y2="-3" width="0.1" layer="52"/>
+<wire x1="8.4" y1="-3" x2="-9" y2="-3" width="0.1" layer="52"/>
+<wire x1="-9" y1="-3" x2="-9" y2="3" width="0.1" layer="52"/>
+<hole x="6.2" y="0" drill="2.4384"/>
 <text x="-2.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">TX+</text>
 <text x="3.5" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RX-</text>
 <text x="-0.2" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">A1/A2</text>
 <text x="1" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RckRdy</text>
 <text x="2.4" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">RX+</text>
-<hole x="-6.73" y="0" drill="2.4384"/>
-<wire x1="-8.38" y1="-0.95" x2="-8.38" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-8.38" y1="0.95" x2="-6.73" y2="1.9" width="0.01" layer="22"/>
-<wire x1="-6.73" y1="1.9" x2="-5.08" y2="0.95" width="0.01" layer="22"/>
-<wire x1="-5.08" y1="0.95" x2="-5.08" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="-5.08" y1="-0.95" x2="-6.73" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="-6.73" y1="-1.9" x2="-8.38" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="4.48" y1="-0.95" x2="4.48" y2="0.95" width="0.01" layer="22"/>
-<wire x1="4.48" y1="0.95" x2="6.13" y2="1.9" width="0.01" layer="22"/>
-<wire x1="6.13" y1="1.9" x2="7.78" y2="0.95" width="0.01" layer="22"/>
-<wire x1="7.78" y1="0.95" x2="7.78" y2="-0.95" width="0.01" layer="22"/>
-<wire x1="7.78" y1="-0.95" x2="6.13" y2="-1.9" width="0.01" layer="22"/>
-<wire x1="6.13" y1="-1.9" x2="4.48" y2="-0.95" width="0.01" layer="22"/>
-<circle x="6.13" y="0" radius="2" width="0.01" layer="22"/>
-<circle x="-6.73" y="0" radius="2" width="0.01" layer="22"/>
+<hole x="-6.8" y="0" drill="2.4384"/>
+<circle x="6.2" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-6.8" y="0" radius="2" width="0.01" layer="21"/>
 <text x="-3.665" y="-5.3" size="0.5" layer="49" font="vector">#2-56 hex head bolts</text>
-<text x="-3.665" y="-6" size="0.5" layer="49" font="vector">4 mm OD FDM standoffs</text>
-<wire x1="5.33" y1="4.4" x2="-5.93" y2="4.4" width="0.1" layer="21"/>
-<wire x1="5.33" y1="-4.4" x2="-5.93" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="7.83" y1="-1.9" x2="7.83" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-8.43" y1="-1.9" x2="-8.43" y2="1.9" width="0.1" layer="21"/>
-<wire x1="-8.43" y1="1.9" x2="-5.93" y2="4.4" width="0.1" layer="21"/>
-<wire x1="5.33" y1="4.4" x2="7.83" y2="1.9" width="0.1" layer="21"/>
-<wire x1="7.83" y1="-1.9" x2="5.33" y2="-4.4" width="0.1" layer="21"/>
-<wire x1="-5.93" y1="-4.4" x2="-8.43" y2="-1.9" width="0.1" layer="21"/>
+<text x="-3.665" y="-6" size="0.5" layer="49" font="vector">4.0 mm OD FDM standoffs</text>
 <wire x1="-3.81" y1="1.7" x2="3.81" y2="1.7" width="0.15" layer="51"/>
 <wire x1="3.81" y1="-1.7" x2="-3.81" y2="-1.7" width="0.15" layer="51"/>
 <wire x1="3.81" y1="1.7" x2="3.81" y2="-1.7" width="0.15" layer="51"/>
@@ -431,11 +283,38 @@ by exp-project-lbr.ulp</description>
 <pad name="RR@7" x="0.635" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
 <wire x1="-4.06" y1="-1.7" x2="-4.06" y2="1.7" width="0.1" layer="51"/>
 <wire x1="4.06" y1="1.7" x2="4.06" y2="-1.7" width="0.1" layer="51"/>
-<rectangle x1="-9.565" y1="-3" x2="8.965" y2="3" layer="40"/>
-<circle x="-6.73" y="0" radius="2.1" width="0.25" layer="39"/>
-<circle x="6.13" y="0" radius="2.1" width="0.25" layer="39"/>
-<text x="-3.665" y="-6.7" size="0.5" layer="49" font="vector">1.0 mm stack height</text>
+<rectangle x1="-9" y1="-3" x2="8.4" y2="3" layer="40"/>
+<circle x="-6.8" y="0" radius="2" width="0" layer="39"/>
+<circle x="6.2" y="0" radius="2" width="0" layer="39"/>
+<text x="-3.665" y="-6.7" size="0.5" layer="49" font="vector">4.0 mm stack height</text>
 <text x="-1.5" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">TX-</text>
+<rectangle x1="-4.2" y1="-1.8" x2="4.2" y2="1.8" layer="39"/>
+</package>
+<package name="HARWIN-M50-31508-NO-HOLES">
+<smd name="1" x="-4.445" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="2" x="-4.445" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="3" x="-3.175" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="4" x="-3.175" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="5" x="-1.905" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="6" x="-1.905" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="8" x="-0.635" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="9" x="0.635" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="10" x="0.635" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="11" x="1.905" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="12" x="1.905" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="13" x="3.175" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="14" x="3.175" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="15" x="4.445" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<smd name="16" x="4.445" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
+<hole x="3.81" y="0" drill="0.71"/>
+<hole x="-3.81" y="0" drill="0.71"/>
+<wire x1="-5.334" y1="1.7" x2="5.334" y2="1.7" width="0.1" layer="51"/>
+<wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="5.334" y1="-1.7" x2="-5.334" y2="-1.7" width="0.1" layer="51"/>
+<wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="51"/>
+<wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="21"/>
+<wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -654,29 +533,6 @@ by exp-project-lbr.ulp</description>
 <gate name="G$1" symbol="ROCKETNET-SYM" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="F" package="ROCKETNET-F-16">
-<connects>
-<connect gate="G$1" pin="AUX1" pad="A1@6"/>
-<connect gate="G$1" pin="AUX2" pad="A2@8"/>
-<connect gate="G$1" pin="AUX3" pad="A3@10"/>
-<connect gate="G$1" pin="AUX4" pad="A4@12"/>
-<connect gate="G$1" pin="B+@1" pad="B+@2"/>
-<connect gate="G$1" pin="B+@2" pad="B+@4"/>
-<connect gate="G$1" pin="B-@1" pad="B-@14"/>
-<connect gate="G$1" pin="B-@2" pad="B-@16"/>
-<connect gate="G$1" pin="RX+@1" pad="R+@1"/>
-<connect gate="G$1" pin="RX+@2" pad="R+@3"/>
-<connect gate="G$1" pin="RX-@1" pad="R-@5"/>
-<connect gate="G$1" pin="RX-@2" pad="R-@7"/>
-<connect gate="G$1" pin="TX+@1" pad="T+@9"/>
-<connect gate="G$1" pin="TX+@2" pad="T+@11"/>
-<connect gate="G$1" pin="TX-@1" pad="T-@13"/>
-<connect gate="G$1" pin="TX-@2" pad="T-@15"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="M" package="ROCKETNET-M-16">
 <connects>
 <connect gate="G$1" pin="AUX1" pad="A1"/>

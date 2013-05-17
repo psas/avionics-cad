@@ -91,54 +91,66 @@
 </layers>
 <board>
 <plain>
-<wire x1="9.1" y1="-1.9" x2="9.1" y2="1.9" width="0.02" layer="20"/>
-<wire x1="6.6" y1="-4.4" x2="-7.2" y2="-4.4" width="0.02" layer="20"/>
-<wire x1="-9.7" y1="-1.9" x2="-9.7" y2="1.9" width="0.02" layer="20"/>
-<text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on top of board)</text>
-<text x="3.2" y="4.8" size="0.762" layer="48">B-</text>
-<text x="-0.3" y="4.8" size="0.762" layer="48" rot="R90">AUX2</text>
-<text x="-1.6" y="4.8" size="0.762" layer="48" rot="R90">AUX1</text>
-<text x="-2.2" y="-5.3" size="0.762" layer="48">RX-</text>
-<text x="-4.8" y="-5.3" size="0.762" layer="48">RX+</text>
-<text x="2.9" y="-5.3" size="0.762" layer="48">TX-</text>
-<text x="0.4" y="-5.3" size="0.762" layer="48">TX+</text>
-<text x="-4.2" y="4.8" size="0.762" layer="48">B+</text>
-<hole x="7.4" y="0" drill="2.4384"/>
-<hole x="-8" y="0" drill="2.4384"/>
-<text x="0.9" y="4.8" size="0.762" layer="48" rot="R90">AUX3</text>
-<text x="2.2" y="4.8" size="0.762" layer="48" rot="R90">AUX4</text>
-<rectangle x1="-2.2225" y1="-4.28625" x2="-0.3175" y2="-1.11125" layer="1"/>
-<rectangle x1="-4.7625" y1="-4.28625" x2="-2.8575" y2="-1.11125" layer="1"/>
-<rectangle x1="0.3175" y1="-4.28625" x2="2.2225" y2="-1.11125" layer="1"/>
-<rectangle x1="2.8575" y1="-4.28625" x2="4.7625" y2="-1.11125" layer="1"/>
-<rectangle x1="2.8575" y1="1.11125" x2="4.7625" y2="4.28625" layer="1"/>
-<rectangle x1="-4.7625" y1="1.11125" x2="-2.8575" y2="4.28625" layer="1"/>
-<wire x1="6.6" y1="4.4" x2="-7.2" y2="4.4" width="0.02" layer="20"/>
-<wire x1="-9.7" y1="1.9" x2="-7.2" y2="4.4" width="0.02" layer="20"/>
-<wire x1="-7.2" y1="-4.4" x2="-9.7" y2="-1.9" width="0.02" layer="20"/>
-<wire x1="9.1" y1="-1.9" x2="6.6" y2="-4.4" width="0.02" layer="20"/>
-<wire x1="6.6" y1="4.4" x2="9.1" y2="1.9" width="0.02" layer="20"/>
-<wire x1="-9.15" y1="-2" x2="-6.85" y2="-2" width="0.01" layer="51"/>
-<wire x1="-6.85" y1="-2" x2="-5.7" y2="0" width="0.01" layer="51"/>
-<wire x1="-5.7" y1="0" x2="-6.85" y2="2" width="0.01" layer="51"/>
-<wire x1="-6.85" y1="2" x2="-9.15" y2="2" width="0.01" layer="51"/>
-<wire x1="-9.15" y1="2" x2="-10.3" y2="0" width="0.01" layer="51"/>
-<wire x1="-10.3" y1="0" x2="-9.15" y2="-2" width="0.01" layer="51"/>
-<wire x1="6.25" y1="-2" x2="8.55" y2="-2" width="0.01" layer="51"/>
-<wire x1="8.55" y1="-2" x2="9.7" y2="0" width="0.01" layer="51"/>
-<wire x1="9.7" y1="0" x2="8.55" y2="2" width="0.01" layer="51"/>
-<wire x1="8.55" y1="2" x2="6.25" y2="2" width="0.01" layer="51"/>
-<wire x1="6.25" y1="2" x2="5.1" y2="0" width="0.01" layer="51"/>
-<wire x1="5.1" y1="0" x2="6.25" y2="-2" width="0.01" layer="51"/>
-<text x="10.05" y="-2.3" size="0.762" layer="48">#2-56 nylock
+<wire x1="9.1" y1="-3.3" x2="9.1" y2="3.3" width="0.02" layer="20"/>
+<wire x1="9.1" y1="-3.3" x2="-8.7" y2="-3.3" width="0.02" layer="20"/>
+<wire x1="-8.7" y1="-3.3" x2="-9.7" y2="-2.3" width="0.02" layer="20"/>
+<wire x1="-9.7" y1="-2.3" x2="-9.7" y2="2.3" width="0.02" layer="20"/>
+<wire x1="-9.7" y1="2.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
+<text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on bottom of board)</text>
+<text x="4.3" y="4.1" size="0.762" layer="48">B-</text>
+<text x="-0.4" y="3.8" size="0.762" layer="48" rot="R90">AUX2</text>
+<text x="-1.7" y="3.8" size="0.762" layer="48" rot="R90">AUX1</text>
+<text x="-1.9" y="-4.4" size="0.762" layer="48">RX-</text>
+<text x="-2.8" y="-5.4" size="0.762" layer="48" rot="R90">RX+</text>
+<text x="3.7" y="-5.4" size="0.762" layer="48" rot="R90">TX-</text>
+<text x="0.6" y="-4.4" size="0.762" layer="48">TX+</text>
+<text x="-5.5" y="4" size="0.762" layer="48">B+</text>
+<hole x="7.5" y="0" drill="2.4384"/>
+<hole x="-8.1" y="0" drill="2.4384"/>
+<text x="0.8" y="3.8" size="0.762" layer="48" rot="R90">AUX3</text>
+<text x="2.1" y="3.8" size="0.762" layer="48" rot="R90">AUX4</text>
+<wire x1="9.1" y1="3.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
+<text x="9.85" y="-1.2" size="0.762" layer="48">#2-56 nylock
 (5/32" OD)</text>
+<circle x="-1.905" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-4.445" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-4.445" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-3.175" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-3.175" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-1.905" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-0.635" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="-0.635" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="0.635" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="0.635" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="1.905" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="1.905" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="3.175" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="3.175" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="4.445" y="0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<circle x="4.445" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
+<rectangle x1="4.064" y1="-2.794" x2="5.969" y2="2.794" layer="16"/>
+<rectangle x1="-5.969" y1="-2.794" x2="-4.064" y2="2.794" layer="16"/>
+<rectangle x1="-2.286" y1="-2.794" x2="-0.254" y2="-0.762" layer="16"/>
+<rectangle x1="2.794" y1="-2.794" x2="3.556" y2="2.794" layer="16"/>
+<rectangle x1="-3.556" y1="-2.794" x2="-2.794" y2="2.794" layer="16"/>
+<rectangle x1="-2.286" y1="-2.794" x2="-0.254" y2="-0.762" layer="1"/>
+<rectangle x1="0.254" y1="-2.794" x2="2.286" y2="-0.762" layer="16"/>
+<rectangle x1="0.254" y1="-2.794" x2="2.286" y2="-0.762" layer="1"/>
+<rectangle x1="-2.286" y1="1.397" x2="-1.524" y2="2.794" layer="1"/>
+<rectangle x1="-1.016" y1="1.016" x2="-0.254" y2="2.159" layer="1"/>
+<rectangle x1="0.254" y1="1.524" x2="1.016" y2="2.794" layer="1"/>
+<rectangle x1="1.524" y1="1.016" x2="2.286" y2="2.159" layer="1"/>
+<rectangle x1="-6.096" y1="-1.143" x2="-4.064" y2="1.143" layer="1"/>
+<rectangle x1="4.064" y1="-1.143" x2="6.096" y2="1.143" layer="1"/>
+<rectangle x1="2.667" y1="-0.762" x2="3.556" y2="0.762" layer="1"/>
+<rectangle x1="-3.556" y1="-0.762" x2="-2.667" y2="0.762" layer="1"/>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
 <description>Generated from &lt;b&gt;16-pin-rocketnet-daughter.brd&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
 <packages>
-<package name="HARWIN-M50-31508">
+<package name="HARWIN-M50-31508-NO-HOLES">
 <smd name="1" x="-4.445" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
 <smd name="2" x="-4.445" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
 <smd name="3" x="-3.175" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
@@ -157,22 +169,6 @@ by exp-project-lbr.ulp</description>
 <smd name="16" x="4.445" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
 <hole x="3.81" y="0" drill="0.71"/>
 <hole x="-3.81" y="0" drill="0.71"/>
-<hole x="-4.445" y="0.635" drill="0.71"/>
-<hole x="-4.445" y="-0.635" drill="0.71"/>
-<hole x="-3.175" y="0.635" drill="0.71"/>
-<hole x="-3.175" y="-0.635" drill="0.71"/>
-<hole x="-1.905" y="0.635" drill="0.71"/>
-<hole x="-1.905" y="-0.635" drill="0.71"/>
-<hole x="-0.635" y="0.635" drill="0.71"/>
-<hole x="-0.635" y="-0.635" drill="0.71"/>
-<hole x="0.635" y="0.635" drill="0.71"/>
-<hole x="0.635" y="-0.635" drill="0.71"/>
-<hole x="1.905" y="0.635" drill="0.71"/>
-<hole x="1.905" y="-0.635" drill="0.71"/>
-<hole x="3.175" y="0.635" drill="0.71"/>
-<hole x="3.175" y="-0.635" drill="0.71"/>
-<hole x="4.445" y="0.635" drill="0.71"/>
-<hole x="4.445" y="-0.635" drill="0.71"/>
 <wire x1="-5.334" y1="1.7" x2="5.334" y2="1.7" width="0.1" layer="51"/>
 <wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="51"/>
 <wire x1="5.334" y1="-1.7" x2="-5.334" y2="-1.7" width="0.1" layer="51"/>
@@ -351,17 +347,17 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="E$2" library="rocketnet-connector" package="HARWIN-M50-31508" value="" x="0" y="0"/>
-<element name="E$1" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-3.81" y="3.4925"/>
-<element name="E$3" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-3.81" y="-3.4925"/>
-<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="3.81" y="3.4925"/>
-<element name="E$5" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-1.27" y="-3.4925"/>
-<element name="E$6" library="rocketnet-connector" package="26AWG-WIRE" value="" x="1.27" y="-3.4925"/>
-<element name="E$7" library="rocketnet-connector" package="26AWG-WIRE" value="" x="3.81" y="-3.4925"/>
-<element name="E$8" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-1.905" y="3.3925"/>
-<element name="E$9" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.635" y="3.6925"/>
-<element name="E$10" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.635" y="3.3925"/>
-<element name="E$11" library="rocketnet-connector" package="26AWG-WIRE" value="" x="1.905" y="3.6925"/>
+<element name="E$2" library="rocketnet-connector" package="HARWIN-M50-31508-NO-HOLES" value="" x="0" y="0" rot="MR0"/>
+<element name="E$1" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-5.207" y="0"/>
+<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="5.207" y="0"/>
+<element name="E$8" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-1.905" y="1.397"/>
+<element name="E$9" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.635" y="2.159"/>
+<element name="E$10" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.635" y="1.524"/>
+<element name="E$11" library="rocketnet-connector" package="26AWG-WIRE" value="" x="1.905" y="2.159"/>
+<element name="E$12" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-2.667" y="0"/>
+<element name="E$13" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-1.27" y="-0.635"/>
+<element name="E$14" library="rocketnet-connector" package="26AWG-WIRE" value="" x="1.27" y="-0.635"/>
+<element name="E$15" library="rocketnet-connector" package="26AWG-WIRE" value="" x="2.667" y="0"/>
 </elements>
 <signals>
 <signal name="AUX2">
@@ -380,19 +376,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="S$1">
 <contactref element="E$11" pad="P$1"/>
-<wire x1="1.905" y1="3.6925" x2="1.905" y2="1.905" width="0.5" layer="1"/>
 </signal>
 <signal name="S$2">
 <contactref element="E$10" pad="P$1"/>
-<wire x1="0.635" y1="3.3925" x2="0.635" y2="1.905" width="0.5" layer="1"/>
 </signal>
 <signal name="S$4">
 <contactref element="E$9" pad="P$1"/>
-<wire x1="-0.635" y1="3.6925" x2="-0.635" y2="1.74625" width="0.5" layer="1"/>
 </signal>
 <signal name="S$5">
 <contactref element="E$8" pad="P$1"/>
-<wire x1="-1.905" y1="3.3925" x2="-1.905" y2="1.5875" width="0.5" layer="1"/>
 </signal>
 </signals>
 </board>
