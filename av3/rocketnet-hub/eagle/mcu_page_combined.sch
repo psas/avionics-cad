@@ -14975,6 +14975,74 @@ by exp-project-lbr.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="sn65220">
+<packages>
+<package name="SOT23-6L">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.422" y1="0.41" x2="1.422" y2="-0.41" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="-0.41" x2="-1.422" y2="0.41" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="0.428" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="-0.428" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.39" x2="-1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="-0.39" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="0.39" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.39" x2="1.422" y2="-0.81" width="0.1524" layer="51"/>
+<circle x="-1" y="-0.25" radius="0.2" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SN65220">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="7.62" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="8.89" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-15.24" y="2.54" length="short" direction="pas" swaplevel="2"/>
+<pin name="B" x="15.24" y="2.54" length="short" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="GND" x="-5.08" y="-7.62" length="short" direction="pwr" swaplevel="1" rot="R90"/>
+<pin name="GND2" x="5.08" y="-7.62" length="short" direction="pwr" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SN65220" prefix="U">
+<gates>
+<gate name="G$1" symbol="SN65220" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-6L">
+<connects>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15076,7 +15144,7 @@ by exp-project-lbr.ulp</description>
 <part name="C82" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="T1" library="zetex" deviceset="PMOSSOT23" device="" value="2N7000"/>
+<part name="T1" library="zetex" deviceset="PMOSSOT23" device="" value="BSS84"/>
 <part name="R42" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="T2" library="zetex" deviceset="NMOSSOT23" device="" value="2N7000"/>
@@ -15623,6 +15691,15 @@ by exp-project-lbr.ulp</description>
 <part name="L17" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="J10" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
 <part name="GND100" library="supply1" deviceset="GND" device=""/>
+<part name="T19" library="zetex" deviceset="PMOSSOT23" device="" value="BSS84"/>
+<part name="R147" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="+3V37" library="supply1" deviceset="+3V3" device=""/>
+<part name="R148" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="GND105" library="supply1" deviceset="GND" device=""/>
+<part name="U3" library="sn65220" deviceset="SN65220" device="DBV"/>
+<part name="GND110" library="supply1" deviceset="GND" device=""/>
+<part name="GND115" library="supply1" deviceset="GND" device=""/>
+<part name="R167" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -15688,6 +15765,15 @@ by exp-project-lbr.ulp</description>
 <instance part="TP36" gate="G$1" x="15.24" y="370.84"/>
 <instance part="J10" gate="J" x="167.64" y="391.16"/>
 <instance part="GND100" gate="1" x="157.48" y="383.54"/>
+<instance part="T19" gate="A" x="198.12" y="375.92"/>
+<instance part="R147" gate="R" x="182.88" y="381"/>
+<instance part="+3V37" gate="G$1" x="198.12" y="388.62"/>
+<instance part="R148" gate="R" x="198.12" y="358.14" rot="R90"/>
+<instance part="GND105" gate="1" x="198.12" y="347.98"/>
+<instance part="U3" gate="G$1" x="248.92" y="365.76"/>
+<instance part="GND110" gate="1" x="243.84" y="350.52"/>
+<instance part="GND115" gate="1" x="254" y="350.52"/>
+<instance part="R167" gate="R" x="281.94" y="368.3"/>
 </instances>
 <busses>
 </busses>
@@ -15810,6 +15896,21 @@ by exp-project-lbr.ulp</description>
 <wire x1="157.48" y1="388.62" x2="157.48" y2="386.08" width="0.1524" layer="91"/>
 <pinref part="GND100" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R148" gate="R" pin="1"/>
+<wire x1="198.12" y1="353.06" x2="198.12" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="GND105" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="GND110" gate="1" pin="GND"/>
+<wire x1="243.84" y1="353.06" x2="243.84" y2="358.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND2"/>
+<pinref part="GND115" gate="1" pin="GND"/>
+<wire x1="254" y1="353.06" x2="254" y2="358.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="1">
 <segment>
@@ -15894,6 +15995,14 @@ by exp-project-lbr.ulp</description>
 <pinref part="J12" gate="J" pin="2"/>
 <pinref part="+3V35" gate="G$1" pin="+3V3"/>
 <wire x1="-20.32" y1="421.64" x2="-20.32" y2="429.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R147" gate="R" pin="2"/>
+<pinref part="T19" gate="A" pin="D"/>
+<wire x1="187.96" y1="381" x2="198.12" y2="381" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="381" x2="198.12" y2="386.08" width="0.1524" layer="91"/>
+<junction x="198.12" y="381"/>
+<pinref part="+3V37" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="JTAG_TMS" class="0">
@@ -16185,9 +16294,9 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="ROCKET_RDY" class="0">
 <segment>
-<label x="137.16" y="373.38" size="1.016" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PD2"/>
-<wire x1="132.08" y1="373.38" x2="137.16" y2="373.38" width="0.1524" layer="91"/>
+<pinref part="R167" gate="R" pin="2"/>
+<wire x1="287.02" y1="368.3" x2="294.64" y2="368.3" width="0.1524" layer="91"/>
+<label x="294.64" y="368.3" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ACOK" class="0">
@@ -16378,6 +16487,36 @@ by exp-project-lbr.ulp</description>
 <label x="10.16" y="419.1" size="1.016" layer="95" xref="yes"/>
 <pinref part="R150" gate="R" pin="1"/>
 <junction x="-2.54" y="419.1"/>
+</segment>
+</net>
+<net name="N$208" class="0">
+<segment>
+<pinref part="T19" gate="A" pin="S"/>
+<pinref part="R148" gate="R" pin="2"/>
+<wire x1="198.12" y1="363.22" x2="198.12" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="368.3" x2="198.12" y2="370.84" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="368.3" x2="198.12" y2="368.3" width="0.1524" layer="91"/>
+<junction x="198.12" y="368.3"/>
+<pinref part="U3" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$217" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="B"/>
+<pinref part="R167" gate="R" pin="1"/>
+<wire x1="276.86" y1="368.3" x2="264.16" y2="368.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ROCKET_RDY_MCU" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD2"/>
+<wire x1="132.08" y1="373.38" x2="177.8" y2="373.38" width="0.1524" layer="91"/>
+<pinref part="T19" gate="A" pin="G"/>
+<pinref part="R147" gate="R" pin="1"/>
+<wire x1="177.8" y1="381" x2="177.8" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="373.38" x2="193.04" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="375.92" x2="177.8" y2="373.38" width="0.1524" layer="91"/>
+<junction x="177.8" y="373.38"/>
 </segment>
 </net>
 </nets>
@@ -22798,6 +22937,7 @@ Battery Charger Schematic</text>
 <approved hash="104,2,464.82,134.62,J7,B-,GND,,,"/>
 <approved hash="104,5,-101.6,86.36,J9,B+,BAT,,,"/>
 <approved hash="104,5,-101.6,83.82,J9,B+,BAT,,,"/>
+<approved hash="104,1,271.78,360.68,U3,GND2,GND,,,"/>
 <approved hash="106,4,78.74,187.96,MTXER,,,,,"/>
 </errors>
 </schematic>
