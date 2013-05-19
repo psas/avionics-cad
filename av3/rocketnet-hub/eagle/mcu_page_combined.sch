@@ -14991,14 +14991,14 @@ by exp-project-lbr.ulp</description>
 </classes>
 <parts>
 <part name="U1" library="stm32" deviceset="STM32F407V" device="100-PIN_QFP"/>
-<part name="C1" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C4" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C6" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C8" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C9" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C1" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C4" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C6" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C8" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C9" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -15010,7 +15010,7 @@ by exp-project-lbr.ulp</description>
 <part name="R12" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$14" library="ks8999" deviceset="KS8999" device=""/>
-<part name="R13" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
+<part name="R13" library="rcl_custom" deviceset="R-US_" device="0402-B" value="3k"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
@@ -15036,55 +15036,55 @@ by exp-project-lbr.ulp</description>
 <part name="U$2" library="MIC37100" deviceset="MIC37101-2.1YM" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C14" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C15" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C16" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C17" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C18" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C19" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C20" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C21" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C22" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C23" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C25" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C26" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C27" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C28" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C61" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C62" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C63" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C64" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C65" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C66" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C67" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C68" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C69" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C70" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C71" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C72" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C73" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C74" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C75" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C76" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C78" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C13" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C14" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C15" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C16" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C17" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C18" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C19" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C20" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C21" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C22" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C23" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C24" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C25" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C26" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C27" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C28" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C61" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C62" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C63" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C64" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C65" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C66" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C67" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C68" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C69" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C70" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C71" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C72" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C73" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C74" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C75" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C76" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
+<part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
+<part name="C78" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="C79" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="C80" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="C81" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="C82" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="T1" library="zetex" deviceset="PMOSSOT23" device=""/>
+<part name="T1" library="zetex" deviceset="PMOSSOT23" device="" value="2N7000"/>
 <part name="R42" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="T2" library="zetex" deviceset="NMOSSOT23" device=""/>
-<part name="C12" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="T2" library="zetex" deviceset="NMOSSOT23" device="" value="2N7000"/>
+<part name="C12" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10n"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R43" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
-<part name="LED37" library="LED_RGB_PLCC6" deviceset="LED_RGB_*" device="PLCC-6"/>
+<part name="LED37" library="LED_RGB_PLCC6" deviceset="LED_RGB_*" device="PLCC-6" value="RGB"/>
 <part name="R44" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
 <part name="R45" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
 <part name="R46" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
@@ -15098,10 +15098,10 @@ by exp-project-lbr.ulp</description>
 <part name="C84" library="rcl_custom" deviceset="C-EU" device="1206-B" value="47u"/>
 <part name="C85" library="rcl_custom" deviceset="C-EU" device="0402-B" value=".1u"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="E5" library="rcl_custom" deviceset="L-BEAD-*" device="0603-B"/>
-<part name="LED38" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="E5" library="rcl_custom" deviceset="L-BEAD-*" device="0603-B" value="FB"/>
+<part name="LED38" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R48" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="C86" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C86" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -15118,13 +15118,13 @@ by exp-project-lbr.ulp</description>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="C87" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C88" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C89" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C90" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C91" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C92" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C93" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C87" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C88" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C89" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C90" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C91" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C92" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
+<part name="C93" library="rcl_custom" deviceset="C-EU" device="0402-B" value="2.2u"/>
 <part name="U$3" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U$4" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U$5" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
@@ -15136,7 +15136,7 @@ by exp-project-lbr.ulp</description>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="R51" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="C95" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C95" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="R52" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
@@ -15156,12 +15156,12 @@ by exp-project-lbr.ulp</description>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" deviceset="GND" device=""/>
-<part name="C96" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C97" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C98" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C99" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C100" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C101" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C96" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
+<part name="C97" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
+<part name="C98" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
+<part name="C99" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
+<part name="C100" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
+<part name="C101" library="rcl_custom" deviceset="C-EU" device="0402-B" value="NP"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
 <part name="R66" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
@@ -15197,40 +15197,40 @@ by exp-project-lbr.ulp</description>
 <part name="U$26" library="max4734" deviceset="MAX4734ETC+" device=""/>
 <part name="U$27" library="max4734" deviceset="MAX4734ETC+" device=""/>
 <part name="GND67" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C10" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
-<part name="R75" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R76" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R77" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R78" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="R75" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R76" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R77" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R78" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="C11" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND70" library="supply1" deviceset="GND" device=""/>
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
-<part name="R79" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R80" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R81" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R82" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R83" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R84" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R85" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R86" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R87" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R88" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R89" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R90" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R91" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R92" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R93" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R94" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R95" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R96" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R97" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R103" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R104" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R105" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R106" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R79" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R80" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R81" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R82" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R83" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R84" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R85" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R86" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R87" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R88" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R89" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R90" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R91" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R92" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R93" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R94" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R95" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R96" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R97" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R98" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R103" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R104" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R105" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R106" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
 <part name="TP1" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP2" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP3" library="testpad" deviceset="TP" device="TP06R"/>
@@ -15277,8 +15277,8 @@ by exp-project-lbr.ulp</description>
 <part name="R17" library="rcl_custom" deviceset="R-US_" device="0402-B" value="2.2k"/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
-<part name="C106" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C107" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C106" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10p"/>
+<part name="C107" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10p"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="LED2" library="led" deviceset="LED" device="SML0603" value="RED"/>
@@ -15370,7 +15370,7 @@ by exp-project-lbr.ulp</description>
 <part name="TP35" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="D3" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="TP37" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="LED22" library="led" deviceset="LED" device="CHIPLED_0603"/>
+<part name="LED22" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R128" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="+3V36" library="supply1" deviceset="+3V3" device=""/>
@@ -15384,10 +15384,10 @@ by exp-project-lbr.ulp</description>
 <part name="R99" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
-<part name="R100" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R101" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R102" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R115" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R100" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R101" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R102" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R115" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
 <part name="R116" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
 <part name="R117" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
 <part name="R118" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
@@ -15496,45 +15496,45 @@ by exp-project-lbr.ulp</description>
 <part name="GND98" library="supply1" deviceset="GND" device=""/>
 <part name="T3" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T4" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C29" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C30" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="GND97" library="supply1" deviceset="GND" device=""/>
-<part name="C36" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C126" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C36" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C126" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND99" library="supply1" deviceset="GND" device=""/>
 <part name="GND101" library="supply1" deviceset="GND" device=""/>
 <part name="VDD5" library="supply1" deviceset="VDD" device=""/>
 <part name="T5" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T6" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C7" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C35" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C7" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C35" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND102" library="supply1" deviceset="GND" device=""/>
 <part name="GND103" library="supply1" deviceset="GND" device=""/>
-<part name="C57" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C127" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C57" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C127" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND104" library="supply1" deviceset="GND" device=""/>
 <part name="GND106" library="supply1" deviceset="GND" device=""/>
 <part name="VDD4" library="supply1" deviceset="VDD" device=""/>
 <part name="T7" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T8" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C33" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C33" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C34" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND107" library="supply1" deviceset="GND" device=""/>
 <part name="GND108" library="supply1" deviceset="GND" device=""/>
-<part name="C40" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C128" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C40" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C128" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND109" library="supply1" deviceset="GND" device=""/>
 <part name="GND111" library="supply1" deviceset="GND" device=""/>
 <part name="VDD6" library="supply1" deviceset="VDD" device=""/>
 <part name="T9" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T10" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C37" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C38" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C37" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C38" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND112" library="supply1" deviceset="GND" device=""/>
 <part name="GND113" library="supply1" deviceset="GND" device=""/>
-<part name="C44" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C129" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C44" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C129" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND114" library="supply1" deviceset="GND" device=""/>
 <part name="GND116" library="supply1" deviceset="GND" device=""/>
 <part name="VDD7" library="supply1" deviceset="VDD" device=""/>
@@ -15544,61 +15544,59 @@ by exp-project-lbr.ulp</description>
 <part name="T14" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T15" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T16" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C41" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C42" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C41" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C42" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND117" library="supply1" deviceset="GND" device=""/>
 <part name="GND118" library="supply1" deviceset="GND" device=""/>
-<part name="C48" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C48" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND119" library="supply1" deviceset="GND" device=""/>
 <part name="GND121" library="supply1" deviceset="GND" device=""/>
-<part name="C49" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C50" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C49" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C50" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND122" library="supply1" deviceset="GND" device=""/>
 <part name="GND123" library="supply1" deviceset="GND" device=""/>
-<part name="C51" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C53" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C51" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C53" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND124" library="supply1" deviceset="GND" device=""/>
 <part name="GND126" library="supply1" deviceset="GND" device=""/>
-<part name="C54" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C55" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C54" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C55" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND127" library="supply1" deviceset="GND" device=""/>
 <part name="GND128" library="supply1" deviceset="GND" device=""/>
-<part name="C130" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C132" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C130" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C132" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND129" library="supply1" deviceset="GND" device=""/>
 <part name="GND131" library="supply1" deviceset="GND" device=""/>
 <part name="VDD8" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD9" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD11" library="supply1" deviceset="VDD" device=""/>
-<part name="R149" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R151" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R152" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R153" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R154" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R155" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R156" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R157" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R158" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R159" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R160" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R161" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R162" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R163" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="C45" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="R149" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R151" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1n"/>
+<part name="R152" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R153" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R154" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R155" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R156" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R157" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R158" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R159" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R160" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R161" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R162" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R163" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="C45" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="T17" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="T18" library="magnetics" deviceset="ALT4532" device=""/>
-<part name="C31" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C32" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C31" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C32" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND132" library="supply1" deviceset="GND" device=""/>
 <part name="GND133" library="supply1" deviceset="GND" device=""/>
-<part name="C56" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C59" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
-<part name="C133" library="rcl_custom" deviceset="C-EU" device="0402-B"/>
+<part name="C56" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
+<part name="C133" library="rcl_custom" deviceset="C-EU" device="0402-B" value="1n"/>
 <part name="GND134" library="supply1" deviceset="GND" device=""/>
-<part name="GND135" library="supply1" deviceset="GND" device=""/>
 <part name="GND136" library="supply1" deviceset="GND" device=""/>
-<part name="R164" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
-<part name="R165" library="rcl_custom" deviceset="R-US_" device="0402-B"/>
+<part name="R164" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
+<part name="R165" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
 <part name="VDD10" library="supply1" deviceset="VDD" device=""/>
 <part name="J13" library="headers" deviceset="1.27MM_HDR_2X1" device="2X1"/>
 <part name="L2" library="magnetics" deviceset="ACM2012" device=""/>
@@ -15615,12 +15613,16 @@ by exp-project-lbr.ulp</description>
 <part name="L13" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L14" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L15" library="magnetics" deviceset="ACM2012" device=""/>
-<part name="C134" library="8Y_25MHzCrystal" deviceset="8Y" device=""/>
+<part name="C134" library="8Y_25MHzCrystal" deviceset="8Y" device="" value="25 MHz"/>
 <part name="GND137" library="supply1" deviceset="GND" device=""/>
 <part name="J14" library="rocketnet-connector" deviceset="ROCKETNET-UMBILICAL-18" device=""/>
 <part name="VDD14" library="supply1" deviceset="VDD" device=""/>
 <part name="GND138" library="supply1" deviceset="GND" device=""/>
 <part name="TP36" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="L16" library="magnetics" deviceset="ACM2012" device=""/>
+<part name="L17" library="magnetics" deviceset="ACM2012" device=""/>
+<part name="J10" library="headers" deviceset="1.27MM_HDR_1X4" device=""/>
+<part name="GND100" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15684,6 +15686,8 @@ by exp-project-lbr.ulp</description>
 <instance part="C134" gate="C$1" x="63.5" y="462.28" rot="R270"/>
 <instance part="GND137" gate="1" x="68.58" y="459.74"/>
 <instance part="TP36" gate="G$1" x="15.24" y="370.84"/>
+<instance part="J10" gate="J" x="167.64" y="391.16"/>
+<instance part="GND100" gate="1" x="157.48" y="383.54"/>
 </instances>
 <busses>
 </busses>
@@ -15799,6 +15803,12 @@ by exp-project-lbr.ulp</description>
 <segment>
 <pinref part="C134" gate="C$1" pin="3"/>
 <pinref part="GND137" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J10" gate="J" pin="P$4"/>
+<wire x1="160.02" y1="388.62" x2="157.48" y2="388.62" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="388.62" x2="157.48" y2="386.08" width="0.1524" layer="91"/>
+<pinref part="GND100" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -15917,8 +15927,7 @@ by exp-project-lbr.ulp</description>
 <net name="JTAG_TRST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB4"/>
-<wire x1="10.16" y1="368.3" x2="15.24" y2="368.3" width="0.1524" layer="91"/>
-<label x="10.16" y="368.3" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="15.24" y="368.3" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="TP36" gate="G$1" pin="TP"/>
 <wire x1="15.24" y1="368.3" x2="43.18" y2="368.3" width="0.1524" layer="91"/>
 <junction x="15.24" y="368.3"/>
@@ -16057,16 +16066,18 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="TXD" class="0">
 <segment>
-<label x="134.62" y="396.24" size="1.016" layer="95" xref="yes"/>
+<label x="155.448" y="397.002" size="1.016" layer="95"/>
 <pinref part="U1" gate="G$1" pin="PC10"/>
-<wire x1="132.08" y1="396.24" x2="134.62" y2="396.24" width="0.1524" layer="91"/>
+<pinref part="J10" gate="J" pin="P$1"/>
+<wire x1="132.08" y1="396.24" x2="160.02" y2="396.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXD" class="0">
 <segment>
-<label x="134.62" y="393.7" size="1.016" layer="95" xref="yes"/>
+<label x="155.448" y="394.462" size="1.016" layer="95"/>
 <pinref part="U1" gate="G$1" pin="PC11"/>
-<wire x1="132.08" y1="393.7" x2="134.62" y2="393.7" width="0.1524" layer="91"/>
+<pinref part="J10" gate="J" pin="P$2"/>
+<wire x1="160.02" y1="393.7" x2="132.08" y2="393.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NODE7_!FLT" class="0">
@@ -16133,14 +16144,6 @@ by exp-project-lbr.ulp</description>
 <label x="127" y="462.28" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="NODE5_!EN" class="0">
-<segment>
-<wire x1="86.36" y1="464.82" x2="127" y2="464.82" width="0.1524" layer="91"/>
-<label x="127" y="464.82" size="1.016" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PE4"/>
-<wire x1="86.36" y1="434.34" x2="86.36" y2="464.82" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="NODE1_!EN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PE0"/>
@@ -16171,14 +16174,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="81.28" y1="434.34" x2="81.28" y2="469.9" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="469.9" x2="127" y2="469.9" width="0.1524" layer="91"/>
 <label x="127" y="469.9" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="NODE5_!FLT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PE12"/>
-<wire x1="106.68" y1="434.34" x2="106.68" y2="444.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="444.5" x2="127" y2="444.5" width="0.1524" layer="91"/>
-<label x="127" y="444.5" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SYNC" class="0">
@@ -19862,12 +19857,12 @@ by exp-project-lbr.ulp</description>
 <instance part="GND16" gate="1" x="68.58" y="-22.86"/>
 <instance part="+3V2" gate="G$1" x="76.2" y="17.78"/>
 <instance part="TP28" gate="G$1" x="91.44" y="-2.54"/>
-<instance part="LED22" gate="G$1" x="33.02" y="-25.4" rot="R180"/>
-<instance part="R128" gate="R" x="33.02" y="-35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.5186" y="-31.75" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="29.718" y="-31.75" size="1.778" layer="96" rot="R270"/>
+<instance part="LED22" gate="G$1" x="33.02" y="-20.32"/>
+<instance part="R128" gate="R" x="33.02" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.5186" y="11.43" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="29.718" y="11.43" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND79" gate="1" x="33.02" y="-45.72"/>
+<instance part="GND79" gate="1" x="33.02" y="-30.48"/>
 <instance part="FRAME3" gate="G$1" x="60.96" y="-78.74"/>
 <instance part="R130" gate="R" x="101.6" y="-15.24" smashed="yes" rot="R270">
 <attribute name="NAME" x="103.0986" y="-11.43" size="1.778" layer="95" rot="R270"/>
@@ -19888,10 +19883,13 @@ by exp-project-lbr.ulp</description>
 <segment>
 <pinref part="U$11" gate="G$1" pin="VOUT"/>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
-<wire x1="20.32" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="12.7" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C104" gate="CE" pin="1"/>
 <junction x="45.72" y="12.7"/>
+<pinref part="R128" gate="R" pin="1"/>
+<junction x="33.02" y="12.7"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="IN"/>
@@ -19994,17 +19992,17 @@ by exp-project-lbr.ulp</description>
 <wire x1="-20.32" y1="-20.32" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R128" gate="R" pin="2"/>
-<pinref part="GND79" gate="1" pin="GND"/>
-<wire x1="33.02" y1="-43.18" x2="33.02" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R130" gate="R" pin="2"/>
 <pinref part="GND54" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R131" gate="R" pin="2"/>
 <pinref part="GND57" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED22" gate="G$1" pin="C"/>
+<pinref part="GND79" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-25.4" x2="33.02" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$117" class="0">
@@ -20054,21 +20052,17 @@ by exp-project-lbr.ulp</description>
 <wire x1="33.02" y1="0" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="J13" gate="J" pin="1"/>
 <wire x1="33.02" y1="-7.62" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R128" gate="R" pin="2"/>
+<wire x1="33.02" y1="2.54" x2="33.02" y2="0" width="0.1524" layer="91"/>
+<junction x="33.02" y="0"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="LED22" gate="G$1" pin="C"/>
 <pinref part="J13" gate="J" pin="2"/>
 <wire x1="35.56" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-10.16" x2="33.02" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
 <pinref part="LED22" gate="G$1" pin="A"/>
-<pinref part="R128" gate="R" pin="1"/>
-<wire x1="33.02" y1="-27.94" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-17.78" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -21738,10 +21732,8 @@ by exp-project-lbr.ulp</description>
 <instance part="GND132" gate="1" x="53.34" y="17.78"/>
 <instance part="GND133" gate="1" x="43.18" y="17.78"/>
 <instance part="C56" gate="CE" x="66.04" y="22.86" rot="R180"/>
-<instance part="C59" gate="CE" x="86.36" y="22.86" rot="R180"/>
 <instance part="C133" gate="CE" x="93.98" y="22.86" rot="R180"/>
 <instance part="GND134" gate="1" x="66.04" y="17.78"/>
-<instance part="GND135" gate="1" x="86.36" y="17.78"/>
 <instance part="GND136" gate="1" x="93.98" y="17.78"/>
 <instance part="R164" gate="R" x="86.36" y="35.56" rot="R90"/>
 <instance part="R165" gate="R" x="93.98" y="35.56" rot="R90"/>
@@ -21749,6 +21741,8 @@ by exp-project-lbr.ulp</description>
 <instance part="J14" gate="G$1" x="121.92" y="60.96" rot="MR0"/>
 <instance part="VDD14" gate="G$1" x="116.84" y="91.44"/>
 <instance part="GND138" gate="1" x="116.84" y="30.48"/>
+<instance part="L16" gate="G$1" x="104.14" y="71.12" rot="MR0"/>
+<instance part="L17" gate="G$1" x="104.14" y="58.42" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -21774,10 +21768,6 @@ by exp-project-lbr.ulp</description>
 <segment>
 <pinref part="C56" gate="CE" pin="1"/>
 <pinref part="GND134" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C59" gate="CE" pin="1"/>
-<pinref part="GND135" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C133" gate="CE" pin="1"/>
@@ -21852,13 +21842,9 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="N$79" class="0">
 <segment>
-<wire x1="116.84" y1="68.58" x2="114.3" y2="68.58" width="0.2032" layer="91"/>
 <pinref part="T18" gate="G$1" pin="4"/>
-<wire x1="83.82" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="68.58" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J14" gate="G$1" pin="T-@11"/>
-<junction x="116.84" y="68.58"/>
-<pinref part="J14" gate="G$1" pin="T-@13"/>
+<wire x1="83.82" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="L16" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="TX5_P" class="0">
@@ -21907,25 +21893,19 @@ by exp-project-lbr.ulp</description>
 </net>
 <net name="N$108" class="0">
 <segment>
-<wire x1="116.84" y1="55.88" x2="114.3" y2="55.88" width="0.2032" layer="91"/>
 <pinref part="T17" gate="G$1" pin="4"/>
-<wire x1="83.82" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="J14" gate="G$1" pin="R-@1"/>
-<pinref part="J14" gate="G$1" pin="R-@3"/>
-<junction x="116.84" y="55.88"/>
+<wire x1="83.82" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="L17" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$141" class="0">
 <segment>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J14" gate="G$1" pin="R+@5"/>
-<junction x="116.84" y="63.5"/>
 <pinref part="J14" gate="G$1" pin="R+@7"/>
-<pinref part="T17" gate="G$1" pin="5"/>
-<wire x1="83.82" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="66.04" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="L17" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<junction x="116.84" y="60.96"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -22029,18 +22009,15 @@ by exp-project-lbr.ulp</description>
 <wire x1="83.82" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$217" class="0">
-<segment>
-<pinref part="C59" gate="CE" pin="2"/>
-<pinref part="R164" gate="R" pin="1"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$218" class="0">
 <segment>
 <pinref part="C133" gate="CE" pin="2"/>
 <pinref part="R165" gate="R" pin="1"/>
 <wire x1="93.98" y1="30.48" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="27.94" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<junction x="93.98" y="27.94"/>
+<pinref part="R164" gate="R" pin="1"/>
+<wire x1="86.36" y1="27.94" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$219" class="0">
@@ -22089,11 +22066,47 @@ by exp-project-lbr.ulp</description>
 <pinref part="J14" gate="G$1" pin="T+@15"/>
 <wire x1="116.84" y1="73.66" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="J14" gate="G$1" pin="T+@17"/>
-<wire x1="116.84" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="73.66" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="116.84" y="73.66"/>
+<pinref part="L16" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="J14" gate="G$1" pin="T-@13"/>
+<wire x1="116.84" y1="68.58" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="J14" gate="G$1" pin="T-@11"/>
+<junction x="116.84" y="68.58"/>
+<wire x1="116.84" y1="68.58" x2="114.3" y2="68.58" width="0.2032" layer="91"/>
+<wire x1="109.22" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="L16" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$190" class="0">
+<segment>
+<pinref part="J14" gate="G$1" pin="R-@1"/>
+<wire x1="116.84" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="J14" gate="G$1" pin="R-@3"/>
+<junction x="116.84" y="55.88"/>
+<wire x1="116.84" y1="55.88" x2="114.3" y2="55.88" width="0.2032" layer="91"/>
+<wire x1="109.22" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="L17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$203" class="0">
+<segment>
 <pinref part="T18" gate="G$1" pin="5"/>
-<wire x1="111.76" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="L16" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$205" class="0">
+<segment>
+<pinref part="T17" gate="G$1" pin="5"/>
+<pinref part="L17" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="66.04" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -22360,7 +22373,7 @@ Battery Charger Schematic</text>
 <pinref part="GND95" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="IOUT" class="0">
+<net name="BAT_IMON" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="IOUT"/>
 <pinref part="C110" gate="CE" pin="1"/>
@@ -22755,6 +22768,37 @@ Battery Charger Schematic</text>
 <approved hash="104,4,96.52,238.76,U$14,VDD-IO1,VDDIO_IN,,,"/>
 <approved hash="104,4,93.98,238.76,U$14,VDD-IO2,VDDIO_IN,,,"/>
 <approved hash="104,6,17.78,33.02,U2,VCC,+18V,,,"/>
+<approved hash="104,2,187.96,403.86,J1,B+,NODE1_VOUT,,,"/>
+<approved hash="104,2,187.96,401.32,J1,B+,NODE1_VOUT,,,"/>
+<approved hash="104,2,187.96,368.3,J1,B-,GND,,,"/>
+<approved hash="104,2,187.96,365.76,J1,B-,GND,,,"/>
+<approved hash="104,2,190.5,271.78,J2,B+,NODE2_VOUT,,,"/>
+<approved hash="104,2,190.5,269.24,J2,B+,NODE2_VOUT,,,"/>
+<approved hash="104,2,190.5,236.22,J2,B-,GND,,,"/>
+<approved hash="104,2,190.5,233.68,J2,B-,GND,,,"/>
+<approved hash="104,2,190.5,160.02,J3,B+,NODE3_VOUT,,,"/>
+<approved hash="104,2,190.5,157.48,J3,B+,NODE3_VOUT,,,"/>
+<approved hash="104,2,190.5,124.46,J3,B-,GND,,,"/>
+<approved hash="104,2,190.5,121.92,J3,B-,GND,,,"/>
+<approved hash="104,2,193.04,38.1,J4,B+,NODE4_VOUT,,,"/>
+<approved hash="104,2,193.04,35.56,J4,B+,NODE4_VOUT,,,"/>
+<approved hash="104,2,193.04,2.54,J4,B-,GND,,,"/>
+<approved hash="104,2,193.04,0,J4,B-,GND,,,"/>
+<approved hash="104,2,467.36,401.32,J8,B+,NODE8_VOUT,,,"/>
+<approved hash="104,2,467.36,398.78,J8,B+,NODE8_VOUT,,,"/>
+<approved hash="104,2,467.36,365.76,J8,B-,GND,,,"/>
+<approved hash="104,2,467.36,363.22,J8,B-,GND,,,"/>
+<approved hash="104,2,464.82,289.56,J6,B+,NODE6_VOUT,,,"/>
+<approved hash="104,2,464.82,287.02,J6,B+,NODE6_VOUT,,,"/>
+<approved hash="104,2,464.82,254,J6,B-,GND,,,"/>
+<approved hash="104,2,464.82,251.46,J6,B-,GND,,,"/>
+<approved hash="104,2,464.82,172.72,J7,B+,NODE7_VOUT,,,"/>
+<approved hash="104,2,464.82,170.18,J7,B+,NODE7_VOUT,,,"/>
+<approved hash="104,2,464.82,137.16,J7,B-,GND,,,"/>
+<approved hash="104,2,464.82,134.62,J7,B-,GND,,,"/>
+<approved hash="104,5,-101.6,86.36,J9,B+,BAT,,,"/>
+<approved hash="104,5,-101.6,83.82,J9,B+,BAT,,,"/>
+<approved hash="106,4,78.74,187.96,MTXER,,,,,"/>
 </errors>
 </schematic>
 </drawing>
