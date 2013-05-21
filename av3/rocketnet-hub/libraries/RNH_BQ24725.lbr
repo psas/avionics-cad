@@ -149,31 +149,31 @@
 <devicesets>
 <deviceset name="BQ24725" prefix="U">
 <gates>
-<gate name="G$1" symbol="BQ24725" x="0" y="0"/>
+<gate name="U" symbol="BQ24725" x="0" y="0"/>
 </gates>
 <devices>
 <device name="QFN-20" package="S-PVQFN-N20">
 <connects>
-<connect gate="G$1" pin="ACDET" pad="6"/>
-<connect gate="G$1" pin="ACDRV" pad="4"/>
-<connect gate="G$1" pin="ACN" pad="1"/>
-<connect gate="G$1" pin="ACOK" pad="5"/>
-<connect gate="G$1" pin="ACP" pad="2"/>
-<connect gate="G$1" pin="BATDRV" pad="11"/>
-<connect gate="G$1" pin="BTST" pad="17"/>
-<connect gate="G$1" pin="CMSRC" pad="3"/>
-<connect gate="G$1" pin="GND" pad="14 P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 POWERPAD"/>
-<connect gate="G$1" pin="HIDRV" pad="18"/>
-<connect gate="G$1" pin="ILIM" pad="10"/>
-<connect gate="G$1" pin="IOUT" pad="7"/>
-<connect gate="G$1" pin="LODRV" pad="15"/>
-<connect gate="G$1" pin="PHASE" pad="19"/>
-<connect gate="G$1" pin="REGN" pad="16"/>
-<connect gate="G$1" pin="SCL" pad="9"/>
-<connect gate="G$1" pin="SDA" pad="8"/>
-<connect gate="G$1" pin="SRN" pad="12"/>
-<connect gate="G$1" pin="SRP" pad="13"/>
-<connect gate="G$1" pin="VCC" pad="20"/>
+<connect gate="U" pin="ACDET" pad="6"/>
+<connect gate="U" pin="ACDRV" pad="4"/>
+<connect gate="U" pin="ACN" pad="1"/>
+<connect gate="U" pin="ACOK" pad="5"/>
+<connect gate="U" pin="ACP" pad="2"/>
+<connect gate="U" pin="BATDRV" pad="11"/>
+<connect gate="U" pin="BTST" pad="17"/>
+<connect gate="U" pin="CMSRC" pad="3"/>
+<connect gate="U" pin="GND" pad="14 P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 POWERPAD"/>
+<connect gate="U" pin="HIDRV" pad="18"/>
+<connect gate="U" pin="ILIM" pad="10"/>
+<connect gate="U" pin="IOUT" pad="7"/>
+<connect gate="U" pin="LODRV" pad="15"/>
+<connect gate="U" pin="PHASE" pad="19"/>
+<connect gate="U" pin="REGN" pad="16"/>
+<connect gate="U" pin="SCL" pad="9"/>
+<connect gate="U" pin="SDA" pad="8"/>
+<connect gate="U" pin="SRN" pad="12"/>
+<connect gate="U" pin="SRP" pad="13"/>
+<connect gate="U" pin="VCC" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>
