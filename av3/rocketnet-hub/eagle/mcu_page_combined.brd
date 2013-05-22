@@ -2384,6 +2384,31 @@ chip</description>
 <text x="-0.8" y="1.25" size="1" layer="25" ratio="10">&gt;NAME</text>
 <text x="-0.8" y="-2.3" size="1" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="0603-B-NOSILK">
+<description>&lt;b&gt;0603 (metric 1608) normal 'IPC-B' without silkscreen&lt;/b&gt;
+&lt;br&gt;In house package for nominal spacing based on IPC-7351A. Cross-checked against other packages.
+This package is identical to 0603-B, but has its tPlace silkscreen layer removed.</description>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="-0.4" width="0.01" layer="51"/>
+<wire x1="0.3" y1="0.4" x2="0.3" y2="-0.4" width="0.01" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.3" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="0.3" y1="-0.4" x2="0.8" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="0.8" y2="0.4" width="0.2" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.3" y2="0.4" width="0.2" layer="51"/>
+<wire x1="0.3" y1="0.4" x2="-0.3" y2="0.4" width="0.2" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.8" y2="0.4" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="1.52" y1="0.72" x2="-1.52" y2="0.72" width="0.06" layer="39"/>
+<wire x1="-1.52" y1="0.72" x2="-1.52" y2="-0.72" width="0.06" layer="39"/>
+<wire x1="-1.52" y1="-0.72" x2="1.52" y2="-0.72" width="0.06" layer="39"/>
+<wire x1="1.52" y1="-0.72" x2="1.52" y2="0.72" width="0.06" layer="39"/>
+<smd name="1" x="-0.8" y="0" dx="0.95" dy="1" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="0.95" dy="1" layer="1"/>
+<text x="-0.8" y="1" size="1" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.8" y="-2.05" size="1" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.6" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.6" y2="0.4" layer="51"/>
+</package>
 <package name="0402-B">
 <description>&lt;b&gt;0402 (metric 1005) normal 'IPC-B'&lt;/b&gt;
 &lt;br&gt;In house package for nominal spacing based on IPC-7351A. Cross-checked against other packages.</description>
@@ -3302,12 +3327,12 @@ einem neuen Namen ab.</description>
 <element name="C74" library="rcl_custom" package="0402-B" value="100n" x="79" y="38.7" rot="MR0"/>
 <element name="C75" library="rcl_custom" package="0402-B" value="100n" x="104.5" y="26.4" rot="MR180"/>
 <element name="C76" library="rcl_custom" package="0402-B" value="100n" x="99.1" y="25.2" rot="MR270"/>
-<element name="C77" library="rcl_custom" package="0402-B" value="10u" x="104" y="46.85" rot="MR180"/>
-<element name="C78" library="rcl_custom" package="0402-B" value="10u" x="79" y="33.3" rot="MR0"/>
-<element name="C79" library="rcl_custom" package="0402-B" value="10u" x="79" y="36.6" rot="MR0"/>
-<element name="C80" library="rcl_custom" package="0402-B" value="10u" x="79" y="47.4" rot="MR0"/>
-<element name="C81" library="rcl_custom" package="0402-B" value="10u" x="94.663" y="49.5" rot="MR90"/>
-<element name="C82" library="rcl_custom" package="0402-B" value="10u" x="90.4" y="49.5" rot="MR90"/>
+<element name="C77" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="104" y="46.85" rot="MR180"/>
+<element name="C78" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="79" y="33.3" rot="MR0"/>
+<element name="C79" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="79" y="36.6" rot="MR0"/>
+<element name="C80" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="79" y="47.4" rot="MR0"/>
+<element name="C81" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="94.663" y="49.5" rot="MR90"/>
+<element name="C82" library="rcl_custom" package="0603-B-NOSILK" value="10u" x="90.4" y="49.5" rot="MR90"/>
 <element name="T1" library="zetex" package="SOT-23" value="BSS84" x="105" y="22" rot="MR180">
 <attribute name="OC_NEWARK" value="unknown" x="136.75" y="76.61" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="" x="136.75" y="76.61" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -3496,12 +3521,12 @@ einem neuen Namen ab.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="101.95" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="rcl_custom" package="0402-B" value="10" x="106" y="56" rot="MR90"/>
-<element name="R4" library="rcl_custom" package="0402-B" value="10" x="102.2" y="57" rot="MR90"/>
-<element name="R6" library="rcl_custom" package="0402-B" value="10" x="101.1" y="57" rot="MR90"/>
-<element name="R7" library="rcl_custom" package="0402-B" value="10" x="100" y="57" rot="MR90"/>
-<element name="R8" library="rcl_custom" package="0402-B" value="10" x="98.9" y="57" rot="MR90"/>
-<element name="R3" library="rcl_custom" package="0402-B" value="10" x="97.5" y="49.5" rot="MR270"/>
-<element name="R10" library="rcl_custom" package="0402-B" value="10" x="95.6" y="57" rot="MR90"/>
+<element name="R4" library="rcl_custom" package="0402-B" value="0" x="102.2" y="57" rot="MR90"/>
+<element name="R6" library="rcl_custom" package="0402-B" value="0" x="101.1" y="57" rot="MR90"/>
+<element name="R7" library="rcl_custom" package="0402-B" value="0" x="100" y="57" rot="MR90"/>
+<element name="R8" library="rcl_custom" package="0402-B" value="0" x="98.9" y="57" rot="MR90"/>
+<element name="R3" library="rcl_custom" package="0402-B" value="0" x="97.5" y="49.5" rot="MR270"/>
+<element name="R10" library="rcl_custom" package="0402-B" value="0" x="95.6" y="57" rot="MR90"/>
 <element name="R14" library="rcl_custom" package="0402-B" value="1k" x="96.5" y="13.7" rot="MR180"/>
 <element name="TP28" library="testpad" package="TP06R" value="TPTP06R" x="94.5" y="32.61" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="94.5" y="32.61" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -3598,11 +3623,11 @@ einem neuen Namen ab.</description>
 <element name="R101" library="rcl_custom" package="0402-B" value="51" x="75.5" y="34" rot="MR0"/>
 <element name="R102" library="rcl_custom" package="0402-B" value="51" x="71.8" y="36.7" rot="MR180"/>
 <element name="R115" library="rcl_custom" package="0402-B" value="51" x="71.8" y="35.6" rot="MR180"/>
-<element name="R116" library="rcl_custom" package="0402-B" value="10" x="107.1" y="56" rot="MR90"/>
-<element name="R117" library="rcl_custom" package="0402-B" value="10" x="104.5" y="27.5" rot="MR0"/>
-<element name="R118" library="rcl_custom" package="0402-B" value="10" x="94.1" y="27.6" rot="MR0"/>
-<element name="R119" library="rcl_custom" package="0402-B" value="10" x="96.7" y="57" rot="MR90"/>
-<element name="R120" library="rcl_custom" package="0402-B" value="10" x="97.8" y="57" rot="MR90"/>
+<element name="R116" library="rcl_custom" package="0402-B" value="0" x="107.1" y="56" rot="MR90"/>
+<element name="R117" library="rcl_custom" package="0402-B" value="0" x="104.5" y="27.5" rot="MR0"/>
+<element name="R118" library="rcl_custom" package="0402-B" value="0" x="94.1" y="27.6" rot="MR0"/>
+<element name="R119" library="rcl_custom" package="0402-B" value="0" x="96.7" y="57" rot="MR90"/>
+<element name="R120" library="rcl_custom" package="0402-B" value="0" x="97.8" y="57" rot="MR90"/>
 <element name="R130" library="rcl_custom" package="0402-B" value="10k" x="94.1" y="28.8" rot="MR0"/>
 <element name="R131" library="rcl_custom" package="0402-B" value="10k" x="24.2656" y="41.541" rot="R180"/>
 <element name="U$1" library="mount" package="#4/.300-BARE+STD_NUT_OR_STAR_WASHER" value="#4-BARE_MOUNTING_HOLE/.300" x="66.5734" y="38.1" locked="yes" smashed="yes"/>
@@ -3769,7 +3794,6 @@ einem neuen Namen ab.</description>
 <element name="R148" library="rcl_custom" package="0402-B" value="1k" x="10.7" y="15.6" rot="R180"/>
 <element name="U3" library="sn65220" package="SOT23-6L" value="SN65220DBV" x="11.9" y="10.2"/>
 <element name="R167" library="rcl_custom" package="0402-B" value="100" x="12.9" y="14.8" rot="R90"/>
-<element name="R166" library="rcl_custom" package="0402-B" value="10k" x="100.5" y="17" rot="MR0"/>
 <element name="J10" library="headers" package="INLINE" value="1.27MM_HDR_1X4_TX_RX" x="38.4" y="47.1"/>
 <element name="C39" library="rcl_custom" package="C1210" value="100n" x="15" y="14" rot="MR180"/>
 <element name="C43" library="rcl_custom" package="C1210" value="1u" x="15" y="10" rot="MR180"/>
@@ -4385,12 +4409,14 @@ einem neuen Namen ab.</description>
 <wire x1="32.8" y1="1.0414" x2="32.7914" y2="1.0414" width="0.127" layer="16"/>
 <via x="32.7914" y="1.0414" extent="1-16" drill="0.2032" diameter="0.6096"/>
 <wire x1="32.7914" y1="1.0414" x2="32.7914" y2="0.889" width="0.127" layer="2"/>
-<contactref element="R166" pad="2"/>
 <contactref element="J10" pad="4"/>
 <contactref element="J22" pad="GND"/>
 <contactref element="J22" pad="GND@2"/>
 <wire x1="15.711" y1="36.4262" x2="15.7" y2="36.4262" width="0.2032" layer="1"/>
 <wire x1="15.7" y1="36.4262" x2="15.7" y2="37.3" width="0.2032" layer="1"/>
+<wire x1="23.024" y1="37.4064" x2="22.86" y2="37.4064" width="0.2032" layer="16"/>
+<wire x1="22.86" y1="37.4064" x2="22.86" y2="38.354" width="0.2032" layer="16"/>
+<contactref element="T2" pad="2"/>
 <wire x1="101.08" y1="62.65" x2="102" y2="64.11" width="0" layer="19" extent="1-16"/>
 <wire x1="99.975" y1="63.925" x2="101.08" y2="62.65" width="0" layer="19" extent="1-16"/>
 <wire x1="100.1" y1="64.8" x2="99.975" y2="63.925" width="0" layer="19" extent="16-16"/>
@@ -4399,7 +4425,6 @@ einem neuen Namen ab.</description>
 <wire x1="34" y1="12.6" x2="33.9" y2="11.75" width="0" layer="19" extent="16-16"/>
 <wire x1="76.975" y1="63.925" x2="77.1" y2="64.8" width="0" layer="19" extent="16-16"/>
 <wire x1="53.975" y1="63.925" x2="54.1" y2="64.8" width="0" layer="19" extent="16-16"/>
-<wire x1="23.024" y1="37.4064" x2="22.86" y2="38.3312" width="0" layer="19" extent="1-16"/>
 <wire x1="83" y1="10.22" x2="82.1" y2="10.65" width="0" layer="19" extent="1-1"/>
 <wire x1="60" y1="10.22" x2="59.1" y2="10.65" width="0" layer="19" extent="1-1"/>
 <wire x1="37" y1="10.22" x2="36.1" y2="10.65" width="0" layer="19" extent="1-1"/>
@@ -4502,14 +4527,14 @@ einem neuen Namen ab.</description>
 <wire x1="106.5" y1="26.35" x2="104.02" y2="26.4" width="0" layer="19" extent="1-16"/>
 <wire x1="106.5" y1="25.85" x2="106.5" y2="26.35" width="0" layer="19" extent="1-1"/>
 <wire x1="99.25" y1="20" x2="99.45" y2="22.8" width="0" layer="19" extent="1-1"/>
-<wire x1="100.02" y1="17" x2="99.25" y2="20" width="0" layer="19" extent="1-16"/>
-<wire x1="100" y1="14.48" x2="100.02" y2="17" width="0" layer="19" extent="16-16"/>
+<wire x1="106.5" y1="40.85" x2="106.5" y2="35.85" width="0" layer="19" extent="1-1"/>
+<wire x1="104.0602" y1="17.484" x2="99.25" y2="20" width="0" layer="19" extent="1-16"/>
+<wire x1="104.52" y1="16.2" x2="104.0602" y2="17.484" width="0" layer="19" extent="16-16"/>
+<wire x1="100" y1="14.48" x2="104.52" y2="16.2" width="0" layer="19" extent="16-16"/>
 <wire x1="96.02" y1="13.7" x2="100" y2="14.48" width="0" layer="19" extent="16-16"/>
 <wire x1="96" y1="15.52" x2="96.02" y2="13.7" width="0" layer="19" extent="16-16"/>
 <wire x1="94" y1="15.52" x2="96" y2="15.52" width="0" layer="19" extent="16-16"/>
 <wire x1="90" y1="14.48" x2="94" y2="15.52" width="0" layer="19" extent="16-16"/>
-<wire x1="104.52" y1="16.2" x2="100.02" y2="17" width="0" layer="19" extent="16-16"/>
-<wire x1="106.5" y1="40.85" x2="106.5" y2="35.85" width="0" layer="19" extent="1-1"/>
 <wire x1="67" y1="61.52" x2="73.32" y2="62.65" width="0" layer="19" extent="1-16"/>
 <wire x1="67" y1="59.48" x2="67" y2="61.52" width="0" layer="19" extent="16-16"/>
 <wire x1="65" y1="59.48" x2="67" y2="59.48" width="0" layer="19" extent="16-16"/>
@@ -4521,8 +4546,8 @@ einem neuen Namen ab.</description>
 <wire x1="43" y1="59.48" x2="44" y2="61.52" width="0" layer="19" extent="16-16"/>
 <wire x1="41" y1="59.48" x2="43" y2="59.48" width="0" layer="19" extent="16-16"/>
 <wire x1="39" y1="59.48" x2="41" y2="59.48" width="0" layer="19" extent="16-16"/>
-<wire x1="103.52" y1="46.85" x2="106.5" y2="40.85" width="0" layer="19" extent="1-16"/>
-<wire x1="106.5" y1="49.85" x2="103.52" y2="46.85" width="0" layer="19" extent="1-16"/>
+<wire x1="103.2" y1="46.85" x2="106.5" y2="40.85" width="0" layer="19" extent="1-16"/>
+<wire x1="106.5" y1="49.85" x2="103.2" y2="46.85" width="0" layer="19" extent="1-16"/>
 <wire x1="106.5" y1="50.35" x2="106.5" y2="49.85" width="0" layer="19" extent="1-1"/>
 <wire x1="42.652046875" y1="39.669775" x2="38.4" y2="45.195" width="0" layer="19" extent="1-1"/>
 <wire x1="45.660590625" y1="37.6605875" x2="42.652046875" y2="39.669775" width="0" layer="19" extent="1-16"/>
@@ -5599,7 +5624,7 @@ einem neuen Namen ab.</description>
 <wire x1="83.8" y1="49.98" x2="81.6" y2="49.98" width="0.254" layer="16"/>
 <wire x1="83.8" y1="49.98" x2="84.9" y2="49.98" width="0.254" layer="16"/>
 <wire x1="78.52" y1="46.3" x2="78.52" y2="45.2" width="0.254" layer="16"/>
-<wire x1="78.52" y1="46.3" x2="78.52" y2="47.4" width="0.254" layer="16"/>
+<wire x1="78.52" y1="46.3" x2="78.2" y2="47.4" width="0.254" layer="16"/>
 <wire x1="81.6" y1="49.98" x2="81.013" y2="50.4096" width="0.254" layer="16"/>
 <contactref element="U4" pad="157"/>
 <contactref element="C73" pad="2"/>
@@ -5618,8 +5643,8 @@ einem neuen Namen ab.</description>
 <via x="93.413" y="52.1596" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="93.413" y1="52.1596" x2="93.403" y2="52.1696" width="0.254" layer="1"/>
 <wire x1="93.403" y1="52.1696" x2="93.45" y2="53.4" width="0.254" layer="1"/>
-<wire x1="94.663" y1="49.98" x2="93.363" y2="49.98" width="0.254" layer="16"/>
-<wire x1="94.663" y1="49.98" x2="95.483" y2="50.4796" width="0.254" layer="16"/>
+<wire x1="94.663" y1="50.3" x2="93.363" y2="49.98" width="0.254" layer="16"/>
+<wire x1="94.663" y1="50.3" x2="95.483" y2="50.4796" width="0.254" layer="16"/>
 <contactref element="R116" pad="2"/>
 <polygon width="0.4064" layer="16">
 <vertex x="76" y="22.8"/>
@@ -5663,11 +5688,11 @@ einem neuen Namen ab.</description>
 <wire x1="90.95" y1="53.4" x2="91.45" y2="53.4" width="0" layer="19" extent="1-1"/>
 <wire x1="89.45" y1="53.4" x2="90.95" y2="53.4" width="0" layer="19" extent="1-1"/>
 <wire x1="88.95" y1="53.4" x2="89.45" y2="53.4" width="0" layer="19" extent="1-1"/>
-<wire x1="90.4" y1="49.98" x2="93.363" y2="49.98" width="0" layer="19" extent="16-16"/>
-<wire x1="89.3" y1="49.98" x2="90.4" y2="49.98" width="0" layer="19" extent="16-16"/>
+<wire x1="90.4" y1="50.3" x2="93.363" y2="49.98" width="0" layer="19" extent="16-16"/>
+<wire x1="89.3" y1="49.98" x2="90.4" y2="50.3" width="0" layer="19" extent="16-16"/>
 <wire x1="75.9" y1="38.85" x2="78.52" y2="38.7" width="0" layer="19" extent="1-16"/>
 <wire x1="75.9" y1="37.35" x2="75.9" y2="38.85" width="0" layer="19" extent="1-1"/>
-<wire x1="75.9" y1="33.35" x2="78.52" y2="33.3" width="0" layer="19" extent="1-16"/>
+<wire x1="75.9" y1="33.35" x2="78.2" y2="33.3" width="0" layer="19" extent="1-16"/>
 <wire x1="75.9" y1="32.85" x2="75.9" y2="33.35" width="0" layer="19" extent="1-1"/>
 <wire x1="75.9" y1="26.85" x2="78.52" y2="27" width="0" layer="19" extent="1-16"/>
 <wire x1="75.9" y1="25.35" x2="75.9" y2="26.85" width="0" layer="19" extent="1-1"/>
@@ -5820,8 +5845,8 @@ einem neuen Namen ab.</description>
 <contactref element="C14" pad="2"/>
 <contactref element="C77" pad="2"/>
 <contactref element="T1" pad="1"/>
-<wire x1="104.48" y1="46.85" x2="106.5" y2="46.85" width="0" layer="19" extent="1-16"/>
-<wire x1="104.98" y1="35.35" x2="104.48" y2="46.85" width="0" layer="19" extent="16-16"/>
+<wire x1="104.8" y1="46.85" x2="106.5" y2="46.85" width="0" layer="19" extent="1-16"/>
+<wire x1="104.98" y1="35.35" x2="104.8" y2="46.85" width="0" layer="19" extent="16-16"/>
 <wire x1="106.5" y1="35.35" x2="104.98" y2="35.35" width="0" layer="19" extent="1-16"/>
 <wire x1="106.5" y1="25.35" x2="106.5" y2="35.35" width="0" layer="19" extent="1-1"/>
 <wire x1="104.98" y1="25.3" x2="106.5" y2="25.35" width="0" layer="19" extent="1-16"/>
@@ -6821,11 +6846,6 @@ einem neuen Namen ab.</description>
 <vertex x="37.9" y="39.4"/>
 <vertex x="31.115" y="39.4"/>
 </polygon>
-<wire x1="26.6838" y1="38.3312" x2="31.2192" y2="38.3312" width="0.2032" layer="1"/>
-<wire x1="31.2192" y1="38.3312" x2="31.242" y2="38.354" width="0.2032" layer="1" curve="90"/>
-<wire x1="31.2192" y1="38.3312" x2="33.0872" y2="38.3312" width="0.2032" layer="1"/>
-<wire x1="33.0872" y1="38.3312" x2="33.2904" y2="38.128" width="0.2032" layer="1" curve="-90"/>
-<wire x1="33.2904" y1="38.128" x2="33.595" y2="36.6" width="0.2032" layer="1"/>
 <contactref element="C39" pad="1"/>
 <contactref element="C43" pad="1"/>
 <contactref element="J14" pad="V+@12"/>
@@ -6854,6 +6874,9 @@ einem neuen Namen ab.</description>
 <via x="12" y="7" extent="1-16" drill="0.2032" diameter="0.6096"/>
 <via x="14" y="7" extent="1-16" drill="0.2032" diameter="0.6096"/>
 <via x="10" y="9" extent="1-16" drill="0.2032" diameter="0.6096"/>
+<wire x1="26.6838" y1="38.3312" x2="30" y2="38.3312" width="0.2032" layer="1"/>
+<wire x1="30" y1="38.3312" x2="30" y2="38" width="0.2032" layer="1"/>
+<wire x1="30" y1="38" x2="32" y2="38" width="0.2032" layer="1"/>
 <wire x1="34.865" y1="36.6" x2="34.38" y2="30.8636" width="0" layer="19" extent="1-16"/>
 <wire x1="12.4382" y1="17.622" x2="26.6838" y2="38.3312" width="0" layer="19" extent="1-16"/>
 </signal>
@@ -6953,7 +6976,18 @@ einem neuen Namen ab.</description>
 <signal name="N$151">
 <contactref element="C60" pad="1"/>
 <contactref element="R11" pad="1"/>
-<wire x1="31.9266" y1="40.0166" x2="34.758" y2="41.8838" width="0" layer="19" extent="1-1"/>
+<polygon width="0.2032" layer="1" thermals="no">
+<vertex x="35.7" y="42.5"/>
+<vertex x="35.7" y="40.8"/>
+<vertex x="34.1" y="40.8"/>
+<vertex x="33.2" y="39.9"/>
+<vertex x="33.2" y="38.7"/>
+<vertex x="31.1" y="38.7"/>
+<vertex x="31.1" y="41.4"/>
+<vertex x="32.2" y="41.4"/>
+<vertex x="33.1" y="42.3"/>
+<vertex x="33.3" y="42.5"/>
+</polygon>
 </signal>
 <signal name="N$152">
 <contactref element="C109" pad="1"/>
@@ -7902,11 +7936,6 @@ einem neuen Namen ab.</description>
 <wire x1="6.28" y1="18" x2="48.3089" y2="45.32663125" width="0" layer="19" extent="1-1"/>
 <wire x1="6.916" y1="13.9094" x2="6.28" y2="18" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$31" class="1">
-<contactref element="T2" pad="2"/>
-<contactref element="R166" pad="1"/>
-<wire x1="100.98" y1="17" x2="104.0602" y2="17.484" width="0" layer="19" extent="16-16"/>
-</signal>
 <signal name="N$206">
 <contactref element="R168" pad="1"/>
 <contactref element="J22" pad="VTREF"/>
@@ -7940,12 +7969,6 @@ einem neuen Namen ab.</description>
 <wire x1="27.5702" y1="23.043" x2="30.725" y2="24.7956" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,15,3b993bb13fb13f99"/>
-<approved hash="5,15,bd24bff697f69524"/>
-<approved hash="5,15,324331db35db3643"/>
-<approved hash="5,15,a428a6f298f29a28"/>
-</errors>
 </board>
 </drawing>
 </eagle>
