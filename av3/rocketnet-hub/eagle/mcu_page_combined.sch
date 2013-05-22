@@ -15502,11 +15502,7 @@ by exp-project-lbr.ulp</description>
 <part name="LED22" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R128" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
-<part name="+3V36" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
-<part name="GND81" library="supply1" deviceset="GND" device=""/>
-<part name="TP40" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="R129" library="rcl" deviceset="R-US_" device="R0402" value="100R"/>
 <part name="R64" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
@@ -15585,7 +15581,6 @@ by exp-project-lbr.ulp</description>
 <part name="GND92" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND93" library="supply1" deviceset="GNDA" device=""/>
 <part name="D5" library="RNH_SMAJ18CA" deviceset="SMAJ18CA" device=""/>
-<part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="RNH_IHLP-2525CZ-01" deviceset="IHLP-2525CZ-01" device="" value="4.7uH"/>
 <part name="C121" library="rcl_custom" deviceset="C-EU" device="0603-B" value="1uF"/>
 <part name="GND95" library="supply1" deviceset="GND" device=""/>
@@ -15760,16 +15755,23 @@ by exp-project-lbr.ulp</description>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device="" value="Power Supplies"/>
 <part name="FRAME3" library="frames" deviceset="FRAME_D_L" device="" value="Node Connections"/>
 <part name="FRAME2" library="frames" deviceset="FRAME_B_L" device="" value="MCU"/>
-<part name="J11" library="headers" deviceset="1.27MM_HDR_2X5" device=""/>
 <part name="J10" library="headers" deviceset="1.27MM_HDR_1X4_TX_RX" device=""/>
 <part name="C39" library="rcl_custom" deviceset="C-EU" device="C1210" value="100n"/>
 <part name="C43" library="rcl_custom" deviceset="C-EU" device="C1210" value="1u"/>
 <part name="NAME'1" library="supply1" deviceset="GNDA" device=""/>
+<part name="+3V38" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND120" library="supply1" deviceset="GND" device=""/>
+<part name="TP38" library="testpad" deviceset="TP" device="TP06R"/>
+<part name="R168" library="rcl" deviceset="R-US_" device="R0402" value="100R"/>
+<part name="J22" library="headers" deviceset="1.27MM_HDR_2X5" device=""/>
+<part name="NAME'2" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <description>MCU</description>
 <plain>
+<text x="167.64" y="490.22" size="5.08" layer="97">Debug Header</text>
+<text x="231.14" y="490.22" size="5.08" layer="97">Launch Tower Connection</text>
 </plain>
 <instances>
 <instance part="U1" gate="U1" x="132.08" y="388.62"/>
@@ -15833,13 +15835,18 @@ by exp-project-lbr.ulp</description>
 <instance part="+3V37" gate="G$1" x="198.12" y="388.62"/>
 <instance part="R148" gate="R" x="198.12" y="358.14" rot="R90"/>
 <instance part="GND105" gate="1" x="198.12" y="347.98"/>
-<instance part="U3" gate="G$1" x="248.92" y="365.76"/>
-<instance part="GND110" gate="1" x="243.84" y="350.52"/>
-<instance part="GND115" gate="1" x="254" y="350.52"/>
+<instance part="U3" gate="G$1" x="248.92" y="355.6"/>
+<instance part="GND110" gate="1" x="243.84" y="340.36"/>
+<instance part="GND115" gate="1" x="254" y="340.36"/>
 <instance part="R167" gate="R" x="281.94" y="368.3"/>
 <instance part="FRAME2" gate="G$1" x="-91.44" y="256.54"/>
 <instance part="FRAME2" gate="G$2" x="233.68" y="256.54"/>
 <instance part="J10" gate="J" x="170.18" y="391.16"/>
+<instance part="+3V38" gate="G$1" x="177.8" y="469.9"/>
+<instance part="GND120" gate="1" x="170.18" y="436.88"/>
+<instance part="TP38" gate="G$1" x="175.26" y="439.42" rot="R90"/>
+<instance part="R168" gate="G$1" x="177.8" y="459.74" rot="R90"/>
+<instance part="J22" gate="J" x="198.12" y="444.5"/>
 </instances>
 <busses>
 </busses>
@@ -15970,12 +15977,21 @@ by exp-project-lbr.ulp</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND110" gate="1" pin="GND"/>
-<wire x1="243.84" y1="353.06" x2="243.84" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="342.9" x2="243.84" y2="347.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND2"/>
 <pinref part="GND115" gate="1" pin="GND"/>
-<wire x1="254" y1="353.06" x2="254" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="254" y1="342.9" x2="254" y2="347.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="447.04" x2="170.18" y2="439.42" width="0.1524" layer="91"/>
+<pinref part="GND120" gate="1" pin="GND"/>
+<wire x1="193.04" y1="447.04" x2="193.04" y2="444.5" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="447.04" x2="170.18" y2="447.04" width="0.1524" layer="91"/>
+<pinref part="J22" gate="J" pin="GND"/>
+<junction x="193.04" y="447.04"/>
+<pinref part="J22" gate="J" pin="GND@2"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -16070,12 +16086,22 @@ by exp-project-lbr.ulp</description>
 <junction x="198.12" y="381"/>
 <pinref part="+3V37" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="+3V38" gate="G$1" pin="+3V3"/>
+<pinref part="R168" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="464.82" x2="177.8" y2="467.36" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="JTAG_TMS" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PA13"/>
 <wire x1="38.1" y1="388.62" x2="43.18" y2="388.62" width="0.1524" layer="91"/>
 <label x="38.1" y="388.62" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="449.58" x2="213.36" y2="449.58" width="0.1524" layer="91"/>
+<label x="213.36" y="449.58" size="1.016" layer="95" xref="yes"/>
+<pinref part="J22" gate="J" pin="TMS"/>
 </segment>
 </net>
 <net name="JTAG_TCK" class="0">
@@ -16084,6 +16110,11 @@ by exp-project-lbr.ulp</description>
 <wire x1="38.1" y1="386.08" x2="43.18" y2="386.08" width="0.1524" layer="91"/>
 <label x="38.1" y="386.08" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="200.66" y1="447.04" x2="213.36" y2="447.04" width="0.1524" layer="91"/>
+<label x="213.36" y="447.04" size="1.016" layer="95" xref="yes"/>
+<pinref part="J22" gate="J" pin="TCK"/>
+</segment>
 </net>
 <net name="JTAG_TDI" class="0">
 <segment>
@@ -16091,12 +16122,22 @@ by exp-project-lbr.ulp</description>
 <wire x1="38.1" y1="383.54" x2="43.18" y2="383.54" width="0.1524" layer="91"/>
 <label x="38.1" y="383.54" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="200.66" y1="441.96" x2="213.36" y2="441.96" width="0.1524" layer="91"/>
+<label x="213.36" y="441.96" size="1.016" layer="95" xref="yes"/>
+<pinref part="J22" gate="J" pin="TDI"/>
+</segment>
 </net>
 <net name="JTAG_TDO" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB3"/>
 <wire x1="38.1" y1="370.84" x2="43.18" y2="370.84" width="0.1524" layer="91"/>
 <label x="38.1" y="370.84" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="444.5" x2="213.36" y2="444.5" width="0.1524" layer="91"/>
+<label x="213.36" y="444.5" size="1.016" layer="95" xref="yes"/>
+<pinref part="J22" gate="J" pin="TDO"/>
 </segment>
 </net>
 <net name="JTAG_TRST" class="0">
@@ -16479,6 +16520,11 @@ by exp-project-lbr.ulp</description>
 <pinref part="TP37" gate="G$1" pin="TP"/>
 <junction x="30.48" y="444.5"/>
 </segment>
+<segment>
+<label x="213.36" y="439.42" size="1.016" layer="95" rot="MR180" xref="yes"/>
+<wire x1="213.36" y1="439.42" x2="200.66" y2="439.42" width="0.1524" layer="91"/>
+<pinref part="J22" gate="J" pin="!RESET"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -16561,19 +16607,17 @@ by exp-project-lbr.ulp</description>
 <pinref part="R148" gate="R" pin="2"/>
 <wire x1="198.12" y1="363.22" x2="198.12" y2="368.3" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="368.3" x2="198.12" y2="370.84" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="368.3" x2="228.6" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="358.14" x2="233.68" y2="368.3" width="0.1524" layer="91"/>
 <junction x="198.12" y="368.3"/>
 <pinref part="U3" gate="G$1" pin="A"/>
-<wire x1="228.6" y1="368.3" x2="198.12" y2="368.3" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="368.3" x2="228.6" y2="378.46" width="0.1524" layer="91"/>
-<junction x="228.6" y="368.3"/>
+<wire x1="233.68" y1="368.3" x2="198.12" y2="368.3" width="0.1524" layer="91"/>
+<junction x="233.68" y="368.3"/>
 <pinref part="U3" gate="G$1" pin="B"/>
 <pinref part="R167" gate="R" pin="1"/>
-<wire x1="276.86" y1="368.3" x2="269.24" y2="368.3" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="368.3" x2="264.16" y2="368.3" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="378.46" x2="269.24" y2="378.46" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="378.46" x2="269.24" y2="368.3" width="0.1524" layer="91"/>
-<junction x="269.24" y="368.3"/>
+<wire x1="276.86" y1="368.3" x2="264.16" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="368.3" x2="264.16" y2="358.14" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="368.3" x2="264.16" y2="368.3" width="0.1524" layer="91"/>
+<junction x="264.16" y="368.3"/>
 </segment>
 </net>
 <net name="ROCKET_RDY_MCU" class="0">
@@ -16585,6 +16629,21 @@ by exp-project-lbr.ulp</description>
 <wire x1="185.42" y1="381" x2="185.42" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="373.38" x2="193.04" y2="373.38" width="0.1524" layer="91"/>
 <junction x="185.42" y="373.38"/>
+</segment>
+</net>
+<net name="N$206" class="0">
+<segment>
+<wire x1="193.04" y1="449.58" x2="177.8" y2="449.58" width="0.1524" layer="91"/>
+<pinref part="R168" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="449.58" x2="177.8" y2="454.66" width="0.1524" layer="91"/>
+<pinref part="J22" gate="J" pin="VTREF"/>
+</segment>
+</net>
+<net name="N$210" class="0">
+<segment>
+<pinref part="TP38" gate="G$1" pin="TP"/>
+<wire x1="177.8" y1="439.42" x2="193.04" y2="439.42" width="0.1524" layer="91"/>
+<pinref part="J22" gate="J" pin="GNDDET"/>
 </segment>
 </net>
 </nets>
@@ -21912,15 +21971,10 @@ by exp-project-lbr.ulp</description>
 <sheet>
 <description>Off Rocket Connections</description>
 <plain>
-<text x="-53.34" y="104.14" size="5.08" layer="97">Debug Header</text>
 <text x="10.16" y="104.14" size="5.08" layer="97">Launch Tower Connection</text>
 <text x="-134.62" y="104.14" size="5.08" layer="97">Battery Connector</text>
 </plain>
 <instances>
-<instance part="+3V36" gate="G$1" x="-43.18" y="83.82"/>
-<instance part="GND81" gate="1" x="-50.8" y="50.8"/>
-<instance part="TP40" gate="G$1" x="-45.72" y="53.34" rot="R90"/>
-<instance part="R129" gate="G$1" x="-43.18" y="73.66" rot="R90"/>
 <instance part="R100" gate="R" x="33.02" y="35.56" rot="R90"/>
 <instance part="R101" gate="R" x="38.1" y="35.56" rot="R90"/>
 <instance part="R102" gate="R" x="43.18" y="35.56" rot="R90"/>
@@ -21947,21 +22001,11 @@ by exp-project-lbr.ulp</description>
 <instance part="L17" gate="G$1" x="96.52" y="58.42" rot="MR0"/>
 <instance part="FRAME4" gate="G$1" x="-142.24" y="-35.56"/>
 <instance part="FRAME4" gate="G$2" x="30.48" y="-35.56"/>
-<instance part="J11" gate="J" x="-22.86" y="58.42"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="1">
-<segment>
-<wire x1="-50.8" y1="60.96" x2="-50.8" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="GND81" gate="1" pin="GND"/>
-<wire x1="-27.94" y1="60.96" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="60.96" x2="-50.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J11" gate="J" pin="GND"/>
-<junction x="-27.94" y="60.96"/>
-<pinref part="J11" gate="J" pin="GND@2"/>
-</segment>
 <segment>
 <pinref part="C32" gate="CE" pin="1"/>
 <pinref part="GND132" gate="1" pin="GND"/>
@@ -21991,48 +22035,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="109.22" y1="40.64" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
 <junction x="109.22" y="40.64"/>
 <pinref part="GND138" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="+3V3" class="1">
-<segment>
-<pinref part="+3V36" gate="G$1" pin="+3V3"/>
-<pinref part="R129" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="78.74" x2="-43.18" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="JTAG_TMS" class="0">
-<segment>
-<wire x1="-20.32" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
-<label x="-7.62" y="63.5" size="1.016" layer="95" xref="yes"/>
-<pinref part="J11" gate="J" pin="TMS"/>
-</segment>
-</net>
-<net name="JTAG_TCK" class="0">
-<segment>
-<wire x1="-20.32" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="-7.62" y="60.96" size="1.016" layer="95" xref="yes"/>
-<pinref part="J11" gate="J" pin="TCK"/>
-</segment>
-</net>
-<net name="JTAG_TDI" class="0">
-<segment>
-<wire x1="-20.32" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<label x="-7.62" y="55.88" size="1.016" layer="95" xref="yes"/>
-<pinref part="J11" gate="J" pin="TDI"/>
-</segment>
-</net>
-<net name="JTAG_TDO" class="0">
-<segment>
-<wire x1="-20.32" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
-<label x="-7.62" y="58.42" size="1.016" layer="95" xref="yes"/>
-<pinref part="J11" gate="J" pin="TDO"/>
-</segment>
-</net>
-<net name="RST_N" class="0">
-<segment>
-<label x="-7.62" y="53.34" size="1.016" layer="95" rot="MR180" xref="yes"/>
-<wire x1="-7.62" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J11" gate="J" pin="!RESET"/>
 </segment>
 </net>
 <net name="ROCKET_RDY" class="0">
@@ -22111,21 +22113,6 @@ by exp-project-lbr.ulp</description>
 <pinref part="L17" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <junction x="109.22" y="60.96"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<wire x1="-27.94" y1="63.5" x2="-43.18" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R129" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="63.5" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="J11" gate="J" pin="VTREF"/>
-</segment>
-</net>
-<net name="N$168" class="0">
-<segment>
-<pinref part="TP40" gate="G$1" pin="TP"/>
-<wire x1="-43.18" y1="53.34" x2="-27.94" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="J11" gate="J" pin="GNDDET"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -22383,8 +22370,7 @@ Battery Charger Schematic</text>
 <instance part="C120" gate="CE" x="116.84" y="-7.62"/>
 <instance part="GND92" gate="1" x="104.14" y="-17.78"/>
 <instance part="GND93" gate="1" x="116.84" y="-17.78"/>
-<instance part="D5" gate="G$1" x="-83.82" y="53.34" rot="R90"/>
-<instance part="GND94" gate="1" x="-83.82" y="48.26"/>
+<instance part="D5" gate="G$1" x="-114.3" y="53.34" rot="R90"/>
 <instance part="L1" gate="L" x="60.96" y="-5.08" rot="R90"/>
 <instance part="C121" gate="CE" x="-45.72" y="35.56"/>
 <instance part="GND95" gate="1" x="-45.72" y="27.94"/>
@@ -22397,6 +22383,7 @@ Battery Charger Schematic</text>
 <instance part="C39" gate="CE" x="-129.54" y="43.18"/>
 <instance part="C43" gate="CE" x="-119.38" y="43.18"/>
 <instance part="NAME'1" gate="1" x="-124.46" y="33.02"/>
+<instance part="NAME'2" gate="1" x="-114.3" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -22415,8 +22402,8 @@ Battery Charger Schematic</text>
 <net name="VIN" class="1">
 <segment>
 <pinref part="C102" gate="CE" pin="1"/>
-<wire x1="-78.74" y1="58.42" x2="-83.82" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="58.42" x2="-114.3" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="58.42" x2="-96.52" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R11" gate="R" pin="2"/>
 <wire x1="-139.7" y1="58.42" x2="-129.54" y2="58.42" width="0.1524" layer="91"/>
@@ -22425,7 +22412,8 @@ Battery Charger Schematic</text>
 <junction x="-78.74" y="58.42"/>
 <pinref part="R137" gate="R" pin="2"/>
 <wire x1="-129.54" y1="58.42" x2="-119.38" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="58.42" x2="-114.3" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="58.42" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="58.42" x2="-96.52" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="33.02" x2="-104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-104.14" y="58.42"/>
@@ -22433,8 +22421,8 @@ Battery Charger Schematic</text>
 <wire x1="-139.7" y1="58.42" x2="-147.32" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-139.7" y="58.42"/>
 <pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="-83.82" y1="55.88" x2="-83.82" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-83.82" y="58.42"/>
+<wire x1="-114.3" y1="55.88" x2="-114.3" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-114.3" y="58.42"/>
 <pinref part="C39" gate="CE" pin="1"/>
 <wire x1="-129.54" y1="45.72" x2="-129.54" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-129.54" y="58.42"/>
@@ -22450,8 +22438,7 @@ Battery Charger Schematic</text>
 <wire x1="-101.6" y1="88.9" x2="-60.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="88.9" x2="-60.96" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C102" gate="CE" pin="2"/>
-<wire x1="-48.26" y1="45.72" x2="-53.34" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="45.72" x2="-96.52" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="45.72" x2="-101.6" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="48.26" x2="-96.52" y2="45.72" width="0.1524" layer="91"/>
@@ -22467,9 +22454,6 @@ Battery Charger Schematic</text>
 <junction x="-60.96" y="45.72"/>
 <pinref part="Q3" gate="&gt;NAME" pin="G"/>
 <wire x1="-48.26" y1="48.26" x2="-48.26" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R135" gate="R" pin="2"/>
-<wire x1="-53.34" y1="45.72" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-53.34" y="45.72"/>
 </segment>
 </net>
 <net name="N$151" class="0">
@@ -22579,10 +22563,6 @@ Battery Charger Schematic</text>
 <pinref part="C112" gate="CE" pin="2"/>
 <pinref part="GND90" gate="1" pin="GND"/>
 <wire x1="53.34" y1="-43.18" x2="53.34" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D5" gate="G$1" pin="A"/>
-<pinref part="GND94" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C121" gate="CE" pin="2"/>
@@ -22790,22 +22770,6 @@ Battery Charger Schematic</text>
 <wire x1="38.1" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$167" class="0">
-<segment>
-<pinref part="C94" gate="CE" pin="1"/>
-<pinref part="Q6" gate="&gt;NAME" pin="S"/>
-<pinref part="R133" gate="R" pin="1"/>
-<wire x1="-60.96" y1="71.12" x2="-60.96" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-60.96" y="71.12"/>
-<wire x1="-60.96" y1="71.12" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="58.42" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="&gt;NAME" pin="S"/>
-<wire x1="-66.04" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-60.96" y="58.42"/>
-<pinref part="Q3" gate="&gt;NAME" pin="S"/>
-<wire x1="-50.8" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+18V" class="1">
 <segment>
 <pinref part="C109" gate="CE" pin="2"/>
@@ -22921,77 +22885,36 @@ Battery Charger Schematic</text>
 <junction x="-124.46" y="38.1"/>
 <pinref part="NAME'1" gate="1" pin="GNDA"/>
 </segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="-114.3" y1="50.8" x2="-114.3" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="NAME'2" gate="1" pin="GNDA"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="R135" gate="R" pin="2"/>
+<pinref part="C94" gate="CE" pin="1"/>
+<pinref part="Q6" gate="&gt;NAME" pin="S"/>
+<pinref part="R133" gate="R" pin="1"/>
+<wire x1="-60.96" y1="71.12" x2="-60.96" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-60.96" y="71.12"/>
+<wire x1="-60.96" y1="71.12" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="58.42" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="&gt;NAME" pin="S"/>
+<wire x1="-66.04" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-60.96" y="58.42"/>
+<pinref part="Q3" gate="&gt;NAME" pin="S"/>
+<wire x1="-50.8" y1="58.42" x2="-53.34" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="33.02" x2="-53.34" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-53.34" y="58.42"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,4,91.44,12.7,U$14,GND1,GND,,,"/>
-<approved hash="104,4,93.98,12.7,U$14,GND2,GND,,,"/>
-<approved hash="104,4,96.52,12.7,U$14,GND3,GND,,,"/>
-<approved hash="104,4,99.06,12.7,U$14,GND4,GND,,,"/>
-<approved hash="104,4,101.6,12.7,U$14,GND5,GND,,,"/>
-<approved hash="104,4,104.14,12.7,U$14,GND6,GND,,,"/>
-<approved hash="104,4,106.68,12.7,U$14,GND_PLLTX,GND,,,"/>
-<approved hash="104,4,109.22,12.7,U$14,GND_RCV,GND,,,"/>
-<approved hash="104,4,111.76,12.7,U$14,GND_RCV1,GND,,,"/>
-<approved hash="104,4,114.3,12.7,U$14,GND_RCV2,GND,,,"/>
-<approved hash="104,4,116.84,12.7,U$14,GND_RCV3,GND,,,"/>
-<approved hash="104,4,119.38,12.7,U$14,GND_RCV4,GND,,,"/>
-<approved hash="104,4,121.92,12.7,U$14,GND_RCV5,GND,,,"/>
-<approved hash="104,4,124.46,12.7,U$14,GND_RCV6,GND,,,"/>
-<approved hash="104,4,127,12.7,U$14,GND_RX,GND,,,"/>
-<approved hash="104,4,129.54,12.7,U$14,GND_RX1,GND,,,"/>
-<approved hash="104,4,132.08,12.7,U$14,GND_RX2,GND,,,"/>
-<approved hash="104,4,134.62,12.7,U$14,GND_RX3,GND,,,"/>
-<approved hash="104,4,137.16,12.7,U$14,GND_RX4,GND,,,"/>
-<approved hash="104,4,139.7,12.7,U$14,GND_RX5,GND,,,"/>
-<approved hash="104,4,142.24,12.7,U$14,GND_RX6,GND,,,"/>
-<approved hash="104,4,144.78,12.7,U$14,GND_RX7,GND,,,"/>
-<approved hash="104,4,147.32,12.7,U$14,GND_TX,GND,,,"/>
-<approved hash="104,4,149.86,12.7,U$14,GND_TX1,GND,,,"/>
-<approved hash="104,4,152.4,12.7,U$14,GND_TX2,GND,,,"/>
-<approved hash="104,4,154.94,12.7,U$14,GND_TX3,GND,,,"/>
-<approved hash="104,4,157.48,12.7,U$14,GND_TX4,GND,,,"/>
-<approved hash="104,4,160.02,12.7,U$14,GND_TX5,GND,,,"/>
-<approved hash="104,4,162.56,12.7,U$14,GND_TX6,GND,,,"/>
-<approved hash="104,4,165.1,12.7,U$14,GND_TX7,GND,,,"/>
-<approved hash="104,4,167.64,12.7,U$14,GND-ISO,GND,,,"/>
-<approved hash="104,4,170.18,12.7,U$14,GND-ISO1,GND,,,"/>
-<approved hash="104,4,172.72,12.7,U$14,GND-ISO2,GND,,,"/>
-<approved hash="104,4,175.26,12.7,U$14,GND-ISO3,GND,,,"/>
-<approved hash="104,4,177.8,12.7,U$14,GND-ISO4,GND,,,"/>
-<approved hash="104,4,170.18,238.76,U$14,VDD1,VDD,,,"/>
-<approved hash="104,4,167.64,238.76,U$14,VDD2,VDD,,,"/>
-<approved hash="104,4,165.1,238.76,U$14,VDD3,VDD,,,"/>
-<approved hash="104,4,162.56,238.76,U$14,VDD_PLL,VDD,,,"/>
-<approved hash="104,4,160.02,238.76,U$14,VDD_RCV,VDD,,,"/>
-<approved hash="104,4,157.48,238.76,U$14,VDD_RCV1,VDD,,,"/>
-<approved hash="104,4,154.94,238.76,U$14,VDD_RCV2,VDD,,,"/>
-<approved hash="104,4,152.4,238.76,U$14,VDD_RCV3,VDD,,,"/>
-<approved hash="104,4,149.86,238.76,U$14,VDD_RCV4,VDD,,,"/>
-<approved hash="104,4,147.32,238.76,U$14,VDD_RCV5,VDD,,,"/>
-<approved hash="104,4,144.78,238.76,U$14,VDD_RCV6,VDD,,,"/>
-<approved hash="104,4,142.24,238.76,U$14,VDD_RCV7,VDD,,,"/>
-<approved hash="104,4,139.7,238.76,U$14,VDD_RX,VDD,,,"/>
-<approved hash="104,4,137.16,238.76,U$14,VDD_RX1,VDD,,,"/>
-<approved hash="104,4,134.62,238.76,U$14,VDD_RX2,VDD,,,"/>
-<approved hash="104,4,132.08,238.76,U$14,VDD_RX3,VDD,,,"/>
-<approved hash="104,4,129.54,238.76,U$14,VDD_RX4,VDD,,,"/>
-<approved hash="104,4,127,238.76,U$14,VDD_RX5,VDD,,,"/>
-<approved hash="104,4,124.46,238.76,U$14,VDD_RX6,VDD,,,"/>
-<approved hash="104,4,121.92,238.76,U$14,VDD_RX7,VDD,,,"/>
-<approved hash="104,4,119.38,238.76,U$14,VDD_TX,VDD,,,"/>
-<approved hash="104,4,116.84,238.76,U$14,VDD_TX1,VDD,,,"/>
-<approved hash="104,4,114.3,238.76,U$14,VDD_TX2,VDD,,,"/>
-<approved hash="104,4,111.76,238.76,U$14,VDD_TX3,VDD,,,"/>
-<approved hash="104,4,109.22,238.76,U$14,VDD_TX4,VDD,,,"/>
-<approved hash="104,4,106.68,238.76,U$14,VDD_TX5,VDD,,,"/>
-<approved hash="104,4,104.14,238.76,U$14,VDD_TX6,VDD,,,"/>
-<approved hash="104,4,101.6,238.76,U$14,VDD_TX7,VDD,,,"/>
-<approved hash="104,4,99.06,238.76,U$14,VDD-IO,VDDIO_IN,,,"/>
-<approved hash="104,4,96.52,238.76,U$14,VDD-IO1,VDDIO_IN,,,"/>
-<approved hash="104,4,93.98,238.76,U$14,VDD-IO2,VDDIO_IN,,,"/>
 <approved hash="104,6,17.78,33.02,U2,VCC,+18V,,,"/>
 <approved hash="104,2,187.96,403.86,J1,B+,NODE1_VOUT,,,"/>
 <approved hash="104,2,187.96,401.32,J1,B+,NODE1_VOUT,,,"/>
@@ -23023,7 +22946,6 @@ Battery Charger Schematic</text>
 <approved hash="104,2,464.82,134.62,J7,B-,GND,,,"/>
 <approved hash="104,5,-101.6,86.36,J9,B+,BAT,,,"/>
 <approved hash="104,5,-101.6,83.82,J9,B+,BAT,,,"/>
-<approved hash="104,1,254,358.14,U3,GND2,GND,,,"/>
 <approved hash="106,4,78.74,187.96,MTXER,,,,,"/>
 </errors>
 </schematic>
