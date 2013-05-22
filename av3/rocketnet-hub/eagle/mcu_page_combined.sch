@@ -15198,12 +15198,12 @@ by exp-project-lbr.ulp</description>
 <part name="C74" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="C75" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="C76" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
-<part name="C77" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
-<part name="C78" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
-<part name="C79" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
-<part name="C80" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
-<part name="C81" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
-<part name="C82" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10u"/>
+<part name="C77" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
+<part name="C78" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
+<part name="C79" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
+<part name="C80" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
+<part name="C81" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
+<part name="C82" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="10u"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="T1" library="zetex" deviceset="PMOSSOT23" device="" value="BSS84"/>
@@ -15388,15 +15388,15 @@ by exp-project-lbr.ulp</description>
 <part name="TP26" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP27" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="GND71" library="supply1" deviceset="GND" device=""/>
 <part name="VDD12" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD13" library="supply1" deviceset="VDD" device=""/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
@@ -15513,11 +15513,11 @@ by exp-project-lbr.ulp</description>
 <part name="R101" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
 <part name="R102" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
 <part name="R115" library="rcl_custom" deviceset="R-US_" device="0402-B" value="51"/>
-<part name="R116" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R117" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R118" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R119" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
-<part name="R120" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
+<part name="R116" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R117" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R118" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R119" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
+<part name="R120" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="R130" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
 <part name="R131" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
@@ -15747,7 +15747,6 @@ by exp-project-lbr.ulp</description>
 <part name="GND110" library="supply1" deviceset="GND" device=""/>
 <part name="GND115" library="supply1" deviceset="GND" device=""/>
 <part name="R167" library="rcl_custom" deviceset="R-US_" device="0402-B" value="100"/>
-<part name="R166" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="FRAME7" library="frames" deviceset="FRAME_C_L" device="" value="Ethernet Switch"/>
 <part name="FRAME4" library="frames" deviceset="FRAME_A_L" device="" value="Off Rocket Connections"/>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device="" value="Power Supplies"/>
@@ -20464,7 +20463,6 @@ by exp-project-lbr.ulp</description>
 <instance part="R118" gate="R" x="66.04" y="50.8" rot="R180"/>
 <instance part="R119" gate="R" x="48.26" y="48.26" rot="R180"/>
 <instance part="R120" gate="R" x="66.04" y="27.94" rot="R180"/>
-<instance part="R166" gate="R" x="53.34" y="251.46" rot="R270"/>
 <instance part="FRAME7" gate="G$1" x="-109.22" y="-60.96"/>
 <instance part="FRAME7" gate="G$2" x="342.9" y="-60.96"/>
 </instances>
@@ -20749,11 +20747,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="40.64" y1="243.84" x2="40.64" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="R166" gate="R" pin="2"/>
-<wire x1="53.34" y1="246.38" x2="53.34" y2="243.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="C83" gate="CE" pin="2"/>
 <wire x1="30.48" y1="162.56" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
@@ -20798,6 +20791,11 @@ by exp-project-lbr.ulp</description>
 <pinref part="LED38" gate="G$1" pin="C"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="187.96" y1="241.3" x2="187.96" y2="238.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="T2" gate="A" pin="S"/>
+<wire x1="53.34" y1="243.84" x2="53.34" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -21957,12 +21955,6 @@ by exp-project-lbr.ulp</description>
 <pinref part="U4" gate="U" pin="TESTEN"/>
 <wire x1="78.74" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R120" gate="R" pin="1"/>
-</segment>
-</net>
-<net name="N$31" class="1">
-<segment>
-<pinref part="T2" gate="A" pin="S"/>
-<pinref part="R166" gate="R" pin="1"/>
 </segment>
 </net>
 </nets>
