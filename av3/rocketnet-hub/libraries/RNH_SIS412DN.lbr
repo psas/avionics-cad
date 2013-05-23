@@ -103,11 +103,11 @@
 <circle x="5.08" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
 <circle x="5.08" y="2.54" radius="0.254" width="0.254" layer="94"/>
 <circle x="5.08" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<pin name="D" x="5.08" y="5.08" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="-7.62" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-5.08" length="short" direction="pas"/>
-<text x="-13.208" y="-0.254" size="1.778" layer="95">&gt;NAME</text>
-<text x="-13.208" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="D" x="5.08" y="5.08" visible="pin" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-5.08" visible="pin" length="short" direction="pas"/>
+<text x="9.652" y="-0.254" size="1.778" layer="95">&gt;NAME</text>
+<text x="9.652" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="3.81" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>

@@ -88,9 +88,9 @@
 </packages>
 <symbols>
 <symbol name="BSS138W-7-F">
-<pin name="D" x="5.08" y="5.08" length="short" direction="pas" rot="R270"/>
-<pin name="G\" x="-7.62" y="-5.08" length="middle" direction="pas"/>
-<pin name="S" x="5.08" y="-7.62" length="short" direction="pas" rot="R90"/>
+<pin name="D" x="5.08" y="5.08" visible="pin" length="short" direction="pas" rot="R270"/>
+<pin name="G\" x="-7.62" y="-5.08" visible="pin" length="middle" direction="pas"/>
+<pin name="S" x="5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
 <wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.381" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.381" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
