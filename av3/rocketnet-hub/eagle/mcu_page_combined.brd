@@ -3310,23 +3310,23 @@ einem neuen Namen ab.</description>
 <element name="U4" library="ks8999" package="PQFP208" value="KS8999" x="91.2" y="38.1" locked="yes"/>
 <element name="R13" library="rcl_custom" package="0402-B" value="3k" x="72.5" y="38.35" rot="R180"/>
 <element name="LED1" library="led" package="CHIPLED_0603" value="AMBER" x="83.5" y="62.9" rot="R270"/>
-<element name="R1" library="rcl_custom" package="0402-B" value="220" x="83.5" y="62.9" rot="MR180"/>
+<element name="R1" library="rcl_custom" package="0402-B" value="750" x="83.5" y="62.9" rot="MR180"/>
 <element name="LED5" library="led" package="CHIPLED_0603" value="AMBER" x="60.5" y="62.9" rot="R270"/>
-<element name="R5" library="rcl_custom" package="0402-B" value="220" x="60.5" y="62.9" rot="MR180"/>
+<element name="R5" library="rcl_custom" package="0402-B" value="750" x="60.5" y="62.9" rot="MR180"/>
 <element name="LED9" library="led" package="CHIPLED_0603" value="AMBER" x="37.5" y="62.9" rot="R270"/>
-<element name="R9" library="rcl_custom" package="0402-B" value="220" x="37.5" y="62.9" rot="MR180"/>
+<element name="R9" library="rcl_custom" package="0402-B" value="750" x="37.5" y="62.9" rot="MR180"/>
 <element name="LED13" library="led" package="CHIPLED_0603" value="AMBER" x="14.5" y="62.9" rot="R270"/>
-<element name="R16" library="rcl_custom" package="0402-B" value="220" x="14.5" y="62.9" rot="MR180"/>
+<element name="R16" library="rcl_custom" package="0402-B" value="750" x="14.5" y="62.9" rot="MR180"/>
 <element name="LED17" library="led" package="CHIPLED_0603" value="AMBER" x="28.5" y="8.5" rot="R270"/>
-<element name="R20" library="rcl_custom" package="0402-B" value="220" x="28.5" y="8.5" rot="MR180"/>
+<element name="R20" library="rcl_custom" package="0402-B" value="750" x="28.5" y="8.5" rot="MR180"/>
 <element name="LED21" library="led" package="CHIPLED_0603" value="AMBER" x="50.5" y="12.8" rot="R270"/>
-<element name="R24" library="rcl_custom" package="0402-B" value="220" x="50.5" y="12.8" rot="MR180"/>
+<element name="R24" library="rcl_custom" package="0402-B" value="750" x="50.5" y="12.8" rot="MR180"/>
 <element name="LED25" library="led" package="CHIPLED_0603" value="AMBER" x="73.5" y="12.8" rot="R270"/>
-<element name="R28" library="rcl_custom" package="0402-B" value="220" x="73.5" y="12.8" rot="MR180"/>
+<element name="R28" library="rcl_custom" package="0402-B" value="750" x="73.5" y="12.8" rot="MR180"/>
 <element name="LED29" library="led" package="CHIPLED_0603" value="AMBER" x="96.5" y="12.8" rot="R270"/>
-<element name="R32" library="rcl_custom" package="0402-B" value="220" x="96.5" y="12.8" rot="MR180"/>
+<element name="R32" library="rcl_custom" package="0402-B" value="750" x="96.5" y="12.8" rot="MR180"/>
 <element name="LED33" library="led" package="CHIPLED_0603" value="AMBER" x="104" y="60" rot="R270"/>
-<element name="R38" library="rcl_custom" package="0402-B" value="220" x="104" y="60" rot="MR180"/>
+<element name="R38" library="rcl_custom" package="0402-B" value="750" x="104" y="60" rot="MR180"/>
 <element name="U6" library="MIC37100" package="SOIC-8" value="MIC37101-2.1YM" x="99" y="30.7" rot="MR90"/>
 <element name="C13" library="rcl_custom" package="0402-B" value="100n" x="104.5" y="35.35" rot="MR180"/>
 <element name="C14" library="rcl_custom" package="0402-B" value="100n" x="104.5" y="25.3" rot="MR180"/>
@@ -3382,9 +3382,9 @@ einem neuen Namen ab.</description>
 <element name="C12" library="rcl_custom" package="0402-B" value="10n" x="105" y="16.2" rot="MR0"/>
 <element name="R43" library="rcl_custom" package="0402-B" value="10k" x="102.5" y="20" rot="MR90"/>
 <element name="LED37" library="LED_RGB_PLCC6" package="PLCC-6" value="RGB" x="39.3248" y="53.1456" rot="R270"/>
-<element name="R44" library="rcl_custom" package="0402-B" value="220" x="39.27" y="53" rot="MR90"/>
-<element name="R45" library="rcl_custom" package="0402-B" value="220" x="38.27" y="53" rot="MR90"/>
-<element name="R46" library="rcl_custom" package="0402-B" value="220" x="40.27" y="53" rot="MR90"/>
+<element name="R44" library="rcl_custom" package="0402-B" value="750" x="39.27" y="53" rot="MR90"/>
+<element name="R45" library="rcl_custom" package="0402-B" value="750" x="38.27" y="53" rot="MR90"/>
+<element name="R46" library="rcl_custom" package="0402-B" value="750" x="40.27" y="53" rot="MR90"/>
 <element name="D2" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="106" y="14" rot="MR90"/>
 <element name="R47" library="rcl_custom" package="0402-B" value="10k" x="108" y="14" rot="MR270"/>
 <element name="C83" library="rcl_custom" package="0402-B" value="0.1u" x="100" y="14" rot="MR90"/>
@@ -3392,7 +3392,7 @@ einem neuen Namen ab.</description>
 <element name="C85" library="rcl_custom" package="0402-B" value=".1u" x="100" y="34" rot="MR180"/>
 <element name="E5" library="rcl_custom" package="0603-B" value="FB" x="54" y="36.5" rot="MR315"/>
 <element name="LED38" library="led" package="CHIPLED_0603" value="GREEN" x="100" y="20" rot="R90"/>
-<element name="R48" library="rcl_custom" package="0402-B" value="1k" x="100" y="20" rot="MR0"/>
+<element name="R48" library="rcl_custom" package="0402-B" value="150" x="100" y="20" rot="MR0"/>
 <element name="C86" library="rcl_custom" package="0402-B" value="100n" x="55.5" y="40" rot="MR315"/>
 <element name="R49" library="rcl_custom" package="0402-B" value="TBD" x="101.4" y="73.5" rot="MR270"/>
 <element name="LED39" library="led" package="SML0603" value="GREEN" x="83.5" y="66.5"/>
@@ -3410,7 +3410,7 @@ einem neuen Namen ab.</description>
 <element name="U13" library="RNH_TPS2420" package="QFN-306" value="TPS2420QFN-16" x="81" y="10.65" rot="MR180"/>
 <element name="U11" library="RNH_TPS2420" package="QFN-306" value="TPS2420QFN-16" x="35" y="10.65" rot="MR180"/>
 <element name="U12" library="RNH_TPS2420" package="QFN-306" value="TPS2420QFN-16" x="58" y="10.65" rot="MR180"/>
-<element name="R50" library="rcl_custom" package="0402-B" value="1k" x="83.5" y="65.6" rot="MR0"/>
+<element name="R50" library="rcl_custom" package="0402-B" value="750" x="83.5" y="65.6" rot="MR0"/>
 <element name="R51" library="rcl_custom" package="0402-B" value="TBD" x="100.6" y="62.65" rot="R180"/>
 <element name="C95" library="rcl_custom" package="0402-B" value="TBD" x="97" y="65.85" rot="R90"/>
 <element name="R52" library="rcl_custom" package="0402-B" value="TBD" x="78.2" y="73.5" rot="MR270"/>
@@ -3553,7 +3553,7 @@ einem neuen Namen ab.</description>
 <element name="TP27" library="testpad" package="TP06R" value="TPTP06R" x="101.95" y="54.7" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="101.95" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R2" library="rcl_custom" package="0402-B" value="10" x="106" y="56" rot="MR90"/>
+<element name="R2" library="rcl_custom" package="0402-B" value="0" x="106" y="56" rot="MR90"/>
 <element name="R4" library="rcl_custom" package="0402-B" value="0" x="102.2" y="57" rot="MR90"/>
 <element name="R6" library="rcl_custom" package="0402-B" value="0" x="101.1" y="57" rot="MR90"/>
 <element name="R7" library="rcl_custom" package="0402-B" value="0" x="100" y="57" rot="MR90"/>
@@ -3569,43 +3569,43 @@ einem neuen Namen ab.</description>
 <element name="C106" library="rcl_custom" package="0402-B" value="10p" x="52" y="32" rot="MR315"/>
 <element name="C107" library="rcl_custom" package="0402-B" value="10p" x="46" y="38" rot="MR135"/>
 <element name="LED2" library="led" package="SML0603" value="RED" x="83.5" y="64.7"/>
-<element name="R19" library="rcl_custom" package="0402-B" value="1k" x="83.5" y="63.8" rot="MR0"/>
+<element name="R19" library="rcl_custom" package="0402-B" value="750" x="83.5" y="63.8" rot="MR0"/>
 <element name="R21" library="rcl_custom" package="0402-B" value="10k" x="83.5" y="64.7" rot="MR180"/>
 <element name="R22" library="rcl_custom" package="0402-B" value="10k" x="101.4" y="69.5" rot="MR90"/>
 <element name="LED3" library="led" package="SML0603" value="GREEN" x="60.5" y="66.5"/>
-<element name="R23" library="rcl_custom" package="0402-B" value="1k" x="60.5" y="65.6" rot="MR0"/>
+<element name="R23" library="rcl_custom" package="0402-B" value="750" x="60.5" y="65.6" rot="MR0"/>
 <element name="LED4" library="led" package="SML0603" value="RED" x="60.5" y="64.7"/>
-<element name="R26" library="rcl_custom" package="0402-B" value="1k" x="60.5" y="63.8" rot="MR0"/>
+<element name="R26" library="rcl_custom" package="0402-B" value="750" x="60.5" y="63.8" rot="MR0"/>
 <element name="R27" library="rcl_custom" package="0402-B" value="10k" x="60.5" y="64.7" rot="MR180"/>
 <element name="R29" library="rcl_custom" package="0402-B" value="10k" x="78.2" y="69.5" rot="MR90"/>
 <element name="LED6" library="led" package="SML0603" value="GREEN" x="37.5" y="66.5"/>
-<element name="R30" library="rcl_custom" package="0402-B" value="1k" x="37.5" y="65.6" rot="MR0"/>
+<element name="R30" library="rcl_custom" package="0402-B" value="750" x="37.5" y="65.6" rot="MR0"/>
 <element name="LED7" library="led" package="SML0603" value="RED" x="37.5" y="64.7"/>
-<element name="R33" library="rcl_custom" package="0402-B" value="1k" x="37.5" y="63.8" rot="MR0"/>
+<element name="R33" library="rcl_custom" package="0402-B" value="750" x="37.5" y="63.8" rot="MR0"/>
 <element name="R34" library="rcl_custom" package="0402-B" value="10k" x="37.5" y="64.7" rot="MR180"/>
 <element name="R35" library="rcl_custom" package="0402-B" value="10k" x="55.2" y="69.5" rot="MR90"/>
 <element name="LED8" library="led" package="SML0603" value="GREEN" x="14.5" y="66.5"/>
-<element name="R36" library="rcl_custom" package="0402-B" value="1k" x="14.5" y="65.6" rot="MR0"/>
+<element name="R36" library="rcl_custom" package="0402-B" value="750" x="14.5" y="65.6" rot="MR0"/>
 <element name="LED10" library="led" package="SML0603" value="RED" x="14.5" y="64.7"/>
-<element name="R39" library="rcl_custom" package="0402-B" value="1k" x="14.5" y="63.8" rot="MR0"/>
+<element name="R39" library="rcl_custom" package="0402-B" value="750" x="14.5" y="63.8" rot="MR0"/>
 <element name="R40" library="rcl_custom" package="0402-B" value="10k" x="14.5" y="64.7" rot="MR180"/>
 <element name="R41" library="rcl_custom" package="0402-B" value="10k" x="32.2" y="69.5" rot="MR90"/>
 <element name="LED11" library="led" package="SML0603" value="GREEN" x="96.5" y="9.2"/>
-<element name="R53" library="rcl_custom" package="0402-B" value="1k" x="96.5" y="9.2" rot="MR0"/>
+<element name="R53" library="rcl_custom" package="0402-B" value="750" x="96.5" y="9.2" rot="MR0"/>
 <element name="LED12" library="led" package="SML0603" value="RED" x="96.5" y="11"/>
-<element name="R57" library="rcl_custom" package="0402-B" value="1k" x="96.5" y="11" rot="MR0"/>
+<element name="R57" library="rcl_custom" package="0402-B" value="750" x="96.5" y="11" rot="MR0"/>
 <element name="R59" library="rcl_custom" package="0402-B" value="10k" x="96.5" y="11.9" rot="MR180"/>
 <element name="R61" library="rcl_custom" package="0402-B" value="10k" x="78.8" y="6.6" rot="MR270"/>
 <element name="LED14" library="led" package="SML0603" value="GREEN" x="50.5" y="9.2"/>
-<element name="R63" library="rcl_custom" package="0402-B" value="1k" x="50.5" y="9.2" rot="MR0"/>
+<element name="R63" library="rcl_custom" package="0402-B" value="750" x="50.5" y="9.2" rot="MR0"/>
 <element name="LED15" library="led" package="SML0603" value="RED" x="50.5" y="11"/>
-<element name="R107" library="rcl_custom" package="0402-B" value="1k" x="50.5" y="11" rot="MR0"/>
+<element name="R107" library="rcl_custom" package="0402-B" value="750" x="50.5" y="11" rot="MR0"/>
 <element name="R108" library="rcl_custom" package="0402-B" value="10k" x="50.5" y="11.9" rot="MR180"/>
 <element name="R109" library="rcl_custom" package="0402-B" value="10k" x="32.8" y="6.6" rot="MR270"/>
 <element name="LED16" library="led" package="SML0603" value="GREEN" x="73.5" y="9.2"/>
-<element name="R110" library="rcl_custom" package="0402-B" value="1k" x="73.5" y="9.2" rot="MR0"/>
+<element name="R110" library="rcl_custom" package="0402-B" value="750" x="73.5" y="9.2" rot="MR0"/>
 <element name="LED18" library="led" package="SML0603" value="RED" x="73.5" y="11"/>
-<element name="R112" library="rcl_custom" package="0402-B" value="1k" x="73.5" y="11" rot="MR0"/>
+<element name="R112" library="rcl_custom" package="0402-B" value="750" x="73.5" y="11" rot="MR0"/>
 <element name="R113" library="rcl_custom" package="0402-B" value="10k" x="73.5" y="11.9" rot="MR180"/>
 <element name="R114" library="rcl_custom" package="0402-B" value="10k" x="55.8" y="6.6" rot="MR270"/>
 <element name="R121" library="rcl_custom" package="0402-B" value="TBD" x="60.3" y="14" rot="R180"/>
@@ -3641,7 +3641,7 @@ einem neuen Namen ab.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="45.8" y="31.35" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED22" library="led" package="CHIPLED_0603" value="GREEN" x="17.2" y="58" rot="R180"/>
-<element name="R128" library="rcl_custom" package="0402-B" value="1k" x="17.2" y="58" rot="MR270"/>
+<element name="R128" library="rcl_custom" package="0402-B" value="750" x="17.2" y="58" rot="MR270"/>
 <element name="R64" library="rcl_custom" package="0402-B" value="10k" x="43" y="26" rot="MR270"/>
 <element name="R72" library="rcl_custom" package="0402-B" value="10k" x="53.5" y="42" rot="MR315"/>
 <element name="R99" library="rcl_custom" package="0402-B" value="10k" x="101.3" y="25.2" rot="MR270"/>
