@@ -15145,23 +15145,23 @@ by exp-project-lbr.ulp</description>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED5" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R5" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED9" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R9" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED13" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R16" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R16" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED17" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R20" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R20" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED21" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R24" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED25" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R28" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R28" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED29" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R32" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R32" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="LED33" library="led" deviceset="LED" device="CHIPLED_0603" value="AMBER"/>
-<part name="R38" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R38" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="U6" library="MIC37100" deviceset="MIC37101-2.1YM" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device="" value="+2V1"/>
@@ -15215,9 +15215,9 @@ by exp-project-lbr.ulp</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R43" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="LED37" library="LED_RGB_PLCC6" deviceset="LED_RGB_*" device="PLCC-6" value="RGB"/>
-<part name="R44" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
-<part name="R45" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
-<part name="R46" library="rcl_custom" deviceset="R-US_" device="0402-B" value="220"/>
+<part name="R44" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
+<part name="R45" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
+<part name="R46" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="D2" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="R47" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
@@ -15229,7 +15229,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="E5" library="rcl_custom" deviceset="L-BEAD-*" device="0603-B" value="FB"/>
 <part name="LED38" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
-<part name="R48" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R48" library="rcl_custom" deviceset="R-US_" device="0402-B" value="150"/>
 <part name="C86" library="rcl_custom" deviceset="C-EU" device="0402-B" value="100n"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
@@ -15261,7 +15261,7 @@ by exp-project-lbr.ulp</description>
 <part name="U13" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U11" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U12" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
-<part name="R50" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R50" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="R51" library="rcl_custom" deviceset="R-US_" device="0402-B" value="TBD"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
@@ -15386,7 +15386,7 @@ by exp-project-lbr.ulp</description>
 <part name="TP25" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP26" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP27" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10"/>
+<part name="R2" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0402-B" value="0"/>
@@ -15409,61 +15409,61 @@ by exp-project-lbr.ulp</description>
 <part name="C107" library="rcl_custom" deviceset="C-EU" device="0402-B" value="10p"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="LED2" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED3" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED4" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R26" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R26" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED6" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED7" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R33" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R33" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="R34" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R35" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED8" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R36" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R36" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED10" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R39" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R39" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="R40" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R41" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED11" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R53" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R53" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED12" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R57" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R57" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
 <part name="R59" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R61" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED14" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R63" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R63" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED15" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R107" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R107" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="R108" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R109" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED16" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
-<part name="R110" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R110" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V30" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED18" library="led" deviceset="LED" device="SML0603" value="RED"/>
-<part name="R112" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R112" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
 <part name="R113" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
 <part name="R114" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
@@ -15492,7 +15492,7 @@ by exp-project-lbr.ulp</description>
 <part name="D3" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="TP37" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="LED22" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
-<part name="R128" library="rcl_custom" deviceset="R-US_" device="0402-B" value="1k"/>
+<part name="R128" library="rcl_custom" deviceset="R-US_" device="0402-B" value="750"/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="R64" library="rcl_custom" deviceset="R-US_" device="0402-B" value="10k"/>
