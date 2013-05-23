@@ -112,8 +112,8 @@
 <pin name="S" x="5.08" y="-7.62" visible="pin" length="short" direction="pas" rot="R90"/>
 <pin name="G" x="-5.08" y="-5.08" visible="pin" length="short" direction="pas"/>
 <pin name="D" x="5.08" y="5.08" visible="pin" length="short" direction="pas" rot="R270"/>
-<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="-1.27" width="0.381" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.381" layer="94"/>
 <wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.381" layer="94"/>

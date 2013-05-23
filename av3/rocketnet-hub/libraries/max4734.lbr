@@ -88,7 +88,7 @@
 <pin name="GND" x="0" y="-12.7" length="short" rot="R90"/>
 <pin name="N3" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="EN" x="-12.7" y="15.24" length="short"/>
-<pin name="N.C." x="-5.08" y="-12.7" visible="off" length="short" rot="R90"/>
+<pin name="N.C." x="-5.08" y="-12.7" length="short" rot="R90"/>
 <pin name="V+" x="0" y="22.86" length="short" rot="R270"/>
 <pin name="N4" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="COM" x="12.7" y="-5.08" length="short" rot="R180"/>

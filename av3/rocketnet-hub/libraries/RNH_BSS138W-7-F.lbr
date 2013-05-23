@@ -119,8 +119,8 @@
 <circle x="5.08" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
 <circle x="5.08" y="2.54" radius="0.254" width="0.254" layer="94"/>
 <circle x="5.08" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<text x="-12.7" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <circle x="5.08" y="-5.08" radius="0.254" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-5.08" x2="-2.794" y2="-5.08" width="0.1524" layer="94"/>
 </symbol>
