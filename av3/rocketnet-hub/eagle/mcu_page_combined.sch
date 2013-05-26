@@ -20877,7 +20877,7 @@ Battery Charger Schematic</text>
 <approved hash="104,2,599.44,111.76,J7,B-,GND,,,"/>
 <approved hash="104,5,-71.12,78.74,J9,B+,BAT,,,"/>
 <approved hash="104,5,-71.12,76.2,J9,B+,BAT,,,"/>
-<approved hash="104,1,248.92,337.82,U3,GND2,GND,,,"/>
+<approved hash="104,1,279.4,337.82,U3,GND2,GND,,,"/>
 </errors>
 </schematic>
 </drawing>
