@@ -2379,19 +2379,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </polygon>
 <contactref element="CON2" pad="5"/>
 <contactref element="CON2" pad="4"/>
-<via x="2.54" y="78.74" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="99.06" y="78.74" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="99.06" y="7.62" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="2.54" y="6.35" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="1.04" y="84.54" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="100.56" y="84.54" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="100.6" y="1" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="1" y="1" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="41.91" y="40.64" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="37.37" y="53.12" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="50.8" y="44.45" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="59.69" y="50.8" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="68.58" y="52.07" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="74.48" y="44.65" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="50.8" y="82.55" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="99.06" y="42.03" extent="1-16" drill="0.35" diameter="0.5842"/>
-<via x="52.07" y="2.54" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="100.56" y="41.83" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="26.91" y="34.54" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="83.82" y="39.37" extent="1-16" drill="0.35" diameter="0.5842"/>
 <contactref element="J1" pad="B-@1"/>
@@ -2419,6 +2415,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <via x="7.71" y="29.94" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="3.91" y="29.24" extent="1-16" drill="0.35" diameter="0.5842"/>
 <via x="5.31" y="29.24" extent="1-16" drill="0.35" diameter="0.5842"/>
+<via x="54.19" y="60.1" extent="1-16" drill="0.35" diameter="0.5842"/>
 </signal>
 <signal name="DOUBLE_UP_ARROW">
 <contactref element="CON1" pad="3"/>
