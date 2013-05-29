@@ -702,7 +702,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="34.236" y1="2.54" x2="36.422" y2="4.726" width="0.254" layer="1"/>
 <wire x1="35.56" y1="15.04" x2="36.422" y2="14.178" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-D12">
+<signal name="ADIS-DOUT-MISO">
 <contactref element="R9" pad="2"/>
 <wire x1="5.334" y1="10.668" x2="4.572" y2="9.906" width="0.254" layer="1"/>
 <wire x1="4.572" y1="9.906" x2="4.572" y2="6.096" width="0.254" layer="1"/>
@@ -753,7 +753,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <contactref element="J2" pad="16"/>
 <contactref element="J2" pad="15"/>
 </signal>
-<signal name="E407-PD14">
+<signal name="ADIS-DIO3-NC">
 <contactref element="R12" pad="2"/>
 <wire x1="14.986" y1="8.128" x2="19.6469" y2="12.7889" width="0.254" layer="1"/>
 <wire x1="19.6469" y1="12.7889" x2="24.092" y2="12.7889" width="0.254" layer="1"/>
@@ -763,21 +763,21 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="14.986" y1="8.128" x2="13.6398" y2="8.128" width="0.254" layer="1"/>
 <wire x1="13.6398" y1="8.128" x2="13.589" y2="8.1788" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-PD15">
+<signal name="ADIS-DIO4-NC">
 <contactref element="R11" pad="2"/>
 <wire x1="11.403" y1="6.258" x2="9.4822" y2="8.1788" width="0.254" layer="1"/>
 <wire x1="11.403" y1="6.258" x2="20.79" y2="6.258" width="0.254" layer="1"/>
 <contactref element="J2" pad="2"/>
 <wire x1="7.239" y1="8.1788" x2="9.4822" y2="8.1788" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-D13">
+<signal name="ADIS-SCLK">
 <contactref element="R10" pad="2"/>
 <wire x1="18.107659375" y1="13.789659375" x2="15.0368" y2="10.7188" width="0.254" layer="1"/>
 <wire x1="18.107659375" y1="13.789659375" x2="20.858578125" y2="13.789659375" width="0.254" layer="1"/>
 <contactref element="J2" pad="3"/>
 <wire x1="13.589" y1="10.7188" x2="15.0368" y2="10.7188" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-D11">
+<signal name="ADIS-DIN-MOSI">
 <contactref element="R8" pad="2"/>
 <wire x1="15.2588" y1="13.2588" x2="16.8" y2="14.8" width="0.254" layer="1"/>
 <wire x1="16.8" y1="14.8" x2="24.107821875" y2="14.8" width="0.254" layer="1"/>
@@ -786,7 +786,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <contactref element="J2" pad="5"/>
 <wire x1="15.2588" y1="13.2588" x2="13.589" y2="13.2588" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-D10">
+<signal name="ADIS-!CS!-!SS">
 <contactref element="R7" pad="2"/>
 <wire x1="5.08" y1="13.208" x2="3.81" y2="12.192" width="0.254" layer="1"/>
 <wire x1="3.81" y1="12.192" x2="3.81" y2="5.588" width="0.254" layer="1"/>
@@ -798,7 +798,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <contactref element="J2" pad="6"/>
 <wire x1="5.1308" y1="13.2588" x2="7.239" y2="13.2588" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-PD12">
+<signal name="ADIS-DIO1-INT">
 <contactref element="R6" pad="2"/>
 <wire x1="20.8052375" y1="15.7886375" x2="13.97" y2="15.7886375" width="0.254" layer="1"/>
 <contactref element="J2" pad="7"/>
@@ -806,7 +806,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="13.589" y1="15.7988" x2="13.97" y2="15.7988" width="0.254" layer="1"/>
 <wire x1="13.97" y1="15.7988" x2="13.97" y2="15.7886375" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-PD11">
+<signal name="ADIS-!RST">
 <contactref element="R5" pad="2"/>
 <wire x1="4.1148" y1="15.7988" x2="3.048" y2="14.732" width="0.254" layer="1"/>
 <wire x1="13.77" y1="1.143" x2="6.985" y2="1.143" width="0.254" layer="1"/>
@@ -817,7 +817,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <contactref element="J2" pad="8"/>
 <wire x1="7.239" y1="15.7988" x2="4.1148" y2="15.7988" width="0.254" layer="1"/>
 </signal>
-<signal name="E407-PD13">
+<signal name="ADIS-DIO2-NC">
 <contactref element="R4" pad="2"/>
 <wire x1="24.092" y1="16.7767" x2="18.288" y2="16.7767" width="0.254" layer="1"/>
 <contactref element="J2" pad="9"/>

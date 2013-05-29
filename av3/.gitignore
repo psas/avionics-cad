@@ -4,3 +4,8 @@
 *-as-built*
 # Freecad tmp docs
 *.fcstd[0-9]
+# And for the love of god, ignore EAGLE temporary files.
+*.b#*
+*.s#*
+*.l#*
+
