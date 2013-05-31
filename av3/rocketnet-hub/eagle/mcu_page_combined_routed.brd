@@ -3811,12 +3811,14 @@ einem neuen Namen ab.</description>
 </element>
 <element name="R65" library="rcl_custom" package="0402-B-NOSILK" value="10K" x="50.609" y="43.04" rot="MR135"/>
 <element name="R72" library="rcl_custom" package="0402-B-NOSILK" value="0" x="102.1" y="19.2" rot="R90"/>
-<element name="R111" library="rcl_custom" package="0402-B-NOSILK" value="0" x="56.6" y="37" rot="MR315"/>
 <element name="T20" library="zetex" package="SOT-23" value="NDS335N" x="96.3" y="18">
 <attribute name="OC_NEWARK" value="unknown" x="96.3" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="96.3" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="96.3" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="96.3" y="18" size="1.778" layer="27" display="off"/>
+</element>
+<element name="TP39" library="testpad" package="TP06R" value="TPTP06R" x="-8.382" y="-5.715">
+<attribute name="TP_SIGNAL_NAME" value="" x="-8.382" y="-5.715" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4400,7 +4402,6 @@ einem neuen Namen ab.</description>
 <contactref element="U12" pad="P$5"/>
 <contactref element="R65" pad="1"/>
 <contactref element="R72" pad="1"/>
-<contactref element="R111" pad="2"/>
 <contactref element="T20" pad="2"/>
 <wire x1="20.5" y1="61.52" x2="19.26" y2="61.52" width="0.127" layer="16"/>
 <wire x1="19.26" y1="61.52" x2="19.24" y2="61.54" width="0.127" layer="16" curve="-90"/>
@@ -4771,7 +4772,6 @@ einem neuen Namen ab.</description>
 <wire x1="54.356" y1="38.608" x2="54.260590625" y2="38.6605875" width="0.127" layer="16"/>
 <wire x1="55.245" y1="37.719" x2="55.260590625" y2="37.6605875" width="0.127" layer="16"/>
 <wire x1="55.245" y1="37.592" x2="56.134" y2="36.703" width="0.127" layer="16"/>
-<wire x1="56.134" y1="36.703" x2="56.260590625" y2="36.6605875" width="0.127" layer="16"/>
 <wire x1="55.245" y1="37.592" x2="55.260590625" y2="37.6605875" width="0.127" layer="16"/>
 <wire x1="107.442" y1="13.081" x2="107.188" y2="13.335" width="0.127" layer="16"/>
 <wire x1="107.442" y1="12.954" x2="107.442" y2="13.081" width="0.127" layer="16"/>
@@ -5004,9 +5004,6 @@ einem neuen Namen ab.</description>
 <wire x1="94.488" y1="5.08" x2="95.631" y2="6.223" width="0.127" layer="16"/>
 <wire x1="107.061" y1="13.335" x2="107.12" y2="13.4" width="0.127" layer="16"/>
 <wire x1="94.488" y1="5.08" x2="94.445" y2="4.955" width="0.127" layer="16"/>
-<wire x1="56.769" y1="36.068" x2="56.261" y2="36.576" width="0.127" layer="16"/>
-<wire x1="56.896" y1="36.068" x2="56.769" y2="36.068" width="0.127" layer="16"/>
-<wire x1="56.261" y1="36.576" x2="56.260590625" y2="36.6605875" width="0.127" layer="16"/>
 <wire x1="57.912" y1="53.721" x2="57.912" y2="55.499" width="0.127" layer="16"/>
 <wire x1="52.324" y1="48.133" x2="57.912" y2="53.721" width="0.127" layer="16"/>
 <wire x1="57.912" y1="55.499" x2="58" y2="55.52" width="0.127" layer="16"/>
@@ -5060,7 +5057,6 @@ einem neuen Namen ab.</description>
 <via x="22.86" y="27.94" extent="1-16" drill="0.2032"/>
 <via x="104.013" y="26.416" extent="1-16" drill="0.2032"/>
 <via x="27.559" y="36.449" extent="1-16" drill="0.2032"/>
-<via x="56.896" y="36.068" extent="1-16" drill="0.2032"/>
 <via x="11.938" y="10.287" extent="1-16" drill="0.2032"/>
 <via x="77.089" y="49.911" extent="1-16" drill="0.2032"/>
 <via x="87.249" y="54.61" extent="1-16" drill="0.2032"/>
@@ -5076,6 +5072,7 @@ einem neuen Namen ab.</description>
 <wire x1="74.168" y1="32.159" x2="73.4" y2="32.12" width="0" layer="19" extent="1-16"/>
 <wire x1="88.166" y1="20.955" x2="87.503" y2="19.939" width="0" layer="19" extent="1-16"/>
 <wire x1="94.1" y1="57.48" x2="95.6" y2="57.48" width="0" layer="19" extent="16-16"/>
+<wire x1="54.260590625" y1="38.6605875" x2="52.260590625" y2="40.6605875" width="0" layer="19" extent="16-16"/>
 <wire x1="52.324" y1="15.113" x2="54.6" y2="12.8" width="0" layer="19" extent="16-16"/>
 <wire x1="80.75" y1="46.676" x2="77.724" y2="44.958" width="0" layer="19" extent="16-16"/>
 <wire x1="83.798" y1="37.528" x2="79.78" y2="37.6" width="0" layer="19" extent="16-16"/>
@@ -11355,13 +11352,13 @@ einem neuen Namen ab.</description>
 </signal>
 <signal name="MRXER">
 <contactref element="U1" pad="47"/>
-<contactref element="R111" pad="1"/>
 <wire x1="57.531" y1="36.83" x2="57.023" y2="37.338" width="0.127" layer="16"/>
 <wire x1="57.658" y1="36.83" x2="57.531" y2="36.83" width="0.127" layer="16"/>
 <wire x1="58.547" y1="35.941" x2="57.658" y2="36.83" width="0.127" layer="1"/>
-<wire x1="57.023" y1="37.338" x2="56.9394125" y2="37.339409375" width="0.127" layer="16"/>
 <wire x1="58.547" y1="35.941" x2="58.64084375" y2="35.823115625" width="0.127" layer="1"/>
 <via x="57.658" y="36.83" extent="1-16" drill="0.2032"/>
+<contactref element="TP39" pad="TP"/>
+<wire x1="-8.382" y1="-5.715" x2="57.023" y2="37.338" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$167" class="1">
 <contactref element="C8" pad="2"/>
