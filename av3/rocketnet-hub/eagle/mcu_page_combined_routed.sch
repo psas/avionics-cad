@@ -13439,11 +13439,11 @@ by exp-project-lbr.ulp</description>
 <part name="GND146" library="supply1" deviceset="GND" device=""/>
 <part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND147" library="supply1" deviceset="GND" device=""/>
-<part name="R111" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND148" library="supply1" deviceset="GND" device=""/>
 <part name="T20" library="zetex" deviceset="NMOSSOT23" device="" value="NDS335N"/>
 <part name="+3V41" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V42" library="supply1" deviceset="+3V3" device=""/>
+<part name="TP39" library="testpad" deviceset="TP" device="TP06R"/>
 </parts>
 <sheets>
 <sheet>
@@ -13564,9 +13564,9 @@ Supply Enable</text>
 <instance part="GND54" gate="1" x="165.1" y="309.88"/>
 <instance part="R65" gate="R" x="198.12" y="388.62" rot="R90"/>
 <instance part="GND146" gate="1" x="198.12" y="381"/>
-<instance part="R111" gate="R" x="17.78" y="345.44" rot="R270"/>
 <instance part="GND148" gate="1" x="17.78" y="332.74"/>
 <instance part="+3V42" gate="G$1" x="233.68" y="388.62"/>
+<instance part="TP39" gate="G$1" x="17.78" y="355.6"/>
 </instances>
 <busses>
 </busses>
@@ -13707,7 +13707,6 @@ Supply Enable</text>
 <pinref part="GND146" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R111" gate="R" pin="2"/>
 <pinref part="GND148" gate="1" pin="GND"/>
 <wire x1="17.78" y1="340.36" x2="17.78" y2="335.28" width="0.1524" layer="91"/>
 </segment>
@@ -14389,8 +14388,7 @@ Supply Enable</text>
 <segment>
 <pinref part="U1" gate="U1" pin="PB10"/>
 <wire x1="63.5" y1="353.06" x2="17.78" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="R111" gate="R" pin="1"/>
-<wire x1="17.78" y1="350.52" x2="17.78" y2="353.06" width="0.1524" layer="91"/>
+<pinref part="TP39" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$167" class="1">
