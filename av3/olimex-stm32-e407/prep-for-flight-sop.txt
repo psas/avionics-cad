@@ -1,0 +1,25 @@
+# Notes
+
+- Need to replace SMBJ16A TVS with a higher voltage TVS.
+- Maximum voltage on MPS1482 is 20V. DO NOT EXCEED!!!11!!
+- 
+
+# Here's the instructions for prepping for flight.
+
+01. Remove 'PWR_JACK' connector.
+02. Remove D4 (SMBJ16A 16V TVS).
+03. FIXME: Install SMBJ20A (20V TVS).
+04. Remove 'PWR_SEL' jumper.
+05. Wire pins 1 and 2 together.
+06. Remove '3V_BAT' connector.
+07. Remove 'RESET' switch.
+08. Remove 'LAN' connector.
+09. Remove 'BOOT' connector.
+10. Remove 'B0_1/B0_0' jumper.
+11. Wire pins 2 and 3 together of 'B0_1/B0_0' jumper. This 1/2 disables UART bootloader.
+12. Remove 'B1_1/B1_0' jumper.
+13. Wire pins 2 and 3 together of 'B1_1/B1_0' jumper. This 2/2 disables the UART bootloader.
+14. Glue down using 2-part RTV silicone (or, in a pinch, hot glue):
+   - Q1 -- 32 KHz crystal
+   - C42, C48, C50, C56, C61
+
