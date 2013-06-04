@@ -2271,9 +2271,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="TP_SIGNAL_NAME" value="" x="37.4" y="33.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LED3" library="Tova" package="PLCC-6" value="" x="47.4" y="11.3"/>
-<element name="R3" library="rcl_custom" package="0603-B-NOSILK" value="50" x="43" y="12.4"/>
-<element name="R4" library="rcl_custom" package="0603-B-NOSILK" value="50" x="43" y="10.2"/>
-<element name="R5" library="rcl_custom" package="0603-B-NOSILK" value="50" x="51.6" y="10.2" rot="R180"/>
+<element name="R3" library="rcl_custom" package="0603-B-NOSILK" value="900" x="43" y="12.4"/>
+<element name="R4" library="rcl_custom" package="0603-B-NOSILK" value="400" x="43" y="10.2"/>
+<element name="R5" library="rcl_custom" package="0603-B-NOSILK" value="110" x="51.6" y="10.2" rot="R180"/>
 <element name="C2" library="rcl_custom" package="0805-B-NOSILK" value="10u" x="52.9" y="57.9" rot="MR90"/>
 </elements>
 <signals>

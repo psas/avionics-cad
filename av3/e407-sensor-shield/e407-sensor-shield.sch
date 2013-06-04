@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12809,9 +12809,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP5" library="testpad" deviceset="TP" device="PAD1-13"/>
 <part name="LED3" library="Tova" deviceset="LED_RGB_*" device="PLCC-6"/>
 <part name="TRIPLE_BAR_GND4" library="psas_eagle_library-2" deviceset="SUP_GND_BAR_TRIPLE" device="" value="GND"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
-<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="900"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="400"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="110"/>
 <part name="C2" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="10u"/>
 </parts>
 <sheets>
@@ -12969,15 +12969,15 @@ breakout board</text>
 <instance part="TRIPLE_BAR_GND4" gate="1" x="139.7" y="93.98"/>
 <instance part="R3" gate="R" x="154.94" y="111.76" smashed="yes" rot="MR0">
 <attribute name="NAME" x="153.67" y="114.3" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="158.75" y="114.3" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="161.29" y="114.3" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R4" gate="R" x="154.94" y="104.14" smashed="yes" rot="MR0">
 <attribute name="NAME" x="153.67" y="106.68" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="158.75" y="106.68" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="161.29" y="106.68" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R5" gate="R" x="154.94" y="96.52" smashed="yes" rot="MR0">
 <attribute name="NAME" x="153.67" y="99.06" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="158.75" y="99.06" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="161.29" y="99.06" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C2" gate="CE" x="50.8" y="33.02"/>
 </instances>
