@@ -12778,11 +12778,11 @@ by exp-project-lbr.ulp</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.127" drill="0.2032">
-<clearance class="0" value="0.1778"/>
+<clearance class="0" value="0.127"/>
 </class>
 <class number="1" name="PWR" width="0.127" drill="0.2032">
-<clearance class="0" value="0.1778"/>
-<clearance class="1" value="0.1778"/>
+<clearance class="0" value="0.127"/>
+<clearance class="1" value="0.127"/>
 </class>
 </classes>
 <parts>
