@@ -52,6 +52,7 @@ The board is powered by a 4-cell LiPo battery pack. This works out to a nominal 
 	MIC37101-2.1YM Settings:
 		EN:			Weakly pulled to logic 0, controlled by MCU
 		
+		
 Analog Multiplexers
 The STM32F407V LQFP-100 lacks sufficient ADC inputs to monitor the output current of the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for it's small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout.
 		
