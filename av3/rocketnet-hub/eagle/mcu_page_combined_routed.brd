@@ -6327,6 +6327,7 @@ einem neuen Namen ab.</description>
 <wire x1="73.152" y1="31.115" x2="73.66" y2="31.115" width="0.1778" layer="16"/>
 <wire x1="67.31" y1="47.879" x2="67.183" y2="48.006" width="0.1778" layer="16"/>
 <wire x1="67.183" y1="48.006" x2="66.294" y2="48.006" width="0.1778" layer="16"/>
+<contactref element="U4" pad="189"/>
 </signal>
 <signal name="+3V3" class="1">
 <contactref element="E5" pad="1"/>

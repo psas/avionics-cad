@@ -1288,7 +1288,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <pin name="MRXD[0]" x="-55.88" y="88.9" length="middle"/>
 <pin name="MRXD[1]" x="-55.88" y="86.36" length="middle"/>
 <pin name="MRXD[2]" x="-55.88" y="83.82" length="middle"/>
-<pin name="MRXD[4]" x="-55.88" y="81.28" length="middle"/>
+<pin name="MRXD[3]" x="-55.88" y="81.28" length="middle"/>
 <pin name="MRXDV" x="-55.88" y="78.74" length="middle"/>
 <pin name="MTXC" x="-55.88" y="76.2" length="middle"/>
 <pin name="MTXD[0]" x="-55.88" y="73.66" length="middle"/>
@@ -1410,7 +1410,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <pin name="VDD1" x="35.56" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD2" x="33.02" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD3" x="30.48" y="111.76" length="middle" direction="pwr" rot="R270"/>
-<pin name="VDD_PLL" x="27.94" y="111.76" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD_PLLTX" x="27.94" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV" x="25.4" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV1" x="22.86" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV2" x="20.32" y="111.76" length="middle" direction="pwr" rot="R270"/>
@@ -1483,6 +1483,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <pin name="LED[9][0]" x="53.34" y="-88.9" length="middle" rot="R180"/>
 <text x="-55.88" y="109.22" size="2.54" layer="95">&gt;NAME</text>
 <text x="-7.62" y="0" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND_RCV7" x="45.72" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1534,6 +1535,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <connect gate="U" pin="GND_RCV4" pad="184"/>
 <connect gate="U" pin="GND_RCV5" pad="185"/>
 <connect gate="U" pin="GND_RCV6" pad="188"/>
+<connect gate="U" pin="GND_RCV7" pad="189"/>
 <connect gate="U" pin="GND_RX" pad="2"/>
 <connect gate="U" pin="GND_RX1" pad="3"/>
 <connect gate="U" pin="GND_RX2" pad="24"/>
@@ -1601,7 +1603,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <connect gate="U" pin="MRXD[0]" pad="123"/>
 <connect gate="U" pin="MRXD[1]" pad="122"/>
 <connect gate="U" pin="MRXD[2]" pad="121"/>
-<connect gate="U" pin="MRXD[4]" pad="120"/>
+<connect gate="U" pin="MRXD[3]" pad="120"/>
 <connect gate="U" pin="MTXC" pad="102"/>
 <connect gate="U" pin="MTXD[0]" pad="100"/>
 <connect gate="U" pin="MTXD[1]" pad="99"/>
@@ -1673,7 +1675,7 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <connect gate="U" pin="VDD1" pad="108"/>
 <connect gate="U" pin="VDD2" pad="135"/>
 <connect gate="U" pin="VDD3" pad="157"/>
-<connect gate="U" pin="VDD_PLL" pad="178"/>
+<connect gate="U" pin="VDD_PLLTX" pad="178"/>
 <connect gate="U" pin="VDD_RCV" pad="74"/>
 <connect gate="U" pin="VDD_RCV1" pad="75"/>
 <connect gate="U" pin="VDD_RCV2" pad="78"/>
@@ -18424,6 +18426,8 @@ Supply Enable</text>
 <junction x="172.72" y="12.7"/>
 <pinref part="U4" gate="U" pin="GND-ISO3"/>
 <junction x="175.26" y="12.7"/>
+<pinref part="U4" gate="U" pin="GND_RCV7"/>
+<wire x1="177.8" y1="12.7" x2="180.34" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="U" pin="FXSD[1]"/>
@@ -18747,7 +18751,7 @@ Supply Enable</text>
 </net>
 <net name="MRXD3" class="0">
 <segment>
-<pinref part="U4" gate="U" pin="MRXD[4]"/>
+<pinref part="U4" gate="U" pin="MRXD[3]"/>
 <wire x1="76.2" y1="208.28" x2="78.74" y2="208.28" width="0.1524" layer="91"/>
 <label x="76.2" y="208.28" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -19729,7 +19733,7 @@ Supply Enable</text>
 <wire x1="167.64" y1="243.84" x2="165.1" y2="243.84" width="0.1524" layer="91"/>
 <junction x="165.1" y="243.84"/>
 <wire x1="165.1" y1="243.84" x2="165.1" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="U4" gate="U" pin="VDD_PLL"/>
+<pinref part="U4" gate="U" pin="VDD_PLLTX"/>
 <pinref part="C72" gate="CE" pin="2"/>
 <pinref part="C81" gate="CE" pin="2"/>
 <wire x1="162.56" y1="269.24" x2="162.56" y2="266.7" width="0.1524" layer="91"/>
