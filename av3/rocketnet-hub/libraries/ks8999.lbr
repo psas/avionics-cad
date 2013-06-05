@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -693,15 +693,15 @@
 </packages>
 <symbols>
 <symbol name="KS8999">
-<pin name="FXSD[1]" x="53.34" y="101.6" length="middle" rot="R180"/>
-<pin name="LED[1][3]" x="53.34" y="99.06" length="middle" rot="R180"/>
-<pin name="LED[1][2]" x="53.34" y="96.52" length="middle" rot="R180"/>
-<pin name="LED[1][1]" x="53.34" y="93.98" length="middle" rot="R180"/>
-<pin name="LED[1][0]" x="53.34" y="91.44" length="middle" rot="R180"/>
-<pin name="RXM[1]" x="53.34" y="88.9" length="middle" rot="R180"/>
-<pin name="RXP[1]" x="53.34" y="86.36" length="middle" rot="R180"/>
-<pin name="TXM[1]" x="53.34" y="83.82" length="middle" rot="R180"/>
-<pin name="TXP[1]" x="53.34" y="81.28" length="middle" rot="R180"/>
+<pin name="FXSD[1]" x="55.88" y="101.6" length="middle" rot="R180"/>
+<pin name="LED[1][3]" x="55.88" y="99.06" length="middle" rot="R180"/>
+<pin name="LED[1][2]" x="55.88" y="96.52" length="middle" rot="R180"/>
+<pin name="LED[1][1]" x="55.88" y="93.98" length="middle" rot="R180"/>
+<pin name="LED[1][0]" x="55.88" y="91.44" length="middle" rot="R180"/>
+<pin name="RXM[1]" x="55.88" y="88.9" length="middle" rot="R180"/>
+<pin name="RXP[1]" x="55.88" y="86.36" length="middle" rot="R180"/>
+<pin name="TXM[1]" x="55.88" y="83.82" length="middle" rot="R180"/>
+<pin name="TXP[1]" x="55.88" y="81.28" length="middle" rot="R180"/>
 <pin name="SDA" x="-55.88" y="43.18" length="middle"/>
 <pin name="MCOL" x="-55.88" y="101.6" length="middle"/>
 <pin name="MCRS" x="-55.88" y="99.06" length="middle"/>
@@ -711,7 +711,7 @@
 <pin name="MRXD[0]" x="-55.88" y="88.9" length="middle"/>
 <pin name="MRXD[1]" x="-55.88" y="86.36" length="middle"/>
 <pin name="MRXD[2]" x="-55.88" y="83.82" length="middle"/>
-<pin name="MRXD[4]" x="-55.88" y="81.28" length="middle"/>
+<pin name="MRXD[3]" x="-55.88" y="81.28" length="middle"/>
 <pin name="MRXDV" x="-55.88" y="78.74" length="middle"/>
 <pin name="MTXC" x="-55.88" y="76.2" length="middle"/>
 <pin name="MTXD[0]" x="-55.88" y="73.66" length="middle"/>
@@ -730,69 +730,69 @@
 <pin name="X2" x="-55.88" y="20.32" length="middle"/>
 <pin name="ISET" x="-55.88" y="17.78" length="middle"/>
 <pin name="AUTOMDIX" x="-55.88" y="15.24" length="middle"/>
-<pin name="FXSD[2]" x="53.34" y="78.74" length="middle" rot="R180"/>
-<pin name="LED[2][3]" x="53.34" y="76.2" length="middle" rot="R180"/>
-<pin name="LED[2][2]" x="53.34" y="73.66" length="middle" rot="R180"/>
-<pin name="LED[2][1]" x="53.34" y="71.12" length="middle" rot="R180"/>
-<pin name="LED[2][0]" x="53.34" y="68.58" length="middle" rot="R180"/>
-<pin name="RXM[2]" x="53.34" y="66.04" length="middle" rot="R180"/>
-<pin name="RXP[2]" x="53.34" y="63.5" length="middle" rot="R180"/>
-<pin name="TXM[2]" x="53.34" y="60.96" length="middle" rot="R180"/>
-<pin name="TXP[2]" x="53.34" y="58.42" length="middle" rot="R180"/>
-<pin name="FXSD[3]" x="53.34" y="55.88" length="middle" rot="R180"/>
-<pin name="LED[3][3]" x="53.34" y="53.34" length="middle" rot="R180"/>
-<pin name="LED[3][2]" x="53.34" y="50.8" length="middle" rot="R180"/>
-<pin name="LED[3][1]" x="53.34" y="48.26" length="middle" rot="R180"/>
-<pin name="LED[3][0]" x="53.34" y="45.72" length="middle" rot="R180"/>
-<pin name="RXM[3]" x="53.34" y="43.18" length="middle" rot="R180"/>
-<pin name="RXP[3]" x="53.34" y="40.64" length="middle" rot="R180"/>
-<pin name="TXM[3]" x="53.34" y="38.1" length="middle" rot="R180"/>
-<pin name="TXP[3]" x="53.34" y="35.56" length="middle" rot="R180"/>
-<pin name="FXSD[4]" x="53.34" y="33.02" length="middle" rot="R180"/>
-<pin name="LED[4][3]" x="53.34" y="30.48" length="middle" rot="R180"/>
-<pin name="LED[4][2]" x="53.34" y="27.94" length="middle" rot="R180"/>
-<pin name="LED[4][1]" x="53.34" y="25.4" length="middle" rot="R180"/>
-<pin name="LED[4][0]" x="53.34" y="22.86" length="middle" rot="R180"/>
-<pin name="RXM[4]" x="53.34" y="20.32" length="middle" rot="R180"/>
-<pin name="RXP[4]" x="53.34" y="17.78" length="middle" rot="R180"/>
-<pin name="TXM[4]" x="53.34" y="15.24" length="middle" rot="R180"/>
-<pin name="TXP[4]" x="53.34" y="12.7" length="middle" rot="R180"/>
-<pin name="FXSD[5]" x="53.34" y="10.16" length="middle" rot="R180"/>
-<pin name="LED[5][3]" x="53.34" y="7.62" length="middle" rot="R180"/>
-<pin name="LED[5][2]" x="53.34" y="5.08" length="middle" rot="R180"/>
-<pin name="LED[5][1]" x="53.34" y="2.54" length="middle" rot="R180"/>
-<pin name="LED[5][0]" x="53.34" y="0" length="middle" rot="R180"/>
-<pin name="RXM[5]" x="53.34" y="-2.54" length="middle" rot="R180"/>
-<pin name="RXP[5]" x="53.34" y="-5.08" length="middle" rot="R180"/>
-<pin name="TXM[5]" x="53.34" y="-7.62" length="middle" rot="R180"/>
-<pin name="TXP[5]" x="53.34" y="-10.16" length="middle" rot="R180"/>
-<pin name="FXSD[6]" x="53.34" y="-12.7" length="middle" rot="R180"/>
-<pin name="LED[6][3]" x="53.34" y="-15.24" length="middle" rot="R180"/>
-<pin name="LED[6][2]" x="53.34" y="-17.78" length="middle" rot="R180"/>
-<pin name="LED[6][1]" x="53.34" y="-20.32" length="middle" rot="R180"/>
-<pin name="LED[6][0]" x="53.34" y="-22.86" length="middle" rot="R180"/>
-<pin name="RXM[6]" x="53.34" y="-25.4" length="middle" rot="R180"/>
-<pin name="RXP[6]" x="53.34" y="-27.94" length="middle" rot="R180"/>
-<pin name="TXM[6]" x="53.34" y="-30.48" length="middle" rot="R180"/>
-<pin name="TXP[6]" x="53.34" y="-33.02" length="middle" rot="R180"/>
-<pin name="FXSD[7]" x="53.34" y="-35.56" length="middle" rot="R180"/>
-<pin name="LED[7][3]" x="53.34" y="-38.1" length="middle" rot="R180"/>
-<pin name="LED[7][2]" x="53.34" y="-40.64" length="middle" rot="R180"/>
-<pin name="LED[7][1]" x="53.34" y="-43.18" length="middle" rot="R180"/>
-<pin name="LED[7][0]" x="53.34" y="-45.72" length="middle" rot="R180"/>
-<pin name="RXM[7]" x="53.34" y="-48.26" length="middle" rot="R180"/>
-<pin name="RXP[7]" x="53.34" y="-50.8" length="middle" rot="R180"/>
-<pin name="TXM[7]" x="53.34" y="-53.34" length="middle" rot="R180"/>
-<pin name="TXP[7]" x="53.34" y="-55.88" length="middle" rot="R180"/>
-<pin name="FXSD[8]" x="53.34" y="-58.42" length="middle" rot="R180"/>
-<pin name="LED[8][3]" x="53.34" y="-60.96" length="middle" rot="R180"/>
-<pin name="LED[8][2]" x="53.34" y="-63.5" length="middle" rot="R180"/>
-<pin name="LED[8][1]" x="53.34" y="-66.04" length="middle" rot="R180"/>
-<pin name="LED[8][0]" x="53.34" y="-68.58" length="middle" rot="R180"/>
-<pin name="RXM[8]" x="53.34" y="-71.12" length="middle" rot="R180"/>
-<pin name="RXP[8]" x="53.34" y="-73.66" length="middle" rot="R180"/>
-<pin name="TXM[8]" x="53.34" y="-76.2" length="middle" rot="R180"/>
-<pin name="TXP[8]" x="53.34" y="-78.74" length="middle" rot="R180"/>
+<pin name="FXSD[2]" x="55.88" y="78.74" length="middle" rot="R180"/>
+<pin name="LED[2][3]" x="55.88" y="76.2" length="middle" rot="R180"/>
+<pin name="LED[2][2]" x="55.88" y="73.66" length="middle" rot="R180"/>
+<pin name="LED[2][1]" x="55.88" y="71.12" length="middle" rot="R180"/>
+<pin name="LED[2][0]" x="55.88" y="68.58" length="middle" rot="R180"/>
+<pin name="RXM[2]" x="55.88" y="66.04" length="middle" rot="R180"/>
+<pin name="RXP[2]" x="55.88" y="63.5" length="middle" rot="R180"/>
+<pin name="TXM[2]" x="55.88" y="60.96" length="middle" rot="R180"/>
+<pin name="TXP[2]" x="55.88" y="58.42" length="middle" rot="R180"/>
+<pin name="FXSD[3]" x="55.88" y="55.88" length="middle" rot="R180"/>
+<pin name="LED[3][3]" x="55.88" y="53.34" length="middle" rot="R180"/>
+<pin name="LED[3][2]" x="55.88" y="50.8" length="middle" rot="R180"/>
+<pin name="LED[3][1]" x="55.88" y="48.26" length="middle" rot="R180"/>
+<pin name="LED[3][0]" x="55.88" y="45.72" length="middle" rot="R180"/>
+<pin name="RXM[3]" x="55.88" y="43.18" length="middle" rot="R180"/>
+<pin name="RXP[3]" x="55.88" y="40.64" length="middle" rot="R180"/>
+<pin name="TXM[3]" x="55.88" y="38.1" length="middle" rot="R180"/>
+<pin name="TXP[3]" x="55.88" y="35.56" length="middle" rot="R180"/>
+<pin name="FXSD[4]" x="55.88" y="33.02" length="middle" rot="R180"/>
+<pin name="LED[4][3]" x="55.88" y="30.48" length="middle" rot="R180"/>
+<pin name="LED[4][2]" x="55.88" y="27.94" length="middle" rot="R180"/>
+<pin name="LED[4][1]" x="55.88" y="25.4" length="middle" rot="R180"/>
+<pin name="LED[4][0]" x="55.88" y="22.86" length="middle" rot="R180"/>
+<pin name="RXM[4]" x="55.88" y="20.32" length="middle" rot="R180"/>
+<pin name="RXP[4]" x="55.88" y="17.78" length="middle" rot="R180"/>
+<pin name="TXM[4]" x="55.88" y="15.24" length="middle" rot="R180"/>
+<pin name="TXP[4]" x="55.88" y="12.7" length="middle" rot="R180"/>
+<pin name="FXSD[5]" x="55.88" y="10.16" length="middle" rot="R180"/>
+<pin name="LED[5][3]" x="55.88" y="7.62" length="middle" rot="R180"/>
+<pin name="LED[5][2]" x="55.88" y="5.08" length="middle" rot="R180"/>
+<pin name="LED[5][1]" x="55.88" y="2.54" length="middle" rot="R180"/>
+<pin name="LED[5][0]" x="55.88" y="0" length="middle" rot="R180"/>
+<pin name="RXM[5]" x="55.88" y="-2.54" length="middle" rot="R180"/>
+<pin name="RXP[5]" x="55.88" y="-5.08" length="middle" rot="R180"/>
+<pin name="TXM[5]" x="55.88" y="-7.62" length="middle" rot="R180"/>
+<pin name="TXP[5]" x="55.88" y="-10.16" length="middle" rot="R180"/>
+<pin name="FXSD[6]" x="55.88" y="-12.7" length="middle" rot="R180"/>
+<pin name="LED[6][3]" x="55.88" y="-15.24" length="middle" rot="R180"/>
+<pin name="LED[6][2]" x="55.88" y="-17.78" length="middle" rot="R180"/>
+<pin name="LED[6][1]" x="55.88" y="-20.32" length="middle" rot="R180"/>
+<pin name="LED[6][0]" x="55.88" y="-22.86" length="middle" rot="R180"/>
+<pin name="RXM[6]" x="55.88" y="-25.4" length="middle" rot="R180"/>
+<pin name="RXP[6]" x="55.88" y="-27.94" length="middle" rot="R180"/>
+<pin name="TXM[6]" x="55.88" y="-30.48" length="middle" rot="R180"/>
+<pin name="TXP[6]" x="55.88" y="-33.02" length="middle" rot="R180"/>
+<pin name="FXSD[7]" x="55.88" y="-35.56" length="middle" rot="R180"/>
+<pin name="LED[7][3]" x="55.88" y="-38.1" length="middle" rot="R180"/>
+<pin name="LED[7][2]" x="55.88" y="-40.64" length="middle" rot="R180"/>
+<pin name="LED[7][1]" x="55.88" y="-43.18" length="middle" rot="R180"/>
+<pin name="LED[7][0]" x="55.88" y="-45.72" length="middle" rot="R180"/>
+<pin name="RXM[7]" x="55.88" y="-48.26" length="middle" rot="R180"/>
+<pin name="RXP[7]" x="55.88" y="-50.8" length="middle" rot="R180"/>
+<pin name="TXM[7]" x="55.88" y="-53.34" length="middle" rot="R180"/>
+<pin name="TXP[7]" x="55.88" y="-55.88" length="middle" rot="R180"/>
+<pin name="FXSD[8]" x="55.88" y="-58.42" length="middle" rot="R180"/>
+<pin name="LED[8][3]" x="55.88" y="-60.96" length="middle" rot="R180"/>
+<pin name="LED[8][2]" x="55.88" y="-63.5" length="middle" rot="R180"/>
+<pin name="LED[8][1]" x="55.88" y="-66.04" length="middle" rot="R180"/>
+<pin name="LED[8][0]" x="55.88" y="-68.58" length="middle" rot="R180"/>
+<pin name="RXM[8]" x="55.88" y="-71.12" length="middle" rot="R180"/>
+<pin name="RXP[8]" x="55.88" y="-73.66" length="middle" rot="R180"/>
+<pin name="TXM[8]" x="55.88" y="-76.2" length="middle" rot="R180"/>
+<pin name="TXP[8]" x="55.88" y="-78.74" length="middle" rot="R180"/>
 <pin name="GND" x="-45.72" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND1" x="-43.18" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND2" x="-40.64" y="-114.3" length="middle" direction="pwr" rot="R90"/>
@@ -808,32 +808,32 @@
 <pin name="GND_RCV4" x="-15.24" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND_RCV5" x="-12.7" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND_RCV6" x="-10.16" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX" x="-7.62" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX1" x="-5.08" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX2" x="-2.54" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX3" x="0" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX4" x="2.54" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX5" x="5.08" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX6" x="7.62" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_RX7" x="10.16" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX" x="12.7" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX1" x="15.24" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX2" x="17.78" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX3" x="20.32" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX4" x="22.86" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX5" x="25.4" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX6" x="27.94" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND_TX7" x="30.48" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND-ISO" x="33.02" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND-ISO1" x="35.56" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND-ISO2" x="38.1" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND-ISO3" x="40.64" y="-114.3" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND-ISO4" x="43.18" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX" x="-5.08" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX1" x="-2.54" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX2" x="0" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX3" x="2.54" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX4" x="5.08" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX5" x="7.62" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX6" x="10.16" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_RX7" x="12.7" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX" x="15.24" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX1" x="17.78" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX2" x="20.32" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX3" x="22.86" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX4" x="25.4" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX5" x="27.94" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX6" x="30.48" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND_TX7" x="33.02" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND-ISO" x="35.56" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND-ISO1" x="38.1" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND-ISO2" x="40.64" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND-ISO3" x="43.18" y="-114.3" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND-ISO4" x="45.72" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 <pin name="VDD" x="38.1" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD1" x="35.56" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD2" x="33.02" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD3" x="30.48" y="111.76" length="middle" direction="pwr" rot="R270"/>
-<pin name="VDD_PLL" x="27.94" y="111.76" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD_PLLTX" x="27.94" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV" x="25.4" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV1" x="22.86" y="111.76" length="middle" direction="pwr" rot="R270"/>
 <pin name="VDD_RCV2" x="20.32" y="111.76" length="middle" direction="pwr" rot="R270"/>
@@ -896,16 +896,17 @@
 <pin name="TEST[1]" x="-55.88" y="-93.98" length="middle"/>
 <pin name="TEST[2]" x="-55.88" y="-96.52" length="middle"/>
 <pin name="TESTEN" x="-55.88" y="-99.06" length="middle"/>
-<wire x1="48.26" y1="106.68" x2="48.26" y2="-109.22" width="0.254" layer="94"/>
-<wire x1="48.26" y1="-109.22" x2="-50.8" y2="-109.22" width="0.254" layer="94"/>
+<wire x1="50.8" y1="106.68" x2="50.8" y2="-109.22" width="0.254" layer="94"/>
+<wire x1="50.8" y1="-109.22" x2="-50.8" y2="-109.22" width="0.254" layer="94"/>
 <wire x1="-50.8" y1="-109.22" x2="-50.8" y2="106.68" width="0.254" layer="94"/>
-<wire x1="-50.8" y1="106.68" x2="48.26" y2="106.68" width="0.254" layer="94"/>
-<pin name="LED[9][3]" x="53.34" y="-81.28" length="middle" rot="R180"/>
-<pin name="LED[9][2]" x="53.34" y="-83.82" length="middle" rot="R180"/>
-<pin name="LED[9][1]" x="53.34" y="-86.36" length="middle" rot="R180"/>
-<pin name="LED[9][0]" x="53.34" y="-88.9" length="middle" rot="R180"/>
+<wire x1="-50.8" y1="106.68" x2="50.8" y2="106.68" width="0.254" layer="94"/>
+<pin name="LED[9][3]" x="55.88" y="-81.28" length="middle" rot="R180"/>
+<pin name="LED[9][2]" x="55.88" y="-83.82" length="middle" rot="R180"/>
+<pin name="LED[9][1]" x="55.88" y="-86.36" length="middle" rot="R180"/>
+<pin name="LED[9][0]" x="55.88" y="-88.9" length="middle" rot="R180"/>
 <text x="-55.88" y="109.22" size="2.54" layer="95">&gt;NAME</text>
 <text x="-7.62" y="0" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND_RCV7" x="-7.62" y="-114.3" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -957,6 +958,7 @@
 <connect gate="U" pin="GND_RCV4" pad="184"/>
 <connect gate="U" pin="GND_RCV5" pad="185"/>
 <connect gate="U" pin="GND_RCV6" pad="188"/>
+<connect gate="U" pin="GND_RCV7" pad="189"/>
 <connect gate="U" pin="GND_RX" pad="2"/>
 <connect gate="U" pin="GND_RX1" pad="3"/>
 <connect gate="U" pin="GND_RX2" pad="24"/>
@@ -1024,7 +1026,7 @@
 <connect gate="U" pin="MRXD[0]" pad="123"/>
 <connect gate="U" pin="MRXD[1]" pad="122"/>
 <connect gate="U" pin="MRXD[2]" pad="121"/>
-<connect gate="U" pin="MRXD[4]" pad="120"/>
+<connect gate="U" pin="MRXD[3]" pad="120"/>
 <connect gate="U" pin="MTXC" pad="102"/>
 <connect gate="U" pin="MTXD[0]" pad="100"/>
 <connect gate="U" pin="MTXD[1]" pad="99"/>
@@ -1096,7 +1098,7 @@
 <connect gate="U" pin="VDD1" pad="108"/>
 <connect gate="U" pin="VDD2" pad="135"/>
 <connect gate="U" pin="VDD3" pad="157"/>
-<connect gate="U" pin="VDD_PLL" pad="178"/>
+<connect gate="U" pin="VDD_PLLTX" pad="178"/>
 <connect gate="U" pin="VDD_RCV" pad="74"/>
 <connect gate="U" pin="VDD_RCV1" pad="75"/>
 <connect gate="U" pin="VDD_RCV2" pad="78"/>
