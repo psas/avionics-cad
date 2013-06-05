@@ -2,12 +2,44 @@ Component Selection Guide
 This page aims to explain the reasoning behind the selection of each component used in the power and communications hub designed by the 2012-13 capstone team. The intention is to provide insight into the design decisions made however there is no intention to provide the reader with a comprehensive design example that is suitable for any purpose other than exact replication. The target audience is expected to have design experience with microelectronics power distribution and modern physical layer communications designs utilizing matched impedance differential signaling.
 
 MCU
-For this project the MCU chosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of developemt tools. Given that PSAS is a cost concious group that has ample expertise to draw from the documentation quality offered by Atmel did not justify the added expense. Several Olimex STM32-E407 developement boards where acquired and used by the PSAS software team to concurrently develop the firmware.
+For this project the MCU chosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of developemt tools. Given that PSAS is a cost concious group that has ample expertise to draw from, the higher quality documentation offered by Atmel did not justify the added expense. Several Olimex STM32-E407 developement boards where acquired and used by the PSAS software team to concurrently develop firmware for the RocketNet-Hub.
 	Support Components:
 		Crystal 
 			The MCU has an internal oscilator circuit and can run without an external crystal. However, for ethernet functionality the MII interface must operate at 25MHz +/- 50ppm. This is beyond the capabilities of the intenal oscillator. Thus an external crystal must be used. The value that makes the most sense to the design team is 25MHz. By using this value we can avoid mucking around with the PLL resources of the MCU and still provide the required MII interface clock. Additionally, the MCU has two clock outputs and we can use one of these to buffer the crystal and use this same crystal to also drive the KS8999 ethernet switch. The part selected is the 8Y-25.000MEEQ-T from TXC Corp. This crystal has a load capacitance rating of 10pF and a +/-10ppm frequency stability/tolerance.
 		Bypass Caps
 			The supply pins of the MCU will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. A bulk capacitor with a nominal value of between 10 and 22 uF should be placed near the MCU's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. The two crystal pins also require capacitors. For these two C0G ceramic 0402 capacitors should be used. The value should be 10pF.
+		Analog supply filtering
+			The Analog supply pins were isolated with an 0603 ferrite bead to block digital switching noise. As the only analog resource used in the MCU was the ADC to monitor the current draws of both the battery and each node, this was likely an overly conservative addition to the board. Durring testing it is recomended that the ferrite bead be replaced with a 0 ohm resistor. This will allow for a reduced BOM for future revisions fo the board should it prove functional without this filter.
+	Interfaces
+		Reset logic
+			The MCU has a reset signal that needs to be weakly pulled high during normal operation. This is accomplished by a 10kOhm resistor. The value is chosen to reduce power consumption when the line is pulled low. (Though given the length of time that this signal is ever likely to be held low it is a really rather pointless consideration. Any value from 100 to 100k could be used.) The MCU has internal power on reset and brownout detection circuitry and thus no external reset logic was added to ensure proper response to these conditions.
+		JTAG
+			The MCU supports both programming and debuging through the ARM standard JTAG interface. This bus is broken out to a 2x5 50mil header. Signals used are the TMS, TCK, TDO, TDI, and MCU reset. For more information on these signals or the JTAG inplemenation used in the STM32F407 please see google.com
+		Serial UART
+			To support realtime debugging and logging, a serial UART channel was broken out to a 1x4 50mil header. Signals preset are TXD and RXD, no flow control signals are present. This is a 3.3V interface with no protection. Care should be used to ensure that the USB to UART addapter used is configured for 3.3V or damage will likely result to the MCU, adapter, or both.
+		MII
+			The MCU is connected to the Ethernet switch, discussed later, by two interfaces. The MII interface is the connection between the MAC and switch. The other interface is a serial interface and will be discussed below. The MII interface is an industry standand interface for connecting a MAC to a PHY. It is implemented per the standard with the exception that neither TX_ERR or RX_ERR are present. More information on this interface can be found via Goolge.com.
+		I2C
+			The I2C, or more properly TWI, interface is used to interface with the battery charger IC and fuel gauge IC. The MCU is the bus master. This is an open collector interface and thus requires the presence of a pull up resistor on each signal line. 2.2kOhm 0403 risitors were selected from past experience--no calculations or simulations were preformed. If the bus fails at desired baud, please scope the bus at J? and look for exesive skew. If this is found, decrese the value of the pull ups. If reduction in power consumption is desired, these may be increased until such point as the bus begins to fail at max baud.
+		Rocket_RDY
+			The MCU is responsible for sending the final go signal to the launch tower signifying that the rocket is ready to launch. This is accomplished through a non-inveted signal buffered by a simple N-channel MOSFET. The signal is pulled high on the gate side and low on the source side. It is isolated from the MCU by the FET and protected by a 100Ohm resistor and parallel TVS diodes. The Capstone team wished to implement this signal differentially due to the 9m long cable that it must be sent over, but the cable had already been assembled. Future revissions of this board and the Launch Tower interface should explore further the benefits of differnetial signaling.
+	Debugging
+		RBG LED
+			A single RGB LED was added to facilitate simple state display of the MCU. The implementation of the state machine and assignment of colors is left to the firmware team.
+		Serial UART
+			A serial uart port is provided to facilitate realtime logging via print statements. The implementation of this functionality is left to the firmware team. Using the boot mode selection headers it is also possible to load a boot image over the uart port without flashing the internal memory. This can be used during initial code bring up to reduce time wasted writing images to flash. 
+		JTAG
+			The STM32F407 supports JTAG programming and debugging. This is useful for stepping through code but is not appropriate for realtime debugging. This bus is intended only for initial programming and code bring-up.
+		BOOT SEL
+			The STM32F407 supports multiple boot sources and this can be selected by pulling the BOOT_SEL pins either high or low. In conjuction with the UART port it is possible to load a boot image directly from a host computer without flashing the internal memory. This can be useful for initial code bringup. Please see the datasheet for boot configurations.
+	System Monitoring
+		Current draw
+			The MCU is configured to monitor the current draw of each connected node and the battery. This is accomplished through the internal ADC and two external analog multiplexers. At any time the MCU is monitoring one node from NODE_1 through NODE_4 and one node from NODE_6 through NODE_8, the only exception to the previous statement is taht when monitoring NODE_1, it is the only node monitored as there is no NODE_5. The node currents are measured on NODE1_4_IMON and NODE5_8_IMON. Selection of the nodes to monitor is acocmplished by setting the select bits IMON_A0 and IMON_A1. The battery's charge current is also monitored. This is present on BAT_IMON. Use of this data is left to the firmare team, though possible uses would be to shut down a node if it is drawing unusually high or low ammounts of current or determining if there is enough current sourcing capacity to turn on a given sub-system.
+	System control
+		Ethernet Switch
+			The MCU is responsible for enabling the Ethernet switch. This is done by asserting ETH_EN. This will enable the switch's 2.1V LDO and access to 3.3V IO supply. Once both supplies stabalize, the MCU must boot strap the Ethernet switch using the SPI3 serial interface. This is a hack. The switch is designed to function as an I2C slave on a dedicated bus but the MCU only has a single I2C interface and that bus has other devices on it. The proper solution would have been to use a bi-directional tri-statable logic buffer to isolate the Ethernet switch from the rest of the I2C bus. Howerever, the decisison came down from PSAS to use the SPI interface. Implementation is left to the firmware team. The ethernet switch can be reset without powering down it's supplies by clearing ETH_RST_N. Note: this signal should not be tri-stated and driven to a known state prior to asserting ETH_EN. 
+		Node Power
+			Each node can be turned on or off by the MCU. This is accomplished by clearing or setting (respectively) the NODEx_!EN signal. In the case that a node draws more current than it is intended to and triggers the over-current protection system, the NODEx_!FLT signal will be asserted. It is left to the firmware team to determine proper response to this signal.
 
 Ethernet Switch
 The design requirements dictated that the switch chosen must have at least 7 ports. Furthermore, we were restricted from using any Broadcom SoC due to the company's exclusive access model. This left us with only Micrel's offerings to work with. The KS8999 had the added benefit of an MII interface to the MCU which allowed the design to avoid adding any discrete PHY IC's. It also met the design requirements by offering 8 ports with integrated PHYs and one MII digital interface. The Micrel KS8999 development board was aquired to test potential configurations so that these settings could be set on the first run of the PCB. The settings used are:
@@ -21,38 +53,40 @@ The design requirements dictated that the switch chosen must have at least 7 por
 		Bypass Caps
 			The supply pins of the KS8999 will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. Bulk capacitors with a nominal value of  10uF should be placed near the KS8999's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. 
 		Pull up/down Resistors
-			Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 100 Ohm resistors.
+			Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors.
 		Reset circuitry
 			The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
 		Signal LEDs
-			Each port provisions up to four signaling LEDs to denote the curent state of the port. 0402 LEDs should provide sufficient brightness to serve as a visual indicator while minimizing board space. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow/amber seems the most reasonable choice for the ethenet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
+			Each port provisions up to four signaling LEDs to denote the curent state of the port. 0402 LEDs will be used with a nominal ID of 1mA. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow/amber seems the most reasonable choice for the ethenet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
 Node Power Switches
 Each of the 7 nodes to be connected to this distribution board was to have its own power swith controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnessary functionality. Our main requirements for the node power switch was that it provide a hige level of integration with no external components except small capaitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS form TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to disipate heat. Key settings for this chip are:
 	Hard Current Limit: 	Set by node--Set resistor on top side of PCB
 	Soft Current Limit: 	Set by node--Set resistor on top side of PCB
-	Soft Limit Timer:	Set by node--Set Capacitor on top side of PCB
-	Reset Behavior:		Latch reset condition and wait for MCU to reset switch
+	Soft Limit Timer:		Set by node--Set Capacitor on top side of PCB
+	Reset Behavior:			Latch reset condition and wait for MCU to reset switch
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
-	IMON resistor:		TBD
-	Power good LED:		APHHS1005CGCK (Green 0402 V_f 2.1V I_d 20mA)
-	Fault Cond. LED:	SML-LX0402SIC-TR (Red 0402 V_f 2V I_d 20mA)
-	LED cur. lim. res.:	50-60Ohm (17mA-20mA)
+	IMON resistor:			TBD
+	Power good LED:			APHHS1005CGCK (Green 0402 V_f 2.1V I_d 20mA)
+	Fault Cond. LED:		SML-LX0402SIC-TR (Red 0402 V_f 2V I_d 20mA)
+	LED cur. lim. res.:		50-60Ohm (17mA-20mA)
 
 Power Supplies
 The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for it's high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potetial variation.
 	LTM8023 Settings:
 		Vout:			3.3(V)
 		Osc. Freq.:		650KHz
-		Sync. Freq.:		650KHz -- set by MCU pll
-		R_T			49.9KOhm
+		Sync. Freq.:	650KHz -- set by MCU pll
+		R_T				49.9KOhm
 		R_{ADJ}			154KOhm
 		C_in			2.2uF (0805)
 		C_{out}			22uF (1206)
-		EN:			Tied to logic 1, Always on
+		EN:				Tied to supply voltage, Always on
 	MIC37101-2.1YM Settings:
-		EN:			Weakly pulled to logic 0, controlled by MCU
+		EN:				Weakly pulled to logic 0, controlled by MCU.ETH_EN
 		
 		
 Analog Multiplexers
-The STM32F407V LQFP-100 lacks sufficient ADC inputs to monitor the output current of the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for it's small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout.
+The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaniously monitor the output current of all the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for it's small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout. The select bits for the muxes are shared meaning that at any given time the MCU is monitoring the charge current and two node currents, the only exception is IMON_Ax = 2'b00 when only Node 1 is monitored as there is no Node 5. To simplify the firmware team's job slightly, a pull down was added to N1 of U15 to ensure that the value reported for the non-existent Nodee 5 is always in a know state.
 		
+Battery Charger
+The onboard battery charger had been selected by PSAS prior to the begining of the capstone project and was presented to the capstone team as a black box solution. Integration of the dev board's circuit with minimal adjustment was requested. The interested reader is directed to the datasheet and dev board user's guide for more information on this sub system. Connections to the black box are I2C(<->), BAT_IMON(->), external DC power(<-), Battery power(<-), and +18V(->). All intenal signals are replicated per the dev board. All components selected are per the dev board's BOM.
