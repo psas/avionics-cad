@@ -3241,10 +3241,6 @@ Source: www.kingbright.com</description>
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -10223,8 +10219,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
 <smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
-<rectangle x1="-2" y1="1.5" x2="-1.5" y2="2" layer="39"/>
-<circle x="-1.8" y="1.8" radius="0.282840625" width="0.127" layer="25"/>
 <pad name="P$2" x="-1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$3" x="0" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$4" x="1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
@@ -10234,6 +10228,15 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <pad name="P$8" x="-1.1" y="1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$9" x="0" y="1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$10" x="1.1" y="1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
+<wire x1="1.5" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -11966,6 +11969,8 @@ by exp-project-lbr.ulp</description>
 <rectangle x1="-6.1" y1="-1.8" x2="6.1" y2="1.8" layer="39"/>
 <text x="0.5" y="-3.965" size="1" layer="49" font="vector" ratio="16" rot="R90">RR</text>
 <text x="0.5" y="2.235" size="1" layer="49" font="vector" ratio="16" rot="R90">RR</text>
+<text x="-11.43" y="-6.35" size="1.27" layer="27">&gt;Value</text>
+<text x="-11.43" y="3.81" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
