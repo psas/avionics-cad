@@ -3366,7 +3366,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="82.23" y="60.595" size="1.27" layer="27"/>
 </element>
 <element name="R1" library="rcl_custom" package="0402-B-NOSILK" value="750" x="83.5" y="62.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="82.7" y="61.7" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="85.113" y="62.716" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="82.7" y="64.35" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="LED5" library="led" package="CHIPLED_0603" value="AMBER" x="60.5" y="62.5" smashed="yes" rot="R270">
@@ -3414,7 +3414,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="72.23" y="11.495" size="1.27" layer="27"/>
 </element>
 <element name="R28" library="rcl_custom" package="0402-B-NOSILK" value="750" x="73.5" y="13.4" smashed="yes" rot="MR180">
-<attribute name="NAME" x="72.446" y="14.759" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="72.461" y="13.054" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="72.7" y="15.25" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="LED29" library="led" package="CHIPLED_0603" value="AMBER" x="96.5" y="13.4" smashed="yes" rot="R270">
@@ -3734,7 +3734,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="57" y="13.65" size="0.254" layer="28" rot="MR180"/>
 </element>
 <element name="R50" library="rcl_custom" package="0402-B-NOSILK" value="750" x="83.5" y="65.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="84.3" y="66.6" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="85.118" y="66.115" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="84.3" y="63.95" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="R51" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="100.6" y="62.65" smashed="yes" rot="R180">
@@ -4133,7 +4133,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="93.369" y="56.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R14" library="rcl_custom" package="0402-B-NOSILK" value="1k" x="96.5" y="14.9" smashed="yes" rot="MR180">
-<attribute name="NAME" x="95.7" y="14.1" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="95.435" y="13.078" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="95.7" y="16.75" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="TP28" library="testpad" package="TP06R" value="TPTP06R" x="90.683" y="36.64" smashed="yes" rot="MR0">
@@ -4142,11 +4142,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="90.937" y="36.259" size="0.0254" layer="28" rot="MR0"/>
 </element>
 <element name="R15" library="rcl_custom" package="0402-B-NOSILK" value="2.2k" x="40.871" y="43.05" smashed="yes" rot="MR225">
-<attribute name="NAME" x="39.73963125" y="43.05" size="0.762" layer="26" ratio="20" rot="MR225"/>
+<attribute name="NAME" x="38.85063125" y="45.463" size="0.762" layer="26" ratio="20" rot="MR225"/>
 <attribute name="VALUE" x="41.6134625" y="44.92383125" size="1" layer="28" ratio="10" rot="MR225"/>
 </element>
 <element name="R17" library="rcl_custom" package="0402-B-NOSILK" value="2.2k" x="41.622" y="43.801" smashed="yes" rot="MR225">
-<attribute name="NAME" x="40.49063125" y="43.801" size="0.762" layer="26" ratio="20" rot="MR225"/>
+<attribute name="NAME" x="39.60163125" y="46.214" size="0.762" layer="26" ratio="20" rot="MR225"/>
 <attribute name="VALUE" x="42.3644625" y="45.67483125" size="1" layer="28" ratio="10" rot="MR225"/>
 </element>
 <element name="C106" library="rcl_custom" package="0402-B-NOSILK" value="10p" x="47.8" y="33.8" smashed="yes" rot="MR315">
@@ -4162,11 +4162,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="82.5" y="62.7" size="1.27" layer="27"/>
 </element>
 <element name="R19" library="rcl_custom" package="0402-B-NOSILK" value="750" x="83.5" y="63.6" smashed="yes" rot="MR0">
-<attribute name="NAME" x="84.3" y="64.4" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="85.118" y="63.743" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="84.3" y="61.75" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="R21" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="83.5" y="64.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="82.7" y="63.9" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="85.113" y="64.916" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="82.7" y="66.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R22" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="101.4" y="70" smashed="yes" rot="MR90">
@@ -4250,7 +4250,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="95.5" y="7" size="1.27" layer="27"/>
 </element>
 <element name="R53" library="rcl_custom" package="0402-B-NOSILK" value="750" x="96.5" y="10.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="97.3" y="10.9" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="95.395" y="9.757" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="97.3" y="8.25" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="LED12" library="led" package="SML0603" value="RED" x="96.5" y="11.2" smashed="yes">
@@ -4258,11 +4258,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="95.5" y="9.2" size="1.27" layer="27"/>
 </element>
 <element name="R57" library="rcl_custom" package="0402-B-NOSILK" value="750" x="96.5" y="11.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="97.3" y="12" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="95.395" y="12" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="97.3" y="9.35" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="R59" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="96.5" y="12.3" smashed="yes" rot="MR180">
-<attribute name="NAME" x="95.7" y="11.5" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="95.435" y="10.852" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="95.7" y="14.15" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R61" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="78.8" y="6.6" smashed="yes" rot="MR270">
@@ -4298,7 +4298,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="72.5" y="7" size="1.27" layer="27"/>
 </element>
 <element name="R110" library="rcl_custom" package="0402-B-NOSILK" value="750" x="73.5" y="10.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="74.3" y="10.9" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="72.395" y="9.757" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="74.3" y="8.25" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="LED18" library="led" package="SML0603" value="RED" x="73.5" y="11.2" smashed="yes">
@@ -4306,11 +4306,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="72.5" y="9.2" size="1.27" layer="27"/>
 </element>
 <element name="R112" library="rcl_custom" package="0402-B-NOSILK" value="750" x="73.5" y="11.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="74.3" y="12" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="72.395" y="12" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="74.3" y="9.35" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="R113" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="73.5" y="12.3" smashed="yes" rot="MR180">
-<attribute name="NAME" x="72.7" y="11.5" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="72.461" y="10.725" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="72.7" y="14.15" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R114" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="55.8" y="6.6" smashed="yes" rot="MR270">
@@ -4685,11 +4685,11 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="63.7" y="61.8" size="0.762" layer="25" ratio="20" rot="R90"/>
 </element>
 <element name="C29" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="82.5" y="60.92" smashed="yes" rot="MR0">
-<attribute name="NAME" x="83.3" y="61.72" size="0.762" layer="26" ratio="20" rot="MR0"/>
+<attribute name="NAME" x="83.705" y="61.216" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="83.3" y="59.07" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="C30" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="79.4" y="61" smashed="yes" rot="MR180">
-<attribute name="NAME" x="78.219" y="62.232" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="76.187" y="61.343" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="78.6" y="62.85" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="C36" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="68.1" y="66" smashed="yes" rot="MR90">
@@ -4793,7 +4793,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="87.85" y="17.9" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C48" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="90" y="14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="89.2" y="14.8" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="89.327" y="15.181" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="91.85" y="14.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C49" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="68.4" y="30.2" smashed="yes" rot="MR180">
@@ -4809,7 +4809,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="44.85" y="10.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C53" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="44" y="14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="43.668" y="14.918" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="42.652" y="13.013" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="45.85" y="14.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C54" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="77.3" y="17.2" smashed="yes" rot="MR90">
@@ -4821,11 +4821,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="80.75" y="17.9" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C130" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="66" y="10" smashed="yes" rot="MR270">
-<attribute name="NAME" x="65.2" y="10.8" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="65.327" y="11.308" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="67.85" y="10.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C132" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="67" y="14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="66.2" y="14.8" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="65.626" y="13.013" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="68.85" y="14.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R149" library="rcl_custom" package="0402-B-NOSILK" value="51" x="87.5" y="62" smashed="yes" rot="MR270">
@@ -4861,31 +4861,31 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="19.85" y="62.8" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R158" library="rcl_custom" package="0402-B-NOSILK" value="51" x="70" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="70.8" y="13.2" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="68.641" y="13.073" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="68.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R159" library="rcl_custom" package="0402-B-NOSILK" value="51" x="65" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="65.8" y="13.2" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="63.641" y="13.073" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="63.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R160" library="rcl_custom" package="0402-B-NOSILK" value="51" x="42" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="41.657" y="14.978" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="40.641" y="12.946" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="40.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R161" library="rcl_custom" package="0402-B-NOSILK" value="51" x="47" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="46.657" y="14.978" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="45.641" y="13.073" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="45.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R162" library="rcl_custom" package="0402-B-NOSILK" value="51" x="93" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="93.8" y="13.2" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="91.641" y="13.2" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="91.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R163" library="rcl_custom" package="0402-B-NOSILK" value="51" x="88" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="88.8" y="13.2" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="86.641" y="12.946" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="86.15" y="13.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="C45" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="89" y="10.3" smashed="yes" rot="MR270">
-<attribute name="NAME" x="88.2" y="11.1" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="88.2" y="11.481" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="90.85" y="11.1" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="T17" library="magnetics" package="TDK-ALT4532" value="ALT4532" x="22.5" y="13" smashed="yes" rot="R270">
@@ -4903,7 +4903,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="67.5" y="35.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="C56" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="20.1" y="9.9" smashed="yes" rot="MR270">
-<attribute name="NAME" x="19.816" y="11.017" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="19.427" y="11.081" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="21.95" y="10.7" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C133" library="rcl_custom" package="0402-B-NOSILK" value="1n" x="22" y="15.5" smashed="yes" rot="MR270">
@@ -4911,7 +4911,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="23.85" y="16.3" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R164" library="rcl_custom" package="0402-B-NOSILK" value="51" x="24" y="14.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="23.657" y="15.605" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="22.768" y="13.573" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="22.15" y="13.7" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R165" library="rcl_custom" package="0402-B-NOSILK" value="51" x="20.5" y="15.5" smashed="yes" rot="MR90">
@@ -5080,7 +5080,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="31.626" y="45.972" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R18" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="51.181" y="20.828" smashed="yes" rot="MR180">
-<attribute name="NAME" x="50.381" y="20.028" size="0.762" layer="26" ratio="20" rot="MR180"/>
+<attribute name="NAME" x="50.127" y="22.187" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="50.381" y="22.678" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 </elements>
