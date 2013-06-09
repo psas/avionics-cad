@@ -48,8 +48,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5066,23 +5066,25 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="59.018" y="35.3851" size="1.27" layer="25"/>
 <attribute name="VALUE" x="59.064" y="34.604" size="0.0254" layer="27"/>
 </element>
-<element name="J11" library="headers" package="1.27MM_3X1" value="I2C Header" x="30.226" y="42.672" rot="R180"/>
-<element name="R18" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="51.181" y="20.828" rot="MR180"/>
+<element name="J11" library="headers" package="1.27MM_3X1" value="I2C Header" x="30.226" y="42.672" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.626" y="41.242" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="31.626" y="45.972" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="R18" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="51.181" y="20.828" smashed="yes" rot="MR180">
+<attribute name="NAME" x="50.381" y="20.028" size="1" layer="26" ratio="10" rot="MR180"/>
+<attribute name="VALUE" x="50.381" y="22.678" size="1" layer="28" ratio="10" rot="MR180"/>
+</element>
 </elements>
 <signals>
 <signal name="N$12">
 <contactref element="C8" pad="1"/>
 <contactref element="U1" pad="49"/>
 <wire x1="57.658" y1="37.973" x2="57.023" y2="38.608" width="0.1778" layer="16"/>
-<wire x1="57.658" y1="37.719" x2="57.658" y2="37.973" width="0.1778" layer="1"/>
-<wire x1="57.531" y1="37.592" x2="57.658" y2="37.719" width="0.1778" layer="1"/>
-<wire x1="57.531" y1="37.084" x2="57.531" y2="37.592" width="0.1778" layer="1"/>
-<wire x1="57.658" y1="36.957" x2="57.531" y2="37.084" width="0.1778" layer="1"/>
-<wire x1="58.928" y1="36.957" x2="57.658" y2="36.957" width="0.1778" layer="1"/>
-<wire x1="59.309" y1="36.576" x2="58.928" y2="36.957" width="0.1778" layer="1"/>
 <wire x1="57.023" y1="38.608" x2="56.9764125" y2="38.6435875" width="0.1778" layer="16"/>
 <wire x1="59.309" y1="36.576" x2="59.34795" y2="36.530221875" width="0.1778" layer="1"/>
 <via x="57.658" y="37.973" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<wire x1="59.309" y1="36.576" x2="57.912" y2="37.973" width="0.1778" layer="1"/>
+<wire x1="57.912" y1="37.973" x2="57.658" y2="37.973" width="0.1778" layer="1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="U1" pad="10"/>
@@ -5821,7 +5823,6 @@ einem neuen Namen ab.</description>
 <wire x1="27.559" y1="36.422" x2="27.559" y2="35.941" width="0.127" layer="1"/>
 <wire x1="107.696" y1="40.894" x2="106.172" y2="39.37" width="0.127" layer="16"/>
 <via x="11.176" y="16.51" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<via x="21.971" y="10.414" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="25.281" y="29.845" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="37.719" y="22.733" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="44.196" y="34.417" extent="1-16" drill="0.2032" diameter="0.4572"/>
@@ -5838,7 +5839,6 @@ einem neuen Namen ab.</description>
 <via x="24.16" y="27.94" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="23.56" y="28.74" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <wire x1="20.1" y1="10.38" x2="21.937" y2="10.38" width="0.127" layer="16"/>
-<wire x1="21.937" y1="10.38" x2="21.971" y2="10.414" width="0.127" layer="16"/>
 <wire x1="92.71" y1="54.356" x2="92.71" y2="55.118" width="0.1778" layer="1"/>
 <wire x1="92.964" y1="54.102" x2="92.71" y2="54.356" width="0.1778" layer="1"/>
 <wire x1="92.964" y1="53.848" x2="92.964" y2="54.102" width="0.1778" layer="1"/>
@@ -6136,7 +6136,6 @@ einem neuen Namen ab.</description>
 <wire x1="72.009" y1="38.354" x2="71.374" y2="38.354" width="0.254" layer="16"/>
 <wire x1="71.374" y1="38.354" x2="71.374" y2="37.719" width="0.254" layer="16"/>
 <wire x1="71.374" y1="37.719" x2="71.755" y2="37.338" width="0.254" layer="16"/>
-<wire x1="74.041" y1="44.168" x2="72.898" y2="44.168" width="0.254" layer="1"/>
 <wire x1="72.362" y1="44.168" x2="71.501" y2="43.307" width="0.254" layer="1"/>
 <wire x1="92.546" y1="57.48" x2="92.47" y2="57.404" width="0.254" layer="16"/>
 <wire x1="92.47" y1="57.404" x2="91.44" y2="57.404" width="0.254" layer="16"/>
@@ -6348,6 +6347,19 @@ einem neuen Namen ab.</description>
 <wire x1="104.8408" y1="59.563" x2="104.14" y2="59.563" width="0.1778" layer="1"/>
 <via x="104.14" y="59.563" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <wire x1="104.14" y1="59.563" x2="104.013" y2="59.563" width="0.1778" layer="2"/>
+<via x="21.937" y="10.38" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<wire x1="21.937" y1="10.38" x2="21.971" y2="10.38" width="0.127" layer="2"/>
+<wire x1="21.971" y1="10.38" x2="21.971" y2="10.414" width="0.127" layer="2"/>
+<wire x1="74.041" y1="44.168" x2="74.069" y2="44.196" width="0.1778" layer="1"/>
+<wire x1="74.069" y1="44.196" x2="74.676" y2="44.196" width="0.254" layer="1"/>
+<wire x1="74.676" y1="44.196" x2="75.022" y2="43.85" width="0.254" layer="1"/>
+<wire x1="75.022" y1="43.85" x2="75.9" y2="43.85" width="0.254" layer="1"/>
+<polygon width="0.1778" layer="1">
+<vertex x="72.517" y="44.45"/>
+<vertex x="74.549" y="44.45"/>
+<vertex x="74.549" y="43.942"/>
+<vertex x="72.517" y="43.942"/>
+</polygon>
 </signal>
 <signal name="+3V3" class="1">
 <contactref element="E5" pad="1"/>
