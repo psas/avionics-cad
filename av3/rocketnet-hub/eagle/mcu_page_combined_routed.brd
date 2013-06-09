@@ -3670,7 +3670,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="49.274540625" y="30.235165625" size="1" layer="28" ratio="10" rot="MR45"/>
 </element>
 <element name="R49" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="101.4" y="73.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="100.727" y="74.681" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="101.981" y="72.771" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="103.25" y="74.3" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="LED39" library="led" package="SML0603" value="GREEN" x="83.5" y="66.9" smashed="yes">
@@ -3746,11 +3746,11 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="98.85" y="65.05" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R52" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="78.2" y="73.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="77.527" y="74.681" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="78.7908" y="72.771" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="80.05" y="74.3" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R54" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="55.2" y="73.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="54.527" y="74.681" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="55.7784" y="72.771" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="57.05" y="74.3" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R56" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="78.8" y="3" smashed="yes" rot="MR90">
@@ -3758,7 +3758,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="76.95" y="2.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="R58" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="32.2" y="73.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="30.83" y="72.512" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="32.766" y="72.771" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="34.05" y="74.3" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R60" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="32.8" y="3" smashed="yes" rot="MR90">
@@ -4170,7 +4170,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="82.7" y="66.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R22" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="101.4" y="70" smashed="yes" rot="MR90">
-<attribute name="NAME" x="100.746" y="71.262" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="101.981" y="69.342" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="99.55" y="69.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="LED3" library="led" package="SML0603" value="GREEN" x="60.5" y="66.9" smashed="yes">
@@ -4194,7 +4194,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="59.7" y="66.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R29" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="78.2" y="70" smashed="yes" rot="MR90">
-<attribute name="NAME" x="77.591" y="71.135" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="78.7908" y="69.342" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="76.35" y="69.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="LED6" library="led" package="SML0603" value="GREEN" x="37.5" y="66.9" smashed="yes">
@@ -4218,7 +4218,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="36.7" y="66.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R35" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="55.2" y="70" smashed="yes" rot="MR90">
-<attribute name="NAME" x="54.617" y="71.135" size="0.762" layer="26" ratio="20" rot="MR270"/>
+<attribute name="NAME" x="55.7784" y="69.342" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="53.35" y="69.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="LED8" library="led" package="SML0603" value="GREEN" x="14.5" y="66.9" smashed="yes">
@@ -4242,7 +4242,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="13.7" y="66.55" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R41" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="32.2" y="70" smashed="yes" rot="MR90">
-<attribute name="NAME" x="30.841" y="69.327" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="32.766" y="69.342" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="30.35" y="69.2" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="LED11" library="led" package="SML0603" value="GREEN" x="96.5" y="9" smashed="yes">
@@ -4266,7 +4266,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="95.7" y="14.15" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R61" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="78.8" y="6.6" smashed="yes" rot="MR270">
-<attribute name="NAME" x="77.448" y="5.554" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="77.448" y="4.953" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="80.65" y="7.4" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="LED14" library="led" package="SML0603" value="GREEN" x="50.5" y="9" smashed="yes">
@@ -4290,7 +4290,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="49.7" y="14.15" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R109" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="32.8" y="6.6" smashed="yes" rot="MR270">
-<attribute name="NAME" x="31.373" y="4.919" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="31.373" y="4.953" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="34.65" y="7.4" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="LED16" library="led" package="SML0603" value="GREEN" x="73.5" y="9" smashed="yes">
@@ -4314,7 +4314,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="72.7" y="14.15" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R114" library="rcl_custom" package="0402-B-NOSILK" value="10k" x="55.8" y="6.6" smashed="yes" rot="MR270">
-<attribute name="NAME" x="54.474" y="4.919" size="0.762" layer="26" ratio="20" rot="MR90"/>
+<attribute name="NAME" x="54.474" y="4.953" size="0.762" layer="26" ratio="20" rot="MR90"/>
 <attribute name="VALUE" x="57.65" y="7.4" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="R121" library="rcl_custom" package="0402-B-NOSILK" value="TBD" x="60.3" y="14" smashed="yes" rot="R180">
@@ -12893,31 +12893,6 @@ einem neuen Namen ab.</description>
 <wire x1="52.451" y1="20.828" x2="51.661" y2="20.828" width="0.1778" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,024958236f1fca36"/>
-<approved hash="5,1,80b2e1d25620f7ce"/>
-<approved hash="5,1,970f90d2dcd2db0f"/>
-<approved hash="5,1,8b2a586490bcba54"/>
-<approved hash="5,1,07bc82ec057486a4"/>
-<approved hash="5,1,14610d44cd44d461"/>
-<approved hash="5,1,9de01e189fe001e4"/>
-<approved hash="5,1,0cf3dd16d37a7cb5"/>
-<approved hash="5,1,e564fc8e8fad8a3a"/>
-<approved hash="5,1,6ce36b0d82ac9d40"/>
-<approved hash="5,1,6808680882088208"/>
-<approved hash="5,1,f3022d4df88a8338"/>
-<approved hash="5,1,2fe66ecab84d631a"/>
-<approved hash="5,1,07c5032209da80c5"/>
-<approved hash="5,1,be20be00dc00dc20"/>
-<approved hash="5,1,3321467ab97ecc25"/>
-<approved hash="5,1,e7f9d1e22ee518fe"/>
-<approved hash="5,1,d30c531305278538"/>
-<approved hash="5,1,42e502fa4c6b0c74"/>
-<approved hash="5,15,214020c83ac83b40"/>
-<approved hash="5,15,c23dc04048404a3d"/>
-<approved hash="5,15,229821b83bb83898"/>
-<approved hash="5,15,fe39fc4052405039"/>
-</errors>
 </board>
 </drawing>
 </eagle>
