@@ -201,7 +201,7 @@ Jesse Hartley
 Jackson Pugh
 Michael Woodruff</text>
 <text x="19.177" y="57.658" size="1.27" layer="21" ratio="18">2012-2013 PSU Capstone Project</text>
-<circle x="25.527" y="56.642" radius="1.8183625" width="0.127" layer="15"/>
+<circle x="26.416" y="55.88" radius="1.8183625" width="0.127" layer="15"/>
 </plain>
 <libraries>
 <library name="stm32">
@@ -12855,11 +12855,11 @@ einem neuen Namen ab.</description>
 <wire x1="52.451" y1="20.828" x2="51.661" y2="20.828" width="0.1778" layer="16"/>
 </signal>
 <signal name="N$13">
-<wire x1="24.305259375" y1="55.267859375" x2="25.47111875" y2="58.491121875" width="0.127" layer="15"/>
-<wire x1="25.47111875" y1="58.491121875" x2="26.67" y2="55.245" width="0.127" layer="15"/>
-<wire x1="26.67" y1="55.245" x2="23.749" y2="57.15" width="0.127" layer="15"/>
-<wire x1="23.749" y1="57.15" x2="27.305" y2="57.15" width="0.127" layer="15"/>
-<wire x1="27.305" y1="57.15" x2="24.305259375" y2="55.267859375" width="0.127" layer="15"/>
+<wire x1="27.637740625" y1="57.203340625" x2="26.47188125" y2="54.08168125" width="0.127" layer="15"/>
+<wire x1="26.47188125" y1="54.08168125" x2="25.273" y2="57.277" width="0.127" layer="15"/>
+<wire x1="25.273" y1="57.277" x2="28.1051" y2="55.2221375" width="0.127" layer="15"/>
+<wire x1="28.1051" y1="55.2221375" x2="24.704040625" y2="55.224678125" width="0.127" layer="15"/>
+<wire x1="24.704040625" y1="55.224678125" x2="27.637740625" y2="57.203340625" width="0.127" layer="15"/>
 </signal>
 </signals>
 </board>
