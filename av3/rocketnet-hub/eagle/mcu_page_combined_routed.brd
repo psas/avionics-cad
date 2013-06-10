@@ -191,6 +191,10 @@
 <wire x1="3" y1="15.4" x2="0" y2="12.4" width="0.0254" layer="20" curve="-90"/>
 <wire x1="112.7" y1="12.5" x2="109.7" y2="15.5" width="0.0254" layer="20" curve="-90"/>
 <wire x1="109.7" y1="60.8" x2="112.7" y2="63.8" width="0.0254" layer="20" curve="-90"/>
+<text x="56.515" y="17.907" size="1.27" layer="21">PSAS RocketNet Hub
+http://psas.pdx.edu/</text>
+<text x="76.2" y="16.764" size="1.27" layer="22" rot="MR0">PSAS RocketNet Hub
+http://psas.pdx.edu/</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -12895,4 +12899,10 @@ einem neuen Namen ab.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
