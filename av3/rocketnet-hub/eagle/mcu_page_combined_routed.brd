@@ -8,26 +8,26 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="5" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND" color="9" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Power" color="12" fill="1" visible="no" active="yes"/>
 <layer number="14" name="NS" color="11" fill="3" visible="no" active="yes"/>
 <layer number="15" name="EW" color="6" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -37,9 +37,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -48,8 +48,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -191,9 +191,9 @@
 <wire x1="3" y1="15.4" x2="0" y2="12.4" width="0.0254" layer="20" curve="-90"/>
 <wire x1="112.7" y1="12.5" x2="109.7" y2="15.5" width="0.0254" layer="20" curve="-90"/>
 <wire x1="109.7" y1="60.8" x2="112.7" y2="63.8" width="0.0254" layer="20" curve="-90"/>
-<text x="56.515" y="17.907" size="1.27" layer="21">PSAS RocketNet Hub
+<text x="30.734" y="51.308" size="1.27" layer="21">PSAS RocketNet Hub
 http://psas.pdx.edu/</text>
-<text x="76.2" y="16.256" size="1.27" layer="22" rot="MR0">PSAS RocketNet Hub
+<text x="51.308" y="51.181" size="1.27" layer="22" rot="MR0">PSAS RocketNet Hub
 http://psas.pdx.edu/</text>
 </plain>
 <libraries>
@@ -3334,7 +3334,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="40.4965375" y="31.402165625" size="1" layer="28" ratio="10" rot="MR45"/>
 </element>
 <element name="C3" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="45.428" y="28.665" smashed="yes" rot="R315">
-<attribute name="NAME" x="46.19" y="27.76436875" size="0.762" layer="25" ratio="20" rot="R315"/>
+<attribute name="NAME" x="46.063" y="27.63736875" size="0.762" layer="25" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="43.554165625" y="27.9225375" size="1" layer="27" ratio="10" rot="R315"/>
 </element>
 <element name="C4" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="61.732" y="34.936" smashed="yes" rot="R315">
@@ -3398,7 +3398,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="13.7" y="64.35" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="LED17" library="led" package="CHIPLED_0603" value="AMBER" x="26.5" y="8.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.527" y="9.144" size="0.762" layer="25" ratio="20"/>
+<attribute name="NAME" x="24.892" y="9.144" size="0.762" layer="25" ratio="20"/>
 <attribute name="VALUE" x="25.23" y="6.595" size="1.27" layer="27"/>
 </element>
 <element name="R20" library="rcl_custom" package="0402-B-NOSILK" value="750" x="26.5" y="8.5" smashed="yes" rot="MR180">
@@ -3562,7 +3562,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="89.878" y="54.284" size="1" layer="27" ratio="10"/>
 </element>
 <element name="C75" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="108.204" y="26.543" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.404" y="25.743" size="0.762" layer="25" ratio="20" rot="R90"/>
+<attribute name="NAME" x="108.547" y="23.457" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="110.054" y="25.743" size="1" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C76" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="98.806" y="31.115" smashed="yes" rot="MR270">
@@ -3622,7 +3622,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="99.9" y="11.35" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="LED37" library="LED_RGB_PLCC6" package="PLCC-6" value="RGB" x="41.4534" y="29.6378" smashed="yes">
-<attribute name="NAME" x="39.2074" y="32.2458" size="0.762" layer="25" ratio="20"/>
+<attribute name="NAME" x="39.2074" y="32.1188" size="0.762" layer="25" ratio="20"/>
 <attribute name="VALUE" x="38.9534" y="26.6378" size="1" layer="27"/>
 </element>
 <element name="R44" library="rcl_custom" package="0402-B-NOSILK" value="750" x="42.615" y="28.661" smashed="yes" rot="MR0">
@@ -3975,122 +3975,98 @@ einem neuen Namen ab.</description>
 </element>
 <element name="TP1" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="28.5326" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="107.8" y="30.4376" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="108.1" y="28.1325" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="108.054" y="28.9136" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP2" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="29.4" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="108.8" y="31.305" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="109.1" y="28.9999" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="109.054" y="29.781" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP3" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="30.0596" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="107.8" y="31.9646" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="108.1" y="29.6595" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="108.054" y="30.4406" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP4" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="30.8" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="108.8" y="32.705" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="109.1" y="30.3999" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="109.054" y="31.181" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP5" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="31.4" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="107.8" y="33.305" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="108.1" y="30.9999" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="108.054" y="31.781" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP6" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="32.2" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="108.8" y="34.105" size="1" layer="37" rot="R180"/>
-<attribute name="NAME" x="109.1" y="31.7999" size="0.762" layer="25" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="109.054" y="32.581" size="0.0254" layer="27" rot="R180"/>
 </element>
 <element name="TP7" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="36.45" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="36.45" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="36.15" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="36.196" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP8" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="37.15" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="37.15" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="36.85" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="36.896" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP9" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="37.85" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="37.85" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="37.55" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="37.596" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP10" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="38.65" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="38.65" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="38.35" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="38.396" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP11" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="39.35" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="39.35" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="39.05" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="39.096" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP12" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="40.05" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="40.05" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="39.75" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="39.796" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP13" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="41.45" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="41.45" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="41.15" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="41.196" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP14" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="42.15" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="42.15" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="41.85" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="41.896" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP15" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="42.85" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="42.85" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="42.55" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="42.596" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP16" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="43.65" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="43.65" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="43.35" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="43.396" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP17" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="44.35" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="44.35" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="44.05" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="44.096" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP18" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="45.05" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="45.05" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="44.75" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="44.796" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP19" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="45.85" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="45.85" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="45.55" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="45.596" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP20" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="46.55" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="46.55" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="46.25" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="46.296" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP21" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="47.35" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="47.35" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="47.05" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="47.096" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP22" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="48.15" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="48.15" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="47.85" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="47.896" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP23" library="testpad" package="TP06R" value="TPTP06R" x="108.8" y="48.85" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="110.705" y="48.85" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="108.3999" y="48.55" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="109.181" y="48.596" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP24" library="testpad" package="TP06R" value="TPTP06R" x="107.8" y="49.55" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="109.705" y="49.55" size="1" layer="37" rot="R90"/>
-<attribute name="NAME" x="107.3999" y="49.25" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="108.181" y="49.296" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="TP25" library="testpad" package="TP06R" value="TPTP06R" x="103.15" y="54.7" smashed="yes" rot="R90">
@@ -4390,7 +4366,7 @@ einem neuen Namen ab.</description>
 </element>
 <element name="TP37" library="testpad" package="TP06R" value="TPTP06R" x="44.2286" y="31.6516" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="44.2286" y="29.7466" size="1" layer="37"/>
-<attribute name="NAME" x="44.0824" y="28.0193" size="0.762" layer="25" ratio="20" rot="R315"/>
+<attribute name="NAME" x="44.0824" y="27.3843" size="0.762" layer="25" ratio="20" rot="R315"/>
 <attribute name="VALUE" x="43.9746" y="31.2706" size="0.0254" layer="27"/>
 </element>
 <element name="LED22" library="led" package="CHIPLED_0603" value="GREEN" x="14.9" y="56.7" smashed="yes" rot="R180">
@@ -4487,7 +4463,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="35.595" y="26.3576" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="C105" library="rcl_custom" package="0402-B-NOSILK" value="0.1uF/40V" x="26.4044" y="30.2566" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.9184" y="31.8186" size="0.762" layer="25" ratio="20" rot="R270"/>
+<attribute name="NAME" x="25.7546" y="30.0304" size="0.762" layer="25" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="24.5544" y="31.0566" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C108" library="rcl_custom" package="0402-B-NOSILK" value="0.1uF" x="26.6584" y="35.4636" smashed="yes" rot="R90">
@@ -4567,7 +4543,7 @@ einem neuen Namen ab.</description>
 <attribute name="VALUE" x="5.9594" y="35.3898" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="C115" library="rcl_custom" package="0603-B-NOSILK" value="1uF" x="19.4702" y="28.885" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.8032" y="30.193" size="0.762" layer="25" ratio="20" rot="R270"/>
+<attribute name="NAME" x="16.6602" y="30.32" size="0.762" layer="25" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="17.4202" y="29.685" size="1" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D4" library="diode" package="SOT23" value="BAT54" x="13.425" y="26.8276" smashed="yes" rot="MR270">
@@ -12897,6 +12873,27 @@ einem neuen Namen ab.</description>
 <wire x1="52.451" y1="20.828" x2="51.661" y2="20.828" width="0.1778" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="5,1,024958236f1fca36"/>
+<approved hash="5,1,80b2e1d25620f7ce"/>
+<approved hash="5,1,970f90d2dcd2db0f"/>
+<approved hash="5,1,8b2a586490bcba54"/>
+<approved hash="5,1,07bc82ec057486a4"/>
+<approved hash="5,1,14610d44cd44d461"/>
+<approved hash="5,1,9de01e189fe001e4"/>
+<approved hash="5,1,0cf3dd16d37a7cb5"/>
+<approved hash="5,1,e564fc8e8fad8a3a"/>
+<approved hash="5,1,6ce36b0d82ac9d40"/>
+<approved hash="5,1,6808680882088208"/>
+<approved hash="5,1,f3022d4df88a8338"/>
+<approved hash="5,1,2fe66ecab84d631a"/>
+<approved hash="5,1,07c5032209da80c5"/>
+<approved hash="5,1,be20be00dc00dc20"/>
+<approved hash="5,1,3321467ab97ecc25"/>
+<approved hash="5,1,e7f9d1e22ee518fe"/>
+<approved hash="5,1,d30c531305278538"/>
+<approved hash="5,1,42e502fa4c6b0c74"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
