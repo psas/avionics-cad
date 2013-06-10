@@ -8,21 +8,21 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="5" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="GND" color="9" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Power" color="12" fill="1" visible="no" active="yes"/>
-<layer number="14" name="NS" color="11" fill="3" visible="yes" active="yes"/>
-<layer number="15" name="EW" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="14" name="NS" color="11" fill="3" visible="no" active="yes"/>
+<layer number="15" name="EW" color="6" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -191,15 +191,16 @@
 <wire x1="3" y1="15.4" x2="0" y2="12.4" width="0.0254" layer="20" curve="-90"/>
 <wire x1="112.7" y1="12.5" x2="109.7" y2="15.5" width="0.0254" layer="20" curve="-90"/>
 <wire x1="109.7" y1="60.8" x2="112.7" y2="63.8" width="0.0254" layer="20" curve="-90"/>
-<text x="30.734" y="51.308" size="1.27" layer="21">PSAS RocketNet Hub
+<text x="30.734" y="51.308" size="1.27" layer="21" ratio="20">PSAS RocketNet Hub
+http://psas.pdx.edu/Hail_Satan</text>
+<text x="51.308" y="51.181" size="1.27" layer="22" ratio="20" rot="MR0">PSAS RocketNet Hub
 http://psas.pdx.edu/</text>
-<text x="51.308" y="51.181" size="1.27" layer="22" rot="MR0">PSAS RocketNet Hub
-http://psas.pdx.edu/</text>
-<text x="25.4" y="43.307" size="0.7112" layer="22" rot="MR0">Dr. R. Campbell
+<text x="25.4" y="42.799" size="0.762" layer="22" ratio="20" rot="MR0">Dr. R. Campbell
 Andrew Greenberg
 Jessie Hartley
 Jackson Pugh
 Michael Woodruff</text>
+<text x="19.177" y="57.658" size="1.27" layer="21" ratio="18">2012-2013 PSU Capstone Project</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -2510,6 +2511,11 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="-1.5" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
 <wire x1="-2" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-2.667" y="2.54" radius="0.40160625" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="-2.032" width="0.127" layer="48"/>
+<wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="48"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="2.032" width="0.127" layer="48"/>
+<wire x1="2.032" y1="2.032" x2="-2.032" y2="2.032" width="0.127" layer="48"/>
 </package>
 </packages>
 </library>

@@ -10237,6 +10237,11 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="-1.5" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
 <wire x1="-2" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-2.667" y="2.54" radius="0.40160625" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="2.032" x2="-2.032" y2="-2.032" width="0.127" layer="48"/>
+<wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="48"/>
+<wire x1="2.032" y1="-2.032" x2="2.032" y2="2.032" width="0.127" layer="48"/>
+<wire x1="2.032" y1="2.032" x2="-2.032" y2="2.032" width="0.127" layer="48"/>
 </package>
 </packages>
 <symbols>
