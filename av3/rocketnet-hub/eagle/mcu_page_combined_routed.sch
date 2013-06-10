@@ -13214,7 +13214,7 @@ by exp-project-lbr.ulp</description>
 <part name="BATTERY_CHARGER" library="frames" deviceset="FRAME_B_L" device="" value="BatteryCharger"/>
 <part name="U2" library="RNH_BQ24725" deviceset="BQ24725" device="QFN-20"/>
 <part name="C60" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="2.2uF/40V"/>
-<part name="R11" library="rcl_custom" deviceset="R-US_" device="1206-B" value="2"/>
+<part name="R11" library="rcl_custom" deviceset="R-US_" device="R2512" value="2"/>
 <part name="Q2" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC8"/>
 <part name="Q3" library="RNH_FDS6680A" deviceset="FDS6680A" device="SOIC8"/>
 <part name="C94" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="0.1uF/40V"/>
