@@ -13368,7 +13368,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND129" library="supply1" deviceset="GND" device=""/>
 <part name="GND131" library="supply1" deviceset="GND" device=""/>
 <part name="R149" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="51"/>
-<part name="R151" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1n"/>
+<part name="R151" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="51"/>
 <part name="R152" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="51"/>
 <part name="R153" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="51"/>
 <part name="R154" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="51"/>
