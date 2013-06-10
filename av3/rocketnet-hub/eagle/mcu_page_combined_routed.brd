@@ -12,7 +12,7 @@
 <layer number="2" name="GND" color="9" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Power" color="12" fill="1" visible="no" active="yes"/>
 <layer number="14" name="NS" color="11" fill="3" visible="no" active="yes"/>
-<layer number="15" name="EW" color="6" fill="1" visible="no" active="yes"/>
+<layer number="15" name="EW" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
@@ -201,6 +201,7 @@ Jessie Hartley
 Jackson Pugh
 Michael Woodruff</text>
 <text x="19.177" y="57.658" size="1.27" layer="21" ratio="18">2012-2013 PSU Capstone Project</text>
+<circle x="25.527" y="56.642" radius="1.8183625" width="0.127" layer="15"/>
 </plain>
 <libraries>
 <library name="stm32">
@@ -12852,6 +12853,13 @@ einem neuen Namen ab.</description>
 <wire x1="53.65" y1="21.5" x2="53.123" y2="21.5" width="0.1778" layer="16"/>
 <wire x1="53.123" y1="21.5" x2="52.451" y2="20.828" width="0.1778" layer="16"/>
 <wire x1="52.451" y1="20.828" x2="51.661" y2="20.828" width="0.1778" layer="16"/>
+</signal>
+<signal name="N$13">
+<wire x1="24.305259375" y1="55.267859375" x2="25.47111875" y2="58.491121875" width="0.127" layer="15"/>
+<wire x1="25.47111875" y1="58.491121875" x2="26.67" y2="55.245" width="0.127" layer="15"/>
+<wire x1="26.67" y1="55.245" x2="23.749" y2="57.15" width="0.127" layer="15"/>
+<wire x1="23.749" y1="57.15" x2="27.305" y2="57.15" width="0.127" layer="15"/>
+<wire x1="27.305" y1="57.15" x2="24.305259375" y2="55.267859375" width="0.127" layer="15"/>
 </signal>
 </signals>
 </board>
