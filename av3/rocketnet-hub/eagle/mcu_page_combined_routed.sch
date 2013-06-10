@@ -12925,7 +12925,7 @@ by exp-project-lbr.ulp</description>
 <part name="R45" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="R46" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="D2" library="diode-0603" deviceset="DIODE-0603" device=""/>
+<part name="D2" library="diode-0603" deviceset="DIODE-0603" device="" value="CDBU0130L"/>
 <part name="R47" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="C83" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="0.1u"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -13192,7 +13192,7 @@ by exp-project-lbr.ulp</description>
 <part name="TP33" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP34" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="TP35" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="D3" library="diode-0603" deviceset="DIODE-0603" device=""/>
+<part name="D3" library="diode-0603" deviceset="DIODE-0603" device="" value="CDBU0130L"/>
 <part name="TP37" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="LED22" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R128" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
@@ -13451,7 +13451,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND125" library="supply1" deviceset="GND" device=""/>
 <part name="GND130" library="supply1" deviceset="GND" device=""/>
 <part name="+3V39" library="supply1" deviceset="+3V3" device=""/>
-<part name="D1" library="diode-0603" deviceset="DIODE-0603" device=""/>
+<part name="D1" library="diode-0603" deviceset="DIODE-0603" device="" value="CDBU0520"/>
 <part name="GND138" library="supply1" deviceset="GND" device=""/>
 <part name="R130" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>

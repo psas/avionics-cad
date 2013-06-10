@@ -8,9 +8,9 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="5" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="GND" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Power" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="GND" color="9" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Power" color="12" fill="1" visible="no" active="yes"/>
 <layer number="14" name="NS" color="11" fill="3" visible="yes" active="yes"/>
 <layer number="15" name="EW" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -26,7 +26,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -195,6 +195,11 @@
 http://psas.pdx.edu/</text>
 <text x="51.308" y="51.181" size="1.27" layer="22" rot="MR0">PSAS RocketNet Hub
 http://psas.pdx.edu/</text>
+<text x="25.4" y="43.307" size="0.7112" layer="22" rot="MR0">Dr. R. Campbell
+Andrew Greenberg
+Jessie Hartley
+Jackson Pugh
+Michael Woodruff</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -3656,7 +3661,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="41.294" y="30.172" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="40.786" y="32.568" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="D2" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="101.2" y="10.3" smashed="yes" rot="MR90">
+<element name="D2" library="diode-0603" package="0603-B-NOSILK-DIODE" value="CDBU0130L" x="101.2" y="10.3" smashed="yes" rot="MR90">
 <attribute name="NAME" x="100.305" y="8.671" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="99.15" y="9.5" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
@@ -4379,7 +4384,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="57.4294" y="15.7643" size="0.762" layer="25" ratio="20"/>
 <attribute name="VALUE" x="58.4914" y="14.8562" size="0.0254" layer="27"/>
 </element>
-<element name="D3" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="99.5" y="10.3" smashed="yes" rot="MR90">
+<element name="D3" library="diode-0603" package="0603-B-NOSILK-DIODE" value="CDBU0130L" x="99.5" y="10.3" smashed="yes" rot="MR90">
 <attribute name="NAME" x="98.654" y="8.72" size="0.762" layer="26" ratio="20" rot="MR180"/>
 <attribute name="VALUE" x="97.45" y="9.5" size="1" layer="28" ratio="10" rot="MR90"/>
 </element>
@@ -5040,7 +5045,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="90.199" y="30.3" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="93.122" y="30.935" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="D1" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="99.7" y="14.6" smashed="yes" rot="MR0">
+<element name="D1" library="diode-0603" package="0603-B-NOSILK-DIODE" value="CDBU0520" x="99.7" y="14.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="102.659" y="14.33" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="100.5" y="12.55" size="1" layer="28" ratio="10" rot="MR0"/>
 </element>
@@ -5255,9 +5260,9 @@ einem neuen Namen ab.</description>
 <via x="21.524" y="53.4958" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="19.946" y="53.5258" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="18.516" y="53.4948" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<via x="18.485" y="50.7758" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<via x="18.415" y="50.8" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="14.002" y="45.8538" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<via x="18.485" y="48.9838" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<via x="18.415" y="49.784" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <polygon width="0.127" layer="1" isolate="0.254" thermals="no">
 <vertex x="21.903" y="51.8538"/>
 <vertex x="21.885" y="53.7758"/>
@@ -6360,7 +6365,7 @@ einem neuen Namen ab.</description>
 <via x="29.581" y="52.461" extent="1-16" drill="0.2032"/>
 <wire x1="29.581" y1="52.461" x2="29.581" y2="52.334" width="0.127" layer="2"/>
 <wire x1="29.581" y1="52.334" x2="29.591" y2="52.324" width="0.127" layer="2"/>
-<via x="18.485" y="47.3328" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<via x="18.415" y="48.768" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="27.147" y="41.6998" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="27.147" y="45.2558" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="27.147" y="42.9698" extent="1-16" drill="0.2032" diameter="0.4572"/>
@@ -9629,7 +9634,7 @@ einem neuen Namen ab.</description>
 </polygon>
 <via x="16.854" y="53.4868" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="15.485" y="53.5108" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<via x="15.726" y="47.2478" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<via x="15.091" y="47.5018" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="14.085" y="50.4108" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <via x="14.085" y="47.4028" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <polygon width="0.127" layer="3" thermals="no" rank="4">
@@ -9714,8 +9719,8 @@ einem neuen Namen ab.</description>
 <wire x1="30.01903125" y1="31.3648" x2="28.3" y2="31.3648" width="0.2032" layer="1"/>
 <wire x1="28.3" y1="31.3648" x2="26.67" y2="31.3648" width="0.2032" layer="1"/>
 <wire x1="26.67" y1="31.3648" x2="24.04" y2="31.3648" width="0.2032" layer="1"/>
-<wire x1="15.725" y1="45.8798" x2="15.725" y2="47.2478" width="0.127" layer="1"/>
-<wire x1="15.725" y1="47.2478" x2="15.726" y2="47.2478" width="0.127" layer="1"/>
+<wire x1="15.725" y1="45.8798" x2="15.725" y2="46.8668" width="0.127" layer="1"/>
+<wire x1="15.725" y1="46.8668" x2="15.091" y2="47.5018" width="0.127" layer="1"/>
 <polygon width="0.127" layer="16" thermals="no">
 <vertex x="56.4" y="11.75"/>
 <vertex x="52.3" y="11.75"/>
