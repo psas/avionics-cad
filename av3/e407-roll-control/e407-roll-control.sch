@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12123,9 +12123,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TRIPLE_BAR_GND11" library="psas_eagle_library-2" deviceset="SUP_GND_BAR_TRIPLE" device="" value="GND"/>
 <part name="LED3" library="Tova" deviceset="LED_RGB_*" device="PLCC-6"/>
 <part name="TRIPLE_BAR_GND4" library="psas_eagle_library-2" deviceset="SUP_GND_BAR_TRIPLE" device="" value="GND"/>
-<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
-<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
-<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
+<part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="900"/>
+<part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="400"/>
+<part name="R5" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="110"/>
 <part name="U1" library="sn65220" deviceset="SN65220" device="DBV"/>
 <part name="TRIPLE_BAR_GND2" library="psas_eagle_library-2" deviceset="SUP_GND_BAR_TRIPLE" device="" value="GND"/>
 <part name="TRIPLE_BAR_GND3" library="psas_eagle_library-2" deviceset="SUP_GND_BAR_TRIPLE" device="" value="GND"/>

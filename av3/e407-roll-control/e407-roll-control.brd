@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1942,8 +1942,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="1mil"/>
+<param name="mlMaxStopFrame" value="1mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
@@ -2132,9 +2132,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <element name="R1" library="rcl_custom" package="0603-B-NOSILK" value="50" x="17.6" y="32.2" rot="R180"/>
 <element name="R2" library="rcl_custom" package="0603-B-NOSILK" value="50" x="17.626" y="29.202" rot="R180"/>
 <element name="LED3" library="Tova" package="PLCC-6" value="" x="47.4" y="11.3"/>
-<element name="R3" library="rcl_custom" package="0603-B-NOSILK" value="50" x="43" y="12.4"/>
-<element name="R4" library="rcl_custom" package="0603-B-NOSILK" value="50" x="43" y="10.2"/>
-<element name="R5" library="rcl_custom" package="0603-B-NOSILK" value="50" x="51.6" y="10.2" rot="R180"/>
+<element name="R3" library="rcl_custom" package="0603-B-NOSILK" value="900" x="43" y="12.4"/>
+<element name="R4" library="rcl_custom" package="0603-B-NOSILK" value="400" x="43" y="10.2"/>
+<element name="R5" library="rcl_custom" package="0603-B-NOSILK" value="110" x="51.6" y="10.2" rot="R180"/>
 <element name="U1" library="sn65220" package="SOT23-6L" value="SN65220DBV" x="49.53" y="51.054" rot="R180"/>
 <element name="C2" library="rcl_custom" package="0603-B-NOSILK" value="100nF" x="46.228" y="48.514"/>
 <element name="R6" library="rcl_custom" package="0603-B-NOSILK" value="100" x="49.276" y="46.99"/>

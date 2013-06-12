@@ -5885,33 +5885,12 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="-0.75" layer="51"/>
 <rectangle x1="-0.25" y1="0.75" x2="0.25" y2="1.25" layer="51"/>
 </package>
-<package name="22-23-2041">
-<description>.100" (2.54mm) Center Header - 4 Pin</description>
-<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
-<wire x1="5.08" y1="3.175" x2="5.08" y2="1.27" width="0.254" layer="21"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="MV">
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
 <text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="M">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
 <pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
@@ -5935,33 +5914,6 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <attribute name="MPN" value="87758-0216" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="94M1513" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="22-23-2041" prefix="X">
-<description>.100" (2.54mm) Center Header - 4 Pin</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="22-23-2041">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="22-23-2041" constant="no"/>
-<attribute name="OC_FARNELL" value="1462920" constant="no"/>
-<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6409,6 +6361,171 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </deviceset>
 </devicesets>
 </library>
+<library name="rocketnet-connector">
+<description>Generated from &lt;b&gt;16-pin-rocketnet-daughter.brd&lt;/b&gt;&lt;p&gt;
+by exp-project-lbr.ulp</description>
+<packages>
+<package name="ROCKETNET-CONNECTOR-M-14">
+<wire x1="-10.065" y1="2.9" x2="9.465" y2="2.9" width="0.1" layer="52"/>
+<wire x1="9.465" y1="2.9" x2="9.465" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="9.465" y1="-2.85" x2="-10.065" y2="-2.85" width="0.1" layer="52"/>
+<wire x1="-10.065" y1="-2.85" x2="-10.065" y2="2.9" width="0.1" layer="52"/>
+<hole x="6.765" y="0" drill="2.4384"/>
+<text x="-3.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20">B+</text>
+<text x="2.465" y="2.3" size="0.762" layer="49" font="vector" ratio="20">B-</text>
+<text x="-0.9" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">SMCLK</text>
+<text x="0.4" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">SMDAT</text>
+<text x="1.8" y="2.3" size="0.762" layer="49" font="vector" ratio="20" rot="R90">!PRSNT</text>
+<hole x="-7.365" y="0" drill="2.4384"/>
+<wire x1="-9.015" y1="-0.95" x2="-9.015" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-9.015" y1="0.95" x2="-7.365" y2="1.9" width="0.01" layer="22"/>
+<wire x1="-7.365" y1="1.9" x2="-5.715" y2="0.95" width="0.01" layer="22"/>
+<wire x1="-5.715" y1="0.95" x2="-5.715" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="-5.715" y1="-0.95" x2="-7.365" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="-7.365" y1="-1.9" x2="-9.015" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="5.115" y1="-0.95" x2="5.115" y2="0.95" width="0.01" layer="22"/>
+<wire x1="5.115" y1="0.95" x2="6.765" y2="1.9" width="0.01" layer="22"/>
+<wire x1="6.765" y1="1.9" x2="8.415" y2="0.95" width="0.01" layer="22"/>
+<wire x1="8.415" y1="0.95" x2="8.415" y2="-0.95" width="0.01" layer="22"/>
+<wire x1="8.415" y1="-0.95" x2="6.765" y2="-1.9" width="0.01" layer="22"/>
+<wire x1="6.765" y1="-1.9" x2="5.115" y2="-0.95" width="0.01" layer="22"/>
+<circle x="6.765" y="0" radius="2" width="0.01" layer="22"/>
+<circle x="-7.365" y="0" radius="2" width="0.01" layer="22"/>
+<text x="-4.3" y="-5.3" size="0.5" layer="49" font="vector">#2-56 hex head bolts</text>
+<text x="-4.3" y="-6" size="0.5" layer="49" font="vector">4 mm OD FDM standoffs</text>
+<wire x1="5.965" y1="4.4" x2="-6.565" y2="4.4" width="0.1" layer="21"/>
+<wire x1="5.965" y1="-4.4" x2="-6.565" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="8.465" y1="-1.9" x2="8.465" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-9.065" y1="-1.9" x2="-9.065" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-9.065" y1="1.9" x2="-6.565" y2="4.4" width="0.1" layer="21"/>
+<wire x1="5.965" y1="4.4" x2="8.465" y2="1.9" width="0.1" layer="21"/>
+<wire x1="8.465" y1="-1.9" x2="5.965" y2="-4.4" width="0.1" layer="21"/>
+<wire x1="-6.565" y1="-4.4" x2="-9.065" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="-4.445" y1="1.7" x2="4.445" y2="1.7" width="0.15" layer="51"/>
+<wire x1="4.445" y1="-1.7" x2="-4.445" y2="-1.7" width="0.15" layer="51"/>
+<wire x1="4.445" y1="1.7" x2="4.445" y2="-1.7" width="0.15" layer="51"/>
+<wire x1="-4.445" y1="-1.7" x2="-4.445" y2="1.7" width="0.15" layer="51"/>
+<pad name="B+@1" x="-3.81" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="B+@2" x="-3.81" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="B+@4" x="-2.54" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="B+@3" x="-2.54" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="SMCLK@3" x="-1.27" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="SMCLK@4" x="-1.27" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="SMDAT@8" x="0" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="!PRSNT@10" x="1.27" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="B-@12" x="2.54" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="B-@14" x="3.81" y="0.635" drill="0.71" diameter="0.95" shape="offset" rot="R90"/>
+<pad name="B-@13" x="3.81" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="B-@11" x="2.54" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="!PRSNT@9" x="1.27" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<pad name="SMDAT@7" x="0" y="-0.635" drill="0.71" diameter="0.95" shape="offset" rot="R270"/>
+<wire x1="-4.695" y1="-1.7" x2="-4.695" y2="1.7" width="0.1" layer="51"/>
+<wire x1="4.695" y1="1.7" x2="4.695" y2="-1.7" width="0.1" layer="51"/>
+<rectangle x1="-10.2" y1="-3" x2="9.6" y2="3" layer="40"/>
+<circle x="-7.365" y="0" radius="2.1" width="0.25" layer="39"/>
+<circle x="6.765" y="0" radius="2.1" width="0.25" layer="39"/>
+<text x="-4.3" y="-6.7" size="0.5" layer="49" font="vector">1.0 mm stack height</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ROCKETNET-BATT-SYM">
+<wire x1="1.27" y1="10.16" x2="2.54" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="10.16" x2="1.27" y2="10.16" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="12.7" x2="2.54" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="7.62" x2="1.27" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="15.24" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="17.78" x2="2.54" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="0" y1="17.78" x2="1.27" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="17.78" x2="-1.016" y2="17.78" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="17.78" x2="-1.016" y2="10.16" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="10.16" x2="-0.762" y2="10.16" width="0.254" layer="96"/>
+<wire x1="-0.762" y1="7.62" x2="-1.016" y2="7.62" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="7.62" x2="-1.016" y2="5.08" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="5.08" x2="-0.762" y2="5.08" width="0.254" layer="96"/>
+<wire x1="-0.762" y1="-7.62" x2="-1.016" y2="-7.62" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-7.62" x2="-1.016" y2="-15.24" width="0.254" layer="96"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.6096" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-1.016" y2="2.54" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="2.54" x2="-1.016" y2="0" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="0" x2="-0.762" y2="0" width="0.254" layer="96"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="1.27" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-10.16" x2="2.54" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="0" y1="-10.16" x2="1.27" y2="-10.16" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="-12.7" x2="1.27" y2="-12.7" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="0" y1="-15.24" x2="1.27" y2="-15.24" width="0.6096" layer="94"/>
+<text x="0.508" y="19.558" size="1.27" layer="95">&gt;NAME</text>
+<text x="0.508" y="-18.542" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="13.589" size="0.762" layer="96">B+</text>
+<text x="-6.604" y="5.969" size="0.762" layer="96">SMCLK</text>
+<text x="-3.81" y="-11.811" size="0.762" layer="96">B-</text>
+<text x="-6.604" y="0.889" size="0.762" layer="96">SMDAT</text>
+<pin name="B+@1" x="5.08" y="17.78" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="B+@2" x="5.08" y="15.24" visible="off" length="short" direction="pwr" rot="R180"/>
+<pin name="B-@1" x="5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="B-@2" x="5.08" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="B-@3" x="5.08" y="-12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="B-@4" x="5.08" y="-15.24" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="B+@3" x="5.08" y="12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="B+@4" x="5.08" y="10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="SMCLK@1" x="5.08" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="SMCLK@2" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="SMDAT@1" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="SMDAT@2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="!PRSNT@1" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="!PRSNT@2" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-0.762" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-2.54" x2="-1.016" y2="-5.08" width="0.254" layer="96"/>
+<wire x1="-1.016" y1="-5.08" x2="-0.762" y2="-5.08" width="0.254" layer="96"/>
+<wire x1="-0.762" y1="-15.24" x2="-1.016" y2="-15.24" width="0.254" layer="96"/>
+<text x="-6.604" y="-4.191" size="0.762" layer="96">!PRSNT</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ROCKETNET-BATTERY-14" prefix="J">
+<gates>
+<gate name="G$1" symbol="ROCKETNET-BATT-SYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ROCKETNET-CONNECTOR-M-14">
+<connects>
+<connect gate="G$1" pin="!PRSNT@1" pad="!PRSNT@9"/>
+<connect gate="G$1" pin="!PRSNT@2" pad="!PRSNT@10"/>
+<connect gate="G$1" pin="B+@1" pad="B+@1"/>
+<connect gate="G$1" pin="B+@2" pad="B+@2"/>
+<connect gate="G$1" pin="B+@3" pad="B+@3"/>
+<connect gate="G$1" pin="B+@4" pad="B+@4"/>
+<connect gate="G$1" pin="B-@1" pad="B-@11"/>
+<connect gate="G$1" pin="B-@2" pad="B-@12"/>
+<connect gate="G$1" pin="B-@3" pad="B-@13"/>
+<connect gate="G$1" pin="B-@4" pad="B-@14"/>
+<connect gate="G$1" pin="SMCLK@1" pad="SMCLK@3"/>
+<connect gate="G$1" pin="SMCLK@2" pad="SMCLK@4"/>
+<connect gate="G$1" pin="SMDAT@1" pad="SMDAT@7"/>
+<connect gate="G$1" pin="SMDAT@2" pad="SMDAT@8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6425,29 +6542,29 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="J100" library="con-molex" deviceset="87758-0216" device=""/>
 <part name="J101" library="con-molex" deviceset="87758-0216" device=""/>
 <part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
-<part name="R120" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="R121" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="C111" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="C113" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="C112" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="R120" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="100"/>
+<part name="R121" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="100"/>
+<part name="C111" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C113" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C112" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
 <part name="BAR_GND4" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND6" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="TP104" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP105" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="R102" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
-<part name="R109" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
-<part name="R111" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
-<part name="R119" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
-<part name="C101" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="C102" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="C105" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="C114" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="R102" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1K"/>
+<part name="R109" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1K"/>
+<part name="R111" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1K"/>
+<part name="R119" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1K"/>
+<part name="C101" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C102" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C105" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C114" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
 <part name="BAR_GND8" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND9" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND10" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND11" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND12" library="psas" deviceset="SUP_GND_BAR" device=""/>
-<part name="C109" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C109" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
 <part name="C110" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="D101" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="C103" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
@@ -6455,10 +6572,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="BAR_GND13" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="Q104" library="si1023x" deviceset="SI1023X" device=""/>
 <part name="Q103" library="si1023x" deviceset="SI1023X" device=""/>
-<part name="R122" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="R116" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="R110" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="R105" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
+<part name="R122" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100 .25W"/>
+<part name="R116" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100 .25W"/>
+<part name="R110" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100 .25W"/>
+<part name="R105" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100 .25W"/>
 <part name="D105" library="tvs-0603" deviceset="TVS-0603" device="" value="&gt; 5V TVS"/>
 <part name="D103" library="tvs-0603" deviceset="TVS-0603" device="" value="&gt;5V TVS"/>
 <part name="D104" library="tvs-0603" deviceset="TVS-0603" device="" value="&gt;5V TVS"/>
@@ -6478,9 +6595,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="C108" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100p"/>
 <part name="C100" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="TRIANGLE_GND2" library="psas" deviceset="SUP_GND_TRIANGLE" device=""/>
-<part name="R108" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="5.1k"/>
-<part name="R107" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="5.1k"/>
-<part name="R106" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="5.1k"/>
+<part name="R108" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="5.1k"/>
+<part name="R107" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="5.1k"/>
+<part name="R106" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="5.1k"/>
 <part name="TP100" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP101" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP102" library="Tova" deviceset="TEST-POINT" device=""/>
@@ -6491,10 +6608,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="Q101" library="si4435ddy" deviceset="SI4435DDY" device=""/>
 <part name="Q102" library="si4435ddy" deviceset="SI4435DDY" device=""/>
 <part name="Q100" library="si4435ddy" deviceset="SI4435DDY" device=""/>
-<part name="R103" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
-<part name="R104" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
-<part name="R101" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
-<part name="R100" library="rcl_custom" deviceset="R-US_" device="1206-B" value="301"/>
+<part name="R103" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1M"/>
+<part name="R104" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1M"/>
+<part name="R101" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1M"/>
+<part name="R100" library="rcl_custom" deviceset="R-US_" device="1206-B" value="301 1W"/>
 <part name="B103A" library="battery" deviceset="LIPO-8AHR" device=""/>
 <part name="B102A" library="battery" deviceset="LIPO-8AHR" device=""/>
 <part name="B101A" library="battery" deviceset="LIPO-8AHR" device=""/>
@@ -6505,10 +6622,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="C115" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="C117" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="C116" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
-<part name="X1" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="X2" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="TRIANGLE_GND4" library="psas" deviceset="SUP_GND_TRIANGLE" device=""/>
 <part name="BAR_GND1" library="psas" deviceset="SUP_GND_BAR" device=""/>
+<part name="J1" library="rocketnet-connector" deviceset="ROCKETNET-BATTERY-14" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6683,16 +6798,11 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <attribute name="NAME" x="186.69" y="236.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.69" y="233.68" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="309.88" y="167.64"/>
-<instance part="X1" gate="-2" x="309.88" y="165.1"/>
-<instance part="X1" gate="-3" x="309.88" y="162.56"/>
-<instance part="X1" gate="-4" x="309.88" y="160.02"/>
-<instance part="X2" gate="-1" x="312.42" y="132.08"/>
-<instance part="X2" gate="-2" x="312.42" y="129.54"/>
-<instance part="X2" gate="-3" x="312.42" y="127"/>
-<instance part="X2" gate="-4" x="312.42" y="124.46"/>
-<instance part="TRIANGLE_GND4" gate="1" x="309.88" y="121.92" smashed="yes"/>
 <instance part="BAR_GND1" gate="1" x="208.28" y="92.71" smashed="yes"/>
+<instance part="J1" gate="G$1" x="320.04" y="119.38" smashed="yes" rot="MR0">
+<attribute name="NAME" x="319.532" y="138.938" size="1.27" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="329.692" y="100.838" size="1.27" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6950,18 +7060,23 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="172.72" y1="93.98" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="88.9" x2="299.72" y2="88.9" width="1.27" layer="91"/>
-<wire x1="307.34" y1="162.56" x2="307.34" y2="160.02" width="1.27" layer="91"/>
-<wire x1="307.34" y1="160.02" x2="299.72" y2="160.02" width="1.27" layer="91"/>
-<wire x1="299.72" y1="160.02" x2="299.72" y2="88.9" width="1.27" layer="91"/>
+<wire x1="299.72" y1="111.76" x2="299.72" y2="88.9" width="1.27" layer="91"/>
 <junction x="172.72" y="88.9"/>
 <junction x="299.72" y="88.9"/>
 <pinref part="R121" gate="R" pin="1"/>
 <pinref part="R123" gate="G$1" pin="2"/>
 <pinref part="TRIANGLE_GND3" gate="1" pin="TRIANGLE_GND"/>
-<pinref part="X1" gate="-3" pin="S"/>
-<pinref part="X1" gate="-4" pin="S"/>
-<junction x="307.34" y="162.56"/>
-<junction x="307.34" y="160.02"/>
+<pinref part="J1" gate="G$1" pin="B-@1"/>
+<wire x1="299.72" y1="111.76" x2="314.96" y2="111.76" width="1.27" layer="91"/>
+<pinref part="J1" gate="G$1" pin="B-@2"/>
+<wire x1="314.96" y1="111.76" x2="314.96" y2="109.22" width="0.1524" layer="91"/>
+<junction x="314.96" y="111.76"/>
+<pinref part="J1" gate="G$1" pin="B-@3"/>
+<wire x1="314.96" y1="109.22" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
+<junction x="314.96" y="109.22"/>
+<pinref part="J1" gate="G$1" pin="B-@4"/>
+<wire x1="314.96" y1="106.68" x2="314.96" y2="104.14" width="0.1524" layer="91"/>
+<junction x="314.96" y="106.68"/>
 </segment>
 <segment>
 <wire x1="259.08" y1="109.22" x2="247.65" y2="109.22" width="0.1524" layer="91"/>
@@ -6996,10 +7111,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="D100" gate="G$1" pin="CATHODE"/>
 <pinref part="TRIANGLE_GND2" gate="1" pin="TRIANGLE_GND"/>
 <pinref part="C115" gate="CE" pin="2"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-4" pin="S"/>
-<pinref part="TRIANGLE_GND4" gate="1" pin="TRIANGLE_GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7070,13 +7181,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="271.78" y1="121.92" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="119.38" x2="276.86" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="127" x2="307.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="127" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="121.92" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="121.92" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
 <junction x="276.86" y="121.92"/>
 <pinref part="R118" gate="R" pin="1"/>
 <pinref part="D103" gate="G$1" pin="ANODE"/>
-<pinref part="X2" gate="-3" pin="S"/>
+<pinref part="J1" gate="G$1" pin="SMDAT@2"/>
+<wire x1="314.96" y1="119.38" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SMDAT@1"/>
+<junction x="314.96" y="121.92"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -7094,13 +7206,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="280.67" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="119.38" x2="284.48" y2="127" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="127" x2="304.8" y2="127" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="127" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="127" x2="314.96" y2="127" width="0.1524" layer="91"/>
 <junction x="284.48" y="127"/>
 <pinref part="R115" gate="R" pin="1"/>
 <pinref part="D104" gate="G$1" pin="ANODE"/>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="J1" gate="G$1" pin="SMCLK@2"/>
+<wire x1="314.96" y1="124.46" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="SMCLK@1"/>
+<junction x="314.96" y="127"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -7176,11 +7289,16 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <wire x1="289.56" y1="132.08" x2="292.1" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="132.08" x2="292.1" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="132.08" x2="309.88" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="132.08" x2="304.8" y2="132.08" width="0.1524" layer="91"/>
 <junction x="292.1" y="132.08"/>
 <pinref part="R113" gate="R" pin="1"/>
 <pinref part="D105" gate="G$1" pin="ANODE"/>
-<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="304.8" y1="132.08" x2="304.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="!PRSNT@1"/>
+<wire x1="304.8" y1="116.84" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="!PRSNT@2"/>
+<wire x1="314.96" y1="116.84" x2="314.96" y2="114.3" width="0.1524" layer="91"/>
+<junction x="314.96" y="116.84"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -7255,7 +7373,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <junction x="213.36" y="180.34"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="PRE-CHARGE" class="0">
 <segment>
 <wire x1="205.74" y1="222.25" x2="205.74" y2="219.71" width="1.27" layer="91"/>
 <wire x1="205.74" y1="219.71" x2="205.74" y2="217.17" width="1.27" layer="91"/>
@@ -7353,19 +7471,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <junction x="96.52" y="165.1"/>
 </segment>
 </net>
-<net name="N$26" class="0">
-<segment>
-<wire x1="299.72" y1="195.58" x2="299.72" y2="167.64" width="1.27" layer="91"/>
-<wire x1="279.4" y1="195.58" x2="299.72" y2="195.58" width="1.27" layer="91"/>
-<wire x1="299.72" y1="167.64" x2="307.34" y2="167.64" width="1.27" layer="91"/>
-<wire x1="307.34" y1="167.64" x2="307.34" y2="165.1" width="1.27" layer="91"/>
-<pinref part="F100" gate="F" pin="2"/>
-<pinref part="X1" gate="-1" pin="S"/>
-<pinref part="X1" gate="-2" pin="S"/>
-<junction x="307.34" y="167.64"/>
-<junction x="307.34" y="165.1"/>
-</segment>
-</net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="C100" gate="CE" pin="2"/>
@@ -7434,6 +7539,24 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="175.26" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="127" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="J100" gate="-1" pin="S"/>
+</segment>
+</net>
+<net name="B+PACKOUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="B+@4"/>
+<pinref part="J1" gate="G$1" pin="B+@3"/>
+<wire x1="314.96" y1="129.54" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="B+@2"/>
+<wire x1="314.96" y1="132.08" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
+<junction x="314.96" y="132.08"/>
+<wire x1="279.4" y1="195.58" x2="299.72" y2="195.58" width="1.27" layer="91"/>
+<pinref part="F100" gate="F" pin="2"/>
+<wire x1="299.72" y1="195.58" x2="299.72" y2="137.16" width="1.27" layer="91"/>
+<pinref part="J1" gate="G$1" pin="B+@1"/>
+<wire x1="299.72" y1="137.16" x2="314.96" y2="137.16" width="1.27" layer="91"/>
+<wire x1="314.96" y1="134.62" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
+<junction x="314.96" y="134.62"/>
+<junction x="314.96" y="137.16"/>
 </segment>
 </net>
 </nets>
