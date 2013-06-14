@@ -8,22 +8,22 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Power" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="14" name="NS" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="15" name="EW" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="GND" color="9" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Power" color="12" fill="1" visible="no" active="yes"/>
+<layer number="14" name="NS" color="15" fill="1" visible="no" active="yes"/>
+<layer number="15" name="EW" color="6" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -5093,6 +5093,10 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="49.314" y="19.723" size="0.762" layer="26" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="50.381" y="22.678" size="1" layer="28" ratio="10" rot="MR180"/>
 </element>
+<element name="R25" library="rcl_custom" package="0402-B-NOSILK" value="200" x="56.388" y="46.609" smashed="yes" rot="MR315">
+<attribute name="NAME" x="56.388" y="47.740371875" size="0.762" layer="26" ratio="20" rot="MR315"/>
+<attribute name="VALUE" x="58.26183125" y="45.8665375" size="1" layer="28" ratio="10" rot="MR315"/>
+</element>
 </elements>
 <signals>
 <signal name="N$12">
@@ -7226,18 +7230,6 @@ einem neuen Namen ab.</description>
 <via x="100.965" y="21.59" extent="1-16" drill="0.2032" diameter="0.4572"/>
 <wire x1="100.965" y1="21.59" x2="100.95" y2="21.605" width="0.127" layer="1"/>
 <wire x1="100.95" y1="21.605" x2="100.95" y2="22.8" width="0.127" layer="1"/>
-</signal>
-<signal name="25MHZ_REF_CLK">
-<contactref element="U1" pad="66"/>
-<contactref element="U4" pad="176"/>
-<wire x1="63.073" y1="54.035" x2="94.089" y2="54.035" width="0.127" layer="16"/>
-<wire x1="55.3" y1="45.5" x2="63.073" y2="54.035" width="0.127" layer="16"/>
-<via x="55.3" y="45.5" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<wire x1="55.3" y1="45.5" x2="55.27868125" y2="45.5" width="0.127" layer="1"/>
-<wire x1="55.27868125" y1="45.5" x2="54.398203125" y2="44.619521875" width="0.127" layer="1"/>
-<wire x1="94.45" y1="53.4" x2="94.45" y2="54.483" width="0.127" layer="1"/>
-<via x="94.45" y="54.483" extent="1-16" drill="0.2032" diameter="0.4572"/>
-<wire x1="94.45" y1="54.483" x2="94.089" y2="54.035" width="0.127" layer="16"/>
 </signal>
 <signal name="NODE6_IMON">
 <contactref element="R60" pad="2"/>
@@ -12745,13 +12737,26 @@ einem neuen Namen ab.</description>
 <wire x1="53.123" y1="21.5" x2="52.451" y2="20.828" width="0.1778" layer="16"/>
 <wire x1="52.451" y1="20.828" x2="51.661" y2="20.828" width="0.1778" layer="16"/>
 </signal>
+<signal name="25MHZ_REF_CLK_KSZ">
+<contactref element="R25" pad="1"/>
+<contactref element="U4" pad="176"/>
+<wire x1="94.45" y1="53.4" x2="94.45" y2="54.394" width="0.1778" layer="1"/>
+<wire x1="94.45" y1="54.394" x2="94.361" y2="54.483" width="0.1778" layer="1"/>
+<via x="94.361" y="54.483" extent="1-16" drill="0.2032"/>
+<wire x1="56.7274125" y1="46.948409375" x2="63.881003125" y2="54.102" width="0.1778" layer="16"/>
+<wire x1="63.881003125" y1="54.102" x2="93.98" y2="54.102" width="0.1778" layer="16"/>
+<wire x1="93.98" y1="54.102" x2="94.361" y2="54.483" width="0.1778" layer="16"/>
+</signal>
+<signal name="25MHZ_REF_CLK_STM">
+<contactref element="U1" pad="66"/>
+<contactref element="R25" pad="2"/>
+<via x="55.3" y="45.5" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<wire x1="55.3" y1="45.5" x2="55.27868125" y2="45.5" width="0.127" layer="1"/>
+<wire x1="55.27868125" y1="45.5" x2="54.398203125" y2="44.619521875" width="0.1778" layer="1"/>
+<wire x1="55.3" y1="45.5" x2="56.048590625" y2="46.248590625" width="0.1778" layer="16"/>
+<wire x1="56.048590625" y1="46.248590625" x2="56.048590625" y2="46.2695875" width="0.1778" layer="16"/>
+</signal>
 </signals>
-<errors>
-<approved hash="5,15,214020c83ac83b40"/>
-<approved hash="5,15,c23dc04048404a3d"/>
-<approved hash="5,15,229821b83bb83898"/>
-<approved hash="5,15,fe39fc4052405039"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

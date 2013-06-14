@@ -13498,6 +13498,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="R25" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="200"/>
 </parts>
 <sheets>
 <sheet>
@@ -13623,6 +13624,7 @@ Supply Enable</text>
 <instance part="TP39" gate="G$1" x="17.78" y="355.6"/>
 <instance part="J11" gate="J" x="-12.7" y="358.14" rot="MR0"/>
 <instance part="GND8" gate="1" x="-5.08" y="350.52"/>
+<instance part="R25" gate="R" x="182.88" y="414.02" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14054,13 +14056,6 @@ Supply Enable</text>
 <label x="154.94" y="416.56" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="25MHZ_REF_CLK" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="PC9"/>
-<wire x1="154.94" y1="398.78" x2="152.4" y2="398.78" width="0.1524" layer="91"/>
-<label x="154.94" y="398.78" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="NODE7_!FLT" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PE14"/>
@@ -14461,6 +14456,22 @@ Supply Enable</text>
 <pinref part="U1" gate="U1" pin="VCAP_2"/>
 <wire x1="129.54" y1="307.34" x2="132.08" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="307.34" x2="132.08" y2="327.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="25MHZ_REF_CLK_KSZ" class="0">
+<segment>
+<wire x1="190.5" y1="414.02" x2="187.96" y2="414.02" width="0.1524" layer="91"/>
+<pinref part="R25" gate="R" pin="1"/>
+<label x="190.5" y="414.02" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="25MHZ_REF_CLK_STM" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PC9"/>
+<wire x1="177.8" y1="414.02" x2="170.18" y2="414.02" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="414.02" x2="170.18" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="398.78" x2="152.4" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="R25" gate="R" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -18798,13 +18809,6 @@ Supply Enable</text>
 <label x="76.2" y="195.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="25MHZ_REF_CLK" class="0">
-<segment>
-<label x="-27.94" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="U" pin="X1"/>
-<wire x1="-27.94" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RX1_N" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="RXM[1]"/>
@@ -19839,6 +19843,15 @@ Supply Enable</text>
 <pinref part="LED38" gate="G$1" pin="C"/>
 <wire x1="198.12" y1="274.32" x2="198.12" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="T20" gate="A" pin="D"/>
+</segment>
+</net>
+<net name="25MHZ_REF_CLK_KSZ" class="0">
+<segment>
+<pinref part="U4" gate="U" pin="X1"/>
+<wire x1="78.74" y1="149.86" x2="-5.08" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="149.86" x2="-5.08" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="144.78" x2="-12.7" y2="144.78" width="0.1524" layer="91"/>
+<label x="-12.7" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
