@@ -13305,8 +13305,8 @@ by exp-project-lbr.ulp</description>
 <part name="GND85" library="supply1" deviceset="GND" device=""/>
 <part name="GND86" library="supply1" deviceset="GND" device=""/>
 <part name="+3V33" library="supply1" deviceset="+3V3" device=""/>
-<part name="R143" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="7.5"/>
-<part name="R144" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="10"/>
+<part name="R143" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="7.5"/>
+<part name="R144" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10"/>
 <part name="C111" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="0.1uF"/>
 <part name="C112" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="0.1uF"/>
 <part name="C113" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1uF/40V"/>
@@ -20466,9 +20466,9 @@ Battery Charger Schematic</text>
 <attribute name="NAME" x="138.684" y="-14.859" size="1.778" layer="95"/>
 <attribute name="VALUE" x="138.684" y="-19.939" size="1.778" layer="96"/>
 </instance>
-<instance part="C112" gate="CE" x="162.56" y="-25.4" smashed="yes">
-<attribute name="NAME" x="164.084" y="-25.019" size="1.778" layer="95"/>
-<attribute name="VALUE" x="164.084" y="-30.099" size="1.778" layer="96"/>
+<instance part="C112" gate="CE" x="137.16" y="-22.86" smashed="yes">
+<attribute name="NAME" x="138.684" y="-22.479" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.684" y="-27.559" size="1.778" layer="96"/>
 </instance>
 <instance part="C113" gate="CE" x="58.42" y="53.34" smashed="yes">
 <attribute name="NAME" x="59.944" y="53.721" size="1.778" layer="95"/>
@@ -20515,8 +20515,8 @@ Battery Charger Schematic</text>
 <instance part="GND89" gate="1" x="86.36" y="-10.16" smashed="yes">
 <attribute name="VALUE" x="83.82" y="-12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="GND90" gate="1" x="162.56" y="-35.56" smashed="yes">
-<attribute name="VALUE" x="160.02" y="-38.1" size="1.778" layer="96"/>
+<instance part="GND90" gate="1" x="137.16" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="134.62" y="-35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="R146" gate="R" x="149.86" y="7.62" smashed="yes">
 <attribute name="NAME" x="146.05" y="9.1186" size="1.778" layer="95"/>
@@ -20786,7 +20786,7 @@ Battery Charger Schematic</text>
 <segment>
 <pinref part="C112" gate="CE" pin="2"/>
 <pinref part="GND90" gate="1" pin="GND"/>
-<wire x1="162.56" y1="-33.02" x2="162.56" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-30.48" x2="137.16" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C121" gate="CE" pin="2"/>
@@ -20862,23 +20862,17 @@ Battery Charger Schematic</text>
 <pinref part="C119" gate="CE" pin="1"/>
 <wire x1="154.94" y1="7.62" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C120" gate="CE" pin="1"/>
-<wire x1="160.02" y1="7.62" x2="162.56" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="7.62" x2="172.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="7.62" x2="172.72" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="7.62" x2="185.42" y2="7.62" width="0.1524" layer="91"/>
 <junction x="172.72" y="7.62"/>
 <label x="198.12" y="7.62" size="1.778" layer="95" xref="yes"/>
 <wire x1="198.12" y1="7.62" x2="185.42" y2="7.62" width="0.1524" layer="91"/>
 <junction x="185.42" y="7.62"/>
 <pinref part="C112" gate="CE" pin="1"/>
-<wire x1="162.56" y1="-22.86" x2="162.56" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="162.56" y="7.62"/>
-<wire x1="162.56" y1="-20.32" x2="162.56" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C111" gate="CE" pin="2"/>
 <pinref part="R143" gate="R" pin="2"/>
 <wire x1="132.08" y1="-20.32" x2="137.16" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-20.32" x2="162.56" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="137.16" y="-20.32"/>
-<junction x="162.56" y="-20.32"/>
 <pinref part="Q4" gate="&gt;NAME" pin="S"/>
 <wire x1="160.02" y1="22.86" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C114" gate="CE" pin="2"/>
@@ -20887,6 +20881,9 @@ Battery Charger Schematic</text>
 <wire x1="160.02" y1="22.86" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 <junction x="160.02" y="22.86"/>
 <junction x="160.02" y="7.62"/>
+<wire x1="154.94" y1="7.62" x2="154.94" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="154.94" y="7.62"/>
+<wire x1="137.16" y1="-20.32" x2="154.94" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$159" class="0">
@@ -20895,12 +20892,12 @@ Battery Charger Schematic</text>
 <pinref part="C111" gate="CE" pin="1"/>
 <wire x1="132.08" y1="-12.7" x2="137.16" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R146" gate="R" pin="1"/>
-<wire x1="132.08" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="P$1"/>
-<wire x1="137.16" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-12.7" x2="137.16" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
 <junction x="137.16" y="-12.7"/>
-<junction x="137.16" y="7.62"/>
+<wire x1="144.78" y1="7.62" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-12.7" x2="137.16" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="144.78" y="7.62"/>
 </segment>
 </net>
 <net name="N$160" class="0">
