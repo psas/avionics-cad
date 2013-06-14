@@ -11,6 +11,16 @@
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="12" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="11" fill="3" visible="no" active="no"/>
 <layer number="15" name="Route15" color="6" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -11632,6 +11642,35 @@ Based on the following sources:
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="SDD_AKKA">
+<wire x1="-3.81" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.016" x2="-0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.016" x2="-1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.016" x2="1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.016" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0.762" y="2.0066" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="-3.9624" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="A2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="CC" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAT54" prefix="D">
@@ -11645,6 +11684,25 @@ Source: Fairchild .. BAT54.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT54C" prefix="D">
+<description>&lt;b&gt;Schottky Diodes&lt;/b&gt;&lt;p&gt;
+Source: Fairchild .. BAT54.pdf</description>
+<gates>
+<gate name="G$1" symbol="SDD_AKKA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="CC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13499,6 +13557,7 @@ by exp-project-lbr.ulp</description>
 <part name="R18" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="R25" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="200"/>
+<part name="D6" library="diode" deviceset="BAT54C" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20539,6 +20598,7 @@ Battery Charger Schematic</text>
 <instance part="+3V40" gate="G$1" x="-15.24" y="12.7" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="12.7" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="D6" gate="G$1" x="48.26" y="60.96" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -20573,8 +20633,9 @@ Battery Charger Schematic</text>
 <wire x1="-68.58" y1="71.12" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-96.52" y1="58.42" x2="-96.52" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="71.12" x2="-76.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="71.12" x2="-86.36" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R137" gate="R" pin="2"/>
+<wire x1="-86.36" y1="71.12" x2="-76.2" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="45.72" x2="-76.2" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-76.2" y="71.12"/>
 <wire x1="-76.2" y1="71.12" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
@@ -20583,6 +20644,12 @@ Battery Charger Schematic</text>
 <pinref part="Q2" gate="&gt;NAME" pin="D"/>
 <wire x1="-50.8" y1="71.12" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-68.58" y="71.12"/>
+<pinref part="D6" gate="G$1" pin="A2"/>
+<wire x1="43.18" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="60.96" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="106.68" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="106.68" x2="-86.36" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-86.36" y="71.12"/>
 </segment>
 </net>
 <net name="N$146" class="0">
@@ -21004,12 +21071,10 @@ Battery Charger Schematic</text>
 <pinref part="R134" gate="R" pin="2"/>
 <wire x1="7.62" y1="71.12" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
 <junction x="7.62" y="71.12"/>
-<wire x1="7.62" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="71.12" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-<junction x="48.26" y="71.12"/>
+<wire x1="7.62" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="172.72" y="71.12" size="1.778" layer="95" xref="yes"/>
-<wire x1="48.26" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="Q5" gate="&gt;NAME" pin="D"/>
+<wire x1="58.42" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
@@ -21023,13 +21088,6 @@ Battery Charger Schematic</text>
 <pinref part="Q4" gate="&gt;NAME" pin="D"/>
 <wire x1="160.02" y1="45.72" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <junction x="160.02" y="71.12"/>
-<pinref part="U2" gate="U" pin="VCC"/>
-<wire x1="45.72" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="45.72" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C113" gate="CE" pin="1"/>
-<wire x1="48.26" y1="55.88" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<junction x="48.26" y="55.88"/>
-<wire x1="48.26" y1="55.88" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C124" gate="CE" pin="1"/>
 <wire x1="152.4" y1="68.58" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 <junction x="152.4" y="71.12"/>
@@ -21045,13 +21103,13 @@ Battery Charger Schematic</text>
 <pinref part="C118" gate="CE" pin="1"/>
 <wire x1="91.44" y1="68.58" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <junction x="91.44" y="71.12"/>
-<pinref part="C105" gate="CE" pin="1"/>
 <pinref part="P+2" gate="1" pin="+18V"/>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
 <junction x="170.18" y="71.12"/>
-<junction x="58.42" y="55.88"/>
-<wire x1="58.42" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="A1"/>
+<wire x1="53.34" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="60.96" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<junction x="58.42" y="71.12"/>
 </segment>
 </net>
 <net name="N$161" class="0">
@@ -21063,6 +21121,21 @@ Battery Charger Schematic</text>
 <pinref part="R145" gate="R" pin="2"/>
 <wire x1="139.7" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 <junction x="139.7" y="35.56"/>
+</segment>
+</net>
+<net name="N$13" class="1">
+<segment>
+<pinref part="C105" gate="CE" pin="1"/>
+<pinref part="C113" gate="CE" pin="1"/>
+<junction x="58.42" y="55.88"/>
+<wire x1="58.42" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="45.72" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U" pin="VCC"/>
+<wire x1="45.72" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="CC"/>
+<wire x1="48.26" y1="58.42" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<junction x="48.26" y="55.88"/>
 </segment>
 </net>
 </nets>
