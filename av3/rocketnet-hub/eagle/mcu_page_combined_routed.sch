@@ -18069,9 +18069,12 @@ Supply Enable</text>
 <net name="SYNC" class="0">
 <segment>
 <pinref part="U5" gate="U" pin="SYNC"/>
-<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-20.32" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="R131" gate="R" pin="1"/>
+<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-22.86" x2="-27.94" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-20.32" y="-22.86"/>
+<label x="-27.94" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$116" class="0">
