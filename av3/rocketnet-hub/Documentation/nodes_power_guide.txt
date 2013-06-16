@@ -1,0 +1,30 @@
+Node Power Switches (U7, U8, U9, U10, U11, U12, U13)
+Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS form TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Key settings for this chip are:
+	Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71): 	Set by node--Set resistor on top side of PCB
+	Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127): 	Set by node--Set resistor on top side of PCB
+	Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101):		Set by node--Set Capacitor on top side of PCB
+	Reset Behavior:			Latch reset condition and wait for MCU to reset switch
+Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
+	IMON resistor (R49, R52, R54, R56, R58, R60, R62):			TBD
+	Power good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39):			APT1608CGCK (Green 0603 V_f 2.1V I_d 20mA)
+	Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18):		APT1608EC (Red 0603 V_f 2V I_d 20mA)
+	LED cur. lim. res. (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112):		750 Ohm (1.6 mA - 1.73 mA)
+
+Power Supplies (U5, U6)
+The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficiency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistors chosen came from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The external components for the LMT8023 were provided by the manufacturer datasheet. The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability.
+	LTM8023 Settings:
+		Vout:			3.3(V)
+		Osc. Freq.:		650KHz
+		Sync. Freq.:	650KHz -- set by MCU pll
+		R_T (R74)		49.9KOhm
+		R_{ADJ} (R73)	154KOhm
+		C_{in} (C103)	2.2uF (0805)
+		C_{out} (C104)	22uF (1206)
+		PGOOD LED (LED22):		APT1608CGCK (Green 0603 V_f 2.1V I_d 20mA)
+		LED cur. lim. res. (R128):	750 Ohm (1.6 mA)
+		EN:				Tied to supply voltage, Always on
+		
+	MIC37101-2.1YM Settings:
+		EN:				Weakly pulled to logic 0, controlled by MCU.ETH_EN
+		C_{in} (C52)	47.uF
+		C_{out} (C84, C85)	4.7uF, 0.1uF
