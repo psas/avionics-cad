@@ -95,53 +95,43 @@ Each port provisions up to four signaling LEDs to denote the curent state of the
 
  * Magnetics (Chokes: L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15,L16,L17 and xformers: T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18)
 The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this purpose build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This prooved fruitless and transformers were selected instead. The exact reason for failing to successfully couple with capacitors is not know and further research for future revisions of the board should be considered.
-Node Power Switches
+
+Node Power Switches (U7, U8, U9, U10, U11, U12, U13)
 ---
-Each of the 7 nodes to be connected to this distribution board was to have its own power swith controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnessary functionality. Our main requirements for the node power switch was that it provide a hige level of integration with no external components except small capaitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS form TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to disipate heat. Key settings for this chip are:
+Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Key settings for this chip are:
 
-* Hard Current Limit: Set by node--Set resistor on top side of PCB
+* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71): 	Set by node--Set resistor on top side of PCB
+* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127): 	Set by node--Set resistor on top side of PCB
+* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101):		Set by node--Set Capacitor on top side of PCB
+* Reset Behavior: Latch reset condition and wait for MCU to reset switch
 
-* Soft Current Limit: Set by node--Set resistor on top side of PCB
-
-* Soft Limit Timer:Set by node--Set Capacitor on top side of PCB
-
-* Reset Behavior:Latch reset condition and wait for MCU to reset switch
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
 
-* IMON resistor:TBD
+* IMON resistor (R49, R52, R54, R56, R58, R60, R62): TBD
+* Power good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39): APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+* Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18): APT1608EC (Red 0603 V\_f 2V I\_d 20mA)
+* LED cur. lim. res. (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112): 750 Ohm (1.6 mA - 1.73 mA)
 
-* Power good LED:APHHS1005CGCK (Green 0402 V\_f 2.1V I\_d 20mA)
-
-* Fault Cond. LED:SML-LX0402SIC-TR (Red 0402 V\_f 2V I\_d 20mA)
-
-* LED cur. lim. res.:50-60Ohm (17mA-20mA)
-
-Power Supplies
+Power Supplies (U5, U6)
 ---
-The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for it's high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potetial variation.
+The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficiency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistors chosen came from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The external components for the LMT8023 were provided by the manufacturer datasheet. The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability.
 
 * LTM8023 Settings:
-
- * Vout:3.3(V)
-
- * Osc. Freq.:650KHz
-
- * Sync. Freq.:650KHz -- set by MCU pll
-
- * R\_T49.9KOhm
-
- * R\_{ADJ}154KOhm
-
- * C\_in2.2uF (0805)
-
- * C\_{out}22uF (1206)
-
- * EN:Tied to supply voltage, Always on
-
+    * Vout: 3.3(V)
+    * Osc. Freq.: 650KHz
+    * Sync. Freq.: 650KHz -- set by MCU pll
+    * R\_T (R74): 49.9KOhm
+    * R\_ADJ (R73): 154KOhm
+    * C\_in (C103): 2.2uF (0805)
+    * C\_out (C104): 22uF (1206)
+    * PGOOD LED (LED22): APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+    * LED cur. lim. res. (R128): 750 Ohm (1.6 mA)
+    * EN: Tied to supply voltage, Always on
+		
 * MIC37101-2.1YM Settings:
-
- * EN:Weakly pulled to logic 0, controlled by MCU.ETH\_EN
-
+     * EN: Weakly pulled to logic 0, controlled by MCU.ETH_EN
+     * C\_in (C52): 47.uF
+     * C\_out (C84, C85): 4.7uF, 0.1uF
 
 U14,U15, Analog Multiplexers, MAX4734
 ---
@@ -159,13 +149,13 @@ Battery Charger
 ---
 The onboard battery charger had been selected by PSAS prior to the begining of the capstone project and was presented to the capstone team as a black box solution. Integration of the dev board's circuit with minimal adjustment was requested. The interested reader is directed to the datasheet and dev board user's guide for more information on this sub system. Connections to the black box are I2C(<->), BAT\_IMON(->), external DC power(<-), Battery power(<-), and +18V(->). All internal signals are replicated per the dev board. Most components selected are per the dev board's BOM.
 
-* In-Rush Limiter:Eval Board datasheet had two 3.9 ohm 0.5W resistors, we combined these into one 2 ohm 1W resistor based on the bq24725 datasheet, Figure 1. Typical System Schematic with Two NMOS Selector. We were required to increase the size to 2512, since it is available for purchase in 1W rating.
+* In-Rush Limiter: Eval Board datasheet had two 3.9 ohm 0.5W resistors, we combined these into one 2 ohm 1W resistor based on the bq24725 datasheet, Figure 1. Typical System Schematic with Two NMOS Selector. We were required to increase the size to 2512, since it is available for purchase in 1W rating.
 
 * Transient Voltage Suppression:We added a reverse biased TVS diode, SMAJ18CA, to provide protection against Overvoltage from various possible sources. Chose 20V Voltage-Breakdown part for our +18V Vin shore power.
 
 * I2C (SDA, SCL):Removed pull-up resistors from battery charger to have only one pull-up per line on our entire board (pull-up done @the MCU) on the SDA and SCL lines. 
 
-* ENRemoved enable circuitry on VCC, board is always on when plugged into a power source.
+* EN Removed enable circuitry on VCC, board is always on when plugged into a power source.
 
-* Capacitors:Sizes determined by component availability of 40V caps:
+* Capacitors: Sizes determined by component availability of 40V caps:
 >10uF 1206; =2.2uF 0805; >1uF(<2.2uF) 0603; <1uF 0402
