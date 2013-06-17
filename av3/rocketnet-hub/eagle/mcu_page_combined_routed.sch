@@ -13549,7 +13549,7 @@ by exp-project-lbr.ulp</description>
 <part name="L13" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L14" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L15" library="magnetics" deviceset="ACM2012" device=""/>
-<part name="C134" library="8Y_25MHzCrystal" deviceset="8Y" device="" value="25 MHz"/>
+<part name="X1" library="8Y_25MHzCrystal" deviceset="8Y" device="" value="25 MHz"/>
 <part name="GND137" library="supply1" deviceset="GND" device=""/>
 <part name="J14" library="rocketnet-connector" deviceset="ROCKETNET-UMBILICAL-18" device=""/>
 <part name="TP36" library="testpad" deviceset="TP" device="TP06R"/>
@@ -13624,7 +13624,7 @@ by exp-project-lbr.ulp</description>
 <part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND147" library="supply1" deviceset="GND" device=""/>
 <part name="GND148" library="supply1" deviceset="GND" device=""/>
-<part name="T20" library="zetex" deviceset="NMOSSOT23" device="" value="NDS335N"/>
+<part name="Q10" library="zetex" deviceset="NMOSSOT23" device="" value="NDS335N"/>
 <part name="+3V41" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V42" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP39" library="testpad" deviceset="TP" device="TP06R"/>
@@ -13728,7 +13728,7 @@ Supply Enable</text>
 <instance part="+3V35" gate="G$1" x="-33.02" y="365.76"/>
 <instance part="R150" gate="R" x="-33.02" y="342.9" rot="R270"/>
 <instance part="GND98" gate="1" x="-33.02" y="332.74"/>
-<instance part="C134" gate="C$1" x="83.82" y="464.82" rot="R270"/>
+<instance part="X1" gate="C$1" x="83.82" y="464.82" rot="R270"/>
 <instance part="GND137" gate="1" x="88.9" y="459.74"/>
 <instance part="TP36" gate="G$1" x="43.18" y="370.84"/>
 <instance part="GND100" gate="1" x="40.64" y="386.08"/>
@@ -13868,7 +13868,7 @@ Supply Enable</text>
 <wire x1="-33.02" y1="337.82" x2="-33.02" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C134" gate="C$1" pin="3"/>
+<pinref part="X1" gate="C$1" pin="3"/>
 <pinref part="GND137" gate="1" pin="GND"/>
 <wire x1="88.9" y1="464.82" x2="88.9" y2="462.28" width="0.1524" layer="91"/>
 </segment>
@@ -14462,7 +14462,7 @@ Supply Enable</text>
 <wire x1="83.82" y1="474.98" x2="91.44" y2="474.98" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="474.98" x2="91.44" y2="434.34" width="0.1524" layer="91"/>
 <pinref part="C106" gate="CE" pin="2"/>
-<pinref part="C134" gate="C$1" pin="1"/>
+<pinref part="X1" gate="C$1" pin="1"/>
 <wire x1="83.82" y1="467.36" x2="83.82" y2="474.98" width="0.1524" layer="91"/>
 <junction x="83.82" y="474.98"/>
 </segment>
@@ -14476,7 +14476,7 @@ Supply Enable</text>
 <pinref part="C107" gate="CE" pin="2"/>
 <wire x1="81.28" y1="454.66" x2="83.82" y2="454.66" width="0.1524" layer="91"/>
 <junction x="83.82" y="454.66"/>
-<pinref part="C134" gate="C$1" pin="2"/>
+<pinref part="X1" gate="C$1" pin="2"/>
 </segment>
 </net>
 <net name="ETH_RST_N" class="0">
@@ -18250,7 +18250,8 @@ Supply Enable</text>
 <net name="ETH_EN" class="0">
 <segment>
 <pinref part="U6" gate="U" pin="EN"/>
-<label x="109.22" y="5.08" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="109.22" y1="5.08" x2="106.68" y2="5.08" width="0.1524" layer="91"/>
+<label x="106.68" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -18452,7 +18453,7 @@ Supply Enable</text>
 <instance part="R10" gate="R" x="48.26" y="91.44" rot="R180"/>
 <instance part="GND72" gate="1" x="38.1" y="20.32"/>
 <instance part="R14" gate="R" x="195.58" y="30.48" rot="R90"/>
-<instance part="GND7" gate="1" x="198.12" y="248.92"/>
+<instance part="GND7" gate="1" x="198.12" y="256.54"/>
 <instance part="D3" gate="G$1" x="-22.86" y="175.26"/>
 <instance part="R116" gate="R" x="66.04" y="86.36" rot="R180"/>
 <instance part="R117" gate="R" x="66.04" y="93.98" rot="R180"/>
@@ -18472,7 +18473,7 @@ Supply Enable</text>
 <instance part="TP40" gate="G$1" x="66.04" y="144.78"/>
 <instance part="R72" gate="R" x="63.5" y="182.88" rot="R90"/>
 <instance part="GND147" gate="1" x="63.5" y="175.26"/>
-<instance part="T20" gate="A" x="198.12" y="266.7"/>
+<instance part="Q10" gate="A" x="198.12" y="266.7"/>
 <instance part="+3V41" gate="G$1" x="198.12" y="299.72"/>
 <instance part="GND43" gate="1" x="142.24" y="266.7" rot="MR0"/>
 <instance part="GND149" gate="1" x="93.98" y="259.08"/>
@@ -18793,8 +18794,8 @@ Supply Enable</text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="T20" gate="A" pin="S"/>
-<wire x1="198.12" y1="261.62" x2="198.12" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="Q10" gate="A" pin="S"/>
+<wire x1="198.12" y1="261.62" x2="198.12" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -19919,7 +19920,7 @@ Supply Enable</text>
 <wire x1="185.42" y1="279.4" x2="172.72" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="279.4" x2="185.42" y2="264.16" width="0.1524" layer="91"/>
 <junction x="185.42" y="279.4"/>
-<pinref part="T20" gate="A" pin="G"/>
+<pinref part="Q10" gate="A" pin="G"/>
 <wire x1="185.42" y1="264.16" x2="193.04" y2="264.16" width="0.1524" layer="91"/>
 <junction x="170.18" y="279.4"/>
 <junction x="160.02" y="279.4"/>
@@ -20015,7 +20016,7 @@ Supply Enable</text>
 <segment>
 <pinref part="LED38" gate="G$1" pin="C"/>
 <wire x1="198.12" y1="274.32" x2="198.12" y2="271.78" width="0.1524" layer="91"/>
-<pinref part="T20" gate="A" pin="D"/>
+<pinref part="Q10" gate="A" pin="D"/>
 </segment>
 </net>
 <net name="25MHZ_REF_CLK_KSZ" class="0">
@@ -21292,7 +21293,7 @@ Battery Charger Schematic</text>
 <approved hash="104,4,170.18,238.76,U4,VDD1,+2V1,,,"/>
 <approved hash="104,4,167.64,238.76,U4,VDD2,+2V1,,,"/>
 <approved hash="104,4,165.1,238.76,U4,VDD3,+2V1,,,"/>
-<approved hash="104,4,162.56,238.76,U4,VDD_PLL,+2V1,,,"/>
+<approved hash="104,4,162.56,238.76,U4,VDD_PLLTX,+2V1,,,"/>
 <approved hash="104,4,160.02,238.76,U4,VDD_RCV,+2V1,,,"/>
 <approved hash="104,4,157.48,238.76,U4,VDD_RCV1,+2V1,,,"/>
 <approved hash="104,4,154.94,238.76,U4,VDD_RCV2,+2V1,,,"/>
@@ -21320,7 +21321,8 @@ Battery Charger Schematic</text>
 <approved hash="104,4,99.06,238.76,U4,VDD-IO,VDDIO_IN,,,"/>
 <approved hash="104,4,96.52,238.76,U4,VDD-IO1,VDDIO_IN,,,"/>
 <approved hash="104,4,93.98,238.76,U4,VDD-IO2,VDDIO_IN,,,"/>
-<approved hash="104,6,45.72,45.72,U2,VCC,+18V,,,"/>
+<approved hash="104,4,180.34,12.7,U4,GND_RCV7,GND,,,"/>
+<approved hash="104,6,45.72,45.72,U2,VCC,N$13,,,"/>
 <approved hash="104,2,185.42,424.18,J1,B+,NODE1_VOUT,,,"/>
 <approved hash="104,2,185.42,421.64,J1,B+,NODE1_VOUT,,,"/>
 <approved hash="104,2,185.42,388.62,J1,B-,GND,,,"/>
