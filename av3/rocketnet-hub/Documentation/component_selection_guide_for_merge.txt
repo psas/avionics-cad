@@ -119,10 +119,18 @@ U7, U8, U9, U10, U11, U12, U13, Node Power Switches, TPS2420
 ---
 Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Key settings for this chip are:
 
-* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71): 	Set by node--Set resistor on top side of PCB
-* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127): 	Set by node--Set resistor on top side of PCB
-* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101):		Set by node--Set Capacitor on top side of PCB
-* Reset Behavior: Latch reset condition and wait for MCU to reset switch
+* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71):
+ 
+ Set by node--Set resistor on top side of IC
+* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127):
+
+ Set by node--Set resistor on top side of IC
+* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101):
+
+ Set by node--Set Capacitor on top side of IC
+* Reset Behavior:
+
+ Latch reset condition and wait for MCU to reset switch
 
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
 
@@ -174,7 +182,7 @@ The onboard battery charger had been selected by PSAS prior to the beginning of 
 * Enable (EN) Circuitry
 
  Removed the optional enable/disable circuitry on VCC which causes board to be always-on when plugged into a power source.
-* Capacitors:
+* Various Capacitors:
 
  Sizes determined by component availability of 40V caps:
 >10uF 1206; =2.2uF 0805; >1uF(<2.2uF) 0603; <1uF 0402
@@ -184,7 +192,7 @@ The onboard battery charger had been selected by PSAS prior to the beginning of 
 * Negative Output (BAT) Voltage Protection (R144, R143):
 
  If the battery pack is inserted backwards into the charger output (BAT) during production or there is a hard short on the battery to ground, it will generate a negative output voltage on the SRP and SRN pins. Built in IC internal electrostatic-discharge (ESD) diodes from GND pin to SRP or SRN pins and two anti-parallel (AP) diodes between SRP and SRN pins can be forward biased and negative current can pass through the ESD diodes and AP diodes when output has negative voltage. These two resistors for SRP and SRN pins are inserted to limit the negative current level when output (BAT) has negative voltage. The recommended resistor values of 10 Ohm (R144) for SRP pin and 7.5 Ohm (R143) for SRN pin were used.
-* Inductor (L1)
+* Inductor (L1):
 
  The BQ24725 has three selectable fixed switching frequencies, the higher switching frequency allows the use of smaller inductor and capacitor values. The BQ24725 has charge under current protection (UCP) by monitoring charging current sensing resistor (R134) cycle-by-cycle.
 * Input (C39, C43) and Output (C119, C120) Capacitors
