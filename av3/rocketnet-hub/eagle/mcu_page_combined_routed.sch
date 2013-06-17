@@ -10173,7 +10173,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <smd name="4" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
-<smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1" cream="no"/>
 <pad name="P$2" x="-1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$3" x="0" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$4" x="1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
@@ -10197,6 +10197,10 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="48"/>
 <wire x1="2.032" y1="-2.032" x2="2.032" y2="2.032" width="0.127" layer="48"/>
 <wire x1="2.032" y1="2.032" x2="-2.032" y2="2.032" width="0.127" layer="48"/>
+<rectangle x1="-1.016" y1="0.127" x2="-0.127" y2="1.016" layer="31"/>
+<rectangle x1="-1.016" y1="-1.016" x2="-0.127" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="-1.016" x2="1.016" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="1.016" y2="1.016" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -10383,13 +10387,17 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <smd name="6" x="0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
 <smd name="5" x="0" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
 <smd name="4" x="-0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
-<smd name="P$13" x="0" y="0" dx="1.23" dy="1.23" layer="1" rot="R180"/>
+<smd name="P$13" x="0" y="0" dx="1.23" dy="1.23" layer="1" rot="R180" cream="no"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-2.54" y="2.286" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="0.6096" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="0.127" x2="-0.127" y2="0.508" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="0.508" y2="0.508" layer="31"/>
+<rectangle x1="0.127" y1="-0.508" x2="0.508" y2="-0.127" layer="31"/>
+<rectangle x1="-0.508" y1="-0.508" x2="-0.127" y2="-0.127" layer="31"/>
 </package>
 </packages>
 <symbols>

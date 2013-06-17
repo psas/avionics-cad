@@ -2484,7 +2484,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <smd name="4" x="-1.975" y="-0.975" dx="0.85" dy="0.35" layer="1" rot="R180"/>
 <text x="-1" y="3" size="0.254" layer="25">&gt;NAME</text>
 <text x="-1" y="-3" size="0.254" layer="27">&gt;VALUE</text>
-<smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<smd name="DAP" x="0" y="0" dx="2.7" dy="2.7" layer="1" cream="no"/>
 <pad name="P$2" x="-1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$3" x="0" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
 <pad name="P$4" x="1.1" y="-1.1" drill="0.2032" diameter="0.4064" stop="no" thermals="no"/>
@@ -2508,6 +2508,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="-2.032" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="48"/>
 <wire x1="2.032" y1="-2.032" x2="2.032" y2="2.032" width="0.127" layer="48"/>
 <wire x1="2.032" y1="2.032" x2="-2.032" y2="2.032" width="0.127" layer="48"/>
+<rectangle x1="-1.016" y1="0.127" x2="-0.127" y2="1.016" layer="31"/>
+<rectangle x1="-1.016" y1="-1.016" x2="-0.127" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="-1.016" x2="1.016" y2="-0.127" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="1.016" y2="1.016" layer="31"/>
 </package>
 </packages>
 </library>
@@ -2613,13 +2617,17 @@ Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</descrip
 <smd name="6" x="0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
 <smd name="5" x="0" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
 <smd name="4" x="-0.5" y="-1.35" dx="0.3" dy="0.95" layer="1" rot="R180"/>
-<smd name="P$13" x="0" y="0" dx="1.23" dy="1.23" layer="1" rot="R180"/>
+<smd name="P$13" x="0" y="0" dx="1.23" dy="1.23" layer="1" rot="R180" cream="no"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-2.54" y="2.286" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="0.6096" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="0.127" x2="-0.127" y2="0.508" layer="31"/>
+<rectangle x1="0.127" y1="0.127" x2="0.508" y2="0.508" layer="31"/>
+<rectangle x1="0.127" y1="-0.508" x2="0.508" y2="-0.127" layer="31"/>
+<rectangle x1="-0.508" y1="-0.508" x2="-0.127" y2="-0.127" layer="31"/>
 </package>
 </packages>
 </library>
@@ -4603,9 +4611,9 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="22.3466" y="17.863" size="0.762" layer="25" ratio="20"/>
 <attribute name="VALUE" x="19.117" y="22.755" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="Q7" library="RNH_SIS412DN" package="1212-8" value="SIS412DNSOP-8" x="22.987" y="25.527" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.9574" y="28.3736" size="0.762" layer="25" ratio="20" rot="R180"/>
-<attribute name="VALUE" x="19.117" y="27.327" size="1.27" layer="27" rot="R270"/>
+<element name="Q7" library="RNH_SIS412DN" package="1212-8" value="SIS412DNSOP-8" x="22.987" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.9574" y="28.2466" size="0.762" layer="25" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="19.117" y="27.2" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R146" library="rcl_custom" package="1206-B" value="10m/WSLP1206R0100FEA/1.0 Watt" x="13.716" y="32.893" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.5866" y="29.8154" size="0.762" layer="25" ratio="20"/>
@@ -10237,8 +10245,8 @@ einem neuen Namen ab.</description>
 <wire x1="20.574" y1="31.369" x2="20.59" y2="31.3648" width="0.1778" layer="1"/>
 <wire x1="20.828" y1="27.432" x2="20.828" y2="28.194" width="0.1524" layer="1"/>
 <wire x1="20.828" y1="28.194" x2="20.193" y2="28.829" width="0.1524" layer="1"/>
-<wire x1="21.9995" y1="26.962" x2="21.298" y2="26.962" width="0.1524" layer="1"/>
-<wire x1="21.298" y1="26.962" x2="20.828" y2="27.432" width="0.1524" layer="1"/>
+<wire x1="21.9995" y1="26.835" x2="21.425" y2="26.835" width="0.1524" layer="1"/>
+<wire x1="21.425" y1="26.835" x2="20.828" y2="27.432" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$165">
 <contactref element="U2" pad="19"/>
@@ -12095,6 +12103,12 @@ einem neuen Namen ab.</description>
 <wire x1="51.435" y1="45.72" x2="51.435" y2="44.93" width="0.1778" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="5,15,214020c83ac83b40"/>
+<approved hash="5,15,c23dc04048404a3d"/>
+<approved hash="5,15,229821b83bb83898"/>
+<approved hash="5,15,fe39fc4052405039"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
