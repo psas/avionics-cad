@@ -222,6 +222,7 @@ ECE Capstone Project</text>
 <text x="39.878" y="25.908" size="1.27" layer="21" ratio="18" rot="R90">B0</text>
 <text x="42.545" y="26.035" size="1.27" layer="21" ratio="18" rot="R90">B1</text>
 <text x="30.353" y="48.133" size="1.27" layer="21" ratio="18">JTAG</text>
+<text x="56.515" y="18.161" size="1.27" layer="21" ratio="18">v1.0 2013/06/17</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -12103,12 +12104,6 @@ einem neuen Namen ab.</description>
 <wire x1="51.435" y1="45.72" x2="51.435" y2="44.93" width="0.1778" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,15,214020c83ac83b40"/>
-<approved hash="5,15,c23dc04048404a3d"/>
-<approved hash="5,15,229821b83bb83898"/>
-<approved hash="5,15,fe39fc4052405039"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
