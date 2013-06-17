@@ -2,7 +2,7 @@ Component Selection Guide
 ---
 This page aims to explain the reasoning behind the selection of each component used in the power and communications hub designed by the 2012-13 capstone team. The intention is to provide insight into the design decisions made however there is no intention to provide the reader with a comprehensive design example that is suitable for any purpose other than exact replication. The target audience is expected to have design experience with microelectronics power distribution and modern physical layer communications designs utilizing matched impedance differential signaling.
 
-U1, MCU, ST Microelectronics STM32F407V
+U1, MCU, ST Microelectronics STM32F407V100
 ---
 For this project the MCU chosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of development tools. Given that PSAS is a cost conscious group that has ample expertise to draw from, the higher quality documentation offered by Atmel did not justify the added expense. Several Olimex STM32-E407 development boards where acquired and used by the PSAS software team to concurrently develop firmware for the RocketNet-Hub.
 
