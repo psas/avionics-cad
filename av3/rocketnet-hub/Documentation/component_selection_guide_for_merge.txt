@@ -38,7 +38,7 @@ For this project the MCU chosen was to not only to be used for our capstone desi
 
     The MCU is connected to the Ethernet switch, discussed later, by two interfaces. The MII interface is the connection between the MAC and switch. The other interface is a serial interface and will be discussed below. The MII interface is an industry standard interface for connecting a MAC to a PHY. It is implemented per the standard with the exception that neither TX\_ERR or RX\_ERR are present. More information on this interface can be found via Goolge.com.
 
- * I2C (J11,R15,R17)
+ * I2C (J11, R15, R17)
 
     The I2C, or more properly TWI, interface is used to interface with the battery charger IC and fuel gauge IC. The MCU is the bus master. This is an open collector interface and thus requires the presence of a pull up resistor on each signal line. 2.2kOhm 0403 resistors were selected from past experience--no calculations or simulations were performed. If the bus fails at desired baud, please scope the bus at J? and look for excessive skew. If this is found, decrease the value of the pull ups. If reduction in power consumption is desired, these may be increased until such point as the bus begins to fail at max baud.
 
@@ -72,7 +72,7 @@ The MCU is responsible for sending the final go signal to the launch tower signi
 
 * System control
 
- * Ethernet Switch (C12,D1,Q8,Q9,R43,R65)
+ * Ethernet Switch (C12,D1, Q8, Q9, R43, R65)
 
     The MCU is responsible for enabling the Ethernet switch. This is done by asserting ETH\_EN. This will enable the switch's 2.1V LDO and access to 3.3V IO supply. Once both supplies stabilize, the MCU must boot strap the Ethernet switch using the SPI3 serial interface. This is a hack. The switch is designed to function as an I2C slave on a dedicated bus but the MCU only has a single I2C interface and that bus has other devices on it. The proper solution would have been to use a bi-directional tri-statable logic buffer to isolate the Ethernet switch from the rest of the I2C bus. However, the decision came down from PSAS to use the SPI interface. Implementation is left to the firmware team. The Ethernet switch can be reset without powering down its supplies by clearing ETH\_RST\_N. Note: this signal should not be tri-stated and driven to a known state prior to asserting ETH\_EN. Please note that C12 and R43 create a delay in ramping the 3.3V supply to allow the 2.1V core supply to come up first. D1 ensures that this supply is shut off quickly.
 
@@ -91,7 +91,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 * LED[8][3]:1b'0 (AutoMDIX)
 * Supporting Components
 
- * Voltage Supplies (C12,D1,Q8,Q9,R43,R65,U6)
+ * Voltage Supplies (C12,D1, Q8, Q9, R43, R65,U6)
 
     The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design decisions related to this LDO. There IO logic requires 3.3V to match the digital IO on the MCU. The 3.3V must ramp after the 2.1V supply. To accomplish this, a RC delay circuit and PMOS power switch was implemented. The diode (D1) allows for this to be shut down without waiting for the RC delay circuit to discharge.
 
@@ -99,7 +99,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 
     The supply pins of the KS8999 will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. Bulk capacitors with a nominal value of  10uF should be placed near the KS8999's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. 
 
- * Pull up/down Resistors (R2,R3,R4,R6,R7,R8,R10,R13,R14,R72,R116,R117,R118,R119,R120)
+ * Pull up/down Resistors (R2, R3, R4, R6, R7, R8, R10, R13, R14, R72, R116, R117, R118, R119, R120)
 
 Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors. The interested reader should consult the datasheet for further information on the effect of these pull downs. R72 is present as the MCU MAC's interface does not provision a TX\_ERR signal and thus it is tied low on the PHY side.
 
@@ -107,11 +107,11 @@ Several of the pins on the KS8999 must be pulled to either Vdd or GND to place t
 
     The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
 
- * Signal LEDs (LED1,LED5,LED9,LED13,LED17,LED21,LED25,LED29,LED33)
+ * Signal LEDs (LED1, LED5, LED9, LED13, LED17, LED21, LED25, LED29, LED33)
 
     Each port provisions up to four signaling LEDs to denote the current state of the port. 0402 LEDs will be used with a nominal ID of 1mA. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow/amber seems the most reasonable choice for the Ethernet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
 
- * Magnetics (Chokes: L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15,L16,L17 and transformers: T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18)
+ * Magnetics (Chokes: L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17 and transformers: T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18)
 
 The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this purpose build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This proved fruitless and transformers were selected instead. The exact reason for failing to successfully couple with capacitors is unknown and further research for future revisions of the board should be considered.
 
@@ -156,7 +156,7 @@ U14,U15, Analog Multiplexers, MAX4734
 ---
 The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor the output current of all the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for its small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout. The select bits for the muxes are shared meaning that at any given time the MCU is monitoring the charge current and two node currents, the only exception is IMON\_Ax = 2'b00 when only Node 1 is monitored as there is no Node 5. To simplify the firmware team's job slightly, a pull down was added to N1 of U15 to ensure that the value reported for the non-existent Node 5 is always in a known state.
 
-* Bypass capacitors (C10,C11):
+* Bypass capacitors (C10, C11):
  * Standard IC bypass caps, 100nF
  * Pull-down Resistors (R18):
  * To account for the odd number of channels being multiplexed by the two max4734's one input of U15 is pulled low to provide a known value for that channel.
