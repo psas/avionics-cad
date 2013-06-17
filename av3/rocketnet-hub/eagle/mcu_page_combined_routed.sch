@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
@@ -13080,7 +13080,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="R49" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="TBD"/>
-<part name="LED39" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED39" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
@@ -13251,61 +13251,61 @@ by exp-project-lbr.ulp</description>
 <part name="C106" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="10p"/>
 <part name="C107" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="10p"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
-<part name="LED2" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R19" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="R21" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R22" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V20" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED3" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R23" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED4" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R26" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="R27" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R29" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED6" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED6" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R30" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED7" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED7" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R33" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="R34" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R35" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED8" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED8" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R36" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED10" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED10" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R39" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V22" library="supply1" deviceset="+3V3" device=""/>
 <part name="R40" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R41" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED11" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED11" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R53" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED12" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED12" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R57" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V25" library="supply1" deviceset="+3V3" device=""/>
 <part name="R59" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R61" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V26" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED14" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED14" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R63" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V27" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED15" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED15" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R107" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V28" library="supply1" deviceset="+3V3" device=""/>
 <part name="R108" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="R109" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="+3V29" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED16" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED16" library="led" deviceset="LED" device="CHIPLED_0603" value="GREEN"/>
 <part name="R110" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V30" library="supply1" deviceset="+3V3" device=""/>
-<part name="LED18" library="led" deviceset="LED" device="SML0603" value="RED"/>
+<part name="LED18" library="led" deviceset="LED" device="CHIPLED_0603" value="RED"/>
 <part name="R112" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="750"/>
 <part name="+3V31" library="supply1" deviceset="+3V3" device=""/>
 <part name="R113" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
@@ -14687,6 +14687,7 @@ Supply Enable</text>
 <text x="495.3" y="347.98" size="1.778" layer="97">Node 6</text>
 <text x="497.84" y="208.28" size="1.778" layer="97">Node 7</text>
 <text x="497.84" y="73.66" size="1.778" layer="97">Node 8</text>
+<text x="457.2" y="419.1" size="1.778" layer="97">UMBILICAL CABLE - SEE OFF-ROCKET CONNECTORS</text>
 </plain>
 <instances>
 <instance part="GND18" gate="1" x="182.88" y="370.84"/>
@@ -19107,7 +19108,7 @@ Supply Enable</text>
 <pinref part="R13" gate="R" pin="1"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="LED1-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[1][3]"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -19170,7 +19171,7 @@ Supply Enable</text>
 <pinref part="TP6" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="LED2-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[2][3]"/>
 <pinref part="LED5" gate="G$1" pin="C"/>
@@ -19373,42 +19374,42 @@ Supply Enable</text>
 <pinref part="TP27" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$100" class="0">
+<net name="LED3-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[3][3]"/>
 <pinref part="LED9" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="180.34" x2="193.04" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$101" class="0">
+<net name="LED4-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[4][3]"/>
 <pinref part="LED13" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="157.48" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$102" class="0">
+<net name="LED5-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[5][3]"/>
 <pinref part="LED17" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$103" class="0">
+<net name="LED6-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[6][3]"/>
 <pinref part="LED21" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$104" class="0">
+<net name="LED7-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[7][3]"/>
 <pinref part="LED25" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="88.9" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$105" class="0">
+<net name="LED8-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[8][3]"/>
 <pinref part="LED29" gate="G$1" pin="C"/>
@@ -19419,7 +19420,7 @@ Supply Enable</text>
 <junction x="195.58" y="66.04"/>
 </segment>
 </net>
-<net name="N$106" class="0">
+<net name="LED9-3" class="0">
 <segment>
 <pinref part="U4" gate="U" pin="LED[9][3]"/>
 <pinref part="LED33" gate="G$1" pin="C"/>
