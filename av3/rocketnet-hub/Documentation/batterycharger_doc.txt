@@ -1,0 +1,15 @@
+Sheet 6: Battery Charger
+
+Q6, R132 and R133 provide Reverse Input Voltage Protection:
+These componenets give system and IC protection from reversed shore power (Vin) voltage. In normal operation, Q6 is turned off by negative Vgs. If the adapter voltage is reversed, Q6 Vgs is positive. As a result, Q6 turns on to short gate and source of Q2 so that Q2 is off. The Q2 body diode in reverse biased orientation blocks negative voltage from traversing into the system. However, CMSRC and ACDRV pins need R10 and R11 to limit the current due to the ESD diode of these pins when turned on. Q6 has a low Vgs threshold voltage and low Qgs gate charge so it turns on before Q2 turns on, we used the same part as Figure 1. Typical System Schematic with Two NMOS Selector in the bq24725 datasheet for Q6 and Q1 to ensure expected operation is obtained. R10 and R11 must have enough power rating for the power dissipation when the ESD diode is on, again these were selected based on the datasheet.
+
+R144 and R143 are selected based on the datasheet, the reason for these is for Negative Output (BAT) Voltage Protection, as noted in the datasheet:
+If the battery pack is reversely inserted into the charger output (BAT) during production or there is a hard short on the battery to ground, it will generate a negative output voltage on the SRP and SRN pins. Built in IC internal electrostatic-discharge (ESD) diodes from GND pin to SRP or SRN pins and two anti-parallel (AP) diodes between SRP and SRN pins can be forward biased and negative current can pass through the ESD diodes and AP diodes when output has negative voltage.
+These two resistors for SRP and SRN pins are inserted to limit the negative current level when output (BAT) has negative voltage. We used the suggested resistor values of  10Ohm (R144) for SRP pin and 7-8O (R143) for SRN pin.
+
+Inductor Selection (L1)
+We used the datasheet suggested value for the inductor, L1, 4.7uH. The bq24725 has three selectable fixed switching frequencies, the higher switching frequency allows the use of smaller inductor and capacitor values. The bq24725 has charge under current protection (UCP) by monitoring charging current sensing resistor (R134) cycle-by-cycle. Details on calculations for L1 and R134 are in the bq24725 datasheet, page 27. Re used the suggested value of 10mO for the charging current sensing resistor (R134).
+
+Input (C39 and C43) and Output (C119 and C120) Capacitors based on datasheet, with detailed calculations on page 27 of datasheet.
+
+Power MOSFETs Selection (Q2, Q3 and Q5) detailed calculations on page 28 of datasheet.
