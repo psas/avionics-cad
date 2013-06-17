@@ -72,7 +72,7 @@ The MCU is responsible for sending the final go signal to the launch tower signi
 
 * System control
 
- * Ethernet Switch (C12,D1, Q8, Q9, R43, R65)
+ * Ethernet Switch (C12, D1, Q8, Q9, R43, R65)
 
     The MCU is responsible for enabling the Ethernet switch. This is done by asserting ETH\_EN. This will enable the switch's 2.1V LDO and access to 3.3V IO supply. Once both supplies stabilize, the MCU must boot strap the Ethernet switch using the SPI3 serial interface. This is a hack. The switch is designed to function as an I2C slave on a dedicated bus but the MCU only has a single I2C interface and that bus has other devices on it. The proper solution would have been to use a bi-directional tri-statable logic buffer to isolate the Ethernet switch from the rest of the I2C bus. However, the decision came down from PSAS to use the SPI interface. Implementation is left to the firmware team. The Ethernet switch can be reset without powering down its supplies by clearing ETH\_RST\_N. Note: this signal should not be tri-stated and driven to a known state prior to asserting ETH\_EN. Please note that C12 and R43 create a delay in ramping the 3.3V supply to allow the 2.1V core supply to come up first. D1 ensures that this supply is shut off quickly.
 
@@ -91,7 +91,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 * LED[8][3]:1b'0 (AutoMDIX)
 * Supporting Components
 
- * Voltage Supplies (C12,D1, Q8, Q9, R43, R65,U6)
+ * Voltage Supplies (C12, D1, Q8, Q9, R43, R65,U6)
 
     The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design decisions related to this LDO. There IO logic requires 3.3V to match the digital IO on the MCU. The 3.3V must ramp after the 2.1V supply. To accomplish this, a RC delay circuit and PMOS power switch was implemented. The diode (D1) allows for this to be shut down without waiting for the RC delay circuit to discharge.
 
@@ -103,7 +103,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 
 Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors. The interested reader should consult the datasheet for further information on the effect of these pull downs. R72 is present as the MCU MAC's interface does not provision a TX\_ERR signal and thus it is tied low on the PHY side.
 
- * Reset circuitry (D2,D3)
+ * Reset circuitry (D2, D3)
 
     The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
 
