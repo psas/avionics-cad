@@ -6,7 +6,7 @@ U1, MCU, ST Microelectronics STM32F407V100
 ---
 For this project the MCU chosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of development tools. Given that PSAS is a cost conscious group that has ample expertise to draw from, the higher quality documentation offered by Atmel did not justify the added expense. Several Olimex STM32-E407 development boards where acquired and used by the PSAS software team to concurrently develop firmware for the RocketNet-Hub.
 
-* Support Components:
+* Support Components
 
  * Crystal (C106, C107, and X1 -- 8Y-25.000MEEQ-T)
 
@@ -119,80 +119,80 @@ U7, U8, U9, U10, U11, U12, U13, Node Power Switches, TPS2420
 ---
 Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Key settings for this chip are:
 
-* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71):
+* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71)
  
  Set by node--Set resistor on top side of IC
-* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127):
+* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127)
 
  Set by node--Set resistor on top side of IC
-* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101):
+* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101)
 
  Set by node--Set Capacitor on top side of IC
-* Reset Behavior:
+* Reset Behavior
 
  Latch reset condition and wait for MCU to reset switch
 
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
 
-* IMON Resistor (R49, R52, R54, R56, R58, R60, R62): TBD
-* Power Good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39): APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
-* Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18): APT1608EC (Red 0603 V\_f 2V I\_d 20mA)
-* LED Current Limiting Resistors (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112): 750 Ohm (1.6 mA - 1.73 mA)
+* IMON Resistor (R49, R52, R54, R56, R58, R60, R62) TBD
+* Power Good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+* Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18) APT1608EC (Red 0603 V\_f 2V I\_d 20mA)
+* LED Current Limiting Resistors (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112) 750 Ohm (1.6 mA - 1.73 mA)
 
 U5, U6, Power Supplies, LTM8023, MIC37101
 ---
 The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficiency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistors chosen came from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The external components for the LMT8023 were provided by the manufacturer datasheet. The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability.
 
-* LTM8023 Settings:
+* LTM8023 Settings
  * Vout: 3.3(V)
  * Osc. Freq.: 650KHz
  * Sync. Freq.: 650KHz -- set by MCU pll
- * R\_T (R74): 49.9KOhm
- * R\_ADJ (R73): 154KOhm
- * C\_in (C103): 2.2uF (0805)
- * C\_out (C104): 22uF (1206)
- * PGOOD LED (LED22): APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
- * LED Current Limiting Resistor (R128): 750 Ohm (1.6 mA)
+ * R\_T (R74) 49.9KOhm
+ * R\_ADJ (R73) 154KOhm
+ * C\_in (C103) 2.2uF (0805)
+ * C\_out (C104) 22uF (1206)
+ * PGOOD LED (LED22) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+ * LED Current Limiting Resistor (R128) 750 Ohm (1.6 mA)
  * EN: Tied to supply voltage, Always on
 
-* MIC37101-2.1YM Settings:
+* MIC37101-2.1YM Settings
  * EN: Weakly pulled to logic 0, controlled by MCU.ETH_EN
- * C\_in (C52): 47uF
- * C\_out (C84, C85): 4.7uF, 0.1uF
+ * C\_in (C52) 47uF
+ * C\_out (C84, C85) 4.7uF, 0.1uF
 
 U14, U15, Analog Multiplexers, MAX4734
 ---
 The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor the output current of all the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for its small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout. The select bits for the muxes are shared meaning that at any given time the MCU is monitoring the charge current and two node currents, the only exception is IMON\_Ax = 2'b00 when only Node 1 is monitored as there is no Node 5. To simplify the firmware team's job slightly, a pull down was added to N1 of U15 to ensure that the value reported for the non-existent Node 5 is always in a known state.
 
-* Bypass Capacitors (C10, C11):
+* Bypass Capacitors (C10, C11)
  * Standard IC bypass caps, 100nF
- * Pull-down Resistors (R18):
+ * Pull-down Resistors (R18)
  * To account for the odd number of channels being multiplexed by the two MAX4734's one input of U15 is pulled low to provide a known value for that channel.
 
 U2, Battery Charger, BQ24725
 ---
-The onboard battery charger had been selected by PSAS prior to the beginning of the capstone project and was presented to the capstone team as a black box solution. Integration of the dev board's circuit with minimal adjustment was requested. The interested reader is directed to the datasheet and dev board user's guide for more information on this sub system. Connections to the black box are I2C(<->), BAT\_IMON(->), external DC power(<-), Battery power(<-), and +18V(->). All internal signals are replicated per the dev board. Most components selected are per the dev board's BOM.
+The onboard battery charger had been selected by PSAS prior to the beginning of the capstone project and was presented to the capstone team as a black box solution. Integration of the dev board's circuit with minimal adjustment was requested. The interested reader is directed to the datasheet and dev board user's guide for more information on this subsystem. Connections to the black box are I2C(<->), BAT\_IMON(->), external DC power(<-), Battery power(<-), and +18V(->). All internal signals are replicated per the dev board. Most components selected are per the dev board's BOM.
 
-* In-Rush Limiter (R11, C60):
+* In-Rush Limiter (R11, C60)
 
  The two 3.9 Ohm 0.5W resistors from the evaluation board were replaced with a single 2 Ohm 1 W resistor. The 2512 size was selected because it was the smallest available component.
-* Transient Voltage Suppression (D5):
+* Transient Voltage Suppression (D5)
 
  A reverse biased TVS diode (SMAJ18CA) was added to protect against over-voltage. 20V voltage breakdown was chosen for the diode based on +18V Vin shore power.
 * Enable (EN) Circuitry
 
  Removed the optional enable/disable circuitry on VCC which causes board to be always-on when plugged into a power source.
-* Various Capacitors:
+* Various Capacitors
 
  Sizes determined by component availability of 40V caps:
 >10uF 1206; =2.2uF 0805; >1uF(<2.2uF) 0603; <1uF 0402
-* Reverse Input Voltage Protection (Q6, R132, R133):
+* Reverse Input Voltage Protection (Q6, R132, R133)
  
  These components provide system and IC protection from reversed shore power (Vin) voltage. In normal operation, Q6 is turned off by negative Vgs. If the adapter voltage is reversed, Q6 Vgs is positive. As a result, Q6 turns on to short gate and source of Q2 so that Q2 is off. The Q2 body diode in reverse biased orientation blocks negative voltage from traversing into the system. However, CMSRC and ACDRV pins need R10 and R11 to limit the current due to the ESD diode of these pins when turned on. Q6 has a low Vgs threshold voltage and low Qgs gate charge so it turns on before Q2 turns on. R10 and R11 must have enough power rating for the power dissipation when the ESD diode is on, again these were selected based on the datasheet.
-* Negative Output (BAT) Voltage Protection (R144, R143):
+* Negative Output (BAT) Voltage Protection (R144, R143)
 
  If the battery pack is inserted backwards into the charger output (BAT) during production or there is a hard short on the battery to ground, it will generate a negative output voltage on the SRP and SRN pins. Built in IC internal electrostatic-discharge (ESD) diodes from GND pin to SRP or SRN pins and two anti-parallel (AP) diodes between SRP and SRN pins can be forward biased and negative current can pass through the ESD diodes and AP diodes when output has negative voltage. These two resistors for SRP and SRN pins are inserted to limit the negative current level when output (BAT) has negative voltage. The recommended resistor values of 10 Ohm (R144) for SRP pin and 7.5 Ohm (R143) for SRN pin were used.
-* Inductor (L1):
+* Inductor (L1)
 
  The BQ24725 has three selectable fixed switching frequencies, the higher switching frequency allows the use of smaller inductor and capacitor values. The BQ24725 has charge under current protection (UCP) by monitoring charging current sensing resistor (R134) cycle-by-cycle.
 * Input (C39, C43) and Output (C119, C120) Capacitors
