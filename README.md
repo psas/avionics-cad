@@ -5,28 +5,13 @@ the main work of the [Avionics Team](http://psas.pdx.edu/avionics/).
 
 To get started you'll need EAGLE CAD version 6.2 or greater.
 
-## Contents
+## Directories:
 
-### av3:
-
-All files for the current rocket (2011 onwards)
-
-### eagle:
-
-CAM and script files and design rules for EAGLE CAD.
-
-### libraries:
-
-Eagle libraries for differnt parts and projects
-
-### lv1
-
-Historic boards and files for the [LV1 launch vehicle](http://psas.pdx.edu/Projects/#index2h3).
-
-### lv2
-
-Historic boards and files for 2005 [launch of LV2.3](http://psas.pdx.edu/news/2005-08-20/).
-
+ - `av3`: All files for the current rocket (2011 onwards)
+ - `eagle`: CAM and script files and design rules for EAGLE CAD
+ - `libraries`: Eagle libraries for differnt parts and projects
+ - `lv1`: Historic boards and files for the [LV1 launch vehicle](http://psas.pdx.edu/Projects/#index2h3)
+ - `lv2`: Historic boards and files for 2005 [launch of LV2.3](http://psas.pdx.edu/news/2005-08-20/)
 
 ## Naming Convention
 
