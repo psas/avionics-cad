@@ -101,7 +101,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 
  * Pull Up/Down Resistors (R2, R3, R4, R6, R7, R8, R10, R13, R14, R72, R116, R117, R118, R119, R120)
 
-Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors. The interested reader should consult the datasheet for further information on the effect of these pull downs. R72 is present as the MCU MAC's interface does not provision a TX\_ERR signal and thus it is tied low on the PHY side.
+    Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors. The interested reader should consult the datasheet for further information on the effect of these pull downs. R72 is present as the MCU MAC's interface does not provision a TX\_ERR signal and thus it is tied low on the PHY side. Additional resistors are used to set MIIS, MODESEL, and CFGMODE. These configurations are described in the datasheet.
 
  * Reset Circuitry (D2, D3)
 
@@ -111,23 +111,23 @@ Several of the pins on the KS8999 must be pulled to either Vdd or GND to place t
 
     Each port provisions up to four signaling LEDs to denote the current state of the port. 0402 LEDs will be used with a nominal ID of 1mA. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow/amber seems the most reasonable choice for the Ethernet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
 
- * Magnetics (Chokes: L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17 and transformers: T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18)
+ * Magnetics (Chokes: L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17 Transformers: T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18)
 
-The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this purpose build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This proved fruitless and transformers were selected instead. The exact reason for failing to successfully couple with capacitors is unknown and further research for future revisions of the board should be considered.
+    The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this, purpose-build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This proved fruitless and transformers were instead used. The exact reason for failing to successfully couple with capacitors is unknown and further research for future revisions of the board should be considered.
 
 U7, U8, U9, U10, U11, U12, U13, Node Power Switches, TPS2420
 ---
-Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Key settings for this chip are:
+Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Several characteristics are dependent on the node being powered and the values of the resistors and capacitors that set them are left to PSAS to determine. The datasheet lists the formulas used to calculate each. Key settings for this chip are:
 
 * Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71)
  
- Set by node--Set resistor on top side of IC
+ Set by node--Set resistor on top side of PCB
 * Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127)
 
- Set by node--Set resistor on top side of IC
+ Set by node--Set resistor on top side of PCB
 * Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101)
 
- Set by node--Set Capacitor on top side of IC
+ Set by node--Set Capacitor on top side of PCB
 * Reset Behavior
 
  Latch reset condition and wait for MCU to reset switch
@@ -156,7 +156,7 @@ The board is powered by a 4-cell LiPo battery pack. This works out to a nominal 
  * EN: Tied to supply voltage, Always on
 
 * MIC37101-2.1YM Settings
- * EN: Weakly pulled to logic 0, controlled by MCU.ETH_EN
+ * EN: Weakly pulled to logic 0, controlled by U1.ETH_EN
  * C\_in (C52) 47uF
  * C\_out (C84, C85) 4.7uF, 0.1uF
 
