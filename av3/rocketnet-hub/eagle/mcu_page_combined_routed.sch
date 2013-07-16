@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
@@ -13100,13 +13100,13 @@ by exp-project-lbr.ulp</description>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="C87" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="C88" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
+<part name="C87" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
+<part name="C88" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
 <part name="C89" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="C90" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="C91" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="C92" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
-<part name="C93" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
+<part name="C90" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
+<part name="C91" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
+<part name="C92" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
+<part name="C93" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
 <part name="U7" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U8" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
 <part name="U9" library="RNH_TPS2420" deviceset="TPS2420" device="QFN-16"/>
@@ -13172,7 +13172,7 @@ by exp-project-lbr.ulp</description>
 <part name="R73" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="154k"/>
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="R74" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="49.9k"/>
-<part name="C103" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
+<part name="C103" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u/40V"/>
 <part name="C104" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="2.2u"/>
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
 <part name="GND66" library="supply1" deviceset="GND" device=""/>
@@ -13564,7 +13564,7 @@ by exp-project-lbr.ulp</description>
 <part name="L16" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L17" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="GND100" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="Tova" deviceset="NTR4101P" device="" value="NTR401P"/>
+<part name="Q1" library="Tova" deviceset="NTR4101P" device="" value="NTR4101P"/>
 <part name="R147" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1k"/>
 <part name="+3V37" library="supply1" deviceset="+3V3" device=""/>
 <part name="R148" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1k"/>
@@ -13583,7 +13583,7 @@ by exp-project-lbr.ulp</description>
 <part name="+3V38" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND120" library="supply1" deviceset="GND" device=""/>
 <part name="TP38" library="testpad" deviceset="TP" device="TP06R"/>
-<part name="R168" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="100R"/>
+<part name="R168" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="100"/>
 <part name="J22" library="headers" deviceset="1.27MM_HDR_2X5" device="" value="Debug Header"/>
 <part name="NAME'2" library="supply1" deviceset="GNDA" device=""/>
 <part name="NAME'3" library="supply1" deviceset="GNDA" device=""/>
@@ -13627,12 +13627,12 @@ by exp-project-lbr.ulp</description>
 <part name="GND144" library="supply1" deviceset="GND" device=""/>
 <part name="GND145" library="supply1" deviceset="GND" device=""/>
 <part name="NODE_CONNECTIONS" library="frames" deviceset="FRAME_E_L" device="" value="Node Connections"/>
-<part name="R65" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10K"/>
+<part name="R65" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="10k"/>
 <part name="GND146" library="supply1" deviceset="GND" device=""/>
 <part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND147" library="supply1" deviceset="GND" device=""/>
 <part name="GND148" library="supply1" deviceset="GND" device=""/>
-<part name="Q10" library="zetex" deviceset="NMOSSOT23" device="" value="NDS335N"/>
+<part name="Q10" library="zetex" deviceset="NMOSSOT23" device="" value="PMV45EN"/>
 <part name="+3V41" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V42" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP39" library="testpad" deviceset="TP" device="TP06R"/>
@@ -14104,7 +14104,7 @@ Supply Enable</text>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB6"/>
-<label x="0" y="365.76" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="7.62" y="364.49" size="1.016" layer="95"/>
 <pinref part="R17" gate="R" pin="2"/>
 <wire x1="5.08" y1="363.22" x2="63.5" y2="363.22" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="365.76" x2="5.08" y2="363.22" width="0.1524" layer="91"/>
@@ -14116,7 +14116,7 @@ Supply Enable</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="PB7"/>
-<label x="5.08" y="358.14" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="7.62" y="359.41" size="1.016" layer="95"/>
 <pinref part="R15" gate="R" pin="2"/>
 <wire x1="12.7" y1="360.68" x2="63.5" y2="360.68" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="365.76" x2="12.7" y2="360.68" width="0.1524" layer="91"/>
