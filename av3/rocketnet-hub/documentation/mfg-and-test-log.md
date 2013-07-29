@@ -69,5 +69,8 @@ We told them to go ahead anyway, we'll stuff these parts by hand.
 
 Ordered boards! $1,460.30 for 4 boards (includes electrical test). That's $365 each.
 
+## 2013-06-11
+
+EAGLE board files handed off from 2012-2013 PSU ECE Capstone Team to PSAS.
 
 
