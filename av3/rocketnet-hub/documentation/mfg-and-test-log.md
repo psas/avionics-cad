@@ -28,8 +28,20 @@ Bring up of board #1.
 - ISSUE: all Link LEDs are slightly on (can't see in light, but in dark, you can see they're slightly on).
 - POSSIBLE ISSUE: LED33 is on despite the fact the microcontroller has no code (is this right?)
 
-- TODO: look for noise on +3V3 and +2V1 supplies
 
+Next bringup steps:
+
+- Look for noise on +3V3 and +2V1 supplies
+- Create rocketnet-to-ethernet cable with LED debugging cable
+- Create umbilical cord debugging cable
+- Create battery debugging cable
+- Create STM32 SWD cable
+- Bring up STM32 and poke at GPIO things (port power switches, rocketnet, etc.)
+- Load KSZ8999 registers from STM32
+- Get MII interface to work
+- Get battery charger to work
+- Firmware all the things
+ 
 ## 2013-07-25
 
 Received 4 stuffed boards and kit back from Screaming Circuits!
