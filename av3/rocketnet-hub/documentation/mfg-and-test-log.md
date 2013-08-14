@@ -1,5 +1,14 @@
 # Notes on the manufacturing, bringup, and test of the Rocketnet Hub Boards
 
+## 2013-08-14
+
+Further bringup of board #1: with K, programming the STM32.
+
+- Edited board.h to temporarily bring up the board safely (most things inputs that are pulled down).
+   - Changed all the GPIO, HSE to 25 MHz and PLLM to 25.
+   - Worked! Saw GPIO changing states at the right frequency.
+- ISSUE: The RGB LED we ordered was the wrong part number - pin layout of the LEDs is totally wrong. The PCB is designed for the LRTB G6TG-TU7+VV7+ST7-IB (DK 475-1319-1-ND) and what we specified in the BOM and thus stuffed is LTRBGFTM-ST7-1+VV9-29+Q5R (DK 475-2900-1-ND).
+ 
 ## 2013-07-28
 
 Bring up of board #1.
