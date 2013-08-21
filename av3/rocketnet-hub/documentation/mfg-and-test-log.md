@@ -1,5 +1,25 @@
 # Notes on the manufacturing, bringup, and test of the Rocketnet Hub Boards
 
+## 2013-08-20
+
+Further bringup of board #1 with K and Gavin
+
+- ISSUE: STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX.
+- FIXED: swapped out RGB LED for the right part number.
+- Running the blinky light program, the RNH draws 13 mA.
+- Put on the LED22 jumper, and it draws 14 mA.
+- Got UART working; K has access to the ChibiOS shell!
+- Holding ETH_RST_N low, we powered up the KSZ (brought ETH_EN high) and it draws 160 mA.
+- Brought up ETH_RST_N, and RNH draws 150 mA (It went DOWN?)
+- ISSUE: Some link LEDs are not working: LED9, LED5, LED1. LED5 and LED1 look like they're placed backwards; LED9 looks OK though.
+- Removed R10 on CFGMODE in hopes that the KSZ would just boot to the default settings (CFGMODE has a "LPU" input which sets to 1 which should be EEPROM/not used, we think)
+- Draws 130 mA now after flashing LEDs.
+- Turned on all of the TPS power chips, they all turned on and all LEDs OK.
+- Shorted out all node power with a 3 ohm resistor, all latched off and turned the red LEDs on.
+- Toggling the NODEn_EN_N pins then turned the TPS back on!!
+- RNH Ethernet to RNH Ethernet "just works"
+- ISSUE: RNH Ethernet to Switch or PC does not work.
+
 ## 2013-08-14
 
 Further bringup of board #1: with K, programming the STM32.
