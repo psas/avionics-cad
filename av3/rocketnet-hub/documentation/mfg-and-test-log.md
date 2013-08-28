@@ -1,5 +1,20 @@
 # Notes on the manufacturing, bringup, and test of the Rocketnet Hub Boards
 
+
+## 2013-08-27 
+
+Further Rocketnet-hub hacking
+
+- DOH! We need a 25 MHz clock into the KSZ.
+- PC9 is "microcontroller clock output 2" (MCO2), so we set it to output the HSE and no divisor and it just works.
+- It works! It works! We get link lights and packets and even made the firmware commit using the rocketnet-hub!
+- Next on the agenda: MII interface
+- PA8 is MCO1 and goes to the LTM8023 
+   - ISSUE: Rt on the LTM8023 is set to 650 KHz !!!11!! It was supposed to be ~ 2 MHz
+   - Becuase MCO1 can only be 25 / 5 = 5 MHz, that's way too fast for the LTM. Make PA8 be TMR1_CH1 and set that too... what?
+   - Crystal lock frequncy nneds to be looked at: initially, 650 + 20% KHz seems right be needs more investigation
+   - Luckily, not critical, so we can skip this.
+
 ## 2013-08-20
 
 Further bringup of board #1 with K and Gavin
@@ -19,6 +34,12 @@ Further bringup of board #1 with K and Gavin
 - Toggling the NODEn_EN_N pins then turned the TPS back on!!
 - RNH Ethernet to RNH Ethernet "just works"
 - ISSUE: RNH Ethernet to Switch or PC does not work.
+
+## 2013-08-15
+
+EEPROM research: It's not clear exactly what we need to do here. We initially thought we'd do the processor configuration, but there's no need to do anything besides bootstrapping, so we may not even need EEPROM control. Test: set SCL/SDA into floating inputs, and strap CFGMODE high and see if the KSZ just boots using its default settings. This will probably save us a lot of work, and means we don't have to be paranoid about loading the data on a KSZ reboot.
+
+Conclusion: with CFGMODE floating, and no EEPROM, the KSZ eval board just works. Thus, we should remove R10 from the board and not bother to config the KSZ until we absolutely have to.
 
 ## 2013-08-14
 
