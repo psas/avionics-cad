@@ -1,6 +1,14 @@
 # Notes on the manufacturing, bringup, and test of the Rocketnet Hub Boards
 
 
+## 2013-09-03
+
+- FIXED: LED9 was reversed.
+- FIXED: grounded TP39 (ETH_MII_RX_ER) using green mod wire.
+- Not an issue: All other link active LEDs seem OK
+- We tested Ports 1-4, 6-8: link LEDs turn on.
+- Built debug battery cable for providing power, and the first of the real rocketnet cables (rocketnet to RJ11).
+
 ## 2013-08-27 
 
 Further Rocketnet-hub hacking
