@@ -184,9 +184,8 @@ sufficient to drive the KS8999 with reasonable headroom to account for potential
  * C\_in (C52) 47uF
  * C\_out (C84, C85) 4.7uF, 0.1uF
 
- 
- 
-# BATTERY CHARGING BLOCK (Schematic sheet 6)
+ ----------------------------------------------------------------------------------------------------------------------
+## BATTERY CHARGING BLOCK (Schematic sheet 6)
 
 ### U2, Battery Charger, BQ24725
 
@@ -206,7 +205,7 @@ Removed the optional enable/disable circuitry on VCC which causes board to be al
 
 ### Various Capacitors
 
-Sizes determined by component availability of 40V caps: >10uF 1206; =2.2uF 0805; >1uF(<2.2uF) 0603; <1uF 0402
+Sizes determined by component availability of 40V caps: >10uF 1206; =2.2uF 0805; >1uF( < 2.2uF) 0603; < 1uF 0402
 
 ### Reverse Input Voltage Protection (Q6, R132, R133)
  
