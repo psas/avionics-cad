@@ -17,7 +17,7 @@ This board is the power and data distribution board for the AV3 avionics system.
    - Switches and monitors power at each of the rocketnet ports.
    - Powers and manages the KSZ8999 Ethernet switch.
 
-Here's a [[block diagram|documentation/block_diagram/blockdiagram.png]].
+Here's a [block diagram](documentation/block_diagram/blockdiagram.png).
 
 # CAD and CAM
 
