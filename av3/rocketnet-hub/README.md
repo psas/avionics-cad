@@ -21,15 +21,15 @@ Here's a [[block diagram|documentation/block_diagram/blockdiagram.png]].
 
 # CAD and CAM
 
-- All electronic CAD data is in the [[eagle]] directory
-- Design notes, Bill of Material (BOM), and functional requirements are in the [[documentation]] directory.
-- All CAM data is in the [[eagle/mcu_page_combined_routed.cam]] directory.
+- All electronic CAD data is in the [eagle](eagle) directory
+- Design notes, Bill of Material (BOM), and functional requirements are in the [documentation](documentation) directory.
+- All CAM data is in the [mcu_page_combined_routed.cam](eagle/mcu_page_combined_routed.cam) directory.
 
 # History
 
 This board has been a long time in the making. It was originally envisioned by Andrew as replacement to the original USB LPC-based "Avionics Power System (APS)". It was then handed off to a 2012-2013 PSU ECE Capstone team, consisting of Jesse Hartley, Jackson Pugh, and Michael Woodruff. The board was checked and CAM'd by Andrew, built by [Sunstone Circuits](http://www.sunstone.com/), and then graciously assembled for free by [Screaming Circuits](http://screamingcircuits.com/). K, Theo, David, and Andrew brought the board up.
 
-For full bring up information, including issues, fixes, modwires, and the like, see the [[manufacturing and test log|documentation/mfg-and-test-log]].
+For full bring up information, including issues, fixes, modwires, and the like, see the [manufacturing and test log](documentation/mfg-and-test-log.md).
 
 # For more information
 
