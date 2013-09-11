@@ -40,41 +40,41 @@ To support realtime debugging and logging, a serial UART channel was broken out 
 
 The MCU is connected to the Ethernet switch, discussed later, by two interfaces. The MII interface is the connection between the MAC and switch. The other interface is a serial interface and will be discussed below. The MII interface is an industry standard interface for connecting a MAC to a PHY. It is implemented per the standard with the exception that neither TX\_ERR or RX\_ERR are present. More information on this interface can be found via Goolge.com.
 
- * I2C (J11, R15, R17)
+- I2C (J11, R15, R17)
 
     The I2C, or more properly TWI, interface is used to interface with the battery charger IC and fuel gauge IC. The MCU is the bus master. This is an open collector interface and thus requires the presence of a pull up resistor on each signal line. 2.2kOhm 0403 resistors were selected from past experience--no calculations or simulations were performed. If the bus fails at desired baud, please scope the bus at J? and look for excessive skew. If this is found, decrease the value of the pull ups. If reduction in power consumption is desired, these may be increased until such point as the bus begins to fail at max baud.
 
- * Rocket\_RDY (Q1, U3)
+- Rocket\_RDY (Q1, U3)
 
 The MCU is responsible for sending the final go signal to the launch tower signifying that the rocket is ready to launch. This is accomplished through a non-inverted signal buffered by a simple N-channel MOSFET. The signal is pulled high on the gate side and low on the source side. It is isolated from the MCU by the FET and protected by a 100Ohm resistor and parallel TVS diodes. The Capstone team wished to implement this signal differentially due to the 9m long cable that it must be sent over, but the cable had already been assembled. Future revisions of this board and the Launch Tower interface should explore further the benefits of differential signaling.
 
 * Debugging
 
- * RBG LED (LED37)
+- RBG LED (LED37)
 
     A single RGB LED was added to facilitate simple state display of the MCU. The implementation of the state machine and assignment of colors is left to the firmware team.
 
- * Serial UART (J10)
+- Serial UART (J10)
 
     A serial UART port is provided to facilitate realtime logging via print statements. The implementation of this functionality is left to the firmware team. Using the boot mode selection headers it is also possible to load a boot image over the UART port without flashing the internal memory. This can be used during initial code bring up to reduce time wasted writing images to flash. 
 
- * JTAG (J22)
+- JTAG (J22)
 
     The STM32F407 supports JTAG programming and debugging. This is useful for stepping through code but is not appropriate for realtime debugging. This bus is intended only for initial programming and code bring-up.
 
- * BOOT SEL (J5, J12)
+- BOOT SEL (J5, J12)
 
     The STM32F407 supports multiple boot sources and this can be selected by pulling the BOOT\_SEL pins either high or low. In conjunction with the UART port it is possible to load a boot image directly from a host computer without flashing the internal memory. This can be useful for initial code bringup. Please see the datasheet for boot configurations.
 
 * System Monitoring
 
- * Current Draw (U14, U15)
+- Current Draw (U14, U15)
 
     The MCU is configured to monitor the current draw of each connected node and the battery. This is accomplished through the internal ADC and two external analog multiplexers. At any time the MCU is monitoring one node from NODE\_1 through NODE\_4 and one node from NODE\_6 through NODE\_8, the only exception to the previous statement is that when monitoring NODE\_1, it is the only node monitored as there is no NODE\_5. The node currents are measured on NODE1\_4\_IMON and NODE5\_8\_IMON. Selection of the nodes to monitor is accomplished by setting the select bits IMON\_A0 and IMON\_A1. The battery's charge current is also monitored. This is present on BAT\_IMON. Use of this data is left to the firmware team, though possible uses would be to shut down a node if it is drawing unusually high or low amounts of current or determining if there is enough current sourcing capacity to turn on a given sub-system.
 
 * System Control
 
- * Ethernet Switch (C12, D1, Q8, Q9, R43, R65)
+- Ethernet Switch (C12, D1, Q8, Q9, R43, R65)
 
     The MCU is responsible for enabling the Ethernet switch. This is done by asserting ETH\_EN. This will enable the switch's 2.1V LDO and access to 3.3V IO supply. Once both supplies stabilize, the MCU must boot strap the Ethernet switch using the SPI3 serial interface. This is a hack. The switch is designed to function as an I2C slave on a dedicated bus but the MCU only has a single I2C interface and that bus has other devices on it. The proper solution would have been to use a bi-directional tri-statable logic buffer to isolate the Ethernet switch from the rest of the I2C bus. However, the decision came down from PSAS to use the SPI interface. Implementation is left to the firmware team. The Ethernet switch can be reset without powering down its supplies by clearing ETH\_RST\_N. Note: this signal should not be tri-stated and driven to a known state prior to asserting ETH\_EN. Please note that C12 and R43 create a delay in ramping the 3.3V supply to allow the 2.1V core supply to come up first. D1 ensures 
 that this supply is shut off quickly.
@@ -96,27 +96,27 @@ The design requirements dictated that the switch chosen must have at least 7 por
 * LED[8][3]:1b'0 (AutoMDIX)
 * Supporting Components
 
- * Voltage Supplies (C12, D1, Q8, Q9, R43, R65, U6)
+- Voltage Supplies (C12, D1, Q8, Q9, R43, R65, U6)
 
     The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design decisions related to this LDO. There IO logic requires 3.3V to match the digital IO on the MCU. The 3.3V must ramp after the 2.1V supply. To accomplish this, a RC delay circuit and PMOS power switch was implemented. The diode (D1) allows for this to be shut down without waiting for the RC delay circuit to discharge.
 
- * Bypass Caps
+- Bypass Caps
 
     The supply pins of the KS8999 will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. Bulk capacitors with a nominal value of  10uF should be placed near the KS8999's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. 
 
- * Pull Up/Down Resistors (R2, R3, R4, R6, R7, R8, R10, R13, R14, R72, R116, R117, R118, R119, R120)
+- Pull Up/Down Resistors (R2, R3, R4, R6, R7, R8, R10, R13, R14, R72, R116, R117, R118, R119, R120)
 
     Several of the pins on the KS8999 must be pulled to either Vdd or GND to place the IC in normal operating mode. This is accomplished with 0402 0 Ohm resistors. The interested reader should consult the datasheet for further information on the effect of these pull downs. R72 is present as the MCU MAC's interface does not provision a TX\_ERR signal and thus it is tied low on the PHY side. Additional resistors are used to set MIIS, MODESEL, and CFGMODE. These configurations are described in the datasheet.
 
- * Reset Circuitry (D2, D3)
+- Reset Circuitry (D2, D3)
 
     The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
 
- * Signal LEDs (LED1, LED5, LED9, LED13, LED17, LED21, LED25, LED29, LED33)
+- Signal LEDs (LED1, LED5, LED9, LED13, LED17, LED21, LED25, LED29, LED33)
 
     Each port provisions up to four signaling LEDs to denote the current state of the port. 0402 LEDs will be used with a nominal ID of 1mA. As each node will have two power indicators, green for power good and red to indicate a fault condition, yellow/amber seems the most reasonable choice for the Ethernet status indicators. PSAS determined that only one status LED per port needed to be placed. The part number selected for this component is VLMY1500-GS08 from Vishay. Forward voltage is 2V.
 
- * Magnetics (Chokes: L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17 Transformers: T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18)
+- Magnetics (Chokes: L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16, L17 Transformers: T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18)
 
     The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this, purpose-build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This proved fruitless and transformers were instead used. The exact reason for failing to successfully couple with capacitors is unknown and further research for future revisions of the board should be considered.
 
@@ -154,9 +154,7 @@ The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor th
 - Pull-down Resistors (R18)
 - To account for the odd number of channels being multiplexed by the two MAX4734's one input of U15 is pulled low to provide a known value for that channel.
 
-
 -----------------------------------------------------------------------------------------------------------------------
-
 # POWER SUPPLY BLOCK (Schematic sheet 3)
 
 
@@ -165,26 +163,26 @@ The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor th
 The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficiency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is 
 sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistors chosen came from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The external components for the LMT8023 were provided by the manufacturer datasheet. The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability.
 
-* LTM8023 Settings
- * Vout: 3.3(V)
- * Osc. Freq.: 650KHz
- * Sync. Freq.: 650KHz -- set by MCU pll
- * R\_T (R74) 49.9KOhm
- * R\_ADJ (R73) 154KOhm
- * C\_in (C103) 2.2uF (0805)
- * C\_out (C104) 22uF (1206)
- * PGOOD LED (LED22) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
- * LED Current Limiting Resistor (R128) 750 Ohm (1.6 mA)
- * EN: Tied to supply voltage, Always on
+- Vout: 3.3(V)
+- Osc. Freq.: 650KHz
+- Sync. Freq.: 650KHz -- set by MCU pll
+- R\_T (R74) 49.9KOhm
+- R\_ADJ (R73) 154KOhm
+- C\_in (C103) 2.2uF (0805)
+- C\_out (C104) 22uF (1206)
+- PGOOD LED (LED22) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+- LED Current Limiting Resistor (R128) 750 Ohm (1.6 mA)
+- EN: Tied to supply voltage, Always on
 
-### U6, MIC37101 (1A Low-Voltage μCap LDO)
+### U6, MIC37101-2.1YM (1A Low-Voltage μCap LDO)
 
-* MIC37101-2.1YM Settings
- * EN: Weakly pulled to logic 0, controlled by U1.ETH_EN
- * C\_in (C52) 47uF
- * C\_out (C84, C85) 4.7uF, 0.1uF
+- EN: Weakly pulled to logic 0, controlled by U1.ETH_EN
+- C\_in (C52) 47uF
+- C\_out (C84, C85) 4.7uF, 0.1uF
 
- ----------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------------
 ## BATTERY CHARGING BLOCK (Schematic sheet 6)
 
 ### U2, Battery Charger, BQ24725
@@ -205,7 +203,7 @@ Removed the optional enable/disable circuitry on VCC which causes board to be al
 
 ### Various Capacitors
 
-Sizes determined by component availability of 40V caps: >10uF 1206; =2.2uF 0805; >1uF( < 2.2uF) 0603; < 1uF 0402
+Sizes determined by component availability of 40V caps: &gt;10uF = 1206 / &gt;2.2uF 0805 / &gt; 1uF = 0603 / &lt;1uF = 0402
 
 ### Reverse Input Voltage Protection (Q6, R132, R133)
  
@@ -226,5 +224,4 @@ Input (C39 and C43) and Output (C119 and C120) Capacitors based on datasheet, wi
 ### Power MOSFETs (Q2, Q3, Q5)
 
 Power MOSFETs Selection (Q2, Q3 and Q5) detailed calculations on page 28 of datasheet.
-
 
