@@ -1,42 +1,44 @@
-Component Selection Guide
----
-This page aims to explain the reasoning behind the selection of each component used in the power and communications hub designed by the 2012-13 capstone team. The intention is to provide insight into the design decisions made however there is no intention to provide the reader with a comprehensive design example that is suitable for any purpose other than exact replication. The target audience is expected to have design experience with microelectronics power distribution and modern physical layer communications designs utilizing matched impedance differential signaling.
+# Rocketnet Hub Component Selection Guide
 
-U1, MCU, ST Microelectronics STM32F407V100
----
-For this project the MCU chosen was to not only to be used for our capstone design but also migrated to replace the MCU used on the Generic Front Ends (GFEs). Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of development tools. Given that PSAS is a cost conscious group that has ample expertise to draw from, the higher quality documentation offered by Atmel did not justify the added expense. Several Olimex STM32-E407 development boards where acquired and used by the PSAS software team to concurrently develop firmware for the RocketNet-Hub.
+This document aims to explain the component selection for the "RocketNet Hub" (RNH) power and communications hub designed by the 2012-13 PSU ECE capstone team. The intention is to provide insight into the design decisions made where it might not be obvious ; there is no intention to provide the reader with a comprehensive design example that is suitable for any purpose other than exact replication. The target audience is expected to have design experience with microelectronics power distribution, modern physical layer communications designs, and understand matched impedance differential signaling.
 
-* Support Components
+Also, to fully understand these design decisions, see the requirements and specifications for this project here: <http://psas.pdx.edu/avionics/capstone2012/>
 
- * Crystal (C106, C107, and X1 -- 8Y-25.000MEEQ-T)
+## U1, MCU, ST Microelectronics STM32F407V100
 
-    The MCU has an internal oscillator circuit and can run without an external crystal. However, for Ethernet functionality the MII interface must operate at 25MHz +/- 50ppm. This is beyond the capabilities of the internal oscillator. Thus an external crystal must be used. The value that makes the most sense to the design team is 25MHz. By using this value we can avoid mucking around with the PLL resources of the MCU and still provide the required MII interface clock. Additionally, the MCU has two clock outputs and we can use one of these to buffer the crystal and use this same crystal to also drive the KS8999 Ethernet switch. The part selected is the 8Y-25.000MEEQ-T from TXC Corp. This crystal has a load capacitance rating of 10pF and a +/-10ppm frequency stability/tolerance. The load capacitors should be selected with 1% or less tolerance and C0G temp. coefficient or better.
+For this project the MCU chosen was to not only to be used for our capstone design but also slated to replace the LPC2468 MCU used on the previous version Generic Front End (node4 GFE) boards. Thus despite a push from the capstone team to use an Atmel AV32 or Atmel ARM MCU it was decided by PSAS that an ST Micro STM32F407 MCU would be used. This microcontroller does offer some cost advantages over Atmel's offerings both in per unit cost and the cost of development tools. Given that PSAS is a cost conscious group that has ample expertise to draw from, the higher quality documentation offered by Atmel did not justify the added expense. Several Olimex STM32-E407 development boards where acquired and used by the PSAS software team to concurrently develop firmware for the RNH.
 
- * Bypass Caps 
+### Support Components
 
-    The supply pins of the MCU will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. A bulk capacitor with a nominal value of between 10 and 22 uF should be placed near the MCU's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. The two crystal pins also require capacitors. For these two C0G ceramic 0402 capacitors should be used. The value should be 10pF.
+**Crystal (C106, C107, and X1 -- 8Y-25.000MEEQ-T)**
 
- * Analog Supply Filtering (E5)
+The MCU has an internal oscillator circuit and can run without an external crystal. However, for Ethernet functionality the MII interface must operate at 25MHz +/- 50ppm. This is beyond the capabilities of the internal oscillator. Thus an external crystal must be used. The value that makes the most sense to the design team is 25MHz. By using this value we can avoid mucking around with the PLL resources of the MCU and still provide the required MII interface clock. Additionally, the MCU has two clock outputs and we can use one of these to buffer the crystal and use this same crystal to also drive the KS8999 Ethernet switch. The part selected is the 8Y-25.000MEEQ-T from TXC Corp. This crystal has a load capacitance rating of 10pF and a +/-10ppm frequency stability/tolerance. The load capacitors should be selected with 1% or less tolerance and C0G temp. coefficient or better.
 
-    The Analog supply pins were isolated with an 0603 ferrite bead to block digital switching noise. As the only analog resource used in the MCU was the ADC to monitor the current draws of both the battery and each node, this was likely an overly conservative addition to the board. During testing it is recommended that the ferrite bead be replaced with a 0 Ohm resistor. This will allow for a reduced BOM for future revisions of the board should it prove functional without this filter.
+**Bypass Caps**
 
-* Interfaces
+The supply pins of the MCU will each be provisioned one 0.1uF ceramic cap. X5R or X7R 0402 ceramic capacitors should be used. A bulk capacitor with a nominal value of between 10 and 22 uF should be placed near the MCU's 0.1uF bypass caps. The bulk capacitance value is not critical so any temp. coef. 0603 ceramic cap will work. The two crystal pins also require capacitors. For these two C0G ceramic 0402 capacitors should be used. The value should be 10pF.
 
- * Reset Logic
+**Analog Supply Filtering (E5)**
 
-    The MCU has a reset signal that needs to be weakly pulled high during normal operation. This is accomplished by a 10kOhm resistor. The value is chosen to reduce power consumption when the line is pulled low. (Though given the length of time that this signal is ever likely to be held low it is a really rather pointless consideration. Any value from 100 to 100k could be used.) The MCU has internal power on reset and brownout detection circuitry and thus no external reset logic was added to ensure proper response to these conditions.
+The Analog supply pins were isolated with an 0603 ferrite bead to block digital switching noise. As the only analog resource used in the MCU was the ADC to monitor the current draws of both the battery and each node, this was likely an overly conservative addition to the board. During testing it is recommended that the ferrite bead be replaced with a 0 Ohm resistor. This will allow for a reduced BOM for future revisions of the board should it prove functional without this filter.
 
- * JTAG (J22)
+### Interfaces
 
-    The MCU supports both programming and debugging through the ARM standard JTAG interface. This bus is broken out to a 2x5 50mil header. Signals used are the TMS, TCK, TDO, TDI, and MCU reset. For more information on these signals or the JTAG implementation used in the STM32F407 please see google.com
+**Reset Logic**
 
- * Serial UART (J10)
+The MCU has a reset signal that needs to be weakly pulled high during normal operation. This is accomplished by a 10kOhm resistor. The value is chosen to reduce power consumption when the line is pulled low. (Though given the length of time that this signal is ever likely to be held low it is a really rather pointless consideration. Any value from 100 to 100k could be used.) The MCU has internal power on reset and brownout detection circuitry and thus no external reset logic was added to ensure proper response to these conditions.
 
-    To support realtime debugging and logging, a serial UART channel was broken out to a 1x4 50mil header. Signals preset are TXD and RXD, no flow control signals are present. This is a 3.3V interface with no protection. Care should be used to ensure that the USB to UART adapter used is configured for 3.3V or damage will likely result to the MCU, adapter, or both.
+*JTAG (J22)*
 
- * MII
+The MCU supports both programming and debugging through the ARM standard JTAG interface. This bus is broken out to a 2x5 50mil header. Signals used are the TMS, TCK, TDO, TDI, and MCU reset. For more information on these signals or the JTAG implementation used in the STM32F407 please see google.com
 
-    The MCU is connected to the Ethernet switch, discussed later, by two interfaces. The MII interface is the connection between the MAC and switch. The other interface is a serial interface and will be discussed below. The MII interface is an industry standard interface for connecting a MAC to a PHY. It is implemented per the standard with the exception that neither TX\_ERR or RX\_ERR are present. More information on this interface can be found via Goolge.com.
+*Serial UART (J10)*
+
+To support realtime debugging and logging, a serial UART channel was broken out to a 1x4 50mil header. Signals preset are TXD and RXD, no flow control signals are present. This is a 3.3V interface with no protection. Care should be used to ensure that the USB to UART adapter used is configured for 3.3V or damage will likely result to the MCU, adapter, or both.
+
+*MII*
+
+The MCU is connected to the Ethernet switch, discussed later, by two interfaces. The MII interface is the connection between the MAC and switch. The other interface is a serial interface and will be discussed below. The MII interface is an industry standard interface for connecting a MAC to a PHY. It is implemented per the standard with the exception that neither TX\_ERR or RX\_ERR are present. More information on this interface can be found via Goolge.com.
 
  * I2C (J11, R15, R17)
 
@@ -78,12 +80,14 @@ The MCU is responsible for sending the final go signal to the launch tower signi
 that this supply is shut off quickly.
 
 
- * Node Power
+**Node Power**
 
-    Each node can be turned on or off by the MCU. This is accomplished by clearing or setting (respectively) the NODEx\_!EN signal. In the case that a node draws more current than it is intended to and triggers the over-current protection system, the NODEx\_!FLT signal will be asserted. It is left to the firmware team to determine proper response to this signal.
+Each node can be turned on or off by the MCU. This is accomplished by clearing or setting (respectively) the NODEx\_!EN signal. In the case that a node draws more current than it is intended to and triggers the over-current protection system, the NODEx\_!FLT signal will be asserted. It is left to the firmware team to determine proper response to this signal.
 
-U4, Ethernet Switch, Micrel KSZ8999
----
+-----------------------------------------------------------------------------------------------------------------------
+
+## U4, Ethernet Switch, Micrel KSZ8999
+
 The design requirements dictated that the switch chosen must have at least 7 ports. Furthermore, we were restricted from using any Broadcom SoC due to the company's exclusive access model. This left us with only Micrel's offerings to work with. The KS8999 had the added benefit of an MII interface to the MCU which allowed the design to avoid adding any discrete PHY IC's. It also met the design requirements by offering 8 ports with integrated PHYs and one MII digital interface. The Micrel KS8999 development board was acquired to test potential configurations so that these settings could be set on the first run of the PCB. The settings used are:
 
 * MIIS: 2b'X1 (reverse MII mode)
@@ -116,43 +120,42 @@ The design requirements dictated that the switch chosen must have at least 7 por
 
     The physical layer of the Ethernet specification (for copper) requires that the PHY's on either side of the connection be AC coupled to each other. To accomplish this, purpose-build magnetic transformers from Pulse were selected by PSAS and tested on the dev board. Additionally, common-mode chokes were also added to improve signal integrity. The transformers are quite large components and much effort was put into attempting to use capacitors to AC couple the connection and save space. This proved fruitless and transformers were instead used. The exact reason for failing to successfully couple with capacitors is unknown and further research for future revisions of the board should be considered.
 
-### U7, U8, U9, U10, U11, U12, U13, Node Power Switches, TPS2420
 
-Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Several characteristics are dependent on the node being powered and the values of the resistors and capacitors that set them are left to PSAS to 
-determine. The datasheet lists the formulas used to calculate each. Key settings for this chip are:
+-----------------------------------------------------------------------------------------------------------------------
 
-* Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71)
- 
- Set by node--Set resistor on top side of PCB
-* Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127)
+## Node Power Switches
 
- Set by node--Set resistor on top side of PCB
-* Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101)
+### TPS2420: 3-V to 20-V INTEGRATED FET HOT SWAP CONTROLLER (U7, U8, U9, U10, U11, U12, U13)
 
- Set by node--Set Capacitor on top side of PCB
-* Reset Behavior
+Each of the 7 nodes to be connected to this distribution board was to have its own power switch controlled by the MCU. After much debate the TPS2420 from TI was selected. This IC offered the design team many benefits though it also provided unnecessary functionality. Our main requirements for the node power switch were that it provides a high level of integration with no external components except small capacitors and resistors. An integrated FET was a must. Over current protection was also a must. The TPS2420 was selected by PSAS from TI's offering of hotswap power switches by PSAS. The justification was that it also included a soft current limit that could be exceeded for a limited time and the ability to externally set its reset behavior. The package size was also of utmost consideration. The TPS2420 comes in a standard QFN-16 with a DAP to dissipate heat. Several characteristics are dependent on the node being powered and the values of the resistors and capacitors that set them are left to PSAS to determine. The datasheet lists the formulas used to calculate each. Key settings for this chip are:
 
- Latch reset condition and wait for MCU to reset switch
+- Hard Current Limit (IMAX) (R51, R66, R67, R68, R69, R70, R71)
+   - On top side of PCB near node connector for ease of change.
+- Soft Current Limit (IFLT) (R121, R122, R123, R124, R125, R126, R127)
+   - On top side of PCB near node connector for ease of change.
+- Soft Limit Timer (CT) (C95, C96, C97, C98, C99, C100, C101)
+   - On top side of PCB near node connector for ease of change.
+- Reset Behavior: latch reset condition and wait for MCU to reset switch
 
 Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
 
-* IMON Resistor (R49, R52, R54, R56, R58, R60, R62) TBD
-* Power Good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
-* Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18) APT1608EC (Red 0603 V\_f 2V I\_d 20mA)
-* LED Current Limiting Resistors (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112) 750 Ohm (1.6 mA - 1.73 mA)
+- IMON Resistor (R49, R52, R54, R56, R58, R60, R62) TBD
+- Power Good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+- Fault Cond. LED (LED2, LED4, LED7, LED10, LED12, LED15, LED18) APT1608EC (Red 0603 V\_f 2V I\_d 20mA)
+- LED Current Limiting Resistors (R19, R23, R26, R30, R33, R36, R39, R50, R53, R57, R63, R107, R110, R112) 750 Ohm (1.6 mA - 1.73 mA)
 
- 
-### U14, U15, Analog Multiplexers, MAX4734
+
+### MAX4734: 0.8Ω, Low-Voltage, 4-Channel Analog Multiplexer (U14, U15)
 
 The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor the output current of all the nodes and the battery charger. The solution to this limitation was to either move to a larger package of the STM32F407 or add one or more analog muxes. The mux solution simplified routing and allowed for all the GFEs to use the same chip and package as the used for the distribution board. The specific mux chosen, Maxim's MAX4734, was selected for its small size (QFN-9) and very low Ron. The choice to use 2 4:1 muxes instead of one 8:1 mux was made to further simplify layout. The select bits for the muxes are shared meaning that at any given time the MCU is monitoring the charge current and two node currents, the only exception is IMON\_Ax = 2'b00 when only Node 1 is monitored as there is no Node 5. To simplify the firmware team's job slightly, a pull down was added to N1 of U15 to ensure that the value reported for the non-existent Node 5 is always in a known state.
 
- * Bypass Capacitors (C10, C11)
- * Standard IC bypass caps, 100nF
- * Pull-down Resistors (R18)
- * To account for the odd number of channels being multiplexed by the two MAX4734's one input of U15 is pulled low to provide a known value for that channel.
+- Bypass Capacitors (C10, C11)
+- Standard IC bypass caps, 100nF
+- Pull-down Resistors (R18)
+- To account for the odd number of channels being multiplexed by the two MAX4734's one input of U15 is pulled low to provide a known value for that channel.
 
- 
 
+-----------------------------------------------------------------------------------------------------------------------
 
 # POWER SUPPLY BLOCK (Schematic sheet 3)
 
