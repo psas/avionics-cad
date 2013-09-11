@@ -3,26 +3,26 @@
 <eagle version="6.4">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -46,22 +46,22 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -71,106 +71,95 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
-<layer number="100" name="Hidden_Layer" color="7" fill="1" visible="no" active="yes"/>
-<layer number="101" name="Hidden" color="15" fill="1" visible="no" active="yes"/>
-<layer number="102" name="Changes" color="12" fill="1" visible="no" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="10.1" y2="0" width="0" layer="20"/>
-<wire x1="10.1" y1="0" x2="10.1" y2="12.4" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="12.4" width="0" layer="20"/>
-<wire x1="0" y1="12.4" x2="10.1" y2="12.4" width="0" layer="20"/>
-<circle x="8.5" y="4.4" radius="1.104534375" width="0.1" layer="21"/>
-<circle x="8.5" y="8.1" radius="1.104534375" width="0.1" layer="21"/>
-<rectangle x1="1.9" y1="9.5" x2="6.7" y2="12" layer="16"/>
-<rectangle x1="1.9" y1="0.4" x2="6.7" y2="2.9" layer="16"/>
+<wire x1="14.7" y1="-0.3" x2="14.7" y2="7.1" width="0.0254" layer="20"/>
+<wire x1="14.7" y1="-0.3" x2="2.6" y2="-0.3" width="0.0254" layer="20"/>
+<wire x1="2.6" y1="-0.3" x2="2.6" y2="7.1" width="0.0254" layer="20"/>
+<wire x1="14.7" y1="7.1" x2="2.6" y2="7.1" width="0.0254" layer="20"/>
+<text x="-2.794" y="13.716" size="0.762" layer="48">TOP VIEW (JST CONNECTOR FACING UP)</text>
+<text x="4.3" y="7.6" size="0.762" layer="48" rot="R90">B-</text>
+<text x="7.128" y="7.474" size="0.762" layer="48" rot="R90">USB1_D-</text>
+<text x="10.86" y="7.474" size="0.762" layer="48" rot="R90">USB1_D+</text>
+<text x="13.6" y="7.7" size="0.762" layer="48" rot="R90">B+</text>
 </plain>
 <libraries>
-<library name="usb-connector">
+<library name="rocketbus">
 <packages>
-<package name="USB-FEMALE_PKG">
-<wire x1="-3.175" y1="6.2" x2="3.175" y2="6.2" width="0.127" layer="51"/>
-<wire x1="3.175" y1="6.2" x2="3.175" y2="3.1" width="0.127" layer="51"/>
-<wire x1="3.175" y1="3.1" x2="-3.175" y2="3.1" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="3.1" x2="-3.175" y2="6.2" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-3.1" x2="-3.175" y2="-6.2" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-6.2" x2="3.175" y2="-6.2" width="0.127" layer="51"/>
-<wire x1="3.175" y1="-6.2" x2="3.175" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3.175" y1="-3.1" x2="-3.175" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="1.8" y1="-3" x2="-2.3" y2="-3" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="-3" x2="-2.3" y2="3" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="3" x2="1.8" y2="3" width="0.127" layer="21"/>
-<wire x1="2.3" y1="2.5" x2="2.3" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-2.55" x2="-2" y2="-2.55" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2.55" x2="-2" y2="2.55" width="0.127" layer="21"/>
-<wire x1="-2" y1="2.55" x2="1.5" y2="2.55" width="0.127" layer="21"/>
-<wire x1="2" y1="2.05" x2="2" y2="-2.05" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-2.55" x2="2" y2="-2.05" width="0.127" layer="21"/>
-<wire x1="1.8" y1="-3" x2="2.3" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="2.55" x2="2" y2="2.05" width="0.127" layer="21"/>
-<wire x1="1.8" y1="3" x2="2.3" y2="2.5" width="0.127" layer="21"/>
-<circle x="0" y="-4.6355" radius="1.524" width="0.127" layer="40"/>
-<circle x="0" y="4.6355" radius="1.524" width="0.127" layer="40"/>
-<pad name="CHASSIS@1" x="0" y="4.6355" drill="1.5112"/>
-<pad name="CHASSIS@2" x="0" y="-4.6355" drill="1.5112"/>
-<pad name="3" x="1" y="-0.625" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="5" x="1" y="0.625" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="7" x="1" y="1.875" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="1" x="1" y="-1.875" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="2" x="-1" y="-1.875" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="4" x="-1" y="-0.625" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="6" x="-1" y="0.625" drill="0.508" diameter="1.016" rot="R270"/>
-<pad name="8" x="-1" y="1.875" drill="0.508" diameter="1.016" rot="R270"/>
-<rectangle x1="-3.175" y1="3.048" x2="3.175" y2="6.223" layer="39"/>
-<rectangle x1="-3.175" y1="-6.223" x2="3.175" y2="-3.048" layer="39"/>
-<rectangle x1="0.85" y1="-0.775" x2="1.15" y2="-0.475" layer="21" rot="R270"/>
-<rectangle x1="0.85" y1="0.475" x2="1.15" y2="0.775" layer="21" rot="R270"/>
-<rectangle x1="0.85" y1="1.725" x2="1.15" y2="2.025" layer="21" rot="R270"/>
-<rectangle x1="0.85" y1="-2.025" x2="1.15" y2="-1.725" layer="21" rot="R270"/>
-<rectangle x1="-1.15" y1="-2.025" x2="-0.85" y2="-1.725" layer="21" rot="R270"/>
-<rectangle x1="-1.15" y1="-0.775" x2="-0.85" y2="-0.475" layer="21" rot="R270"/>
-<rectangle x1="-1.15" y1="0.475" x2="-0.85" y2="0.775" layer="21" rot="R270"/>
-<rectangle x1="-1.15" y1="1.725" x2="-0.85" y2="2.025" layer="21" rot="R270"/>
+<package name="ROCKETBUS-RECEPTACLE">
+<description>JST corp JED series connector. This is an 8 position, straight, shrouded receptacle.</description>
+<wire x1="5.5" y1="1.8" x2="5.5" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-2.3" x2="-5.5" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-2.3" x2="-5.5" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-5" y1="2.3" x2="5" y2="2.3" width="0.127" layer="21"/>
+<wire x1="5.05" y1="1.5" x2="5.05" y2="-2" width="0.127" layer="51"/>
+<wire x1="5.05" y1="-2" x2="-5.05" y2="-2" width="0.127" layer="51"/>
+<wire x1="-5.05" y1="-2" x2="-5.05" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-4.55" y1="2" x2="4.55" y2="2" width="0.127" layer="51"/>
+<wire x1="5.05" y1="1.5" x2="4.55" y2="2" width="0.127" layer="51"/>
+<wire x1="5.5" y1="1.8" x2="5" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="1.5" x2="-4.55" y2="2" width="0.127" layer="51"/>
+<wire x1="-5.5" y1="1.8" x2="-5" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="1.8" x2="-5" y2="1.8" width="0.127" layer="51"/>
+<wire x1="-5" y1="1.8" x2="-5" y2="2.3" width="0.127" layer="51"/>
+<circle x="-7.1355" y="0" radius="1.524" width="0.127" layer="40"/>
+<circle x="7.1355" y="0" radius="1.524" width="0.127" layer="40"/>
+<pad name="USB_H@7" x="0.625" y="1" drill="0.508" diameter="1.016"/>
+<pad name="USB_L@9" x="-0.625" y="1" drill="0.508" diameter="1.016"/>
+<pad name="AUX1@11" x="-1.875" y="1" drill="0.508" diameter="1.016"/>
+<pad name="CAN_L@5" x="1.875" y="1" drill="0.508" diameter="1.016"/>
+<pad name="CAN_L@6" x="1.875" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="USB_H@8" x="0.625" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="USB_L@10" x="-0.625" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="AUX1@12" x="-1.875" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="CHASSIS@1" x="7.1355" y="0" drill="1.5112"/>
+<pad name="CHASSIS@2" x="-7.1355" y="0" drill="1.5112"/>
+<pad name="CAN_H@3" x="3.125" y="1" drill="0.508" diameter="1.016"/>
+<pad name="B+@1" x="4.375" y="1" drill="0.508" diameter="1.016"/>
+<pad name="B+@2" x="4.375" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="CAN_H@4" x="3.125" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="AUX2@13" x="-3.125" y="1" drill="0.508" diameter="1.016"/>
+<pad name="B-@15" x="-4.375" y="1" drill="0.508" diameter="1.016"/>
+<pad name="AUX2@14" x="-3.125" y="-1" drill="0.508" diameter="1.016"/>
+<pad name="B-@16" x="-4.375" y="-1" drill="0.508" diameter="1.016"/>
+<text x="-2.98" y="2.89" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.33" y="-4.21" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.475" y1="0.85" x2="0.775" y2="1.15" layer="51"/>
+<rectangle x1="-0.775" y1="0.85" x2="-0.475" y2="1.15" layer="51"/>
+<rectangle x1="-2.025" y1="0.85" x2="-1.725" y2="1.15" layer="51"/>
+<rectangle x1="1.725" y1="0.85" x2="2.025" y2="1.15" layer="51"/>
+<rectangle x1="1.725" y1="-1.15" x2="2.025" y2="-0.85" layer="51"/>
+<rectangle x1="0.475" y1="-1.15" x2="0.775" y2="-0.85" layer="51"/>
+<rectangle x1="-0.775" y1="-1.15" x2="-0.475" y2="-0.85" layer="51"/>
+<rectangle x1="-2.025" y1="-1.15" x2="-1.725" y2="-0.85" layer="51"/>
+<rectangle x1="-8.723" y1="-2.3" x2="-5.548" y2="2.3" layer="39"/>
+<rectangle x1="5.548" y1="-2.3" x2="8.723" y2="2.3" layer="39"/>
+<rectangle x1="2.975" y1="0.85" x2="3.275" y2="1.15" layer="51"/>
+<rectangle x1="4.225" y1="0.85" x2="4.525" y2="1.15" layer="51"/>
+<rectangle x1="4.225" y1="-1.15" x2="4.525" y2="-0.85" layer="51"/>
+<rectangle x1="2.975" y1="-1.15" x2="3.275" y2="-0.85" layer="51"/>
+<rectangle x1="-3.275" y1="0.85" x2="-2.975" y2="1.15" layer="51"/>
+<rectangle x1="-4.525" y1="0.85" x2="-4.225" y2="1.15" layer="51"/>
+<rectangle x1="-3.275" y1="-1.15" x2="-2.975" y2="-0.85" layer="51"/>
+<rectangle x1="-4.525" y1="-1.15" x2="-4.225" y2="-0.85" layer="51"/>
 </package>
 </packages>
 </library>
@@ -183,7 +172,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="sunstone_eagle_2lyr_rules_v1.0.0.3">
+<designrules name="default">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requirements for our double sided products. For questions, comments, suggestions, please contact Sunstone Customer Support  Email:  mailto:support@sunstone.com 
@@ -328,46 +317,78 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 </pass>
 </autorouter>
 <elements>
-<element name="J3" library="usb-connector" package="USB-FEMALE_PKG" value="PSAS-USB-FEMALE-CONNECTOR" x="4.3" y="6.2"/>
+<element name="J1" library="rocketbus" package="ROCKETBUS-RECEPTACLE" value="ROCKETBUS-RECEPTACLE" x="8.636" y="2.54" smashed="yes">
+<attribute name="NAME" x="5.656" y="5.43" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-3.33" y="-2.432" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
-<signal name="USB_5V">
-<contactref element="J3" pad="2"/>
-<contactref element="J3" pad="1"/>
-<polygon width="0.254" layer="16" isolate="0.01" thermals="no">
-<vertex x="2" y="4.7"/>
-<vertex x="6.6" y="4.7"/>
-<vertex x="6.6" y="0"/>
-<vertex x="2" y="0"/>
+<signal name="S$1">
+<contactref element="J1" pad="AUX2@13"/>
+<contactref element="J1" pad="AUX2@14"/>
+<wire x1="5.511" y1="3.54" x2="5.511" y2="1.54" width="0.508" layer="16"/>
+</signal>
+<signal name="AUX1">
+<contactref element="J1" pad="AUX1@12"/>
+<contactref element="J1" pad="AUX1@11"/>
+<wire x1="6.761" y1="3.54" x2="6.761" y2="1.54" width="0.508" layer="16"/>
+</signal>
+<signal name="USB1_L">
+<contactref element="J1" pad="USB_L@10"/>
+<contactref element="J1" pad="USB_L@9"/>
+<wire x1="8.011" y1="3.54" x2="8.011" y2="1.54" width="0.508" layer="16"/>
+<wire x1="7.62" y1="4.926" x2="6.82" y2="5.896" width="0.381" layer="16"/>
+<via x="6.82" y="5.896" extent="1-16" drill="1.1" diameter="2"/>
+<wire x1="8.011" y1="3.54" x2="8.011" y2="4.535" width="0.381" layer="16"/>
+<wire x1="8.011" y1="4.535" x2="7.62" y2="4.926" width="0.381" layer="16"/>
+</signal>
+<signal name="USB1_D+">
+<contactref element="J1" pad="USB_H@8"/>
+<contactref element="J1" pad="USB_H@7"/>
+<wire x1="9.261" y1="3.54" x2="9.261" y2="1.54" width="0.508" layer="16"/>
+<wire x1="9.252" y1="4.426" x2="10.452" y2="5.896" width="0.381" layer="16"/>
+<via x="10.452" y="5.896" extent="1-16" drill="1.1" diameter="2"/>
+<wire x1="9.261" y1="3.54" x2="9.261" y2="4.435" width="0.381" layer="16"/>
+<wire x1="9.261" y1="4.435" x2="9.252" y2="4.426" width="0.381" layer="16"/>
+</signal>
+<signal name="CAN_L">
+<contactref element="J1" pad="CAN_L@6"/>
+<contactref element="J1" pad="CAN_L@5"/>
+<wire x1="10.511" y1="3.54" x2="10.511" y2="1.54" width="0.508" layer="16"/>
+</signal>
+<signal name="CAN_H">
+<contactref element="J1" pad="CAN_H@4"/>
+<contactref element="J1" pad="CAN_H@3"/>
+<wire x1="11.761" y1="3.54" x2="11.761" y2="1.54" width="0.508" layer="16"/>
+</signal>
+<signal name="B+">
+<contactref element="J1" pad="B+@2"/>
+<contactref element="J1" pad="B+@1"/>
+<wire x1="13.011" y1="3.54" x2="13.011" y2="1.54" width="0.508" layer="16"/>
+<wire x1="13.011" y1="3.54" x2="13.04" y2="3.642" width="0.508" layer="16"/>
+<wire x1="13.04" y1="3.642" x2="13.116" y2="5.818" width="0.508" layer="16"/>
+<wire x1="13.116" y1="5.818" x2="12.97" y2="5.918" width="0.508" layer="16"/>
+<wire x1="12.97" y1="5.918" x2="13.1" y2="5.9" width="0.508" layer="16"/>
+<via x="13.1" y="5.9" extent="1-16" drill="1.1" diameter="2"/>
+<polygon width="0.1" layer="16" isolate="0.1" thermals="no">
+<vertex x="12.6" y="1"/>
+<vertex x="12.6" y="6.9"/>
+<vertex x="14.1" y="6.9"/>
+<vertex x="14.1" y="1"/>
 </polygon>
 </signal>
-<signal name="USB_H">
-<contactref element="J3" pad="3"/>
-<contactref element="J3" pad="4"/>
-<wire x1="3.3" y1="5.575" x2="5.3" y2="5.575" width="1" layer="16"/>
-<wire x1="5.3" y1="5.575" x2="7.325" y2="5.575" width="1" layer="16"/>
-<wire x1="7.325" y1="5.575" x2="8.5" y2="4.4" width="1" layer="16"/>
-<via x="8.5" y="4.4" extent="1-16" drill="1.5"/>
-</signal>
-<signal name="USB_L">
-<contactref element="J3" pad="5"/>
-<contactref element="J3" pad="6"/>
-<wire x1="3.3" y1="6.825" x2="5.3" y2="6.825" width="1" layer="16"/>
-<wire x1="5.3" y1="6.825" x2="7.225" y2="6.825" width="1" layer="16"/>
-<wire x1="7.225" y1="6.825" x2="8.5" y2="8.1" width="1" layer="16"/>
-<via x="8.5" y="8.1" extent="1-16" drill="1.5"/>
-</signal>
-<signal name="N$11">
-</signal>
-<signal name="USB_GND">
-<contactref element="J3" pad="7"/>
-<contactref element="J3" pad="8"/>
-<polygon width="0.254" layer="16" isolate="0.2032" thermals="no">
-<vertex x="2" y="7.7"/>
-<vertex x="2" y="12.4"/>
-<vertex x="6.6" y="12.4"/>
-<vertex x="6.6" y="7.7"/>
+<signal name="B-">
+<contactref element="J1" pad="B-@15"/>
+<contactref element="J1" pad="B-@16"/>
+<wire x1="4.261" y1="1.54" x2="4.261" y2="3.54" width="0.508" layer="16"/>
+<wire x1="4.261" y1="3.54" x2="4.2" y2="5.9" width="0.508" layer="16"/>
+<polygon width="0.1" layer="16" isolate="0.1" thermals="no">
+<vertex x="3.2" y="1"/>
+<vertex x="3.2" y="6.9"/>
+<vertex x="4.7" y="6.9"/>
+<vertex x="4.7" y="1"/>
 </polygon>
+<via x="4.224" y="5.896" extent="1-16" drill="1.1" diameter="2"/>
 </signal>
 </signals>
 </board>
