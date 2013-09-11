@@ -21,6 +21,14 @@
    - Unsurprisingly, Chibios was built assuming a PHY chip with a MDIO interface, so we went down to the bottom level of the Chibios HAL (`mii_ldd.c`), down to the function that reads the registers from the MDIO interface (`mii_read`), and inserted a case statement that returned dummy "good" values for registers 0 (basic control), 1 (basic status), and 5 (100BASE-TX autonegotiation) of the KSZ8721 PHY chip. Basically we just guessed the "up and running with link" values, which shockingly just worked.
 
 
+## 2013-09-03
+
+- FIXED: LED9 was reversed.
+- FIXED: grounded TP39 (ETH_MII_RX_ER) using green mod wire.
+- Not an issue: All other link active LEDs seem OK
+- We tested Ports 1-4, 6-8: link LEDs turn on.
+- Built debug battery cable for providing power, and the first of the real rocketnet cables (rocketnet to RJ11).
+
 ## 2013-08-27 
 
 Further Rocketnet-hub hacking
