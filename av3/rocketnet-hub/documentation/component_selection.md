@@ -213,6 +213,8 @@ The onboard battery charger had been selected by PSAS prior to the beginning of 
 
 The two 3.9 Ohm 0.5W resistors from the evaluation board were replaced with a single 2 Ohm 1 W resistor. The 2512 size was selected because it was the smallest available component.
 
+NOTE: Page 29 of the data sheet recommends a RC filter for VCC in order to prevent inductive kick from hot-plug events destroying the IC. This was NOT implemented, and probably ought to have been since out shore power cable is so long.
+
 ## Transient Voltage Suppression (D5)
 
 A reverse biased TVS diode (SMAJ18CA) was added to protect against over-voltage. 20V voltage breakdown was chosen for the diode based on +18V Vin shore power.
@@ -244,4 +246,21 @@ Input (C39 and C43) and Output (C119 and C120) Capacitors based on datasheet, wi
 ## Power MOSFETs (Q2, Q3, Q5)
 
 Power MOSFETs Selection (Q2, Q3 and Q5) detailed calculations on page 28 of datasheet.
+
+## ACDET divider (R137, R138)
+
+`V_in`(shore power_ is considered on when `ACDET` pin is between 2.4V to 3.15V. R137/R138 form a 0.134 voltage divider from `V_in`, so a valid shore power ranges from 17.91 to 23.5 V.
+
+FUTURE FIX: The low end here is unecessarily high; anything &gt; 16.8V is OK. With some headroom and the maximum 2.424 V cutoff, that is 2.42 / 17 = 0.142. Just changing R137, that should be 71.37 K ~ 71.5K
+
+
+
+ VACDET is above 0.6V;
+The
+adapter detect threshold should typically be programmed to a value greater than the maximum battery voltage,
+but lower than the maximum allowed adapter voltage.
+
+UVLO occurs when `V_vcc` is below  (3.5,3.75,4)V.
+
+ 
 
