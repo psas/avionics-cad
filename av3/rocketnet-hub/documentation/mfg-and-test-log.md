@@ -15,8 +15,13 @@
 
 ## 2013-09-16
 
-- FIXME: Change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
+- FIXME: Should change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
 - TODO: Probably add a anti-aliasing filter (active, or possibly passive), to IOUT.
+- FIXME: C104 is specified as 22μF 1206 in component selection notes but in the schematic is a 2.2 uF 0603.
+- FIXME: Just discovered U6, the 2.1 V LDO, is burning 1W of power at max KSZ load. OMFG. This needs to be replaced with a SPS. See component notes for more details, including possible replacement.
+- FIXME: It's pretty clear that the link light LEDs should be powered off of the 2.1 V supply, not the 3.3 V supply, to minimize quiescent current.
+- FIXME: On BQ24725, VCC needs an inrush limiter: according to datasheet, "Use 10Ω resistor and 1μF capacitor to ground as low pass filter to limit inrush current." Could this be the cause of some of the old APS BQ failures?
+- FIXME: There's no way for the RNH to read the battery voltage. While the BQ3060 will eventually be able to do this, it's stupid that the RNH can't do this. There turns out to be a very easy way to do this: Turn R18 current pulls down one of the MAX4734's CH1 input since it's otherwise a NC. Simply turn this into a divider to the system voltage. Don't use the battery voltage, since its farther away and not as protected.
 
 ## 2013-09-10
 
@@ -51,7 +56,8 @@ Further Rocketnet-hub hacking
 
 Further bringup of board #1 with K and Gavin
 
-- ISSUE: STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX.
+- FIXME: J10 STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX. Also, this connector is too small, and too fragile, to be used. It needs a shield, like the micro JTAG connector
+- FIXME: J22 should be an actual micro JTAG header with plastic shield, not just a pin header. Find part number and replace.
 - FIXED: swapped out RGB LED for the right part number.
 - Running the blinky light program, the RNH draws 13 mA.
 - Put on the LED22 jumper, and it draws 14 mA.
