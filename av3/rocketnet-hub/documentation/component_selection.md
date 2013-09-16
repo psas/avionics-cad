@@ -247,20 +247,30 @@ Input (C39 and C43) and Output (C119 and C120) Capacitors based on datasheet, wi
 
 Power MOSFETs Selection (Q2, Q3 and Q5) detailed calculations on page 28 of datasheet.
 
-## ACDET divider (R137, R138)
+## `ACDET` divider (R137, R138)
 
-`V_in`(shore power_ is considered on when `ACDET` pin is between 2.4V to 3.15V. R137/R138 form a 0.134 voltage divider from `V_in`, so a valid shore power ranges from 17.91 to 23.5 V.
+`V_in`(shore power) is considered valid when `ACDET` pin is between 2.4V to 3.15V. R137/R138 as originally designed form a voltage divider with a diver coefficient of 0.134 (66.5 kohm and 430 kohm) which means valid shore power ranges from 17.91 to 23.5 V.
 
-FUTURE FIX: The low end here is unecessarily high; anything &gt; 16.8V is OK. With some headroom and the maximum 2.424 V cutoff, that is 2.42 / 17 = 0.142. Just changing R137, that should be 71.37 K ~ 71.5K
+FIXME: Both the low and high end of ACDET are unecessarily high; anything &gt; 16.8V (the maximum battery voltage) should be OK. With an extra 200 mV of headroom and using the maximum 2.424 V cutoff, that is 2.42 / 17 = 0.142. Changing R137 only, 0.142 implies R137 = 71.37 KOhm -> 71.5KOhm.  R137 = 71.5 Kohm then sets the valid ACDET voltage range from 16.83 to 22.1 V, which is a better range.
+
+## `ILIM` divider (R142, R139, C122)
+
+The charge current limiter takes the lower of the voltage set by ChargeCurrent(), and voltage on `ILIM` pin. R142/R139 set a voltage divider to set `V_ILIM` which is 3.3V * 100k/(100k+316k) =  3.3V * 0.240 = 0.793 V. From the datasheet, `V_ILIM` = 20 * Ichg * Rsr --> Ichg = `V_ILIM`/(20*Rsr) = 0.793/(20*0.010) = 3.966 A. So, just like Figure 1 in the datasheet, it's set to 4A. This is probably fine: 4A seems like a fine upper limit on charge current, we'll most likely be running much lower than that.
+
+Note that C122 seems gratuitous; it's not in the datasheet, and it probably doesn't need to be filtered. That said, it's probably not going to hurt anything and my filter some noise out.
+
+## `IOUT` output (C110)
+
+Either 20x the adapter current (shore power current) or 20x the battery charge current, selectable with SMBus command ChargeOption(). 
+
+Datasheet says "A 100pF capacitor connected on the output is recommended for decoupling high-frequency noise. An additional RC filter is optional, if additional filtering is desired. Note that adding filtering also adds additional response delay.". 
+
+ISSUE: it's probbaly not totally necessary, but that seems like a good idea.
 
 
 
- VACDET is above 0.6V;
-The
-adapter detect threshold should typically be programmed to a value greater than the maximum battery voltage,
-but lower than the maximum allowed adapter voltage.
 
-UVLO occurs when `V_vcc` is below  (3.5,3.75,4)V.
 
- 
+
+
 
