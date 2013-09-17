@@ -102,7 +102,7 @@ Each of the 7 nodes to be connected to this distribution board was to have its o
    - On top side of PCB near node connector for ease of change.
 - Reset Behavior: latch reset condition and wait for MCU to reset switch
 
-Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5(V). This is used to drive an ADC channel on the MCU via an analog mux.
+Additionally, LED's were connected to the power good and fault signal lines, green and red respectively. These lines are common collector and thus pulled high by 10kOhm shunt resistors. The TPS2420's final benefit is a scaled version of the output current that is clamped to 2.5 V. This is used to drive an ADC channel on the MCU via an analog mux.
 
 - IMON Resistor (R49, R52, R54, R56, R58, R60, R62) TBD
 - Power Good LED (LED3, LED6, LED8, LED11, LED14, LED16, LED39) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
@@ -122,28 +122,34 @@ The STM32F407V LQFP-100 lacks sufficient ADC inputs to simultaneously monitor th
 -----------------------------------------------------------------------------------------------------------------------
 # SCHEMATIC SHEET 3: Power Supplies
 
+The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of ~ 14.7 V under battery power and ~ 18 V under charging conditions. The MCU can run on 1.8 - 3.3 V. The design was intended to run on 3.3 V only initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1 V core voltage. While the 3.3 V supply should be always on, the 2.1 V supply was required to be off initially and powered on when the KS8999 was enabled by the STM32.
 
 ## U5, LTM8023 (2A, 36V DC/DC Step-Down μModule Regulator)
 
-The board is powered by a 4-cell LiPo battery pack. This works out to a nominal voltage of just under 15(V) under battery power and under charging conditions the nominal voltage is 18(V). These voltages are far too high to run modern logic on. Also the potential swing in voltage is too large. The MCU can run on 1.8(V)-3.3(V). The design was intended to run on 3.3(V) initially. This became slightly more complicated after the selection of the KS8999 Ethernet Switch as this chip requires a 2.1(V) core voltage. The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2(A) of regulated power with an efficiency of 80%+. As the KS8999 requires 1(A) just by itself the 2(A) 3.3(V) supply seemed reasonable to source its LDO and the remaining logic. The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. The MIC37101-2.1YM is a fixed voltage LDO with a typical output rating 1.6(A). This is 
-sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistors chosen came from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The external components for the LMT8023 were provided by the manufacturer datasheet. The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability.
+The LTM8023 uModule from Linear Technologies was selected for its high level of integration and low external part count. The LTM8023 is capable of sourcing up to 2 A of regulated power with an efficiency of 80%+. As the KS8999 requires 1 A just by itself the 2 A 3.3 V supply seemed reasonable to source its LDO and the remaining logic. 
 
-- Vout: 3.3(V)
+- Vout: 3.3 V
 - Osc. Freq.: 650KHz
-- Sync. Freq.: 650KHz -- set by MCU pll
-- R\_T (R74) 49.9KOhm
-- R\_ADJ (R73) 154KOhm
-- C\_in (C103) 2.2uF (0805)
-- C\_out (C104) 22uF (1206)
-- PGOOD LED (LED22) APT1608CGCK (Green 0603 V\_f 2.1V I\_d 20mA)
+- Sync. Freq.: 650KHz -- set by MCU's timers (crystal locked)
+- `R_T` (R74) 49.9KOhm
+- `R_ADJ` (R73) 154KOhm
+- `C_in` (C103) 2.2uF (0805)
+- `C_out` (C104) 22uF (1206)
+- `PGOOD` LED (LED22) APT1608CGCK (Green 0603 `V_f` 2.1V `I_d` 20mA)
 - LED Current Limiting Resistor (R128) 750 Ohm (1.6 mA)
-- EN: Tied to supply voltage, Always on
+- `EN`: Tied to supply voltage, Always on
 
-## U6, MIC37101-2.1YM (1A Low-Voltage μCap LDO)
+FIXME: C104 is specified as 22μF 1206  but in the schematic is specified as 2.2 uF 0603.
+
+## U6, MIC37101-2.1YM (2.1 V 1A Low-Voltage μCap LDO)
+
+The Micrel MIC37101 line of LDO's was selected to source power to the KS8999. According to the datasheet, the KS8999 draws (,640,850) mA in 100BASE-TX operation, so a max supply current of 1 A was chosen. The MIC37101-2.1YM is a fixed voltage LDO with a typical maximum output rating 1.6 A. This is  sufficient to drive the KS8999 with reasonable headroom to account for potential variation. All resistor values were chosen from each manufacturer's datasheet (with the exception of the LED current limiting resistor R128). The capacitors chosen for the Micrel MIC37101 were the minimum value recommended in the datasheet necessary to ensure stability. Power dissipation is (3.3 - 2.1)* 0.85 = 1.02 W of power.
+
+FIXME: WHAT?! 1W dissipation in an LDO?! That's **CRAZY**. How did we miss this? This MUST be a SPS. In the next redesign, it's clear that the LTM uModule should have two outputs, where the second one can be sequenced independently of the first. Can we fix the current board? With a maximum drop out of 280 mA, we might be able to lift the Vin pin and power it off an SPS at 2.5 V - that's a dissipation of (2.5 - 2.1) *.85 = 340 mW. That's still a lot. Better to directly replace it with some kind of 3.3 V to 2.1 V module: at 90% efficiency for a dissipation of 10x less, ~ 100 mW. For example, A Murata LXDC55KAAA-205 could be used on a carrier board with one external feedback resistor to make a > 90% SPS in the same footprint as the SOIC8 of the MIC37101. It needs a daughterboard, however, to adapt the LGA to the SOIC18. It might want more capacitance, too. 
 
 - EN: Weakly pulled to logic 0, controlled by U1.ETH_EN
-- C\_in (C52) 47uF
-- C\_out (C84, C85) 4.7uF, 0.1uF
+- `C_in` (C52) 47uF
+- `C_out` (C84, C85) 4.7uF, 0.1uF
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -161,7 +167,7 @@ The design requirements dictated that the switch chosen must have at least 7 por
 
 ## Voltage Supplies (C12, D1, Q8, Q9, R43, R65, U6)
 
-The KS8999 required a 2.1(V) core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design decisions related to this LDO. There IO logic requires 3.3V to match the digital IO on the MCU. The 3.3V must ramp after the 2.1V supply. To accomplish this, a RC delay circuit and PMOS power switch was implemented. The diode (D1) allows for this to be shut down without waiting for the RC delay circuit to discharge.
+The KS8999 required a 2.1 V core and analog IO voltage. This is not a voltage that would otherwise have been provided on the board and thus an LDO was selected to do so. Please see Power Supplies for additional design decisions related to this LDO. There IO logic requires 3.3V to match the digital IO on the MCU. The 3.3V must ramp after the 2.1V supply. To accomplish this, a RC delay circuit and PMOS power switch was implemented. The diode (D1) allows for this to be shut down without waiting for the RC delay circuit to discharge.
 
 ## Bypass Caps
 
@@ -173,7 +179,7 @@ Several of the pins on the KS8999 must be pulled to either Vdd or GND to place t
 
 ## Reset Circuitry (D2, D3)
 
-The KS8999's reset is not 3.3(V) tolerant and thus diodes and pull up resistors must be used to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
+The KS8999's reset is not 3.3 V tolerant and thus diodes and pull up resistors must be used to ensure safe operation. The circuit is provided in the data sheet. 0402 10k resistors should be used to minimize power dissipation. Any tolerance value may be selected. The diodes are SOT-23 to minimize size. The forward voltage should be minimized to ensure the reset line can be pulled low enough to be read as a logic 0. Schottky diodes are optimal for this purpose. The CDBQR0130L from Comchip Tech was selected for this purpose.
 
 ## Signal LEDs (LED1, LED5, LED9, LED13, LED17, LED21, LED25, LED29, LED33)
 
@@ -247,20 +253,30 @@ Input (C39 and C43) and Output (C119 and C120) Capacitors based on datasheet, wi
 
 Power MOSFETs Selection (Q2, Q3 and Q5) detailed calculations on page 28 of datasheet.
 
-## ACDET divider (R137, R138)
+## `ACDET` divider (R137, R138)
 
-`V_in`(shore power_ is considered on when `ACDET` pin is between 2.4V to 3.15V. R137/R138 form a 0.134 voltage divider from `V_in`, so a valid shore power ranges from 17.91 to 23.5 V.
+`V_in`(shore power) is considered valid when `ACDET` pin is between 2.4V to 3.15V. R137/R138 as originally designed form a voltage divider with a diver coefficient of 0.134 (66.5 kohm and 430 kohm) which means valid shore power ranges from 17.91 to 23.5 V.
 
-FUTURE FIX: The low end here is unecessarily high; anything &gt; 16.8V is OK. With some headroom and the maximum 2.424 V cutoff, that is 2.42 / 17 = 0.142. Just changing R137, that should be 71.37 K ~ 71.5K
+FIXME: Both the low and high end of ACDET are unecessarily high; anything &gt; 16.8V (the maximum battery voltage) should be OK. With an extra 200 mV of headroom and using the maximum 2.424 V cutoff, that is 2.42 / 17 = 0.142. Changing R137 only, 0.142 implies R137 = 71.37 KOhm -> 71.5KOhm.  R137 = 71.5 Kohm then sets the valid ACDET voltage range from 16.83 to 22.1 V, which is a better range.
+
+## `ILIM` divider (R142, R139, C122)
+
+The charge current limiter takes the lower of the voltage set by ChargeCurrent(), and voltage on `ILIM` pin. R142/R139 set a voltage divider to set `V_ILIM` which is 3.3V * 100k/(100k+316k) =  3.3V * 0.240 = 0.793 V. From the datasheet, `V_ILIM` = 20 * Ichg * Rsr --> Ichg = `V_ILIM`/(20*Rsr) = 0.793/(20*0.010) = 3.966 A. So, just like Figure 1 in the datasheet, it's set to 4A. This is probably fine: 4A seems like a fine upper limit on charge current, we'll most likely be running much lower than that.
+
+Note that C122 seems gratuitous; it's not in the datasheet, and it probably doesn't need to be filtered. That said, it's probably not going to hurt anything and my filter some noise out.
+
+## `IOUT` output (C110)
+
+Either 20x the adapter current (shore power current) or 20x the battery charge current, selectable with SMBus command ChargeOption(). 
+
+Datasheet says "A 100pF capacitor connected on the output is recommended for decoupling high-frequency noise. An additional RC filter is optional, if additional filtering is desired. Note that adding filtering also adds additional response delay.". 
+
+ISSUE: it's probbaly not totally necessary, but that seems like a good idea.
 
 
 
- VACDET is above 0.6V;
-The
-adapter detect threshold should typically be programmed to a value greater than the maximum battery voltage,
-but lower than the maximum allowed adapter voltage.
 
-UVLO occurs when `V_vcc` is below  (3.5,3.75,4)V.
 
- 
+
+
 

@@ -10,8 +10,18 @@
 - DONE: Create battery debugging cable
 - DONE: Create STM32 SWD cable
 - DONE: Bring up STM32 and poke at GPIO things (port power switches, rocketnet, etc.)
-- NA: Load KSZ8999 registers from STM32
 - DONE: Get MII interface to work
+- NA: Load KSZ8999 registers from STM32
+
+## 2013-09-16
+
+- FIXME: Should change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
+- TODO: Probably add a anti-aliasing filter (active, or possibly passive), to IOUT.
+- FIXME: C104 is specified as 22μF 1206 in component selection notes but in the schematic is a 2.2 uF 0603.
+- FIXME: Just discovered U6, the 2.1 V LDO, is burning 1W of power at max KSZ load. OMFG. This needs to be replaced with a SPS. See component notes for more details, including possible replacement.
+- FIXME: It's pretty clear that the link light LEDs should be powered off of the 2.1 V supply, not the 3.3 V supply, to minimize quiescent current.
+- FIXME: On BQ24725, VCC needs an inrush limiter: according to datasheet, "Use 10Ω resistor and 1μF capacitor to ground as low pass filter to limit inrush current." Could this be the cause of some of the old APS BQ failures?
+- FIXME: There's no way for the RNH to read the battery voltage. While the BQ3060 will eventually be able to do this, it's stupid that the RNH can't do this. There turns out to be a very easy way to do this: Turn R18 current pulls down one of the MAX4734's CH1 input since it's otherwise a NC. Simply turn this into a divider to the system voltage. Don't use the battery voltage, since its farther away and not as protected.
 
 ## 2013-09-10
 
@@ -37,30 +47,31 @@ Further Rocketnet-hub hacking
 - It works! It works! We get link lights and packets and even made the firmware commit using the rocketnet-hub!
 - Next on the agenda: MII interface
 - PA8 is MCO1 and goes to the LTM8023 
-   - ISSUE: Rt on the LTM8023 is set to 650 KHz !!!11!! It was supposed to be ~ 2 MHz
-   - Becuase MCO1 can only be 25 / 5 = 5 MHz, that's way too fast for the LTM. Make PA8 be `TMR1_CH1` and set that too... what?
-   - Crystal lock frequncy nneds to be looked at: initially, 650 + 20% KHz seems right be needs more investigation
+   - FIXME: Rt on the LTM8023 is set to 650 KHz !!!11!! It was supposed to be ~ 2 MHz
+   - FIXME: Becuase MCO1 can only be 25 / 5 = 5 MHz, that's way too fast for the LTM. Make PA8 be `TMR1_CH1` and set that too... what?
+   - ISSUE: Crystal lock frequncy needs to be looked at: initially, 650 + 20% KHz seems right be needs more investigation
    - Luckily, not critical, so we can skip this.
 
 ## 2013-08-20
 
 Further bringup of board #1 with K and Gavin
 
-- ISSUE: STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX.
+- FIXME: J10 STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX. Also, this connector is too small, and too fragile, to be used. It needs a shield, like the micro JTAG connector
+- FIXME: J22 should be an actual micro JTAG header with plastic shield, not just a pin header. Find part number and replace.
 - FIXED: swapped out RGB LED for the right part number.
 - Running the blinky light program, the RNH draws 13 mA.
 - Put on the LED22 jumper, and it draws 14 mA.
 - Got UART working; K has access to the ChibiOS shell!
 - Holding `ETH_RST_N` low, we powered up the KSZ (brought `ETH_EN` high) and it draws 160 mA.
 - Brought up `ETH_RST_N`, and RNH draws 150 mA (It went DOWN?)
-- ISSUE: Some link LEDs are not working: LED9, LED5, LED1. LED5 and LED1 look like they're placed backwards; LED9 looks OK though.
+- FIXME: Some link LEDs are not working: LED9, LED5, LED1. LED5 and LED1 look like they're placed backwards; LED9 looks OK though.
 - Removed R10 on CFGMODE in hopes that the KSZ would just boot to the default settings (CFGMODE has a "LPU" input which sets to 1 which should be EEPROM/not used, we think)
 - Draws 130 mA now after flashing LEDs.
 - Turned on all of the TPS power chips, they all turned on and all LEDs OK.
 - Shorted out all node power with a 3 ohm resistor, all latched off and turned the red LEDs on.
 - Toggling the `NODEn_EN_N` pins then turned the TPS back on!!
 - RNH Ethernet to RNH Ethernet "just works"
-- ISSUE: RNH Ethernet to Switch or PC does not work.
+- FIXME: RNH Ethernet to Switch or PC does not work.
 
 ## 2013-08-15
 
@@ -75,7 +86,7 @@ Further bringup of board #1: with K, programming the STM32.
 - Edited board.h to temporarily bring up the board safely (most things inputs that are pulled down).
    - Changed all the GPIO, HSE to 25 MHz and PLLM to 25.
    - Worked! Saw GPIO changing states at the right frequency.
-- ISSUE: The RGB LED we ordered was the wrong part number - pin layout of the LEDs is totally wrong. The PCB is designed for the LRTB G6TG-TU7+VV7+ST7-IB (DK 475-1319-1-ND) and what we specified in the BOM and thus stuffed is LTRBGFTM-ST7-1+VV9-29+Q5R (DK 475-2900-1-ND).
+- FIXME: The RGB LED we ordered was the wrong part number - pin layout of the LEDs is totally wrong. The PCB is designed for the LRTB G6TG-TU7+VV7+ST7-IB (DK 475-1319-1-ND) and what we specified in the BOM and thus stuffed is LTRBGFTM-ST7-1+VV9-29+Q5R (DK 475-2900-1-ND).
  
 ## 2013-07-28
 
@@ -87,7 +98,7 @@ Bring up of board #1.
 - LED22 lights up with jumper in
 - ISSUE: So does LED29 (Link light port #8). Because we pull down LED29 to GND using 1K and up to +3V3 using 750 ohm, it just turns on. Need a switch on the +3V3 line to the LEDs if we care.
 - +2V1 = 75 mV
-- ISSUE: Port 8 !EN is not connected to the STM32. It has an external ref designator `NODE8_!EN` but it doesn't go anywhere on the schematic.
+- FIXME: Port 8 !EN is not connected to the STM32. It has an external ref designator `NODE8_!EN` but it doesn't go anywhere on the schematic.
 - Pulling `NODE7_!EN` lights up LED16 and current jumps to 7.8 mA and `NODE7_VOUT` jumps from 35 mV to 10V.
 - Checked all other `NODEn_!EN` and they turn on and off like NODE7.
 - B+ @ 20V -> I=2.1 mA, +3V3 = 3.362 V
@@ -101,8 +112,8 @@ Bring up of board #1.
 - +2V1 = 2.16V
 - LED29 (PORT8 link) turns off immediately and LED38 (+2V1 power)
 - 8 seconds later, all link LEDs blink twice then turn off
-- ISSUE: LED9 did not turn on - it's reversed
-- ISSUE: all Link LEDs are slightly on (can't see in light, but in dark, you can see they're slightly on).
+- FIXME: LED9 did not turn on - it's reversed
+- FIXME: all Link LEDs are slightly on (can't see in light, but in dark, you can see they're slightly on).
 - POSSIBLE ISSUE: LED33 is on despite the fact the microcontroller has no code (is this right?)
  
 ## 2013-07-25
