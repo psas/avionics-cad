@@ -4,43 +4,68 @@ TODO: This is just a rough draft.
 
 ## Modes
 
-1. Sleep mode
+0. Boot mode
+   - Check out saved state (armed/active).
+1. Sleep mode (idle)
    - KSZ completely off.
    - All nodes are off.
-   - Set interrupt on external GPIO (ACOK).
+   - Set interrupt on external GPIO (ACOK rising edge).
    - Go into deep sleep (all clocks off).
    - Goal: absolute minimum power consumpt (&lt; 5 mA)
-2. Active mode
+   - Charge battery if shore power on (requires wakeup every 175 s to ping the BQ)
+2. Debug mode (utility mode)
+   - Ignores shore power on/off, otherwise just like active mode
+   - Can not transition from debug to armed.
+2. Active mode (startup/running mode)
    - KSZ is on.
-   - Zero or more nodes are on.
+   - One or more nodes are on.
    - Awake and looking for packets, acting on packets.
    - Monitoring battery voltage.
    - Charging battery when possible.
-   - Possibly broadcasting information on node power switches, current, voltage, etc.
-3. Armed mode
-   - Everything on that should be on.
+   - Can load power configurations (see below)
+3. Armed mode (in flight)
+   - Write armed state to file + last power configuration in case of restart
+   - Everything on that should be on
+      - Default configuration
+      - Power configurations mapped to flight status?
    - Actively turning things back on that over current some number of times.
    - Resetting the KSZ and if no packets are getting through.
-   - Resetting the FC if watchdog packets don't come through.
+   - Resetting nodes (including the FC) if watchdog packets don't come through.
    - Broadcasting information on node power switches, current, voltage, etc.
 
 
 ## Mode Transitions
 
-Sleep -> Active: 
-  Shorepower on (ACOK)
+- Boot -> Armed
+   - State saved file
+- Boot -> Active
+   - Shore power on
+- Boot -> Sleep
+   - Shore power off
 
-Active -> Sleep:
-  Status: disarmed
-  Shore power: off
-  (Nodes: all off && nodes all off time passed > 1 minute) || Vsys &lt; 12 V
+- Sleep -> Active: 
+   - Shorepower on (ACOK rising edge)
 
-Active -> Armed:
-  Arm command received (written to flash)
+- Active -> Sleep:
+   - Shore power: off
+   - Nodes: all off || Vsys &lt; 12 V
+   - Sleep command received
 
-Armed -> Active:
-  Disarm command sent
+- Active -> Armed:
+   - Arm command received (written to flash)
 
+- Armed -> Active:
+   - Disarm command received
+
+- Active <-> Debug:
+   - On debug start/stop command
+
+- Debug -> Sleep:
+   - Go to sleep
+   
+### Notes
+
+- Send a "you're going to get shut down" packet some time before shutting off a node
 
 ## Command packets
 
