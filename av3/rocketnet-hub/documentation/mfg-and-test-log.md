@@ -13,6 +13,10 @@
 - DONE: Get MII interface to work
 - NA: Load KSZ8999 registers from STM32
 
+## 2013-09-22
+
+- FIXME: VBAT should be connected to Vdd with a 100 nF bypass cap (page 90 of reference manual).
+
 ## 2013-09-16
 
 - FIXME: Should change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
