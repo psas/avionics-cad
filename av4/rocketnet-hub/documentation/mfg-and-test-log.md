@@ -1,11 +1,12 @@
 # Notes on the manufacturing, bringup, and test of the Rocketnet Hub Boards
 
-## NEXT THINGS TO DO
+## LEFT TO DO
 
-- Get battery charger to work
 - Firmware all the things
+   - 650KHz (?) clock for the LTM using TIMER1
 - Look for noise on +3V3 and +2V1 supplies
-- Create umbilical cord debugging cable (Shore power)
+- Done: Test battery charger on battery
+- DONE: Create umbilical cord debugging cable (Shore power)
 - DONE: Create rocketnet-to-ethernet cable with LED debugging cable
 - DONE: Create battery debugging cable
 - DONE: Create STM32 SWD cable
@@ -13,19 +14,62 @@
 - DONE: Get MII interface to work
 - NA: Load KSZ8999 registers from STM32
 
+
+## Summarized Issue List
+
+- **Manufacturing/assembly Issues**
+   - TODO: Populate "R21-17".
+   - LED9 was reversed.
+   - J22 should be an actual micro JTAG header with plastic shield.
+   - Wrong RGB LED was purchased and installed.
+   - LED9, LED5, LED1 were placed backwards.
+   - Q1,Q9 (NTR4101) were not stuffed.
+   - Added C52 except C52 is a 10uF 25V Y5V 
+- **Design Issues that require modications to the board**
+   - TODO: Remove R14 from board and schematic.
+   - TODO: Connect VBAT to Vdd with a 100 nF bypass cap.
+   - TODO: Replace U6 LDO with an SPS
+   - TODO: Turn R18 into a divider to the system voltage for STM32 system voltage monitoring.
+   - Grounded TP39 (`ETH_MII_RX_ER`) using mod wire.
+   - Remove R10 on CFGMODE so the KSZ boots to its default settings
+   - Port 8 !EN and !FLT are not connected to the STM32.
+- **Design Issues that require changes to component values**
+   - TODO: R137 to 71.5 Kohm
+   - TODO: C104 is spec'd as 22μF 1206 but is a 2.2 uF 0603.
+- **Design Issues that should be fixed in the next design iteration (TODOs)**
+   - Fix "R21-17" part number.
+   - Add anti-aliasing filter to BQ24725 IOUT.
+   - KSZ8999 link LEDs should be run off of 2.1V so they don't bleed 3.3V quiescent current into the KSZ.
+   - Add EEPROM to an I2C bus so we can store critical state variables there.
+   - BQ24725 VCC needs 10Ω + 1μF inrush limiter.
+   - Give STM32 the ability to read the system battery and/or system voltage if BQ3060 board is not available.
+   - PA8/MCO1 can't be used as the synchronization clock source, switch to a different pin.
+   - J10 STM32 RX/TX should be reversed, and a different, shielded, more robust connector should be chosen.
+   - This board should be brought up to the date with the node6 board; e.g., adding serial EEPROM off I2C for critical state info.
+
+
+## 2013-09-27
+
+- R14 isn't really necessary. In a flight environment, all nodes will be heard from within 300 s so internal aging of the source address (SA) doesn't matter.
+- "R21-17" was not populated by SC. Probably because of the weird part number?
+
 ## 2013-09-22
 
-- FIXME: VBAT should be connected to Vdd with a 100 nF bypass cap (page 90 of reference manual).
+- Firmware: PA8/MCO1 was putting a 15 MHz (?) clock into the LTM which was totally screwing it up and causing all sorts of terrible noise on the 3.3V line. We fixed that (made it GPIO, pulled it to ground) and everything works great, including SMBus communication to the BQ24725.
+
+## 2013-09-22
+
+- VBAT should be connected to Vdd with a 100 nF bypass cap (page 90 of reference manual).
 
 ## 2013-09-16
 
-- FIXME: Should change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
-- TODO: Probably add a anti-aliasing filter (active, or possibly passive), to IOUT.
-- FIXME: C104 is specified as 22μF 1206 in component selection notes but in the schematic is a 2.2 uF 0603.
-- FIXME: Just discovered U6, the 2.1 V LDO, is burning 1W of power at max KSZ load. OMFG. This needs to be replaced with a SPS. See component notes for more details, including possible replacement.
-- FIXME: It's pretty clear that the link light LEDs should be powered off of the 2.1 V supply, not the 3.3 V supply, to minimize quiescent current.
-- FIXME: On BQ24725, VCC needs an inrush limiter: according to datasheet, "Use 10Ω resistor and 1μF capacitor to ground as low pass filter to limit inrush current." Could this be the cause of some of the old APS BQ failures?
-- FIXME: There's no way for the RNH to read the battery voltage. While the BQ3060 will eventually be able to do this, it's stupid that the RNH can't do this. There turns out to be a very easy way to do this: Turn R18 current pulls down one of the MAX4734's CH1 input since it's otherwise a NC. Simply turn this into a divider to the system voltage. Don't use the battery voltage, since its farther away and not as protected.
+- Should change R137 to 71.5 Kohm to get a better ACOK range (see component selection notes)
+- Probably add a anti-aliasing filter (active, or possibly passive), to IOUT.
+- C104 is specified as 22μF 1206 in component selection notes but in the schematic is a 2.2 uF 0603.
+- Just discovered U6, the 2.1 V LDO, is burning 1W of power at max KSZ load. OMFG. This needs to be replaced with a SPS. See component notes for more details, including possible replacement.
+- It's pretty clear that the link light LEDs should be powered off of the 2.1 V supply, not the 3.3 V supply, to minimize quiescent current.
+- On BQ24725, VCC needs an inrush limiter: according to datasheet, "Use 10Ω resistor and 1μF capacitor to ground as low pass filter to limit inrush current." Could this be the cause of some of the old APS BQ failures?
+- There's no way for the RNH to read the battery voltage. While the BQ3060 will eventually be able to do this, it's stupid that the RNH can't do this. There turns out to be a very easy way to do this: Turn R18 current pulls down one of the MAX4734's CH1 input since it's otherwise a NC. Simply turn this into a divider to the system voltage. Don't use the battery voltage, since its farther away and not as protected.
 
 ## 2013-09-10
 
@@ -38,7 +82,7 @@
 
 - FIXED: LED9 was reversed.
 - FIXED: grounded TP39 (`ETH_MII_RX_ER`) using green mod wire.
-- Not an issue: All other link active LEDs seem OK
+- All other link active LEDs seem OK
 - We tested Ports 1-4, 6-8: link LEDs turn on.
 - Built debug battery cable for providing power, and the first of the real rocketnet cables (rocketnet to RJ11).
 
@@ -50,32 +94,31 @@ Further Rocketnet-hub hacking
 - PC9 is "microcontroller clock output 2" (MCO2), so we set it to output the HSE and no divisor and it just works.
 - It works! It works! We get link lights and packets and even made the firmware commit using the rocketnet-hub!
 - Next on the agenda: MII interface
-- PA8 is MCO1 and goes to the LTM8023 
-   - FIXME: Rt on the LTM8023 is set to 650 KHz !!!11!! It was supposed to be ~ 2 MHz
-   - FIXME: Becuase MCO1 can only be 25 / 5 = 5 MHz, that's way too fast for the LTM. Make PA8 be `TMR1_CH1` and set that too... what?
-   - ISSUE: Crystal lock frequncy needs to be looked at: initially, 650 + 20% KHz seems right be needs more investigation
+- PA8 is MCO1 and goes to the LTM8023
+   - Because MCO1 can only be 25 / 5 = 5 MHz, that's way too fast for the LTM. Make PA8 be `TMR1_CH1` and set that too... what?
+   - Crystal lock frequncy needs to be looked at: initially, 650 + 20% KHz seems right be needs more investigation
    - Luckily, not critical, so we can skip this.
 
 ## 2013-08-20
 
 Further bringup of board #1 with K and Gavin
 
-- FIXME: J10 STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX. Also, this connector is too small, and too fragile, to be used. It needs a shield, like the micro JTAG connector
-- FIXME: J22 should be an actual micro JTAG header with plastic shield, not just a pin header. Find part number and replace.
+- J10 STM32 RX/TX should be reversed on the UART connector, so that a reversed cable only grounds RX, not TX. Also, this connector is too small, and too fragile, to be used. It needs a shield, like the micro JTAG connector
+- J22 should be an actual micro JTAG header with plastic shield, not just a pin header. Find part number and replace.
 - FIXED: swapped out RGB LED for the right part number.
 - Running the blinky light program, the RNH draws 13 mA.
 - Put on the LED22 jumper, and it draws 14 mA.
 - Got UART working; K has access to the ChibiOS shell!
 - Holding `ETH_RST_N` low, we powered up the KSZ (brought `ETH_EN` high) and it draws 160 mA.
 - Brought up `ETH_RST_N`, and RNH draws 150 mA (It went DOWN?)
-- FIXME: Some link LEDs are not working: LED9, LED5, LED1. LED5 and LED1 look like they're placed backwards; LED9 looks OK though.
-- Removed R10 on CFGMODE in hopes that the KSZ would just boot to the default settings (CFGMODE has a "LPU" input which sets to 1 which should be EEPROM/not used, we think)
+- FIXED: Some link LEDs are not working: LED9, LED5, LED1. LED5 and LED1 look like they're placed backwards; LED9 looks OK though.
+- FIXED: Removed R10 on CFGMODE in hopes that the KSZ would just boot to the default settings (CFGMODE has a "LPU" input which sets to 1 which should be EEPROM/not used, we think)
 - Draws 130 mA now after flashing LEDs.
 - Turned on all of the TPS power chips, they all turned on and all LEDs OK.
 - Shorted out all node power with a 3 ohm resistor, all latched off and turned the red LEDs on.
 - Toggling the `NODEn_EN_N` pins then turned the TPS back on!!
 - RNH Ethernet to RNH Ethernet "just works"
-- FIXME: RNH Ethernet to Switch or PC does not work.
+- FIXED: RNH Ethernet to Switch or PC does not work.
 
 ## 2013-08-15
 
@@ -90,7 +133,7 @@ Further bringup of board #1: with K, programming the STM32.
 - Edited board.h to temporarily bring up the board safely (most things inputs that are pulled down).
    - Changed all the GPIO, HSE to 25 MHz and PLLM to 25.
    - Worked! Saw GPIO changing states at the right frequency.
-- FIXME: The RGB LED we ordered was the wrong part number - pin layout of the LEDs is totally wrong. The PCB is designed for the LRTB G6TG-TU7+VV7+ST7-IB (DK 475-1319-1-ND) and what we specified in the BOM and thus stuffed is LTRBGFTM-ST7-1+VV9-29+Q5R (DK 475-2900-1-ND).
+- FIXED: The RGB LED we ordered was the wrong part number - pin layout of the LEDs is totally wrong. The PCB is designed for the LRTB G6TG-TU7+VV7+ST7-IB (DK 475-1319-1-ND) and what we specified in the BOM and thus stuffed is LTRBGFTM-ST7-1+VV9-29+Q5R (DK 475-2900-1-ND).
  
 ## 2013-07-28
 
@@ -102,7 +145,7 @@ Bring up of board #1.
 - LED22 lights up with jumper in
 - ISSUE: So does LED29 (Link light port #8). Because we pull down LED29 to GND using 1K and up to +3V3 using 750 ohm, it just turns on. Need a switch on the +3V3 line to the LEDs if we care.
 - +2V1 = 75 mV
-- FIXME: Port 8 !EN is not connected to the STM32. It has an external ref designator `NODE8_!EN` but it doesn't go anywhere on the schematic.
+- Port 8 !EN is not connected to the STM32. It has an external ref designator `NODE8_!EN` but it doesn't go anywhere on the schematic.
 - Pulling `NODE7_!EN` lights up LED16 and current jumps to 7.8 mA and `NODE7_VOUT` jumps from 35 mV to 10V.
 - Checked all other `NODEn_!EN` and they turn on and off like NODE7.
 - B+ @ 20V -> I=2.1 mA, +3V3 = 3.362 V
@@ -116,8 +159,8 @@ Bring up of board #1.
 - +2V1 = 2.16V
 - LED29 (PORT8 link) turns off immediately and LED38 (+2V1 power)
 - 8 seconds later, all link LEDs blink twice then turn off
-- FIXME: LED9 did not turn on - it's reversed
-- FIXME: all Link LEDs are slightly on (can't see in light, but in dark, you can see they're slightly on).
+- FIXME-MFG: FIXED: LED9 did not turn on - it's reversed
+- FIXME-NXT: all Link LEDs are slightly on (can't see in light, but in dark, you can see they're slightly on).
 - POSSIBLE ISSUE: LED33 is on despite the fact the microcontroller has no code (is this right?)
  
 ## 2013-07-25
