@@ -617,14 +617,14 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <text x="-55.88" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F407V_NODE6">
-<pin name="PA1/ETH_RMII_REF_CLK" x="129.54" y="33.02" length="middle" rot="R180"/>
-<pin name="PA2/ETH_MDIO" x="129.54" y="30.48" length="middle" rot="R180"/>
+<pin name="PA1/ETH_RMII_REF_CLK" x="129.54" y="45.72" length="middle" rot="R180"/>
+<pin name="PA2/ETH_MDIO" x="129.54" y="25.4" length="middle" rot="R180"/>
 <pin name="PA3" x="-45.72" y="33.02" length="middle"/>
 <pin name="PA4" x="-45.72" y="30.48" length="middle"/>
 <pin name="PA5" x="-45.72" y="27.94" length="middle"/>
 <pin name="PA6" x="-45.72" y="25.4" length="middle"/>
-<pin name="PA7/ETH_RMII_CRS_DV" x="129.54" y="27.94" length="middle" rot="R180"/>
-<pin name="PA8/MCO1" x="129.54" y="12.7" length="middle" rot="R180"/>
+<pin name="PA7/ETH_RMII_CRS_DV" x="129.54" y="30.48" length="middle" rot="R180"/>
+<pin name="PA8/MCO1" x="129.54" y="22.86" length="middle" rot="R180"/>
 <pin name="PA9/OTG_FS_VBUS" x="129.54" y="-15.24" length="middle" rot="R180"/>
 <pin name="PA10" x="-45.72" y="15.24" length="middle"/>
 <pin name="PA11/OTG_FS_DM" x="129.54" y="-17.78" length="middle" rot="R180"/>
@@ -642,16 +642,16 @@ From:  http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/D
 <pin name="PB8" x="-45.72" y="-22.86" length="middle"/>
 <pin name="PB9" x="-45.72" y="-25.4" length="middle"/>
 <pin name="PB10" x="-45.72" y="-27.94" length="middle"/>
-<pin name="PB11ETH_RMII_TX_EN" x="129.54" y="20.32" length="middle" rot="R180"/>
-<pin name="PB12/ETH_RMII_TXD0" x="129.54" y="17.78" length="middle" rot="R180"/>
-<pin name="PB13/ETH_RMII_TXD1" x="129.54" y="15.24" length="middle" rot="R180"/>
+<pin name="PB11ETH_RMII_TX_EN" x="129.54" y="43.18" length="middle" rot="R180"/>
+<pin name="PB12/ETH_RMII_TXD0" x="129.54" y="40.64" length="middle" rot="R180"/>
+<pin name="PB13/ETH_RMII_TXD1" x="129.54" y="38.1" length="middle" rot="R180"/>
 <pin name="PB14" x="-45.72" y="-38.1" length="middle"/>
 <pin name="PB15" x="-45.72" y="-40.64" length="middle"/>
-<pin name="PC1/ETH_MDC" x="129.54" y="35.56" length="middle" rot="R180"/>
+<pin name="PC1/ETH_MDC" x="129.54" y="27.94" length="middle" rot="R180"/>
 <pin name="PC2" x="43.18" y="35.56" length="middle" rot="R180"/>
 <pin name="PC3" x="43.18" y="33.02" length="middle" rot="R180"/>
-<pin name="PC4/ETH_RMII_RX_D0" x="129.54" y="25.4" length="middle" rot="R180"/>
-<pin name="PC5/ETH_RMII_RX_D1" x="129.54" y="22.86" length="middle" rot="R180"/>
+<pin name="PC4/ETH_RMII_RX_D0" x="129.54" y="35.56" length="middle" rot="R180"/>
+<pin name="PC5/ETH_RMII_RX_D1" x="129.54" y="33.02" length="middle" rot="R180"/>
 <pin name="PC6" x="43.18" y="25.4" length="middle" rot="R180"/>
 <pin name="PC7" x="43.18" y="22.86" length="middle" rot="R180"/>
 <pin name="PC8/SDIO_D0" x="129.54" y="5.08" length="middle" rot="R180"/>
