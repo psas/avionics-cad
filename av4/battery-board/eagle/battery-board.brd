@@ -143,31 +143,6 @@
 <text x="-0.8" y="1.25" size="1" layer="25" ratio="10">&gt;NAME</text>
 <text x="-0.8" y="-2.3" size="1" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="0402-B-NOSILK">
-<description>&lt;b&gt;0402 (metric 1005) normal 'IPC-B' without silkscreen&lt;/b&gt;
-&lt;br&gt;In house package for nominal spacing based on IPC-7351A. Cross-checked against other packages.
-This package is identical to 0402-B, but has its tPlace silkscreen layer removed.</description>
-<wire x1="0.9" y1="0.48" x2="-0.9" y2="0.48" width="0.06" layer="39"/>
-<wire x1="-0.9" y1="0.48" x2="-0.9" y2="-0.48" width="0.06" layer="39"/>
-<wire x1="-0.9" y1="-0.48" x2="0.9" y2="-0.48" width="0.06" layer="39"/>
-<wire x1="0.9" y1="-0.48" x2="0.9" y2="0.48" width="0.06" layer="39"/>
-<wire x1="-0.2" y1="0.25" x2="-0.2" y2="-0.25" width="0.01" layer="51"/>
-<wire x1="0.2" y1="0.25" x2="0.2" y2="-0.25" width="0.01" layer="51"/>
-<wire x1="-0.5" y1="-0.25" x2="-0.2" y2="-0.25" width="0.1" layer="51"/>
-<wire x1="-0.2" y1="-0.25" x2="0.2" y2="-0.25" width="0.1" layer="51"/>
-<wire x1="0.2" y1="-0.25" x2="0.5" y2="-0.25" width="0.1" layer="51"/>
-<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0.1" layer="51"/>
-<wire x1="0.5" y1="0.25" x2="0.2" y2="0.25" width="0.1" layer="51"/>
-<wire x1="0.2" y1="0.25" x2="-0.2" y2="0.25" width="0.1" layer="51"/>
-<wire x1="-0.2" y1="0.25" x2="-0.5" y2="0.25" width="0.1" layer="51"/>
-<wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0.1" layer="51"/>
-<smd name="1" x="-0.48" y="0" dx="0.59" dy="0.72" layer="1"/>
-<smd name="2" x="0.48" y="0" dx="0.59" dy="0.72" layer="1"/>
-<text x="-0.8" y="0.8" size="1" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.8" y="-1.85" size="1" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
-<rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-</package>
 <package name="0603-B-NOSILK">
 <description>&lt;b&gt;0603 (metric 1608) normal 'IPC-B' without silkscreen&lt;/b&gt;
 &lt;br&gt;In house package for nominal spacing based on IPC-7351A. Cross-checked against other packages.
@@ -715,18 +690,18 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <element name="R123" library="shunt" package="VISHAY-2818" value="0.01 5W 1% 75ppm" x="36.8" y="32.1"/>
 <element name="R120" library="rcl_custom" package="0603-B-NOSILK" value="100" x="46" y="24.9"/>
 <element name="R121" library="rcl_custom" package="0603-B-NOSILK" value="100" x="46" y="23.8"/>
-<element name="C111" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="48.9" y="25.3" rot="R270"/>
-<element name="C113" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="48.9" y="23.3" rot="R270"/>
-<element name="C112" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="47.7" y="24.3" rot="R270"/>
+<element name="C111" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="25.3" rot="R270"/>
+<element name="C113" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="23.3" rot="R270"/>
+<element name="C112" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.7" y="24.3" rot="R270"/>
 <element name="R102" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="26" y="11.1" rot="R90"/>
 <element name="R109" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="22.1" y="16.8" rot="R270"/>
 <element name="R111" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="25.2" y="21.5"/>
 <element name="R119" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="23.7" y="22.9"/>
-<element name="C101" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="47.8" y="10.6"/>
-<element name="C102" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="47.8" y="12.4"/>
-<element name="C105" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="47.8" y="13.4"/>
-<element name="C114" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="47.8" y="15.2"/>
-<element name="C109" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="63.2" y="20.2"/>
+<element name="C101" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="10.6"/>
+<element name="C102" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="12.4"/>
+<element name="C105" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="13.4"/>
+<element name="C114" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="15.2"/>
+<element name="C109" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="63.2" y="20.2"/>
 <element name="C110" library="rcl_custom" package="0603-B-NOSILK" value="1u" x="63.2" y="21.9"/>
 <element name="D101" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="53.2" y="26.6"/>
 <element name="C103" library="rcl_custom" package="0603-B-NOSILK" value="1u 40V" x="53.2" y="25.1" rot="R180"/>
@@ -873,12 +848,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="U100" pad="7"/>
 <contactref element="C112" pad="1"/>
 <wire x1="46.8" y1="24.9" x2="47.58" y2="24.9" width="0.2" layer="1"/>
-<wire x1="47.58" y1="24.9" x2="47.7" y2="24.78" width="0.2" layer="1"/>
-<wire x1="47.7" y1="24.78" x2="48.78" y2="24.78" width="0.2" layer="1"/>
+<wire x1="47.58" y1="24.9" x2="47.7" y2="25.1" width="0.2" layer="1"/>
+<wire x1="47.7" y1="25.1" x2="48.78" y2="24.78" width="0.2" layer="1"/>
 <wire x1="48.78" y1="24.78" x2="48.8" y2="24.8" width="0.2" layer="1"/>
 <wire x1="48.8" y1="24.8" x2="48.88" y2="24.8" width="0.2" layer="1"/>
-<wire x1="48.88" y1="24.8" x2="48.9" y2="24.82" width="0.2" layer="1"/>
-<wire x1="48.9" y1="24.82" x2="49.78" y2="24.82" width="0.2" layer="1"/>
+<wire x1="48.88" y1="24.8" x2="48.9" y2="24.5" width="0.2" layer="1"/>
+<wire x1="48.9" y1="24.5" x2="49.78" y2="24.82" width="0.2" layer="1"/>
 <wire x1="49.78" y1="24.82" x2="50.7" y2="23.9" width="0.2" layer="1"/>
 <wire x1="50.7" y1="23.9" x2="50.7" y2="21" width="0.2" layer="1"/>
 <wire x1="50.7" y1="21" x2="51.825" y2="19.875" width="0.2" layer="1"/>
@@ -890,10 +865,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="U100" pad="8"/>
 <contactref element="C112" pad="2"/>
 <wire x1="46.8" y1="23.8" x2="47.68" y2="23.8" width="0.2" layer="1"/>
-<wire x1="47.68" y1="23.8" x2="47.7" y2="23.82" width="0.2" layer="1"/>
-<wire x1="47.7" y1="23.82" x2="48.86" y2="23.82" width="0.2" layer="1"/>
-<wire x1="48.86" y1="23.82" x2="48.9" y2="23.78" width="0.2" layer="1"/>
-<wire x1="48.9" y1="23.78" x2="49.52" y2="23.78" width="0.2" layer="1"/>
+<wire x1="47.68" y1="23.8" x2="47.7" y2="23.5" width="0.2" layer="1"/>
+<wire x1="47.7" y1="23.5" x2="48.86" y2="23.82" width="0.2" layer="1"/>
+<wire x1="48.86" y1="23.82" x2="48.9" y2="24.1" width="0.2" layer="1"/>
+<wire x1="48.9" y1="24.1" x2="49.52" y2="23.78" width="0.2" layer="1"/>
 <wire x1="49.52" y1="23.78" x2="50.2" y2="23.1" width="0.2" layer="1"/>
 <wire x1="50.2" y1="23.1" x2="50.2" y2="20.8" width="0.2" layer="1"/>
 <wire x1="50.2" y1="20.8" x2="51.775" y2="19.225" width="0.2" layer="1"/>
@@ -921,7 +896,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="54.2" y1="15.2" x2="52.4" y2="15.2" width="0.2" layer="1"/>
 <wire x1="52.4" y1="15.2" x2="48.9" y2="11.7" width="0.2" layer="1"/>
 <wire x1="48.9" y1="11.7" x2="48.3" y2="11.7" width="0.2" layer="1"/>
-<wire x1="48.28" y1="12.4" x2="48.3" y2="12.38" width="0.2" layer="1"/>
+<wire x1="48.6" y1="12.4" x2="48.3" y2="12.38" width="0.2" layer="1"/>
 <wire x1="48.3" y1="12.38" x2="48.3" y2="11.7" width="0.2" layer="1"/>
 <wire x1="48.3" y1="11.7" x2="40.8" y2="11.7" width="0.2" layer="1"/>
 <wire x1="26.1" y1="18.1" x2="30.1" y2="18.1" width="0.2" layer="1"/>
@@ -942,7 +917,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="51.9" y1="16.1" x2="49.9" y2="14.1" width="0.2" layer="1"/>
 <wire x1="49.9" y1="14.1" x2="48.3" y2="14.1" width="0.2" layer="1"/>
 <wire x1="48.3" y1="14.1" x2="45.9" y2="14.1" width="0.2" layer="1"/>
-<wire x1="48.28" y1="13.4" x2="48.28" y2="14.08" width="0.2" layer="1"/>
+<wire x1="48.6" y1="13.4" x2="48.28" y2="14.08" width="0.2" layer="1"/>
 <wire x1="48.28" y1="14.08" x2="48.3" y2="14.1" width="0.2" layer="1"/>
 <wire x1="45.9" y1="14.1" x2="42.45" y2="17.55" width="0.2" layer="1"/>
 <wire x1="25.96" y1="22.9" x2="31.7" y2="22.9" width="0.2" layer="1"/>
@@ -960,7 +935,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="51.816" y1="17.116" x2="51.8" y2="17.1" width="0.2" layer="16"/>
 <via x="51.8" y="17.1" extent="1-16" drill="0.2032"/>
 <wire x1="51.8" y1="17.1" x2="49.2" y2="14.5" width="0.2" layer="1"/>
-<wire x1="48.28" y1="15.2" x2="48.28" y2="14.58" width="0.2" layer="1"/>
+<wire x1="48.6" y1="15.2" x2="48.28" y2="14.58" width="0.2" layer="1"/>
 <wire x1="49.2" y1="14.5" x2="48.2" y2="14.5" width="0.2" layer="1"/>
 <wire x1="48.2" y1="14.5" x2="46" y2="14.5" width="0.2" layer="1"/>
 <wire x1="48.28" y1="14.58" x2="48.2" y2="14.5" width="0.2" layer="1"/>
@@ -978,7 +953,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="U100" pad="18"/>
 <wire x1="59.8" y1="19.875" x2="61.175" y2="19.875" width="0.3" layer="1"/>
 <wire x1="61.175" y1="19.875" x2="61.5" y2="20.2" width="0.3" layer="1"/>
-<wire x1="61.5" y1="20.2" x2="62.72" y2="20.2" width="0.3" layer="1"/>
+<wire x1="61.5" y1="20.2" x2="62.4" y2="20.2" width="0.3" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="C110" pad="1"/>
@@ -1076,7 +1051,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="52.6" y1="14.8" x2="49.1" y2="11.3" width="0.2" layer="1"/>
 <wire x1="49.1" y1="11.3" x2="48.28" y2="11.3" width="0.2" layer="1"/>
 <wire x1="48.28" y1="11.3" x2="40.7" y2="11.3" width="0.2" layer="1"/>
-<wire x1="48.28" y1="10.6" x2="48.28" y2="11.3" width="0.2" layer="1"/>
+<wire x1="48.6" y1="10.6" x2="48.28" y2="11.3" width="0.2" layer="1"/>
 <wire x1="40.7" y1="11.3" x2="31.8" y2="16.6" width="0.2" layer="1"/>
 <wire x1="26" y1="11.9" x2="26" y2="16.3" width="0.2" layer="1"/>
 <wire x1="26" y1="16.3" x2="26" y2="16.6" width="0.2" layer="1"/>
@@ -1370,7 +1345,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <signal name="N$40">
 <contactref element="C117" pad="1"/>
 <contactref element="C116" pad="2"/>
-<wire x1="17.7" y1="19.2" x2="17.7" y2="12.7" width="0.4" layer="1"/>
+<wire x1="17.7" y1="19.2" x2="17.7" y2="12.7" width="0.7" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U100" pad="9"/>
@@ -1495,10 +1470,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <signal name="N$15">
 <contactref element="C115" pad="1"/>
 <contactref element="C118" pad="2"/>
-<wire x1="21.2" y1="25.1" x2="22" y2="25.1" width="0.4" layer="1"/>
-<wire x1="22" y1="25.1" x2="22.5" y2="25.1" width="0.4" layer="1"/>
-<wire x1="22.5" y1="25.1" x2="22.6" y2="25" width="0.4" layer="1"/>
-<wire x1="22.7" y1="25.1" x2="22.5" y2="25.1" width="0.4" layer="1"/>
+<wire x1="21.2" y1="25.1" x2="22.7" y2="25.1" width="0.7" layer="1"/>
 </signal>
 <signal name="PACK+">
 <contactref element="J100" pad="B+@4"/>

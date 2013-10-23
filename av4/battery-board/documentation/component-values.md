@@ -43,18 +43,44 @@
 **Notes:** At &lt;= 40 mA, we should have no problem with almost any P channel MOSFET, as long as it has a Vds rating of >= 30 V and matches the suggested transistor's maximum VGS(th) of 3V. There's a ton here, we'll choose an SOT-23 package and one with 0.0.086 ohms at Vgs = -4.5V which gives a power dissipation too low to care about during precharge. **FIXME:** CHECK THE PACKAGE.
 
 
-### D101 and D102 power supply diodes
+### R101 normally off pullup - 100k 0603
+
+- Why is this 1M in the datasheets and EVM?
 
 
+### D101 and D102 power supply diodes - Schotkey 0603 package
+
+**Purpose:** Prevent bleedback inside of the BQ2060 from charger Vcc to battery Vcc and vice versa.
+
+**Notes:** Should be Schotkeys? > 20V rating.
 
 
+### R123 shunt resistor - 10mOhm 1% 1W - Vishary WSH2818R0100FEA
+
+**Purpose:** Provide voltage drop for BQ3060 to measure the current from the battery (two quadrant).
+
+**Notes:**
+
+- The bq3060 takes between -0.2 to 0.25 V inputs across the SRP/SRN pins.
+- From the data sheet: "using a 5 mΩ to 20 mΩ typ. sense resistor" and from the circuit discussion doc, "For a pack with two parallel cylindrical cells, 10 mΩ is generally ideal."
+- The SenseResistor register in the bq3060 contains the value of the sense (shunt) resistor across SRP/SRN. It's set in uOhm, and it can be set from 0 to 65,535 uOhm. The default value is  10,000 uOhm which is 10 mOhm.
+- The reference circuit description says "Tc < = 75 ppm in order to minimize current measurement drift with temperature".
+- The EVM uses a 0.010 ohm, 1-W, 1%, Tc = 75ppm, 2512 resistor (Vishay WSL-2512-010).
+- Let's choose 10 mOhm. We could go less, but then we drop voltage gain. We could go higher, but then we power disappation is a problem. 10 mOhm seems like a good engineering comprimise. Now, what power?
+- 10 mOhm dissipates 1 W @ 10 A and 2.25 W @ 15 A. 
+- This means that we need 1W *at least* in order to not cook up if we have to run up to our fused limit.
+- In a temporary short, we still need to beat the fuse. The 5 second time for the fuse is 40 A, so it ought to handle that.
+- We choose the WSHA-.01CT-ND (Vishary WSH2818R0100FEA) because it's 5 W but still has a 99 W/in^2 rating, and has 45 A of overrating curent for 5 seconds. It's over-rated, but that's fine.
 
 
+### TH100, TH101 Battery temperature thermistors
 
+**Purpose:** Measure the battery cell temperature to affect battery charging.
 
+**Notes:**
 
-
-
+- Recommended: Semitec 103AT ? Use that, or? 
+- Use Vias or pinheader, and then we'll solder pigtail leads onto the thermister and bury them between B1 and B2 and B3 and B4.
 
 
 ### U100 battery fuel gauge and balancer
@@ -65,7 +91,9 @@
    - Full Array of Programmable Protection: Voltage, Current, and Temperature
    - Low Power Consumption Sleep Mode: &lt; 69 μA
    - Cell balancing (!!!!)
+   - From the data sheet: "The bq3060 provides software 1st level and 2nd level safety protection on overvoltage, undervoltage, overtemperature, and overcharge, as well as hardware-overcurrent in discharge, short circuit in charge and discharge protection." Not too shabby.
 - **Notes:** We're not using the suggested chemical fuse in the various datasheets.
+
 
 ## B100, B101A, B102A, B103A Lithium Ion Polymer batteries
 
@@ -77,6 +105,7 @@
    - ≤ 20 mΩ internal resistance
 - **Purpose:** Duh.
 - **Notes:** See the [[battery pack page|avionics/av3-battery-pack]]. 
+
 
 ## J100 RocketNet Battery Connector
 
@@ -99,14 +128,13 @@
    14. Pack -
 - **Notes:** At about 1 A per pin, that's a 4A toal. Given our pack voltage of 10 - 16.8V, that's 40 - 67 W. We should be able to draw the 2-3 amps that the rocket takes without a problem. ISSUE: The M50-3150742 is *very* hard to get a hold of. It's not stocked by anyone, we may have to ask for samples.
 
+
 ## Input filtering and protection
 
 - C100 = C115 = 100nF/100V/0603
 - D100 = TVS/25V/0603 
 
 A simple input filter to absorb ESD and spikey things. Probably uneccesary, but easy to have. The TVS should handle big ESD events and the capacitor grabs smaller events quickly. Probably unecessary, but both are easy to add and protect Q100 and Q102.
-
-Note that Q100/Q102/Q103 take care of over voltage, and that the off-board BQ24725 battery charger takes care of reverse voltage protection, undervoltage protection, and some overvoltage protection.
 
 
 ## Cell Balancing
@@ -118,65 +146,5 @@ Note that Q100/Q102/Q103 take care of over voltage, and that the off-board BQ247
 - Cell 3 bypass
    - Q104
 - Cell 4 bypass
-   - 
 
-
-P-Channel 20-V (D-S) MOSFET
-1.2 at VGS = - 4.5 V 
-1.6 at VGS = - 2.5 V 
-Low Threshold: 0.8 V (typ.)
-Gate-Source ESD Protected: 2000 V
-
-
-
-
-
-C102  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C103  1u                   C-EU0603-B-NOSILK    0603-B-NOSILK 
-C104  1u                   C-EU0603-B-NOSILK    0603-B-NOSILK 
-C105  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C106  100p                 C-EU0603-B-NOSILK    0603-B-NOSILK 
-C107  100p                 C-EU0603-B-NOSILK    0603-B-NOSILK 
-C108  100p                 C-EU0603-B-NOSILK    0603-B-NOSILK 
-C109  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C110  1u                   C-EU0603-B-NOSILK    0603-B-NOSILK 
-C111  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C112  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C113  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C114  100n                 C-EU0402-B-NOSILK    0402-B-NOSILK 
-C116  100n                 C-EU0603-B-NOSILK    0603-B-NOSILK 
-C117  100n                 C-EU0603-B-NOSILK    0603-B-NOSILK 
-D101  DIODE-0603           DIODE-0603           0603-B-NOSILK-
-D102  DIODE-0603           DIODE-0603           0603-B-NOSILK-
-
-J101  87758-0216           87758-0216           87758-0216    
-J102  87758-0216           87758-0216           87758-0216    
-Q100  SI4435DDY            SI4435DDY            SO-8          
-Q101  SI4435DDY            SI4435DDY            SO-8          
-Q102  SI4435DDY            SI4435DDY            SO-8          
-
-R100  301 1W               R-US_1206-B          1206-B        
-R101  1M                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R102  1K                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R103  1M                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R104  1M                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R105  100 .25W             R-US_0603-B-NOSILK   0603-B-NOSILK 
-R106  5.1k                 R-US_0402-B-NOSILK   0402-B-NOSILK 
-R107  5.1k                 R-US_0402-B-NOSILK   0402-B-NOSILK 
-R108  5.1k                 R-US_0402-B-NOSILK   0402-B-NOSILK 
-R109  1K                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R110  100 .25W             R-US_0603-B-NOSILK   0603-B-NOSILK 
-R111  1K                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R112  200                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R113  100                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R114  200                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R115  100                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R116  100 .25W             R-US_0603-B-NOSILK   0603-B-NOSILK 
-R117  200                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R118  100                  R-US_0603-B-NOSILK   0603-B-NOSILK 
-R119  1K                   R-US_0402-B-NOSILK   0402-B-NOSILK 
-R120  100                  R-US_0402-B-NOSILK   0402-B-NOSILK 
-R121  100                  R-US_0402-B-NOSILK   0402-B-NOSILK 
-R122  100 .25W             R-US_0603-B-NOSILK   0603-B-NOSILK 
-R123  0.01 5W 1% 75ppm     R-US-2818            VISHAY-2818   
 

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6620,25 +6620,25 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
 <part name="R120" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
 <part name="R121" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
-<part name="C111" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
-<part name="C113" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
-<part name="C112" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C111" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C113" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C112" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="BAR_GND4" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND6" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="R102" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
 <part name="R109" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
 <part name="R111" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
 <part name="R119" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1K"/>
-<part name="C101" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
-<part name="C102" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
-<part name="C105" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
-<part name="C114" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C101" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C102" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C105" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
+<part name="C114" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="BAR_GND8" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND9" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND10" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND11" library="psas" deviceset="SUP_GND_BAR" device=""/>
 <part name="BAR_GND12" library="psas" deviceset="SUP_GND_BAR" device=""/>
-<part name="C109" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
+<part name="C109" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
 <part name="C110" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u"/>
 <part name="D101" library="diode-0603" deviceset="DIODE-0603" device=""/>
 <part name="C103" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1u 40V"/>
