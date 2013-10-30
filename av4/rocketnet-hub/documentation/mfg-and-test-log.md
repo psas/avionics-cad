@@ -32,7 +32,7 @@
    - TODO: Turn R18 into a divider to the system voltage for STM32 system voltage monitoring.
    - Grounded TP39 (`ETH_MII_RX_ER`) using mod wire.
    - Remove R10 on CFGMODE so the KSZ boots to its default settings
-   - Port 8 !EN and !FLT are not connected to the STM32.
+   - Port 8 !EN and !FLT are not connected to the STM32.   
 - **Design Issues that require changes to component values**
    - TODO: R137 to 71.5 Kohm
    - TODO: C104 is spec'd as 22μF 1206 but is a 2.2 uF 0603.

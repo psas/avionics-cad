@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
@@ -74,37 +74,12 @@
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="8" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="ResistanceBottom" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="15" fill="1" visible="no" active="yes"/>
-<layer number="217" name="217bmp" color="16" fill="1" visible="no" active="yes"/>
-<layer number="218" name="218bmp" color="17" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -13631,7 +13606,6 @@ by exp-project-lbr.ulp</description>
 <part name="GND146" library="supply1" deviceset="GND" device=""/>
 <part name="R72" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND147" library="supply1" deviceset="GND" device=""/>
-<part name="GND148" library="supply1" deviceset="GND" device=""/>
 <part name="Q10" library="zetex" deviceset="NMOSSOT23" device="" value="PMV45EN"/>
 <part name="+3V41" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V42" library="supply1" deviceset="+3V3" device=""/>
@@ -13649,6 +13623,7 @@ by exp-project-lbr.ulp</description>
 <part name="C9" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="2.2u/Low ESR"/>
 <part name="GND151" library="supply1" deviceset="GND" device=""/>
 <part name="GND153" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13685,8 +13660,9 @@ Supply Enable</text>
 <wire x1="48.26" y1="378.46" x2="15.24" y2="378.46" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="15.24" y1="378.46" x2="15.24" y2="414.02" width="0.1524" layer="95" style="shortdash"/>
 <text x="17.78" y="408.94" size="2.54" layer="95">UART Interface</text>
-<text x="-5.08" y="327.66" size="1.016" layer="95">ETH_MII_RX_ER is being disabled (assumed Active High)</text>
 <text x="38.1" y="322.58" size="1.016" layer="95">Ferrite bead position before/after capacitors</text>
+<wire x1="17.78" y1="342.9" x2="17.78" y2="353.06" width="0.1524" layer="101"/>
+<text x="16.51" y="342.9" size="1.778" layer="101" rot="R90">MODWIRE</text>
 </plain>
 <instances>
 <instance part="U1" gate="U1" x="152.4" y="388.62"/>
@@ -13770,7 +13746,6 @@ Supply Enable</text>
 <instance part="GND54" gate="1" x="165.1" y="309.88"/>
 <instance part="R65" gate="R" x="198.12" y="388.62" rot="R90"/>
 <instance part="GND146" gate="1" x="198.12" y="381"/>
-<instance part="GND148" gate="1" x="17.78" y="332.74"/>
 <instance part="+3V42" gate="G$1" x="233.68" y="388.62"/>
 <instance part="TP39" gate="G$1" x="17.78" y="355.6"/>
 <instance part="J11" gate="J" x="-12.7" y="358.14" rot="MR0"/>
@@ -13782,6 +13757,7 @@ Supply Enable</text>
 </instance>
 <instance part="GND151" gate="1" x="137.16" y="307.34"/>
 <instance part="GND153" gate="1" x="124.46" y="307.34"/>
+<instance part="GND17" gate="1" x="17.78" y="340.36"/>
 </instances>
 <busses>
 </busses>
@@ -13921,10 +13897,6 @@ Supply Enable</text>
 <segment>
 <pinref part="R65" gate="R" pin="1"/>
 <pinref part="GND146" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND148" gate="1" pin="GND"/>
-<wire x1="17.78" y1="340.36" x2="17.78" y2="335.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J11" gate="J" pin="GND"/>
@@ -18345,6 +18317,8 @@ Supply Enable</text>
 <wire x1="55.88" y1="121.92" x2="55.88" y2="170.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="55.88" y1="170.18" x2="17.78" y2="170.18" width="0.1524" layer="97" style="shortdash"/>
 <text x="27.94" y="165.1" size="1.778" layer="97">Mode Select</text>
+<text x="201.93" y="20.32" size="1.778" layer="101" rot="R90">CHANGE: NP</text>
+<text x="49.53" y="72.39" size="1.778" layer="101" rot="R90">CHANGE: NP</text>
 </plain>
 <instances>
 <instance part="U4" gate="U" x="134.62" y="127"/>
@@ -18458,7 +18432,10 @@ Supply Enable</text>
 <instance part="R8" gate="R" x="50.8" y="142.24" rot="R90"/>
 <instance part="GND71" gate="1" x="27.94" y="127"/>
 <instance part="R3" gate="R" x="66.04" y="78.74" rot="R180"/>
-<instance part="R10" gate="R" x="48.26" y="91.44" rot="R180"/>
+<instance part="R10" gate="R" x="48.26" y="91.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.07" y="89.9414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="52.07" y="87.122" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND72" gate="1" x="38.1" y="20.32"/>
 <instance part="R14" gate="R" x="195.58" y="30.48" rot="R90"/>
 <instance part="GND7" gate="1" x="198.12" y="256.54"/>
