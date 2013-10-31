@@ -688,38 +688,38 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="OC_FARNELL" value="unknown" x="47.752" y="16.764" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R123" library="shunt" package="VISHAY-2818" value="0.01 5W 1% 75ppm" x="36.8" y="32.1"/>
-<element name="R120" library="rcl_custom" package="0603-B-NOSILK" value="100" x="46" y="24.9"/>
-<element name="R121" library="rcl_custom" package="0603-B-NOSILK" value="100" x="46" y="23.8"/>
-<element name="C111" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="25.3" rot="R270"/>
-<element name="C113" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="23.3" rot="R270"/>
-<element name="C112" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.7" y="24.3" rot="R270"/>
+<element name="R120" library="rcl_custom" package="0603-B-NOSILK" value="100" x="44.9" y="25.4"/>
+<element name="R121" library="rcl_custom" package="0603-B-NOSILK" value="100" x="44.9" y="23.8"/>
+<element name="C111" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="26.2" rot="R270"/>
+<element name="C113" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="48.9" y="23" rot="R270"/>
+<element name="C112" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.3" y="24.6" rot="R270"/>
 <element name="R102" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="26" y="11.1" rot="R90"/>
-<element name="R109" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="22.5" y="13.7" rot="R270"/>
-<element name="R111" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="25.2" y="21.5"/>
-<element name="R119" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="23.7" y="22.9"/>
-<element name="C101" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="10.6"/>
-<element name="C102" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="12.4"/>
-<element name="C105" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="13.4"/>
-<element name="C114" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="15.2"/>
+<element name="R109" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="22.1" y="13.7" rot="R270"/>
+<element name="R111" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="23.9" y="18.6" rot="R90"/>
+<element name="R119" library="rcl_custom" package="0603-B-NOSILK" value="1K" x="22.1" y="20.7" rot="R270"/>
+<element name="C101" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="8.8"/>
+<element name="C102" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="10.4"/>
+<element name="C105" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="12.4"/>
+<element name="C114" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="47.8" y="14.4"/>
 <element name="C109" library="rcl_custom" package="0603-B-NOSILK" value="100n" x="63.2" y="20.2"/>
 <element name="C110" library="rcl_custom" package="0603-B-NOSILK" value="1u" x="63.2" y="21.9"/>
 <element name="D101" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="53.2" y="26.6"/>
 <element name="C103" library="rcl_custom" package="0603-B-NOSILK" value="1u 40V" x="53.2" y="25.1" rot="R180"/>
-<element name="Q104" library="si1023x" package="SOT-563" value="SI1023X" x="23.5" y="21.4" rot="R270"/>
+<element name="Q104" library="si1023x" package="SOT-563" value="SI1023X" x="24.2" y="21" rot="R270"/>
 <element name="Q103" library="si1023x" package="SOT-563" value="SI1023X" x="24.5" y="14" rot="R270"/>
-<element name="R122" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="27.1" y="23.8" rot="R180"/>
-<element name="R116" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="22" y="21.5" rot="R270"/>
-<element name="R110" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="24.7" y="19.2" rot="R270"/>
-<element name="R105" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="20.8" y="13.7" rot="R270"/>
-<element name="R114" library="rcl_custom" package="0603-B-NOSILK" value="200" x="64.8" y="16.5" rot="R180"/>
+<element name="R122" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="24.1" y="23.1"/>
+<element name="R116" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="20.2" y="20.7" rot="R270"/>
+<element name="R110" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="25.8" y="18.6" rot="R270"/>
+<element name="R105" library="rcl_custom" package="0603-B-NOSILK" value="100 .25W" x="20.5" y="13.7" rot="R270"/>
+<element name="R114" library="rcl_custom" package="0603-B-NOSILK" value="200" x="65.5" y="16.5" rot="R180"/>
 <element name="R115" library="rcl_custom" package="0603-B-NOSILK" value="100" x="52.3" y="31"/>
-<element name="R117" library="rcl_custom" package="0603-B-NOSILK" value="200" x="64.8" y="14.5" rot="R180"/>
+<element name="R117" library="rcl_custom" package="0603-B-NOSILK" value="200" x="65.5" y="14.5" rot="R180"/>
 <element name="R118" library="rcl_custom" package="0603-B-NOSILK" value="100" x="56.6" y="31"/>
 <element name="C106" library="rcl_custom" package="0603-B-NOSILK" value="100p" x="56.6" y="32.5" rot="R180"/>
 <element name="C107" library="rcl_custom" package="0603-B-NOSILK" value="100p" x="52.3" y="32.5" rot="R180"/>
 <element name="D102" library="diode-0603" package="0603-B-NOSILK-DIODE" value="DIODE-0603" x="59" y="26.6"/>
 <element name="C104" library="rcl_custom" package="0603-B-NOSILK" value="1u 40V" x="59" y="25.1" rot="R180"/>
-<element name="R112" library="rcl_custom" package="0603-B-NOSILK" value="200" x="64.8" y="18.5" rot="R180"/>
+<element name="R112" library="rcl_custom" package="0603-B-NOSILK" value="200" x="65.4" y="18.5" rot="R180"/>
 <element name="R113" library="rcl_custom" package="0603-B-NOSILK" value="100" x="48" y="31"/>
 <element name="C108" library="rcl_custom" package="0603-B-NOSILK" value="100p" x="48" y="32.5" rot="R180"/>
 <element name="R108" library="rcl_custom" package="0603-B-NOSILK" value="5.1k" x="5.3" y="16" rot="R270"/>
@@ -805,7 +805,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="39.6748" y1="31.0158" x2="39.2049625" y2="31.707228125" width="0.3048" layer="1"/>
 <wire x1="39.2049625" y1="31.707228125" x2="38.855" y2="32.1" width="0.3048" layer="1"/>
 <wire x1="41.7576" y1="31.2166" x2="38.855" y2="32.1" width="0.254" layer="1"/>
-<via x="48.398" y="27.27" extent="1-16" drill="0.2032"/>
+<via x="51.098" y="27.87" extent="1-16" drill="0.2032"/>
 <via x="47.798" y="21.39" extent="1-16" drill="0.2032"/>
 <via x="58.5" y="20.5" extent="1-16" drill="0.2032"/>
 <via x="59.9" y="14.8" extent="1-16" drill="0.2032"/>
@@ -817,17 +817,19 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <via x="45.7" y="0.9" extent="1-16" drill="0.2032"/>
 <via x="60.8" y="7.6" extent="1-16" drill="0.2032"/>
 <via x="70.3" y="18.8" extent="1-16" drill="0.2032"/>
-<wire x1="27.9" y1="23.8" x2="29" y2="23.8" width="0.2" layer="1"/>
-<via x="29" y="23.8" extent="1-16" drill="0.2032"/>
-<via x="46.5" y="12.9" extent="1-16" drill="0.2032"/>
-<wire x1="45.2" y1="24.9" x2="39.4" y2="24.9" width="0.2" layer="1"/>
-<wire x1="39.4" y1="24.9" x2="37.2" y2="27.1" width="0.2" layer="1"/>
 <wire x1="37.2" y1="27.1" x2="37.2" y2="30.4" width="0.2" layer="1"/>
 <wire x1="37.2" y1="30.4" x2="37.6" y2="30.702265625" width="0.2" layer="1"/>
 <wire x1="37.6" y1="30.702265625" x2="39.2049625" y2="31.707228125" width="0.2" layer="1"/>
 <via x="45.698" y="7.99" extent="1-16" drill="0.2032"/>
 <contactref element="J101" pad="2"/>
 <contactref element="J102" pad="2"/>
+<via x="45.798" y="12.39" extent="1-16" drill="0.2032"/>
+<via x="45.798" y="14.39" extent="1-16" drill="0.2032"/>
+<wire x1="23.3" y1="23.1" x2="22.3" y2="23.1" width="0.2032" layer="1"/>
+<via x="22.3" y="23.1" extent="1-16" drill="0.2032" diameter="0.6096" shape="octagon"/>
+<wire x1="22.3" y1="23.1" x2="22.3" y2="22.9" width="0.2032" layer="2"/>
+<wire x1="44.1" y1="25.4" x2="38.9" y2="25.4" width="0.2032" layer="1"/>
+<wire x1="38.9" y1="25.4" x2="37.2" y2="27.1" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U100" pad="10"/>
@@ -841,101 +843,100 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="C111" pad="2"/>
 <contactref element="U100" pad="7"/>
 <contactref element="C112" pad="1"/>
-<wire x1="46.8" y1="24.9" x2="47.58" y2="24.9" width="0.2" layer="1"/>
-<wire x1="47.58" y1="24.9" x2="47.7" y2="25.1" width="0.2" layer="1"/>
-<wire x1="47.7" y1="25.1" x2="48.78" y2="24.78" width="0.2" layer="1"/>
-<wire x1="48.78" y1="24.78" x2="48.8" y2="24.8" width="0.2" layer="1"/>
-<wire x1="48.8" y1="24.8" x2="48.88" y2="24.8" width="0.2" layer="1"/>
-<wire x1="48.88" y1="24.8" x2="48.9" y2="24.5" width="0.2" layer="1"/>
-<wire x1="48.9" y1="24.5" x2="49.78" y2="24.82" width="0.2" layer="1"/>
+<wire x1="48.9" y1="25.4" x2="49.78" y2="24.82" width="0.2" layer="1"/>
 <wire x1="49.78" y1="24.82" x2="50.7" y2="23.9" width="0.2" layer="1"/>
 <wire x1="50.7" y1="23.9" x2="50.7" y2="21" width="0.2" layer="1"/>
 <wire x1="50.7" y1="21" x2="51.825" y2="19.875" width="0.2" layer="1"/>
 <wire x1="54" y1="19.875" x2="51.825" y2="19.875" width="0.2" layer="1"/>
+<wire x1="47.3" y1="25.4" x2="48.9" y2="25.4" width="0.2032" layer="1"/>
+<wire x1="47.3" y1="25.4" x2="45.7" y2="25.4" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R121" pad="2"/>
 <contactref element="C113" pad="1"/>
 <contactref element="U100" pad="8"/>
 <contactref element="C112" pad="2"/>
-<wire x1="46.8" y1="23.8" x2="47.68" y2="23.8" width="0.2" layer="1"/>
-<wire x1="47.68" y1="23.8" x2="47.7" y2="23.5" width="0.2" layer="1"/>
-<wire x1="47.7" y1="23.5" x2="48.86" y2="23.82" width="0.2" layer="1"/>
-<wire x1="48.86" y1="23.82" x2="48.9" y2="24.1" width="0.2" layer="1"/>
-<wire x1="48.9" y1="24.1" x2="49.52" y2="23.78" width="0.2" layer="1"/>
+<wire x1="47.68" y1="23.8" x2="47.3" y2="23.8" width="0.2" layer="1"/>
+<wire x1="48.86" y1="23.82" x2="48.9" y2="23.8" width="0.2" layer="1"/>
+<wire x1="48.9" y1="23.8" x2="49.52" y2="23.78" width="0.2" layer="1"/>
 <wire x1="49.52" y1="23.78" x2="50.2" y2="23.1" width="0.2" layer="1"/>
 <wire x1="50.2" y1="23.1" x2="50.2" y2="20.8" width="0.2" layer="1"/>
 <wire x1="50.2" y1="20.8" x2="51.775" y2="19.225" width="0.2" layer="1"/>
 <wire x1="54" y1="19.225" x2="51.775" y2="19.225" width="0.2" layer="1"/>
+<wire x1="45.7" y1="23.8" x2="47.3" y2="23.8" width="0.2032" layer="1"/>
+<wire x1="47.3" y1="23.8" x2="48.9" y2="23.8" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R109" pad="2"/>
 <contactref element="C102" pad="2"/>
 <contactref element="Q103" pad="2"/>
 <contactref element="U100" pad="4"/>
-<wire x1="23.85" y1="14" x2="23.3" y2="14" width="0.3" layer="1"/>
-<wire x1="23.3" y1="14" x2="23.3" y2="12.9" width="0.3" layer="1"/>
-<wire x1="23.3" y1="12.9" x2="22.5" y2="12.9" width="0.3" layer="1"/>
-<wire x1="23.85" y1="14" x2="24.5" y2="14" width="0.3" layer="1"/>
-<wire x1="24.5" y1="14" x2="24.5" y2="12.5" width="0.3" layer="1"/>
-<via x="24.5" y="12.5" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="24.5" y1="12.5" x2="21.5" y2="12.5" width="0.3" layer="16"/>
-<wire x1="21.5" y1="12.5" x2="21.5" y2="6.2" width="0.3" layer="16"/>
-<wire x1="21.5" y1="6.2" x2="46.9" y2="6.2" width="0.3" layer="16"/>
-<wire x1="46.9" y1="6.2" x2="49.8" y2="9.1" width="0.3" layer="16"/>
-<wire x1="49.8" y1="9.1" x2="49.8" y2="12.4" width="0.3" layer="16"/>
-<via x="49.8" y="12.4" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="49.8" y1="12.4" x2="48.6" y2="12.4" width="0.3" layer="1"/>
-<wire x1="49.8" y1="12.4" x2="49.8" y2="19.8" width="0.3" layer="16"/>
-<wire x1="49.8" y1="19.8" x2="51.8" y2="21.8" width="0.3" layer="16"/>
-<via x="51.8" y="21.8" extent="1-16" drill="0.2032" diameter="0.6096"/>
-<wire x1="51.8" y1="21.8" x2="53.975" y2="21.8" width="0.3" layer="1"/>
-<wire x1="53.975" y1="21.8" x2="54" y2="21.825" width="0.3" layer="1"/>
+<wire x1="23.85" y1="14" x2="23.2" y2="14" width="0.3" layer="1"/>
+<wire x1="23.2" y1="14" x2="23.2" y2="12.9" width="0.3" layer="1"/>
+<wire x1="23.2" y1="12.9" x2="22.1" y2="12.9" width="0.3" layer="1"/>
+<wire x1="50.5" y1="10.4" x2="55.8" y2="15.7" width="0.2032" layer="1"/>
+<wire x1="55.8" y1="15.7" x2="55.8" y2="21.7" width="0.2032" layer="1"/>
+<wire x1="55.8" y1="21.7" x2="55.675" y2="21.825" width="0.2032" layer="1"/>
+<wire x1="55.675" y1="21.825" x2="54" y2="21.825" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="10.4" x2="50.5" y2="10.4" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="10.4" x2="48.6" y2="11.4" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="11.4" x2="38.7" y2="11.4" width="0.2032" layer="1"/>
+<wire x1="38.7" y1="11.4" x2="33.6" y2="16.5" width="0.2032" layer="1"/>
+<wire x1="33.6" y1="16.5" x2="27.3" y2="16.5" width="0.2032" layer="1"/>
+<via x="27.3" y="16.5" extent="1-16" drill="0.2032" diameter="0.6096" shape="octagon"/>
+<wire x1="27.3" y1="16.5" x2="24.5" y2="13.7" width="0.2032" layer="16"/>
+<wire x1="24.5" y1="13.7" x2="24.5" y2="12.9" width="0.2032" layer="16"/>
+<via x="24.5" y="12.9" extent="1-16" drill="0.2032" diameter="0.6096" shape="octagon"/>
+<wire x1="24.5" y1="12.9" x2="24.5" y2="14" width="0.2032" layer="1"/>
+<wire x1="24.5" y1="14" x2="23.85" y2="14" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R111" pad="2"/>
 <contactref element="C105" pad="2"/>
 <contactref element="Q104" pad="5"/>
 <contactref element="U100" pad="5"/>
-<wire x1="54" y1="21.175" x2="53.228" y2="21.194" width="0.254" layer="1"/>
-<wire x1="53.228" y1="21.194" x2="52.67" y2="21.252" width="0.254" layer="1"/>
-<via x="52.67" y="21.252" extent="1-16" drill="0.2032"/>
-<wire x1="52.67" y1="21.252" x2="52.67" y2="16.13" width="0.2" layer="16"/>
-<wire x1="52.67" y1="16.13" x2="52.7" y2="16.1" width="0.2" layer="16"/>
-<via x="52.7" y="16.1" extent="1-16" drill="0.2032"/>
-<wire x1="52.7" y1="16.1" x2="51.9" y2="16.1" width="0.2" layer="1"/>
-<wire x1="51.9" y1="16.1" x2="49.9" y2="14.1" width="0.2" layer="1"/>
-<wire x1="49.9" y1="14.1" x2="48.3" y2="14.1" width="0.2" layer="1"/>
-<wire x1="48.3" y1="14.1" x2="45.9" y2="14.1" width="0.2" layer="1"/>
-<wire x1="48.6" y1="13.4" x2="48.28" y2="14.08" width="0.2" layer="1"/>
-<wire x1="48.28" y1="14.08" x2="48.3" y2="14.1" width="0.2" layer="1"/>
-<wire x1="45.9" y1="14.1" x2="42.45" y2="17.55" width="0.2" layer="1"/>
-<wire x1="25.96" y1="22.9" x2="31.7" y2="22.9" width="0.2" layer="1"/>
-<wire x1="40.8" y1="17.5" x2="42.45" y2="17.55" width="0.2" layer="1"/>
-<wire x1="31.7" y1="22.9" x2="40.8" y2="17.5" width="0" layer="19" extent="1-1"/>
-<wire x1="26" y1="21.5" x2="25.96" y2="22.9" width="0" layer="19" extent="1-1"/>
-<wire x1="24.15" y1="21.4" x2="26" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="24.85" y1="21" x2="24.2" y2="21" width="0.254" layer="1"/>
+<wire x1="24.2" y1="21" x2="24.2" y2="19.7" width="0.254" layer="1"/>
+<wire x1="23.9" y1="19.4" x2="24.2" y2="19.7" width="0.254" layer="1"/>
+<wire x1="24.85" y1="21" x2="26.3" y2="21" width="0.2032" layer="1"/>
+<wire x1="26.3" y1="21" x2="27.8" y2="22.5" width="0.2032" layer="1"/>
+<wire x1="33.5" y1="22.5" x2="38.5" y2="17.5" width="0.2032" layer="1"/>
+<wire x1="38.5" y1="17.5" x2="42.3" y2="17.5" width="0.2032" layer="1"/>
+<wire x1="54" y1="21.175" x2="55.4" y2="21.175" width="0.2032" layer="1"/>
+<wire x1="55.4" y1="21.175" x2="55.4" y2="15.9" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="12.4" x2="51.9" y2="12.4" width="0.2032" layer="1"/>
+<wire x1="51.9" y1="12.4" x2="55.4" y2="15.9" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="12.4" x2="48.6" y2="13.4" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="13.4" x2="45" y2="13.4" width="0.2032" layer="1"/>
+<wire x1="45" y1="13.4" x2="45" y2="14.8" width="0.2032" layer="1"/>
+<wire x1="45" y1="14.8" x2="42.3" y2="17.5" width="0.2032" layer="1"/>
+<wire x1="33.5" y1="22.5" x2="27.8" y2="22.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R119" pad="2"/>
 <contactref element="C114" pad="2"/>
 <contactref element="Q104" pad="2"/>
-<via x="51.816" y="20.828" extent="1-16" drill="0.2032"/>
-<wire x1="51.816" y1="20.828" x2="51.816" y2="17.116" width="0.2" layer="16"/>
-<wire x1="51.816" y1="17.116" x2="51.8" y2="17.1" width="0.2" layer="16"/>
-<via x="51.8" y="17.1" extent="1-16" drill="0.2032"/>
-<wire x1="51.8" y1="17.1" x2="49.2" y2="14.5" width="0.2" layer="1"/>
-<wire x1="48.6" y1="15.2" x2="48.28" y2="14.58" width="0.2" layer="1"/>
-<wire x1="49.2" y1="14.5" x2="48.2" y2="14.5" width="0.2" layer="1"/>
-<wire x1="48.2" y1="14.5" x2="46" y2="14.5" width="0.2" layer="1"/>
-<wire x1="48.28" y1="14.58" x2="48.2" y2="14.5" width="0.2" layer="1"/>
-<wire x1="46" y1="14.5" x2="42.5" y2="18" width="0.2" layer="1"/>
 <wire x1="40.7" y1="18" x2="42.5" y2="18" width="0.2" layer="1"/>
 <contactref element="U100" pad="6"/>
-<wire x1="54" y1="20.525" x2="52.119" y2="20.525" width="0.2" layer="1"/>
-<wire x1="52.119" y1="20.525" x2="51.816" y2="20.828" width="0.2" layer="1"/>
-<wire x1="24.5" y1="22.9" x2="40.7" y2="18" width="0" layer="19" extent="1-1"/>
-<wire x1="22.85" y1="21.4" x2="24.5" y2="22.9" width="0" layer="19" extent="1-1"/>
+<wire x1="22.1" y1="19.9" x2="22.1" y2="20.7" width="0.254" layer="1"/>
+<wire x1="22.1" y1="20.7" x2="22.8" y2="20.7" width="0.254" layer="1"/>
+<wire x1="22.8" y1="20.7" x2="23.1" y2="21" width="0.254" layer="1"/>
+<wire x1="23.1" y1="21" x2="23.55" y2="21" width="0.254" layer="1"/>
+<wire x1="40.7" y1="18" x2="38.6" y2="18" width="0.2032" layer="1"/>
+<wire x1="38.6" y1="18" x2="33.5" y2="23.1" width="0.2032" layer="1"/>
+<wire x1="33.5" y1="23.1" x2="28.4" y2="23.1" width="0.2032" layer="1"/>
+<via x="28.4" y="23.1" extent="1-16" drill="0.2032" diameter="0.6096" shape="octagon"/>
+<wire x1="28.4" y1="23.1" x2="23.5" y2="23.1" width="0.2032" layer="16"/>
+<wire x1="23.5" y1="23.1" x2="21.1" y2="20.7" width="0.2032" layer="16"/>
+<via x="21.1" y="20.7" extent="1-16" drill="0.2032" diameter="0.6096" shape="octagon"/>
+<wire x1="21.1" y1="20.7" x2="22.1" y2="20.7" width="0.2032" layer="1"/>
+<wire x1="54" y1="20.525" x2="55" y2="20.525" width="0.2032" layer="1"/>
+<wire x1="55" y1="20.525" x2="55" y2="16.1" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="14.4" x2="53.3" y2="14.4" width="0.2032" layer="1"/>
+<wire x1="53.3" y1="14.4" x2="55" y2="16.1" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="14.4" x2="48.6" y2="15.4" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="15.4" x2="45.1" y2="15.4" width="0.2032" layer="1"/>
+<wire x1="45.1" y1="15.4" x2="42.5" y2="18" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="C109" pad="1"/>
@@ -959,7 +960,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="60.725" y1="17.275" x2="61.2" y2="16.8" width="0.3" layer="1"/>
 <wire x1="61.2" y1="16.8" x2="61.2" y2="15.9" width="0.3" layer="1"/>
 <wire x1="61.2" y1="15.9" x2="62.6" y2="14.5" width="0.3" layer="1"/>
-<wire x1="64" y1="14.5" x2="62.6" y2="14.5" width="0.3" layer="1"/>
+<wire x1="64.7" y1="14.5" x2="62.6" y2="14.5" width="0.3" layer="1"/>
 </signal>
 <signal name="SMBC">
 <contactref element="U100" pad="16"/>
@@ -967,7 +968,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="TP107" pad="1"/>
 <wire x1="59.8" y1="18.575" x2="60.525" y2="18.575" width="0.3" layer="1"/>
 <wire x1="60.525" y1="18.575" x2="62.6" y2="16.5" width="0.3" layer="1"/>
-<wire x1="62.6" y1="16.5" x2="64" y2="16.5" width="0.3" layer="1"/>
+<wire x1="62.6" y1="16.5" x2="64.7" y2="16.5" width="0.3" layer="1"/>
 </signal>
 <signal name="TRIANGLE_GND">
 <contactref element="R121" pad="1"/>
@@ -995,18 +996,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="J100" pad="B-@13"/>
 <contactref element="J100" pad="B-@14"/>
 <via x="47.2" y="33.7" extent="1-16" drill="0.2032"/>
-<wire x1="45.2" y1="23.8" x2="39.8" y2="23.8" width="0.2" layer="1"/>
 <wire x1="36.073" y1="29.673" x2="36.1" y2="29.7" width="0.2" layer="1"/>
 <wire x1="39.8" y1="23.8" x2="36.4" y2="27.2" width="0.2" layer="1"/>
 <wire x1="36.4" y1="27.2" x2="36.4" y2="30.734" width="0.2" layer="1"/>
 <wire x1="36.4" y1="30.734" x2="36.1" y2="30.734" width="0.2" layer="1"/>
 <wire x1="47.2" y1="33.7" x2="46.3" y2="34.6" width="0.3" layer="16"/>
 <wire x1="46.3" y1="34.6" x2="28.6" y2="34.6" width="0.3" layer="16"/>
-<wire x1="28.6" y1="34.6" x2="27.709878125" y2="33.705284375" width="0.3" layer="16"/>
-<wire x1="27.709878125" y1="33.705284375" x2="26.805284375" y2="33.705284375" width="0.3" layer="16"/>
-<wire x1="26.805284375" y1="33.705284375" x2="26.8" y2="33.7" width="0.2" layer="16"/>
-<wire x1="26.8" y1="33.7" x2="26.8" y2="32.945" width="0.2" layer="16"/>
-<wire x1="26.8" y1="32.945" x2="25.71" y2="32.835" width="0.2" layer="16"/>
 <wire x1="47.2" y1="33.7" x2="47.2" y2="32.5" width="0.3" layer="1"/>
 <wire x1="51.5" y1="32.5" x2="51.5" y2="33.7" width="0.3" layer="1"/>
 <wire x1="51.5" y1="33.7" x2="47.2" y2="33.7" width="0.3" layer="1"/>
@@ -1014,6 +1009,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="55.8" y1="33.4" x2="55.5" y2="33.7" width="0.3" layer="1"/>
 <wire x1="55.5" y1="33.7" x2="51.5" y2="33.7" width="0.3" layer="1"/>
 <contactref element="D100" pad="A"/>
+<wire x1="39.8" y1="23.8" x2="44.1" y2="23.8" width="0.2032" layer="1"/>
+<wire x1="28.6" y1="34.6" x2="26.835" y2="32.835" width="0.2032" layer="16"/>
+<wire x1="26.835" y1="32.835" x2="25.71" y2="32.835" width="0.2032" layer="16"/>
 </signal>
 <signal name="BAT">
 <contactref element="U100" pad="1"/>
@@ -1025,7 +1023,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <signal name="N$18">
 <contactref element="Q104" pad="6"/>
 <contactref element="R122" pad="2"/>
-<wire x1="24.15" y1="21.9" x2="26.3" y2="23.8" width="0" layer="19" extent="1-1"/>
+<wire x1="24.85" y1="21.5" x2="24.85" y2="23.1" width="0.2032" layer="1"/>
+<wire x1="24.85" y1="23.1" x2="24.9" y2="23.1" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R102" pad="2"/>
@@ -1038,36 +1037,46 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="30.4" y1="11.9" x2="36.6" y2="5.7" width="0.3" layer="1"/>
 <wire x1="36.6" y1="5.7" x2="46.4" y2="5.7" width="0.3" layer="1"/>
 <wire x1="46.4" y1="5.7" x2="48.6" y2="7.9" width="0.3" layer="1"/>
-<wire x1="48.6" y1="7.9" x2="48.6" y2="10.6" width="0.3" layer="1"/>
-<wire x1="48.6" y1="10.6" x2="54" y2="22.475" width="0" layer="19" extent="1-1"/>
+<wire x1="48.6" y1="7.9" x2="48.6" y2="8.8" width="0.3" layer="1"/>
+<wire x1="49.6" y1="8.8" x2="56.3" y2="15.5" width="0.2032" layer="1"/>
+<wire x1="56.3" y1="15.5" x2="56.3" y2="22.3" width="0.2032" layer="1"/>
+<wire x1="56.3" y1="22.3" x2="56.125" y2="22.475" width="0.2032" layer="1"/>
+<wire x1="56.125" y1="22.475" x2="54" y2="22.475" width="0.2032" layer="1"/>
+<wire x1="48.6" y1="8.8" x2="49.6" y2="8.8" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="Q104" pad="3"/>
 <contactref element="R116" pad="2"/>
-<wire x1="22" y1="20.7" x2="22.85" y2="20.9" width="0" layer="19" extent="1-1"/>
+<wire x1="23.55" y1="20.5" x2="23.2" y2="20.5" width="0.254" layer="1"/>
+<wire x1="23.2" y1="20.5" x2="23" y2="20.3" width="0.254" layer="1"/>
+<wire x1="23" y1="20.3" x2="23" y2="19" width="0.254" layer="1"/>
+<wire x1="23" y1="19" x2="20.2" y2="19" width="0.254" layer="1"/>
+<wire x1="20.2" y1="19.9" x2="20.2" y2="19" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="Q103" pad="6"/>
 <contactref element="R110" pad="2"/>
-<wire x1="25.15" y1="14.5" x2="24.7" y2="18.4" width="0" layer="19" extent="1-1"/>
+<wire x1="25.8" y1="17.8" x2="25.8" y2="14.5" width="0.254" layer="1"/>
+<wire x1="25.15" y1="14.5" x2="25.8" y2="14.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="Q103" pad="3"/>
 <contactref element="R105" pad="2"/>
-<wire x1="20.8" y1="12.9" x2="20.8" y2="11.9" width="0.3" layer="1"/>
-<wire x1="20.8" y1="11.9" x2="23.85" y2="11.9" width="0.3" layer="1"/>
+<wire x1="20.5" y1="12.9" x2="20.5" y2="11.9" width="0.3" layer="1"/>
+<wire x1="20.5" y1="11.9" x2="23.85" y2="11.9" width="0.3" layer="1"/>
 <wire x1="23.85" y1="11.9" x2="23.85" y2="13.5" width="0.3" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R117" pad="1"/>
 <contactref element="R118" pad="2"/>
 <contactref element="C106" pad="1"/>
-<wire x1="65.6" y1="14.5" x2="67" y2="14.5" width="0.3" layer="1"/>
 <wire x1="57.4" y1="31" x2="57.4" y2="32.5" width="0.3" layer="1"/>
 <wire x1="57.4" y1="31" x2="60.3" y2="31" width="0.3" layer="1"/>
 <wire x1="60.3" y1="31" x2="67.5" y2="23.8" width="0.3" layer="1"/>
-<wire x1="67.5" y1="23.8" x2="67.5" y2="15" width="0.3" layer="1"/>
-<wire x1="67.5" y1="15" x2="67" y2="14.5" width="0.3" layer="1"/>
+<wire x1="67.5" y1="23.8" x2="68.1" y2="23.2" width="0.2032" layer="1"/>
+<wire x1="68.1" y1="23.2" x2="68.1" y2="15.1" width="0.2032" layer="1"/>
+<wire x1="68.1" y1="15.1" x2="67.5" y2="14.5" width="0.2032" layer="1"/>
+<wire x1="67.5" y1="14.5" x2="66.3" y2="14.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="RNC-SDAT">
 <contactref element="R118" pad="1"/>
@@ -1089,14 +1098,16 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="R114" pad="1"/>
 <contactref element="R115" pad="2"/>
 <contactref element="C107" pad="1"/>
-<wire x1="65.6" y1="16.5" x2="66.4" y2="16.5" width="0.3" layer="1"/>
-<wire x1="66.4" y1="16.5" x2="66.95" y2="17.05" width="0.3" layer="1"/>
+<wire x1="66.3" y1="16.5" x2="66.4" y2="16.5" width="0.3" layer="1"/>
 <wire x1="53.1" y1="32.5" x2="53.1" y2="31" width="0.3" layer="1"/>
 <wire x1="53.1" y1="31" x2="53.1" y2="30.2" width="0.3" layer="1"/>
 <wire x1="53.1" y1="30.2" x2="53.3" y2="30" width="0.3" layer="1"/>
 <wire x1="53.3" y1="30" x2="60.5" y2="30" width="0.3" layer="1"/>
 <wire x1="60.5" y1="30" x2="66.95" y2="23.55" width="0.3" layer="1"/>
-<wire x1="66.95" y1="23.55" x2="66.95" y2="17.05" width="0.3" layer="1"/>
+<wire x1="66.95" y1="23.55" x2="67.6" y2="22.9" width="0.2032" layer="1"/>
+<wire x1="67.6" y1="22.9" x2="67.6" y2="16.9" width="0.2032" layer="1"/>
+<wire x1="67.6" y1="16.9" x2="67.2" y2="16.5" width="0.2032" layer="1"/>
+<wire x1="67.2" y1="16.5" x2="66.3" y2="16.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="RNC-SCLK">
 <contactref element="R115" pad="1"/>
@@ -1115,7 +1126,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="U100" pad="2"/>
 <contactref element="R106" pad="2"/>
 <contactref element="TP100" pad="1"/>
-<wire x1="38.3" y1="23.1" x2="37.2" y2="22" width="0.3" layer="16"/>
+<wire x1="38.2" y1="23" x2="37.2" y2="22" width="0.3" layer="16"/>
 <wire x1="37.2" y1="22" x2="37.2" y2="12.5" width="0.3" layer="16"/>
 <wire x1="37.2" y1="12.5" x2="31.4" y2="6.7" width="0.3" layer="16"/>
 <wire x1="31.4" y1="6.7" x2="25.2" y2="6.7" width="0.3" layer="16"/>
@@ -1123,38 +1134,36 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="22.5" y1="9.6" x2="22.5" y2="9.4" width="0.2" layer="16"/>
 <wire x1="22.5" y1="9.4" x2="25.2" y2="6.7" width="0.3" layer="16"/>
 <wire x1="54" y1="23.125" x2="52.325" y2="23.125" width="0.3" layer="1"/>
-<wire x1="52.325" y1="23.125" x2="52.3" y2="23.1" width="0.3" layer="1"/>
-<via x="52.3" y="23.1" extent="1-16" drill="0.2032"/>
-<wire x1="52.3" y1="23.1" x2="38.3" y2="23.1" width="0.3" layer="16"/>
+<wire x1="52.325" y1="23.125" x2="52.2" y2="23" width="0.3" layer="1"/>
+<via x="52.2" y="23" extent="1-16" drill="0.2032"/>
+<wire x1="52.2" y1="23" x2="38.2" y2="23" width="0.3" layer="16"/>
 </signal>
 <signal name="N$29">
 <contactref element="U100" pad="22"/>
 <contactref element="R108" pad="2"/>
 <contactref element="TP102" pad="1"/>
-<wire x1="48.526" y1="4.826" x2="9.2" y2="4.826" width="0.3" layer="1"/>
 <wire x1="59.8" y1="22.475" x2="57.875" y2="22.475" width="0.2" layer="1"/>
 <wire x1="57.875" y1="22.475" x2="57.5" y2="22.1" width="0.2" layer="1"/>
-<wire x1="57.5" y1="22.1" x2="57.5" y2="14.8" width="0.2" layer="1"/>
-<wire x1="57.5" y1="14.8" x2="57.5" y2="14.7" width="0.2" layer="1"/>
+<wire x1="57.5" y1="22.1" x2="57.5" y2="13.8" width="0.2" layer="1"/>
 <wire x1="5.3" y1="15.2" x2="5.3" y2="13.5" width="0.3" layer="1"/>
 <wire x1="5.3" y1="13.5" x2="5.3" y2="8.726" width="0.3" layer="1"/>
-<wire x1="5.3" y1="8.726" x2="9.2" y2="4.826" width="0.3" layer="1"/>
 <wire x1="6.4" y1="13.5" x2="5.3" y2="13.5" width="0.3" layer="1"/>
 <wire x1="48.526" y1="4.826" x2="57.5" y2="13.8" width="0.2" layer="1"/>
-<wire x1="57.5" y1="13.8" x2="57.5" y2="14.7" width="0.2" layer="1"/>
+<wire x1="48.526" y1="4.826" x2="9.2" y2="4.826" width="0.2032" layer="1"/>
+<wire x1="9.2" y1="4.826" x2="5.3" y2="8.726" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="U100" pad="23"/>
 <contactref element="R107" pad="2"/>
 <contactref element="TP101" pad="1"/>
-<wire x1="8.9" y1="4.4" x2="47.5" y2="4.4" width="0.3" layer="1"/>
 <wire x1="59.8" y1="23.125" x2="57.925" y2="23.125" width="0.2" layer="1"/>
 <wire x1="57.925" y1="23.125" x2="57.1" y2="22.3" width="0.2" layer="1"/>
 <wire x1="57.1" y1="22.3" x2="57.1" y2="14" width="0.2" layer="1"/>
 <wire x1="4.3" y1="22.7" x2="4.3" y2="9" width="0.3" layer="1"/>
 <wire x1="4.3" y1="22.7" x2="5.9" y2="24.3" width="0.3" layer="1"/>
 <wire x1="5.9" y1="24.3" x2="7.7" y2="24.3" width="0.3" layer="1"/>
-<wire x1="4.3" y1="9" x2="8.9" y2="4.4" width="0.3" layer="1"/>
+<wire x1="4.3" y1="9" x2="8.8" y2="4.5" width="0.3" layer="1"/>
+<wire x1="8.8" y1="4.5" x2="8.9" y2="4.4" width="0.3" layer="1"/>
 <wire x1="5.9" y1="25.4" x2="5.9" y2="24.3" width="0.3" layer="1"/>
 <wire x1="57.1" y1="14" x2="49.1" y2="6" width="0.2" layer="1"/>
 <wire x1="49.1" y1="6" x2="48.2" y2="6" width="0.2" layer="1"/>
@@ -1162,7 +1171,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <via x="48.1" y="5.9" extent="1-16" drill="0.2032"/>
 <wire x1="48.1" y1="5.9" x2="48.1" y2="3.8" width="0.2" layer="16"/>
 <via x="48.1" y="3.8" extent="1-16" drill="0.2032"/>
-<wire x1="48.1" y1="3.8" x2="47.5" y2="4.4" width="0.2" layer="1"/>
+<wire x1="48.1" y1="3.8" x2="9.5" y2="3.8" width="0.2032" layer="1"/>
+<wire x1="9.5" y1="3.8" x2="8.8" y2="4.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="PACK">
 <contactref element="U100" pad="24"/>
@@ -1179,8 +1189,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="48.8" y1="31" x2="48.8" y2="30.3" width="0.3" layer="1"/>
 <wire x1="48.8" y1="30.3" x2="49.6" y2="29.5" width="0.3" layer="1"/>
 <wire x1="49.6" y1="29.5" x2="60.2" y2="29.5" width="0.3" layer="1"/>
-<wire x1="65.6" y1="18.5" x2="65.6" y2="24.1" width="0.3" layer="1"/>
 <wire x1="65.6" y1="24.1" x2="60.2" y2="29.5" width="0.3" layer="1"/>
+<wire x1="65.6" y1="24.1" x2="67.2" y2="22.5" width="0.2032" layer="1"/>
+<wire x1="67.2" y1="22.5" x2="67.2" y2="18.7" width="0.2032" layer="1"/>
+<wire x1="67.2" y1="18.7" x2="67" y2="18.5" width="0.2032" layer="1"/>
+<wire x1="67" y1="18.5" x2="66.2" y2="18.5" width="0.2032" layer="1"/>
 </signal>
 <signal name="RNC-!PRSNT">
 <contactref element="R113" pad="1"/>
@@ -1270,9 +1283,13 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="40.56" y1="20.574" x2="38.826" y2="20.574" width="3.175" layer="1"/>
 <wire x1="38.826" y1="20.574" x2="32.73" y2="26.67" width="3.175" layer="1"/>
 <wire x1="32.73" y1="26.67" x2="30.56" y2="26.67" width="3.175" layer="1"/>
-<wire x1="22.9" y1="22.9" x2="28.56" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="22.85" y1="21.9" x2="22.9" y2="22.9" width="0" layer="19" extent="1-1"/>
-<wire x1="22" y1="22.3" x2="22.85" y2="21.9" width="0" layer="19" extent="1-1"/>
+<wire x1="23.55" y1="21.5" x2="22.1" y2="21.5" width="0.254" layer="1"/>
+<wire x1="22.1" y1="21.5" x2="20.2" y2="21.5" width="0.254" layer="1"/>
+<wire x1="23.55" y1="21.5" x2="24.1" y2="21.5" width="0.2032" layer="1"/>
+<wire x1="24.1" y1="21.5" x2="24.1" y2="24" width="0.2032" layer="1"/>
+<wire x1="24.1" y1="24" x2="28" y2="24" width="0.2032" layer="1"/>
+<wire x1="28" y1="24" x2="28.56" y2="24.56" width="0.2032" layer="1"/>
+<wire x1="28.56" y1="24.56" x2="28.56" y2="26.67" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="B101A" pad="B+@1"/>
@@ -1282,22 +1299,19 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="R111" pad="1"/>
 <contactref element="R110" pad="1"/>
 <contactref element="Q104" pad="4"/>
-<wire x1="24.7" y1="20" x2="24.7" y2="21.48" width="0.2" layer="1"/>
-<wire x1="24.7" y1="21.48" x2="24.4" y2="21.5" width="0.2" layer="1"/>
-<wire x1="24.15" y1="20.9" x2="24.75" y2="21.53" width="0.2" layer="1"/>
-<wire x1="24.75" y1="21.53" x2="24.4" y2="21.5" width="0.2" layer="1"/>
-<wire x1="28.56" y1="20.574" x2="25.974" y2="20.574" width="0.2" layer="1"/>
-<wire x1="25.974" y1="20.574" x2="25.4" y2="20" width="0.2" layer="1"/>
-<wire x1="25.4" y1="20" x2="24.7" y2="20" width="0.2" layer="1"/>
-<wire x1="28.56" y1="20.57" x2="30.56" y2="20.57" width="3.175" layer="1"/>
-<wire x1="42.56" y1="14.474" x2="40.56" y2="14.474" width="3.175" layer="1"/>
-<wire x1="40.56" y1="14.474" x2="38.826" y2="14.474" width="3.175" layer="1"/>
+<wire x1="42.56" y1="14.474" x2="38.826" y2="14.474" width="3.175" layer="1"/>
 <wire x1="38.826" y1="14.474" x2="32.73" y2="20.57" width="3.175" layer="1"/>
-<wire x1="32.73" y1="20.57" x2="30.56" y2="20.57" width="3.175" layer="1"/>
+<wire x1="32.73" y1="20.57" x2="28.56" y2="20.57" width="3.175" layer="1"/>
+<wire x1="23.9" y1="17.8" x2="24.85" y2="17.8" width="0.254" layer="1"/>
+<wire x1="24.85" y1="17.8" x2="24.85" y2="20.5" width="0.254" layer="1"/>
+<wire x1="24.85" y1="20.5" x2="25.8" y2="20.5" width="0.254" layer="1"/>
+<wire x1="25.8" y1="20.5" x2="28.486" y2="20.5" width="0.254" layer="1"/>
+<wire x1="28.486" y1="20.5" x2="28.56" y2="20.574" width="0.254" layer="1" curve="90"/>
+<wire x1="25.8" y1="19.4" x2="25.8" y2="20.5" width="0.254" layer="1"/>
 <wire x1="42.56" y1="14.474" x2="42.56" y2="14.478" width="0" layer="19" extent="1-1"/>
-<wire x1="30.56" y1="20.574" x2="30.56" y2="20.57" width="0" layer="19" extent="1-1"/>
-<wire x1="40.56" y1="14.478" x2="40.56" y2="14.474" width="0" layer="19" extent="1-1"/>
 <wire x1="28.56" y1="20.574" x2="28.56" y2="20.57" width="0" layer="19" extent="1-1"/>
+<wire x1="40.56" y1="14.478" x2="38.826" y2="14.474" width="0" layer="19" extent="1-1"/>
+<wire x1="30.56" y1="20.574" x2="28.56" y2="20.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="B102A" pad="B+@1"/>
@@ -1307,8 +1321,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="B103A" pad="B-@1"/>
 <contactref element="B103A" pad="B-@2"/>
 <contactref element="R105" pad="1"/>
-<wire x1="23.85" y1="14.5" x2="22.5" y2="14.5" width="0.3" layer="1"/>
-<wire x1="22.5" y1="14.5" x2="20.8" y2="14.5" width="0.3" layer="1"/>
+<wire x1="23.85" y1="14.5" x2="22.1" y2="14.5" width="0.3" layer="1"/>
+<wire x1="22.1" y1="14.5" x2="20.5" y2="14.5" width="0.3" layer="1"/>
 <wire x1="42.46" y1="8.374" x2="38.726" y2="8.374" width="3.175" layer="1"/>
 <wire x1="38.726" y1="8.374" x2="32.63" y2="14.47" width="3.175" layer="1"/>
 <wire x1="32.63" y1="14.47" x2="28.46" y2="14.47" width="3.175" layer="1"/>
@@ -1343,7 +1357,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="59.8" y1="19.225" x2="60.975" y2="19.225" width="0.3" layer="1"/>
 <wire x1="60.975" y1="19.225" x2="61.7" y2="18.5" width="0.3" layer="1"/>
 <wire x1="61.7" y1="18.5" x2="62.6" y2="18.5" width="0.3" layer="1"/>
-<wire x1="64" y1="18.5" x2="62.6" y2="18.5" width="0.3" layer="1"/>
+<wire x1="64.6" y1="18.5" x2="62.6" y2="18.5" width="0.3" layer="1"/>
 </signal>
 <signal name="N$46">
 </signal>
