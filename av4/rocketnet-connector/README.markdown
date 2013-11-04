@@ -8,16 +8,18 @@ shroud and #2 hardware.
 
 There are 3 different versions with a different number of pins
 
-![Size diagram](rocketnet_size.svg)
+![Size diagram](rocketnet_size.png)
 
 
- DIM |  14 |  16 |   18 
+#### Dimentions for each version:
+
+ DIM |  14  |  16  |   18 
 :---:| ----:| ----:| ------:
   A  |  6.9 |  7.5 |  8.135
   B  |  7.6 |  8.1 |  8.735
   C  |  8.6 |  9.1 |  9.7  
   D  |  9.2 |  9.7 | 10.3  
  C+D | 17.8 | 18.8 | 20     
-  D  |                  6.6
+  D  |  6.6 |  6.6 | 6.6
 
 
