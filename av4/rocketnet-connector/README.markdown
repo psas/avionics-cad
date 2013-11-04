@@ -11,7 +11,7 @@ There are 3 different versions with a different number of pins
 ![Size diagram](rocketnet_size.png)
 
 
-#### Dimentions for each version:
+**Dimentions for each version:**
 
  DIM |  14  |  16  |   18 
 :---:| ----:| ----:| ------:
@@ -20,6 +20,6 @@ There are 3 different versions with a different number of pins
   C  |  8.6 |  9.1 |  9.7  
   D  |  9.2 |  9.7 | 10.3  
  C+D | 17.8 | 18.8 | 20     
-  D  |  6.6 |  6.6 | 6.6
+  E  |  6.6 |  6.6 | 6.6
 
 
