@@ -8127,7 +8127,7 @@ by exp-project-lbr.ulp</description>
 <attribute name="VALUE" x="244.602" y="186.69" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J2" gate="G$1" x="370.84" y="208.28" rot="MR0"/>
-<instance part="J15" gate="J" x="353.06" y="162.56" rot="R270"/>
+<instance part="J15" gate="J" x="345.44" y="170.18" rot="MR0"/>
 <instance part="C1" gate="CE" x="246.38" y="182.88"/>
 <instance part="L1" gate="G$1" x="312.42" y="210.82"/>
 <instance part="R2" gate="R" x="251.46" y="190.5" smashed="yes" rot="R90">
@@ -8473,6 +8473,42 @@ by exp-project-lbr.ulp</description>
 <wire x1="137.16" y1="170.18" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="MDC"/>
 <wire x1="137.16" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="AUX1"/>
+<wire x1="365.76" y1="200.66" x2="355.6" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="200.66" x2="355.6" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="J15" gate="J" pin="1"/>
+<wire x1="355.6" y1="175.26" x2="353.06" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="J15" gate="J" pin="2"/>
+<wire x1="353.06" y1="172.72" x2="358.14" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="172.72" x2="358.14" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="AUX2"/>
+<wire x1="358.14" y1="198.12" x2="365.76" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="J15" gate="J" pin="3"/>
+<wire x1="353.06" y1="170.18" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="170.18" x2="360.68" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="AUX3"/>
+<wire x1="360.68" y1="195.58" x2="365.76" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="J15" gate="J" pin="4"/>
+<wire x1="353.06" y1="167.64" x2="363.22" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="167.64" x2="363.22" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="AUX4"/>
+<wire x1="363.22" y1="193.04" x2="365.76" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1948,7 +1948,7 @@ by exp-project-lbr.ulp</description>
 <element name="R1" library="rcl_custom" package="0402-B-NOSILK" value="49.9" x="34" y="9">
 <attribute name="TOLERANCE" value="1%" x="34" y="9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="5" y="15" rot="R270"/>
+<element name="J2" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="3" y="15" rot="R90"/>
 <element name="J15" library="headers" package="INLINE" value="Auxiliary Header" x="15.63" y="3.95" rot="R90"/>
 <element name="C1" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="32" y="10"/>
 <element name="L1" library="magnetics" package="PULSE-H0068ANL" value="PULSE-H0068ANL/SO" x="24" y="15" rot="R180"/>
@@ -2032,12 +2032,12 @@ by exp-project-lbr.ulp</description>
 <signal name="B-">
 <contactref element="J2" pad="B-@1"/>
 <contactref element="J2" pad="B-@2"/>
-<wire x1="4.365" y1="19.445" x2="5.635" y2="19.445" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="10.555" x2="2.365" y2="10.555" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B+">
 <contactref element="J2" pad="B+@16"/>
 <contactref element="J2" pad="B+@15"/>
-<wire x1="4.365" y1="10.555" x2="5.635" y2="10.555" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="19.445" x2="2.365" y2="19.445" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENET_TD+">
 <contactref element="U1" pad="17"/>
@@ -2071,29 +2071,29 @@ by exp-project-lbr.ulp</description>
 <contactref element="L1" pad="11"/>
 <contactref element="J2" pad="T-@9"/>
 <contactref element="J2" pad="T-@11"/>
-<wire x1="4.365" y1="13.095" x2="19.85" y2="11.825" width="0" layer="19" extent="1-1"/>
-<wire x1="4.365" y1="14.365" x2="4.365" y2="13.095" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="16.905" x2="19.85" y2="11.825" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="15.635" x2="3.635" y2="16.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="L1" pad="8"/>
 <contactref element="J2" pad="R+@7"/>
 <contactref element="J2" pad="R+@5"/>
-<wire x1="4.365" y1="16.905" x2="19.85" y2="18.175" width="0" layer="19" extent="1-1"/>
-<wire x1="4.365" y1="15.635" x2="4.365" y2="16.905" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="13.095" x2="19.85" y2="18.175" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="14.365" x2="3.635" y2="13.095" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="L1" pad="7"/>
 <contactref element="J2" pad="R-@4"/>
 <contactref element="J2" pad="R-@3"/>
-<wire x1="5.635" y1="18.175" x2="19.85" y2="19.445" width="0" layer="19" extent="1-1"/>
-<wire x1="4.365" y1="18.175" x2="5.635" y2="18.175" width="0" layer="19" extent="1-1"/>
+<wire x1="2.365" y1="11.825" x2="19.85" y2="19.445" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="11.825" x2="2.365" y2="11.825" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="L1" pad="12"/>
 <contactref element="J2" pad="T+@13"/>
 <contactref element="J2" pad="T+@14"/>
-<wire x1="5.635" y1="11.825" x2="19.85" y2="10.555" width="0" layer="19" extent="1-1"/>
-<wire x1="4.365" y1="11.825" x2="5.635" y2="11.825" width="0" layer="19" extent="1-1"/>
+<wire x1="2.365" y1="18.175" x2="19.85" y2="10.555" width="0" layer="19" extent="1-1"/>
+<wire x1="3.635" y1="18.175" x2="2.365" y2="18.175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="L1" pad="10"/>
@@ -2180,6 +2180,26 @@ by exp-project-lbr.ulp</description>
 <contactref element="U2" pad="16"/>
 <contactref element="U1" pad="31"/>
 <wire x1="68.7" y1="13.5" x2="43.25" y2="9.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="J2" pad="A1"/>
+<contactref element="J15" pad="1"/>
+<wire x1="2.365" y1="13.095" x2="13.725" y2="3.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="J15" pad="2"/>
+<contactref element="J2" pad="A2"/>
+<wire x1="2.365" y1="14.365" x2="14.995" y2="3.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="J15" pad="3"/>
+<contactref element="J2" pad="A3"/>
+<wire x1="2.365" y1="15.635" x2="16.265" y2="3.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$24">
+<contactref element="J15" pad="4"/>
+<contactref element="J2" pad="A4"/>
+<wire x1="2.365" y1="16.905" x2="17.535" y2="3.95" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
