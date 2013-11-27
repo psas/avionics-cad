@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="167.280048034mm"
+   height="167.27995385mm"
+   viewBox="0 0 167.280048034 167.27995385"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="test3.svg">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="749"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="0.39816154"
+     inkscape:cx="-150.69245"
+     inkscape:cy="296.36212"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#ff0000;stroke-width:0.40000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 49.674512,3.280001 67.931028,0 48.03451,48.034464 0,67.931025 -48.03451,48.03446 -67.931028,0 L 1.64,119.24549 1.64,51.314465 49.674512,3.280001"
+     id="Sketch" />
+  <circle
+     sodipodi:ry="67"
+     sodipodi:rx="67"
+     sodipodi:cy="0"
+     sodipodi:cx="0"
+     d="M 67,0 C 67,37.003078 37.003078,67 0,67 -37.003078,67 -67,37.003078 -67,0 c 0,-37.003078 29.996922,-67 67,-67 37.003078,0 67,29.996922 67,67 z"
+     id="circle7"
+     style="fill:none;stroke:#ff00ff;stroke-width:0.40000001000000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     r="67"
+     cy="0"
+     cx="0"
+     transform="matrix(1,0,0,-1,83.640024,85.279977)" />
+</svg>
