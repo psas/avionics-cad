@@ -26,3 +26,7 @@ There are 3 different versions with a different number of pins
 ## Bolt Length
 
 \#2 bolts: 14.5 mm
+
+## Standoffs
+
+Tap drill, \#50
