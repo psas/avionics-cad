@@ -23,3 +23,6 @@ There are 3 different versions with a different number of pins
   E  |  6.6 |  6.6 | 6.6
 
 
+## Bolt Length
+
+\#2 bolts: 14.5 mm
