@@ -10,7 +10,7 @@ This is a combined fuel gage, battery protection, cell balancing Smart Battery S
 
 # History
 
-This board has *also* been a long time in the making. It was originally envisioned by Andrew back in 2009, started but placed on hold, and then all but finished by Bob in 2013. With the completion of the RocketNet Hub, this became the next most important project was thus picked back up by Kenny and Andrew Fall 2013.
+This board has *also* been a long time in the making. It was originally envisioned by Andrew back in 2009, started but placed on hold, and then all but finished by Bob in 2013. With the completion of the RocketNet Hub, this became the next most important project was thus picked back up by Kenny and Andrew Fall 2013. Michael finally finished it off in December 2013, and it was sent to production in Jan 2014.
 
 # For more information
 

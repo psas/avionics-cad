@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6322,56 +6322,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </deviceset>
 </devicesets>
 </library>
-<library name="shunt">
-<packages>
-<package name="VISHAY-2818">
-<wire x1="-3.55" y1="-2.3" x2="-3.55" y2="2.3" width="0.25" layer="51"/>
-<wire x1="-3.55" y1="2.3" x2="3.55" y2="2.3" width="0.25" layer="51"/>
-<wire x1="3.55" y1="2.3" x2="3.55" y2="-2.3" width="0.25" layer="51"/>
-<wire x1="3.55" y1="-2.3" x2="-3.55" y2="-2.3" width="0.25" layer="51"/>
-<wire x1="-1.5" y1="2.9" x2="1.3" y2="2.9" width="0.25" layer="21"/>
-<wire x1="-1.5" y1="-2.9" x2="1.3" y2="-2.9" width="0.25" layer="21"/>
-<smd name="P$1" x="2.055" y="0" dx="3.5" dy="5.1" layer="1" thermals="no"/>
-<smd name="P$2" x="-2.055" y="0" dx="3.5" dy="5.1" layer="1" thermals="no"/>
-<text x="-1.9" y="3.2" size="0.8128" layer="21" ratio="20">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="R-US">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="R-US-2818" prefix="R">
-<gates>
-<gate name="G$1" symbol="R-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VISHAY-2818">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rocketnet-connector">
 <description>Generated from &lt;b&gt;16-pin-rocketnet-daughter.brd&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
@@ -6602,6 +6552,72 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </deviceset>
 </devicesets>
 </library>
+<library name="shunt">
+<packages>
+<package name="VISHAY-2818">
+<wire x1="-3.55" y1="-2.3" x2="-3.55" y2="2.3" width="0.25" layer="51"/>
+<wire x1="-3.55" y1="2.3" x2="3.55" y2="2.3" width="0.25" layer="51"/>
+<wire x1="3.55" y1="2.3" x2="3.55" y2="-2.3" width="0.25" layer="51"/>
+<wire x1="3.55" y1="-2.3" x2="-3.55" y2="-2.3" width="0.25" layer="51"/>
+<wire x1="-1.5" y1="2.9" x2="1.3" y2="2.9" width="0.25" layer="21"/>
+<wire x1="-1.5" y1="-2.9" x2="1.3" y2="-2.9" width="0.25" layer="21"/>
+<smd name="1@2" x="-2.055" y="1.6" dx="3.5" dy="2" layer="1" thermals="no"/>
+<text x="-1.9" y="3.2" size="0.8128" layer="21" ratio="20">&gt;NAME</text>
+<smd name="1@1" x="-2.055" y="-1.6" dx="3.5" dy="2" layer="1" thermals="no"/>
+<smd name="K1" x="-2.055" y="0" dx="3.5" dy="0.3" layer="1" thermals="no"/>
+<smd name="K2" x="2.045" y="0" dx="3.5" dy="0.3" layer="1" thermals="no"/>
+<smd name="2@2" x="2.045" y="1.6" dx="3.5" dy="2" layer="1" thermals="no"/>
+<smd name="2@1" x="2.045" y="-1.6" dx="3.5" dy="2" layer="1" thermals="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="R-US">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="4.0386" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="1.778" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2@2" x="7.62" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1@2" x="-7.62" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="K1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="K2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1@1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2@1" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R-US-2818" prefix="R">
+<gates>
+<gate name="G$1" symbol="R-US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VISHAY-2818">
+<connects>
+<connect gate="G$1" pin="1@1" pad="1@1"/>
+<connect gate="G$1" pin="1@2" pad="1@2"/>
+<connect gate="G$1" pin="2@1" pad="2@1"/>
+<connect gate="G$1" pin="2@2" pad="2@2"/>
+<connect gate="G$1" pin="K1" pad="K1"/>
+<connect gate="G$1" pin="K2" pad="K2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6617,7 +6633,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="TRIANGLE_GND3" library="psas" deviceset="SUP_GND_TRIANGLE" device=""/>
 <part name="J101" library="con-molex" deviceset="87758-0216" device=""/>
 <part name="J102" library="con-molex" deviceset="87758-0216" device=""/>
-<part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
 <part name="R120" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
 <part name="R121" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="100"/>
 <part name="C111" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n"/>
@@ -6685,6 +6700,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="D100" library="diode" deviceset="SUPPRESSOR-" device="SMBJ" value="SMBJ20A"/>
 <part name="C118" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n/50V"/>
 <part name="Q100" library="Tova" deviceset="NTR4101P" device="" value="Si2343DS-T1"/>
+<part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
 </parts>
 <sheets>
 <sheet>
@@ -6712,10 +6728,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </instance>
 <instance part="J102" gate="-2" x="151.13" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="150.368" y="99.06" size="1.524" layer="95" rot="R270"/>
-</instance>
-<instance part="R123" gate="G$1" x="167.64" y="88.9" smashed="yes">
-<attribute name="NAME" x="163.83" y="90.3986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="156.21" y="85.598" size="1.778" layer="96"/>
 </instance>
 <instance part="R120" gate="R" x="162.56" y="99.06" rot="R90"/>
 <instance part="R121" gate="R" x="172.72" y="99.06" rot="R90"/>
@@ -6834,6 +6846,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="VALUE" x="218.44" y="234.95" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="218.44" y="237.49" size="1.778" layer="95" rot="MR180"/>
 </instance>
+<instance part="R123" gate="G$1" x="167.64" y="88.9" smashed="yes" rot="MR180">
+<attribute name="NAME" x="165.1" y="86.1314" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="156.21" y="83.312" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6878,21 +6894,21 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="78.74" y1="83.82" x2="78.74" y2="88.9" width="1.27" layer="91"/>
 <wire x1="101.6" y1="88.9" x2="78.74" y2="88.9" width="1.27" layer="91"/>
 <wire x1="101.6" y1="91.44" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
-<wire x1="162.56" y1="93.98" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
 <wire x1="78.74" y1="88.9" x2="78.74" y2="96.52" width="1.27" layer="91"/>
 <junction x="101.6" y="88.9"/>
-<junction x="162.56" y="88.9"/>
 <junction x="78.74" y="88.9"/>
 <pinref part="BAR_GND7" gate="1" pin="BAR_GND"/>
 <pinref part="R122" gate="R" pin="1"/>
-<pinref part="R123" gate="G$1" pin="1"/>
-<pinref part="R120" gate="R" pin="1"/>
 <pinref part="B100A" gate="G$1" pin="B-@1"/>
 <wire x1="77.47" y1="96.52" x2="78.74" y2="96.52" width="1.27" layer="91"/>
 <pinref part="B100A" gate="G$1" pin="B-@2"/>
 <wire x1="78.74" y1="96.52" x2="80.01" y2="96.52" width="1.27" layer="91"/>
 <junction x="78.74" y="96.52"/>
+<pinref part="R123" gate="G$1" pin="1@1"/>
+<junction x="160.02" y="88.9"/>
+<pinref part="R123" gate="G$1" pin="1@2"/>
+<wire x1="160.02" y1="88.9" x2="160.02" y2="91.44" width="1.27" layer="91"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="95.25" width="0.1524" layer="91"/>
@@ -7026,13 +7042,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="TRIANGLE_GND" class="0">
 <segment>
-<wire x1="172.72" y1="93.98" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="88.9" x2="309.88" y2="88.9" width="1.27" layer="91"/>
+<wire x1="175.26" y1="88.9" x2="309.88" y2="88.9" width="1.27" layer="91"/>
 <wire x1="309.88" y1="111.76" x2="309.88" y2="88.9" width="1.27" layer="91"/>
-<junction x="172.72" y="88.9"/>
 <junction x="309.88" y="88.9"/>
-<pinref part="R121" gate="R" pin="1"/>
-<pinref part="R123" gate="G$1" pin="2"/>
 <pinref part="TRIANGLE_GND3" gate="1" pin="TRIANGLE_GND"/>
 <pinref part="J100" gate="G$1" pin="B-@1"/>
 <wire x1="309.88" y1="111.76" x2="325.12" y2="111.76" width="1.27" layer="91"/>
@@ -7045,6 +7057,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="J100" gate="G$1" pin="B-@4"/>
 <wire x1="325.12" y1="106.68" x2="325.12" y2="104.14" width="0.1524" layer="91"/>
 <junction x="325.12" y="106.68"/>
+<pinref part="R123" gate="G$1" pin="2@1"/>
+<junction x="175.26" y="88.9"/>
+<pinref part="R123" gate="G$1" pin="2@2"/>
+<wire x1="175.26" y1="91.44" x2="175.26" y2="88.9" width="1.27" layer="91"/>
 </segment>
 <segment>
 <wire x1="261.62" y1="180.34" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
@@ -7489,6 +7505,22 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="229.87" y1="121.92" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="121.92" x2="232.41" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="121.92" x2="232.41" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R120" gate="R" pin="1"/>
+<pinref part="R123" gate="G$1" pin="K1"/>
+<wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="93.98" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R121" gate="R" pin="1"/>
+<pinref part="R123" gate="G$1" pin="K2"/>
+<wire x1="172.72" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="93.98" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
