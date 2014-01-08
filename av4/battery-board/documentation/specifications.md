@@ -48,7 +48,10 @@ We have multiple tiers of overcurrent protection. In order of severity, we have:
 
 ## Board layout notes
 
-- TBD
+- Running board on OSH Park 4 layer process (5/5 design rules).
+- We don't really need the 4 layers, but by doubling up on all four layers, we make 1 + 0.5 + 0.5 + 1 = 3 oz copper weight, which is perfect for high power.
+- We're not pushing the design rules.
+
 
 
 

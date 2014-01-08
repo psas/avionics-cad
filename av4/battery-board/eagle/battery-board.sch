@@ -6679,8 +6679,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="TP106" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP107" library="Tova" deviceset="TEST-POINT" device=""/>
 <part name="TP108" library="Tova" deviceset="TEST-POINT" device=""/>
-<part name="Q101" library="si4435ddy" deviceset="SI4435DDY" device=""/>
-<part name="Q102" library="si4435ddy" deviceset="SI4435DDY" device=""/>
+<part name="Q101" library="si4435ddy" deviceset="SI4435DDY" device="" value="SI4413ADY-T1-E3"/>
+<part name="Q102" library="si4435ddy" deviceset="SI4435DDY" device="" value="SI4413ADY-T1-E3"/>
 <part name="R103" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
 <part name="R104" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
 <part name="R101" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1M"/>
@@ -6918,6 +6918,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="100.33" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
 <junction x="100.33" y="88.9"/>
 <wire x1="101.6" y1="88.9" x2="160.02" y2="88.9" width="1.27" layer="91"/>
+<junction x="101.6" y="88.9"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="95.25" width="0.1524" layer="91"/>
@@ -7544,7 +7545,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <approved hash="104,1,325.12,134.62,J100,B+,PACK+,,,"/>
 <approved hash="109,1,101.6,91.44,BAR_GND,,,,,"/>
 <approved hash="110,1,162.56,93.98,BAR_GND,N$3,,,,"/>
-<approved hash="109,1,101.6,91.44,BAR_GND,,,,,"/>
 <approved hash="110,1,325.12,114.3,TRIANGLE_GND,!PRES,,,,"/>
 <approved hash="110,1,320.04,114.3,TRIANGLE_GND,!PRES,,,,"/>
 <approved hash="110,1,320.04,114.3,TRIANGLE_GND,!PRES,,,,"/>

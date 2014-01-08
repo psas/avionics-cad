@@ -1,61 +1,61 @@
 ## Component Value Calculations
 
 
-### F100 main fuse - 10A fast blow 1206 - LittleFuse 0501010.WR
+### F100 main fuse - 10A fast blow 1206 - LittleFuse 0501010.WR (DK F2919CT-ND)
 
 **Purpose:** F100 is the main fuse that provides emergency overcurrent, over voltage (via D100), and reverse voltage (via D100) protection.
 
 **Notes:** It's a 10A fuse in a 1206 package. 0.5679 Ohm resistance rated for 32V. F100 should take 10A forever, 30A @ 10s, 35A @ 1s, 42A @ 100ms, 52A @ 10ms, and and about 100A @ 1ms. During normal conditions, we expect to not pull more than 5A out of the battery pack, either in or out, ever, for more than a few hundred ms. We might get that much during a short condition from a node, but shorts in nodes should be handled by the TPS chips on the RNH. For extreme circumstances, each LiPo cell has an internal 20 A fuse (of the same LittleFuse type) on a small board buried in each of the cells in the main battery pack. F100 is supposed to sit right in between these two regimes: it should blow first before any battery cell fuses, and only if the short is not handled by something else (e.g.,RNH circuit breaker).
 
 
-### D100 OVP/RP protection diode - 20V unidirectional TVS SMB - LittleFuse SMBJ20A
+### D100 OVP/RP protection diode - 20V unidirectional TVS SMB - LittleFuse SMBJ20A (DK SMBJ20ALFCT-ND)
 
 **Purpose:** Cause a short circuit to blow F100 if the applied voltage to the pack is ever >> maximum pack voltage (OVP) or is reverse polarity (RP).
 
 **Notes:** First, D100 must let the battery charge up to the pack's 16.8V maximum charge voltage. We should give it some volts of head room, especially since we might be charging up to 18V which might sneak in as some kind of transient. So we'll put the reverse stand off voltage at 20V, which then has a actual breakdown voltage of 22.2 - 24.5 V. If we get that high, something is wrong, and we should definitely blow. Also, if we ever hook this up backwards, D100 will instantly conduct causing F100 to blow. D100 must survive long enough to *allow* F100 to blow: the SMBJ20A is rated to handle a half sine wave peak of 100A @ 8.3 ms, which is plenty high curent and long enough to blow F100.
 
 
-### C118,C115 filter caps - 100 nF @ 50 V 0603
+### C118,C115 filter caps - 100 nF @ 50 V 0603 (DK 445-6938-1-ND)
 
 **Purpose:*** Absorb ESD and small transients and do some filtering on the PACK+ input.
 
 **Notes:** No interesting properties except high voltage. There are two in series so if one fails short, you don't actually get a short on the wrong side of the fuse.
 
 
-### C116,C117 filter caps - 100 nF @ 50 V 0603
+### C116,C117 filter caps - 100 nF @ 50 V 0603 (DK 445-6938-1-ND)
 
 **Purpose:** Absorb ESD and small transients around the protection MOSFETs.
 
 **Notes:** No interesting properties except high voltage. There are two in series so if one fails short, you don't actually get a short that bypasses the protection MOSFETs.
 
 
-### R100 slow charge ("precharge") resistor - 249 ohms @ 500 mW 1% 1206 - Stackpole RNCP1206FTD249R
+### R100 slow charge ("precharge") resistor - 249 ohms @ 500 mW 1% 1206 - Stackpole RNCP1206FTD249R (or DK 541-249UCT-ND)
 
 **Purpose:** Slowly charge (limit the current) into the LiPo pack when it's very, very depleted. 
 
 **Notes:** We want this because we will, inevitably, deplete the pack a couple of times on purpose or more likely not on purpose. Classically, you charge at 0.1C until the cell voltage rises to 2.8V. 0.1C is 400 mA, so with a charging voltage of 18V and a discharged pack of 2V/cell (the worst we've seen), that's 10V/400mA = 25 ohms. Power dissipation is 400mA^2 * 25 = 4 watts. That's a crazy big resistor, so let's reduce the resistance up by 10x which is 10V/250ohms = 40mA and power dissipation is 40mA^2 * 250 = 400 mW. Rounding up to 500 mW gives us a reasonable resistor, albeit with a very slow 0.01C charge rate. 
 
 
-### Q100 slow charge ("precharge") switch - -30V Vds 0.5 mOhm P ch MOSFET - Vishay Siliconix Si2343DS-T1 
+### Q100 slow charge ("precharge") switch - -30V Vds 0.5 mOhm P ch MOSFET - Vishay Siliconix Si2343DS-T1 (DK SI2343DS-T1-E3CT-ND)
 
 **Purpose:** P channel MOSFET to turn on pre-charging.
 
 **Notes:** At &lt;= 40 mA, we should have no problem with almost any P channel MOSFET, as long as it has a Vds rating of >= 30 V and matches the suggested transistor's maximum VGS(th) of 3V. There's a ton here, we'll choose an SOT-23 package and one with 0.0.086 ohms at Vgs = -4.5V which gives a power dissipation too low to care about during precharge. **FIXME:** CHECK THE PACKAGE.
 
 
-### R101 normally off pullup - 100k 0603
+### R101 normally off pullup - 1M 0603 (DK RHM1.00MCFCT-ND)
 
 - Why is this 1M in the datasheets and EVM?
 
 
-### D101 and D102 power supply diodes - Schotkey 0603 package
+### D101 and D102 power supply diodes - Schotkey 0603 package (DK 478-7798-1-ND)
 
 **Purpose:** Prevent bleedback inside of the BQ2060 from charger Vcc to battery Vcc and vice versa.
 
 **Notes:** Should be Schotkeys? > 20V rating.
 
 
-### R123 shunt resistor - 10mOhm 1% 1W - Vishary WSH2818R0100FEA
+### R123 shunt resistor - 10mOhm 1% 1W - Vishary WSH2818R0100FEA (DK WSHA-.01CT-ND)
 
 **Purpose:** Provide voltage drop for BQ3060 to measure the current from the battery (two quadrant).
 
@@ -73,17 +73,18 @@
 - We choose the WSHA-.01CT-ND (Vishary WSH2818R0100FEA) because it's 5 W but still has a 99 W/in^2 rating, and has 45 A of overrating curent for 5 seconds. It's over-rated, but that's fine.
 
 
-### TH100, TH101 Battery temperature thermistors
+### TH100, TH101 Battery temperature thermistors - NTC 10K +/- 1% (DK 445-2554-1-ND)
 
 **Purpose:** Measure the battery cell temperature to affect battery charging.
 
 **Notes:**
 
-- Recommended: Semitec 103AT ? Use that, or? 
+- Recommended: Semitec 103AT, which are through-hole "NTC 10kohm 1%" thermisters. It's rated at R_25 = 10.0kOhm +/- 1% and B value = 3435K +/- 1%, Dissipation = 2mW/deg C, Thermal time constant = 15 s, -50 to +110 deg C
+- Found TDK Corporation NTCG163JF103FT1 which is R_25 = 10k +/- 1%, B25/50=3380K, B25/85=3435K, -40°C ~ 125°C, in 0603.
 - Use Vias or pinheader, and then we'll solder pigtail leads onto the thermister and bury them between B1 and B2 and B3 and B4.
 
 
-### U100 battery fuel gauge and balancer
+### U100 battery fuel gauge and balancer - BQ3600 - (DK 296-25544-5-ND)
 
 - TI BQ3060PW "SBS 1.1-compliant gas gauge and protection IC with CEDV" in a 24-Pin TSSOP
 - **Purpose:** Monitor and balance the 4s1p 4.25 AHr Lithium Ion Polymer battery back. This is the best chip EVAR... some features:
@@ -107,7 +108,7 @@
 - **Notes:** See the [[battery pack page|avionics/av3-battery-pack]]. 
 
 
-## J100 RocketNet Battery Connector
+## J100 RocketNet Battery Connector (DK 952-1933-ND)
 
 - J100 = Harwin M50-3500742 low-profile pin header
 - J100 mate on rocketnet connector = Harwin M50-3150742 low-profile bottom entry socket
@@ -131,20 +132,15 @@
 
 ## Input filtering and protection
 
-- C100 = C115 = 100nF/100V/0603
-- D100 = TVS/25V/0603 
-
-A simple input filter to absorb ESD and spikey things. Probably uneccesary, but easy to have. The TVS should handle big ESD events and the capacitor grabs smaller events quickly. Probably unecessary, but both are easy to add and protect Q100 and Q102.
+Removed. On the EVM, a simple input filter to absorb ESD and spikey things.
 
 
-## Cell Balancing
+## Q103,Q104 = Cell Balancing N Channel MOSFETS
 
-- Cell 1 bypass
-   - Q103  SI1023X              SI1023X              SOT-563       
-- Cell 2 bypass
-   - 
-- Cell 3 bypass
-   - Q104
-- Cell 4 bypass
+- Stupid tiny package, but can't find or fit anything bigger: Vishay Siliconix SI1023X-T1-GE3 (DKSI1023X-T1-GE3CT-NDP)
 
+
+## R105, R110, R116, R122 Cell balancing resistors - 0603 100 ohms 0.25 W (DK 541-100SCT-ND)
+
+- **Notes:** 100 ohms across a fully charged 4.2 V LiPo battery should give us 176 mW of raw power... so 0.25W should be fine.
 
