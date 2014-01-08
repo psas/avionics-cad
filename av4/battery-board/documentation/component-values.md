@@ -67,7 +67,7 @@
 - The reference circuit description says "Tc < = 75 ppm in order to minimize current measurement drift with temperature".
 - The EVM uses a 0.010 ohm, 1-W, 1%, Tc = 75ppm, 2512 resistor (Vishay WSL-2512-010).
 - Let's choose 10 mOhm. We could go less, but then we drop voltage gain. We could go higher, but then we power disappation is a problem. 10 mOhm seems like a good engineering comprimise. Now, what power?
-- 10 mOhm dissipates 1 W @ 10 A and 2.25 W @ 15 A. 
+- 10 mOhm dissipates 160 mW @ 4A, 1 W @ 10 A and 2.25 W @ 15 A. 
 - This means that we need 1W *at least* in order to not cook up if we have to run up to our fused limit.
 - In a temporary short, we still need to beat the fuse. The 5 second time for the fuse is 40 A, so it ought to handle that.
 - We choose the WSHA-.01CT-ND (Vishary WSH2818R0100FEA) because it's 5 W but still has a 99 W/in^2 rating, and has 45 A of overrating curent for 5 seconds. It's over-rated, but that's fine.

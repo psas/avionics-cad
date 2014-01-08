@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6244,7 +6244,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <smd name="6" x="0.635" y="2.5275" dx="0.6" dy="1.2" layer="1"/>
 <smd name="5" x="1.905" y="2.5275" dx="0.6" dy="1.2" layer="1"/>
 <smd name="4" x="1.905" y="-2.5275" dx="0.6" dy="1.2" layer="1"/>
-<text x="-1.8" y="-4.4" size="0.8128" layer="51" ratio="20">&gt;NAME</text>
+<text x="-1.8" y="-4.4" size="0.8128" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <rectangle x1="-2.15" y1="1.95" x2="-1.65" y2="3" layer="51"/>
 <rectangle x1="1.65" y1="1.95" x2="2.15" y2="3" layer="51"/>
 <rectangle x1="1.65" y1="-3" x2="2.15" y2="-1.95" layer="51"/>
@@ -6701,6 +6701,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="C118" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100n/50V"/>
 <part name="Q100" library="Tova" deviceset="NTR4101P" device="" value="Si2343DS-T1"/>
 <part name="R123" library="shunt" deviceset="R-US-2818" device="" value="0.01 5W 1% 75ppm"/>
+<part name="TP109" library="Tova" deviceset="TEST-POINT" device=""/>
+<part name="TP110" library="Tova" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6786,8 +6788,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <instance part="TP101" gate="G$1" x="213.36" y="160.02"/>
 <instance part="TP102" gate="G$1" x="223.52" y="160.02"/>
 <instance part="TP103" gate="G$1" x="229.87" y="139.7"/>
-<instance part="TP106" gate="G$1" x="229.87" y="129.54"/>
-<instance part="TP107" gate="G$1" x="223.52" y="127"/>
+<instance part="TP106" gate="G$1" x="238.76" y="129.54"/>
+<instance part="TP107" gate="G$1" x="229.87" y="127"/>
 <instance part="TP108" gate="G$1" x="229.87" y="121.92"/>
 <instance part="Q101" gate="G$1" x="175.26" y="200.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="172.72" y="212.09" size="1.778" layer="95"/>
@@ -6850,6 +6852,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="NAME" x="165.1" y="86.1314" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="156.21" y="83.312" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="TP109" gate="G$1" x="189.23" y="88.9"/>
+<instance part="TP110" gate="G$1" x="229.87" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -6892,11 +6896,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </segment>
 <segment>
 <wire x1="78.74" y1="83.82" x2="78.74" y2="88.9" width="1.27" layer="91"/>
-<wire x1="101.6" y1="88.9" x2="78.74" y2="88.9" width="1.27" layer="91"/>
+<wire x1="100.33" y1="88.9" x2="78.74" y2="88.9" width="1.27" layer="91"/>
 <wire x1="101.6" y1="91.44" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
+<wire x1="160.02" y1="88.9" x2="160.02" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="77.47" x2="229.87" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="77.47" x2="229.87" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="88.9" x2="78.74" y2="96.52" width="1.27" layer="91"/>
-<junction x="101.6" y="88.9"/>
 <junction x="78.74" y="88.9"/>
 <pinref part="BAR_GND7" gate="1" pin="BAR_GND"/>
 <pinref part="R122" gate="R" pin="1"/>
@@ -6909,6 +6914,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="160.02" y="88.9"/>
 <pinref part="R123" gate="G$1" pin="1@2"/>
 <wire x1="160.02" y1="88.9" x2="160.02" y2="91.44" width="1.27" layer="91"/>
+<pinref part="TP110" gate="G$1" pin="P$1"/>
+<wire x1="100.33" y1="88.9" x2="101.6" y2="88.9" width="1.27" layer="91"/>
+<junction x="100.33" y="88.9"/>
+<wire x1="101.6" y1="88.9" x2="160.02" y2="88.9" width="1.27" layer="91"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="95.25" width="0.1524" layer="91"/>
@@ -6936,7 +6945,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="156.21" y="106.68"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="T2" class="0">
 <segment>
 <wire x1="185.42" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="124.46" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
@@ -7042,7 +7051,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="TRIANGLE_GND" class="0">
 <segment>
-<wire x1="175.26" y1="88.9" x2="309.88" y2="88.9" width="1.27" layer="91"/>
+<wire x1="175.26" y1="88.9" x2="189.23" y2="88.9" width="1.27" layer="91"/>
+<wire x1="189.23" y1="88.9" x2="309.88" y2="88.9" width="1.27" layer="91"/>
 <wire x1="309.88" y1="111.76" x2="309.88" y2="88.9" width="1.27" layer="91"/>
 <junction x="309.88" y="88.9"/>
 <pinref part="TRIANGLE_GND3" gate="1" pin="TRIANGLE_GND"/>
@@ -7061,6 +7071,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="175.26" y="88.9"/>
 <pinref part="R123" gate="G$1" pin="2@2"/>
 <wire x1="175.26" y1="91.44" x2="175.26" y2="88.9" width="1.27" layer="91"/>
+<pinref part="TP109" gate="G$1" pin="P$1"/>
+<junction x="189.23" y="88.9"/>
 </segment>
 <segment>
 <wire x1="261.62" y1="180.34" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
@@ -7131,11 +7143,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="325.12" y1="124.46" x2="325.12" y2="127" width="0.1524" layer="91"/>
 <pinref part="J100" gate="G$1" pin="SMCLK@1"/>
 <junction x="325.12" y="127"/>
-<wire x1="210.82" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
-<junction x="223.52" y="127"/>
+<wire x1="210.82" y1="127" x2="229.87" y2="127" width="0.1524" layer="91"/>
+<junction x="229.87" y="127"/>
 <pinref part="U100" gate="G$1" pin="SMBC"/>
 <pinref part="TP107" gate="G$1" pin="P$1"/>
-<wire x1="325.12" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="127" x2="229.87" y2="127" width="0.1524" layer="91"/>
+<label x="300.99" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -7186,16 +7199,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="!PRES" class="0">
 <segment>
-<wire x1="210.82" y1="129.54" x2="229.87" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="229.87" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="129.54" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="132.08" x2="251.46" y2="132.08" width="0.1524" layer="91"/>
-<junction x="229.87" y="129.54"/>
+<junction x="238.76" y="129.54"/>
 <pinref part="U100" gate="G$1" pin="!PRES"/>
 <pinref part="TP106" gate="G$1" pin="P$1"/>
-<wire x1="251.46" y1="132.08" x2="255.27" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="132.08" x2="320.04" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="J100" gate="G$1" pin="!PRSNT@1"/>
 <wire x1="320.04" y1="116.84" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
@@ -7203,10 +7211,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="325.12" y1="114.3" x2="320.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="114.3" x2="320.04" y2="116.84" width="0.1524" layer="91"/>
 <junction x="320.04" y="116.84"/>
-<wire x1="255.27" y1="132.08" x2="299.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="132.08" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
+<label x="300.99" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="FUSE" class="0">
 <segment>
 <wire x1="210.82" y1="139.7" x2="229.87" y2="139.7" width="0.1524" layer="91"/>
 <junction x="229.87" y="139.7"/>
@@ -7283,7 +7292,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="Q100" gate="G$1" pin="D"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="B12" class="0">
 <segment>
 <wire x1="77.47" y1="104.14" x2="78.74" y2="104.14" width="1.27" layer="91"/>
 <wire x1="78.74" y1="104.14" x2="80.01" y2="104.14" width="1.27" layer="91"/>
@@ -7311,7 +7320,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="78.74" y="121.92"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="B23" class="0">
 <segment>
 <wire x1="77.47" y1="129.54" x2="78.74" y2="129.54" width="1.27" layer="91"/>
 <wire x1="78.74" y1="129.54" x2="80.01" y2="129.54" width="1.27" layer="91"/>
@@ -7340,7 +7349,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="78.74" y="147.32"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="B34" class="0">
 <segment>
 <wire x1="77.47" y1="154.94" x2="78.74" y2="154.94" width="1.27" layer="91"/>
 <wire x1="78.74" y1="154.94" x2="80.01" y2="154.94" width="1.27" layer="91"/>
@@ -7376,7 +7385,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="C116" gate="CE" pin="2"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="T1" class="0">
 <segment>
 <pinref part="U100" gate="G$1" pin="TS1"/>
 <wire x1="185.42" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
@@ -7505,6 +7514,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="229.87" y1="121.92" x2="231.14" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="121.92" x2="232.41" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="121.92" x2="232.41" y2="121.92" width="0.1524" layer="91"/>
+<label x="300.99" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7532,9 +7542,13 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <approved hash="104,1,210.82,137.16,U100,REG27,N$14,,,"/>
 <approved hash="104,1,325.12,137.16,J100,B+,PACK+,,,"/>
 <approved hash="104,1,325.12,134.62,J100,B+,PACK+,,,"/>
+<approved hash="109,1,101.6,91.44,BAR_GND,,,,,"/>
+<approved hash="110,1,162.56,93.98,BAR_GND,N$3,,,,"/>
+<approved hash="109,1,101.6,91.44,BAR_GND,,,,,"/>
 <approved hash="110,1,325.12,114.3,TRIANGLE_GND,!PRES,,,,"/>
 <approved hash="110,1,320.04,114.3,TRIANGLE_GND,!PRES,,,,"/>
 <approved hash="110,1,320.04,114.3,TRIANGLE_GND,!PRES,,,,"/>
+<approved hash="110,1,172.72,93.98,TRIANGLE_GND,N$16,,,,"/>
 </errors>
 </schematic>
 </drawing>
