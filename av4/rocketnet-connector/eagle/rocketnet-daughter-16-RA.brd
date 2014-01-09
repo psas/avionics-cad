@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -96,12 +96,13 @@
 <text x="-3.717" y="5.576" size="0.254" layer="51">TOP VIEW (M50 on bottom of board)</text>
 <hole x="7.5" y="0" drill="2.4384"/>
 <hole x="-8.1" y="0" drill="2.4384"/>
-<wire x1="-10.287" y1="-3.175" x2="-10.287" y2="4.572" width="0.02" layer="20"/>
-<wire x1="9.652" y1="4.572" x2="-10.287" y2="4.572" width="0.02" layer="20"/>
+<wire x1="9.652" y1="4.572" x2="-7.0104" y2="4.572" width="0.02" layer="20"/>
+<wire x1="-7.0104" y1="4.572" x2="-10.287" y2="1.27" width="0.02" layer="20"/>
+<wire x1="-10.287" y1="1.27" x2="-10.287" y2="-3.175" width="0.02" layer="20"/>
 <circle x="7.493" y="-0.0762" radius="2.159" width="0.0254" layer="51"/>
-<circle x="7.493" y="0" radius="3.175" width="0.254" layer="21"/>
+<circle x="7.493" y="0" radius="3.175" width="0.254" layer="51"/>
 <circle x="-8.128" y="0" radius="2.159" width="0.0254" layer="51"/>
-<circle x="-8.128" y="0" radius="3.175" width="0.254" layer="21"/>
+<circle x="-8.128" y="0" radius="3.175" width="0.254" layer="51"/>
 <text x="-2.921" y="-6.858" size="0.254" layer="51">Brown (PWR) wire: 0.055" OD
 CAT6 wire: 0.040" OD</text>
 <text x="-2.921" y="-7.493" size="0.254" layer="51">Entire "ribbon": 0.275 in</text>
@@ -113,13 +114,13 @@ CAT6 wire: 0.040" OD</text>
 <wire x1="0" y1="2.032" x2="0" y2="0.127" width="0.254" layer="21"/>
 <wire x1="0" y1="0.127" x2="0.508" y2="0.635" width="0.254" layer="21"/>
 <wire x1="0" y1="0.127" x2="-0.508" y2="0.635" width="0.254" layer="21"/>
-<text x="-9.525" y="3.429" size="0.762" layer="21" ratio="20">PSAS</text>
+<text x="-8.128" y="2.032" size="0.762" layer="21" ratio="20">PSAS</text>
 <text x="11.176" y="4.445" size="0.254" layer="51">Edge of RNH PCB</text>
 <text x="-2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
 <text x="-1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
 <text x="1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
 <text x="2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
-<text x="6.096" y="3.429" size="0.762" layer="21" ratio="20">RNCv1</text>
+<text x="5.842" y="2.032" size="0.762" layer="21" ratio="20">RNCv1</text>
 <text x="11.176" y="4.953" size="0.254" layer="51">Edge of top plate</text>
 <text x="-1.651" y="-5.842" size="0.254" layer="51">Wire bundle info</text>
 <wire x1="3.302" y1="-7.747" x2="-3.81" y2="-7.747" width="0.0254" layer="51"/>
