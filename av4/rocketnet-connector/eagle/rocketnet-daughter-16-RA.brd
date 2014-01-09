@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -131,10 +131,10 @@ CAT6 wire: 0.040" OD</text>
 <wire x1="-12.954" y1="-4.445" x2="11.176" y2="-4.445" width="0.0254" layer="51"/>
 <wire x1="11.176" y1="-4.445" x2="11.43" y2="-4.191" width="0.0254" layer="51"/>
 <text x="11.684" y="-3.937" size="0.254" layer="51" rot="R90">Edge of PCB</text>
-<text x="2.921" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
-<text x="1.27" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
-<text x="-0.508" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
-<text x="-2.159" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
+<text x="2.667" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
+<text x="0.889" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
+<text x="-0.889" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
+<text x="-2.667" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
 <text x="5.842" y="-4.572" size="0.762" layer="21" ratio="20">RNCv1</text>
 <wire x1="11.176" y1="-5.08" x2="12.065" y2="-4.191" width="0.0254" layer="51"/>
 <text x="12.319" y="-3.937" size="0.254" layer="51" rot="R90">Edge of top plate</text>
@@ -146,6 +146,10 @@ CAT6 wire: 0.040" OD</text>
 <text x="10.922" y="3.175" size="0.254" layer="51" rot="R90">Nut OD</text>
 <wire x1="10.287" y1="1.905" x2="11.43" y2="3.048" width="0.0254" layer="51"/>
 <text x="11.557" y="3.175" size="0.254" layer="51" rot="R90">Tool OD</text>
+<text x="-1.905" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
+<text x="-0.127" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
+<text x="1.651" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
+<text x="3.429" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
