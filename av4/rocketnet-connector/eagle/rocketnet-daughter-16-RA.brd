@@ -91,65 +91,49 @@
 </layers>
 <board>
 <plain>
-<wire x1="9.652" y1="-4.953" x2="9.652" y2="3.302" width="0.02" layer="20"/>
-<wire x1="9.652" y1="-4.953" x2="-10.287" y2="-4.953" width="0.02" layer="20"/>
-<text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on bottom of board)</text>
-<text x="5.189" y="-10.505" size="0.762" layer="48">B-</text>
-<text x="-0.4" y="3.8" size="0.762" layer="48" rot="R90">AUX2</text>
-<text x="-1.7" y="3.8" size="0.762" layer="48" rot="R90">AUX1</text>
-<text x="-1.138" y="-10.242" size="0.762" layer="48">RX-</text>
-<text x="-2.038" y="-11.242" size="0.762" layer="48" rot="R90">RX+</text>
-<text x="4.462" y="-11.242" size="0.762" layer="48" rot="R90">TX-</text>
-<text x="1.362" y="-10.242" size="0.762" layer="48">TX+</text>
-<text x="-4.611" y="-10.605" size="0.762" layer="48">B+</text>
+<wire x1="9.652" y1="-3.175" x2="9.652" y2="4.572" width="0.02" layer="20"/>
+<wire x1="9.652" y1="-3.175" x2="-10.287" y2="-3.175" width="0.02" layer="20"/>
+<text x="-3.717" y="5.576" size="0.254" layer="51">TOP VIEW (M50 on bottom of board)</text>
 <hole x="7.5" y="0" drill="2.4384"/>
 <hole x="-8.1" y="0" drill="2.4384"/>
-<text x="0.8" y="3.8" size="0.762" layer="48" rot="R90">AUX3</text>
-<text x="2.1" y="3.8" size="0.762" layer="48" rot="R90">AUX4</text>
-<wire x1="-10.287" y1="-4.953" x2="-10.287" y2="3.302" width="0.02" layer="20"/>
-<wire x1="9.652" y1="3.302" x2="-10.287" y2="3.302" width="0.02" layer="20"/>
-<text x="9.85" y="-1.2" size="0.762" layer="48">#2-56 nylock
-(5/32" OD)</text>
+<wire x1="-10.287" y1="-3.175" x2="-10.287" y2="4.572" width="0.02" layer="20"/>
+<wire x1="9.652" y1="4.572" x2="-10.287" y2="4.572" width="0.02" layer="20"/>
 <circle x="7.493" y="-0.0762" radius="2.159" width="0.0254" layer="51"/>
 <circle x="7.493" y="0" radius="3.175" width="0.254" layer="21"/>
 <circle x="-8.128" y="0" radius="2.159" width="0.0254" layer="51"/>
 <circle x="-8.128" y="0" radius="3.175" width="0.254" layer="21"/>
-<text x="-2.54" y="4.318" size="0.254" layer="51">Brown (PWR) wire: 0.055" OD
+<text x="-2.921" y="-6.858" size="0.254" layer="51">Brown (PWR) wire: 0.055" OD
 CAT6 wire: 0.040" OD</text>
-<text x="-2.54" y="3.683" size="0.254" layer="51">Entire "ribbon": 0.275 in</text>
-<wire x1="-12.954" y1="-5.08" x2="11.176" y2="-5.08" width="0.0254" layer="51"/>
-<text x="-4.064" y="-2.921" size="0.762" layer="21" ratio="20" rot="R90">B+</text>
-<text x="4.826" y="-2.921" size="0.762" layer="21" ratio="20" rot="R90">B-</text>
-<text x="-2.159" y="1.397" size="0.762" layer="21" ratio="20">1</text>
-<text x="-0.889" y="1.397" size="0.762" layer="21" ratio="20">2</text>
-<text x="0.381" y="1.397" size="0.762" layer="21" ratio="20">3</text>
-<text x="1.651" y="1.397" size="0.762" layer="21" ratio="20">4</text>
-<wire x1="0" y1="1.143" x2="0" y2="3.048" width="0.254" layer="21"/>
-<wire x1="0" y1="3.048" x2="-0.508" y2="2.54" width="0.254" layer="21"/>
-<wire x1="0" y1="3.048" x2="0.508" y2="2.54" width="0.254" layer="21"/>
-<text x="-9.398" y="-4.572" size="0.762" layer="21" ratio="20">PSAS</text>
-<wire x1="-12.954" y1="-4.445" x2="11.176" y2="-4.445" width="0.0254" layer="51"/>
-<wire x1="11.176" y1="-4.445" x2="11.43" y2="-4.191" width="0.0254" layer="51"/>
-<text x="11.684" y="-3.937" size="0.254" layer="51" rot="R90">Edge of PCB</text>
-<text x="2.667" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
-<text x="0.889" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
-<text x="-0.889" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
-<text x="-2.667" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
-<text x="5.842" y="-4.572" size="0.762" layer="21" ratio="20">RNCv1</text>
-<wire x1="11.176" y1="-5.08" x2="12.065" y2="-4.191" width="0.0254" layer="51"/>
-<text x="12.319" y="-3.937" size="0.254" layer="51" rot="R90">Edge of top plate</text>
-<text x="-3.556" y="5.334" size="0.254" layer="51">Wire bundle info</text>
-<wire x1="-3.81" y1="3.429" x2="3.302" y2="3.429" width="0.0254" layer="51"/>
-<wire x1="-3.81" y1="3.429" x2="-3.81" y2="10.541" width="0.0254" layer="51"/>
-<wire x1="3.302" y1="3.429" x2="3.302" y2="10.541" width="0.0254" layer="51"/>
+<text x="-2.921" y="-7.493" size="0.254" layer="51">Entire "ribbon": 0.275 in</text>
+<wire x1="9.271" y1="5.08" x2="11.049" y2="5.08" width="0.0254" layer="51"/>
+<text x="4.826" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">B+</text>
+<text x="-4.064" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">B-</text>
+<text x="-2.159" y="1.143" size="0.762" layer="21" ratio="20">1</text>
+<text x="1.651" y="1.143" size="0.762" layer="21" ratio="20">4</text>
+<wire x1="0" y1="2.032" x2="0" y2="0.127" width="0.254" layer="21"/>
+<wire x1="0" y1="0.127" x2="0.508" y2="0.635" width="0.254" layer="21"/>
+<wire x1="0" y1="0.127" x2="-0.508" y2="0.635" width="0.254" layer="21"/>
+<text x="-9.525" y="3.429" size="0.762" layer="21" ratio="20">PSAS</text>
+<text x="11.176" y="4.445" size="0.254" layer="51">Edge of RNH PCB</text>
+<text x="-2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
+<text x="-1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
+<text x="1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
+<text x="2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
+<text x="6.096" y="3.429" size="0.762" layer="21" ratio="20">RNCv1</text>
+<text x="11.176" y="4.953" size="0.254" layer="51">Edge of top plate</text>
+<text x="-1.651" y="-5.842" size="0.254" layer="51">Wire bundle info</text>
+<wire x1="3.302" y1="-7.747" x2="-3.81" y2="-7.747" width="0.0254" layer="51"/>
+<wire x1="3.302" y1="-7.747" x2="3.302" y2="1.016" width="0.0254" layer="51"/>
+<wire x1="-3.81" y1="-7.747" x2="-3.81" y2="1.016" width="0.0254" layer="51"/>
 <wire x1="9.144" y1="1.397" x2="10.795" y2="3.048" width="0.0254" layer="51"/>
-<text x="10.922" y="3.175" size="0.254" layer="51" rot="R90">Nut OD</text>
-<wire x1="10.287" y1="1.905" x2="11.43" y2="3.048" width="0.0254" layer="51"/>
-<text x="11.557" y="3.175" size="0.254" layer="51" rot="R90">Tool OD</text>
-<text x="-1.905" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
-<text x="-0.127" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
-<text x="1.651" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
-<text x="3.429" y="-3.175" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
+<text x="10.922" y="2.921" size="0.254" layer="51">Nut OD</text>
+<wire x1="10.287" y1="1.905" x2="10.795" y2="2.413" width="0.0254" layer="51"/>
+<text x="10.922" y="2.286" size="0.254" layer="51">Tool OD</text>
+<text x="3.683" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
+<text x="1.905" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
+<text x="-0.381" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
+<text x="-2.159" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
+<wire x1="9.3218" y1="4.5466" x2="11.0998" y2="4.5466" width="0.0254" layer="51"/>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
@@ -353,17 +337,13 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="B+" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-4.445" y="-3.937"/>
-<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="4.445" y="-3.937"/>
-<element name="E$12" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-2.54" y="-3.937"/>
-<element name="E$13" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.889" y="-3.937"/>
-<element name="E$14" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.889" y="-3.937"/>
-<element name="E$15" library="rocketnet-connector" package="26AWG-WIRE" value="" x="2.54" y="-3.937"/>
+<element name="B+" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-4.445" y="3.556"/>
+<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="4.445" y="3.556"/>
+<element name="E$12" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-2.54" y="3.683"/>
+<element name="E$13" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.889" y="3.683"/>
+<element name="E$14" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.889" y="3.683"/>
+<element name="E$15" library="rocketnet-connector" package="26AWG-WIRE" value="" x="2.54" y="3.683"/>
 <element name="E$2" library="rocketnet-connector" package="HARWIN-M50-31508-NO-HOLES" value="" x="0" y="0" rot="MR0"/>
-<element name="AUX1" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-1.905" y="0.635"/>
-<element name="AUX2" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.635" y="0.635"/>
-<element name="AUX3" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.635" y="0.635"/>
-<element name="AUX4" library="rocketnet-connector" package="26AWG-WIRE" value="" x="1.905" y="0.635"/>
 </elements>
 <signals>
 <signal name="AUX2">
@@ -385,48 +365,47 @@ design rules under a new name.</description>
 <via x="-4.445" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="-4.445" y1="0.635" x2="-4.445" y2="-0.635" width="0.7366" layer="16"/>
 <contactref element="B+" pad="P$1"/>
-<wire x1="-4.445" y1="0.635" x2="-4.445" y2="-3.937" width="0.7366" layer="1"/>
-<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-3.937" width="0.508" layer="16"/>
-<wire x1="-4.445" y1="0.635" x2="-4.445" y2="2.032" width="0.508" layer="16"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.556" width="0.7366" layer="1"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.556" width="0.508" layer="16"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="0.635" width="0.7366" layer="1"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-2.159" width="0.508" layer="16"/>
 </signal>
 <signal name="TX+">
 <via x="-3.175" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="-3.175" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="-3.175" y1="0.635" x2="-3.175" y2="-0.635" width="0.7366" layer="16"/>
 <contactref element="E$12" pad="P$1"/>
-<wire x1="-2.54" y1="-3.937" x2="-3.175" y2="-3.302" width="0.508" layer="16"/>
-<wire x1="-3.175" y1="-3.302" x2="-3.175" y2="-0.635" width="0.508" layer="16"/>
 <wire x1="-3.175" y1="0.635" x2="-3.175" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="-3.302" width="0.7366" layer="1"/>
-<wire x1="-3.175" y1="-3.302" x2="-2.54" y2="-3.937" width="0.7366" layer="1"/>
-<wire x1="-3.175" y1="0.635" x2="-3.175" y2="2.032" width="0.508" layer="16"/>
+<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="3.048" width="0.7366" layer="1"/>
+<wire x1="-3.175" y1="3.048" x2="-2.54" y2="3.683" width="0.7366" layer="1"/>
+<wire x1="-3.175" y1="-2.032" x2="-3.175" y2="3.048" width="0.508" layer="16"/>
+<wire x1="-3.175" y1="3.048" x2="-2.54" y2="3.683" width="0.508" layer="16"/>
 </signal>
 <signal name="TX-">
 <via x="-1.905" y="-0.635" extent="1-16" drill="0.3302"/>
 <via x="-0.635" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="-1.905" y1="-0.635" x2="-0.635" y2="-0.635" width="0.7366" layer="16"/>
 <contactref element="E$13" pad="P$1"/>
-<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="-3.683" width="0.508" layer="16"/>
-<wire x1="-0.635" y1="-3.683" x2="-0.889" y2="-3.937" width="0.508" layer="16"/>
-<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="-3.048" width="0.508" layer="16"/>
-<wire x1="-1.905" y1="-3.048" x2="-1.016" y2="-3.937" width="0.508" layer="16"/>
-<wire x1="-1.016" y1="-3.937" x2="-0.889" y2="-3.937" width="0.508" layer="16"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="3.429" width="0.508" layer="16"/>
+<wire x1="-0.635" y1="3.429" x2="-0.889" y2="3.683" width="0.508" layer="16"/>
 <wire x1="-1.905" y1="-0.635" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="-0.889" y1="-0.635" x2="-0.635" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="-0.889" y1="-3.937" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="-0.889" y1="3.683" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="-2.032" width="0.508" layer="16"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="-2.159" width="0.508" layer="16"/>
 </signal>
 <signal name="RX+">
 <via x="0.635" y="-0.635" extent="1-16" drill="0.3302"/>
 <via x="1.905" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="0.635" y1="-0.635" x2="1.905" y2="-0.635" width="0.7366" layer="16"/>
 <contactref element="E$14" pad="P$1"/>
-<wire x1="0.635" y1="-0.635" x2="0.635" y2="-3.683" width="0.508" layer="16"/>
-<wire x1="0.635" y1="-3.683" x2="0.889" y2="-3.937" width="0.508" layer="16"/>
-<wire x1="1.905" y1="-0.635" x2="1.905" y2="-3.048" width="0.508" layer="16"/>
-<wire x1="1.905" y1="-3.048" x2="1.016" y2="-3.937" width="0.508" layer="16"/>
+<wire x1="0.635" y1="-0.635" x2="0.635" y2="3.429" width="0.508" layer="16"/>
+<wire x1="0.635" y1="3.429" x2="0.889" y2="3.683" width="0.508" layer="16"/>
 <wire x1="1.905" y1="-0.635" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="0.889" y1="-0.635" x2="0.635" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="0.889" y1="-3.937" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="0.889" y1="3.683" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="0.635" y1="-0.635" x2="0.635" y2="-2.159" width="0.508" layer="16"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="-2.159" width="0.508" layer="16"/>
 </signal>
 <signal name="B-">
 <via x="4.445" y="0.635" extent="1-16" drill="0.3302"/>
@@ -434,21 +413,31 @@ design rules under a new name.</description>
 <wire x1="4.445" y1="0.635" x2="4.445" y2="-0.635" width="0.7366" layer="16"/>
 <wire x1="4.445" y1="0.635" x2="4.445" y2="-0.635" width="0.7366" layer="1"/>
 <contactref element="E$4" pad="P$1"/>
-<wire x1="4.445" y1="-0.635" x2="4.445" y2="-3.937" width="0.7366" layer="1"/>
-<wire x1="4.445" y1="-0.635" x2="4.445" y2="-3.937" width="0.508" layer="16"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.556" width="0.7366" layer="1"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.556" width="0.508" layer="16"/>
 <wire x1="4.445" y1="0.635" x2="4.445" y2="2.032" width="0.508" layer="16"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="-2.032" width="0.508" layer="16"/>
 </signal>
 <signal name="RX-">
 <via x="3.175" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="3.175" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="3.175" y1="0.635" x2="3.175" y2="-0.635" width="0.7366" layer="16"/>
 <contactref element="E$15" pad="P$1"/>
-<wire x1="3.175" y1="-0.635" x2="3.175" y2="-3.302" width="0.508" layer="16"/>
-<wire x1="3.175" y1="-3.302" x2="2.54" y2="-3.937" width="0.508" layer="16"/>
+<wire x1="3.175" y1="-0.635" x2="3.175" y2="3.048" width="0.508" layer="16"/>
+<wire x1="3.175" y1="3.048" x2="2.54" y2="3.683" width="0.508" layer="16"/>
 <wire x1="3.175" y1="0.635" x2="3.175" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="3.175" y1="-0.635" x2="3.175" y2="-3.302" width="0.7366" layer="1"/>
-<wire x1="3.175" y1="-3.302" x2="2.54" y2="-3.937" width="0.7366" layer="1"/>
+<wire x1="3.175" y1="-0.635" x2="3.175" y2="3.048" width="0.7366" layer="1"/>
+<wire x1="3.175" y1="3.048" x2="2.54" y2="3.683" width="0.7366" layer="1"/>
 <wire x1="3.175" y1="0.635" x2="3.175" y2="2.032" width="0.508" layer="16"/>
+<wire x1="3.175" y1="-0.635" x2="3.175" y2="-2.032" width="0.508" layer="16"/>
+</signal>
+<signal name="S$1">
+<via x="-1.905" y="0.635" extent="1-16" drill="0.3302"/>
+<wire x1="-1.905" y1="0.635" x2="-1.905" y2="2.032" width="0.508" layer="16"/>
+</signal>
+<signal name="S$2">
+<via x="1.905" y="0.635" extent="1-16" drill="0.3302"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="2.159" width="0.508" layer="16"/>
 </signal>
 </signals>
 </board>
