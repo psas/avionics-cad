@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -91,12 +91,13 @@
 </layers>
 <board>
 <plain>
-<wire x1="9.652" y1="-3.175" x2="9.652" y2="4.572" width="0.02" layer="20"/>
+<wire x1="9.652" y1="-3.175" x2="9.652" y2="1.27" width="0.02" layer="20"/>
+<wire x1="9.652" y1="1.27" x2="6.35" y2="4.572" width="0.02" layer="20"/>
 <wire x1="9.652" y1="-3.175" x2="-10.287" y2="-3.175" width="0.02" layer="20"/>
 <text x="-3.717" y="5.576" size="0.254" layer="51">TOP VIEW (M50 on bottom of board)</text>
 <hole x="7.5" y="0" drill="2.4384"/>
 <hole x="-8.1" y="0" drill="2.4384"/>
-<wire x1="9.652" y1="4.572" x2="-7.0104" y2="4.572" width="0.02" layer="20"/>
+<wire x1="6.35" y1="4.572" x2="-7.0104" y2="4.572" width="0.02" layer="20"/>
 <wire x1="-7.0104" y1="4.572" x2="-10.287" y2="1.27" width="0.02" layer="20"/>
 <wire x1="-10.287" y1="1.27" x2="-10.287" y2="-3.175" width="0.02" layer="20"/>
 <circle x="7.493" y="-0.0762" radius="2.159" width="0.0254" layer="51"/>
@@ -114,13 +115,13 @@ CAT6 wire: 0.040" OD</text>
 <wire x1="0" y1="2.032" x2="0" y2="0.127" width="0.254" layer="21"/>
 <wire x1="0" y1="0.127" x2="0.508" y2="0.635" width="0.254" layer="21"/>
 <wire x1="0" y1="0.127" x2="-0.508" y2="0.635" width="0.254" layer="21"/>
-<text x="8.89" y="3.048" size="0.762" layer="22" ratio="20" rot="MR0">PSAS</text>
+<text x="8.763" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">PSAS</text>
 <text x="11.176" y="4.445" size="0.254" layer="51">Edge of RNH PCB</text>
-<text x="-2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
-<text x="-1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
-<text x="1.143" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
-<text x="2.921" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
-<text x="9.144" y="1.778" size="0.762" layer="22" ratio="20" rot="MR0">RNCv1</text>
+<text x="-2.667" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
+<text x="-0.889" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
+<text x="0.889" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
+<text x="2.667" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
+<text x="-6.477" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">RNCv1</text>
 <text x="11.176" y="4.953" size="0.254" layer="51">Edge of top plate</text>
 <text x="-1.651" y="-5.842" size="0.254" layer="51">Wire bundle info</text>
 <wire x1="3.302" y1="-7.747" x2="-3.81" y2="-7.747" width="0.0254" layer="51"/>
@@ -130,10 +131,10 @@ CAT6 wire: 0.040" OD</text>
 <text x="10.922" y="2.921" size="0.254" layer="51">Nut OD</text>
 <wire x1="10.287" y1="1.905" x2="10.795" y2="2.413" width="0.0254" layer="51"/>
 <text x="10.922" y="2.286" size="0.254" layer="51">Tool OD</text>
-<text x="3.683" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
-<text x="1.905" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
-<text x="-0.381" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
-<text x="-2.159" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
+<text x="3.429" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
+<text x="1.651" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
+<text x="-0.127" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
+<text x="-1.905" y="-3.048" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
 <wire x1="9.3218" y1="4.5466" x2="11.0998" y2="4.5466" width="0.0254" layer="51"/>
 </plain>
 <libraries>
@@ -141,14 +142,6 @@ CAT6 wire: 0.040" OD</text>
 <description>Generated from &lt;b&gt;16-pin-rocketnet-daughter.brd&lt;/b&gt;&lt;p&gt;
 by exp-project-lbr.ulp</description>
 <packages>
-<package name="22AWG-WIRE">
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.6"/>
-<circle x="0" y="0" radius="0.67" width="0.05" layer="51"/>
-</package>
-<package name="26AWG-WIRE">
-<pad name="P$1" x="0" y="0" drill="0.65"/>
-<circle x="0" y="0" radius="0.5" width="0.05" layer="51"/>
-</package>
 <package name="HARWIN-M50-31508-NO-HOLES">
 <smd name="1" x="-4.445" y="-1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
 <smd name="2" x="-4.445" y="1.925" dx="1.65" dy="0.71" layer="1" rot="R90"/>
@@ -338,12 +331,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="B+" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-4.445" y="3.556"/>
-<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="4.445" y="3.556"/>
-<element name="E$12" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-2.54" y="3.683"/>
-<element name="E$13" library="rocketnet-connector" package="26AWG-WIRE" value="" x="-0.889" y="3.683"/>
-<element name="E$14" library="rocketnet-connector" package="26AWG-WIRE" value="" x="0.889" y="3.683"/>
-<element name="E$15" library="rocketnet-connector" package="26AWG-WIRE" value="" x="2.54" y="3.683"/>
 <element name="E$2" library="rocketnet-connector" package="HARWIN-M50-31508-NO-HOLES" value="" x="0" y="0" rot="MR0"/>
 </elements>
 <signals>
@@ -364,73 +351,82 @@ design rules under a new name.</description>
 <signal name="B+">
 <via x="-4.445" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="-4.445" y="-0.635" extent="1-16" drill="0.3302"/>
-<wire x1="-4.445" y1="0.635" x2="-4.445" y2="-0.635" width="0.7366" layer="16"/>
-<contactref element="B+" pad="P$1"/>
-<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.556" width="0.7366" layer="1"/>
-<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.556" width="0.508" layer="16"/>
-<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="0.635" width="0.7366" layer="1"/>
+<wire x1="-4.445" y1="0.635" x2="-4.572" y2="0" width="0.7366" layer="16"/>
+<wire x1="-4.572" y1="0" x2="-4.445" y2="-0.635" width="0.7366" layer="16"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.81" width="0.7366" layer="1"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="3.81" width="0.508" layer="16"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.572" y2="0" width="0.7366" layer="1"/>
+<wire x1="-4.572" y1="0" x2="-4.445" y2="0.635" width="0.7366" layer="1"/>
 <wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-2.159" width="0.508" layer="16"/>
+<via x="-4.445" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="TX+">
 <via x="-3.175" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="-3.175" y="-0.635" extent="1-16" drill="0.3302"/>
-<wire x1="-3.175" y1="0.635" x2="-3.175" y2="-0.635" width="0.7366" layer="16"/>
-<contactref element="E$12" pad="P$1"/>
-<wire x1="-3.175" y1="0.635" x2="-3.175" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="-3.175" y1="-0.635" x2="-3.175" y2="3.048" width="0.7366" layer="1"/>
-<wire x1="-3.175" y1="3.048" x2="-2.54" y2="3.683" width="0.7366" layer="1"/>
+<wire x1="-3.175" y1="0.635" x2="-3.048" y2="0" width="0.7366" layer="16"/>
+<wire x1="-3.048" y1="0" x2="-3.175" y2="-0.635" width="0.7366" layer="16"/>
+<wire x1="-3.175" y1="-0.635" x2="-3.048" y2="0" width="0.7366" layer="1"/>
+<wire x1="-3.048" y1="0" x2="-3.175" y2="0.635" width="0.7366" layer="1"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="3.048" width="0.7366" layer="1"/>
+<wire x1="-3.175" y1="3.048" x2="-2.667" y2="3.81" width="0.7366" layer="1"/>
 <wire x1="-3.175" y1="-2.032" x2="-3.175" y2="3.048" width="0.508" layer="16"/>
-<wire x1="-3.175" y1="3.048" x2="-2.54" y2="3.683" width="0.508" layer="16"/>
+<wire x1="-3.175" y1="3.048" x2="-2.667" y2="3.81" width="0.508" layer="16"/>
+<via x="-2.667" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="TX-">
 <via x="-1.905" y="-0.635" extent="1-16" drill="0.3302"/>
 <via x="-0.635" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="-1.905" y1="-0.635" x2="-0.635" y2="-0.635" width="0.7366" layer="16"/>
-<contactref element="E$13" pad="P$1"/>
 <wire x1="-0.635" y1="-0.635" x2="-0.635" y2="3.429" width="0.508" layer="16"/>
-<wire x1="-0.635" y1="3.429" x2="-0.889" y2="3.683" width="0.508" layer="16"/>
+<wire x1="-0.635" y1="3.429" x2="-0.889" y2="3.81" width="0.508" layer="16"/>
 <wire x1="-1.905" y1="-0.635" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="-0.889" y1="-0.635" x2="-0.635" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="-0.889" y1="3.683" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="-0.889" y1="3.81" x2="-0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="-1.905" y1="-0.635" x2="-1.905" y2="-2.032" width="0.508" layer="16"/>
 <wire x1="-0.635" y1="-0.635" x2="-0.635" y2="-2.159" width="0.508" layer="16"/>
+<via x="-0.889" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="RX+">
 <via x="0.635" y="-0.635" extent="1-16" drill="0.3302"/>
 <via x="1.905" y="-0.635" extent="1-16" drill="0.3302"/>
 <wire x1="0.635" y1="-0.635" x2="1.905" y2="-0.635" width="0.7366" layer="16"/>
-<contactref element="E$14" pad="P$1"/>
 <wire x1="0.635" y1="-0.635" x2="0.635" y2="3.429" width="0.508" layer="16"/>
-<wire x1="0.635" y1="3.429" x2="0.889" y2="3.683" width="0.508" layer="16"/>
+<wire x1="0.635" y1="3.429" x2="0.889" y2="3.81" width="0.508" layer="16"/>
 <wire x1="1.905" y1="-0.635" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="0.889" y1="-0.635" x2="0.635" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="0.889" y1="3.683" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
+<wire x1="0.889" y1="3.81" x2="0.889" y2="-0.635" width="0.7366" layer="1"/>
 <wire x1="0.635" y1="-0.635" x2="0.635" y2="-2.159" width="0.508" layer="16"/>
 <wire x1="1.905" y1="-0.635" x2="1.905" y2="-2.159" width="0.508" layer="16"/>
+<via x="0.889" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="B-">
 <via x="4.445" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="4.445" y="-0.635" extent="1-16" drill="0.3302"/>
-<wire x1="4.445" y1="0.635" x2="4.445" y2="-0.635" width="0.7366" layer="16"/>
-<wire x1="4.445" y1="0.635" x2="4.445" y2="-0.635" width="0.7366" layer="1"/>
-<contactref element="E$4" pad="P$1"/>
-<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.556" width="0.7366" layer="1"/>
-<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.556" width="0.508" layer="16"/>
+<wire x1="4.445" y1="0.635" x2="4.572" y2="0" width="0.7366" layer="16"/>
+<wire x1="4.572" y1="0" x2="4.445" y2="-0.635" width="0.7366" layer="16"/>
+<wire x1="4.445" y1="-0.635" x2="4.572" y2="0" width="0.7366" layer="1"/>
+<wire x1="4.572" y1="0" x2="4.445" y2="0.635" width="0.7366" layer="1"/>
+<wire x1="4.445" y1="0.635" x2="4.445" y2="3.81" width="0.7366" layer="1"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.81" width="0.508" layer="16"/>
 <wire x1="4.445" y1="0.635" x2="4.445" y2="2.032" width="0.508" layer="16"/>
 <wire x1="4.445" y1="-0.635" x2="4.445" y2="-2.032" width="0.508" layer="16"/>
+<via x="4.445" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="RX-">
 <via x="3.175" y="0.635" extent="1-16" drill="0.3302"/>
 <via x="3.175" y="-0.635" extent="1-16" drill="0.3302"/>
-<wire x1="3.175" y1="0.635" x2="3.175" y2="-0.635" width="0.7366" layer="16"/>
-<contactref element="E$15" pad="P$1"/>
-<wire x1="3.175" y1="-0.635" x2="3.175" y2="3.048" width="0.508" layer="16"/>
-<wire x1="3.175" y1="3.048" x2="2.54" y2="3.683" width="0.508" layer="16"/>
-<wire x1="3.175" y1="0.635" x2="3.175" y2="-0.635" width="0.7366" layer="1"/>
-<wire x1="3.175" y1="-0.635" x2="3.175" y2="3.048" width="0.7366" layer="1"/>
-<wire x1="3.175" y1="3.048" x2="2.54" y2="3.683" width="0.7366" layer="1"/>
+<wire x1="3.175" y1="0.635" x2="3.048" y2="0" width="0.7366" layer="16"/>
+<wire x1="3.048" y1="0" x2="3.175" y2="-0.635" width="0.7366" layer="16"/>
+<wire x1="3.175" y1="-0.635" x2="3.175" y2="0.635" width="0.508" layer="16"/>
+<wire x1="3.175" y1="0.635" x2="3.175" y2="3.048" width="0.508" layer="16"/>
+<wire x1="3.175" y1="3.048" x2="2.667" y2="3.81" width="0.508" layer="16"/>
+<wire x1="3.175" y1="-0.635" x2="3.048" y2="0" width="0.7366" layer="1"/>
+<wire x1="3.048" y1="0" x2="3.175" y2="0.635" width="0.7366" layer="1"/>
+<wire x1="3.175" y1="0.635" x2="3.175" y2="3.048" width="0.7366" layer="1"/>
+<wire x1="3.175" y1="3.048" x2="2.667" y2="3.81" width="0.7366" layer="1"/>
 <wire x1="3.175" y1="0.635" x2="3.175" y2="2.032" width="0.508" layer="16"/>
 <wire x1="3.175" y1="-0.635" x2="3.175" y2="-2.032" width="0.508" layer="16"/>
+<via x="2.667" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 </signal>
 <signal name="S$1">
 <via x="-1.905" y="0.635" extent="1-16" drill="0.3302"/>
