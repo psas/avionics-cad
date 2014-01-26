@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -92,11 +92,11 @@
 <board>
 <plain>
 <wire x1="9.017" y1="-3.175" x2="9.017" y2="1.27" width="0.02" layer="20"/>
-<wire x1="9.017" y1="1.27" x2="5.715" y2="4.572" width="0.02" layer="20"/>
+<wire x1="9.017" y1="1.27" x2="5.461" y2="4.826" width="0.02" layer="20"/>
 <wire x1="9.017" y1="-3.175" x2="-9.652" y2="-3.175" width="0.02" layer="20"/>
 <text x="-3.717" y="5.576" size="0.254" layer="51">TOP VIEW (M50 on bottom of board)</text>
-<wire x1="5.715" y1="4.572" x2="-6.3754" y2="4.572" width="0.02" layer="20"/>
-<wire x1="-6.3754" y1="4.572" x2="-9.652" y2="1.27" width="0.02" layer="20"/>
+<wire x1="5.461" y1="4.826" x2="-6.096" y2="4.826" width="0.02" layer="20"/>
+<wire x1="-6.096" y1="4.826" x2="-9.652" y2="1.27" width="0.02" layer="20"/>
 <wire x1="-9.652" y1="1.27" x2="-9.652" y2="-3.175" width="0.02" layer="20"/>
 <circle x="6.9" y="-0.0762" radius="2.159" width="0.0254" layer="51"/>
 <circle x="6.9" y="0" radius="3.175" width="0.254" layer="51"/>
@@ -111,10 +111,10 @@ CAT6 wire: 0.040" OD</text>
 <wire x1="0" y1="-1.016" x2="0" y2="-2.794" width="0.254" layer="21"/>
 <wire x1="0" y1="-2.794" x2="0.508" y2="-2.286" width="0.254" layer="21"/>
 <wire x1="0" y1="-2.794" x2="-0.508" y2="-2.286" width="0.254" layer="21"/>
-<text x="8.763" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">PSAS</text>
+<text x="8.509" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">PSAS</text>
 <text x="8.509" y="4.445" size="0.254" layer="51">Edge of RNH PCB</text>
 <text x="0.381" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">SDA</text>
-<text x="-6.35" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">BATv1</text>
+<text x="-5.969" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">BATv1</text>
 <text x="8.509" y="4.953" size="0.254" layer="51">Edge of top plate</text>
 <text x="-1.651" y="-5.842" size="0.254" layer="51">Wire bundle info</text>
 <wire x1="3.302" y1="-7.747" x2="-3.81" y2="-7.747" width="0.0254" layer="51"/>
@@ -127,7 +127,6 @@ CAT6 wire: 0.040" OD</text>
 <text x="2.286" y="1.397" size="0.762" layer="21" ratio="20" rot="R90">!PR</text>
 <text x="-1.397" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">SCL</text>
 <wire x1="6.6548" y1="4.5466" x2="8.4328" y2="4.5466" width="0.0254" layer="51"/>
-<text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on bottom of board)</text>
 <hole x="6.9" y="0" drill="2.4384"/>
 <hole x="-7.5" y="0" drill="2.4384"/>
 <text x="10.612" y="-0.946" size="0.762" layer="49">#2-56 nylock

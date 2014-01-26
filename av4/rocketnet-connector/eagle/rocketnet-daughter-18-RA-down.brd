@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -92,10 +92,10 @@
 <board>
 <plain>
 <wire x1="10.287" y1="-3.175" x2="10.287" y2="1.27" width="0.02" layer="20"/>
-<wire x1="10.287" y1="1.27" x2="6.985" y2="4.572" width="0.02" layer="20"/>
+<wire x1="10.287" y1="1.27" x2="6.477" y2="5.08" width="0.02" layer="20"/>
 <wire x1="10.287" y1="-3.175" x2="-10.922" y2="-3.175" width="0.02" layer="20"/>
-<wire x1="6.985" y1="4.572" x2="-7.6454" y2="4.572" width="0.02" layer="20"/>
-<wire x1="-7.6454" y1="4.572" x2="-10.922" y2="1.27" width="0.02" layer="20"/>
+<wire x1="6.477" y1="5.08" x2="-7.112" y2="5.08" width="0.02" layer="20"/>
+<wire x1="-7.112" y1="5.08" x2="-10.922" y2="1.27" width="0.02" layer="20"/>
 <wire x1="-10.922" y1="1.27" x2="-10.922" y2="-3.175" width="0.02" layer="20"/>
 <circle x="8.135" y="-0.0762" radius="2.159" width="0.0254" layer="51"/>
 <circle x="8.135" y="0" radius="3.175" width="0.254" layer="51"/>
