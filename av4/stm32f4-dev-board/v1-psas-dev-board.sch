@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="2" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -77,9 +77,12 @@
 <layer number="100" name="Hidden_Layer" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Flex-Kleb" color="7" fill="1" visible="no" active="no"/>
 <layer number="102" name="FIXME" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
@@ -13624,6 +13627,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="60.452" y1="138.176" x2="45.72" y2="138.176" width="0.4064" layer="94"/>
 <wire x1="45.72" y1="138.176" x2="45.72" y2="137.16" width="0.4064" layer="94"/>
 <text x="46.99" y="138.938" size="1.778" layer="94">MICROSD</text>
+<text x="274.32" y="88.9" size="1.6764" layer="102">MAYBE: RGB LED package instead?</text>
 </plain>
 <instances>
 <instance part="DIG_GND25" gate="1" x="62.738" y="177.038" rot="MR0"/>
@@ -13669,16 +13673,16 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <instance part="3.3VD" gate="3.3VD" x="89.154" y="143.256"/>
 <instance part="R18" gate="R" x="129.54" y="184.15" rot="MR90"/>
 <instance part="R38" gate="R" x="294.64" y="110.49" smashed="yes" rot="R180">
-<attribute name="NAME" x="293.37" y="114.3" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="298.45" y="114.3" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="296.926" y="114.046" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="296.164" y="108.712" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R39" gate="R" x="294.64" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="293.37" y="102.87" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="298.45" y="102.362" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="297.18" y="102.616" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="296.164" y="97.282" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R40" gate="R" x="294.64" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="293.37" y="125.73" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="298.45" y="125.73" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="296.926" y="125.476" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="296.418" y="120.142" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="3.3VD3" gate="3.3VD" x="302.26" y="125.73"/>
 <instance part="DIG_GND24" gate="1" x="162.56" y="172.72"/>
@@ -13692,9 +13696,18 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <attribute name="VALUE" x="90.678" y="98.933" size="1.778" layer="96"/>
 </instance>
 <instance part="DIG_GND17" gate="1" x="89.154" y="90.17"/>
-<instance part="LED2" gate="G$1" x="283.21" y="121.92" rot="R90"/>
-<instance part="LED3" gate="G$1" x="283.21" y="110.49" rot="R90"/>
-<instance part="LED4" gate="G$1" x="283.21" y="99.06" rot="R90"/>
+<instance part="LED2" gate="G$1" x="285.75" y="121.92" smashed="yes" rot="R270">
+<attribute name="NAME" x="281.94" y="118.364" size="1.778" layer="95"/>
+<attribute name="VALUE" x="281.94" y="115.951" size="1.778" layer="96"/>
+</instance>
+<instance part="LED3" gate="G$1" x="285.75" y="110.49" smashed="yes" rot="R270">
+<attribute name="NAME" x="281.178" y="106.934" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.416" y="104.521" size="1.778" layer="96"/>
+</instance>
+<instance part="LED4" gate="G$1" x="285.75" y="99.06" smashed="yes" rot="R270">
+<attribute name="NAME" x="282.194" y="95.504" size="1.778" layer="95"/>
+<attribute name="VALUE" x="282.448" y="93.091" size="1.778" layer="96"/>
+</instance>
 <instance part="SD1" gate="$" x="51.562" y="117.094" rot="MR0"/>
 <instance part="SD1" gate="G1" x="55.372" y="102.87"/>
 <instance part="SD1" gate="G2" x="55.372" y="100.33"/>
@@ -14057,56 +14070,56 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <pinref part="U8" gate="G$1" pin="PA2"/>
 <wire x1="167.64" y1="149.86" x2="157.48" y2="149.86" width="0.1524" layer="91"/>
-<label x="157.48" y="149.86" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_CRX_DV" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PA7"/>
 <wire x1="157.48" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
-<label x="157.48" y="147.32" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="147.32" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_TX_EN" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PB11"/>
 <wire x1="167.64" y1="144.78" x2="157.48" y2="144.78" width="0.1524" layer="91"/>
-<label x="157.48" y="144.78" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="144.78" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_TXD0" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PB12"/>
 <wire x1="167.64" y1="142.24" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
-<label x="157.48" y="142.24" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="142.24" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_TXD1" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PB13"/>
 <wire x1="167.64" y1="139.7" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
-<label x="157.48" y="139.7" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="139.7" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_MDC" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PC1"/>
 <wire x1="167.64" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
-<label x="157.48" y="137.16" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="137.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_RXD0" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PC4"/>
 <wire x1="167.64" y1="134.62" x2="157.48" y2="134.62" width="0.1524" layer="91"/>
-<label x="157.48" y="134.62" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="134.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="ETH_RXD1" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PC5"/>
 <wire x1="167.64" y1="132.08" x2="157.48" y2="132.08" width="0.1524" layer="91"/>
-<label x="157.48" y="132.08" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="132.08" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="TMS" class="0">
@@ -14165,33 +14178,11 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="109.22" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R40" gate="R" pin="2"/>
-<wire x1="288.29" y1="121.92" x2="289.56" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="R38" gate="R" pin="2"/>
-<wire x1="288.29" y1="110.49" x2="289.56" y2="110.49" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R39" gate="R" pin="2"/>
-<wire x1="288.29" y1="99.06" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="LED4" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PD14"/>
-<wire x1="255.27" y1="99.06" x2="276.86" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="276.86" y1="99.06" x2="280.67" y2="99.06" width="0.15" layer="91"/>
+<wire x1="255.27" y1="99.06" x2="280.67" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="LED3" class="0">
@@ -14199,8 +14190,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U8" gate="G$1" pin="PD13"/>
 <wire x1="255.27" y1="101.6" x2="274.32" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="101.6" x2="274.32" y2="110.49" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="280.67" y1="110.49" x2="274.32" y2="110.49" width="0.15" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="274.32" y1="110.49" x2="280.67" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -14208,22 +14199,22 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U8" gate="G$1" pin="PD11"/>
 <wire x1="255.27" y1="104.14" x2="271.78" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="104.14" x2="271.78" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="271.78" y1="121.92" x2="280.67" y2="121.92" width="0.15" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="271.78" y1="121.92" x2="280.67" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ETH_MDINT" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PA3"/>
 <wire x1="167.64" y1="154.94" x2="157.48" y2="154.94" width="0.1524" layer="91"/>
-<label x="157.48" y="154.94" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="154.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="EPHY_NRST" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="PA1"/>
 <wire x1="167.64" y1="152.4" x2="157.48" y2="152.4" width="0.15" layer="91"/>
-<label x="157.48" y="152.4" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<label x="157.48" y="152.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="OTG_FS_VBUS" class="0">
@@ -14304,10 +14295,25 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <junction x="50.8" y="189.738"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="PA4"/>
-<wire x1="255.524" y1="41.148" x2="255.778" y2="41.148" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R39" gate="R" pin="2"/>
+<wire x1="288.29" y1="99.06" x2="289.56" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R38" gate="R" pin="2"/>
+<wire x1="288.29" y1="110.49" x2="289.56" y2="110.49" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R40" gate="R" pin="2"/>
+<wire x1="288.29" y1="121.92" x2="289.56" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -14454,14 +14460,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="127" y1="134.62" x2="127" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U10" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="88.646" y1="146.812" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="147.32" x2="83.82" y2="143.51" width="0.1524" layer="91"/>
 <pinref part="U10" gate="G$1" pin="EP"/>
-<wire x1="83.82" y1="143.51" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="88.646" y1="144.018" x2="83.82" y2="143.51" width="0.1524" layer="91"/>
-<junction x="83.82" y="143.51"/>
+<wire x1="83.82" y1="146.812" x2="83.82" y2="144.018" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="144.018" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="88.646" y1="144.018" x2="83.82" y2="144.018" width="0.1524" layer="91"/>
+<junction x="83.82" y="144.018"/>
+<pinref part="U10" gate="G$1" pin="GND"/>
+<wire x1="88.646" y1="146.812" x2="83.82" y2="146.812" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C38" gate="G$1" pin="-"/>
@@ -15411,10 +15417,8 @@ Transformers</text>
 <approved hash="102,1,105.156,210.82,BAR_GND,GND,,,,"/>
 <approved hash="102,1,228.854,210.82,BAR_GND,GND,,,,"/>
 <approved hash="102,1,248.412,210.82,BAR_GND,GND,,,,"/>
-<approved hash="102,1,99.06,63.5,BAR_GND,GND,,,,"/>
 <approved hash="102,1,162.56,175.26,BAR_GND,GND,,,,"/>
 <approved hash="102,1,89.154,92.71,BAR_GND,GND,,,,"/>
-<approved hash="102,1,264.16,40.386,BAR_GND,GND,,,,"/>
 <approved hash="102,1,65.532,134.112,BAR_GND,GND,,,,"/>
 <approved hash="102,1,41.656,134.112,BAR_GND,GND,,,,"/>
 <approved hash="104,1,199.39,187.96,U8,VDD1,3.3VD,,,"/>
@@ -15435,9 +15439,6 @@ Transformers</text>
 <approved hash="104,3,35.306,105.156,J3,B-,GND,,,"/>
 <approved hash="104,3,35.306,102.616,J3,B-,GND,,,"/>
 <approved hash="104,1,47.244,212.598,USB,VCC,OTG_FS_VBUS,,,"/>
-<approved hash="115,1,193.888,130.071,FRAME1,,,,,"/>
-<approved hash="115,2,193.888,130.071,FRAME3,,,,,"/>
-<approved hash="115,3,193.888,130.071,FRAME4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
