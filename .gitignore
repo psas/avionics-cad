@@ -1,2 +1,6 @@
-# EagleCAD junk
+# Don't commit EagleCAD temp files
 *.*#*
+
+# Commit .cam files, but don't commit "CAM" directories that have gerbers in them.
+*.cam/
+
