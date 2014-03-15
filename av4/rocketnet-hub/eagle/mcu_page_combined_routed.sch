@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
@@ -13221,9 +13221,9 @@ by exp-project-lbr.ulp</description>
 <part name="R8" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
 <part name="GND71" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
-<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="0"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
-<part name="R14" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1k"/>
+<part name="R14" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="NP"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="TP28" library="testpad" deviceset="TP" device="TP06R"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -13661,8 +13661,10 @@ Supply Enable</text>
 <wire x1="15.24" y1="378.46" x2="15.24" y2="414.02" width="0.1524" layer="95" style="shortdash"/>
 <text x="17.78" y="408.94" size="2.54" layer="95">UART Interface</text>
 <text x="38.1" y="322.58" size="1.016" layer="95">Ferrite bead position before/after capacitors</text>
-<wire x1="17.78" y1="342.9" x2="17.78" y2="353.06" width="0.1524" layer="101"/>
-<text x="16.51" y="342.9" size="1.778" layer="101" rot="R90">MODWIRE</text>
+<text x="16.51" y="341.63" size="1.778" layer="101" rot="R90">MODWIRE</text>
+<text x="170.18" y="440.69" size="1.778" layer="101">MODWIRE for Launch Detect</text>
+<text x="170.18" y="453.39" size="1.778" layer="101">MODWIRE</text>
+<text x="170.18" y="433.07" size="1.778" layer="101">MODWIRE</text>
 </plain>
 <instances>
 <instance part="U1" gate="U1" x="152.4" y="388.62"/>
@@ -13911,6 +13913,14 @@ Supply Enable</text>
 <wire x1="137.16" y1="312.42" x2="139.7" y2="312.42" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="312.42" x2="137.16" y2="309.88" width="0.1524" layer="91"/>
 <junction x="137.16" y="312.42"/>
+</segment>
+<segment>
+<pinref part="U1" gate="U1" pin="PB10"/>
+<wire x1="63.5" y1="353.06" x2="17.78" y2="353.06" width="0.1524" layer="91"/>
+<pinref part="TP39" gate="G$1" pin="TP"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="17.78" y1="342.9" x2="17.78" y2="353.06" width="0.1524" layer="91"/>
+<junction x="17.78" y="353.06"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -14581,13 +14591,6 @@ Supply Enable</text>
 <label x="180.34" y="391.16" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MRXER" class="0">
-<segment>
-<pinref part="U1" gate="U1" pin="PB10"/>
-<wire x1="63.5" y1="353.06" x2="17.78" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="TP39" gate="G$1" pin="TP"/>
-</segment>
-</net>
 <net name="25MHZ_REF_CLK_KSZ" class="0">
 <segment>
 <wire x1="190.5" y1="414.02" x2="187.96" y2="414.02" width="0.1524" layer="91"/>
@@ -14610,6 +14613,30 @@ Supply Enable</text>
 <pinref part="C9" gate="CE" pin="1"/>
 <wire x1="132.08" y1="327.66" x2="139.7" y2="327.66" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="327.66" x2="139.7" y2="320.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED5-3" class="0">
+<segment>
+<wire x1="127" y1="444.5" x2="167.64" y2="444.5" width="0.1524" layer="91"/>
+<label x="167.64" y="444.5" size="1.778" layer="95" xref="yes"/>
+<pinref part="U1" gate="U1" pin="PE12"/>
+<wire x1="127" y1="444.5" x2="127" y2="434.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NODE8_!EN" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PE7"/>
+<wire x1="114.3" y1="434.34" x2="114.3" y2="457.2" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="457.2" x2="167.64" y2="457.2" width="0.1524" layer="91"/>
+<label x="167.64" y="457.2" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="NODE8_!FLT" class="0">
+<segment>
+<pinref part="U1" gate="U1" pin="PE15"/>
+<wire x1="134.62" y1="434.34" x2="134.62" y2="436.88" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="436.88" x2="167.64" y2="436.88" width="0.1524" layer="91"/>
+<label x="167.64" y="436.88" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -18319,6 +18346,7 @@ Supply Enable</text>
 <text x="27.94" y="165.1" size="1.778" layer="97">Mode Select</text>
 <text x="201.93" y="20.32" size="1.778" layer="101" rot="R90">CHANGE: NP</text>
 <text x="49.53" y="72.39" size="1.778" layer="101" rot="R90">CHANGE: NP</text>
+<text x="278.13" y="133.35" size="1.778" layer="101">Launch Detect</text>
 </plain>
 <instances>
 <instance part="U4" gate="U" x="134.62" y="127"/>
@@ -19379,6 +19407,10 @@ Supply Enable</text>
 <pinref part="U4" gate="U" pin="LED[5][3]"/>
 <pinref part="LED17" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="134.62" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+<junction x="193.04" y="134.62"/>
+<wire x1="193.04" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
+<label x="279.4" y="137.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED6-3" class="0">
