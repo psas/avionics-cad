@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14447,9 +14447,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="T2" library="magnetics" deviceset="ALT4532" device=""/>
 <part name="L1" library="magnetics" deviceset="ACM2012" device=""/>
 <part name="L2" library="magnetics" deviceset="ACM2012" device=""/>
-<part name="C1" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="100nF"/>
-<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
-<part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="50"/>
+<part name="C1" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="1n 2kv"/>
+<part name="R1" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="75"/>
+<part name="R2" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="75"/>
 <part name="LED3" library="Tova" deviceset="LED_RGB_*" device="PLCC-6"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="900"/>
 <part name="R4" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="400"/>
@@ -14457,9 +14457,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="C1003" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="10u"/>
-<part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
-<part name="C1004" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="10u"/>
+<part name="C1003" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="10u 40V"/>
+<part name="C3" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
+<part name="C1004" library="rcl_custom" deviceset="C-EU" device="0805-B-NOSILK" value="10u 40V"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="C1001" library="rcl" deviceset="CPOL-EU" device="D/7343-31R" value="100u"/>
@@ -14485,19 +14485,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C2" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
 <part name="R7" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
-<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
-<part name="R10" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
-<part name="R11" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="11.5k"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="3.32k"/>
+<part name="R9" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1.07k"/>
+<part name="R10" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="5.62k"/>
+<part name="R11" library="rcl_custom" deviceset="R-US_" device="0603-B-NOSILK" value="1.07k"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
-<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="TBD"/>
+<part name="C4" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
+<part name="C5" library="rcl_custom" deviceset="C-EU" device="0603-B-NOSILK" value="22n"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
