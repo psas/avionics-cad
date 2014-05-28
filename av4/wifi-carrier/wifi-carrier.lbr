@@ -117,6 +117,25 @@
 <circle x="26.924" y="0" radius="1.778" width="1.778" layer="41"/>
 <circle x="26.924" y="0" radius="1.778" width="1.778" layer="42"/>
 </package>
+<package name="UEI15_PIN">
+<wire x1="-13.97" y1="12.192" x2="13.97" y2="12.192" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="12.192" x2="-13.97" y2="-12.192" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-12.192" x2="13.97" y2="-12.192" width="0.127" layer="21"/>
+<wire x1="13.97" y1="12.192" x2="13.97" y2="-12.192" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="11.43" x2="-7.62" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="51"/>
+<wire x1="1.27" y1="0" x2="7.62" y2="0" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-11.43" width="0.127" layer="51"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-11.43" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="11.43" width="0.127" layer="51"/>
+<pad name="1" x="-10.16" y="-2.54" drill="1.1938"/>
+<pad name="2" x="-10.16" y="2.54" drill="1.1938"/>
+<pad name="6" x="-10.16" y="10.16" drill="1.1938"/>
+<pad name="4" x="10.16" y="0" drill="1.1938"/>
+<pad name="5" x="10.16" y="10.16" drill="1.1938"/>
+<pad name="3" x="10.16" y="-10.16" drill="1.1938"/>
+<text x="-13.97" y="12.7" size="1.27" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="WIFIMODULE">
@@ -141,6 +160,20 @@
 <wire x1="11.43" y1="12.7" x2="10.16" y2="11.43" width="0.254" layer="94"/>
 <wire x1="10.16" y1="11.43" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 </symbol>
+<symbol name="UEI15">
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="8.636" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.27" layer="97">UEI15</text>
+<pin name="VIN" x="-17.78" y="2.54" length="middle"/>
+<pin name="INGND" x="-17.78" y="0" length="middle"/>
+<pin name="CTRL" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VOUT" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="OUTGND" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="TRIM" x="17.78" y="-5.08" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ZCN-722M">
@@ -161,6 +194,27 @@ USB WiFi Module
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="NOP" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UEI15" prefix="U">
+<description>Isolated Wide Input Range 15-Watt DC/DC Converter</description>
+<gates>
+<gate name="G$1" symbol="UEI15" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UEI15_PIN">
+<connects>
+<connect gate="G$1" pin="CTRL" pad="6"/>
+<connect gate="G$1" pin="INGND" pad="2"/>
+<connect gate="G$1" pin="OUTGND" pad="5"/>
+<connect gate="G$1" pin="TRIM" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
