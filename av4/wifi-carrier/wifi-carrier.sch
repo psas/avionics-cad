@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -7157,6 +7171,66 @@ Grid 2.54 mm&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="cap-3024-7660">
+<packages>
+<package name="7660">
+<smd name="+" x="0" y="2.95" dx="6.6" dy="2.3" layer="1"/>
+<smd name="-" x="0" y="-2.95" dx="6.6" dy="2.3" layer="1"/>
+<wire x1="-3" y1="1.6" x2="3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="4.6" x2="-0.2" y2="4.3" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="4.3" x2="-0.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="4.6" x2="0.2" y2="4.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="4.6" x2="0.2" y2="4.3" width="0.127" layer="21"/>
+<wire x1="0.2" y1="4.3" x2="0.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.6" x2="3" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="3.2" x2="-3" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-3" y1="3.2" x2="-3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="0.2" y1="3.2" x2="3" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3" y1="3.2" x2="3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="3" y1="-1.6" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.6" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="1.6" x2="-2.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.9" y1="1.6" x2="2.9" y2="-1.6" width="0.127" layer="21"/>
+<text x="3.4" y="2.5" size="1.27" layer="21">+</text>
+<text x="3.4" y="-3.4" size="1.27" layer="21">-</text>
+<text x="3.6" y="0.4" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.6" y="-0.8" size="0.635" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="C-POL">
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<text x="1.143" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.5842" y="0.4064" size="1.27" layer="94" rot="R90">+</text>
+<text x="1.143" y="-4.5974" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="C-POL-7660" prefix="C">
+<gates>
+<gate name="G$1" symbol="C-POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7660">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7191,6 +7265,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="33u"/>
 <part name="X1" library="con-phoenix-254" deviceset="MPT2" device="" value="5V"/>
+<part name="C5" library="cap-3024-7660" deviceset="C-POL-7660" device="" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -7227,6 +7302,7 @@ Grid 2.54 mm&lt;p&gt;
 <instance part="C4" gate="G$1" x="193.04" y="157.48"/>
 <instance part="X1" gate="-1" x="238.76" y="160.02"/>
 <instance part="X1" gate="-2" x="238.76" y="154.94"/>
+<instance part="C5" gate="G$1" x="66.04" y="154.94"/>
 </instances>
 <busses>
 <bus name="USB-,USB+,D+,D-">
@@ -7327,6 +7403,10 @@ Grid 2.54 mm&lt;p&gt;
 <wire x1="86.36" y1="149.86" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
 <junction x="99.06" y="137.16"/>
+<pinref part="C5" gate="G$1" pin="-"/>
+<wire x1="66.04" y1="149.86" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<junction x="86.36" y="137.16"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -7376,8 +7456,11 @@ Grid 2.54 mm&lt;p&gt;
 <wire x1="109.22" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 <junction x="43.18" y="157.48"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
 <junction x="86.36" y="157.48"/>
+<pinref part="C5" gate="G$1" pin="+"/>
+<wire x1="66.04" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<junction x="66.04" y="157.48"/>
 </segment>
 </net>
 <net name="TRIM" class="0">

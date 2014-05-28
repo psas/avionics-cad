@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,20 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -1410,6 +1424,34 @@ Grid 2.54 mm&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="cap-3024-7660">
+<packages>
+<package name="7660">
+<smd name="+" x="0" y="2.95" dx="6.6" dy="2.3" layer="1"/>
+<smd name="-" x="0" y="-2.95" dx="6.6" dy="2.3" layer="1"/>
+<wire x1="-3" y1="1.6" x2="3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="4.6" x2="-0.2" y2="4.3" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="4.3" x2="-0.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="4.6" x2="0.2" y2="4.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="4.6" x2="0.2" y2="4.3" width="0.127" layer="21"/>
+<wire x1="0.2" y1="4.3" x2="0.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.6" x2="3" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="3.2" x2="-3" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-3" y1="3.2" x2="-3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="0.2" y1="3.2" x2="3" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3" y1="3.2" x2="3" y2="1.6" width="0.127" layer="51"/>
+<wire x1="3" y1="-1.6" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.6" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-2.9" y1="1.6" x2="-2.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.9" y1="1.6" x2="2.9" y2="-1.6" width="0.127" layer="21"/>
+<text x="3.4" y="2.5" size="1.27" layer="21">+</text>
+<text x="3.4" y="-3.4" size="1.27" layer="21">-</text>
+<text x="3.6" y="0.4" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.6" y="-0.8" size="0.635" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1624,6 +1666,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
 </element>
+<element name="C5" library="cap-3024-7660" package="7660" value="100u" x="-76.2" y="-35.56"/>
 </elements>
 <signals>
 <signal name="D+">
@@ -1667,6 +1710,8 @@ design rules under a new name.</description>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="X1" pad="2"/>
+<contactref element="C5" pad="-"/>
+<wire x1="-74.93" y1="-26.67" x2="-76.2" y2="-38.51" width="0" layer="19" extent="1-1"/>
 <wire x1="-74.8" y1="-19.05" x2="-74.93" y2="-26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-76.52" y1="-12.7" x2="-74.8" y2="-19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-76.62" y1="-6.35" x2="-76.52" y2="-12.7" width="0" layer="19" extent="1-1"/>
@@ -1683,6 +1728,8 @@ design rules under a new name.</description>
 <contactref element="VBATT" pad="TP"/>
 <contactref element="U1" pad="1"/>
 <contactref element="C1" pad="1"/>
+<contactref element="C5" pad="+"/>
+<wire x1="-78.32" y1="-2.54" x2="-76.2" y2="-32.61" width="0" layer="19" extent="1-1"/>
 <wire x1="-38.1" y1="10.16" x2="-78.32" y2="-2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.415" y1="56.515" x2="-38.1" y2="10.16" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.415" y1="57.785" x2="-18.415" y2="56.515" width="0" layer="19" extent="1-1"/>
