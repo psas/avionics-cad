@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -99,10 +99,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="68.58" y2="0" width="0" layer="20"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="68.58" width="0" layer="20"/>
+<wire x1="68.58" y1="68.58" x2="0" y2="68.58" width="0" layer="20"/>
+<wire x1="0" y1="68.58" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="wifi-carrier">
@@ -153,7 +153,7 @@
 <rectangle x1="-29.464" y1="-0.254" x2="-28.956" y2="0.254" layer="51" rot="R90"/>
 <rectangle x1="-29.464" y1="4.826" x2="-28.956" y2="5.334" layer="51" rot="R90"/>
 <rectangle x1="-29.464" y1="2.286" x2="-28.956" y2="2.794" layer="51" rot="R90"/>
-<hole x="26.924" y="0" drill="3.175"/>
+<hole x="25.4" y="0" drill="3.175"/>
 <wire x1="29.845" y1="10.541" x2="29.845" y2="-10.541" width="0.127" layer="51"/>
 <wire x1="-29.845" y1="10.541" x2="29.845" y2="10.541" width="0.127" layer="51"/>
 <wire x1="29.845" y1="-10.541" x2="-29.845" y2="-10.541" width="0.127" layer="51"/>
@@ -162,11 +162,11 @@
 <wire x1="-35.433" y1="6.985" x2="-35.433" y2="-6.985" width="0.127" layer="51"/>
 <wire x1="-35.433" y1="-6.985" x2="-29.845" y2="-6.985" width="0.127" layer="51"/>
 <wire x1="-29.845" y1="-6.985" x2="-29.845" y2="-10.541" width="0.127" layer="51"/>
-<circle x="26.924" y="0" radius="2.54" width="2.54" layer="39"/>
+<circle x="25.4" y="0" radius="2.54" width="2.54" layer="39"/>
 <wire x1="-29.21" y1="7.62" x2="-29.21" y2="-7.62" width="5.08" layer="39"/>
-<circle x="26.924" y="0" radius="2.54" width="2.54" layer="40"/>
-<circle x="26.924" y="0" radius="1.778" width="1.778" layer="41"/>
-<circle x="26.924" y="0" radius="1.778" width="1.778" layer="42"/>
+<circle x="25.4" y="0" radius="2.54" width="2.54" layer="40"/>
+<circle x="25.4" y="0" radius="1.778" width="1.778" layer="41"/>
+<circle x="25.4" y="0" radius="1.778" width="1.778" layer="42"/>
 </package>
 <package name="UEI15_PIN">
 <wire x1="-13.97" y1="12.192" x2="13.97" y2="12.192" width="0.127" layer="21"/>
@@ -1638,66 +1638,85 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="UWIFI" library="wifi-carrier" package="ZCN-722M" value="ZCN-722M" x="-44.45" y="38.1"/>
-<element name="J1" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="-22.86" y="57.15"/>
-<element name="BOLT" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="-45.72" y="66.04"/>
-<element name="BOLT1" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="-45.72" y="74.93"/>
-<element name="BOLT2" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="-45.72" y="83.82"/>
-<element name="BOLT3" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="-45.72" y="92.71"/>
-<element name="U1" library="wifi-carrier" package="UEI15_PIN" value="UEI15" x="-27.94" y="12.7"/>
-<element name="R1" library="rcl" package="R0603" value="NP" x="-53.34" y="91.44"/>
-<element name="R2" library="rcl" package="R0603" value="NP" x="-58.42" y="91.44"/>
-<element name="CTRL" library="testpad" package="P1-13" value="PTR1PAD1-13" x="-17.78" y="99.06">
-<attribute name="TP_SIGNAL_NAME" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="UWIFI" library="wifi-carrier" package="ZCN-722M" value="ZCN-722M" x="36.83" y="20.32"/>
+<element name="J1" library="rocketnet-connector" package="ROCKETNET-M-16" value="ROCKETNET-CONNECTOR-16M" x="22.86" y="63.5" rot="R180"/>
+<element name="BOLT" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="56.642" y="4.318" smashed="yes"/>
+<element name="BOLT1" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="11.938" y="4.318" smashed="yes"/>
+<element name="BOLT2" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="64.262" y="64.262" smashed="yes"/>
+<element name="BOLT3" library="mount-2" package="_4/.325-BARE+SMALL_TOOL_CLEARANCE" value="_4-BARE_MOUNTING_HOLE/.325" x="4.318" y="64.262" smashed="yes"/>
+<element name="U1" library="wifi-carrier" package="UEI15_PIN" value="UEI15" x="43.18" y="45.212"/>
+<element name="R1" library="rcl" package="R0603" value="NP" x="59.69" y="54.61" rot="R90"/>
+<element name="R2" library="rcl" package="R0603" value="NP" x="59.69" y="50.8" rot="R90"/>
+<element name="CTRL" library="testpad" package="P1-13" value="PTR1PAD1-13" x="40.64" y="62.23">
+<attribute name="TP_SIGNAL_NAME" value="" x="58.42" y="-36.83" size="1.778" layer="27" display="off"/>
 </element>
-<element name="VBATT" library="testpad" package="P1-13" value="PTR1PAD1-13" x="-66.04" y="90.17">
-<attribute name="TP_SIGNAL_NAME" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="VBATT" library="testpad" package="P1-13" value="PTR1PAD1-13" x="14.478" y="52.07">
+<attribute name="TP_SIGNAL_NAME" value="" x="80.518" y="-38.1" size="1.778" layer="27" display="off"/>
 </element>
-<element name="VUSB" library="testpad" package="P1-13" value="PTR1PAD1-13" x="-72.39" y="90.17">
-<attribute name="TP_SIGNAL_NAME" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="VUSB" library="testpad" package="P1-13" value="PTR1PAD1-13" x="3.556" y="35.56">
+<attribute name="TP_SIGNAL_NAME" value="" x="75.946" y="-54.61" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C1" library="rcl" package="C0603" value="100n" x="-77.47" y="-2.54"/>
-<element name="C2" library="rcl" package="C0603" value="100n" x="-77.47" y="-6.35"/>
-<element name="C3" library="rcl" package="C0805" value="1u" x="-77.47" y="-12.7"/>
-<element name="C4" library="rcl" package="C1206" value="33u" x="-76.2" y="-19.05"/>
-<element name="X1" library="con-phoenix-254" package="2POL254" value="5V" x="-76.2" y="-26.67">
-<attribute name="OC_NEWARK" value="unknown" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="-76.2" y="-26.67" size="1.778" layer="27" display="off"/>
+<element name="C1" library="rcl" package="C0603" value="100n" x="14.478" y="41.91" rot="R270"/>
+<element name="C2" library="rcl" package="C0603" value="100n" x="63.5" y="45.212"/>
+<element name="C3" library="rcl" package="C0805" value="1u" x="63.5" y="41.656"/>
+<element name="C4" library="rcl" package="C1206" value="33u" x="64.008" y="38.1"/>
+<element name="X1" library="con-phoenix-254" package="2POL254" value="5V" x="52.07" y="64.77" rot="R180">
+<attribute name="OC_NEWARK" value="unknown" x="52.07" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="52.07" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="52.07" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="52.07" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C5" library="cap-3024-7660" package="7660" value="100u" x="-76.2" y="-35.56"/>
+<element name="C5" library="cap-3024-7660" package="7660" value="100u" x="20.32" y="39.751"/>
 </elements>
 <signals>
 <signal name="D+">
 <contactref element="UWIFI" pad="4"/>
 <contactref element="J1" pad="T-@11"/>
 <contactref element="J1" pad="T-@9"/>
-<wire x1="-22.225" y1="56.515" x2="-20.955" y2="56.515" width="0" layer="19" extent="1-1"/>
-<wire x1="-73.66" y1="40.64" x2="-22.225" y2="56.515" width="0" layer="19" extent="1-1"/>
+<wire x1="22.225" y1="64.135" x2="20.955" y2="64.135" width="0.6096" layer="16"/>
+<wire x1="20.955" y1="64.135" x2="20.955" y2="36.957" width="0.6096" layer="16"/>
+<wire x1="20.955" y1="36.957" x2="18.796" y2="34.798" width="0.6096" layer="16"/>
+<wire x1="18.796" y1="34.798" x2="9.906" y2="34.798" width="0.6096" layer="16"/>
+<wire x1="9.906" y1="34.798" x2="5.334" y2="30.226" width="0.6096" layer="16"/>
+<wire x1="5.334" y1="30.226" x2="5.334" y2="23.368" width="0.6096" layer="16"/>
+<wire x1="5.334" y1="23.368" x2="5.842" y2="22.86" width="0.6096" layer="16"/>
+<wire x1="5.842" y1="22.86" x2="7.62" y2="22.86" width="0.6096" layer="16"/>
 </signal>
 <signal name="D-">
 <contactref element="UWIFI" pad="3"/>
 <contactref element="J1" pad="R+@7"/>
 <contactref element="J1" pad="R+@5"/>
-<wire x1="-24.765" y1="56.515" x2="-73.66" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.495" y1="56.515" x2="-24.765" y2="56.515" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="64.135" x2="23.495" y2="64.135" width="0.6096" layer="16"/>
+<wire x1="23.495" y1="64.135" x2="23.495" y2="36.195" width="0.6096" layer="16"/>
+<wire x1="23.495" y1="36.195" x2="17.526" y2="30.226" width="0.6096" layer="16"/>
+<via x="17.526" y="30.226" extent="1-16" drill="0.6"/>
+<wire x1="17.526" y1="30.226" x2="17.526" y2="23.876" width="0.6096" layer="1"/>
+<wire x1="17.526" y1="23.876" x2="13.97" y2="20.32" width="0.6096" layer="1"/>
+<wire x1="13.97" y1="20.32" x2="7.62" y2="20.32" width="0.6096" layer="1"/>
 </signal>
 <signal name="USB+">
 <contactref element="UWIFI" pad="2"/>
 <contactref element="VUSB" pad="TP"/>
 <contactref element="J1" pad="T+@14"/>
 <contactref element="J1" pad="T+@13"/>
-<wire x1="-72.39" y1="90.17" x2="-73.66" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.685" y1="56.515" x2="-73.66" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.685" y1="57.785" x2="-19.685" y2="56.515" width="0" layer="19" extent="1-1"/>
+<wire x1="19.685" y1="64.135" x2="19.685" y2="62.865" width="0.6096" layer="16"/>
+<wire x1="19.685" y1="62.865" x2="19.685" y2="52.197" width="0.6096" layer="16"/>
+<wire x1="19.685" y1="52.197" x2="8.128" y2="40.64" width="0.6096" layer="16"/>
+<wire x1="8.128" y1="40.64" x2="8.128" y2="37.338" width="0.6096" layer="16"/>
+<wire x1="8.128" y1="37.338" x2="6.35" y2="35.56" width="0.6096" layer="16"/>
+<wire x1="6.35" y1="35.56" x2="3.556" y2="35.56" width="0.6096" layer="16"/>
+<wire x1="3.556" y1="35.56" x2="3.556" y2="19.304" width="0.6096" layer="16"/>
+<wire x1="3.556" y1="19.304" x2="5.08" y2="17.78" width="0.6096" layer="16"/>
+<wire x1="5.08" y1="17.78" x2="7.62" y2="17.78" width="0.6096" layer="16"/>
 </signal>
 <signal name="USB-">
 <contactref element="UWIFI" pad="5"/>
 <contactref element="J1" pad="R-@4"/>
 <contactref element="J1" pad="R-@3"/>
-<wire x1="-26.035" y1="56.515" x2="-73.66" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.035" y1="57.785" x2="-26.035" y2="56.515" width="0" layer="19" extent="1-1"/>
+<wire x1="26.035" y1="64.135" x2="26.035" y2="62.865" width="0.6096" layer="16"/>
+<wire x1="26.035" y1="62.865" x2="26.035" y2="35.179" width="0.6096" layer="16"/>
+<wire x1="26.035" y1="35.179" x2="16.256" y2="25.4" width="0.6096" layer="16"/>
+<wire x1="16.256" y1="25.4" x2="7.62" y2="25.4" width="0.6096" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="B-@1"/>
@@ -1711,16 +1730,18 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="X1" pad="2"/>
 <contactref element="C5" pad="-"/>
-<wire x1="-74.93" y1="-26.67" x2="-76.2" y2="-38.51" width="0" layer="19" extent="1-1"/>
-<wire x1="-74.8" y1="-19.05" x2="-74.93" y2="-26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-76.52" y1="-12.7" x2="-74.8" y2="-19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-76.62" y1="-6.35" x2="-76.52" y2="-12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-76.62" y1="-2.54" x2="-76.62" y2="-6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.1" y1="15.24" x2="-76.62" y2="-2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="22.86" x2="-38.1" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.305" y1="56.515" x2="-17.78" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.305" y1="57.785" x2="-27.305" y2="56.515" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.27" y1="91.44" x2="-27.305" y2="57.785" width="0" layer="19" extent="1-1"/>
+<polygon width="0.6096" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="0" y="68.58"/>
+<vertex x="68.58" y="68.58"/>
+<vertex x="68.58" y="0"/>
+</polygon>
+<polygon width="0.6096" layer="1">
+<vertex x="0" y="0"/>
+<vertex x="0" y="68.58"/>
+<vertex x="68.58" y="68.58"/>
+<vertex x="68.58" y="0"/>
+</polygon>
 </signal>
 <signal name="VCC">
 <contactref element="J1" pad="B+@15"/>
@@ -1729,18 +1750,25 @@ design rules under a new name.</description>
 <contactref element="U1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C5" pad="+"/>
-<wire x1="-78.32" y1="-2.54" x2="-76.2" y2="-32.61" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.1" y1="10.16" x2="-78.32" y2="-2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.415" y1="56.515" x2="-38.1" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.415" y1="57.785" x2="-18.415" y2="56.515" width="0" layer="19" extent="1-1"/>
-<wire x1="-66.04" y1="90.17" x2="-18.415" y2="57.785" width="0" layer="19" extent="1-1"/>
+<wire x1="18.415" y1="64.135" x2="18.415" y2="62.865" width="0.8128" layer="1"/>
+<wire x1="18.415" y1="62.865" x2="18.288" y2="62.865" width="0.8128" layer="1"/>
+<wire x1="18.288" y1="62.865" x2="18.288" y2="60.198" width="1.016" layer="1"/>
+<wire x1="14.478" y1="52.07" x2="14.478" y2="56.388" width="1.016" layer="1"/>
+<wire x1="14.478" y1="56.388" x2="18.288" y2="60.198" width="1.016" layer="1"/>
+<wire x1="14.478" y1="52.07" x2="14.478" y2="42.76" width="1.016" layer="1"/>
+<wire x1="14.478" y1="42.76" x2="20.261" y2="42.76" width="1.016" layer="1"/>
+<wire x1="20.261" y1="42.76" x2="20.32" y2="42.701" width="1.016" layer="1"/>
+<wire x1="20.32" y1="42.701" x2="32.991" y2="42.701" width="1.016" layer="1"/>
+<wire x1="32.991" y1="42.701" x2="33.02" y2="42.672" width="1.016" layer="1"/>
 </signal>
 <signal name="TRIM">
 <contactref element="R2" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="U1" pad="4"/>
-<wire x1="-57.57" y1="91.44" x2="-54.19" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="12.7" x2="-54.19" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="53.76" x2="59.69" y2="51.65" width="0.6096" layer="1"/>
+<wire x1="59.69" y1="51.65" x2="56.222" y2="51.65" width="0.6096" layer="1"/>
+<wire x1="56.222" y1="51.65" x2="53.34" y2="48.768" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="48.768" x2="53.34" y2="45.212" width="0.6096" layer="1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="R1" pad="2"/>
@@ -1749,16 +1777,30 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="1"/>
 <contactref element="X1" pad="1"/>
-<wire x1="-77.6" y1="-19.05" x2="-77.47" y2="-26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-78.42" y1="-12.7" x2="-77.6" y2="-19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-78.32" y1="-6.35" x2="-78.42" y2="-12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="2.54" x2="-78.32" y2="-6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.49" y1="91.44" x2="-17.78" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="35.052" x2="61.214" y2="35.052" width="1.016" layer="1"/>
+<wire x1="61.214" y1="35.052" x2="62.484" y2="36.322" width="1.016" layer="1"/>
+<wire x1="62.484" y1="36.322" x2="62.484" y2="37.976" width="1.016" layer="1"/>
+<wire x1="62.484" y1="37.976" x2="62.608" y2="38.1" width="1.016" layer="1"/>
+<wire x1="62.608" y1="38.1" x2="62.608" y2="41.598" width="1.016" layer="1"/>
+<wire x1="62.608" y1="41.598" x2="62.55" y2="41.656" width="1.016" layer="1"/>
+<wire x1="62.55" y1="41.656" x2="62.55" y2="45.112" width="1.016" layer="1"/>
+<wire x1="62.55" y1="45.112" x2="62.65" y2="45.212" width="1.016" layer="1"/>
+<wire x1="62.65" y1="45.212" x2="62.65" y2="54.19" width="1.016" layer="1"/>
+<wire x1="62.65" y1="54.19" x2="61.468" y2="55.372" width="1.016" layer="1"/>
+<wire x1="61.468" y1="55.372" x2="59.778" y2="55.372" width="1.016" layer="1"/>
+<wire x1="59.778" y1="55.372" x2="59.69" y2="55.46" width="1.016" layer="1"/>
+<wire x1="59.69" y1="55.46" x2="59.69" y2="58.166" width="1.016" layer="1"/>
+<wire x1="59.69" y1="58.166" x2="57.15" y2="60.706" width="1.016" layer="1"/>
+<wire x1="57.15" y1="60.706" x2="54.864" y2="60.706" width="1.016" layer="1"/>
+<wire x1="54.864" y1="60.706" x2="53.34" y2="62.23" width="1.016" layer="1"/>
+<wire x1="53.34" y1="62.23" x2="53.34" y2="64.77" width="1.016" layer="1"/>
 </signal>
 <signal name="CTRL">
 <contactref element="U1" pad="6"/>
 <contactref element="CTRL" pad="TP"/>
-<wire x1="-38.1" y1="22.86" x2="-17.78" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="55.372" x2="37.592" y2="55.372" width="0.6096" layer="1"/>
+<wire x1="37.592" y1="55.372" x2="40.64" y2="58.42" width="0.6096" layer="1"/>
+<wire x1="40.64" y1="58.42" x2="40.64" y2="62.23" width="0.6096" layer="1"/>
 </signal>
 </signals>
 </board>

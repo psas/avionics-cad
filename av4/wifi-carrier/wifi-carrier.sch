@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -147,7 +147,7 @@
 <rectangle x1="-29.464" y1="-0.254" x2="-28.956" y2="0.254" layer="51" rot="R90"/>
 <rectangle x1="-29.464" y1="4.826" x2="-28.956" y2="5.334" layer="51" rot="R90"/>
 <rectangle x1="-29.464" y1="2.286" x2="-28.956" y2="2.794" layer="51" rot="R90"/>
-<hole x="26.924" y="0" drill="3.175"/>
+<hole x="25.4" y="0" drill="3.175"/>
 <wire x1="29.845" y1="10.541" x2="29.845" y2="-10.541" width="0.127" layer="51"/>
 <wire x1="-29.845" y1="10.541" x2="29.845" y2="10.541" width="0.127" layer="51"/>
 <wire x1="29.845" y1="-10.541" x2="-29.845" y2="-10.541" width="0.127" layer="51"/>
@@ -156,11 +156,11 @@
 <wire x1="-35.433" y1="6.985" x2="-35.433" y2="-6.985" width="0.127" layer="51"/>
 <wire x1="-35.433" y1="-6.985" x2="-29.845" y2="-6.985" width="0.127" layer="51"/>
 <wire x1="-29.845" y1="-6.985" x2="-29.845" y2="-10.541" width="0.127" layer="51"/>
-<circle x="26.924" y="0" radius="2.54" width="2.54" layer="39"/>
+<circle x="25.4" y="0" radius="2.54" width="2.54" layer="39"/>
 <wire x1="-29.21" y1="7.62" x2="-29.21" y2="-7.62" width="5.08" layer="39"/>
-<circle x="26.924" y="0" radius="2.54" width="2.54" layer="40"/>
-<circle x="26.924" y="0" radius="1.778" width="1.778" layer="41"/>
-<circle x="26.924" y="0" radius="1.778" width="1.778" layer="42"/>
+<circle x="25.4" y="0" radius="2.54" width="2.54" layer="40"/>
+<circle x="25.4" y="0" radius="1.778" width="1.778" layer="41"/>
+<circle x="25.4" y="0" radius="1.778" width="1.778" layer="42"/>
 </package>
 <package name="UEI15_PIN">
 <wire x1="-13.97" y1="12.192" x2="13.97" y2="12.192" width="0.127" layer="21"/>
@@ -7259,7 +7259,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="VBATT" library="testpad" deviceset="PTR1" device="PAD1-13"/>
 <part name="VUSB" library="testpad" deviceset="PTR1" device="PAD1-13"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="wifi"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
@@ -7502,6 +7502,12 @@ Grid 2.54 mm&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,43.18,104.14,J1,B+,VCC,,,"/>
+<approved hash="104,1,43.18,101.6,J1,B+,VCC,,,"/>
+<approved hash="104,1,43.18,68.58,J1,B-,GND,,,"/>
+<approved hash="104,1,43.18,66.04,J1,B-,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
