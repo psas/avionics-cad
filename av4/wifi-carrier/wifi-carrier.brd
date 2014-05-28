@@ -1657,32 +1657,32 @@ design rules under a new name.</description>
 <element name="U1" library="wifi-carrier" package="UEI15_PIN" value="UEI15" x="43.18" y="45.212" smashed="yes">
 <attribute name="NAME" x="42.164" y="44.45" size="1.778" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="R1" library="rcl" package="R0603" value="NP" x="51.308" y="32.004" smashed="yes">
-<attribute name="NAME" x="53.467" y="31.369" size="1.27" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="50.673" y="30.099" size="1.27" layer="27"/>
+<element name="R1" library="rcl" package="R0603" value="NP" x="59.944" y="36.322" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.833" y="39.243" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="60.579" y="38.227" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R2" library="rcl" package="R0603" value="NP" x="47.752" y="32.004" smashed="yes">
-<attribute name="NAME" x="43.561" y="31.369" size="1.27" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="47.117" y="30.099" size="1.27" layer="27"/>
+<element name="R2" library="rcl" package="R0603" value="NP" x="63.246" y="36.322" smashed="yes" rot="R180">
+<attribute name="NAME" x="67.437" y="36.957" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="63.881" y="38.227" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="CTRL" library="testpad" package="P1-13" value="PTR1PAD1-13" x="40.64" y="62.23" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="39.37" y="59.69" size="1" layer="37"/>
 <attribute name="NAME" x="38.862" y="59.182" size="1.27" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="40.64" y="62.23" size="0.0254" layer="27"/>
 </element>
-<element name="VBATT" library="testpad" package="P1-13" value="PTR1PAD1-13" x="18.796" y="44.196" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="17.526" y="41.656" size="1" layer="37"/>
-<attribute name="NAME" x="14.732" y="45.72" size="1.27" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="18.796" y="44.196" size="0.0254" layer="27"/>
+<element name="VBATT" library="testpad" package="P1-13" value="PTR1PAD1-13" x="17.78" y="42.164" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="16.51" y="39.624" size="1" layer="37"/>
+<attribute name="NAME" x="12.954" y="44.45" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="17.78" y="42.164" size="0.0254" layer="27"/>
 </element>
 <element name="VUSB" library="testpad" package="P1-13" value="PTR1PAD1-13" x="13.97" y="38.354" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="12.7" y="35.814" size="1" layer="37"/>
 <attribute name="NAME" x="11.43" y="35.56" size="1.27" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="13.97" y="38.354" size="0.0254" layer="27"/>
 </element>
-<element name="C1" library="rcl" package="C0603" value="100n" x="28.194" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.781" y="38.989" size="1.27" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="VALUE" x="26.289" y="40.005" size="1.27" layer="27" rot="R270"/>
+<element name="C1" library="rcl" package="C0603" value="100n" x="27.94" y="45.212" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.829" y="47.625" size="1.27" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="29.845" y="44.577" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C2" library="rcl" package="C0603" value="100n" x="59.69" y="47.752" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.77" y="48.26" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -1704,9 +1704,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.864" y="61.722" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
 <attribute name="VALUE" x="54.864" y="66.548" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C5" library="cap-3024-7660" package="7660" value="100u" x="25.4" y="46.101" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.372" y="46.717" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
-<attribute name="VALUE" x="21.8" y="46.901" size="0.635" layer="27" font="vector" ratio="20" rot="R180"/>
+<element name="C5" library="cap-3024-7660" package="7660" value="100u" x="23.368" y="45.847" smashed="yes" rot="R180">
+<attribute name="NAME" x="24.34" y="46.463" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="19.768" y="46.647" size="0.635" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1795,26 +1795,31 @@ design rules under a new name.</description>
 <contactref element="U1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C5" pad="+"/>
-<polygon width="0.254" layer="1" isolate="0.508" orphans="yes" thermals="no">
-<vertex x="19.05" y="59.182"/>
+<polygon width="0.254" layer="1" isolate="0.254" orphans="yes" thermals="no">
+<vertex x="19.05" y="58.166"/>
 <vertex x="19.05" y="66.04"/>
 <vertex x="12.446" y="66.04"/>
 <vertex x="12.446" y="60.198"/>
-<vertex x="16.764" y="51.562"/>
-<vertex x="16.764" y="39.624"/>
-<vertex x="35.814" y="39.624"/>
+<vertex x="15.748" y="52.324"/>
+<vertex x="15.748" y="40.64"/>
+<vertex x="16.51" y="39.878"/>
+<vertex x="35.814" y="39.878"/>
 <vertex x="35.814" y="44.958"/>
-<vertex x="22.352" y="44.958"/>
-<vertex x="22.352" y="52.832"/>
+<vertex x="20.828" y="44.958"/>
+<vertex x="20.828" y="54.61"/>
 </polygon>
 </signal>
 <signal name="TRIM">
 <contactref element="R2" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="U1" pad="4"/>
-<wire x1="48.602" y1="32.004" x2="50.458" y2="32.004" width="0.6096" layer="1"/>
-<wire x1="50.458" y1="32.004" x2="50.458" y2="42.33" width="0.6096" layer="1"/>
-<wire x1="50.458" y1="42.33" x2="53.34" y2="45.212" width="0.6096" layer="1"/>
+<wire x1="60.794" y1="36.322" x2="62.396" y2="36.322" width="0.6096" layer="1"/>
+<wire x1="60.794" y1="36.322" x2="60.794" y2="32.346" width="0.6096" layer="1"/>
+<wire x1="60.794" y1="32.346" x2="58.928" y2="30.48" width="0.6096" layer="1"/>
+<wire x1="58.928" y1="30.48" x2="51.816" y2="30.48" width="0.6096" layer="1"/>
+<wire x1="51.816" y1="30.48" x2="50.546" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="50.546" y1="31.75" x2="50.546" y2="42.418" width="0.6096" layer="1"/>
+<wire x1="50.546" y1="42.418" x2="53.34" y2="45.212" width="0.6096" layer="1"/>
 </signal>
 <signal name="VOUT">
 <contactref element="R1" pad="2"/>
@@ -1838,8 +1843,6 @@ design rules under a new name.</description>
 <vertex x="59.69" y="53.34"/>
 <vertex x="59.69" y="46.736"/>
 </polygon>
-<wire x1="52.158" y1="32.004" x2="52.158" y2="33.87" width="0.6096" layer="1"/>
-<wire x1="52.158" y1="33.87" x2="53.34" y2="35.052" width="0.6096" layer="1"/>
 </signal>
 <signal name="CTRL">
 <contactref element="U1" pad="6"/>
