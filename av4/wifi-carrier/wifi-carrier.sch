@@ -4938,21 +4938,10 @@ Grid 5.00 mm&lt;p&gt;
 <nets>
 <net name="D+" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="TX+@1"/>
-<pinref part="J1" gate="G$1" pin="TX+@2"/>
-<wire x1="58.42" y1="106.68" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
-<junction x="58.42" y="104.14"/>
-<wire x1="71.12" y1="104.14" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
-<label x="60.96" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="124.46" y1="86.36" x2="127" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="UWIFI" gate="G$1" pin="D+"/>
 <wire x1="127" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="D-" class="0">
 <segment>
 <wire x1="73.66" y1="96.52" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="TX-@2"/>
@@ -4962,22 +4951,24 @@ Grid 5.00 mm&lt;p&gt;
 <junction x="58.42" y="99.06"/>
 <label x="60.96" y="99.06" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="D-" class="0">
 <segment>
 <wire x1="124.46" y1="88.9" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="UWIFI" gate="G$1" pin="D-"/>
 <wire x1="127" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="USB+" class="0">
 <segment>
 <wire x1="73.66" y1="91.44" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RX+@2"/>
 <wire x1="71.12" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RX+@1"/>
-<wire x1="58.42" y1="93.98" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="96.52" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <junction x="58.42" y="93.98"/>
 <label x="60.96" y="93.98" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="USB+" class="0">
 <segment>
 <wire x1="124.46" y1="91.44" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="UWIFI" gate="G$1" pin="VCC"/>
@@ -4987,21 +4978,30 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="VUSB" gate="G$1" pin="TP"/>
 <wire x1="111.76" y1="78.74" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="73.66" y1="101.6" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="TX+@2"/>
+<wire x1="71.12" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="TX+@1"/>
+<wire x1="58.42" y1="104.14" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
+<junction x="58.42" y="104.14"/>
+<label x="60.96" y="104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USB-" class="0">
+<segment>
+<wire x1="124.46" y1="83.82" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="UWIFI" gate="G$1" pin="GND"/>
+<wire x1="127" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <wire x1="73.66" y1="86.36" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RX-@2"/>
 <wire x1="71.12" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="RX-@1"/>
-<wire x1="58.42" y1="88.9" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="91.44" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <junction x="58.42" y="88.9"/>
 <label x="60.96" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="124.46" y1="83.82" x2="127" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="UWIFI" gate="G$1" pin="GND"/>
-<wire x1="127" y1="86.36" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
