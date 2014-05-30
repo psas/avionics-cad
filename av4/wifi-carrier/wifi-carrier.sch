@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7264,7 +7264,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="33u"/>
-<part name="X1" library="con-phoenix-254" deviceset="MPT2" device="" value="5V"/>
+<part name="J2" library="con-phoenix-254" deviceset="MPT2" device="" value="5V"/>
 <part name="C5" library="cap-3024-7660" deviceset="C-POL-7660" device="" value="100u"/>
 </parts>
 <sheets>
@@ -7300,8 +7300,8 @@ Grid 2.54 mm&lt;p&gt;
 </instance>
 <instance part="C3" gate="G$1" x="182.88" y="157.48"/>
 <instance part="C4" gate="G$1" x="193.04" y="157.48"/>
-<instance part="X1" gate="-1" x="238.76" y="160.02"/>
-<instance part="X1" gate="-2" x="238.76" y="154.94"/>
+<instance part="J2" gate="-1" x="238.76" y="160.02"/>
+<instance part="J2" gate="-2" x="238.76" y="154.94"/>
 <instance part="C5" gate="G$1" x="66.04" y="154.94"/>
 </instances>
 <busses>
@@ -7435,7 +7435,7 @@ Grid 2.54 mm&lt;p&gt;
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="231.14" y1="154.94" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="1"/>
+<pinref part="J2" gate="-2" pin="1"/>
 <wire x1="236.22" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7489,7 +7489,7 @@ Grid 2.54 mm&lt;p&gt;
 <junction x="182.88" y="160.02"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <junction x="193.04" y="160.02"/>
-<pinref part="X1" gate="-1" pin="1"/>
+<pinref part="J2" gate="-1" pin="1"/>
 </segment>
 </net>
 <net name="CTRL" class="0">
