@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13624,7 +13624,7 @@ by exp-project-lbr.ulp</description>
 <part name="GND151" library="supply1" deviceset="GND" device=""/>
 <part name="GND153" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="R31" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="100"/>
+<part name="R31" library="rcl_custom" deviceset="R-US_" device="0402-B-NOSILK" value="1k"/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="C58" library="rcl_custom" deviceset="C-EU" device="0402-B-NOSILK" value="100n"/>
 </parts>
@@ -13663,7 +13663,7 @@ Supply Enable</text>
 <wire x1="139.7" y1="121.92" x2="106.68" y2="121.92" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="106.68" y1="121.92" x2="106.68" y2="157.48" width="0.1524" layer="95" style="shortdash"/>
 <text x="109.22" y="152.4" size="2.54" layer="95">UART Interface</text>
-<text x="129.54" y="66.04" size="1.016" layer="95">Ferrite bead position before/after capacitors</text>
+<text x="142.24" y="60.96" size="1.016" layer="95">Ferrite bead position before/after capacitors</text>
 <text x="107.95" y="85.09" size="1.778" layer="101" rot="R90">MODWIRE</text>
 <text x="261.62" y="196.85" size="1.778" layer="101">MODWIRE</text>
 <text x="261.62" y="176.53" size="1.778" layer="101">MODWIRE</text>
@@ -13677,6 +13677,7 @@ Supply Enable</text>
 <text x="248.92" y="129.54" size="1.778" layer="101">MODWIRE</text>
 <text x="337.82" y="50.8" size="1.778" layer="101">PATCH</text>
 <text x="360.68" y="60.96" size="1.778" layer="101">PATCH</text>
+<text x="156.21" y="64.77" size="1.778" layer="101" rot="R90">MODWIRE</text>
 </plain>
 <instances>
 <instance part="U1" gate="U1" x="243.84" y="132.08"/>
@@ -13954,7 +13955,6 @@ Supply Enable</text>
 <segment>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="167.64" y1="71.12" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="68.58" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="E5" gate="E" pin="1"/>
 <wire x1="167.64" y1="68.58" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="167.64" y="68.58"/>
@@ -13996,8 +13996,16 @@ Supply Enable</text>
 <wire x1="182.88" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C46" gate="CE" pin="1"/>
 <wire x1="175.26" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="60.96" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
 <junction x="175.26" y="63.5"/>
+<pinref part="U1" gate="U1" pin="VBAT"/>
+<wire x1="175.26" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="71.12" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="78.74" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="68.58" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<junction x="167.64" y="63.5"/>
 </segment>
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>

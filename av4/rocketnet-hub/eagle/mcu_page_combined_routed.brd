@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5103,7 +5103,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="51.778" y="43.345" size="0.762" layer="26" ratio="20" rot="MR270"/>
 <attribute name="VALUE" x="53.285" y="45.25" size="1" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="R31" library="rcl_custom" package="0402-B-NOSILK" value="100" x="23.241" y="-2.667"/>
+<element name="R31" library="rcl_custom" package="0402-B-NOSILK" value="1k" x="23.241" y="-2.667"/>
 <element name="C58" library="rcl_custom" package="0402-B-NOSILK" value="100n" x="23.114" y="-1.016" rot="R90"/>
 </elements>
 <signals>
@@ -6407,6 +6407,8 @@ einem neuen Namen ab.</description>
 <wire x1="25.273" y1="36.675" x2="25.273" y2="38.1" width="0.1778" layer="16"/>
 <wire x1="21.336" y1="36.322" x2="21.336" y2="34.445" width="0.1778" layer="16"/>
 <wire x1="21.336" y1="34.445" x2="21.308" y2="34.417" width="0.1778" layer="16"/>
+<contactref element="U1" pad="6"/>
+<wire x1="43.872028125" y1="33.348240625" x2="42.104259375" y2="35.116009375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="JTAG_TMS">
 <contactref element="U1" pad="72"/>
