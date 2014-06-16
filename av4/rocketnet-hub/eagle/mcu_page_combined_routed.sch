@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="9" fill="1" visible="no" active="no"/>
@@ -14666,14 +14666,14 @@ Supply Enable</text>
 <label x="259.08" y="180.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="UMB-DETECT" class="0">
+<net name="!UMB-DETECT" class="0">
 <segment>
 <label x="388.62" y="55.88" size="1.778" layer="95" xref="yes"/>
 <pinref part="R31" gate="R" pin="1"/>
 <wire x1="368.3" y1="55.88" x2="388.62" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="!UMB_DETECT_MCU" class="0">
 <segment>
 <pinref part="C58" gate="CE" pin="1"/>
 <pinref part="R31" gate="R" pin="2"/>
@@ -20470,7 +20470,7 @@ Supply Enable</text>
 <junction x="167.64" y="127"/>
 </segment>
 </net>
-<net name="UMB-DETECT" class="0">
+<net name="!UMB-DETECT" class="0">
 <segment>
 <pinref part="J14" gate="G$1" pin="RR@10"/>
 <wire x1="228.6" y1="121.92" x2="223.52" y2="121.92" width="0.1524" layer="91"/>

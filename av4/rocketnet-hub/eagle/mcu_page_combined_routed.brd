@@ -12099,12 +12099,12 @@ einem neuen Namen ab.</description>
 <via x="51.435" y="45.72" extent="1-16" drill="0.2032" diameter="0.3556"/>
 <wire x1="51.435" y1="45.72" x2="51.435" y2="44.93" width="0.1778" layer="16"/>
 </signal>
-<signal name="UMB-DETECT">
+<signal name="!UMB-DETECT">
 <contactref element="J14" pad="RR@10"/>
 <contactref element="R31" pad="1"/>
 <wire x1="22.761" y1="-2.667" x2="20.3" y2="3.685" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$3">
+<signal name="!UMB_DETECT_MCU">
 <contactref element="C58" pad="1"/>
 <contactref element="R31" pad="2"/>
 <contactref element="U1" pad="7"/>
