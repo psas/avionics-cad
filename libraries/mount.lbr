@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -171,7 +171,7 @@ Note 0.300" is acceptable clearance for a ground-down 3/16" nut driver.</descrip
 <text x="2.8575" y="2.8575" size="1.27" layer="25">&gt;NAME</text>
 <text x="3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="0" y="0" drill="3.175"/>
-<circle x="0" y="0" radius="2.54" width="0" layer="42"/>
+<circle x="0" y="0" radius="3.81" width="0" layer="42"/>
 </package>
 <package name="#4/.325-BARE+SMALL_TOOL_CLEARANCE">
 <description>1/8" hole without plating for #4 screw&lt;br&gt;
