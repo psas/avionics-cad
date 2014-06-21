@@ -136,6 +136,8 @@
 <text x="15.7" y="91.2" size="0.8" layer="21" font="vector" ratio="15" rot="R90">TX</text>
 <text x="18.2" y="91.1" size="0.8" layer="21" font="vector" ratio="15" rot="R90">RX</text>
 <text x="20.8" y="90.6" size="0.8" layer="21" font="vector" ratio="15" rot="R90">GND</text>
+<text x="20.1" y="82.1" size="1.2" layer="21" font="vector" ratio="15">PSAS GPS Carrier v2</text>
+<text x="39.5" y="0.5" size="1.2" layer="21" font="vector" ratio="15">2014/06/21</text>
 </plain>
 <libraries>
 <library name="GPS_Hemisphere">
