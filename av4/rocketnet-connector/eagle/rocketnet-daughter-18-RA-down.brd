@@ -103,7 +103,7 @@ CAT6 wire: 0.040" OD</text>
 <text x="-1.524" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
 <text x="1.524" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
 <text x="3.429" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
-<text x="-6.477" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">UMBv1</text>
+<text x="-6.477" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">UMBv2</text>
 <text x="9.271" y="4.953" size="0.254" layer="49">Edge of top plate</text>
 <text x="-1.651" y="-9.652" size="0.254" layer="49">Wire bundle info</text>
 <wire x1="3.937" y1="-11.43" x2="-4.445" y2="-11.43" width="0.0254" layer="51"/>
