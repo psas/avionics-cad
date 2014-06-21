@@ -22,3 +22,20 @@ real    8m9.453s
 user    0m7.022s
 sys     0m30.182s
 ```
+
+If you want a dump of the active EEPROM contents directly from the Flight Computer, it could look like this:
+
+```
+root@psas:~# time flashrom -p internal -c SST25VF016B -r SST25VF016B_test.bin
+flashrom v0.9.7-r1782 on Linux 3.14-1-amd64 (x86_64)
+flashrom is free software, get the source code at http://www.flashrom.org
+
+Calibrating delay loop... OK.
+Found chipset "Intel ICH8M". Enabling flash write... OK.
+Found SST flash chip "SST25VF016B" (2048 kB, SPI) at physical address 0xffe00000.
+Reading flash... done.
+
+real    0m2.268s
+user    0m2.252s
+sys     0m0.008s
+```
