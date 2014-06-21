@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -56,13 +56,10 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -71,29 +68,19 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
-<layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="no"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
 <wire x1="10.287" y1="-3.175" x2="10.287" y2="1.27" width="0.02" layer="20"/>
 <wire x1="10.287" y1="1.27" x2="6.477" y2="5.08" width="0.02" layer="20"/>
-<wire x1="10.287" y1="-3.175" x2="-10.922" y2="-3.175" width="0.02" layer="20"/>
+<wire x1="10.287" y1="-3.175" x2="2.921" y2="-3.175" width="0.02" layer="20"/>
+<wire x1="2.921" y1="-3.175" x2="2.921" y2="-7.747" width="0.02" layer="20"/>
+<wire x1="2.921" y1="-7.747" x2="-2.921" y2="-7.747" width="0.02" layer="20"/>
+<wire x1="-2.921" y1="-7.747" x2="-2.921" y2="-3.175" width="0.02" layer="20"/>
+<wire x1="-2.921" y1="-3.175" x2="-10.922" y2="-3.175" width="0.02" layer="20"/>
 <wire x1="6.477" y1="5.08" x2="-7.112" y2="5.08" width="0.02" layer="20"/>
 <wire x1="-7.112" y1="5.08" x2="-10.922" y2="1.27" width="0.02" layer="20"/>
 <wire x1="-10.922" y1="1.27" x2="-10.922" y2="-3.175" width="0.02" layer="20"/>
@@ -101,47 +88,47 @@
 <circle x="8.135" y="0" radius="3.175" width="0.254" layer="51"/>
 <circle x="-8.735" y="0" radius="2.159" width="0.0254" layer="51"/>
 <circle x="-8.735" y="0" radius="3.175" width="0.254" layer="51"/>
-<text x="-2.921" y="-6.858" size="0.254" layer="51">Brown (PWR) wire: 0.055" OD
+<text x="-2.921" y="-10.668" size="0.254" layer="49">Brown (PWR) wire: 0.055" OD
 CAT6 wire: 0.040" OD</text>
-<text x="-2.921" y="-7.493" size="0.254" layer="51">Entire "ribbon": 0.315 in</text>
-<wire x1="7.366" y1="5.08" x2="9.144" y2="5.08" width="0.0254" layer="51"/>
+<text x="-2.921" y="-11.303" size="0.254" layer="49">Entire "ribbon": 0.315 in</text>
+<wire x1="7.366" y1="5.08" x2="9.144" y2="5.08" width="0.0254" layer="49"/>
 <text x="5.334" y="1.524" size="0.762" layer="21" ratio="20" rot="R90">V+</text>
 <text x="-4.572" y="1.524" size="0.762" layer="21" ratio="20" rot="R90">V-</text>
 <wire x1="0" y1="-0.635" x2="0" y2="-2.54" width="0.254" layer="21"/>
 <wire x1="0" y1="-2.54" x2="0.508" y2="-2.032" width="0.254" layer="21"/>
 <wire x1="0" y1="-2.54" x2="-0.508" y2="-2.032" width="0.254" layer="21"/>
 <text x="8.89" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">PSAS</text>
-<text x="9.271" y="4.445" size="0.254" layer="51">Edge of RNH PCB</text>
+<text x="9.271" y="4.445" size="0.254" layer="49">Edge of RNH PCB</text>
 <text x="-3.429" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">RX-</text>
 <text x="-1.524" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">RX+</text>
 <text x="1.524" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">TX-</text>
 <text x="3.429" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">TX+</text>
 <text x="-6.477" y="-2.54" size="0.762" layer="22" ratio="20" rot="MR0">UMBv1</text>
-<text x="9.271" y="4.953" size="0.254" layer="51">Edge of top plate</text>
-<text x="-1.651" y="-5.842" size="0.254" layer="51">Wire bundle info</text>
-<wire x1="3.937" y1="-7.747" x2="-4.445" y2="-7.747" width="0.0254" layer="51"/>
-<wire x1="9.779" y1="1.397" x2="11.303" y2="3.048" width="0.0254" layer="51"/>
-<text x="11.43" y="2.921" size="0.254" layer="51">Nut OD</text>
-<wire x1="10.922" y1="2.032" x2="11.303" y2="2.413" width="0.0254" layer="51"/>
-<text x="11.43" y="2.286" size="0.254" layer="51">Tool OD</text>
+<text x="9.271" y="4.953" size="0.254" layer="49">Edge of top plate</text>
+<text x="-1.651" y="-9.652" size="0.254" layer="49">Wire bundle info</text>
+<wire x1="3.937" y1="-11.43" x2="-4.445" y2="-11.43" width="0.0254" layer="51"/>
+<wire x1="9.779" y1="1.397" x2="11.303" y2="3.048" width="0.0254" layer="49"/>
+<text x="11.43" y="2.921" size="0.254" layer="49">Nut OD</text>
+<wire x1="10.922" y1="2.032" x2="11.303" y2="2.413" width="0.0254" layer="49"/>
+<text x="11.43" y="2.286" size="0.254" layer="49">Tool OD</text>
 <text x="4.191" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">O/W</text>
 <text x="2.286" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">ORG</text>
 <text x="-0.762" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">G/W</text>
 <text x="-2.667" y="0.889" size="0.762" layer="21" ratio="20" rot="R90">GRN</text>
-<wire x1="7.4168" y1="4.5466" x2="9.1948" y2="4.5466" width="0.0254" layer="51"/>
-<text x="-10.575" y="8.243" size="0.762" layer="48">TOP VIEW (M50 on bottom of board)</text>
+<wire x1="7.4168" y1="4.5466" x2="9.1948" y2="4.5466" width="0.0254" layer="49"/>
+<text x="-10.575" y="8.243" size="0.762" layer="49">TOP VIEW (M50 on bottom of board)</text>
 <hole x="8.135" y="0" drill="2.4384"/>
 <hole x="-8.735" y="0" drill="2.4384"/>
-<text x="12.009" y="-1.327" size="0.762" layer="48">#2-56 nylock
+<text x="12.009" y="-1.327" size="0.762" layer="49">#2-56 nylock
 (5/32" OD)</text>
-<text x="0.5" y="3.7" size="0.762" layer="48" rot="R90">RKTRDY</text>
 <text x="0.381" y="1.524" size="0.762" layer="21" ratio="20" rot="R90">RR</text>
-<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-7.747" width="0.0254" layer="51"/>
-<wire x1="3.937" y1="-0.635" x2="3.937" y2="-7.747" width="0.0254" layer="51"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-11.43" width="0.0254" layer="51"/>
+<wire x1="3.937" y1="-0.635" x2="3.937" y2="-11.43" width="0.0254" layer="51"/>
 <rectangle x1="1.016" y1="1.143" x2="5.969" y2="2.667" layer="16"/>
 <rectangle x1="4.699" y1="1.143" x2="5.969" y2="3.81" layer="16"/>
 <rectangle x1="-5.969" y1="1.143" x2="-1.016" y2="2.667" layer="16"/>
 <rectangle x1="-5.969" y1="1.143" x2="-4.699" y2="3.81" layer="16"/>
+<text x="0.508" y="-6.985" size="0.762" layer="21" ratio="20" rot="R90">!UMB</text>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
@@ -187,7 +174,7 @@ by exp-project-lbr.ulp</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="lpkf-s63-epl *">
+<designrules name="OSH-Park-2-layer *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -195,33 +182,29 @@ die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
 Einstellungen hier und speichern die Design Rules unter 
 einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="0mil"/>
-<param name="mdDrill" value="0mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="0.35mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -230,15 +213,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -251,8 +234,8 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="20mil"/>
@@ -358,9 +341,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="RR">
 <via x="0" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
-<wire x1="0" y1="-1.905" x2="0" y2="1.778" width="0.508" layer="16"/>
-<wire x1="0" y1="1.778" x2="0" y2="2.032" width="0.508" layer="16"/>
-<wire x1="0" y1="3.81" x2="0" y2="2.032" width="0.508" layer="16"/>
+<wire x1="0" y1="3.81" x2="0" y2="1.778" width="0.508" layer="16"/>
 </signal>
 <signal name="RX-">
 <via x="-3.556" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
@@ -424,6 +405,10 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="-0.635" x2="3.556" y2="-0.381" width="0.508" layer="1"/>
 <via x="3.556" y="3.81" extent="1-16" drill="0.889" diameter="1.397"/>
 <wire x1="3.556" y1="-0.381" x2="3.556" y2="3.81" width="0.508" layer="1"/>
+</signal>
+<signal name="!UD">
+<via x="0" y="-3.937" extent="1-16" drill="0.889" diameter="1.397"/>
+<wire x1="0" y1="-3.937" x2="0" y2="-1.905" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>

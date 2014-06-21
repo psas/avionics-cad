@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -31,7 +31,7 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="yes"/>
@@ -91,11 +91,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="9.1" y1="-3.3" x2="9.1" y2="3.3" width="0.02" layer="20"/>
-<wire x1="9.1" y1="-3.3" x2="-8.7" y2="-3.3" width="0.02" layer="20"/>
-<wire x1="-8.7" y1="-3.3" x2="-9.7" y2="-2.3" width="0.02" layer="20"/>
-<wire x1="-9.7" y1="-2.3" x2="-9.7" y2="2.3" width="0.02" layer="20"/>
-<wire x1="-9.7" y1="2.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
+<wire x1="10" y1="-3.3" x2="10" y2="3.3" width="0.02" layer="20"/>
+<wire x1="10" y1="-3.3" x2="-8.7" y2="-3.3" width="0.02" layer="20"/>
+<wire x1="-8.7" y1="-3.3" x2="-10" y2="-2.3" width="0.02" layer="20"/>
+<wire x1="-10" y1="-2.3" x2="-10" y2="2.3" width="0.02" layer="20"/>
+<wire x1="-10" y1="2.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
 <text x="-10.194" y="8.116" size="0.762" layer="48">TOP VIEW (M50 on bottom of board)</text>
 <text x="4.3" y="4.1" size="0.762" layer="48">B-</text>
 <text x="-0.4" y="3.8" size="0.762" layer="48" rot="R90">AUX2</text>
@@ -109,7 +109,7 @@
 <hole x="-8.1" y="0" drill="2.4384"/>
 <text x="0.8" y="3.8" size="0.762" layer="48" rot="R90">AUX3</text>
 <text x="2.1" y="3.8" size="0.762" layer="48" rot="R90">AUX4</text>
-<wire x1="9.1" y1="3.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
+<wire x1="10" y1="3.3" x2="-8.7" y2="3.3" width="0.02" layer="20"/>
 <text x="9.85" y="-1.2" size="0.762" layer="48">#2-56 nylock
 (5/32" OD)</text>
 <circle x="-1.905" y="-0.635" radius="0.356503125" width="0.0254" layer="52"/>
@@ -173,10 +173,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="51"/>
 <wire x1="5.334" y1="1.7" x2="5.334" y2="-1.7" width="0.1" layer="21"/>
 <wire x1="-5.334" y1="-1.7" x2="-5.334" y2="1.7" width="0.1" layer="21"/>
-</package>
-<package name="22AWG-WIRE">
-<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.6"/>
-<circle x="0" y="0" radius="0.67" width="0.05" layer="51"/>
 </package>
 </packages>
 </library>
@@ -342,12 +338,6 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="E$2" library="rocketnet-connector" package="HARWIN-M50-31508-NO-HOLES" value="" x="0" y="0" rot="MR0"/>
-<element name="E$1" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-5.207" y="0"/>
-<element name="E$4" library="rocketnet-connector" package="22AWG-WIRE" value="" x="5.207" y="0"/>
-<element name="E$3" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-1.293" y="-0.5"/>
-<element name="E$5" library="rocketnet-connector" package="22AWG-WIRE" value="" x="1.307" y="-0.5"/>
-<element name="E$6" library="rocketnet-connector" package="22AWG-WIRE" value="" x="-2.493" y="1.9"/>
-<element name="E$7" library="rocketnet-connector" package="22AWG-WIRE" value="" x="2.507" y="1.9"/>
 </elements>
 <signals>
 <signal name="AUX2">
@@ -363,6 +353,24 @@ design rules under a new name.</description>
 <signal name="CAN_H">
 </signal>
 <signal name="S$3">
+</signal>
+<signal name="S$1">
+<via x="2.5" y="1.95" extent="1-16" drill="1.1"/>
+</signal>
+<signal name="S$2">
+<via x="5" y="0" extent="1-16" drill="1.1"/>
+</signal>
+<signal name="S$4">
+<via x="1.3" y="-0.8" extent="1-16" drill="1.1"/>
+</signal>
+<signal name="S$5">
+<via x="-1.3" y="-0.8" extent="1-16" drill="1.1"/>
+</signal>
+<signal name="S$6">
+<via x="-2.5" y="1.95" extent="1-16" drill="1.1"/>
+</signal>
+<signal name="S$7">
+<via x="-5" y="0" extent="1-16" drill="1.1"/>
 </signal>
 </signals>
 </board>
