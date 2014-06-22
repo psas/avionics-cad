@@ -1,0 +1,47 @@
+PSAS AV4 Umbilical Connector
+
+We're using LEMO "Medi-Snap" connectors for our umbilical cable. Specifically:
+
+- Straight plug: PAG.M0.8XL.AC39GZ
+- Fixed socket: PKG.M0.8XL.LG
+
+where X = Usually G, could be STGN.
+
+## Female bulkhead connector
+
+Looking at the solder contacts from the "back" of the connector.
+
+```
+        --_--
+      /   1   \ 
+     | 7     2 |
+     |    8    |
+     | 6     3 |
+      \  5  4 /
+        -----
+```
+Pins are:
+
+1. Vumb (~ 19V)
+2. Ethernet TX+
+3. Ethernet TX-
+4. umb-detect
+5. rocketready
+6. Ethernet RX+
+7. Ethernet RX-	
+8. GND
+
+## MALE connector
+
+Looking at the solder contacts from the "back" of the connector:
+
+```
+        --_--
+      /   1   \ 
+     | 2     7 |
+     |    8    |
+     | 3     6 |
+      \  4  5 /
+        -----
+```
+
