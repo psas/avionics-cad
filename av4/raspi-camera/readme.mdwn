@@ -1,0 +1,46 @@
+# PSAS AV4 Raspberry Pi Carrier Board
+
+## Overview
+
+PSAS (Portland State Aerospace Soceity -- see http://psas.pdx.edu/) uses the Raspbery Pi rev 2 as a inexpensive "video to Ethernet" converter for our Avionics Version 4 (AV4) avionics system for our LV2 rocket. It's a little crazy to use a RasPi as a piece of rocket electronics, but if you hack it enough, *anything* can be rocket-rated. :)
+
+## Functionality
+
+- Use the PSAS "RocketNet Connector" as the Ethernet + Power connector
+- Convert Vbatt (10 - 20 V) and convert to 3.3 and 5V using SPS instead of the RasPi's linear regulators.
+- Add a FTDI 6 pin header for debugging.
+- Add an buffered GPIO line output for triggering other things (specifically some GoPros).
+- Add a RGB LED because, well, because RGB LEDs.
+
+
+## Design, Manufacturing, and Test Log
+
+### 2014-01-24
+
+- Scanned RasPi in order to work out hole locations since no Gerber or copper drawing exists.
+- Choose TI easy switchers because... easy.
+
+### 2014-02-27
+
+- Sent off v1 carrier to OSH Park for fab.
+
+### 2014/0?/0?
+
+- Soldered up board. Some assembly issues:
+   - R6 and R7 are underneath the leads of U1 and U2, causing shorts.
+   - Not enough clearance for a standard right angle RocketNet Connector (RNC)! So we had to use a temporary vertical one.
+   - Ethernet connector holes were off by quite a bit (like 0.050")
+   - REALLY need another hole for stability - the two holes aren't enough
+   - 1/4 inch stacking height is unrealistic. Need more space between the boards. Choose 10 mm.
+
+### 2014/06/24 
+
+- Fixed all known v1 issues.
+- Sent off v2 carrier to OSH Park for fab.
+- Fixed some minor things after sending it off to OSH Park, will need to wait for v3!
+
+### FUTURE
+
+- Change the LED, which is now obsolete.
+- Break out more GPIO for even more functionality.
+
