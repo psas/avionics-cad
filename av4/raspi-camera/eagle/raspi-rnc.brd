@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -126,7 +126,7 @@
 <text x="1.7" y="2.3" size="2" layer="21" font="vector" ratio="20">PSAS RASPI to RNC Adapter v2</text>
 <text x="1" y="76" size="1.778" layer="51">- Board fits UNDER RP rev 2</text>
 <text x="1" y="73" size="1.778" layer="51">- Remove P1 header and move to BOTTOM of RP.</text>
-<text x="1" y="70" size="1.778" layer="51">- Remove RG2 (NCP1117-3v3)</text>
+<text x="1" y="70" size="1.778" layer="51">- Remove RG2 (NCP1117-3v3) and F3.</text>
 <text x="1" y="67" size="1.778" layer="51">- Remove P4 (Ethernet jack).</text>
 <text x="1" y="64" size="1.778" layer="51">- Remove RCA, audio, USB as necessary.</text>
 <text x="38.4" y="18.9" size="1.778" layer="21" font="vector" rot="R90">5V</text>
@@ -1962,7 +1962,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="45.315" y="12.36" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C1008" library="rcl" package="D/7343-31R" value="100u" x="41.5" y="39.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="39" y="38.45" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="NAME" x="38.8" y="36.05" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="45.075" y="36.25" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C1043" library="rcl_custom" package="0805-B-NOSILK" value="10u" x="44.9" y="16" smashed="yes" rot="R270">
@@ -2044,7 +2044,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TP5" library="apdm" package="2MM-TEST-POINT" value="TEST-POINT" x="54.3" y="22" smashed="yes">
 <attribute name="NAME" x="52.7" y="23.5" size="0.762" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="TP6" library="apdm" package="2MM-TEST-POINT" value="TEST-POINT" x="54.3" y="46" rot="MR0"/>
+<element name="TP6" library="apdm" package="2MM-TEST-POINT" value="TEST-POINT" x="54.3" y="46" smashed="yes">
+<attribute name="NAME" x="55.4" y="45.6" size="0.8" layer="25" font="vector" ratio="20"/>
+</element>
 <element name="TP7" library="apdm" package="2MM-TEST-POINT" value="TEST-POINT" x="46.1" y="21.7" smashed="yes">
 <attribute name="NAME" x="44.9" y="21" size="0.762" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
