@@ -121,14 +121,14 @@ CAT6 wire: 0.040" OD</text>
 <hole x="-8.735" y="0" drill="2.4384"/>
 <text x="12.009" y="-1.327" size="0.762" layer="49">#2-56 nylock
 (5/32" OD)</text>
-<text x="0.381" y="1.524" size="0.762" layer="21" ratio="20" rot="R90">RR</text>
+<text x="0.381" y="-6.223" size="0.762" layer="21" ratio="20" rot="R90">RR</text>
 <wire x1="-4.445" y1="-0.635" x2="-4.445" y2="-11.43" width="0.0254" layer="51"/>
 <wire x1="3.937" y1="-0.635" x2="3.937" y2="-11.43" width="0.0254" layer="51"/>
 <rectangle x1="1.016" y1="1.143" x2="5.969" y2="2.667" layer="16"/>
 <rectangle x1="4.699" y1="1.143" x2="5.969" y2="3.81" layer="16"/>
 <rectangle x1="-5.969" y1="1.143" x2="-1.016" y2="2.667" layer="16"/>
 <rectangle x1="-5.969" y1="1.143" x2="-4.699" y2="3.81" layer="16"/>
-<text x="0.508" y="-6.985" size="0.762" layer="21" ratio="20" rot="R90">!UMB</text>
+<text x="0.508" y="0.762" size="0.762" layer="21" ratio="20" rot="R90">!UMB</text>
 </plain>
 <libraries>
 <library name="rocketnet-connector">
